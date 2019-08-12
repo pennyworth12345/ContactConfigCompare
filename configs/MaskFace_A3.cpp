@@ -1,0 +1,4 @@
+class MaskFace_A3
+{
+	mask[] = {"face_hub", 1, "face_jawbone", 1, "face_jowl", 1, "face_chopright", 1, "face_chopleft", 1, "face_liplowermiddle", 1, "face_liplowerright", 1, "face_liplowerleft", 1, "face_chin", 1, "face_tongue", 1, "face_cornerright", 1, "face_cheeksideright", 1, "face_cornerleft", 1, "face_cheeksideleft", 1, "face_cheekfrontright", 1, "face_cheekfrontleft", 1, "face_cheekupperright", 1, "face_cheekupperleft", 1, "face_lipuppermiddle", 1, "face_lipupperright", 1, "face_lipupperleft", 1, "face_nostrilright", 1, "face_nostrilleft", 1, "face_forehead", 1, "face_browfrontright", 1, "face_browfrontleft", 1, "face_browmiddle", 1, "face_browsideright", 1, "face_browsideleft", 1, "face_eyelids", 1, "face_eyelidupperright", 1, "face_eyelidupperleft", 1, "face_eyelidlowerright", 1, "face_eyelidlowerleft", 1, "eyeleft", 1, "eyeright", 1, "neck", 1, "neck1", 1, "head", 1};
+};

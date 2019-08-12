@@ -1,0 +1,53 @@
+class ctrlTree: ctrlDefaultText
+{
+	colorArrow[] = {0, 0, 0, 0};
+	colorBackground[] = {0, 0, 0, 0};
+	colorBorder[] = {0, 0, 0, 1};
+	colorDisabled[] = {0, 0, 0, 0};
+	colorLines[] = {0, 0, 0, 0};
+	colorMarked[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])", 0.5};
+	colorMarkedSelected[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])", 1};
+	colorMarkedText[] = {1, 1, 1, 1};
+	colorPicture[] = {1, 1, 1, 1};
+	colorPictureDisabled[] = {1, 1, 1, 0.25};
+	colorPictureRight[] = {1, 1, 1, 1};
+	colorPictureRightDisabled[] = {1, 1, 1, 0.25};
+	colorPictureRightSelected[] = {1, 1, 1, 1};
+	colorPictureSelected[] = {1, 1, 1, 1};
+	colorSearch[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])", 1};
+	colorSelect[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])", 1};
+	colorSelectText[] = {1, 1, 1, 1};
+	colorText[] = {1, 1, 1, 1};
+	disableKeyboardSearch = 0;
+	expandedTexture = "\a3\3DEN\Data\Controls\ctrlTree\expandedTexture_ca.paa";
+	expandOnDoubleclick = 1;
+	hiddenTexture = "\a3\3DEN\Data\Controls\ctrlTree\hiddenTexture_ca.paa";
+	maxHistoryDelay = 1;
+	multiselectEnabled = 0;
+	onCanDestroy = "";
+	onDestroy = "";
+	onKeyDown = "";
+	onKeyUp = "";
+	onKillFocus = "";
+	onMouseButtonClick = "";
+	onMouseButtonDblClick = "";
+	onMouseButtonDown = "";
+	onMouseButtonUp = "";
+	onMouseEnter = "";
+	onMouseExit = "";
+	onMouseHolding = "";
+	onMouseMoving = "";
+	onMouseZChanged = "";
+	onSetFocus = "";
+	onTreeCollapsed = "";
+	onTreeDblClick = "";
+	onTreeExpanded = "";
+	onTreeLButtonDown = "";
+	onTreeMouseExit = "";
+	onTreeSelChanged = "";
+	type = 12;
+	class ScrollBar: ScrollBar
+	{
+		scrollSpeed = 0.05;
+	};
+};

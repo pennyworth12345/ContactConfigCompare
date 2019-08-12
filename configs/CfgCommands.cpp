@@ -1,0 +1,4 @@
+class CfgCommands
+{
+	allowedHTMLLoadURIs[] = {};
+};

@@ -1,0 +1,96 @@
+class UserActionsConflictGroups
+{
+	class ActionGroups
+	{
+		ActionMenu[] = {"Action", "PrevAction", "NextAction", "ActionContext", "Back"};
+		AimingHead[] = {"AimHeadUp", "AimHeadDown", "AimHeadLeft", "AimHeadRight"};
+		AirCraft[] = {"HeliUp", "HeliDown", "HeliThrottlePos", "HeliThrottleNeg", "AirBankLeft", "AirBankRight", "HeliRudderLeft", "HeliRudderRight", "HeliLeft", "HeliRight", "HeliForward", "HeliBack", "HeliFastForward", "vtolVectoring", "vtolVectoringCancel", "LandGear", "LandGearUp", "FlapsDown", "FlapsUp", "PilotCamera", "AirPlaneBrake"};
+		basic[] = {"DefaultAction", "LockTarget", "RevealTarget", "ActionFreeLook", "Headlights", "NightVision", "TransportNightVision", "Binocular", "Compass", "CompassToggle", "Watch", "WatchToggle", "MiniMap", "MiniMapToggle", "UavView", "UavViewToggle", "openDlcScreen", "ShowMap", "Help", "TimeInc", "TimeDec", "Optics", "PersonView", "TacticalView", "LiteUnitInfoToggle", "ZoomContIn", "ZoomContOut", "ZeroingUp", "ZeroingDown", "LookAround", "LookAroundToggle", "LookLeftDown", "LookDown", "LookRightDown", "LookLeft", "LookCenter", "LookRight", "LookLeftUp", "LookUp", "LookRightUp", "LookLeftCont", "LookRightCont", "LookDownCont", "LookUpCont", "PrevChannel", "NextChannel", "Chat", "VoiceOverNet", "PushToTalk", "PushToTalkAll", "PushToTalkSide", "PushToTalkCommand", "PushToTalkGroup", "PushToTalkVehicle", "PushToTalkDirect", "TacticalPing", "NetworkStats", "Slow", "IngamePause", "MenuSelect", "CancelAction", "CommandWatch", "TeamSwitch", "TeamSwitchPrev", "TeamSwitchNext", "Gear", "Cheat1", "Cheat2", "Diary", "Tasks", "Surrender", "navigateMenu", "closeContext", "ListLeftVehicleDisplay", "ListRightVehicleDisplay", "ListPrevLeftVehicleDisplay", "ListPrevRightVehicleDisplay", "CloseLeftVehicleDisplay", "CloseRightVehicleDisplay", "NextModeLeftVehicleDisplay", "NextModeRightVehicleDisplay", "ActiveSensorsToggle"};
+		buldBasic[] = {"BuldSwitchCamera", "BuldFreeLook", "BuldSelect", "BuldResetCamera", "BuldMagnetizePoints", "BuldMagnetizePlanes", "BuldMagnetizeYFixed", "BuldTerrainRaise1m", "buldTerrainRaise10cm", "BuldTerrainLower1m", "BuldTerrainLower10cm", "BuldTerrainRaise5m", "BuldTerrainRaise50cm", "BuldTerrainLower5m", "BuldTerrainLower50cm", "BuldTerrainShowNode", "BuldTurbo", "BuldUp", "BuldDown", "BuldLookLeft", "BuldLookRight", "BuldLookUp", "BuldLookDown", "BuldZoomIn", "BuldZoomOut", "BuldTextureInfo", "BuldBrushRatio", "BuldBrushStrength", "BuldBrushSmooth", "BuldBrushRandomize", "BuldBrushSetHeight", "BuldBrushOuter", "BuldUndo", "BuldRedo"};
+		buldMove[] = {"BuldLeft", "BuldRight", "BuldForward", "BuldBack", "BuldMoveLeft", "BuldMoveRight", "BuldMoveForward", "BuldMoveBack", "BuldCreateObj", "BuldDuplicateSel", "BuldElevateSel", "BuldKeepAbsoluteElevationSel", "BuldClearAllElevationLocks", "BuldScaleSel", "BuldSelectionType", "BuldRemoveSel", "BuldRotateSelX", "BuldRotateSelZ"};
+		buldozer[] = {"BuldSwitchCamera", "BuldFreeLook", "BuldSelect", "BuldResetCamera", "BuldMagnetizePoints", "BuldMagnetizePlanes", "BuldMagnetizeYFixed", "BuldTerrainRaise1m", "buldTerrainRaise10cm", "BuldTerrainLower1m", "BuldTerrainLower10cm", "BuldTerrainRaise5m", "BuldTerrainRaise50cm", "BuldTerrainLower5m", "BuldTerrainLower50cm", "BuldTerrainShowNode", "BuldSelectionType", "BuldLeft", "BuldRight", "BuldForward", "BuldBack", "BuldMoveLeft", "BuldMoveRight", "BuldMoveForward", "BuldMoveBack", "BuldTurbo", "BuldUp", "BuldDown", "BuldLookLeft", "BuldLookRight", "BuldLookUp", "BuldLookDown", "BuldZoomIn", "BuldZoomOut", "BuldTextureInfo", "BuldBrushRatio", "BuldBrushStrength", "BuldBrushSmooth", "BuldBrushRandomize", "BuldBrushSetHeight", "BuldBrushOuter", "BuldUndo", "BuldRedo", "BuldCreateObj", "BuldDuplicateSel", "BuldRemoveSel", "BuldRotateSelX", "BuldRotateSelZ", "BuldScaleSel", "BuldElevateSel", "BuldKeepAbsoluteElevationSel", "BuldClearAllElevationLocks"};
+		camera[] = {"cameraMoveForward", "cameraMoveBackward", "cameraMoveLeft", "cameraMoveRight", "cameraMoveUp", "cameraMoveDown", "cameraMoveTurbo1", "cameraMoveTurbo2", "cameraZoomIn", "cameraZoomOut", "cameraLookUp", "cameraLookDown", "cameraLookLeft", "cameraLookRight", "cameraReset", "cameraTarget", "cameraVisionMode", "cameraFlashlight", "cameraInterface"};
+		cameraEditor[] = {"editorCameraMoveForward", "editorCameraMoveBackward", "editorCameraMoveLeft", "editorCameraMoveRight", "editorCameraMoveUp", "editorCameraMoveDown", "editorCameraMoveTurbo", "editorCameraLookUp", "editorCameraLookDown", "editorCameraLookLeft", "editorCameraLookRight", "editorCameraReset"};
+		CarFreelook[] = {"CarAimUp", "CarAimDown", "CarAimLeft", "CarAimRight", "TurretElevationUp", "TurretElevationDown"};
+		CarMovement[] = {"CarLeft", "CarRight", "CarWheelLeft", "CarWheelRight", "CarForward", "CarBack", "CarFastForward", "CarSlowForward", "CarHandBrake"};
+		Command[] = {"CommandLeft", "CommandRight", "CommandForward", "CommandBack", "CommandFast", "CommandSlow", "SwitchGunnerWeapon", "switchCommand", "SelectAll", "switchCommand", "SelectGroupUnit1", "SelectGroupUnit2", "SelectGroupUnit3", "SelectGroupUnit4", "SelectGroupUnit5", "SelectGroupUnit6", "SelectGroupUnit7", "SelectGroupUnit8", "SelectGroupUnit9", "SelectGroupUnit0", "GroupPagePrev", "GroupPageNext", "SetTeamRed", "SetTeamGreen", "SetTeamBlue", "SetTeamYellow", "SetTeamWhite", "SelectTeamRed", "SelectTeamGreen", "SelectTeamBlue", "SelectTeamYellow", "SelectTeamWhite", "CommandingMenuSelect1", "CommandingMenuSelect2", "CommandingMenuSelect3", "CommandingMenuSelect4", "CommandingMenuSelect5", "CommandingMenuSelect6", "CommandingMenuSelect7", "CommandingMenuSelect8", "CommandingMenuSelect9", "CommandingMenuSelect0"};
+		commandOpenMenu[] = {"CommandingMenu1", "CommandingMenu2", "CommandingMenu3", "CommandingMenu4", "CommandingMenu5", "CommandingMenu6", "CommandingMenu7", "CommandingMenu8", "CommandingMenu9", "CommandingMenu0"};
+		curator[] = {"curatorInterface", "curatorRotateMod", "curatorMoveY", "curatorDelete", "curatorDestroy", "curatorGetOut", "curatorContentWaypoint", "curatorMoveCamTo", "curatorLockCameraTo", "curatorLevelObject", "curatorGroupMod", "curatorMultipleMod", "CuratorCollapseParent", "curatorNightvision", "curatorPersonView", "curatorPingView", "curatorToggleInterface", "curatorToggleEdit", "curatorToggleCreate", "curatorMapTextures", "curatorCompass", "curatorWatch"};
+		FreeHeadMove[] = {"FreeHeadMove"};
+		HeadMove[] = {"LookShiftLeftCont", "LookShiftRightCont", "LookShiftUpCont", "LookShiftDownCont", "LookShiftForwardCont", "LookShiftBackCont", "LookRollLeftCont", "LookRollRightCont", "LookShiftUp", "LookShiftDown", "LookShiftForward", "LookShiftLeft", "LookShiftCenter", "LookShiftRight", "LookShiftBack", "LookRollLeft", "LookRollRight"};
+		Heli[] = {"HeliCyclicForward", "HeliCyclicBack", "HeliCyclicLeft", "HeliCyclicRight", "HeliCollectiveRaise", "HeliCollectiveLower", "HeliCollectiveRaiseCont", "HeliCollectiveLowerCont", "HeliRudderLeft", "HeliRudderRight", "HeliLeft", "HeliRight", "AutoHover", "AutoHoverCancel", "LandGear", "LandGearUp", "HeliWheelsBrake", "HelicopterTrimOn", "HelicopterTrimOff", "HeliTrimLeft", "HeliTrimRight", "HeliTrimForward", "HeliTrimBackward", "HeliTrimRudderLeft", "HeliTrimRudderRight", "HeliRopeAction", "HeliSlingLoadManager", "PilotCamera", "CyclicForward", "CyclicBack"};
+		ManBasic[] = {"ReloadMagazine", "TempRaiseWeapon", "ToggleRaiseWeapon", "Salute", "SitDown", "LockTargets", "LockEmptyTargets", "TurboToggle", "throw", "deployWeaponAuto"};
+		ManMoveGround[] = {"AimUp", "AimDown", "AimLeft", "AimRight", "MoveForward", "MoveBack", "TurnLeft", "TurnRight", "MoveUp", "MoveDown", "MoveFastForward", "MoveSlowForward", "MoveLeft", "MoveRight", "EvasiveLeft", "EvasiveRight", "Stand", "Crouch", "Prone", "LeanLeft", "LeanRight", "LeanLeftToggle", "LeanRightToggle", "WalkRunToggle", "TackToggle", "GetOver", "Turbo"};
+		ManMoveUnderwater[] = {"SwimUp", "SwimDown", "AimUp", "AimDown", "AimLeft", "AimRight", "MoveForward", "MoveBack", "TurnLeft", "TurnRight", "MoveFastForward", "MoveSlowForward", "MoveLeft", "MoveRight"};
+		ManWeaponSwitchControls[] = {"SwitchPrimary", "SwitchHandgun", "SwitchSecondary", "SwitchWeaponGrp1", "SwitchWeaponGrp2", "SwitchWeaponGrp3", "SwitchWeaponGrp4", "nextWeapon", "prevWeapon", "switchWeapon", "handgun", "cycleThrownItems"};
+		MapActions[] = {"HideMap", "ActionInMap"};
+		MoveManCombos[] = {"AdjustUp", "AdjustDown", "AdjustLeft", "AdjustRight", "Turbo", "TactTemp", "WalkRunTemp"};
+		Multiplayer[] = {"networkPlayers"};
+		SeaGull[] = {"SeagullUp", "SeagullDown", "SeagullForward", "SeagullBack", "SeagullFastForward"};
+		SubmarineMovement[] = {"submarineForward", "submarineBack", "submarineLeft", "submarineRight", "submarineCyclicForward", "submarineCyclicBack", "submarineUp", "submarineDown"};
+		Tank[] = {"TurnIn", "TurnOut"};
+		Turret[] = {"GunElevUp", "GunElevDown", "GunElevSlow", "GunElevAuto"};
+		VehBasic[] = {"Fire", "EngineToggle", "VehicleTurbo", "HeliManualFire", "launchCM", "nextCM", "VehLockTargets", "VehLockEmptyTargets", "VehLockTurretView", "SwapGunner", "GetOut", "Eject"};
+		WeaponOptics[] = {"opticsMode", "HoldBreath", "ZoomIn", "ZoomInToggle", "ZoomOut", "zoomOutToggle"};
+	};
+	class CollisionGroups
+	{
+		aircraft[] = {"aircraft", "vehBasic", "basic", "HeadMove"};
+		artillery[] = {"CarFreelook", "Turret"};
+		buldozer[] = {"buldBasic"};
+		buldozerMove[] = {"buldMove"};
+		camera[] = {"camera"};
+		cameraEditor[] = {"cameraEditor"};
+		carLook[] = {"CarFreelook", "vehBasic", "basic", "HeadMove"};
+		carMove[] = {"CarMovement", "vehBasic", "HeadMove"};
+		commander[] = {"basic", "command"};
+		curator[] = {"curator"};
+		heli[] = {"heli", "vehBasic", "basic", "HeadMove"};
+		manBuldozerCam[] = {"buldBasic", "manMoveGround"};
+		manMain[] = {"basic", "manBasic", "ManWeaponSwitchControls", "commandOpenMenu"};
+		manMoveGround[] = {"basic", "manMoveGround", "manBasic"};
+		manMoveManCombos[] = {"manMoveManCombos", "manMoveGround"};
+		manMoveUnderwater[] = {"manMoveUnderwater", "manBasic", "basic"};
+		manMultiplayer[] = {"basic", "Multiplayer"};
+		mapCommand[] = {"command", "mapActions"};
+		seagull[] = {"seagull"};
+		submarine[] = {"submarineMovement", "vehBasic", "HeadMove"};
+		vehMain[] = {"basic", "vehBasic"};
+	};
+	class Exceptions
+	{
+		actionMenu[] = {"action", "actionContext"};
+		autoHover[] = {"AutoHover", "AutoHoverCancel"};
+		buldBrushTurbo[] = {"BuldBrushSmooth", "BuldTurbo"};
+		buldCamMovementDown[] = {"buldDown", "buldRotateSelZ", "prone", "moveDown"};
+		buldCamMovementUp[] = {"buldUp", "evasiveLeft", "leanLeft"};
+		compassAndWatch[] = {"compass", "compassToggle", "watch", "watchToggle"};
+		curator[] = {"curatorMoveY", "curatorContentWaypoint", "curatorLockCameraTo", "curatorGroupMod", "curatorMultipleMod"};
+		flaps[] = {"FlapsDown", "FlapsUp", "zeroingUp", "zeroingDown"};
+		gunDown[] = {"GunElevDown", "zeroingDown", "heliDown", "seagullDown"};
+		gunUp[] = {"GunElevUp", "zeroingUp", "heliUp", "seagullUp"};
+		heliRopeActionBinocular[] = {"HeliRopeAction", "Binocular"};
+		landGear[] = {"LandGear", "LandGearUp"};
+		leftAlt[] = {"lookAround", "commandWatch"};
+		lockRevealTarget[] = {"lockTarget", "revealTarget", "holdBreath"};
+		map[] = {"showMap", "hideMap"};
+		mouseConfirm[] = {"DefaultAction", "ActionContext", "ActionFreeLook"};
+		moveDown[] = {"GunElevDown", "heliDown", "seagullDown", "prone", "moveDown", "swimDown", "buldSelect"};
+		moveFastForwardToggle[] = {"MoveFastForward", "MoveForward", "MoveBack"};
+		moveUp[] = {"GunElevUp", "heliUp", "seagullUp", "stand", "moveUp", "swimUp", "buldSelect"};
+		opticsCloseMenu[] = {"optics", "closeContext"};
+		opticsWalk[] = {"optics", "WalkRunToggle"};
+		revealPing[] = {"revealTarget", "TacticalPing"};
+		rollLeft[] = {"EvasiveLeft", "LeanLeft"};
+		rollLeftToggle[] = {"EvasiveLeft", "LeanLeftToggle"};
+		rollRight[] = {"EvasiveRight", "LeanRight"};
+		rollRightToggle[] = {"EvasiveRight", "LeanRightToggle"};
+		speedModifier[] = {"VehicleTurbo", "GunElevSlow", "CarFastForward", "turbo", "heliCollectiveRaise", "heliUp", "submarineUp", "buldTurbo", "buldBrushSmooth"};
+		standUp[] = {"stand", "getOver", "BuldSelect"};
+		vectoring[] = {"vtolVectoring", "vtolVectoringCancel"};
+		walkRunToggle[] = {"WalkRunToggle", "MoveForward", "MoveBack"};
+		weaponSwitching[] = {"SwitchPrimary", "SwitchHandgun", "SwitchSecondary", "SwitchWeaponGrp1", "SwitchWeaponGrp2", "SwitchWeaponGrp3", "SwitchWeaponGrp4"};
+		zoomIn[] = {"zoomIn", "zoomInToggle"};
+		zoomOut[] = {"zoomOut", "zoomOutToggle"};
+	};
+};

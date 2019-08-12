@@ -1,0 +1,30 @@
+class PhysXParams
+{
+	epeImpulseDamageCoef = 30;
+	impulseForceRagdollCoef = 200;
+	impulseSpeedRagdollCoef = 3;
+	impulseTorqueRagdollCoef = 75;
+	maxRagdollImpulseForceMagnitude = 300;
+	maxRagdollImpulseTorqueMagnitude = 100;
+	ragdollHitDmgLimit = 0.01;
+	ragdollHitForceCoef = 3;
+	ragdollHitTime = 0.01;
+	ragdollOnCollideForceCoef = 0.1;
+	ragdollOnCollideMassLimit = 200;
+	ragdollOnCollideMaxForce = 1;
+	ragdollOnCollideMaxOffset = 10;
+	ragdollOnCollideMaxOffsetSpeed = 100;
+	ragdollOnCollideSpeedLimit = 4;
+	ragdollOnCollideVehicleImpulseCoef = 2;
+	ragdollUnconsciousSleepCoef = 1.2;
+	ragdollUnderwaterBuoyancyCoef = 9.7;
+	ragdollUnderwaterForceCoef = 9.6;
+	ragdollUnderwaterInitImpulseCoef = 0.98;
+	ragdollUnderwaterResistanceCoef = 0.005;
+	ragdollVehicleCollision = 0;
+	wheelNormalRejectAngle = "Pi/4.0";
+	wheelNormalRejectAngleFast = "Pi/2.4";
+	wheelPointRejectAngle = "Pi/4.0";
+	wheelPointRejectAngleFast = "Pi/3.0";
+	wheelPointRejectLimitSpeed = 5;
+};

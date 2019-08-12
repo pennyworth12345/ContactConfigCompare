@@ -1,0 +1,32 @@
+class ctrlCheckboxes: ctrlDefaultText
+{
+	checked_strings[] = {};
+	color[] = {1, 0, 1, 1};
+	colorBackground[] = {0, 0, 0, 0.5};
+	colorDisable[] = {0, 0, 0, 0};
+	colorSelect[] = {0, 0, 0, 0};
+	colorSelectedBg[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])", 1};
+	colorText[] = {1, 1, 1, 1};
+	colorTextDisable[] = {0, 0, 0, 0};
+	colorTextSelect[] = {1, 1, 1, 1};
+	columns = 1;
+	onCanDestroy = "";
+	onCheckBoxesSelChanged = "";
+	onDestroy = "";
+	onKeyDown = "";
+	onKeyUp = "";
+	onKillFocus = "";
+	onMouseButtonClick = "";
+	onMouseButtonDblClick = "";
+	onMouseButtonDown = "";
+	onMouseButtonUp = "";
+	onMouseEnter = "";
+	onMouseExit = "";
+	onMouseHolding = "";
+	onMouseMoving = "";
+	onMouseZChanged = "";
+	onSetFocus = "";
+	rows = 1;
+	strings[] = {};
+	type = 7;
+};

@@ -1,0 +1,33 @@
+class CfgDiving
+{
+	DiverSpeedCoef = 1.5;
+	grenadeWaterWaveCoef = "1.5f";
+	Haze = 1;
+	MaxDistance = 20;
+	MaxDistance2 = 40;
+	MaxRangeCoef = 0.5;
+	MinAngle = 41;
+	PositionYThreshold = 0.5;
+	relativeDown = 1;
+	relativeDownSDV = 2;
+	relativeUp = -1;
+	relativeUpSDV = -2;
+	shotRandomAngle = "0.1f";
+	StandardDepthMajor = -40;
+	StandardDepthMajorSDV = -40;
+	StandardDepthMinor = -5;
+	StandardDepthMinorSDV = -10;
+	StandardTransfer = 5;
+	StandardTransferSDV = 5;
+	SubmarineWaveEffectDepth = 5;
+	SwimDuration = 1;
+	ThresholdSwimmingWithNeopren = 0;
+	verticalStep = 0.8;
+	WaterOperfieldRadiusCollision = 1;
+	WaterOperfieldRadiusLogical = 5;
+	WaterSlowdown1 = 0.4;
+	WaterSlowdown2 = 0.7;
+	WaveEffectDepth = 5;
+	waypointSwimRadius1 = 1.5;
+	waypointSwimRadius2 = 5;
+};

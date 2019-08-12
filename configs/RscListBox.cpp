@@ -1,0 +1,50 @@
+class RscListBox
+{
+	access = 0;
+	arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
+	arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
+	autoScrollDelay = 5;
+	autoScrollRewind = 0;
+	autoScrollSpeed = -1;
+	colorBackground[] = {0, 0, 0, 0.3};
+	colorDisabled[] = {1, 1, 1, 0.25};
+	colorPicture[] = {1, 1, 1, 1};
+	colorPictureDisabled[] = {1, 1, 1, 0.25};
+	colorPictureRight[] = {1, 1, 1, 1};
+	colorPictureRightDisabled[] = {1, 1, 1, 0.25};
+	colorPictureRightSelected[] = {1, 1, 1, 1};
+	colorPictureSelected[] = {1, 1, 1, 1};
+	colorScrollbar[] = {1, 0, 0, 0};
+	colorSelect[] = {0, 0, 0, 1};
+	colorSelect2[] = {0, 0, 0, 1};
+	colorSelect2Right[] = {0, 0, 0, 1};
+	colorSelectBackground[] = {0.95, 0.95, 0.95, 1};
+	colorSelectBackground2[] = {1, 1, 1, 0.5};
+	colorSelectRight[] = {0, 0, 0, 1};
+	colorShadow[] = {0, 0, 0, 0.5};
+	colorText[] = {1, 1, 1, 1};
+	colorTextRight[] = {1, 1, 1, 1};
+	deletable = 0;
+	fade = 0;
+	font = "RobotoCondensed";
+	h = 0.3;
+	maxHistoryDelay = 1;
+	period = 1.2;
+	rowHeight = 0;
+	shadow = 0;
+	sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect", 0.09, 1};
+	style = 16;
+	tooltipColorBox[] = {1, 1, 1, 1};
+	tooltipColorShade[] = {0, 0, 0, 0.65};
+	tooltipColorText[] = {1, 1, 1, 1};
+	type = 5;
+	w = 0.3;
+	x = 0;
+	y = 0;
+	class ListScrollBar: ScrollBar
+	{
+		autoScrollEnabled = 1;
+		color[] = {1, 1, 1, 1};
+	};
+};

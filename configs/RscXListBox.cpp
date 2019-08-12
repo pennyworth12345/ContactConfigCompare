@@ -1,0 +1,33 @@
+class RscXListBox
+{
+	arrowEmpty = "\A3\ui_f\data\gui\cfg\slider\arrowEmpty_ca.paa";
+	arrowFull = "\A3\ui_f\data\gui\cfg\slider\arrowFull_ca.paa";
+	border = "\A3\ui_f\data\gui\cfg\slider\border_ca.paa";
+	color[] = {1, 1, 1, 0.6};
+	colorActive[] = {1, 1, 1, 1};
+	colorDisabled[] = {1, 1, 1, 0.25};
+	colorPicture[] = {1, 1, 1, 1};
+	colorPictureDisabled[] = {1, 1, 1, 0.25};
+	colorPictureRight[] = {1, 1, 1, 1};
+	colorPictureRightDisabled[] = {1, 1, 1, 0.25};
+	colorPictureRightSelected[] = {1, 1, 1, 1};
+	colorPictureSelected[] = {1, 1, 1, 1};
+	colorSelect[] = {0.95, 0.95, 0.95, 1};
+	colorText[] = {1, 1, 1, 1};
+	deletable = 0;
+	fade = 0;
+	font = "RobotoCondensed";
+	h = 0.039216;
+	idc = -1;
+	shadow = 2;
+	sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect", 0.09, 1};
+	style = "0x400 + 0x02 +	0x10";
+	tooltipColorBox[] = {1, 1, 1, 1};
+	tooltipColorShade[] = {0, 0, 0, 0.65};
+	tooltipColorText[] = {1, 1, 1, 1};
+	type = 42;
+	w = 0.14706;
+	x = 0.1;
+	y = 0.1;
+};

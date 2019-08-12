@@ -1,0 +1,31 @@
+class ctrlStatic: ctrlDefaultText
+{
+	autoplay = 0;
+	colorBackground[] = {0, 0, 0, 0};
+	colorShadow[] = {0, 0, 0, 1};
+	colorText[] = {1, 1, 1, 1};
+	fixedWidth = 0;
+	lineSpacing = 1;
+	loops = 0;
+	moving = 0;
+	onCanDestroy = "";
+	onDestroy = "";
+	onKeyDown = "";
+	onKeyUp = "";
+	onKillFocus = "";
+	onMouseButtonClick = "";
+	onMouseButtonDblClick = "";
+	onMouseButtonDown = "";
+	onMouseButtonUp = "";
+	onMouseEnter = "";
+	onMouseExit = "";
+	onMouseHolding = "";
+	onMouseMoving = "";
+	onMouseZChanged = "";
+	onSetFocus = "";
+	onVideoStopped = "";
+	text = "";
+	tileH = 1;
+	tileW = 1;
+	type = 0;
+};

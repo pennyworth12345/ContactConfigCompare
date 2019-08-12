@@ -1,0 +1,31 @@
+class ctrlXListbox: ctrlDefaultText
+{
+	arrowEmpty = "\a3\3DEN\Data\Controls\CtrlXSlider\arrowEmpty_ca.paa";
+	arrowFull = "\a3\3DEN\Data\Controls\CtrlXSlider\arrowFull_ca.paa";
+	border = "\a3\3DEN\Data\Controls\CtrlXSlider\border_ca.paa";
+	color[] = {1, 1, 1, 1};
+	colorActive[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])", 1};
+	colorDisabled[] = {1, 1, 1, 0.25};
+	colorPicture[] = {1, 1, 1, 1};
+	colorSelect[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])", 1};
+	colorText[] = {1, 1, 1, 1};
+	cycle = 1;
+	onCanDestroy = "";
+	onDestroy = "";
+	onKeyDown = "";
+	onKeyUp = "";
+	onKillFocus = "";
+	onLBDblClick = "";
+	onLBSelChanged = "";
+	onMouseButtonClick = "";
+	onMouseButtonDblClick = "";
+	onMouseButtonDown = "";
+	onMouseButtonUp = "";
+	onMouseHolding = "";
+	onMouseMoving = "";
+	onMouseZChanged = "";
+	onSetFocus = "";
+	soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect", 0.09, 1};
+	style = "0x400 + 0x02 + 0x10";
+	type = 42;
+};

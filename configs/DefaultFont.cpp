@@ -1,0 +1,4 @@
+class DefaultFont
+{
+	font = "RobotoCondensed";
+};
