@@ -94,6 +94,99 @@ class CfgMods
 		};
 		class SinglePlayer {};
 	};
+	class Contact: Mod_Base
+	{
+		action = "https://www.arma3.com/dlc/contact";
+		appId = 1.02179e+006;
+		artwork = "\A3\Data_F_Contact\Logos\artwork.jpg";
+		author = "Bohemia Interactive";
+		contentBrowserPicture = "\a3\Data_F_Contact\Images\contact_contentBrowserPicture_co.paa";
+		dir = "Contact";
+		dlcColor[] = {0.188235, 0.388235, 0.556863, 1};
+		dronePrevNotifText = "This drone is part of the Contact expansion. Please purchase the expansion to control it.";
+		fieldManualTopicAndHint[] = {"PremiumContent", "PremiumContact"};
+		hideName = 1;
+		hidePicture = 0;
+		infoPages[] = {"\A3\Data_F_Enoch\Images\watermarkInfo_page01_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page02_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page03_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page04_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page05_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page06_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page07_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page08_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page09_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page10_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page11_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page12_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page13_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page14_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page15_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page16_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page17_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page18_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page19_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page20_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page21_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page22_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page23_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page24_ca", "\A3\Data_F_Enoch\Images\watermarkInfo_page25_ca"};
+		itemPrevNotifText = "This item is part of the Contact expansion. Please purchase the expansion to use it.";
+		logo = "\a3\Data_F_Contact\Logos\logo_ca.paa";
+		logoOver = "\a3\Data_F_Contact\Logos\logoOver_ca.paa";
+		logoSmall = "\a3\Data_F_Contact\Logos\logoSmall_ca.paa";
+		logoTitle = "\a3\Data_F_Contact\Logos\logoTitle_ca.paa";
+		name = "Arma 3 Contact";
+		nameShort = "Contact";
+		overview = "The Arma 3 Contact expansion is a military science fiction experience about humanity's first encounter with extraterrestrial intelligence on Earth. The alien motivations being unknown, you will use field science and combat reconnaissance to uncover their technologies and determine their intentions. Amid the tension and chaos, authentic armed conflict inevitably unfolds.";
+		overviewFootnote = "<br /><br /><t color='#999999'>This content is exclusive to the Arma 3 Contact expansion.<br />Press <t /><t color='#19d3ff'>Left Shift + P<t /><t color='#999999'> to open the store page for more information.<t />";
+		overviewPicture = "\A3\Data_F_Contact\Images\contact_overviewPicture_co.paa";
+		overviewText = "The Arma 3 Contact expansion is a military science fiction experience about humanity's first encounter with extraterrestrial intelligence on Earth. The alien motivations being unknown, you will use field science and combat reconnaissance to uncover their technologies and determine their intentions. Amid the tension and chaos, authentic armed conflict inevitably unfolds.";
+		picture = "\a3\Data_F_Contact\Logos\picture_ca.paa";
+		popupMsgPicture = "\A3\Data_F_Enoch\Images\enoch_popupImage_01_ca.paa";
+		popupMsgText = "You are using premium content. Please purchase the Contact expansion to remove these messages.";
+		terrainPrevMsgText = "The scenario takes place in Livonia, which is part of the non-owned Contact expansion. Please purchase it to be able to join.";
+		tooltip = "The Arma 3 Contact expansion is now available. Click to purchase.";
+		tooltipOwned = "Arma 3 Contact";
+		vehPrevMsgText = "This vehicle is part of the Contact expansion. Please purchase the expansion to enter as crew.";
+		vehPrevNotifText = "This vehicle is part of the Contact expansion. Please purchase the expansion to enter as crew.";
+		video = "\A3\Data_F_Contact\Video\preview_contact.ogv";
+		weaponPrevMsgText = "This weapon is part of the Contact expansion. Please purchase the expansion to use it.";
+		class Assets
+		{
+			class ETDrone
+			{
+				description = "Speculated to be the extraterrestrials' main surveyors of Earth, these car-sized entities utilize technology far beyond human understanding. Early sighting reports have mentioned orbiting functional modules, but much more research is needed before their true capabilities and purpose can be evaluated.";
+				displayName = "Small Alien Entity";
+				dlcType = "contact";
+				overviewPicture = "\a3\Data_F_Contact\Images\ETDrone_ca";
+			};
+			class ETMothership
+			{
+				description = "Very little is yet known about the extraterrestrial visitors, but their largest known vessel is hard to miss. Presumably employing a form of gravity control, it appears to have little trouble maintaining levitation, even given its size. Various theories exist concerning the ET means of interstellar transportation. It is, however, not confirmed whether these large entities travel by themselves, by means of a yet bigger vessel potentially in orbit of our planet, or by an entirely different method.";
+				displayName = "Large Alien Entity";
+				dlcType = "contact";
+				overviewPicture = "\a3\Data_F_Contact\Images\ETMothership_ca";
+			};
+			class ETProbe
+			{
+				description = "This mysterious underground network stretches for many kilometers. Its purpose and origins are completely unknown, but it would appear to be incredibly old. Still, it has gone unnoticed by humanity for the longest time.";
+				displayName = "Alien Network";
+				dlcType = "contact";
+				overviewPicture = "\a3\Data_F_Contact\Images\ETProbe_ca";
+			};
+			class SpectrumDevice
+			{
+				overviewPicture = "\a3\Data_F_Contact\Images\SpectrumDevice_ca";
+				reference[] = {"CfgWeapons", "hgun_esd_01_F"};
+				tryAsset[] = {0, {"B_W_Story_Instructor_01_F", {"", "", {"hgun_esd_01_F", "muzzle_antenna_03_f"}}}, ""};
+			};
+		};
+		class Features
+		{
+			class ElectronicWarfare
+			{
+				description = "Control the electromagnetic spectrum to locate, study, deceive, and ultimately defeat your enemies.<br /><br />Note: this feature is scripted and created for use in Contact's singleplayer campaign primarily.";
+				displayName = "Electronic Warfare";
+				dlcType = "contact";
+				overviewPicture = "\a3\Data_F_Contact\Images\ElectronicWarfare_ca";
+			};
+			class FieldScience
+			{
+				description = "Use various tools, such as a mini UGV sampling laser and CBRN (Chemical Biological Radiological Nuclear) defense equipment, to study strange alien anomalies.<br /><br />Note: these features as well as the extraterrestrial simulations are mostly scripted and created for use primarily in Contact's singleplayer campaign.";
+				displayName = "Field Science";
+				dlcType = "contact";
+				overviewPicture = "\a3\Data_F_Contact\Images\FieldScience_ca";
+			};
+		};
+		class Singleplayer
+		{
+			class Campaign
+			{
+				description = "You are a member of a NATO deployment to a remote region of Livonia, presented with a mysterious event that will change the face of human history forever.";
+				displayName = """First Contact""";
+				overviewPicture = "\a3\Data_F_Enoch\Images\Contact_ca";
+				reference[] = {"CfgMissions", "Campaigns", "Contact"};
+			};
+		};
+	};
 	class Curator: Mod_Base
 	{
 		action = "https://www.arma3.com/dlc/zeus";
@@ -487,6 +580,7 @@ class CfgMods
 				displayName = "SIMCOM Adapter (6.5 mm)";
 				overviewPicture = "\a3\Data_F_Enoch\Images\TrainingMuzzleAdapter_ca";
 				reference[] = {"CfgWeapons", "muzzle_tma_65"};
+				tryAsset[] = {0, {"B_W_Soldier_F", {{"arifle_MX_black_F", "muzzle_tma_65", "", "", "30Rnd_65x39_caseless_blank_mag"}, "nil", "nil"}}, ""};
 			};
 		};
 		class Multiplayer

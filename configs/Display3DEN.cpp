@@ -458,7 +458,7 @@ class Display3DEN
 			colorFocused[] = {0, 0, 0, 1};
 			h = "10 * (pixelH * pixelGrid * 	0.50) + pixelH";
 			idc = 1023;
-			onButtonClick = "if !(is3DENMultiplayer) then {do3DENAction 'MissionPreview';} else {do3DENAction 'MissionPreviewMP';};";
+			onButtonClick = "				uinamespace setvariable ['bin_3den_layers',(all3DENEntities # 6) apply {[(_x get3DENAttribute 'name') # 0,(_x get3DENAttribute 'visibility') # 0]}];				if !(is3DENMultiplayer) then {do3DENAction 'MissionPreview';} else {do3DENAction 'MissionPreviewMP';};			";
 			onLoad = "['ButtonPlay',_this select 0] call (uinamespace getvariable 'bis_fnc_3DENInterface');";
 			shadow = 0;
 			size = "2.88 * (1 / (getResolution select 3)) * pixelGrid * 0.5";

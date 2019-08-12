@@ -1,10 +1,10 @@
 class RscDisplayLoading
 {
 	idd = 102;
-	onLoad = "[""onLoad"",_this,""RscDisplayLoading"",'3DENDisplaysTemp'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
-	onUnload = "[""onUnload"",_this,""RscDisplayLoading"",'3DENDisplaysTemp'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+	onLoad = "[""onLoad"",_this,""RscDisplayLoading"",'ContactDisplaysTemp'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+	onUnload = "[""onUnload"",_this,""RscDisplayLoading"",'ContactDisplaysTemp'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
 	scriptName = "RscDisplayLoading";
-	scriptPath = "3DENDisplaysTemp";
+	scriptPath = "ContactDisplaysTemp";
 	class Variants
 	{
 		class Loading: RscDisplayLoadMission {};

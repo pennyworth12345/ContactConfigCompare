@@ -80,6 +80,16 @@ class CfgSoundShapes
 		outerVolume = 0.001;
 		type = "cone";
 	};
+	class Offroad_Pa_Front
+	{
+		azimuth = 0;
+		elevation = 0;
+		innerAngle = 120;
+		innerVolume = 1;
+		outerAngle = 225;
+		outerVolume = 0.501187;
+		type = "cone";
+	};
 	class RearSemispace10
 	{
 		azimuth = 180;

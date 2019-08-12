@@ -430,7 +430,7 @@ class Cfg3DEN
 		{
 			attributeLoad = "		comment 'DO NOT COPY THIS CODE TO YOUR ATTRIBUTE CONFIG UNLESS YOU ARE CHANGING SOMETHING IN THE CODE!';		_ctrlCombo = _this controlsGroupCtrl 100;		_cfgValues = _config >> 'Values';		if (isclass _cfgValues) then {			{				_lbadd = _ctrlCombo lbadd gettext (_x >> 'name');				if (isnumber (_x >> 'value')) then {					_valueConfig = getnumber (_x >> 'value');					_ctrlCombo lbsetdata [_lbadd,str _valueConfig];					_ctrlCombo lbsetvalue [_lbadd,_valueConfig];				} else {					_ctrlCombo lbsetdata [_lbadd,gettext (_x >> 'value')];				};				_ctrlCombo lbsetpicture [_lbadd,gettext (_x >> 'picture')];				_ctrlCombo lbsetpictureright [_lbadd,gettext (_x >> 'pictureRight')];				_ctrlCombo lbsettooltip [_lbadd,gettext (_x >> 'tooltip')];				if (getnumber (_x >> 'default') > 0) then {_ctrlCombo lbsetcursel _lbadd;};			} foreach configproperties [_cfgValues,'isclass _x'];		};		if (lbsize _ctrlCombo == 0) then {			{				_lbAdd = _ctrlCombo lbadd _x;				_ctrlCombo lbsetvalue [_lbAdd,1 - _foreachindex];				_ctrlCombo lbsetdata [_lbAdd,str (1 - _foreachindex)];			} foreach [localize 'str_enabled',localize 'str_disabled'];		};		if (_value isequaltype true) then {			_value = [0,1] select _value;		} else {			if (_value isequaltype '') then {_value = tolower _value;};		};		for '_i' from 0 to (lbsize _ctrlCombo - 1) do {			if (_value in [parsenumber (_ctrlCombo lbdata _i),tolower (_ctrlCombo lbdata _i),_ctrlCombo lbvalue _i]) exitwith {_ctrlCombo lbsetcursel _i;};		};	";
 			attributeSave = "		comment 'DO NOT COPY THIS CODE TO YOUR ATTRIBUTE CONFIG UNLESS YOU ARE CHANGING SOMETHING IN THE CODE!';		_ctrlCombo = _this controlsGroupCtrl 100;		switch toupper gettext (_config >> 'typeName') do {			case 'NUMBER': {				_returnData = parsenumber (_ctrlCombo lbdata lbcursel _ctrlCombo);				_returnValue = _ctrlCombo lbvalue lbcursel _ctrlCombo;				if (round _returnData != _returnValue) then {_returnData = _returnValue;};				_returnData			};			case 'BOOL': {				[false,true] select ((parsenumber (_ctrlCombo lbdata lbcursel _ctrlCombo)) max 0 min 1)			};			default {_ctrlCombo lbdata lbcursel _ctrlCombo};		};	";
-			class Controls
+			class Controls: Controls
 			{
 				class Title: Title {};
 				class Value: ctrlCombo
@@ -465,6 +465,30 @@ class Cfg3DEN
 					idc = 100;
 					w = "(	82 - 	5) * (pixelW * pixelGrid * 	0.50)";
 					x = "48 * (pixelW * pixelGrid * 	0.50)";
+				};
+			};
+		};
+		class ContactReinforcementsGroup: Combo
+		{
+			class Controls: Controls
+			{
+				class Title: Title {};
+				class Value: Value
+				{
+					class Items
+					{
+						class Any
+						{
+							data = "";
+							text = "Any";
+						};
+					};
+					class ItemsConfig
+					{
+						path[] = {"CfgGroups", "Indep", "IND_F", "Infantry"};
+						propertyPicture = "icon";
+						propertyText = "name";
+					};
 				};
 			};
 		};
@@ -2386,6 +2410,54 @@ class Cfg3DEN
 				};
 			};
 		};
+		class EMAntenna: Combo
+		{
+			class Controls: Controls
+			{
+				class Title: Title {};
+				class Value: Value
+				{
+					class Items
+					{
+						class None
+						{
+							default = 1;
+							text = "No music";
+						};
+					};
+					class ItemsConfig
+					{
+						path[] = {"CfgContact", "Antennas"};
+						propertyText = "displayName";
+						sort = 1;
+					};
+				};
+			};
+		};
+		class EMSignal: Combo
+		{
+			class Controls: Controls
+			{
+				class Title: Title {};
+				class Value: Value
+				{
+					class Items
+					{
+						class None
+						{
+							default = 1;
+							text = "No sound";
+						};
+					};
+					class ItemsConfig
+					{
+						path[] = {"CfgContact", "Signals"};
+						propertyText = "displayName";
+						sort = 1;
+					};
+				};
+			};
+		};
 		class EnableDebugConsole: Combo
 		{
 			class Controls: Controls
@@ -3724,6 +3796,34 @@ class Cfg3DEN
 				class Value: Value
 				{
 					onSliderPosChanged = "				comment 'DO NOT COPY THIS CODE TO YOUR ATTRIBUTE CONFIG UNLESS YOU ARE CHANGING SOMETHING IN THE CODE!';				_ctrlGroup = ctrlParentControlsGroup (_this select 0);				_value = sliderposition (_ctrlGroup controlsgroupctrl 100);				[_ctrlGroup,_value] call bis_fnc_3DENIntel;			";
+				};
+			};
+		};
+		class PatrolAnimsClasses: Combo
+		{
+			class Controls: Controls
+			{
+				class Title: Title {};
+				class Value: Value
+				{
+					class Items
+					{
+						class Default
+						{
+							data = "Default";
+							text = "Autodetect";
+						};
+						class None
+						{
+							data = "";
+							text = "None";
+						};
+					};
+					class ItemsConfig
+					{
+						path[] = {"CfgContact", "Patrol", "Animations"};
+						propertyText = "displayName";
+					};
 				};
 			};
 		};
@@ -5854,6 +5954,10 @@ class Cfg3DEN
 			onWidgetTranslation = "['WidgetToggle'] call bis_fnc_3DENToolbar;";
 			onWorkspacePartSwitch = "['MissionSection'] spawn bis_fnc_3DENToolbar;";
 		};
+		class Contact
+		{
+			onMissionPreview = "bin_missionPreview = _this;";
+		};
 		class KeyframeAnimation
 		{
 			init = "_this call BIS_fnc_3den_init;";
@@ -5885,6 +5989,202 @@ class Cfg3DEN
 		textSingular = "Composition";
 		class AttributeCategories
 		{
+			class Contact
+			{
+				displayName = "Contact";
+				class Attributes
+				{
+					class BIN_Company
+					{
+						control = "Combo";
+						defaultValue = "''";
+						displayName = "Company ID";
+						expression = "_this setVariable ['BIN_Company',_value,true];";
+						property = "BIN_Company";
+						class Values
+						{
+							class C_01
+							{
+								name = "C01";
+								value = "C01";
+							};
+							class C_02
+							{
+								name = "C02";
+								value = "C02";
+							};
+							class C_03
+							{
+								name = "C03";
+								value = "C03";
+							};
+							class C_04
+							{
+								name = "C04";
+								value = "C04";
+							};
+							class C_05
+							{
+								name = "C05";
+								value = "C05";
+							};
+							class C_06
+							{
+								name = "C06";
+								value = "C06";
+							};
+							class C_07
+							{
+								name = "C07";
+								value = "C07";
+							};
+							class C_08
+							{
+								name = "C08";
+								value = "C08";
+							};
+							class C_09
+							{
+								name = "C09";
+								value = "C09";
+							};
+							class C_10
+							{
+								name = "C10";
+								value = "C10";
+							};
+							class None
+							{
+								name = "None";
+								value = "";
+							};
+						};
+					};
+					class BIN_DeceptionMove
+					{
+						control = "Combo";
+						defaultValue = "1";
+						displayName = "Deception";
+						expression = "_this setVariable ['BIN_DeceptionMove',_value,true];";
+						property = "BIN_DeceptionMove";
+						tooltip = "Deception is an ability to issue orders to the squad (e.g. ""Move West"").";
+						typeName = "NUMBER";
+						class Values
+						{
+							class None
+							{
+								name = "Not possible";
+								tooltip = "Group cannot be deceived.";
+								value = 0;
+							};
+							class Permanent
+							{
+								name = "Permanent";
+								tooltip = "Group can be deceived and stays wherever player sends it.";
+								value = 2;
+							};
+							class Temporary
+							{
+								name = "Temporary";
+								tooltip = "Group can be deceived, but returns back to the first patrol point after some time.";
+								value = 1;
+							};
+						};
+					};
+					class BIN_EnableResponse
+					{
+						control = "Checkbox";
+						defaultValue = "true";
+						displayName = "Automatic Response";
+						expression = "_this setVariable ['BIN_EnableResponse',_value,true];";
+						property = "BIN_EnableResponse";
+						tooltip = "When disabled, squad will not reply to any received signals. Use only when you replace it by your own response system.";
+					};
+					class BIN_ReinforcementsCondition
+					{
+						control = "EditCodeMulti3";
+						defaultValue = """true""";
+						displayName = "Reinforcements Condition";
+						expression = "_this setVariable ['BIN_ReinforcementsCondition',compile _value,true];";
+						property = "BIN_ReinforcementsCondition";
+						tooltip = "When the group is no longer in ""SAFE"" mode, it will call for reinforcements only when this condition returns true.\nPassed variables are:\n _this # 0 - group\n _this # 1 - time since the group became alert";
+					};
+					class BIN_Seed
+					{
+						control = "Edit";
+						defaultValue = "_this call bin_fnc_getGroupSeed";
+						displayName = "Random Seed";
+						expression = "_this setVariable ['BIN_Seed',_value,true];";
+						property = "BIN_Seed";
+						tooltip = "Influences randomized patrol paths.";
+						validate = "NUMBER";
+					};
+					class BIN_Squad
+					{
+						control = "Combo";
+						defaultValue = "''";
+						displayName = "Squad ID";
+						expression = "_this setVariable ['BIN_Squad',_value,true];";
+						property = "BIN_Squad";
+						class Values
+						{
+							class A
+							{
+								name = "Alpha";
+								value = "A";
+							};
+							class Auto
+							{
+								name = "Autodetect";
+								value = "";
+							};
+							class B
+							{
+								name = "Bravo";
+								value = "B";
+							};
+							class C
+							{
+								name = "Charlie";
+								value = "C";
+							};
+							class D
+							{
+								name = "Delta";
+								value = "D";
+							};
+							class E
+							{
+								name = "Echo";
+								value = "E";
+							};
+							class F
+							{
+								name = "Foxtrot";
+								value = "F";
+							};
+							class G
+							{
+								name = "Golf";
+								value = "G";
+							};
+							class H
+							{
+								name = "Hotel";
+								value = "H";
+							};
+						};
+					};
+					class BIN_SquadPing
+					{
+						control = "Checkbox";
+						defaultValue = "true";
+						displayName = "Ping";
+						expression = "_this setVariable ['BIN_SquadPing',_value,true];";
+						property = "BIN_SquadPing";
+					};
+				};
+			};
 			class Init
 			{
 				displayName = "Init";
@@ -6195,6 +6495,15 @@ class Cfg3DEN
 				displayName = "Init";
 				class Attributes
 				{
+					class ContactCondition
+					{
+						control = "EditCodeMulti3";
+						defaultValue = """true""";
+						displayName = "Condition";
+						property = "ContactCondition";
+						tooltip = "Condition for layer entities to be spawned when a whole site is spawned.";
+						validate = "condition";
+					};
 					class Name
 					{
 						control = "Edit";
@@ -6326,7 +6635,7 @@ class Cfg3DEN
 					};
 					class PresenceCondition
 					{
-						control = "EditCode";
+						control = "EditCodeMulti3";
 						data = "presenceCondition";
 						displayName = "Condition of Presence";
 						tooltip = "Condition of presence evaluated at the scenario start, must return boolean expression. When false, the object is not created at all.";
@@ -8180,7 +8489,7 @@ class Cfg3DEN
 					};
 					class PresenceCondition
 					{
-						control = "EditCode";
+						control = "EditCodeMulti3";
 						data = "presenceCondition";
 						displayName = "Condition of Presence";
 						tooltip = "Condition of presence evaluated at the scenario start, must return boolean expression. When false, the object is not created at all.";

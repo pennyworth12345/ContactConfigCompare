@@ -8,6 +8,10 @@ class CfgEditorCategories
 	{
 		displayName = "Other";
 	};
+	class EdCat_Effects
+	{
+		displayName = "Effects";
+	};
 	class EdCat_Environment
 	{
 		displayName = "Environment";

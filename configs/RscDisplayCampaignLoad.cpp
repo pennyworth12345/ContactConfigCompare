@@ -5,11 +5,11 @@ class RscDisplayCampaignLoad: RscStandardDisplay
 	idd = 43;
 	none = "a3\ui_f\data\gui\rsc\rscdisplaysinglemission\none_ca.paa";
 	notOwned = "A3\ui_f\data\GUI\Rsc\RscDisplaySingleMission\mission_notOwned_ca.paa";
-	onLoad = "[""onLoad"",_this,""RscDisplayCampaignLoad"",'GUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
-	onUnload = "[""onUnload"",_this,""RscDisplayCampaignLoad"",'GUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+	onLoad = "[""onLoad"",_this,""RscDisplayCampaignLoad"",'ContactDisplaysTemp'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+	onUnload = "[""onUnload"",_this,""RscDisplayCampaignLoad"",'ContactDisplaysTemp'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
 	played = "a3\ui_f\data\gui\rsc\rscdisplaysinglemission\played_ca.paa";
 	scriptName = "RscDisplayCampaignLoad";
-	scriptPath = "GUI";
+	scriptPath = "ContactDisplaysTemp";
 	class controls
 	{
 		class Author: RscText
@@ -19,6 +19,7 @@ class RscDisplayCampaignLoad: RscStandardDisplay
 			h = "0.8 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 105;
 			shadow = 0;
+			show = 0;
 			sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 			w = "22 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			x = "17 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
@@ -29,6 +30,7 @@ class RscDisplayCampaignLoad: RscStandardDisplay
 			h = "1.2 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 104;
 			shadow = 0;
+			show = 0;
 			sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)";
 			w = "22 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			x = "17 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
@@ -44,7 +46,7 @@ class RscDisplayCampaignLoad: RscStandardDisplay
 			tooltip = "Purchase the premium content package to play.";
 			w = "6.25 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			x = "32.75 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
-			y = "23 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 					(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
+			y = "23 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 		};
 		class ButtonCancel: RscButtonMenuCancel
 		{
@@ -54,16 +56,17 @@ class RscDisplayCampaignLoad: RscStandardDisplay
 			text = "Back";
 			w = "6.25 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			x = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
-			y = "23 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 					(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
+			y = "23 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 		};
 		class ButtonGameOptions: RscButtonMenu
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 307;
+			show = 0;
 			text = "Game Options";
 			w = "6.25 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			x = "7.4 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
-			y = "23 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 					(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
+			y = "23 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 		};
 		class ButtonMPCampaign: ButtonOK
 		{
@@ -82,7 +85,7 @@ class RscDisplayCampaignLoad: RscStandardDisplay
 			text = "Continue";
 			w = "6.25 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			x = "32.75 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
-			y = "23 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 					(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
+			y = "23 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 		};
 		class ButtonRevert: RscButtonMenu
 		{
@@ -92,7 +95,15 @@ class RscDisplayCampaignLoad: RscStandardDisplay
 			text = "Revert";
 			w = "6.25 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			x = "26.4 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
-			y = "23 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 					(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
+			y = "23 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
+		};
+		class MissionArea: RscControlsGroup
+		{
+			h = "20.8 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+			idc = 3001;
+			w = "38 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
+			x = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
+			y = "2.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 		};
 		class MissionsTree: RscTree
 		{
@@ -101,14 +112,16 @@ class RscDisplayCampaignLoad: RscStandardDisplay
 			h = "SafezoneH - (5.2 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
 			idc = 101;
 			idcSearch = 645;
-			w = "15.9 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
+			show = 1;
+			w = 0.2;
+			x = "safezoneX";
 			y = "SafezoneY + (3.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
 		};
 		class OverviewControlsGroup: RscControlsGroup
 		{
 			h = "SafezoneH - (18.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
 			idc = 2301;
+			show = 0;
 			w = "22 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			x = "17 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
 			y = "SafezoneY + (15.2 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
@@ -149,6 +162,7 @@ class RscDisplayCampaignLoad: RscStandardDisplay
 		{
 			h = "11 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 2300;
+			show = 0;
 			w = "22 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			x = "17 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
 			y = "SafezoneY + (4.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
@@ -201,11 +215,12 @@ class RscDisplayCampaignLoad: RscStandardDisplay
 				width = 0;
 			};
 		};
-		class PlayersName: Title
+		class PlayersName: RscText
 		{
 			colorBackground[] = {0, 0, 0, 0};
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 8434;
+			show = 0;
 			style = 1;
 			w = "22 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			x = "17 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
@@ -215,6 +230,7 @@ class RscDisplayCampaignLoad: RscStandardDisplay
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 645;
+			show = 0;
 			w = "14.9 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			x = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
 			y = "SafezoneY + (2.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
@@ -224,6 +240,7 @@ class RscDisplayCampaignLoad: RscStandardDisplay
 			colorBackground[] = {0, 0, 0, 0.7};
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 1005;
+			show = 0;
 			w = "15.9 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			x = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
 			y = "SafezoneY + (2.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
@@ -232,6 +249,7 @@ class RscDisplayCampaignLoad: RscStandardDisplay
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 646;
+			show = 0;
 			w = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			x = "15.9 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
 			y = "SafezoneY + (2.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
@@ -245,45 +263,28 @@ class RscDisplayCampaignLoad: RscStandardDisplay
 			text = "Campaigns";
 			w = "15.9 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			x = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
-			y = "SafezoneY + (1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
+			y = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 		};
 		class ValueDifficulty: RscStructuredText
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 103;
+			show = 0;
 			w = "22 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			x = "17 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
-			y = "21.9 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 					(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
+			y = "23 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 		};
 	};
 	class controlsBackground
 	{
-		class NameAndAuthorBackground: RscText
-		{
-			colorBackground[] = {0, 0, 0, 0.7};
-			h = "2 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			idc = 1082;
-			w = "22 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "17 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
-			y = "SafezoneY + (2.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
-		};
-		class OverviewTextBackground: RscText
-		{
-			colorBackground[] = {0, 0, 0, 0.7};
-			h = "7.7 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (1 * (safezoneH - 				(			((safezoneW / safezoneH) min 1.2) / 1.2)))";
-			idc = 1083;
-			w = "22 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "17 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
-			y = "SafezoneY + (15.2 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
-		};
 		class PictureBackground: RscText
 		{
 			colorBackground[] = {0, 0, 0, 0.7};
-			h = "13 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+			h = "20.8 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 1081;
-			w = "22 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "17 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
-			y = "SafezoneY + (2.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
+			w = "38 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
+			x = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
+			y = "2.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 		};
 		class TileGroup: RscControlsGroupNoScrollbars
 		{
@@ -311,8 +312,8 @@ class RscDisplayCampaignLoad: RscStandardDisplay
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 1080;
 			w = "38 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 				(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
-			y = "SafezoneY + (1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
+			x = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
+			y = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 		};
 		class Vignette: RscVignette
 		{

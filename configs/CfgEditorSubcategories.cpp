@@ -124,6 +124,14 @@ class CfgEditorSubcategories
 	{
 		displayName = "Explosives";
 	};
+	class EdSubcat_Exterrestrial
+	{
+		displayName = "Extraterrestrial";
+	};
+	class EdSubcat_Fire
+	{
+		displayName = "Fire";
+	};
 	class EdSubcat_Flags
 	{
 		displayName = "Flags";

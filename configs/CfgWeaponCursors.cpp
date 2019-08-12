@@ -112,6 +112,10 @@ class CfgWeaponCursors
 		texture = "#(argb,8,8,3)color(0,0,0,0)";
 		class Sections {};
 	};
+	class Esd: default
+	{
+		texture = "\a3\UI_F_Contact\Data\CfgWeaponCursors\esd_ca.paa";
+	};
 	class gl: default
 	{
 		texture = "\A3\ui_f\data\igui\cfg\weaponcursors\gl_gs.paa";

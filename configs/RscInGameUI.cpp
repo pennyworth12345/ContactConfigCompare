@@ -3658,6 +3658,233 @@ class RscInGameUI
 		controls[] = {"CA_Zeroing"};
 		idd = 300;
 	};
+	class RscOptics_PrototypeCannon_01: RscUnitInfo
+	{
+		controls[] = {"CA_Zeroing", "CA_IGUI_elements_group", "CA_APC_WFOV_mode_group", "CA_APC_NFOV_mode_group"};
+		idd = 300;
+		onLoad = "['onLoad',_this,'RscUnitInfo','IGUI'] call (uinamespace getvariable 'BIS_fnc_initDisplay');_this call BIN_fnc_PrototypeCannon_01_player";
+		class CA_APC_NFOV_mode_group: RscControlsGroupNoScrollbars
+		{
+			h = "40 * 		(0.025 * SafezoneH)";
+			idc = 162;
+			w = "61.5 * 		(0.01875 * SafezoneH)";
+			x = "-4 * 		(0.01875 * SafezoneH) + 			(safezoneX)";
+			y = "0 * 		(0.025 * SafezoneH) + 		(SafezoneY)";
+			class controls
+			{
+				class CA_FOVModeNFOV: RscText
+				{
+					colorBackground[] = {0, 0, 0, 1};
+					font = "EtelkaMonospacePro";
+					h = "1 * 		(0.025 * SafezoneH)";
+					idc = 1007;
+					shadow = 0;
+					sizeEx = "0.028*SafezoneH";
+					text = "NFOV";
+					w = "4.5 * 		(0.01875 * SafezoneH)";
+					x = "5.4 * 		(0.01875 * SafezoneH)";
+					y = "21.95 * 		(0.025 * SafezoneH)";
+				};
+			};
+		};
+		class CA_APC_WFOV_mode_group: RscControlsGroupNoScrollbars
+		{
+			h = "40 * 		(0.025 * SafezoneH)";
+			idc = 163;
+			w = "61.5 * 		(0.01875 * SafezoneH)";
+			x = "-4 * 		(0.01875 * SafezoneH) + 			(safezoneX)";
+			y = "0 * 		(0.025 * SafezoneH) + 		(SafezoneY)";
+			class controls
+			{
+				class CA_FOVModeWFOV: RscText
+				{
+					colorBackground[] = {0, 0, 0, 1};
+					font = "EtelkaMonospacePro";
+					h = "1 * 		(0.025 * SafezoneH)";
+					idc = 1002;
+					shadow = 0;
+					sizeEx = "0.028*SafezoneH";
+					text = "WFOV";
+					w = "4.5 * 		(0.01875 * SafezoneH)";
+					x = "5.4 * 		(0.01875 * SafezoneH)";
+					y = "21.95 * 		(0.025 * SafezoneH)";
+				};
+			};
+		};
+		class CA_IGUI_elements_group: RscControlsGroup
+		{
+			h = "40 * 		(0.025 * SafezoneH)";
+			idc = 170;
+			w = "61.5 * 		(0.01875 * SafezoneH)";
+			x = "-4 * 		(0.01875 * SafezoneH) + 			(safezoneX)";
+			y = "0 * 		(0.025 * SafezoneH) + 		(SafezoneY)";
+			class controls
+			{
+				class CA_Distance: RscText
+				{
+					font = "EtelkaMonospacePro";
+					h = "2 * 		(0.025 * SafezoneH)";
+					idc = 198;
+					shadow = 0;
+					sizeEx = "0.040*SafezoneH";
+					style = 0;
+					text = "2456";
+					w = "5 * 		(0.01875 * SafezoneH)";
+					x = "24.15 * 		(0.01875 * SafezoneH)";
+					y = "28.5 * 		(0.025 * SafezoneH)";
+				};
+				class CA_Heading: RscText
+				{
+					font = "EtelkaMonospacePro";
+					h = "1 * 		(0.025 * SafezoneH)";
+					idc = 156;
+					shadow = 0;
+					sizeEx = "0.038*SafezoneH";
+					style = 2;
+					text = "015";
+					w = "3 * 		(0.01875 * SafezoneH)";
+					x = "25.15 * 		(0.01875 * SafezoneH)";
+					y = "11 * 		(0.025 * SafezoneH)";
+				};
+				class CA_OpticsPitch: RscText
+				{
+					colorBackground[] = {0, 0, 0, 1};
+					font = "EtelkaMonospacePro";
+					h = "1 * 		(0.025 * SafezoneH)";
+					idc = 182;
+					shadow = 0;
+					sizeEx = "0.028*SafezoneH";
+					style = 0;
+					text = "36";
+					w = "4 * 		(0.01875 * SafezoneH)";
+					x = "10.1 * 		(0.01875 * SafezoneH)";
+					y = "20 * 		(0.025 * SafezoneH)";
+				};
+				class FireSolutionValid: RscPicture
+				{
+					h = "0.6 * 		(0.025 * SafezoneH)";
+					idc = 200;
+					text = "\A3\Ui_f\data\IGUI\RscIngameUI\RscOptics\square.paa";
+					w = "0.6 * 		(0.01875 * SafezoneH)";
+					x = "24.25 * 		(0.01875 * SafezoneH)";
+					y = "28.5 * 		(0.025 * SafezoneH)";
+				};
+				class TextACQ: RscText
+				{
+					colorBackground[] = {0, 0, 0, 1};
+					font = "EtelkaMonospacePro";
+					h = "1 * 		(0.025 * SafezoneH)";
+					idc = 1012;
+					shadow = 0;
+					sizeEx = "0.028*SafezoneH";
+					text = "ACQ:CENT-Au";
+					w = "7.5 * 		(0.01875 * SafezoneH)";
+					x = "5.4 * 		(0.01875 * SafezoneH)";
+					y = "30 * 		(0.025 * SafezoneH)";
+				};
+				class TextCENT: RscText
+				{
+					colorBackground[] = {0, 0, 0, 1};
+					font = "EtelkaMonospacePro";
+					h = "1 * 		(0.025 * SafezoneH)";
+					idc = 1014;
+					shadow = 0;
+					sizeEx = "0.028*SafezoneH";
+					text = "CENT-Wt";
+					w = "5 * 		(0.01875 * SafezoneH)";
+					x = "15.5 * 		(0.01875 * SafezoneH)";
+					y = "30 * 		(0.025 * SafezoneH)";
+				};
+				class TextColonDist: RscText
+				{
+					colorBackground[] = {0, 0, 0, 1};
+					font = "EtelkaMonospacePro";
+					h = "1 * 		(0.025 * SafezoneH)";
+					idc = 1008;
+					shadow = 0;
+					sizeEx = "0.028*SafezoneH";
+					text = ":";
+					w = "1 * 		(0.01875 * SafezoneH)";
+					x = "9.3 * 		(0.01875 * SafezoneH)";
+					y = "19 * 		(0.025 * SafezoneH)";
+				};
+				class TextColonEL: RscText
+				{
+					colorBackground[] = {0, 0, 0, 1};
+					font = "EtelkaMonospacePro";
+					h = "1 * 		(0.025 * SafezoneH)";
+					idc = 1009;
+					shadow = 0;
+					sizeEx = "0.028*SafezoneH";
+					text = ":";
+					w = "1 * 		(0.01875 * SafezoneH)";
+					x = "9.3 * 		(0.01875 * SafezoneH)";
+					y = "20 * 		(0.025 * SafezoneH)";
+				};
+				class TextCST: RscText
+				{
+					colorBackground[] = {1, 1, 1, 1};
+					colorText[] = {0, 0, 0, 1};
+					font = "EtelkaMonospacePro";
+					h = "1 * 		(0.025 * SafezoneH)";
+					idc = 1013;
+					shadow = 0;
+					sizeEx = "0.028*SafezoneH";
+					text = "CST:";
+					w = "2.8 * 		(0.01875 * SafezoneH)";
+					x = "12.9 * 		(0.01875 * SafezoneH)";
+					y = "30 * 		(0.025 * SafezoneH)";
+				};
+				class TextDist: RscText
+				{
+					colorBackground[] = {0, 0, 0, 1};
+					font = "EtelkaMonospacePro";
+					h = "1 * 		(0.025 * SafezoneH)";
+					idc = 1003;
+					shadow = 0;
+					sizeEx = "0.028*SafezoneH";
+					text = "DIST";
+					w = "5 * 		(0.01875 * SafezoneH)";
+					x = "5.4 * 		(0.01875 * SafezoneH)";
+					y = "19 * 		(0.025 * SafezoneH)";
+				};
+				class TextEL: RscText
+				{
+					colorBackground[] = {0, 0, 0, 1};
+					font = "EtelkaMonospacePro";
+					h = "1 * 		(0.025 * SafezoneH)";
+					idc = 1010;
+					shadow = 0;
+					sizeEx = "0.028*SafezoneH";
+					text = "EL";
+					w = "5 * 		(0.01875 * SafezoneH)";
+					x = "5.4 * 		(0.01875 * SafezoneH)";
+					y = "20 * 		(0.025 * SafezoneH)";
+				};
+				class TextRadar: RscText
+				{
+					colorBackground[] = {0, 0, 0, 1};
+					font = "EtelkaMonospacePro";
+					h = "1 * 		(0.025 * SafezoneH)";
+					idc = 1011;
+					shadow = 0;
+					sizeEx = "0.028*SafezoneH";
+					text = "RADAR";
+					w = "4.5 * 		(0.01875 * SafezoneH)";
+					x = "5.4 * 		(0.01875 * SafezoneH)";
+					y = "20.98 * 		(0.025 * SafezoneH)";
+				};
+			};
+			class HScrollbar: HScrollbar
+			{
+				height = 0;
+			};
+			class VScrollbar: VScrollbar
+			{
+				width = 0;
+			};
+		};
+	};
 	class RscOptics_punisher
 	{
 		controls[] = {"CA_IGUI_elements_group"};
@@ -8136,13 +8363,13 @@ class RscInGameUI
 	};
 	class RscUnitInfo
 	{
-		controls[] = {"WeaponInfoControlsGroupRight", "CA_BackgroundVehicle", "CA_BackgroundVehicleTitle", "CA_BackgroundVehicleTitleDark", "CA_BackgroundFuel", "CA_Vehicle", "CA_VehicleRole", "CA_HitZones", "CA_VehicleTogglesBackground", "CA_VehicleToggles", "CA_SpeedBackground", "CA_SpeedUnits", "CA_Speed", "CA_ValueFuel"};
+		controls[] = {"WeaponInfoControlsGroupLeft"};
 		idd = 300;
 		movingEnable = 0;
-		onLoad = "[""onLoad"",_this,""RscUnitInfo"",'IGUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
-		onUnload = "[""onUnload"",_this,""RscUnitInfo"",'IGUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		onLoad = "[""onLoad"",_this,""RscUnitInfo"",'ContactIngameUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		onUnload = "[""onUnload"",_this,""RscUnitInfo"",'ContactIngameUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
 		scriptName = "RscUnitInfo";
-		scriptPath = "IGUI";
+		scriptPath = "ContactIngameUI";
 		updateHeightByCrew = 0;
 		updateWidthByCrew = 0;
 		updateWidthByWeapon = 0;
@@ -8972,17 +9199,17 @@ class RscInGameUI
 			y = 0.296;
 		};
 	};
-	class RscUnitInfoAir: RscUnitInfoAirNoWeapon
+	class RscUnitInfoAir: RscUnitInfo
 	{
-		controls[] = {"CA_BackgroundVehicle", "CA_BackgroundVehicleTitle", "CA_BackgroundVehicleTitleDark", "CA_BackgroundFuel", "CA_Vehicle", "CA_VehicleRole", "CA_HitZones", "CA_VehicleTogglesBackground", "CA_VehicleToggles", "CA_SpeedBackground", "CA_SpeedUnits", "CA_Speed", "CA_ValueFuel", "CA_AltBackground", "CA_AltUnits", "CA_Alt", "WeaponInfoControlsGroupRight"};
+		controls[] = {};
 	};
 	class RscUnitInfoAirNoWeapon: RscUnitInfo
 	{
-		controls[] = {"CA_BackgroundVehicle", "CA_BackgroundVehicleTitle", "CA_BackgroundVehicleTitleDark", "CA_BackgroundFuel", "CA_Vehicle", "CA_VehicleRole", "CA_HitZones", "CA_VehicleTogglesBackground", "CA_VehicleToggles", "CA_SpeedBackground", "CA_SpeedUnits", "CA_Speed", "CA_ValueFuel", "CA_AltBackground", "CA_AltUnits", "CA_Alt"};
+		controls[] = {};
 	};
-	class RscUnitInfoAirPlane: RscUnitInfoAirPlaneNoWeapon
+	class RscUnitInfoAirPlane: RscUnitInfo
 	{
-		controls[] = {"CA_BackgroundVehicle", "CA_BackgroundVehicleTitle", "CA_BackgroundVehicleTitleDark", "CA_BackgroundFuel", "CA_Vehicle", "CA_VehicleRole", "CA_HitZones", "CA_VehicleTogglesBackground", "CA_VehicleToggles", "CA_SpeedBackground", "CA_SpeedUnits", "CA_Speed", "CA_ValueFuel", "CA_AltBackground", "CA_AltUnits", "CA_Alt", "WeaponInfoControlsGroupRight", "CA_Throttle"};
+		controls[] = {};
 	};
 	class RscUnitInfoAirPlaneNoWeapon: RscUnitInfoAirNoWeapon
 	{
@@ -10279,7 +10506,7 @@ class RscInGameUI
 	};
 	class RscUnitInfoMortar: RscUnitInfo
 	{
-		controls[] = {"WeaponInfoControlsGroupRight", "CA_Zeroing", "CA_Mode"};
+		controls[] = {"WeaponInfoControlsGroupLeft"};
 		idd = 300;
 		updateHeightByCrew = 0;
 		updateWidthByCrew = 0;
@@ -10469,7 +10696,7 @@ class RscInGameUI
 	};
 	class RscUnitInfoNoWeapon: RscUnitInfo
 	{
-		controls[] = {"CA_BackgroundVehicle", "CA_BackgroundVehicleTitle", "CA_BackgroundVehicleTitleDark", "CA_BackgroundFuel", "CA_Vehicle", "CA_VehicleRole", "CA_HitZones", "CA_VehicleTogglesBackground", "CA_VehicleToggles", "CA_SpeedBackground", "CA_SpeedUnits", "CA_Speed", "CA_ValueFuel"};
+		controls[] = {};
 		idd = 300;
 		class CA_HitZones: CA_HitZones
 		{
@@ -10478,7 +10705,7 @@ class RscInGameUI
 	};
 	class RscUnitInfoParachute: RscUnitInfo
 	{
-		controls[] = {"CA_BackgroundVehicle", "CA_BackgroundVehicleTitle", "CA_BackgroundVehicleTitleDark", "CA_BackgroundFuel", "CA_Vehicle", "CA_VehicleRole", "CA_HitZones", "CA_VehicleTogglesBackground", "CA_VehicleToggles", "CA_SpeedBackground", "CA_SpeedUnits", "CA_Speed", "CA_ValueFuel", "CA_AltBackground", "CA_AltUnits", "CA_Alt"};
+		controls[] = {};
 		idd = 300;
 		updateHeightByCrew = 0;
 		updateWidthByCrew = 0;
@@ -10486,7 +10713,7 @@ class RscInGameUI
 	};
 	class RscUnitInfoShip: RscUnitInfo
 	{
-		controls[] = {"WeaponInfoControlsGroupRight", "CA_Zeroing", "CA_BackgroundVehicle", "CA_BackgroundVehicleTitle", "CA_BackgroundVehicleTitleDark", "CA_BackgroundFuel", "CA_Vehicle", "CA_VehicleRole", "CA_HitZones", "CA_VehicleTogglesBackground", "CA_VehicleToggles", "CA_SpeedBackground", "CA_SpeedUnits", "CA_Speed", "CA_ValueFuel"};
+		controls[] = {};
 		idd = 300;
 		updateHeightByCrew = 0;
 		updateWidthByCrew = 0;
@@ -10494,7 +10721,7 @@ class RscInGameUI
 	};
 	class RscUnitInfoSoldier: RscUnitInfo
 	{
-		controls[] = {"WeaponInfoControlsGroupLeft", "CA_Speed_Freefall", "CA_Alt_Freefall"};
+		controls[] = {"WeaponInfoControlsGroupLeft"};
 		idd = 300;
 		movingEnable = 0;
 		class Ammo: RscIGText
@@ -10605,7 +10832,7 @@ class RscInGameUI
 	};
 	class RscUnitInfoStatic: RscUnitInfo
 	{
-		controls[] = {"WeaponInfoControlsGroupRight", "CA_Zeroing"};
+		controls[] = {"WeaponInfoControlsGroupLeft"};
 		idd = 300;
 	};
 	class RscUnitInfoStaticNoWeapon: RscUnitInfo
@@ -10615,7 +10842,7 @@ class RscInGameUI
 	};
 	class RscUnitInfoSubmarine: RscUnitInfo
 	{
-		controls[] = {"WeaponInfoControlsGroupRight", "CA_BackgroundVehicle", "CA_BackgroundVehicleTitle", "CA_BackgroundVehicleTitleDark", "CA_BackgroundFuel", "CA_Vehicle", "CA_VehicleRole", "CA_HitZones", "CA_VehicleTogglesBackground", "CA_VehicleToggles", "CA_SpeedBackground", "CA_SpeedUnits", "CA_Speed", "CA_ValueFuel", "CA_AltBackground", "CA_AltUnits", "CA_Depth"};
+		controls[] = {};
 		idd = 300;
 		updateHeightByCrew = 0;
 		updateWidthByCrew = 0;
@@ -10623,7 +10850,7 @@ class RscInGameUI
 	};
 	class RscUnitInfoTank: RscUnitInfo
 	{
-		controls[] = {"WeaponInfoControlsGroupRight", "CA_Zeroing", "CA_BackgroundVehicle", "CA_BackgroundVehicleTitle", "CA_BackgroundVehicleTitleDark", "CA_BackgroundFuel", "CA_Vehicle", "CA_VehicleRole", "CA_HitZones", "CA_VehicleTogglesBackground", "CA_VehicleToggles", "CA_SpeedBackground", "CA_SpeedUnits", "CA_Speed", "CA_ValueFuel"};
+		controls[] = {"WeaponInfoControlsGroupLeft"};
 		idd = 300;
 		movingEnable = 0;
 		updateHeightByCrew = 0;
@@ -11532,6 +11759,1460 @@ class RscInGameUI
 			w = 1;
 			x = 0;
 			y = "(SafezoneY+SafezoneH) - 0.05";
+		};
+	};
+	class RscWeaponSpectrumAnalyzer
+	{
+		idd = 300;
+		onLoad = "[""onLoad"",_this,""RscWeaponSpectrumAnalyzer"",'ContactIngameUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		onUnload = "[""onUnload"",_this,""RscWeaponSpectrumAnalyzer"",'ContactIngameUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		scriptName = "RscWeaponSpectrumAnalyzer";
+		scriptPath = "ContactIngameUI";
+		class Controls
+		{
+			class Crosshair: RscPicture
+			{
+				colorText[] = {"(profilenamespace getvariable ['IGUI_TEXT_RGB_R',0])", "(profilenamespace getvariable ['IGUI_TEXT_RGB_G',1])", "(profilenamespace getvariable ['IGUI_TEXT_RGB_B',1])", "(profilenamespace getvariable ['IGUI_TEXT_RGB_A',0.8])"};
+				h = "((getResolution select 1) * 0.0745) * pixelH";
+				idc = 1996;
+				show = 0;
+				text = "\a3\UI_F_Contact\Data\CfgWeaponCursors\esd_ca.paa";
+				w = "((getResolution select 1) * 0.0745) * pixelW";
+				x = "0.5 - ((getResolution select 1) * 0.0745) / 2 * pixelW";
+				y = "0.5 - ((getResolution select 1) * 0.0745) / 2 * pixelH";
+			};
+			class Map: RscMapControlEmpty
+			{
+				h = 0;
+				onDraw = "['onDraw',_this,''] call (uinamespace getvariable 'RscWeaponSpectrumAnalyzer_script');";
+				scaleMax = 0.001;
+				scaleMin = 0.001;
+				w = 0;
+			};
+		};
+		class Objects
+		{
+			class Model: RscObject
+			{
+				direction[] = {0, 1, 0.1};
+				enableZoom = 0;
+				idc = 11;
+				inBack = 0;
+				minGlobalLightIntensity = -10;
+				model = "\a3\UI_F_Contact\Data\Objects\analyzer.p3d";
+				position[] = {0, -0.04, 0.2};
+				positionBack[] = {0, 0, 0.2};
+				scale = 0.7;
+				type = 82;
+				up[] = {0, 1, 0};
+				useGlobalLight = 1;
+				zoomDuration = 0;
+			};
+			class Screen: RscObject
+			{
+				direction[] = {0, 1, 0.1};
+				enableZoom = 0;
+				idc = 10;
+				inBack = 0;
+				model = "\a3\UI_F_Contact\Data\Objects\analyzer_screen.p3d";
+				position[] = {0, -0.04, 0.2};
+				positionBack[] = {0, 0, 0.2};
+				scale = 0.7;
+				type = 82;
+				up[] = {0, 1, 0};
+				useGlobalLight = 0;
+				zoomDuration = 0;
+				class Areas
+				{
+					class Usertexture
+					{
+						selection = "display";
+						class Controls
+						{
+							class BackgroundImage: RscPicture
+							{
+								h = "4/3";
+								text = "\a3\UI_F_Contact\Data\RscIngameUI\RscWeaponSpectrumAnalyzer\screen_background_co.paa";
+								w = 1;
+								x = 0;
+								y = 0;
+							};
+							class Compass: RscHorizontalCompass
+							{
+								h = "(0.064 * 	1.05)";
+								idc = 5700;
+								w = "(0.466 * 	1)";
+								x = "(0.266 * 	1 + 	0)";
+								y = "(0.044 * 	1.05 + 	0)";
+								class Controls: Controls
+								{
+									class Compass: Compass {};
+									class Map: RscText {};
+								};
+							};
+							class EMP: BackgroundImage
+							{
+								idc = 1995;
+								show = 0;
+								text = "\a3\UI_F_Contact\Data\RscIngameUI\RscWeaponSpectrumAnalyzer\screen_emp_co.paa";
+							};
+							class LabelSelected: RscControlsGroupNoScrollbars
+							{
+								h = "(	0.05 * 2)";
+								w = "(0.833 * 	1)";
+								x = "(0.083 * 	1 + 	0)";
+								y = "(0.200 * 	1.05 + 	0) + 			(0.704 * 	1.05)";
+								class Controls
+								{
+									class SelectedText: RscText
+									{
+										colorText[] = {0.25, 0.5, 1, 1};
+										h = "(	0.05 * 2)";
+										idc = 4001;
+										shadow = 0;
+										sizeEx = "0.05 * 1.75";
+										style = 2;
+										w = "0.07 * 4.0";
+										x = 0;
+										y = 0;
+									};
+								};
+							};
+							class LabelsH: RscControlsGroupNoScrollbars
+							{
+								h = 1;
+								idc = 5650;
+								w = "(0.833 * 	1)";
+								x = "(0.083 * 	1 + 	0)";
+								y = "(0.200 * 	1.05 + 	0) + 			(0.704 * 	1.05)";
+								class Controls
+								{
+									class Label_H00: RscText
+									{
+										colorText[] = {0.807843, 0.917647, 0.980392, 1};
+										font = "RobotoCondensed";
+										h = 0.05;
+										idc = 5600;
+										shadow = 0;
+										sizeEx = 0.05;
+										style = 0;
+										w = "0.07 * 2";
+										x = 0;
+										y = "0.05 * 0.25";
+									};
+									class Label_H01: Label_H00
+									{
+										idc = 5601;
+										style = 1;
+										x = "(0.833 * 	1) - 	0.07 * 2";
+									};
+								};
+							};
+							class LabelsV: RscControlsGroupNoScrollbars
+							{
+								h = "(0.704 * 	1.05) + 	0.05 * 2";
+								idc = 5550;
+								w = 0.07;
+								x = "(0.083 * 	1 + 	0) - 	0.07";
+								y = "(0.200 * 	1.05 + 	0) - 	0.05";
+								class Controls
+								{
+									class Label_V00: RscText
+									{
+										colorText[] = {0.807843, 0.917647, 0.980392, 1};
+										font = "RobotoCondensed";
+										h = "0.05 * 1.1";
+										idc = 5500;
+										shadow = 0;
+										show = 0;
+										sizeEx = 0.05;
+										style = 1;
+										text = "";
+										w = "0.07 * 0.9";
+										x = 0;
+										y = "0.05 / 2";
+									};
+									class Label_V01: Label_V00
+									{
+										idc = 5501;
+										show = 1;
+										y = "(01 / 	5) * 			(0.704 * 	1.05) + 	0.05 / 2";
+									};
+									class Label_V02: Label_V00
+									{
+										idc = 5502;
+										show = 1;
+										y = "(02 / 	5) * 			(0.704 * 	1.05) + 	0.05 / 2";
+									};
+									class Label_V03: Label_V00
+									{
+										idc = 5503;
+										show = 1;
+										y = "(03 / 	5) * 			(0.704 * 	1.05) + 	0.05 / 2";
+									};
+									class Label_V04: Label_V00
+									{
+										idc = 5504;
+										show = 1;
+										y = "(04 / 	5) * 			(0.704 * 	1.05) + 	0.05 / 2";
+									};
+									class Unit: Label_V00
+									{
+										text = "dBm";
+										y = "(0 / 	5) * 			(0.704 * 	1.05) + 	0.05 * 1.5";
+									};
+								};
+							};
+							class Lines: RscControlsGroupNoScrollbars
+							{
+								h = "(0.704 * 	1.05)";
+								idc = 1999;
+								w = "(0.833 * 	1)";
+								x = "(0.083 * 	1 + 	0)";
+								y = "(0.200 * 	1.05 + 	0)";
+								class Controls
+								{
+									class FocusedFrequency: RscText
+									{
+										colorText[] = {1, 0.8, 0, 1};
+										h = "0.05 * 1.1";
+										idc = 4006;
+										shadow = 1;
+										sizeEx = "0.05 * 1.1";
+										style = "0x02 + 0x10 + 0x200";
+									};
+									class FocusedNameAntenna: FocusedFrequency
+									{
+										colorShadow[] = {0, 0, 0, 1};
+										colorText[] = {0.28, 0.73, 1, 1};
+										font = "RobotoCondensedBold";
+										h = "0.05 * 1.3";
+										idc = 4008;
+										sizeEx = "0.05 * 1.3";
+										style = "0x02 + 0x08";
+									};
+									class FocusedNameFrequency: FocusedFrequency
+									{
+										idc = 4007;
+										style = "0x02 + 0x08";
+									};
+									class Icon_0: RscPicture
+									{
+										colorText[] = {1, 0.8, 0, 1};
+										fade = 1;
+										h = 0;
+										idc = 5000;
+										text = "\a3\UI_F_Contact\Data\RscIngameUI\RscWeaponSpectrumAnalyzer\icon_ca.paa";
+										w = 0;
+										x = 0;
+										y = 0;
+									};
+									class Icon_1: Icon_0
+									{
+										idc = 5001;
+									};
+									class Icon_10: Icon_0
+									{
+										idc = 5010;
+									};
+									class Icon_11: Icon_0
+									{
+										idc = 5011;
+									};
+									class Icon_12: Icon_0
+									{
+										idc = 5012;
+									};
+									class Icon_13: Icon_0
+									{
+										idc = 5013;
+									};
+									class Icon_14: Icon_0
+									{
+										idc = 5014;
+									};
+									class Icon_15: Icon_0
+									{
+										idc = 5015;
+									};
+									class Icon_16: Icon_0
+									{
+										idc = 5016;
+									};
+									class Icon_17: Icon_0
+									{
+										idc = 5017;
+									};
+									class Icon_18: Icon_0
+									{
+										idc = 5018;
+									};
+									class Icon_19: Icon_0
+									{
+										idc = 5019;
+									};
+									class Icon_2: Icon_0
+									{
+										idc = 5002;
+									};
+									class Icon_3: Icon_0
+									{
+										idc = 5003;
+									};
+									class Icon_4: Icon_0
+									{
+										idc = 5004;
+									};
+									class Icon_5: Icon_0
+									{
+										idc = 5005;
+									};
+									class Icon_6: Icon_0
+									{
+										idc = 5006;
+									};
+									class Icon_7: Icon_0
+									{
+										idc = 5007;
+									};
+									class Icon_8: Icon_0
+									{
+										idc = 5008;
+									};
+									class Icon_9: Icon_0
+									{
+										idc = 5009;
+									};
+									class IconCurrent: Icon_0
+									{
+										colorText[] = {1, 0.8, 0, 1};
+										idc = 2502;
+										text = "\a3\UI_F_Contact\Data\RscIngameUI\RscWeaponSpectrumAnalyzer\iconCurrent_ca.paa";
+									};
+									class Line00: RscLine
+									{
+										colorText[] = {1, 0.8, 0, 1};
+										idc = 2000;
+										w = -0.00824752;
+										x = 0;
+									};
+									class Line01: Line00
+									{
+										idc = 2001;
+										x = 0.00824752;
+									};
+									class Line02: Line00
+									{
+										idc = 2002;
+										x = 0.016495;
+									};
+									class Line03: Line00
+									{
+										idc = 2003;
+										x = 0.0247426;
+									};
+									class Line04: Line00
+									{
+										idc = 2004;
+										x = 0.0329901;
+									};
+									class Line05: Line00
+									{
+										idc = 2005;
+										x = 0.0412376;
+									};
+									class Line06: Line00
+									{
+										idc = 2006;
+										x = 0.0494851;
+									};
+									class Line07: Line00
+									{
+										idc = 2007;
+										x = 0.0577327;
+									};
+									class Line08: Line00
+									{
+										idc = 2008;
+										x = 0.0659802;
+									};
+									class Line09: Line00
+									{
+										idc = 2009;
+										x = 0.0742277;
+									};
+									class Line10: Line00
+									{
+										idc = 2010;
+										x = 0.0824752;
+									};
+									class Line100: Line00
+									{
+										idc = 2100;
+										x = 0.824752;
+									};
+									class Line11: Line00
+									{
+										idc = 2011;
+										x = 0.0907228;
+									};
+									class Line12: Line00
+									{
+										idc = 2012;
+										x = 0.0989703;
+									};
+									class Line13: Line00
+									{
+										idc = 2013;
+										x = 0.107218;
+									};
+									class Line14: Line00
+									{
+										idc = 2014;
+										x = 0.115465;
+									};
+									class Line15: Line00
+									{
+										idc = 2015;
+										x = 0.123713;
+									};
+									class Line16: Line00
+									{
+										idc = 2016;
+										x = 0.13196;
+									};
+									class Line17: Line00
+									{
+										idc = 2017;
+										x = 0.140208;
+									};
+									class Line18: Line00
+									{
+										idc = 2018;
+										x = 0.148455;
+									};
+									class Line19: Line00
+									{
+										idc = 2019;
+										x = 0.156703;
+									};
+									class Line20: Line00
+									{
+										idc = 2020;
+										x = 0.16495;
+									};
+									class Line21: Line00
+									{
+										idc = 2021;
+										x = 0.173198;
+									};
+									class Line22: Line00
+									{
+										idc = 2022;
+										x = 0.181446;
+									};
+									class Line23: Line00
+									{
+										idc = 2023;
+										x = 0.189693;
+									};
+									class Line24: Line00
+									{
+										idc = 2024;
+										x = 0.197941;
+									};
+									class Line25: Line00
+									{
+										idc = 2025;
+										x = 0.206188;
+									};
+									class Line26: Line00
+									{
+										idc = 2026;
+										x = 0.214436;
+									};
+									class Line27: Line00
+									{
+										idc = 2027;
+										x = 0.222683;
+									};
+									class Line28: Line00
+									{
+										idc = 2028;
+										x = 0.230931;
+									};
+									class Line29: Line00
+									{
+										idc = 2029;
+										x = 0.239178;
+									};
+									class Line30: Line00
+									{
+										idc = 2030;
+										x = 0.247426;
+									};
+									class Line31: Line00
+									{
+										idc = 2031;
+										x = 0.255673;
+									};
+									class Line32: Line00
+									{
+										idc = 2032;
+										x = 0.263921;
+									};
+									class Line33: Line00
+									{
+										idc = 2033;
+										x = 0.272168;
+									};
+									class Line34: Line00
+									{
+										idc = 2034;
+										x = 0.280416;
+									};
+									class Line35: Line00
+									{
+										idc = 2035;
+										x = 0.288663;
+									};
+									class Line36: Line00
+									{
+										idc = 2036;
+										x = 0.296911;
+									};
+									class Line37: Line00
+									{
+										idc = 2037;
+										x = 0.305158;
+									};
+									class Line38: Line00
+									{
+										idc = 2038;
+										x = 0.313406;
+									};
+									class Line39: Line00
+									{
+										idc = 2039;
+										x = 0.321653;
+									};
+									class Line40: Line00
+									{
+										idc = 2040;
+										x = 0.329901;
+									};
+									class Line41: Line00
+									{
+										idc = 2041;
+										x = 0.338149;
+									};
+									class Line42: Line00
+									{
+										idc = 2042;
+										x = 0.346396;
+									};
+									class Line43: Line00
+									{
+										idc = 2043;
+										x = 0.354644;
+									};
+									class Line44: Line00
+									{
+										idc = 2044;
+										x = 0.362891;
+									};
+									class Line45: Line00
+									{
+										idc = 2045;
+										x = 0.371139;
+									};
+									class Line46: Line00
+									{
+										idc = 2046;
+										x = 0.379386;
+									};
+									class Line47: Line00
+									{
+										idc = 2047;
+										x = 0.387634;
+									};
+									class Line48: Line00
+									{
+										idc = 2048;
+										x = 0.395881;
+									};
+									class Line49: Line00
+									{
+										idc = 2049;
+										x = 0.404129;
+									};
+									class Line50: Line00
+									{
+										idc = 2050;
+										x = 0.412376;
+									};
+									class Line51: Line00
+									{
+										idc = 2051;
+										x = 0.420624;
+									};
+									class Line52: Line00
+									{
+										idc = 2052;
+										x = 0.428871;
+									};
+									class Line53: Line00
+									{
+										idc = 2053;
+										x = 0.437119;
+									};
+									class Line54: Line00
+									{
+										idc = 2054;
+										x = 0.445366;
+									};
+									class Line55: Line00
+									{
+										idc = 2055;
+										x = 0.453614;
+									};
+									class Line56: Line00
+									{
+										idc = 2056;
+										x = 0.461861;
+									};
+									class Line57: Line00
+									{
+										idc = 2057;
+										x = 0.470109;
+									};
+									class Line58: Line00
+									{
+										idc = 2058;
+										x = 0.478356;
+									};
+									class Line59: Line00
+									{
+										idc = 2059;
+										x = 0.486604;
+									};
+									class Line60: Line00
+									{
+										idc = 2060;
+										x = 0.494851;
+									};
+									class Line61: Line00
+									{
+										idc = 2061;
+										x = 0.503099;
+									};
+									class Line62: Line00
+									{
+										idc = 2062;
+										x = 0.511347;
+									};
+									class Line63: Line00
+									{
+										idc = 2063;
+										x = 0.519594;
+									};
+									class Line64: Line00
+									{
+										idc = 2064;
+										x = 0.527842;
+									};
+									class Line65: Line00
+									{
+										idc = 2065;
+										x = 0.536089;
+									};
+									class Line66: Line00
+									{
+										idc = 2066;
+										x = 0.544337;
+									};
+									class Line67: Line00
+									{
+										idc = 2067;
+										x = 0.552584;
+									};
+									class Line68: Line00
+									{
+										idc = 2068;
+										x = 0.560832;
+									};
+									class Line69: Line00
+									{
+										idc = 2069;
+										x = 0.569079;
+									};
+									class Line70: Line00
+									{
+										idc = 2070;
+										x = 0.577327;
+									};
+									class Line71: Line00
+									{
+										idc = 2071;
+										x = 0.585574;
+									};
+									class Line72: Line00
+									{
+										idc = 2072;
+										x = 0.593822;
+									};
+									class Line73: Line00
+									{
+										idc = 2073;
+										x = 0.602069;
+									};
+									class Line74: Line00
+									{
+										idc = 2074;
+										x = 0.610317;
+									};
+									class Line75: Line00
+									{
+										idc = 2075;
+										x = 0.618564;
+									};
+									class Line76: Line00
+									{
+										idc = 2076;
+										x = 0.626812;
+									};
+									class Line77: Line00
+									{
+										idc = 2077;
+										x = 0.635059;
+									};
+									class Line78: Line00
+									{
+										idc = 2078;
+										x = 0.643307;
+									};
+									class Line79: Line00
+									{
+										idc = 2079;
+										x = 0.651554;
+									};
+									class Line80: Line00
+									{
+										idc = 2080;
+										x = 0.659802;
+									};
+									class Line81: Line00
+									{
+										idc = 2081;
+										x = 0.668049;
+									};
+									class Line82: Line00
+									{
+										idc = 2082;
+										x = 0.676297;
+									};
+									class Line83: Line00
+									{
+										idc = 2083;
+										x = 0.684545;
+									};
+									class Line84: Line00
+									{
+										idc = 2084;
+										x = 0.692792;
+									};
+									class Line85: Line00
+									{
+										idc = 2085;
+										x = 0.70104;
+									};
+									class Line86: Line00
+									{
+										idc = 2086;
+										x = 0.709287;
+									};
+									class Line87: Line00
+									{
+										idc = 2087;
+										x = 0.717535;
+									};
+									class Line88: Line00
+									{
+										idc = 2088;
+										x = 0.725782;
+									};
+									class Line89: Line00
+									{
+										idc = 2089;
+										x = 0.73403;
+									};
+									class Line90: Line00
+									{
+										idc = 2090;
+										x = 0.742277;
+									};
+									class Line91: Line00
+									{
+										idc = 2091;
+										x = 0.750525;
+									};
+									class Line92: Line00
+									{
+										idc = 2092;
+										x = 0.758772;
+									};
+									class Line93: Line00
+									{
+										idc = 2093;
+										x = 0.76702;
+									};
+									class Line94: Line00
+									{
+										idc = 2094;
+										x = 0.775267;
+									};
+									class Line95: Line00
+									{
+										idc = 2095;
+										x = 0.783515;
+									};
+									class Line96: Line00
+									{
+										idc = 2096;
+										x = 0.791762;
+									};
+									class Line97: Line00
+									{
+										idc = 2097;
+										x = 0.80001;
+									};
+									class Line98: Line00
+									{
+										idc = 2098;
+										x = 0.808257;
+									};
+									class Line99: Line00
+									{
+										idc = 2099;
+										x = 0.816505;
+									};
+									class LineOld00: RscPicture
+									{
+										colorText[] = {0.262745, 0.243137, 0.113725, 1};
+										idc = 3000;
+										text = "\a3\UI_F_Contact\Data\RscIngameUI\RscWeaponSpectrumAnalyzer\lineOld_ca.paa";
+										w = 0.00824752;
+										x = 0;
+									};
+									class LineOld01: LineOld00
+									{
+										idc = 3001;
+										x = 0.00412376;
+									};
+									class LineOld02: LineOld00
+									{
+										idc = 3002;
+										x = 0.0123713;
+									};
+									class LineOld03: LineOld00
+									{
+										idc = 3003;
+										x = 0.0206188;
+									};
+									class LineOld04: LineOld00
+									{
+										idc = 3004;
+										x = 0.0288663;
+									};
+									class LineOld05: LineOld00
+									{
+										idc = 3005;
+										x = 0.0371139;
+									};
+									class LineOld06: LineOld00
+									{
+										idc = 3006;
+										x = 0.0453614;
+									};
+									class LineOld07: LineOld00
+									{
+										idc = 3007;
+										x = 0.0536089;
+									};
+									class LineOld08: LineOld00
+									{
+										idc = 3008;
+										x = 0.0618564;
+									};
+									class LineOld09: LineOld00
+									{
+										idc = 3009;
+										x = 0.070104;
+									};
+									class LineOld10: LineOld00
+									{
+										idc = 3010;
+										x = 0.0783515;
+									};
+									class LineOld100: LineOld00
+									{
+										idc = 3100;
+										x = 0.820629;
+									};
+									class LineOld11: LineOld00
+									{
+										idc = 3011;
+										x = 0.086599;
+									};
+									class LineOld12: LineOld00
+									{
+										idc = 3012;
+										x = 0.0948465;
+									};
+									class LineOld13: LineOld00
+									{
+										idc = 3013;
+										x = 0.103094;
+									};
+									class LineOld14: LineOld00
+									{
+										idc = 3014;
+										x = 0.111342;
+									};
+									class LineOld15: LineOld00
+									{
+										idc = 3015;
+										x = 0.119589;
+									};
+									class LineOld16: LineOld00
+									{
+										idc = 3016;
+										x = 0.127837;
+									};
+									class LineOld17: LineOld00
+									{
+										idc = 3017;
+										x = 0.136084;
+									};
+									class LineOld18: LineOld00
+									{
+										idc = 3018;
+										x = 0.144332;
+									};
+									class LineOld19: LineOld00
+									{
+										idc = 3019;
+										x = 0.152579;
+									};
+									class LineOld20: LineOld00
+									{
+										idc = 3020;
+										x = 0.160827;
+									};
+									class LineOld21: LineOld00
+									{
+										idc = 3021;
+										x = 0.169074;
+									};
+									class LineOld22: LineOld00
+									{
+										idc = 3022;
+										x = 0.177322;
+									};
+									class LineOld23: LineOld00
+									{
+										idc = 3023;
+										x = 0.185569;
+									};
+									class LineOld24: LineOld00
+									{
+										idc = 3024;
+										x = 0.193817;
+									};
+									class LineOld25: LineOld00
+									{
+										idc = 3025;
+										x = 0.202064;
+									};
+									class LineOld26: LineOld00
+									{
+										idc = 3026;
+										x = 0.210312;
+									};
+									class LineOld27: LineOld00
+									{
+										idc = 3027;
+										x = 0.218559;
+									};
+									class LineOld28: LineOld00
+									{
+										idc = 3028;
+										x = 0.226807;
+									};
+									class LineOld29: LineOld00
+									{
+										idc = 3029;
+										x = 0.235054;
+									};
+									class LineOld30: LineOld00
+									{
+										idc = 3030;
+										x = 0.243302;
+									};
+									class LineOld31: LineOld00
+									{
+										idc = 3031;
+										x = 0.251549;
+									};
+									class LineOld32: LineOld00
+									{
+										idc = 3032;
+										x = 0.259797;
+									};
+									class LineOld33: LineOld00
+									{
+										idc = 3033;
+										x = 0.268045;
+									};
+									class LineOld34: LineOld00
+									{
+										idc = 3034;
+										x = 0.276292;
+									};
+									class LineOld35: LineOld00
+									{
+										idc = 3035;
+										x = 0.28454;
+									};
+									class LineOld36: LineOld00
+									{
+										idc = 3036;
+										x = 0.292787;
+									};
+									class LineOld37: LineOld00
+									{
+										idc = 3037;
+										x = 0.301035;
+									};
+									class LineOld38: LineOld00
+									{
+										idc = 3038;
+										x = 0.309282;
+									};
+									class LineOld39: LineOld00
+									{
+										idc = 3039;
+										x = 0.31753;
+									};
+									class LineOld40: LineOld00
+									{
+										idc = 3040;
+										x = 0.325777;
+									};
+									class LineOld41: LineOld00
+									{
+										idc = 3041;
+										x = 0.334025;
+									};
+									class LineOld42: LineOld00
+									{
+										idc = 3042;
+										x = 0.342272;
+									};
+									class LineOld43: LineOld00
+									{
+										idc = 3043;
+										x = 0.35052;
+									};
+									class LineOld44: LineOld00
+									{
+										idc = 3044;
+										x = 0.358767;
+									};
+									class LineOld45: LineOld00
+									{
+										idc = 3045;
+										x = 0.367015;
+									};
+									class LineOld46: LineOld00
+									{
+										idc = 3046;
+										x = 0.375262;
+									};
+									class LineOld47: LineOld00
+									{
+										idc = 3047;
+										x = 0.38351;
+									};
+									class LineOld48: LineOld00
+									{
+										idc = 3048;
+										x = 0.391757;
+									};
+									class LineOld49: LineOld00
+									{
+										idc = 3049;
+										x = 0.400005;
+									};
+									class LineOld50: LineOld00
+									{
+										idc = 3050;
+										x = 0.408252;
+									};
+									class LineOld51: LineOld00
+									{
+										idc = 3051;
+										x = 0.4165;
+									};
+									class LineOld52: LineOld00
+									{
+										idc = 3052;
+										x = 0.424748;
+									};
+									class LineOld53: LineOld00
+									{
+										idc = 3053;
+										x = 0.432995;
+									};
+									class LineOld54: LineOld00
+									{
+										idc = 3054;
+										x = 0.441243;
+									};
+									class LineOld55: LineOld00
+									{
+										idc = 3055;
+										x = 0.44949;
+									};
+									class LineOld56: LineOld00
+									{
+										idc = 3056;
+										x = 0.457738;
+									};
+									class LineOld57: LineOld00
+									{
+										idc = 3057;
+										x = 0.465985;
+									};
+									class LineOld58: LineOld00
+									{
+										idc = 3058;
+										x = 0.474233;
+									};
+									class LineOld59: LineOld00
+									{
+										idc = 3059;
+										x = 0.48248;
+									};
+									class LineOld60: LineOld00
+									{
+										idc = 3060;
+										x = 0.490728;
+									};
+									class LineOld61: LineOld00
+									{
+										idc = 3061;
+										x = 0.498975;
+									};
+									class LineOld62: LineOld00
+									{
+										idc = 3062;
+										x = 0.507223;
+									};
+									class LineOld63: LineOld00
+									{
+										idc = 3063;
+										x = 0.51547;
+									};
+									class LineOld64: LineOld00
+									{
+										idc = 3064;
+										x = 0.523718;
+									};
+									class LineOld65: LineOld00
+									{
+										idc = 3065;
+										x = 0.531965;
+									};
+									class LineOld66: LineOld00
+									{
+										idc = 3066;
+										x = 0.540213;
+									};
+									class LineOld67: LineOld00
+									{
+										idc = 3067;
+										x = 0.54846;
+									};
+									class LineOld68: LineOld00
+									{
+										idc = 3068;
+										x = 0.556708;
+									};
+									class LineOld69: LineOld00
+									{
+										idc = 3069;
+										x = 0.564955;
+									};
+									class LineOld70: LineOld00
+									{
+										idc = 3070;
+										x = 0.573203;
+									};
+									class LineOld71: LineOld00
+									{
+										idc = 3071;
+										x = 0.58145;
+									};
+									class LineOld72: LineOld00
+									{
+										idc = 3072;
+										x = 0.589698;
+									};
+									class LineOld73: LineOld00
+									{
+										idc = 3073;
+										x = 0.597946;
+									};
+									class LineOld74: LineOld00
+									{
+										idc = 3074;
+										x = 0.606193;
+									};
+									class LineOld75: LineOld00
+									{
+										idc = 3075;
+										x = 0.614441;
+									};
+									class LineOld76: LineOld00
+									{
+										idc = 3076;
+										x = 0.622688;
+									};
+									class LineOld77: LineOld00
+									{
+										idc = 3077;
+										x = 0.630936;
+									};
+									class LineOld78: LineOld00
+									{
+										idc = 3078;
+										x = 0.639183;
+									};
+									class LineOld79: LineOld00
+									{
+										idc = 3079;
+										x = 0.647431;
+									};
+									class LineOld80: LineOld00
+									{
+										idc = 3080;
+										x = 0.655678;
+									};
+									class LineOld81: LineOld00
+									{
+										idc = 3081;
+										x = 0.663926;
+									};
+									class LineOld82: LineOld00
+									{
+										idc = 3082;
+										x = 0.672173;
+									};
+									class LineOld83: LineOld00
+									{
+										idc = 3083;
+										x = 0.680421;
+									};
+									class LineOld84: LineOld00
+									{
+										idc = 3084;
+										x = 0.688668;
+									};
+									class LineOld85: LineOld00
+									{
+										idc = 3085;
+										x = 0.696916;
+									};
+									class LineOld86: LineOld00
+									{
+										idc = 3086;
+										x = 0.705163;
+									};
+									class LineOld87: LineOld00
+									{
+										idc = 3087;
+										x = 0.713411;
+									};
+									class LineOld88: LineOld00
+									{
+										idc = 3088;
+										x = 0.721658;
+									};
+									class LineOld89: LineOld00
+									{
+										idc = 3089;
+										x = 0.729906;
+									};
+									class LineOld90: LineOld00
+									{
+										idc = 3090;
+										x = 0.738153;
+									};
+									class LineOld91: LineOld00
+									{
+										idc = 3091;
+										x = 0.746401;
+									};
+									class LineOld92: LineOld00
+									{
+										idc = 3092;
+										x = 0.754649;
+									};
+									class LineOld93: LineOld00
+									{
+										idc = 3093;
+										x = 0.762896;
+									};
+									class LineOld94: LineOld00
+									{
+										idc = 3094;
+										x = 0.771144;
+									};
+									class LineOld95: LineOld00
+									{
+										idc = 3095;
+										x = 0.779391;
+									};
+									class LineOld96: LineOld00
+									{
+										idc = 3096;
+										x = 0.787639;
+									};
+									class LineOld97: LineOld00
+									{
+										idc = 3097;
+										x = 0.795886;
+									};
+									class LineOld98: LineOld00
+									{
+										idc = 3098;
+										x = 0.804134;
+									};
+									class LineOld99: LineOld00
+									{
+										idc = 3099;
+										x = 0.812381;
+									};
+								};
+							};
+							class NoAntenna: RscText
+							{
+								colorBackground[] = {0, 0, 0, 0};
+								colorText[] = {0.5, 0.5, 0.5, 1};
+								h = "(0.704 * 	1.05)";
+								idc = 1998;
+								shadow = 0;
+								show = 0;
+								sizeEx = 0.1;
+								style = 2;
+								text = "Antenna not found!";
+								w = "(0.833 * 	1)";
+								x = "(0.083 * 	1 + 	0)";
+								y = "(0.200 * 	1.05 + 	0)";
+							};
+							class Selected: RscControlsGroupNoScrollbars
+							{
+								h = "(0.704 * 	1.05)";
+								w = "(0.833 * 	1)";
+								x = "(0.083 * 	1 + 	0)";
+								y = "(0.200 * 	1.05 + 	0)";
+								class Controls
+								{
+									class Focus: RscPicture
+									{
+										colorText[] = {0.28, 0.73, 1, 0.2};
+										fade = 1;
+										h = 0;
+										idc = 4002;
+										text = "#(rgb,1,1,1)color(1,1,1,1)";
+										w = 0;
+									};
+									class Progress: RscPicture
+									{
+										colorText[] = {0.28, 0.73, 1, 0.4};
+										fade = 1;
+										h = 0;
+										idc = 4005;
+										text = "#(rgb,1,1,1)color(1,1,1,1)";
+										w = 0;
+									};
+									class Selected: RscPicture
+									{
+										colorText[] = {0.28, 0.73, 1, 1};
+										fade = 0;
+										idc = 4000;
+										text = "\a3\UI_F_Contact\Data\RscIngameUI\RscWeaponSpectrumAnalyzer\selected_ca.paa";
+										w = 0;
+									};
+									class TransmitOverlay: RscPicture
+									{
+										colorText[] = {0, 0, 0, 0.5};
+										h = "(0.704 * 	1.05)";
+										idc = 1997;
+										show = 0;
+										text = "#(rgb,1,1,1)color(1,1,1,1)";
+										w = "(0.833 * 	1)";
+									};
+								};
+							};
+							class Signal: RscControlsGroupNoScrollbars
+							{
+								h = "(0.064 * 	1.05)";
+								w = "(0.466 * 	1)";
+								x = "(0.266 * 	1 + 	0)";
+								y = "(0.122 * 	1.05 + 	0)";
+								class Controls
+								{
+									class SignalText: RscText
+									{
+										colorText[] = {0.32, 0.99, 0.79};
+										h = "(0.064 * 	1.05)";
+										idc = 5802;
+										shadow = 0;
+										sizeEx = "(0.064 * 	1.05)";
+										style = 2;
+										text = "";
+										w = "(0.466 * 	1)";
+										x = 0;
+										y = 0;
+									};
+								};
+							};
+							class Static: BackgroundImage
+							{
+								idc = 1994;
+								show = 0;
+								text = "\a3\Ui_f\data\IGUI\RscTitles\Static\FeedStatic_00_CA.paa";
+							};
+						};
+					};
+				};
+			};
+		};
+	};
+	class RscWeaponSpectrumAnalyzer2: RscWeaponSpectrumAnalyzer
+	{
+		onLoad = "[""onLoad"",_this,""RscWeaponSpectrumAnalyzer2"",'ContactIngameUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		onUnload = "[""onUnload"",_this,""RscWeaponSpectrumAnalyzer2"",'ContactIngameUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		scriptName = "RscWeaponSpectrumAnalyzer2";
+		scriptPath = "ContactIngameUI";
+		class Controls: Controls
+		{
+			class Map: Map
+			{
+				onDraw = "['onDraw',_this,''] call (uinamespace getvariable 'RscWeaponSpectrumAnalyzer2_script');";
+			};
 		};
 	};
 	class RscWeaponZeroing: RscUnitInfo

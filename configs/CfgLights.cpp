@@ -1,5 +1,9 @@
 class CfgLights
 {
+	class BigFireLight: ObjectDestructionLight
+	{
+		intensity = "25000 * (power interpolate [0.1, 1.0, 0.7, 1.0])";
+	};
 	class ChemLight_Blue: Chemlight_Green
 	{
 		color[] = {0, 0.6, 1, 1};
@@ -75,6 +79,31 @@ class CfgLights
 			linear = 0;
 			quadratic = 0.2;
 			start = 4;
+		};
+	};
+	class CM_Light
+	{
+		ambient[] = {1500, 1200, 1000};
+		blinking = 1;
+		brightness = 100;
+		color[] = {1500, 1200, 1000};
+		daylight = 1;
+		diffuse[] = {0.4, 0.28, 0.15};
+		drawLight = 0;
+		flareMaxDistance = 2600;
+		flareSize = 75;
+		intensity = 450;
+		position[] = {0, 0, 0};
+		size = 1;
+		useFlare = 1;
+		class Attenuation
+		{
+			constant = 0;
+			hardLimitEnd = 3000;
+			hardLimitStart = 1500;
+			linear = 0;
+			quadratic = 0.3;
+			start = 0.5;
 		};
 	};
 	class CmeasuresLight
@@ -307,6 +336,10 @@ class CfgLights
 			start = 0;
 		};
 	};
+	class MediumFireLight: ObjectDestructionLightSmall
+	{
+		intensity = "3500 * (power interpolate [0.1, 1.0, 0.7, 1.0])";
+	};
 	class MineExploLight
 	{
 		ambient[] = {0, 0, 0, 0};
@@ -316,6 +349,28 @@ class CfgLights
 		diffuse[] = {0.4, 0.28, 0.15};
 		drawLight = 0;
 		intensity = 45000;
+		position[] = {0, 0, 0};
+		size = 1;
+		class Attenuation
+		{
+			constant = 0;
+			hardLimitEnd = 3000;
+			hardLimitStart = 1500;
+			linear = 0;
+			quadratic = 0.3;
+			start = 0.5;
+		};
+	};
+	class NukeLight
+	{
+		ambient[] = {1500, 1200, 1000};
+		blinking = 1;
+		brightness = 1e+007;
+		color[] = {1500, 1200, 1000};
+		daylight = 1;
+		diffuse[] = {0.4, 0.28, 0.15};
+		drawLight = 0;
+		intensity = 450000;
 		position[] = {0, 0, 0};
 		size = 1;
 		class Attenuation

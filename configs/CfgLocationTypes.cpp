@@ -308,16 +308,27 @@ class CfgLocationTypes
 	{
 		color[] = {0, 0, 0, 1};
 		drawStyle = "icon";
-		font = "RobotoCondensed";
+		font = "Caveat";
 		name = "Name";
 		shadow = 0;
 		size = 32;
 		textSize = 0.08;
-		texture = "#(rgb,1,1,1)color(0,0,0,0)";
+		texture = "\a3\UI_F_Contact\Data\CfgLocationTypes\handDrawnCamp_ca.paa";
+	};
+	class HandDrawnPoint
+	{
+		color[] = {0, 0, 0, 1};
+		drawStyle = "icon";
+		font = "Caveat";
+		name = "Name";
+		shadow = 0;
+		size = 32;
+		textSize = 0.08;
+		texture = "\a3\UI_F_Contact\Data\CfgMarkers\dot4_ca.paa";
 	};
 	class Hill: Name
 	{
-		color[] = {0, 0, 0, 1};
+		color[] = {0.44, 0.38, 0.3, 1};
 		drawStyle = "icon";
 		font = "RobotoCondensed";
 		importance = 2;
@@ -485,22 +496,34 @@ class CfgLocationTypes
 	};
 	class NameCity: Name
 	{
+		color[] = {0, 0, 0, 1};
+		font = "RobotoCondensedBold";
 		importance = 6;
 		name = "Name City";
-		textSize = 0.06;
+		textSize = 0.1;
 	};
 	class NameCityCapital: Name
 	{
+		color[] = {0, 0, 0, 1};
+		font = "RobotoCondensedBold";
 		importance = 7;
 		name = "Name Capital";
-		textSize = 0.07;
+		textSize = 0.12;
+	};
+	class NameCityCapitalFormer: NameCityCapital
+	{
+		color[] = {0.54353, 0.381176, 0.458824, 1};
+	};
+	class NameCityFormer: NameCity
+	{
+		color[] = {0.54353, 0.381176, 0.458824, 1};
 	};
 	class NameLocal: Name
 	{
 		color[] = {0.44, 0.38, 0.3, 1};
 		importance = 4;
 		name = "Name Local";
-		textSize = 0.05;
+		textSize = 0.06;
 	};
 	class NameMarine: Name
 	{
@@ -508,13 +531,19 @@ class CfgLocationTypes
 		font = "RobotoCondensed";
 		importance = 3;
 		name = "Name Marine";
-		textSize = 0.05;
+		textSize = 0.06;
 	};
 	class NameVillage: Name
 	{
+		color[] = {0, 0, 0, 1};
+		font = "RobotoCondensed";
 		importance = 5;
 		name = "Name Village";
-		textSize = 0.05;
+		textSize = 0.08;
+	};
+	class NameVillageFormer: NameVillage
+	{
+		color[] = {0.54353, 0.381176, 0.458824, 1};
 	};
 	class o_air: o_unknown
 	{

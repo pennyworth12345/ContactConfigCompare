@@ -102,6 +102,10 @@ class CfgAddons
 		{
 			list[] = {"A3_Data_F_Warlords_Loadorder", "A3_Data_F_Warlords", "A3_Dubbing_F_Warlords", "A3_Functions_F_Warlords", "A3_Language_F_Warlords", "A3_Missions_F_Warlords", "A3_Modules_F_Warlords"};
 		};
+		class Contact
+		{
+			list[] = {"A3_Air_F_Contact", "A3_Air_F_Contact_AlienDrone_01", "A3_Air_F_Contact_AlienDrone_Modules_01", "A3_Air_F_Contact_VirtualSound_01", "A3_Anims_F_Contact", "A3_Armor_F_Contact", "A3_Cargoposes_F_Contact", "A3_Characters_F_Contact", "A3_Data_F_Contact", "A3_Data_F_Contact_Loadorder", "A3_Data_F_Contact_ParticleEffects", "A3_Dubbing_F_Contact", "A3_Functions_F_Contact", "A3_Language_F_Contact", "A3_LanguageMissions_F_Contact", "A3_Missions_F_Contact", "A3_Modules_F_Contact", "A3_Modules_F_Contact_CBRN", "A3_Music_F_Contact", "A3_Props_F_Contact", "A3_Props_F_Contact_Aliens", "A3_Props_F_Contact_Aliens_Mothership_01", "A3_Props_F_Contact_Aliens_Probe", "A3_Props_F_Contact_Civilian", "A3_Props_F_Contact_Civilian_InfoBoards", "A3_Props_F_Contact_Items", "A3_Props_F_Contact_Items_Documents", "A3_Props_F_Contact_Military", "A3_Props_F_Contact_Military_Camps", "A3_Props_F_Contact_Military_Decontamination", "A3_Props_F_Contact_Military_Equipment", "A3_Props_F_Contact_Military_Supplies", "A3_Props_F_Contact_Particles", "A3_Soft_F_Contact", "A3_Soft_F_Contact_Offroad_01", "A3_Soft_F_Contact_Truck_02", "A3_Sounds_F_Contact", "A3_Static_F_Contact", "A3_Structures_F_Contact", "A3_Supplies_F_Contact", "A3_Supplies_F_Contact_Bags", "A3_UI_F_Contact", "A3_Weapons_F_Contact", "A3_Weapons_F_Contact_Acc", "A3_Weapons_F_Contact_Items", "A3_Weapons_F_Contact_Pistols_ESD"};
+		};
 	};
 	class PreloadBanks {};
 };

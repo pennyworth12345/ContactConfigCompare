@@ -3,23 +3,14 @@ class RscDisplayMainMap
 	access = 0;
 	idd = 12;
 	movingEnable = 0;
-	onLoad = "[""onLoad"",_this,""RscDiary"",'GUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
-	onUnload = "[""onUnload"",_this,""RscDiary"",'GUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+	onKeyDown = "		[			'selectAll',			'SelectGroupUnit1',			'SelectGroupUnit2',			'SelectGroupUnit3',			'SelectGroupUnit4',			'SelectGroupUnit5',			'SelectGroupUnit6',			'SelectGroupUnit7',			'SelectGroupUnit8',			'SelectGroupUnit9',			'SelectGroupUnit0'		] findif {(_this # 1) in (actionkeys _x)} >= 0	";
+	onLoad = "[""onLoad"",_this,""RscDisplayMainMap"",'ContactDisplaysTemp'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+	onUnload = "[""onUnload"",_this,""RscDisplayMainMap"",'ContactDisplaysTemp'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
 	saveParams = 1;
-	scriptName = "RscDiary";
-	scriptPath = "GUI";
+	scriptName = "RscDisplayMainMap";
+	scriptPath = "ContactDisplaysTemp";
 	class controls
 	{
-		class BriefingIntroBackgroundLayer: RscText
-		{
-			colorBackground[] = {0, 0, 0, 1};
-			h = "safezoneH";
-			idc = 1102;
-			show = 0;
-			w = "safezoneWabs";
-			x = "safezoneXabs";
-			y = "safezoneY";
-		};
 		class BriefingIntroGraphicsLayer: RscPictureKeepAspect
 		{
 			color[] = {1, 1, 1, 1};
@@ -30,63 +21,24 @@ class RscDisplayMainMap
 			x = "safezoneXabs";
 			y = "safezoneY";
 		};
-		class BriefingIntroVideoLayer: BriefingIntroGraphicsLayer
-		{
-			idc = 1100;
-		};
-		class ButtonBack: RscActiveText
-		{
-			color[] = {1, 1, 1, 0.7};
-			colorActive[] = {1, 1, 1, 1};
-			colorText[] = {1, 1, 1, 0.7};
-			h = "1.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			idc = 2;
-			style = 48;
-			text = "\A3\ui_f\data\map\diary\back_gs.paa";
-			tooltip = "Close";
-			w = "1.5 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "-0.5 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX)";
-			y = "0 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
-		};
-		class ButtonPlayers: RscButtonTextOnly
-		{
-			colorFocused[] = {1, 1, 1, 0.5};
-			colorFocused2[] = {1, 1, 1, 0.1};
-			h = "0.8 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			idc = 117;
-			period = 1.2;
-			sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-			style = 0;
-			text = "Players:";
-			w = "8.6 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "7.2 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX)";
-			y = "2.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
-		};
-		class ButtonTexturesReal: RscText
-		{
-			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			idc = 107;
-			w = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = -1;
-			y = -1;
-		};
 		class CA_ContentBackgroundd: RscText
 		{
 			colorBackground[] = {0.1, 0.1, 0.1, 0.8};
 			colorbackgroundx[] = {"(profilenamespace getvariable ['IGUI_BCG_RGB_R',0])", "(profilenamespace getvariable ['IGUI_BCG_RGB_G',1])", "(profilenamespace getvariable ['IGUI_BCG_RGB_B',1])", "(profilenamespace getvariable ['IGUI_BCG_RGB_A',0.8])"};
-			h = "18 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+			h = 0;
 			idc = 1023;
-			w = "21.5 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "17.4 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX)";
-			y = "2 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
+			w = 0;
+			x = -10;
+			y = -10;
 		};
 		class CA_DiaryGroup: RscControlsGroup
 		{
-			h = "safezoneH - 7 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+			h = 0;
 			idc = 1013;
-			w = "21.5 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "17.4 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX)";
-			y = "2 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
+			onLoad = "(_this # 0) ctrlenable false;";
+			w = 0;
+			x = -10;
+			y = -10;
 			class controls
 			{
 				class CA_Diary: RscHTML
@@ -126,17 +78,18 @@ class RscDisplayMainMap
 			colorSelectBackground2[] = {1, 1, 1, 0.3};
 			colorSelectRight[] = {1, 1, 1, 1};
 			columns[] = {"7.2 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX)", "15.8 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX)"};
-			h = "safezoneH - 7 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+			h = 0;
 			idc = 1002;
+			onLoad = "(_this # 0) ctrlenable false;";
 			padding = 0.004;
 			shadowPictureLeft = 0;
 			shadowPictureRight = 0;
 			shadowTextLeft = 0;
 			shadowTextRight = 0;
 			sizeEx = "0.8 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			w = "10 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "7.2 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX)";
-			y = "3.3 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
+			w = 0;
+			x = -10;
+			y = -10;
 			class MuteCheckBoxTemplate: RscCheckBox
 			{
 				h = "0.8 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
@@ -155,82 +108,29 @@ class RscDisplayMainMap
 				y = 0;
 			};
 		};
-		class CA_MainBackground: RscText
-		{
-			colorBackground[] = {0.1, 0.1, 0.1, 1};
-			h = "1.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			idc = 1020;
-			w = "safezoneWAbs";
-			x = "safezoneXAbs";
-			y = "0 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
-		};
-		class CA_MainBackgroundGradient: RscPicture
-		{
-			colorText[] = {1, 1, 1, 0.15};
-			h = "1.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			idc = 1200;
-			text = "\A3\ui_f\data\map\diary\gradient_gs.paa";
-			w = "safezoneWAbs";
-			x = "safezoneXAbs";
-			y = "0 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
-		};
-		class CA_MissionName: RscText
-		{
-			colorText[] = {1, 1, 1, 1};
-			font = "RobotoCondensedLight";
-			h = "1.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			idc = 112;
-			shadow = 0;
-			sizeEx = "1.4 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			text = "Mission name:";
-			w = "14 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX)";
-			y = "0 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
-		};
-		class CA_MouseOver: RscText
-		{
-			colorText[] = {0.7, 0.1, 0, 1};
-			h = "1.6 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			idc = 1016;
-			shadow = 0;
-			sizeEx = "0.8 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			style = "0x00 + 0x10";
-			w = "3 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = -10;
-			y = -10;
-		};
 		class CA_SubTopicsBackground: RscText
 		{
 			colorBackground[] = {0.1, 0.1, 0.1, 0.8};
 			colorbackgroundx[] = {"(profilenamespace getvariable ['IGUI_BCG_RGB_R',0])", "(profilenamespace getvariable ['IGUI_BCG_RGB_G',1])", "(profilenamespace getvariable ['IGUI_BCG_RGB_B',1])", "(profilenamespace getvariable ['IGUI_BCG_RGB_A',0.8])"};
-			h = "18 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+			h = 0;
 			idc = 1022;
-			w = "10 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "7.2 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX)";
-			y = "2 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
+			w = 0;
+			x = -10;
+			y = -10;
 		};
 		class CA_TopicsBackground: RscText
 		{
 			colorBackground[] = {0.1, 0.1, 0.1, 0.8};
 			colorbackgroundx[] = {"(profilenamespace getvariable ['IGUI_BCG_RGB_R',0])", "(profilenamespace getvariable ['IGUI_BCG_RGB_G',1])", "(profilenamespace getvariable ['IGUI_BCG_RGB_B',1])", "(profilenamespace getvariable ['IGUI_BCG_RGB_A',0.8])"};
-			h = "18 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+			h = 0;
 			idc = 1021;
-			w = "6 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX)";
-			y = "2 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
+			w = 0;
+			x = -10;
+			y = -10;
 		};
-		class Copyright: RscText
-		{
-			font = "RobotoCondensedBold";
-			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			idc = 1005;
-			shadow = 2;
-			sizeEx = "0.6*0 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			style = 1;
-			w = "11.5 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "safezoneX + safezoneW - (12 * 					(			((safezoneW / safezoneH) min 1.2) / 40))";
-			y = "safezoneY + safezoneH - (1.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
-		};
+		class DiaryCategories: RscDiaryCategories {};
+		class DiaryCategoriesBackground: RscDiaryCategoriesBackground {};
+		class DiaryGroup: RscDiaryGroup {};
 		class DiaryList: RscListNBox
 		{
 			colorBackground[] = {0, 0, 0, 0};
@@ -242,12 +142,13 @@ class RscDisplayMainMap
 			colorSelectRight[] = {1, 1, 1, 1};
 			columns[] = {0};
 			default = 1;
-			h = "safezoneH - 7 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+			h = 0;
 			idc = 1001;
+			onLoad = "(_this # 0) ctrlenable false;";
 			sizeEx = "0.8 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			w = "6 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX)";
-			y = "2.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
+			w = 0;
+			x = -10;
+			y = -10;
 		};
 		class FadeEffect: RscText
 		{
@@ -327,553 +228,17 @@ class RscDisplayMainMap
 				};
 			};
 		};
-		class HC_tooltip_back: IGUIBack
+		class MapCategories: RscMapCategories {};
+		class MapCategoriesSimple: RscMapCategoriesSimple {};
+		class MarkerColor: RscCombo
 		{
-			colorBackground[] = {0.2, 0.15, 0.1, 0.8};
-			h = 0;
-			idc = 1124;
-			w = 0;
-			x = 0;
-			y = 0;
+			idc = 1090;
+			show = 0;
 		};
-		class HC_tooltip_text: RscStructuredText
+		class MarkerIcon: RscCombo
 		{
-			h = 0;
-			idc = 1125;
-			size = 0.035;
-			w = 0;
-			x = 0;
-			y = 0;
-			class Attributes
-			{
-				align = "left";
-				color = "#B6F862";
-				font = "RobotoCondensedBold";
-				shadow = 1;
-			};
-		};
-		class MuteAll: RscCheckBox
-		{
-			h = "0.8 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			idc = 119;
-			textureChecked = "\A3\Ui_f\data\IGUI\RscIngameUI\RscDisplayChannel\MuteVON_ca.paa";
-			textureDisabledChecked = "\A3\Ui_f\data\IGUI\RscIngameUI\RscDisplayChannel\MuteVON_ca.paa";
-			textureDisabledUnchecked = "\A3\Ui_f\data\IGUI\RscIngameUI\RscDisplayChannel\MuteVON_crossed_ca.paa";
-			textureFocusedChecked = "\A3\Ui_f\data\IGUI\RscIngameUI\RscDisplayChannel\MuteVON_ca.paa";
-			textureFocusedUnchecked = "\A3\Ui_f\data\IGUI\RscIngameUI\RscDisplayChannel\MuteVON_crossed_ca.paa";
-			textureHoverChecked = "\A3\Ui_f\data\IGUI\RscIngameUI\RscDisplayChannel\MuteVON_ca.paa";
-			textureHoverUnchecked = "\A3\Ui_f\data\IGUI\RscIngameUI\RscDisplayChannel\MuteVON_crossed_ca.paa";
-			texturePressedChecked = "\A3\Ui_f\data\IGUI\RscIngameUI\RscDisplayChannel\MuteVON_ca.paa";
-			texturePressedUnchecked = "\A3\Ui_f\data\IGUI\RscIngameUI\RscDisplayChannel\MuteVON_crossed_ca.paa";
-			textureUnchecked = "\A3\Ui_f\data\IGUI\RscIngameUI\RscDisplayChannel\MuteVON_crossed_ca.paa";
-			w = "0.8 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "15.8 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX)";
-			y = "2.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
-		};
-		class RespawnControlsGroup: RscControlsGroupNoScrollbars
-		{
-			fade = 1;
-			h = "(9.7 + 1.15 ) * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			idc = 88800;
-			onLoad = "(_this select 0) ctrlEnable false;_this execVM 'a3\ui_f\scripts\gui\RscRespawnControls.sqf'";
-			w = "38 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
-			y = "(15 - 1.15 ) * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))";
-			class controls
-			{
-				class AutoRespawn: RscActiveText
-				{
-					color[] = {1, 1, 1, 0.7};
-					colorActive[] = {1, 1, 1, 1};
-					colorBackground[] = {1, 1, 1, 0.3};
-					colorText[] = {1, 1, 1, 0.3};
-					h = "0.60 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88830;
-					style = 48;
-					text = "\a3\ui_f\data\map\respawn\icon_autorespawn_ca.paa";
-					w = "0.60 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "20.95 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(1.75 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class BackgroungItem: RscPicture
-				{
-					h = "1.35 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88825;
-					text = "#(argb,8,8,3)color(1,1,1,0.3)";
-					w = "3.025 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "28.625 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(7.0 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class BackgroungOptics: RscPicture
-				{
-					h = "1.35 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88824;
-					text = "#(argb,8,8,3)color(1,1,1,0.3)";
-					w = "3.025 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "25.5 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(7.0 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class BackgroungPrimaryWeapon: RscPicture
-				{
-					h = "1.35 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88822;
-					text = "#(argb,8,8,3)color(1,1,1,0.3)";
-					w = "6.15 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "25.5 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(5.55 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class BackgroungSecondaryWeapon: RscPicture
-				{
-					h = "1.35 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88823;
-					text = "#(argb,8,8,3)color(1,1,1,0.3)";
-					w = "6.15 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "31.75 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(5.55 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class ButtonDetails: RscButtonMenu
-				{
-					h = "1.35 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88814;
-					text = "DETAILS";
-					w = "6.15 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "31.75 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(7.0 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					class Attributes
-					{
-						align = "center";
-						color = "#E5E5E5";
-						font = "PuristaLight";
-						shadow = "false";
-					};
-					class TextPos
-					{
-						bottom = 0;
-						left = "0.25 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-						right = 0.005;
-						top = "0.12 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					};
-				};
-				class ButtonSpectate: RscButtonMenu
-				{
-					h = "1.1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88811;
-					text = "SPECTATE";
-					w = "12.6 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "12.7 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(8.5 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					class Attributes
-					{
-						align = "center";
-						color = "#E5E5E5";
-						font = "PuristaLight";
-						shadow = "false";
-					};
-				};
-				class ComboLoadout: RscCombo
-				{
-					h = "1.1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88813;
-					sizeEx = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					w = "12.6 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					wholeHeight = 0.22;
-					x = "25.4 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(4.4 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class Counter: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "1.55 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88806;
-					w = "8 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "15.0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(1.10 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class CounterText: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "0.75 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88826;
-					size = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-					w = "8 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "15.0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(0.35 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class GearBackground: RscText
-				{
-					colorBackground[] = {0.1, 0.1, 0.1, 0.8};
-					h = "5.5 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88804;
-					w = "12.6 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "25.4 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(2.9 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class GearTitle: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "0.75 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88821;
-					size = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-					w = "12.6 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "25.4 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(3.275 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class HeaderBackground: RscText
-				{
-					colorBackground[] = {0.1, 0.1, 0.1, 0.8};
-					h = "2.6 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88801;
-					w = "38.0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "0.0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(0.2 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class HeaderRespawnButton: RscButtonMenu
-				{
-					colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.13])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.54])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.21])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.8])"};
-					h = "2.3 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88829;
-					text = "RESPAWN";
-					w = "12.6 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "12.7 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(0.35 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					class Attributes
-					{
-						align = "center";
-						color = "#E5E5E5";
-						font = "PuristaLight";
-						shadow = "false";
-					};
-					class TextPos
-					{
-						bottom = 0;
-						left = "0.25 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-						right = 0.005;
-						top = "0.65 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					};
-				};
-				class LoadoutDisabled: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "4 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88834;
-					text = "<t align='center' color='#a3ffffff'><img image='#(argb,8,8,3)color(0,0,0,0)' size='0.8' /><br />Loadout unspecified and will be chosen automatically.</t>";
-					w = "12.6 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "25.4 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(4.4 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class LocBackground: RscText
-				{
-					colorBackground[] = {0.1, 0.1, 0.1, 0.8};
-					h = "5.5 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88802;
-					w = "12.6 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "0.0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(2.9 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class LocDisabled: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "4 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88832;
-					text = "<t align='center' color='#a3ffffff'><img image='#(argb,8,8,3)color(0,0,0,0)' size='0.8' /><br />Location will be chosen according to mission settings.</t>";
-					w = "12.6 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "0.0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(4.4 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class LocList: RscListBox
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					colorPictureSelected[] = {0, 0, 0, 1};
-					h = "4 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88808;
-					sizeEx = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					w = "12.6 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "0.0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(4.4 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class LocTitle: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "0.75 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88819;
-					size = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-					w = "12.6 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "0.0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(3.275 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class OverHeaderBackground: RscText
-				{
-					colorBackground[] = {0.1, 0.1, 0.1, 0.8};
-					h = "(1.15  - 0.1) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88870;
-					show = 0;
-					w = "38.0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "0.0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "0.2 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class OverHeaderLeft: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "(1.15  - 0.3) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88871;
-					show = 0;
-					size = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-					w = "19.0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "0.0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "0.3 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class OverHeaderRight: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "(1.15  - 0.3) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88872;
-					show = 0;
-					size = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-					w = "19.0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "19.0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "0.3 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class PictureItem: RscPicture
-				{
-					h = "1.35 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88818;
-					w = "1.35 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "29.4625 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(7.0 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class PictureOptics: RscPicture
-				{
-					h = "1.35 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88817;
-					w = "1.35 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "26.3375 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(7.0 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class PicturePrimaryWeapon: RscPicture
-				{
-					h = "1.35 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88815;
-					w = "2.7 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "27.225 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(5.55 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class PictureSecondaryWeapon: RscPicture
-				{
-					h = "1.35 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88816;
-					w = "2.7 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "33.475 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(5.55 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class RespawnInfo: RscText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "2.0 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88877;
-					show = 0;
-					w = "0.1 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "25.7 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(0.5 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class RespawnInfoOption: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "2.3 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88879;
-					show = 0;
-					w = "5.7 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "25.9 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(1.475 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class RespawnInfoTitle: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "2.3 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88878;
-					show = 0;
-					w = "5.7 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "25.9 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(0.625 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class ReviveInfo: RscText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "2.0 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88874;
-					show = 0;
-					w = "0.1 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "12.2 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(0.5 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class ReviveInfoOption: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "2.3 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88876;
-					show = 0;
-					w = "5.7 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "6.3 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(1.475 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class ReviveInfoTitle: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "2.3 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88875;
-					show = 0;
-					w = "5.7 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "6.3 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(0.625 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class RoleBackground: RscText
-				{
-					colorBackground[] = {0.1, 0.1, 0.1, 0.8};
-					h = "5.5 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88803;
-					w = "12.6 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "12.7 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(2.9 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class RoleDisabled: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "4 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88833;
-					text = "<t align='center' color='#a3ffffff'><img image='#(argb,8,8,3)color(0,0,0,0)' size='0.8' /><br />Role unspecified and will be chosen automatically.</t>";
-					w = "12.6 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "12.7 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(4.4 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class RoleList: RscListBox
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					colorPictureSelected[] = {0, 0, 0, 1};
-					h = "4 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88809;
-					sizeEx = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					w = "12.6 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "12.7 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(4.4 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class RoleTitle: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "0.75 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88820;
-					size = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-					w = "12.6 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "12.7 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(3.275 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class Team: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "1.00 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88805;
-					w = "8 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "0.0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(1.375 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class TeamText: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "0.75 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88827;
-					size = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-					w = "8 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "0.0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(0.625 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class Tickets: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "1.00 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88807;
-					w = "8 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "30.0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(1.375 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class TicketsText: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0};
-					h = "0.75 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88828;
-					size = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-					w = "8 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "30.0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(0.625 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class Warning: RscStructuredText
-				{
-					colorBackground[] = {0.7, 0, 0, 1};
-					h = "2.3 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88831;
-					text = "";
-					w = "19.05 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "9.475 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "(0.35 + 1.15 ) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-			};
-		};
-		class RespawnDetailsControlsGroup: RscControlsGroupNoScrollbars
-		{
-			fade = 1;
-			h = "14.6 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			idc = 88850;
-			onLoad = "(_this select 0) ctrlEnable false";
-			w = "12.6 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "26.4 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
-			y = "0.6 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))";
-			class controls
-			{
-				class BackgroundDetails: RscText
-				{
-					colorBackground[] = {0.1, 0.1, 0.1, 0.8};
-					h = "14.4 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88851;
-					w = "12.6 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "0.2 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class ButtonDetailsClose: RscButton
-				{
-					colorBackground[] = {1, 1, 1, 1};
-					h = "0.75 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88853;
-					w = "0.75 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "11.85 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "0.2 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class DetailsTitle: RscStructuredText
-				{
-					colorBackground[] = {0, 0, 0, 0.9};
-					h = "0.75 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88852;
-					w = "11.85 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "0.2 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class RespawnDetailsListControlsGroup: RscControlsGroup
-				{
-					h = "13.45 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 88860;
-					w = "12.4 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "0.1 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "1.05 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					class controls
-					{
-						class DetailsList: RscStructuredText
-						{
-							colorBackground[] = {1, 1, 1, 0.3};
-							h = "12.4 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-							idc = 88861;
-							w = "11.7 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-							x = "0 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-							y = "0 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-						};
-					};
-				};
-			};
+			idc = 1091;
+			show = 0;
 		};
 		class SortPlayers: RscPicture
 		{
@@ -886,137 +251,9 @@ class RscDisplayMainMap
 			x = "15 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX)";
 			y = "2.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
 		};
-		class Tooltip: RscMapControlTooltip {};
-		class TopRight: RscControlsGroup
-		{
-			h = "1.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			idc = 2302;
-			w = "26 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-			x = "safezoneX + safezoneW - (26 * 					(			((safezoneW / safezoneH) min 1.2) / 40))";
-			y = "0 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
-			class controls
-			{
-				class ButtonPlayer: RscActiveText
-				{
-					color[] = {1, 1, 1, 0.7};
-					colorActive[] = {1, 1, 1, 1};
-					colorText[] = {1, 1, 1, 0.7};
-					h = "1.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 1202;
-					onbuttonclick = "with uinamespace do {['ButtonPlayer',_this,''] call RscDiary_script};";
-					style = 48;
-					text = "\A3\ui_f\data\igui\cfg\islandmap\iconplayer_ca.paa";
-					tooltip = "Move map to player position";
-					w = "1.1 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "18.1 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "0.2 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class ButtonTextures: RscActiveText
-				{
-					color[] = {1, 1, 1, 0.7};
-					colorActive[] = {1, 1, 1, 1};
-					colorText[] = {1, 1, 1, 0.7};
-					h = "1.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 1201;
-					onbuttonclick = "with uinamespace do {['ButtonTextures',_this,''] call RscDiary_script};";
-					style = 48;
-					text = "\A3\ui_f\data\map\diary\textures_ca.paa";
-					tooltip = "Toggle map textures";
-					w = "1.5 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "19.3 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "0 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class CA_PlayerName: RscText
-				{
-					font = "RobotoCondensedLight";
-					h = "1.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 111;
-					sizeEx = "0.8 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					style = 1;
-					text = "Player name:";
-					w = "10.2 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "0 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "0 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class Clock: RscText
-				{
-					colorText[] = {1, 1, 1, 0.7};
-					font = "RobotoCondensedLight";
-					h = "1.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 101;
-					shadow = 0;
-					sizeEx = "1.4 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					style = 0;
-					w = "4.5 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "20.8 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "-0.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class MarkerColor: RscCombo
-				{
-					h = "1.2 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 1090;
-					sizeEx = "0.8 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					tooltip = "Marker color";
-					w = "2.9 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "11.8 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "0.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class MarkerIcon: RscCombo
-				{
-					h = "1.2 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 1091;
-					sizeEx = "0.8 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					tooltip = "Marker icon.";
-					w = "2.9 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "14.9 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "0.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class ProfileBackground: RscText
-				{
-					colorBackground[] = {1, 1, 1, 0.2};
-					h = "1.2 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 1014;
-					w = "1.2 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "10.1 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "0.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class ProfilePicture: RscPicture
-				{
-					h = "0.8 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 116;
-					text = "\A3\Ui_f\data\GUI\Cfg\Ranks\corporal_gs.paa";
-					w = "0.8 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "10.3 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "0.3 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class Separator1: RscPicture
-				{
-					h = "1.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 1205;
-					text = "\A3\ui_f\data\map\diary\separator_ca.paa";
-					w = "0.5 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "11.3 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "0 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-				class Separator2: RscPicture
-				{
-					h = "1.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-					idc = 1204;
-					text = "\A3\ui_f\data\map\diary\separator_ca.paa";
-					w = "0.5 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					x = "20.8 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-					y = "0 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-				};
-			};
-			class HScrollbar: HScrollbar
-			{
-				height = 0;
-			};
-			class VScrollbar: VScrollbar
-			{
-				width = 0;
-			};
-		};
+		class Tooltip: RscMapTooltip {};
+		class TooltipArea: RscMapTooltipArea {};
+		class TooltipSimple: RscMapTooltipSimple {};
 		class WalkieTalkie: RscControlsGroup
 		{
 			h = 0;
@@ -1111,15 +348,52 @@ class RscDisplayMainMap
 	};
 	class controlsBackground
 	{
-		class CA_Black: CA_Black_Back {};
+		class CA_Black: CA_Black_Back
+		{
+			h = "safezoneH";
+			idc = 510;
+			text = "#(rgb,1,1,1)color(1,1,1,1)";
+			w = "safezoneWAbs";
+			x = "safezoneXAbs";
+			y = "safezoneY";
+		};
 		class CA_Map: RscMapControl
 		{
+			h = "safezoneH";
 			idcMarkerColor = 1090;
 			idcMarkerIcon = 1091;
+			onLoad = "with uinamespace do {_this call bin_fnc_drawMap;};";
+			w = "safezoneWAbs + 2 * (		20 * 			(			((safezoneW / safezoneH) min 1.2) / 40))";
+			x = "safezoneXAbs - (		20 * 			(			((safezoneW / safezoneH) min 1.2) / 40))";
+			y = "safezoneY";
 		};
-		class CA_RscMapSignalBackground: RscMapSignalBackground {};
-		class CA_RscMapSignalPicture: RscMapSignalPicture {};
-		class CA_RscMapSignalText: RscMapSignalText {};
+		class FakeMap: RscControlsGroupNoScrollbars
+		{
+			h = "safezoneH * 	1.2";
+			idc = 270982;
+			onLoad = "(_this # 0) ctrlenable false;";
+			w = "safezoneH * 3/4 * 	1.2";
+			x = "0.5 - safezoneH * 3/4 / 2 * 	1.2";
+			y = "0.5 - safezoneH / 2 * 	1.2";
+		};
+		class ProbeMap: RscMapControlEmpty
+		{
+			h = "safezoneH";
+			idc = 20778;
+			onLoad = "with uinamespace do {_this call bin_fnc_drawProbeMap;};";
+			scaleDefault = 0.5;
+			scaleMax = 0.6;
+			scaleMin = 0.3;
+			show = 0;
+			text = "#(rgb,1,1,1)color(1,1,1,1)";
+			w = "safezoneWAbs + 2 * (		20 * 			(			((safezoneW / safezoneH) min 1.2) / 40))";
+			x = "safezoneXAbs - (		20 * 			(			((safezoneW / safezoneH) min 1.2) / 40))";
+			y = "safezoneY";
+		};
+		class SpectrumMap: RscMapSpectrum
+		{
+			idc = 20779;
+		};
 	};
 	class objects
 	{

@@ -11,8 +11,8 @@ class CfgSimpleTasks
 		colorText[] = {0.8, 0.8, 0.8, 1};
 		colorTextAssigned[] = {0.8, 0.6, 0, 1};
 		colorTextCustom[] = {0.1, 0.1, 0.9, 1};
-		sizeBackground = 0.022;
-		sizeIcon = 0.016;
+		sizeBackground = 0;
+		sizeIcon = 0;
 		textureBackground = "#(argb,8,8,3)color(1,1,1,1)";
 	};
 	class Icon2D: Icon
@@ -28,9 +28,9 @@ class CfgSimpleTasks
 		colorTextCustom[] = {0.3, 0.72, 1, 1};
 		mouseoverZoom = 1.5;
 		selectedAlpha = 1;
-		sizeBackground = 0.033;
-		sizeIcon = 0.027;
-		sizeInverted = 0.029;
+		sizeBackground = 0;
+		sizeIcon = 0;
+		sizeInverted = 0;
 	};
 	class Icon3D: Icon
 	{
@@ -50,37 +50,18 @@ class CfgSimpleTasks
 		shadowBackground = 0;
 		shadowForeground = 2;
 		shadowText = 2;
-		sizeBackground = 0.03;
-		sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-		sizeIcon = 0.022;
+		sizeBackground = 0;
+		sizeEx = 0;
+		sizeIcon = 0;
 		textureBackground = "\a3\ui_f\data\igui\cfg\simpletasks\background3_ca.paa";
 		yOffsetExact = 0.2;
 		yOffsetNonExact = 0;
-		class DistanceClose
+		class Distance
 		{
-			alphaMult = 1;
 			alphaMultiplier = 1;
-			range[] = {0, 350};
+			range[] = {0, 1e+010};
 			scale = 1;
-			showDistance = 1;
-			textOffset = 0.003;
-		};
-		class DistanceLong: DistanceClose
-		{
-			alphaMult = 0.8;
-			alphaMultiplier = 0.6;
-			range[] = {1000, 1e+011};
-			scale = 1;
-			showDistance = 1;
-			textOffset = 0.003;
-		};
-		class DistanceMid: DistanceClose
-		{
-			alphaMult = 0.9;
-			alphaMultiplier = 0.8;
-			range[] = {350, 1000};
-			scale = 1;
-			showDistance = 1;
+			showDistance = 0;
 			textOffset = 0.003;
 		};
 	};
@@ -124,14 +105,16 @@ class CfgSimpleTasks
 	class Tooltip: Icon
 	{
 		selectedAlpha = 1;
+		sizeBackground = 0;
+		sizeIcon = 0;
 		textAssign = "Assign";
 		textAssigned = "Assigned";
 		textClkAssign = "Click to assign";
 		textClkUnAssign = "Click to unassign";
 		textUnassign = "Unassign";
 		textUnassigned = "Unassigned";
-		widthMax = 0.48;
-		widthMin = 0.24;
+		widthMax = 0;
+		widthMin = 0;
 		class CustomIcon
 		{
 			right = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8) * 0.8";

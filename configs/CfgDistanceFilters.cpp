@@ -9,6 +9,24 @@ class CfgDistanceFilters
 		range = 1000;
 		type = "lowPassFilter";
 	};
+	class DroneDistanceFreqAttenuationFilter
+	{
+		innerRange = 10;
+		minCutoffFrequency = 150;
+		powerFactor = 32;
+		qFactor = 1;
+		range = 500;
+		type = "lowPassFilter";
+	};
+	class DroneWeaponDistanceFreqAttenuationFilter
+	{
+		innerRange = 10;
+		minCutoffFrequency = 1050;
+		powerFactor = 32;
+		qFactor = 1;
+		range = 500;
+		type = "lowPassFilter";
+	};
 	class explosionDistanceFreqAttenuationFilter
 	{
 		innerRange = 10;
@@ -43,6 +61,15 @@ class CfgDistanceFilters
 		powerFactor = 20;
 		qFactor = 1;
 		range = 50;
+		type = "lowPassFilter";
+	};
+	class LowIntensityDistanceFilter
+	{
+		innerRange = 10;
+		minCutoffFrequency = 5000;
+		powerFactor = 32;
+		qFactor = 1;
+		range = 1000;
 		type = "lowPassFilter";
 	};
 	class softVehiclesDistanceFreqAttenuationFilter

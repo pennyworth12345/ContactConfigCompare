@@ -7,7 +7,7 @@ class RscDisplayLogin: RscStandardDisplay
 	scriptPath = "GUI";
 	class controls
 	{
-		class ButtonAvatar: RscButtonMenu
+		class ButtonAvatar: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 115;
@@ -25,7 +25,7 @@ class RscDisplayLogin: RscStandardDisplay
 			x = "32.55 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
 			y = "3.6 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 		};
-		class ButtonUnit: RscButtonMenu
+		class ButtonUnit: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 116;

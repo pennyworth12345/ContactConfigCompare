@@ -1,6 +1,53 @@
 class CfgAmmo
 {
 	access = 1;
+	class AlienDrone_01_LandCrash_Sound: GrenadeHand
+	{
+		CraterEffects = "AlienDrone_01_CrashDust_Crater";
+		dangerRadiusHit = 0;
+		deflecting = 30;
+		explosionEffects = "";
+		explosionEffectsRadius = 1.5;
+		explosionTime = 0.001;
+		hit = 0;
+		indirectHit = 1;
+		indirectHitRange = 0.01;
+		simulationStep = 0.001;
+		SoundSetExplosion[] = {"AlienDrone_01_Crash_SoundSet"};
+		suppressionRadiusHit = 0;
+		typicalspeed = 26;
+		whistleDist = 12;
+		class CamShakeExplode
+		{
+			distance = 176.498;
+			duration = 1.6;
+			frequency = 20;
+			power = 13;
+		};
+	};
+	class AlienDrone_01_Sounds_DummyAmmo: BulletBase
+	{
+		cost = 1e+010;
+		EffectFly = "";
+		hit = 0.01;
+		simulationStep = 0.001;
+		submunitionAmmo = "AlienDrone_01_Sounds_DummyAmmo_Fake";
+		submunitionConeAngle = 1;
+		submunitionConeType[] = {"randomcenter", 1};
+		triggerDistance = 0.0001;
+		triggerSpeedCoef[] = {1e-005};
+		triggerTime = 0.0001;
+	};
+	class AlienDrone_01_Sounds_DummyAmmo_Fake: BulletBase
+	{
+		EffectFly = "";
+		hit = 1;
+		indirectHit = 1;
+		indirectHitRange = 1;
+		soundSetBulletFly[] = {};
+		soundSetSonicCrack[] = {};
+		timeToLive = 0.001;
+	};
 	class ammo_AAA_Gun35mm_AA: ammo_Gun35mmAABase
 	{
 		model = "\A3\Weapons_f\Data\bullettracer\tracer_white";
@@ -2393,6 +2440,38 @@ class CfgAmmo
 			power = 0.01;
 		};
 	};
+	class B_25x40mm_airburst: B_25x40mm_base
+	{
+		directionalExplosion = 1;
+		submunitionAmmo[] = {"B_25x40mm_airburst_deploy", 1};
+		submunitionAutoleveling = 1;
+		submunitionConeAngle[] = {10, 180};
+		submunitionConeAngleHorizontal = 175;
+		submunitionConeType[] = {"randomupcone", 5};
+		submunitionInitSpeed = 18;
+		submunitionParentSpeedCoef = 0;
+		triggerDistance = 22;
+		triggerSpeedCoef[] = {0.1, 2};
+	};
+	class B_25x40mm_airburst_deploy: B_25x40mm_HE
+	{
+		airFriction = 0;
+		explosionTime = 0.1;
+		model = "\A3\Weapons_F_EPB\Ammo\B_IRstrobe_F.p3d";
+		sideairFriction = 0;
+		simulation = "shotGrenade";
+		simulationStep = 0.1;
+	};
+	class B_25x40mm_autoseek: B_25x40mm_base {};
+	class B_25x40mm_base: B_19mm_HE
+	{
+		hit = 11;
+		indirectHit = 6;
+		indirectHitRange = 4;
+		simulationStep = 0.001;
+	};
+	class B_25x40mm_HE: B_25x40mm_base {};
+	class B_25x40mm_stick: B_25x40mm_base {};
 	class B_30mm_AP: BulletBase
 	{
 		aiAmmoUsageFlags = "128 + 512";
@@ -3516,6 +3595,95 @@ class CfgAmmo
 	{
 		model = "\A3\Weapons_f\Data\bullettracer\tracer_Yellow";
 	};
+	class B_BlankRound: B_556x45_Ball
+	{
+		deleteParentWhenTriggered = 1;
+		model = "\A3\Weapons_f\empty";
+		simulation = "shotSubmunitions";
+		submunitionAmmo = "B_BlankRound_Fired";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 3000;
+		submunitionParentSpeedCoef = 0;
+		triggerDistance = 0.0001;
+		triggerOnImpact = 1;
+		triggerTime = 1e-006;
+	};
+	class B_BlankRound_caseless: B_BlankRound
+	{
+		cartridge = "";
+	};
+	class B_BlankRound_Fired: B_556x45_Ball
+	{
+		airFriction = 0;
+		caliber = 0;
+		coefGravity = 0;
+		deleteParentWhenTriggered = 1;
+		explosive = 1;
+		model = "\A3\Weapons_f\empty";
+		submunitionAmmo = "B_BlankRound_SubAmmo";
+		submunitionInitialOffset[] = {10, 10, -10.5};
+		submunitionInitSpeed = 10;
+		triggerOnImpact = 1;
+	};
+	class B_BlankRound_SubAmmo: B_556x45_Ball
+	{
+		craterEffects = "";
+		craterWaterEffects = "";
+		hit = 1;
+		hitArmor[] = {"soundHit", 1};
+		hitBuilding[] = {"soundHit", 1};
+		hitConcrete[] = {"soundHit", 1};
+		hitDefault[] = {"soundHit", 1};
+		hitFoliage[] = {"soundHit", 1};
+		hitGlass[] = {"soundHit", 1};
+		hitGlassArmored[] = {"soundHit", 1};
+		hitGroundHard[] = {"soundHit", 1};
+		hitGroundSoft[] = {"soundHit", 1};
+		hitIron[] = {"soundHit", 1};
+		hitMan[] = {"soundHit", 1};
+		hitMetal[] = {"soundHit", 1};
+		hitMetalplate[] = {"soundHit", 1};
+		hitPlastic[] = {"soundHit", 1};
+		hitRubber[] = {"soundHit", 1};
+		hitTyre[] = {"soundHit", 1};
+		hitWater[] = {"soundHit", 1};
+		hitWood[] = {"soundHit", 1};
+		impactArmor[] = {"soundImpact", 1};
+		impactBuilding[] = {"soundImpact", 1};
+		impactConcrete[] = {"soundImpact", 1};
+		impactDefault[] = {"soundImpact", 1};
+		impactFoliage[] = {"soundImpact", 1};
+		impactGlass[] = {"soundImpact", 1};
+		impactGlassArmored[] = {"soundImpact", 1};
+		impactGroundHard[] = {"soundImpact", 1};
+		impactGroundSoft[] = {"soundImpact", 1};
+		impactIron[] = {"soundImpact", 1};
+		impactMan[] = {"soundImpact", 1};
+		impactMetal[] = {"soundImpact", 1};
+		impactMetalplate[] = {"soundImpact", 1};
+		impactPlastic[] = {"soundImpact", 1};
+		impactRubber[] = {"soundImpact", 1};
+		impactTyre[] = {"soundImpact", 1};
+		impactWater[] = {"soundImpact", 1};
+		impactWood[] = {"soundImpact", 1};
+		soundEngine[] = {"", 1, 1};
+		soundFakeFall[] = {"soundFall", 1};
+		soundFall[] = {"", 1, 1};
+		soundFly[] = {"", 1, 1};
+		soundHit[] = {"", 1, 1};
+		soundImpact[] = {"", 1, 1};
+		supersonicCrackFar[] = {"", 1, 1};
+		supersonicCrackNear[] = {"", 1, 1};
+		timetolive = 0.0001;
+		class CamShakeHit
+		{
+			distance = 1;
+			duration = 0.2;
+			frequency = 20;
+			power = 0;
+		};
+		class HitEffects {};
+	};
 	class B_coil_20g_spike: B_coil_5g_spike
 	{
 		hit = 120;
@@ -4565,6 +4733,9 @@ class CfgAmmo
 			Hit_Foliage_Green_big = "ImpactLeavesGreenBig";
 			Hit_Foliage_Palm = "ImpactLeavesPalm";
 			Hit_Foliage_Pine = "ImpactLeavesPine";
+			hitAlienArmour = "ImpactAlienArmour";
+			hitAlienMatterBall_01 = "ImpactEffectsRed";
+			hitAlienWeakPoint_01 = "ImpactAlienWeakPoint_01";
 			hitBuilding = "ImpactPlaster";
 			hitConcrete = "ImpactConcrete";
 			hitFoliage = "ImpactLeaves";
@@ -4578,6 +4749,9 @@ class CfgAmmo
 			hitMetal = "ImpactMetal";
 			hitMetalPlate = "ImpactMetal";
 			hitPlastic = "ImpactPlastic";
+			hitProbeCoreShell = "ImpactProbeCoreShell";
+			hitProbeTipCore = "ImpactProbeTipCore";
+			hitProbeTipShell = "ImpactProbeTipShell";
 			hitRubber = "ImpactRubber";
 			hitTyre = "ImpactTyre";
 			hitVirtual = "ImpactMetal";
@@ -4677,6 +4851,11 @@ class CfgAmmo
 		effectsSmoke = "ChemlightLight_blue";
 		model = "\A3\Weapons_f\chemlight\chemlight_blue_lit";
 	};
+	class Chemlight_blue_Contact: Chemlight_blue
+	{
+		explosionTime = 0.01;
+		timeToLive = 180;
+	};
 	class Chemlight_blue_Infinite: Chemlight_blue
 	{
 		timeToLive = 1e+010;
@@ -4767,6 +4946,199 @@ class CfgAmmo
 			frequency = 20;
 			power = 0.02;
 		};
+	};
+	class CM_AntiMissile_Ammo: CM_Base_Ammo
+	{
+		effectsSmoke = "CounterMeasureSmokeGrenade";
+		maneuvrability = 15;
+		maxControlRange = 1500;
+		maxSpeed = 300;
+		model = "\A3\Weapons_f\ammo\Missile_AT_02_F";
+		timeToLive = 15;
+		weaponLockSystem = 0;
+	};
+	class CM_Base_Ammo: CMflareAmmo
+	{
+		aiAmmoUsageFlags = 8;
+		airFriction = -0.01;
+		effectsSmoke = "CounterMeasureSmokeGrenade2";
+		hit = 1;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		initTime = 0;
+		maxControlRange = -1;
+		model = "\A3\Weapons_f\ammo\smokegrenade_white";
+		simulation = "shotCM";
+		thrustTime = 32;
+		timeToLive = 55;
+		weaponLockSystem = 2;
+	};
+	class CM_Decoy_Ammo: CM_Base_Ammo
+	{
+		airFriction = 0.005;
+		effectsSmoke = "CounterMeasureRefract";
+		model = "\a3\Air_F_Contact\Heli_CM_01\Heli_CM_01_F";
+		weaponLockSystem = "2 + 8 + 1";
+	};
+	class CM_GravityBurst_Ammo: CM_Base_Ammo
+	{
+		airFriction = 0.005;
+		effectsSmoke = "GravityBurst_Stage_01";
+		model = "\A3\Weapons_f\empty";
+		sideAirFriction = 0.03;
+		thrustTime = 12;
+		timeToLive = 8;
+		weaponLockSystem = "2 + 8 + 1";
+	};
+	class CM_GravityBurst_Debris: BulletBase
+	{
+		hit = 1;
+		indirectHit = 0.1;
+		indirectHitRange = 0.5;
+		soundSetBulletFly[] = {"Debris_FlyBy_SoundSet"};
+		soundSetSonicCrack[] = {};
+		timetolive = 5;
+		class CamShakeExplode
+		{
+			distance = 50.8712;
+			duration = 0.8;
+			frequency = 20;
+			power = 3.8;
+		};
+		class CamShakeFire
+		{
+			distance = 34.8712;
+			duration = 0.8;
+			frequency = 20;
+			power = 2.0878;
+		};
+		class CamShakeHit
+		{
+			distance = 1;
+			duration = 0.4;
+			frequency = 20;
+			power = 19;
+		};
+		class CamShakePlayerFire
+		{
+			distance = 1;
+			duration = 0.1;
+			frequency = 20;
+			power = 0.01;
+		};
+	};
+	class CM_GravityBurst_Hit: MissileBase
+	{
+		CraterEffects = "";
+		explosionEffects = "";
+		explosive = 1;
+		hit = 1;
+		Hit01[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_01", 1, 1, 25};
+		Hit02[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_02", 1, 1, 25};
+		Hit03[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_03", 1, 1, 25};
+		Hit04[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_04", 1, 1, 25};
+		Hit05[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_05", 1, 1, 25};
+		Hit06[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_06", 1, 1, 25};
+		Hit07[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_07", 1, 1, 25};
+		Hit08[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_08", 1, 1, 25};
+		Hit09[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_09", 1, 1, 25};
+		Hit10[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_10", 1, 1, 25};
+		Hit11[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_11", 1, 1, 25};
+		Hit12[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_12", 1, 1, 25};
+		Hit13[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_13", 1, 1, 25};
+		Hit14[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_14", 1, 1, 25};
+		Hit15[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_15", 1, 1, 25};
+		Hit16[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_16", 1, 1, 25};
+		Hit17[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_17", 1, 1, 25};
+		Hit18[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_18", 1, 1, 25};
+		Hit19[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_16", 1, 0.95, 25};
+		Hit20[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particle_Player_Hit_17", 1, 0.95, 25};
+		indirectHit = 1.1;
+		indirectHitRange = 0.5;
+		model = "\A3\weapons_f\launchers\RPG32\pg32v_rocket.p3d";
+		multiSoundHit[] = {"Hit01", 0.05, "Hit02", 0.05, "Hit03", 0.05, "Hit04", 0.05, "Hit05", 0.05, "Hit06", 0.05, "Hit07", 0.05, "Hit08", 0.05, "Hit09", 0.05, "Hit10", 0.05, "Hit11", 0.05, "Hit12", 0.05, "Hit13", 0.05, "Hit14", 0.05, "Hit15", 0.05, "Hit16", 0.05, "Hit17", 0.05, "Hit18", 0.05, "Hit19", 0.05, "Hit20", 0.05};
+		soundSetBulletFly[] = {};
+		soundSetExplosion[] = {};
+		soundSetSonicCrack[] = {};
+		class CamShakeExplode
+		{
+			distance = 50.8712;
+			duration = 0.8;
+			frequency = 20;
+			power = 3.8;
+		};
+		class CamShakeFire
+		{
+			distance = 34.8712;
+			duration = 0.8;
+			frequency = 20;
+			power = 2.0878;
+		};
+		class CamShakeHit
+		{
+			distance = 1;
+			duration = 0.4;
+			frequency = 20;
+			power = 19;
+		};
+		class CamShakePlayerFire
+		{
+			distance = 1;
+			duration = 0.1;
+			frequency = 20;
+			power = 0.01;
+		};
+	};
+	class CM_GrenadeDefence_Ammo: CM_Base_Ammo
+	{
+		airFriction = 0.005;
+		effectsSmoke = "";
+		model = "\A3\Weapons_f\empty";
+		sideAirFriction = 0.03;
+		thrustTime = 0;
+		timeToLive = 0.05;
+		weaponLockSystem = 0;
+	};
+	class CM_Light_Ammo: CM_Base_Ammo
+	{
+		effectsSmoke = "CounterMeasureLight";
+		weaponLockSystem = 1;
+	};
+	class CM_Light_Fake_Ammo: CM_Base_Ammo
+	{
+		effectsSmoke = "";
+		model = "\A3\Weapons_f\empty";
+		weaponLockSystem = 1;
+	};
+	class CM_Refract_Ammo: CM_Base_Ammo
+	{
+		airFriction = 0.005;
+		effectsSmoke = "CounterMeasureRefract";
+		model = "\A3\Weapons_f\empty";
+		sideAirFriction = 0.03;
+		thrustTime = 12;
+		timeToLive = 15;
+		weaponLockSystem = "2 + 8 + 1";
+	};
+	class CM_Smoke_Ammo: CM_Base_Ammo
+	{
+		effectsSmoke = "CounterMeasureSmokeGrenade";
+		weaponLockSystem = 1;
+	};
+	class CM_SmokeExp_Ammo: CM_Base_Ammo
+	{
+		effectsSmoke = "CounterMeasureSmokeGrenade";
+		weaponLockSystem = 1;
+	};
+	class CM_Universal_Ammo: CM_Base_Ammo
+	{
+		effectsSmoke = "CounterMeasureChaff";
+		weaponLockSystem = "2 + 8 + 1 + 16 + 4";
+	};
+	class CM_Visual_Ammo: CM_Base_Ammo
+	{
+		effectsSmoke = "CounterMeasureFlareAlien";
+		weaponLockSystem = 1;
 	};
 	class CMflare_Chaff_Ammo: CMflareAmmo
 	{
@@ -5328,6 +5700,11 @@ class CfgAmmo
 		effectsSmoke = "SmokeShellPurpleEffect";
 		smokeColor[] = {0.4341, 0.1388, 0.4144, 1};
 	};
+	class G_40mm_SmokePurple_Contact: G_40mm_SmokePurple
+	{
+		effectsSmoke = "SmokeShellPurpleEffectLarge";
+		timeToLive = 300;
+	};
 	class G_40mm_SmokePurple_Infinite: G_40mm_SmokePurple
 	{
 		timeToLive = 1e+010;
@@ -5438,6 +5815,210 @@ class CfgAmmo
 			hitWater = "ImpactEffectsWater";
 			hitWood = "ImpactWood";
 		};
+	};
+	class GravityCannon_Projectile_01_AI_F: GravityCannon_Projectile_01_F
+	{
+		EffectFly = "";
+		simulation = "shotBullet";
+		simulationStep = 0.001;
+		submunitionAmmo = "AlienDrone_01_Sounds_DummyAmmo_Fake";
+		submunitionConeAngle = 1;
+		submunitionConeType[] = {"randomcenter", 1};
+		triggerDistance = 0.0001;
+		triggerSpeedCoef[] = {1e-005};
+		triggerTime = 0.0001;
+	};
+	class GravityCannon_Projectile_01_F: BulletBase
+	{
+		aiAmmoUsageFlags = 0;
+		allowAgainstInfantry = 0;
+		caliber = 3;
+		coefGravity = 0;
+		cost = 500000;
+		CraterEffects = "ImpactGravityWeapon_Exp";
+		deleteParentWhenTriggered = 0;
+		EffectFly = "BulletTrace_02_FX1";
+		explosionEffects = "ImpactGravityWeapon_Exp";
+		explosionForceCoef = 100;
+		hit = 10000;
+		indirectHit = 10;
+		indirectHitRange = 1;
+		model = "\a3\Weapons_F_Contact\Ammo\TracerBall_02_Large_F.p3d";
+		simulation = "shotShell";
+		simulationStep = 0.001;
+		soundSetBulletFly[] = {"Gravity_Projectile_FlyBy_SoundSet"};
+		soundSetSonicCrack[] = {};
+		submunitionAmmo = "GravityCannon_SmallProjectile_01_nosound_F";
+		submunitionConeAngle = 30;
+		submunitionConeType[] = {"randomcenter", 25};
+		submunitionDirectionType = "SubmunitionAutoLeveling";
+		submunitionInitialOffset[] = {0, 0.1, 0};
+		timetolive = 5;
+		triggerOnImpact = 1;
+		class CamShakeExplode
+		{
+			distance = 133.79;
+			duration = 2.2;
+			frequency = 20;
+			power = 23;
+		};
+		class CamShakeHit
+		{
+			distance = 1;
+			duration = 0.6;
+			frequency = 20;
+			power = 115;
+		};
+		class HitEffects: HitEffects
+		{
+			Hit_Foliage_Dead = "ImpactLeavesDead";
+			Hit_Foliage_green = "ImpactLeavesGreen";
+			Hit_Foliage_Green_big = "ImpactLeavesGreenBig";
+			Hit_Foliage_Palm = "ImpactLeavesPalm";
+			Hit_Foliage_Pine = "ImpactLeavesPine";
+			hitAlienArmour = "ImpactAlienArmour";
+			hitAlienMatterBall_01 = "ImpactEffectsRed";
+			hitAlienWeakPoint_01 = "ImpactAlienWeakPoint_01";
+			hitBuilding = "ImpactGravityWeapon";
+			hitConcrete = "ImpactConcrete";
+			hitFoliage = "ImpactLeaves";
+			hitGlass = "ImpactGlass";
+			hitGlassArmored = "ImpactGlassThin";
+			hitGroundHard = "ImpactEffectsHardGround";
+			hitGroundRed = "ImpactEffectsRed";
+			hitGroundSoft = "ImpactEffectsSmall";
+			hitHay = "ImpactHay";
+			hitMan = "ImpactEffectsBloodLaser";
+			hitMetal = "ImpactGravityWeapon";
+			hitMetalPlate = "ImpactGravityWeapon";
+			hitPlastic = "ImpactPlastic";
+			hitProbeCoreShell = "ImpactProbeCoreShell";
+			hitProbeTipCore = "ImpactProbeTipCore";
+			hitProbeTipShell = "ImpactProbeTipShell";
+			hitRubber = "ImpactRubber";
+			hitTyre = "ImpactTyre";
+			hitVirtual = "ImpactGravityWeapon";
+			hitWater = "ImpactEffectsWater";
+			hitWood = "ImpactWood";
+		};
+	};
+	class GravityCannon_SmallProjectile_01_F: BulletBase
+	{
+		caliber = 3;
+		coefGravity = 0.2;
+		cost = 500000;
+		CraterEffects = "ImpactGravityWeapon_Exp";
+		EffectFly = "BulletTrace_02_FX1";
+		explosionEffects = "ImpactGravityWeapon_Exp";
+		explosionForceCoef = 10;
+		hit = 10;
+		indirectHit = 10;
+		indirectHitRange = 1;
+		model = "\a3\Weapons_F_Contact\Ammo\TracerBall_01_F.p3d";
+		simulation = "shotShell";
+		simulationStep = 0.001;
+		soundSetBulletFly[] = {"Gravity_Projectile_FlyBy_SoundSet"};
+		soundSetSonicCrack[] = {};
+		timetolive = 5;
+		class CamShakeExplode
+		{
+			distance = 96.4981;
+			duration = 1.6;
+			frequency = 20;
+			power = 13;
+		};
+		class CamShakeHit
+		{
+			distance = 1;
+			duration = 0.6;
+			frequency = 20;
+			power = 65;
+		};
+		class HitEffects: HitEffects
+		{
+			Hit_Foliage_Dead = "ImpactLeavesDead";
+			Hit_Foliage_green = "ImpactLeavesGreen";
+			Hit_Foliage_Green_big = "ImpactLeavesGreenBig";
+			Hit_Foliage_Palm = "ImpactLeavesPalm";
+			Hit_Foliage_Pine = "ImpactLeavesPine";
+			hitAlienArmour = "ImpactAlienArmour";
+			hitAlienMatterBall_01 = "ImpactEffectsRed";
+			hitAlienWeakPoint_01 = "ImpactAlienWeakPoint_01";
+			hitBuilding = "ImpactGravityWeapon";
+			hitConcrete = "ImpactConcrete";
+			hitFoliage = "ImpactLeaves";
+			hitGlass = "ImpactGlass";
+			hitGlassArmored = "ImpactGlassThin";
+			hitGroundHard = "ImpactEffectsHardGround";
+			hitGroundRed = "ImpactEffectsRed";
+			hitGroundSoft = "ImpactEffectsSmall";
+			hitHay = "ImpactHay";
+			hitMan = "ImpactEffectsBloodLaser";
+			hitMetal = "ImpactGravityWeapon";
+			hitMetalPlate = "ImpactGravityWeapon";
+			hitPlastic = "ImpactPlastic";
+			hitProbeCoreShell = "ImpactProbeCoreShell";
+			hitProbeTipCore = "ImpactProbeTipCore";
+			hitProbeTipShell = "ImpactProbeTipShell";
+			hitRubber = "ImpactRubber";
+			hitTyre = "ImpactTyre";
+			hitVirtual = "ImpactGravityWeapon";
+			hitWater = "ImpactEffectsWater";
+			hitWood = "ImpactWood";
+		};
+	};
+	class GravityCannon_SmallProjectile_01_nosound_F: GravityCannon_SmallProjectile_01_F
+	{
+		hitArmor[] = {"soundHit", 1};
+		hitBuilding[] = {"soundHit", 1};
+		hitConcrete[] = {"soundHit", 1};
+		hitDefault[] = {"soundHit", 1};
+		hitFoliage[] = {"soundHit", 1};
+		hitGlass[] = {"soundHit", 1};
+		hitGlassArmored[] = {"soundHit", 1};
+		hitGroundHard[] = {"soundHit", 1};
+		hitGroundSoft[] = {"soundHit", 1};
+		hitIron[] = {"soundHit", 1};
+		hitMan[] = {"soundHit", 1};
+		hitMetal[] = {"soundHit", 1};
+		hitMetalplate[] = {"soundHit", 1};
+		hitPlastic[] = {"soundHit", 1};
+		hitRubber[] = {"soundHit", 1};
+		hitTyre[] = {"soundHit", 1};
+		hitWater[] = {"soundHit", 1};
+		hitWood[] = {"soundHit", 1};
+		impactArmor[] = {"soundImpact", 1};
+		impactBuilding[] = {"soundImpact", 1};
+		impactConcrete[] = {"soundImpact", 1};
+		impactDefault[] = {"soundImpact", 1};
+		impactFoliage[] = {"soundImpact", 1};
+		impactGlass[] = {"soundImpact", 1};
+		impactGlassArmored[] = {"soundImpact", 1};
+		impactGroundHard[] = {"soundImpact", 1};
+		impactGroundSoft[] = {"soundImpact", 1};
+		impactIron[] = {"soundImpact", 1};
+		impactMan[] = {"soundImpact", 1};
+		impactMetal[] = {"soundImpact", 1};
+		impactMetalplate[] = {"soundImpact", 1};
+		impactPlastic[] = {"soundImpact", 1};
+		impactRubber[] = {"soundImpact", 1};
+		impactTyre[] = {"soundImpact", 1};
+		impactWater[] = {"soundImpact", 1};
+		impactWood[] = {"soundImpact", 1};
+		soundEngine[] = {"", 1, 1};
+		soundFakeFall[] = {"soundFall", 1};
+		soundFall[] = {"", 1, 1};
+		soundFly[] = {"", 1, 1};
+		soundHit[] = {"", 1, 1};
+		soundImpact[] = {"", 1, 1};
+		submunitionAmmo = "GravityCannon_SmallProjectile_01_F";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 0;
+		submunitionParentSpeedCoef = 1;
+		supersonicCrackFar[] = {"", 1, 1};
+		supersonicCrackNear[] = {"", 1, 1};
+		triggerSpeedCoef[] = {1};
+		triggerTime = 0.1;
 	};
 	class Grenade: Default
 	{
@@ -9815,6 +10396,13 @@ class CfgAmmo
 	{
 		timeToLive = 1e+010;
 	};
+	class SpectrumAnalyzer_Ammo: BulletBase
+	{
+		hit = 0;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		timeToLive = 0;
+	};
 	class Sub_F_Signal_Green: B_9x21_Ball
 	{
 		airFriction = -0.0216;
@@ -9886,6 +10474,147 @@ class CfgAmmo
 		timeToLive = 180;
 		visibleFire = 16;
 		visibleFireTime = 10;
+	};
+	class SwarmMissile_01_Ammo_F: MissileBase
+	{
+		airFriction = 0.065;
+		autoSeekTarget = 0;
+		CraterEffects = "";
+		deleteParentWhenTriggered = 0;
+		effectFly = "BulletTrace_02_FX1";
+		effectsMissile = "BulletTrace_02_FX1";
+		explosionEffects = "";
+		initTime = 1.25;
+		lockSeekRadius = 200;
+		maneuvrability = 32.5;
+		maxSpeed = 210;
+		missileKeepLockedCone = 10;
+		missileLockCone = 10;
+		model = "\a3\Weapons_F_Contact\Ammo\TracerBall_03_F.p3d";
+		sideAirFriction = 0.3;
+		simulationStep = 0.002;
+		soundFly[] = {"", 0.1, 1, 1};
+		SoundSetExplosion[] = {"Swarm_Shell_Launch_02_Projectile_SoundSet"};
+		submunitionAmmo[] = {"SwarmMissile_01_fly_ammo_f", 1};
+		submunitionAutoleveling = 0;
+		submunitionConeAngle = 345;
+		submunitionConeType[] = {"random", 1};
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 100;
+		submunitionParentSpeedCoef = 1;
+		thrust = 130;
+		thrustTime = 2;
+		timeToLive = 1.55;
+		trackLead = 0.85;
+		trackOversteer = 0.2;
+		triggerDistance = 1;
+		triggerOnImpact = 1;
+		triggerSpeedCoef[] = {0.5, 2};
+		triggerTime = 1.5;
+		typicalSpeed = 175;
+		weaponType = "missileAA";
+		whistleDist = 4;
+		class EventHandlers
+		{
+			fired = "_this call bin_fnc_missileSwarm";
+		};
+	};
+	class SwarmMissile_01_explode1_ammo_f: GrenadeHand
+	{
+		CraterEffects = "";
+		dangerRadiusHit = 40;
+		deflecting = 30;
+		explosionEffects = "SwarmMissile_MiniExp";
+		explosionEffectsRadius = 1.5;
+		explosionTime = 4;
+		hit = 1;
+		impactArmor[] = {};
+		impactBuilding[] = {};
+		impactConcrete[] = {};
+		impactDefault[] = {};
+		impactFoliage[] = {};
+		impactGlass[] = {};
+		impactGlassArmored[] = {};
+		impactGroundHard[] = {};
+		impactGroundSoft[] = {};
+		impactIron[] = {};
+		impactMetal[] = {};
+		impactMetalplate[] = {};
+		impactPlastic[] = {};
+		impactRubber[] = {};
+		impactTyre[] = {};
+		impactWood[] = {};
+		indirectHit = 2;
+		indirectHitRange = 2;
+		model = "\a3\Weapons_F_Contact\Ammo\SwarmMissile_01_explo_F";
+		soundFly[] = {"", 0.1, 1, 1};
+		soundSetBulletFly[] = {};
+		SoundSetExplosion[] = {"Swarm_Grenade_Explosion_SoundSet", "Swarm_Grenade_Explosion_Tail_SoundSet"};
+		suppressionRadiusHit = 18;
+		typicalspeed = 26;
+		whistleDist = 12;
+		class CamShakeExplode
+		{
+			distance = 56;
+			duration = 0.8;
+			frequency = 20;
+			power = 0.2;
+		};
+	};
+	class SwarmMissile_01_explode2_ammo_f: SwarmMissile_01_explode1_ammo_f
+	{
+		explosionTime = 3;
+	};
+	class SwarmMissile_01_explode3_ammo_f: SwarmMissile_01_explode1_ammo_f
+	{
+		explosionTime = 4.3;
+	};
+	class SwarmMissile_01_explode4_ammo_f: SwarmMissile_01_explode1_ammo_f
+	{
+		explosionTime = 2.2;
+	};
+	class SwarmMissile_01_explode5_ammo_f: SwarmMissile_01_explode1_ammo_f
+	{
+		explosionTime = 2.5;
+	};
+	class SwarmMissile_01_explode6_ammo_f: SwarmMissile_01_explode1_ammo_f
+	{
+		explosionTime = 2.9;
+	};
+	class SwarmMissile_01_explode7_ammo_f: SwarmMissile_01_explode1_ammo_f
+	{
+		explosionTime = 3.2;
+	};
+	class SwarmMissile_01_explode8_ammo_f: SwarmMissile_01_explode1_ammo_f
+	{
+		explosionTime = 3.6;
+	};
+	class SwarmMissile_01_fly_ammo_f: Sh_82mm_AMOS_guided
+	{
+		airFriction = -2e-006;
+		coefGravity = 0;
+		CraterEffects = "ImpactGravityWeapon_Exp";
+		deleteParentWhenTriggered = 0;
+		effectFly = "BulletTrace_02_FX1";
+		explosionEffects = "ImpactGravityWeapon_Exp";
+		explosive = 1;
+		model = "\a3\Weapons_F_Contact\Ammo\TracerBall_03_warm_F.p3d";
+		simulation = "shotBullet";
+		simulationStep = 0.002;
+		soundFly[] = {"", 0.1, 1, 1};
+		soundSetBulletFly[] = {"Swarm_Grenade_FlyBy_SoundSet"};
+		SoundSetExplosion[] = {""};
+		submunitionAmmo[] = {"SwarmMissile_01_explode1_ammo_f", 0.125, "SwarmMissile_01_explode2_ammo_f", 0.125, "SwarmMissile_01_explode3_ammo_f", 0.125, "SwarmMissile_01_explode4_ammo_f", 0.125, "SwarmMissile_01_explode5_ammo_f", 0.125, "SwarmMissile_01_explode6_ammo_f", 0.125, "SwarmMissile_01_explode7_ammo_f", 0.125, "SwarmMissile_01_explode8_ammo_f", 0.125};
+		submunitionConeAngle[] = {150, 180};
+		submunitionConeAngleHorizontal = 720;
+		submunitionConeType[] = {"randomupcone", 4};
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitialOffset[] = {0, 0, -2};
+		submunitionInitSpeed = 28;
+		submunitionParentSpeedCoef = 0;
+		triggerDistance = 0;
+		triggerOnImpact = 1;
+		triggerSpeedCoef[] = {0.5, 1};
 	};
 	class TimeBombCore: Default
 	{

@@ -4181,7 +4181,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			InterpolateTo[] = {"Unconscious", 0.02, "AbdvPercMsprSnonWnonDf", 0.02, "AbdvPercMwlkSnonWnonDf", 0.02, "AbdvPercMtacSnonWnonDf", 0.02, "AbdvPercMrunSnonWnonDfr", 0.02, "AbdvPercMrunSnonWnonDfl", 0.02, "AbdvPercMrunSnonWnonDl", 0.02, "AbdvPercMrunSnonWnonDr", 0.02, "AdvePercMrunSnonWnonDf", 0.02, "AsdvPercMrunSnonWnonDf", 0.02, "AbdvPercMstpSnonWnonDnon_relax", 0.1, "AmovPercMstpSnonWnonDnon", 0.03, "AbdvPercMstpSnonWnonDnon", 0.03, "AdvePercMstpSnonWnonDnon", 0.03, "AsdvPercMstpSnonWnonDnon", 0.03};
 			relSpeedMax = 1.5;
 			speed = 0.122414;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AbdvPercMrunSnonWnonDfl: AbdvPercMrunSnonWnonDf
 		{
@@ -4247,7 +4247,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitGunMovement = 0;
 			relSpeedMax = 1.5;
 			speed = 0.122414;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AbdvPercMrunSnonWrflDfl: AbdvPercMrunSnonWrflDf
 		{
@@ -4383,7 +4383,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file = "a3\anims_f\data\anim\sdr\dve\erc\stp\non\non\advepercmstpsnonwnondnon_godown.rtm";
 			InterpolateTo[] = {"AbdvPercMstpSnonWnonDnon", 0.2, "Unconscious", 0.02, "AdvePercMstpSnonWnonDnon", 0.2, "AsdvPercMstpSnonWnonDnon", 0.2, "AsdvPercMstpSnonWnonDnon_godown", 0.1, "AdvePercMstpSnonWnonDnon_godown", 0.1};
 			speed = 0.8;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AbdvPercMstpSnonWnonDnon_goup: AbdvPercMstpSnonWnonDnon
 		{
@@ -4394,7 +4394,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file = "a3\anims_f\data\anim\sdr\dve\erc\stp\non\non\advepercmstpsnonwnondnon_goup.rtm";
 			InterpolateTo[] = {"AbdvPercMstpSnonWnonDnon", 0.2, "Unconscious", 0.02, "AsdvPercMstpSnonWnonDnon", 0.2, "AdvePercMstpSnonWnonDnon", 0.2, "AsdvPercMstpSnonWnonDnon_goup", 0.1, "AdvePercMstpSnonWnonDnon_goup", 0.1};
 			speed = 0.6;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AbdvPercMstpSnonWnonDnon_putDown_AbdvPercMstpSnonWnonDnon: AbdvPercMstpSnonWnonDnon
 		{
@@ -4512,7 +4512,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file = "a3\anims_f\data\anim\sdr\dve\erc\stp\non\rfl\advepercmstpsnonwrfldnon_godown.rtm";
 			InterpolateTo[] = {"AbdvPercMstpSnonWrflDnon", 0.2, "Unconscious", 0.02, "AdvePercMstpSnonWrflDnon", 0.2, "AsdvPercMstpSnonWrflDnon", 0.2, "AsdvPercMstpSnonWrflDnon_godown", 0.1, "AdvePercMstpSnonWrflDnon_godown", 0.1};
 			speed = 0.8;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AbdvPercMstpSnonWrflDnon_goup: AbdvPercMstpSnonWrflDnon
 		{
@@ -4524,7 +4524,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file = "a3\anims_f\data\anim\sdr\dve\erc\stp\non\rfl\advepercmstpsnonwrfldnon_goup.rtm";
 			InterpolateTo[] = {"AbdvPercMstpSnonWrflDnon", 0.2, "Unconscious", 0.02, "AsdvPercMstpSnonWrflDnon", 0.2, "AdvePercMstpSnonWrflDnon", 0.2, "AsdvPercMstpSnonWrflDnon_goup", 0.1, "AdvePercMstpSnonWrflDnon_goup", 0.1};
 			speed = 0.6;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AbdvPercMstpSnonWrflDnon_putDown_AbdvPercMstpSnonWrflDnon: AbdvPercMstpSnonWrflDnon
 		{
@@ -4594,7 +4594,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			InterpolateTo[] = {"Unconscious", 0.02, "AbdvPercMsprSnonWnonDf", 0.02, "AbdvPercMwlkSnonWnonDf", 0.02, "AbdvPercMrunSnonWnonDf", 0.02, "AbdvPercMtacSnonWnonDfr", 0.02, "AbdvPercMtacSnonWnonDfl", 0.02, "AbdvPercMtacSnonWnonDl", 0.02, "AbdvPercMtacSnonWnonDr", 0.02, "AdvePercMtacSnonWnonDf", 0.02, "AsdvPercMtacSnonWnonDf", 0.02, "AbdvPercMstpSnonWnonDnon_relax", 0.1, "AmovPercMstpSnonWnonDnon", 0.03, "AbdvPercMstpSnonWnonDnon", 0.03, "AdvePercMstpSnonWnonDnon", 0.03, "AsdvPercMstpSnonWnonDnon", 0.03};
 			relSpeedMax = 1.5;
 			speed = 0.122414;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AbdvPercMtacSnonWnonDfl: AbdvPercMtacSnonWnonDf
 		{
@@ -4658,7 +4658,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitGunMovement = 0;
 			relSpeedMax = 1.5;
 			speed = 0.122414;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AbdvPercMtacSnonWrflDfl: AbdvPercMtacSnonWrflDf
 		{
@@ -4718,7 +4718,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			InterpolateTo[] = {"Unconscious", 0.02, "AbdvPercMsprSnonWnonDf", 0.02, "AbdvPercMrunSnonWnonDf", 0.02, "AbdvPercMtacSnonWnonDf", 0.02, "AbdvPercMwlkSnonWnonDfr", 0.02, "AbdvPercMwlkSnonWnonDfl", 0.02, "AbdvPercMwlkSnonWnonDl", 0.02, "AbdvPercMwlkSnonWnonDr", 0.02, "AdvePercMwlkSnonWnonDf", 0.02, "AsdvPercMwlkSnonWnonDf", 0.02, "AbdvPercMstpSnonWnonDnon_relax", 0.1, "AmovPercMstpSnonWnonDnon", 0.03, "AbdvPercMstpSnonWnonDnon", 0.03, "AdvePercMstpSnonWnonDnon", 0.03, "AsdvPercMstpSnonWnonDnon", 0.03};
 			relSpeedMax = 1.5;
 			speed = 0.122414;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AbdvPercMwlkSnonWnonDfl: AbdvPercMwlkSnonWnonDf
 		{
@@ -4782,7 +4782,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitGunMovement = 0;
 			relSpeedMax = 1.5;
 			speed = 0.122414;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AbdvPercMwlkSnonWrflDfl: AbdvPercMwlkSnonWrflDf
 		{
@@ -4829,7 +4829,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			relSpeedMax = 1.3;
 			relSpeedMin = 0.5;
 			speed = 0.238347;
-			stamina = -0.1;
+			stamina = -0.05;
 			static = 1;
 		};
 		class AbswPercMrunSnonWnonDf_AbswPercMstpSnonWnonDnon: AbswPercMrunSnonWnonDf
@@ -4915,14 +4915,14 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			duty = 0.3;
 			file = "a3\anims_f\data\anim\sdr\dve\erc\stp\non\non\advepercmstpsnonwnondnon_godown.rtm";
 			InterpolateTo[] = {"AbswPercMstpSnonWnonDnon", 0.2};
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AbswPercMstpSnonWnonDnon_goup: AbswPercMstpSnonWnonDnon
 		{
 			duty = 0.3;
 			file = "a3\anims_f\data\anim\sdr\dve\erc\stp\non\non\advepercmstpsnonwnondnon_goup.rtm";
 			InterpolateTo[] = {"AswmPercMstpSnonWnonDnon", 0.2, "AbswPercMstpSnonWnonDnon", 0.2, "AsswPercMstpSnonWnonDnon", 0.2};
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AbswPercMstpSnonWnonDnon_putDown: AbswPercMstpSnonWnonDnon
 		{
@@ -5645,6 +5645,24 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file = "a3\anims_f\data\anim\sdr\crg\knl\stp\non\non\acrgpknlmstpsnonwnondnon_amovpercmstpsraswrfldnon_getoutmedium.rtm";
 			speed = 1.333;
 		};
+		class Act_Alien_Gesture: CutSceneAnimationBaseZoZo
+		{
+			ConnectTo[] = {"Acts_CivilStand_Default", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Act_Alien_Gesture.rtm";
+			InterpolateTo[] = {};
+			looped = 0;
+			speed = 0.2804;
+		};
+		class Act_Alien_Gesture_Rifle: CutSceneAnimationBaseZoZo
+		{
+			ConnectTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Act_Alien_Gesture_Rifle.rtm";
+			leftHandIKCurve[] = {0, 1, 0.0204, 1, 0.0612, 0, 0.9081, 0, 0.9489, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.3093;
+			weaponIK = 1;
+		};
 		class Acts_A_M01_briefing: CutSceneAnimationBase
 		{
 			collisionShape = "A3\anims_f\Data\Geom\Sdr\geom_empty.p3d";
@@ -5801,6 +5819,99 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class Acts_Abuse_Lacey5: Acts_Abuse_Lacey
 		{
 			headBobMode = 5;
+		};
+		class Acts_Accessing_Computer_in: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Accessing_Computer";
+			canPullTrigger = 0;
+			ConnectTo[] = {"Acts_Accessing_Computer_Loop", 0.0001};
+			disableWeapons = 0;
+			disableWeaponsLong = 1;
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Accessing_Computer_in.rtm";
+			InterpolateTo[] = {"Acts_Accessing_Computer_Loop", 0.0001};
+			looped = 0;
+			showItemInHand = 0;
+			showItemInRightHand = 0;
+			showWeaponAim = 0;
+			speed = 1.25;
+		};
+		class Acts_Accessing_Computer_Loop: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Accessing_Computer";
+			aiming = "aimingNo";
+			aimingBody = "aimingNo";
+			aimPrecision = 0;
+			canPullTrigger = 0;
+			ConnectTo[] = {"Acts_Accessing_Computer_Loop", 1, "Acts_Accessing_Computer_Out_Short", 0.002};
+			disableWeapons = 0;
+			disableWeaponsLong = 1;
+			enableDirectControl = 0;
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Accessing_Computer_Loop.rtm";
+			InterpolateTo[] = {"Acts_Accessing_Computer_Out_1", 0.0001, "Acts_Accessing_Computer_Out_Short", 0.002};
+			limitGunMovement = 1;
+			looped = 1;
+			showItemInHand = 0;
+			showItemInRightHand = 0;
+			showWeaponAim = 0;
+			soundOverride = "Acts_Accessing_Computer_Loop";
+			speed = 0.15464;
+			weaponIK = 0;
+			weaponLowered = 0;
+			weaponObstructed = 1;
+		};
+		class Acts_Accessing_Computer_Out_1: CutSceneAnimationBaseZoZo
+		{
+			aiming = "aimingNo";
+			aimingBody = "aimingNo";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_Accessing_Computer_Out_1", 1e-006, "Acts_Accessing_Computer_Out_2", 0.0001};
+			disableWeapons = 1;
+			disableWeaponsLong = 1;
+			enableDirectControl = 0;
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Accessing_Computer_Out_1.rtm";
+			head = "headNo";
+			headBobMode = 6;
+			headBobStrength = -1;
+			InterpolateTo[] = {};
+			interpolationRestart = 1;
+			interpolationSpeed = 1;
+			legs = "legsNo";
+			looped = 0;
+			minPlayTime = 1;
+			showItemInHand = 0;
+			showItemInRightHand = 0;
+			showWeaponAim = 0;
+			speed = 0.092;
+		};
+		class Acts_Accessing_Computer_Out_2: CutSceneAnimationBaseZoZo
+		{
+			actions = "RifleLowStandActions";
+			aiming = "aimingNo";
+			aimingBody = "aimingNo";
+			canBlendStep = 0;
+			ConnectTo[] = {"AmovPercMstpSlowWrflDnon", 0.1};
+			enableDirectControl = 0;
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Accessing_Computer_Out_2.rtm";
+			forceAim = 1;
+			head = "headNo";
+			headBobMode = 6;
+			headBobStrength = -1;
+			InterpolateTo[] = {"AmovPercMstpSlowWrflDnon", 0.1};
+			interpolationRestart = 0;
+			interpolationSpeed = 1e+007;
+			legs = "legsNo";
+			looped = 0;
+			minPlayTime = 1;
+			speed = 0.0656;
+			variantAfter[] = {99, 99, 0};
+		};
+		class Acts_Accessing_Computer_Out_Short: CutSceneAnimationBaseZoZo
+		{
+			ConnectTo[] = {"Acts_RifleLowStand_Default", 0.1};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Accessing_Computer_Out_Short.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.1};
+			looped = 0;
+			speed = 1.1111;
 		};
 		class Acts_AidlPercMstpSloWWpstDnon_warmup_1: Acts_WarmupBaseKneel
 		{
@@ -6512,6 +6623,257 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			looped = 0;
 			speed = 0.1875;
 		};
+		class Acts_Ambient_Aggressive: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Aggressive.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.015, 1, 0.0196, 0, 0.77, 0, 0.823, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.1471;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Agreeing: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Agreeing.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.045, 1, 0.05, 0, 0.8, 0, 0.854, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.2587;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Approximate: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Approximate.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.088, 1, 0.093, 0, 0.93, 0, 0.98, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.7143;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Cleaning_Nose: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Cleaning_Nose.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.0309, 1, 0.0339, 0, 0.939, 0, 0.969, 1, 1, 1};
+			rightHandIKCurve[] = {1};
+			speed = 0.3125;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Defensive: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Defensive.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.017, 1, 0.023, 0, 0.9, 0, 0.949, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.1705;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Disagreeing: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Disagreeing.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.015, 1, 0.02, 0, 0.95, 0, 0.993, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.2014;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Disagreeing_with_pointing: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Disagreeing_with_pointing.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.017, 1, 0.023, 0, 0.9, 0, 0.95, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.1734;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Dismissing: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Dismissing.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.025, 1, 0.03, 0, 0.96, 0, 0.99, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.1485;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Facepalm_1: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Facepalm_1.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.024, 1, 0.029, 0, 0.95, 0, 0.994, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.1695;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Facepalm_2: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Facepalm_2.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.013, 1, 0.018, 0, 0.94, 0, 0.99, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.2728;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Gestures_Sneeze: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\common\Acts_Ambient_Gestures_Sneeze.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.0412, 1, 0.0618, 0, 0.907, 0, 0.9381, 1, 1, 1};
+			rightHandIKCurve[] = {1};
+			speed = 0.2239;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Gestures_Tired: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Gestures_Tired.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.0207, 1, 0.0237, 0, 0.963, 0, 0.993, 1, 1, 1};
+			rightHandIKCurve[] = {1};
+			speed = 0.1042;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Gestures_Yawn: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Gestures_Yawn.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.0197, 1, 0.046, 0, 0.947, 0, 0.993, 1, 1, 1};
+			rightHandIKCurve[] = {1};
+			speed = 0.1973;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Huh: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Huh.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.026, 1, 0.031, 0, 0.94, 0, 0.99, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.1841;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Picking_Up: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Picking_Up.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.1937, 1, 0.2162, 0, 0.9054, 0, 0.9549, 1, 1, 1};
+			rightHandIKCurve[] = {1};
+			speed = 0.1358;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Relax_1: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Relax_1.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.0423, 1, 0.0805, 0, 0.9067, 0, 0.9364, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {0, 1, 0.1355, 1, 0.1483, 0, 0.7966, 0, 0.8093, 1, 1, 1};
+			speed = 0.1277;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Relax_2: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Relax_2.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.012, 1, 0.017, 0, 0.75, 0, 0.8, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.0857;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Relax_3: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Relax_3.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.008, 1, 0.013, 0, 0.84, 0, 0.917, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {0, 1, 0.1, 1, 0.1067, 0};
+			speed = 0.0802;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Relax_4: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Relax_4.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.005, 1, 0.011, 0, 0.93, 0, 0.98, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {0, 1, 0.129, 1, 0.135, 0, 0.94, 0, 0.99, 1, 1, 1};
+			speed = 0.1068;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Rifle_Drop: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Rifle_Drop.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.017, 1, 0.022, 0, 0.37, 0, 0.423, 1, 1, 1};
+			looped = 0;
+			minPlayTime = 1;
+			rightHandIKCurve[] = {0, 1, 0.007, 1, 0.11, 0, 0.68, 0, 0.73, 1, 1, 1};
+			speed = 0.2206;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Shoelaces: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Shoelaces.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.0228, 1, 0.0326, 0, 0.9215, 0, 0.9411, 1, 1, 1};
+			rightHandIKCurve[] = {0, 1, 0.281, 1, 0.2941, 0, 0.6536, 0, 0.6601, 1, 1, 1};
+			speed = 0.0984;
+			weaponIK = 1;
+		};
+		class Acts_Ambient_Stretching: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Ambient_Stretching.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.0228, 1, 0.0258, 0, 0.7357, 0, 0.7657, 1, 1, 1};
+			rightHandIKCurve[] = {1};
+			speed = 0.1724;
+			weaponIK = 1;
+		};
+		class Acts_Arrival_Response: CutSceneAnimationBaseZoZo
+		{
+			actions = "CivilStandActions";
+			ConnectTo[] = {"Acts_CivilStand_Default", 0.0001};
+			file = "a3\anims_f_contact\data\anim\sdr\cts\Intro2\acts_arrival_response.rtm";
+			InterpolateTo[] = {"Acts_CivilStand_Default", 0.0001};
+			interpolationRestart = 1;
+			interpolationSpeed = 0.9;
+			looped = 0;
+			minPlayTime = 1;
+			speed = 0.0186;
+		};
+		class Acts_Arriving_Camp: CutSceneAnimationBaseZoZo
+		{
+			actions = "CivilStandActions";
+			ConnectTo[] = {"Acts_CivilStand_Default", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro3\Acts_Arriving_Camp.rtm";
+			InterpolateTo[] = {};
+			looped = 0;
+			minPlayTime = 1;
+			speed = 0.017;
+		};
+		class Acts_Arriving_Camp_Player: CutSceneAnimationBaseZoZo
+		{
+			actions = "RifleStandActions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			enableDirectControl = 0;
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro3\Acts_Arriving_Camp_Player.rtm";
+			InterpolateTo[] = {};
+			leftHandIKCurve[] = {0, 1, 0.0282, 1, 0.0292, 0, 0.1917, 0, 0.1927, 1, 0.2756, 1, 0.2766, 0};
+			looped = 0;
+			minPlayTime = 1;
+			rightHandIKCurve[] = {1};
+			speed = 0.0166;
+			weaponIK = 1;
+		};
 		class Acts_B_briefings: CutSceneAnimationBase
 		{
 			collisionShape = "A3\anims_f\Data\Geom\Sdr\geom_empty.p3d";
@@ -6921,6 +7283,209 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			headBobStrength = -1;
 			speed = 0.03151;
 		};
+		class Acts_Breakout_Player: CutSceneAnimationBaseZoZo
+		{
+			actions = "RifleStandActions";
+			ConnectTo[] = {"Acts_RifleLowKneel_Default", 1e-005};
+			enableDirectControl = 0;
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Breakout_Player.rtm";
+			headBobMode = 1;
+			headBobStrength = -1;
+			InterpolateTo[] = {"Acts_RifleLowKneel_Default", 1e-005};
+			leftHandIKBeg = 1;
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 0;
+			minPlayTime = 1;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.0501;
+			WeaponIK = 1;
+		};
+		class Acts_Breakout_Rifleman: CutSceneAnimationBaseZoZo
+		{
+			actions = "RifleBaseLowStandActions";
+			canBlendStep = 1;
+			canPullTrigger = 1;
+			ConnectTo[] = {"Acts_RifleLowStand_Default", 1e-005};
+			disableWeapons = 0;
+			disableWeaponsLong = 0;
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Breakout_Rifleman.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 1e-005};
+			interpolationRestart = 1;
+			leftHandIKCurve[] = {0, 1, 0.6836, 1, 0.6846, 0, 0.8452, 0, 0.8462, 1, 1, 1};
+			looped = 0;
+			minPlayTime = 0.92;
+			rightHandIKCurve[] = {1};
+			speed = 0.0476;
+			weaponIK = 1;
+		};
+		class Acts_Breakout_Rifleman_1: CutSceneAnimationBaseZoZo
+		{
+			actions = "StaticCutsceneLoopPlayerWalk";
+			aiming = "aimingNo";
+			ConnectTo[] = {"Acts_Breakout_Rifleman_2", 0.02};
+			disableWeapons = 0;
+			disableWeaponsLong = 0;
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Breakout_Rifleman_1.rtm";
+			head = "headNo";
+			leftHandIKCurve[] = {0, 1, 0.8, 1, 0.817, 0, 1, 0};
+			legs = "wholebody";
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.0567;
+			weaponIK = 1;
+		};
+		class Acts_Breakout_Rifleman_2: CutSceneAnimationBaseZoZo
+		{
+			actions = "StaticCutsceneLoopPlayerWalk";
+			ConnectTo[] = {"Acts_Breakout_Rifleman_3", 0.02};
+			disableWeapons = 0;
+			disableWeaponsLong = 0;
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Breakout_Rifleman_2.rtm";
+			head = "headNo";
+			leftHandIKCurve[] = {0, 0, 0.115, 0, 0.125, 1};
+			legs = "wholebody";
+			looped = 0;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 1.3038;
+			weaponIK = 1;
+		};
+		class Acts_Breakout_Rifleman_3: CutSceneAnimationBaseZoZo
+		{
+			actions = "StaticCutsceneLoopPlayerWalk";
+			ConnectTo[] = {"Acts_Breakout_Rifleman_4", 0.02};
+			disableWeapons = 0;
+			disableWeaponsLong = 0;
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Breakout_Rifleman_3.rtm";
+			head = "headNo";
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			legs = "wholebody";
+			looped = 0;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 2.1459;
+			weaponIK = 1;
+		};
+		class Acts_Breakout_Rifleman_4: CutSceneAnimationBaseZoZo
+		{
+			actions = "StaticCutsceneLoopPlayerWalk";
+			ConnectTo[] = {"Acts_Breakout_Rifleman_5", 0.02};
+			disableWeapons = 0;
+			disableWeaponsLong = 0;
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Breakout_Rifleman_4.rtm";
+			head = "headNo";
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			legs = "wholebody";
+			looped = 0;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 1.4286;
+			weaponIK = 1;
+		};
+		class Acts_Breakout_Rifleman_5: CutSceneAnimationBaseZoZo
+		{
+			actions = "StaticCutsceneLoopPlayerWalk";
+			ConnectTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			disableWeapons = 0;
+			disableWeaponsLong = 0;
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Breakout_Rifleman_5.rtm";
+			head = "headNo";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			legs = "wholebody";
+			looped = 0;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.6974;
+			weaponIK = 1;
+		};
+		class Acts_Breakout_SquadLeader_1: CutSceneAnimationBaseZoZo
+		{
+			actions = "RifleStandActions";
+			aiming = "aimingNo";
+			aimingBody = "aimingNo";
+			canBlendStep = 1;
+			ConnectTo[] = {"Acts_Breakout_SquadLeader_2", 1};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Breakout_SquadLeader_1.rtm";
+			head = "headNo";
+			InterpolateTo[] = {};
+			interpolationRestart = 1;
+			interpolationSpeed = 0.93;
+			leftHandIKCurve[] = {0, 1, 0.315, 1, 0.325, 0, 0.371, 0, 0.381, 1, 0.8834, 1, 0.8934, 0, 1, 0};
+			legs = "legsNo";
+			looped = 0;
+			minPlayTime = 0.981073;
+			rightHandIKCurve[] = {1};
+			speed = 0.05328;
+			weaponIK = 1;
+		};
+		class Acts_Breakout_SquadLeader_2: CutSceneAnimationBaseZoZo
+		{
+			actions = "RifleStandActions";
+			aiming = "aimingNo";
+			aimingBody = "aimingNo";
+			canBlendStep = 1;
+			ConnectTo[] = {};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Breakout_SquadLeader_2.rtm";
+			head = "headNo";
+			InterpolateTo[] = {"AmovPercMrunSrasWrflDf_ldst", 0.0001};
+			interpolationRestart = 1;
+			interpolationSpeed = 2.5;
+			leftHandIKCurve[] = {0, 0, 0.5455, 0, 0.5555, 1, 1, 1};
+			legs = "legsNo";
+			looped = 0;
+			minPlayTime = 0.901408;
+			rightHandIKCurve[] = {1};
+			speed = 0.416667;
+			weaponIK = 1;
+		};
+		class Acts_Briefing_Intro2_Major_1: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\anims_f_contact\data\anim\sdr\cts\Intro2\Acts_Briefing_Intro2_Major_1.rtm";
+			InterpolateTo[] = {"HubBriefing_ext", 0.01};
+			looped = 0;
+			speed = 0.3262;
+		};
+		class Acts_Briefing_Intro2_Major_2: Acts_Briefing_Intro2_Major_1
+		{
+			file = "a3\anims_f_contact\data\anim\sdr\cts\Intro2\Acts_Briefing_Intro2_Major_2.rtm";
+			InterpolateTo[] = {"HubBriefing_ext", 0.01};
+			speed = 0.3262;
+		};
+		class Acts_Briefing_Intro3_Major_1: CutSceneAnimationBase
+		{
+			ConnectTo[] = {"HubBriefing_ext", 0.1};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro3\Acts_Briefing_Intro3_Major_1.rtm";
+			interpolationRestart = 1;
+			looped = 0;
+			minPlayTime = 1;
+			speed = 0.0044;
+		};
+		class Acts_Briefing_Intro3_Major_2: CutSceneAnimationBase
+		{
+			ConnectTo[] = {"HubBriefing_ext", 0.1};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro3\Acts_Briefing_Intro3_Major_2.rtm";
+			interpolationRestart = 1;
+			looped = 0;
+			minPlayTime = 1;
+			speed = 0.6386;
+		};
+		class Acts_Briefing_Intro3_Physicist_1: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Briefing_Intro3_Physicist_1.rtm";
+			looped = 0;
+			speed = 0.0041;
+		};
 		class Acts_Briefing_SA_In: CutSceneAnimationBase
 		{
 			actions = "CutsceneBriefingSA";
@@ -7097,6 +7662,65 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			preload = 1;
 			speed = 0.0126;
 		};
+		class Acts_Calling_Out_Jets: CutSceneAnimationBaseZoZo
+		{
+			actions = "RifleLowStandActions";
+			canBlendStep = 0;
+			ConnectTo[] = {};
+			file = "\a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam2\Acts_Calling_Out_Jets.rtm";
+			InterpolateTo[] = {};
+			interpolationRestart = 1;
+			looped = 0;
+			speed = 0.0402;
+		};
+		class Acts_Calling_Out_Jets_action: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Taking_Calling_Out_Jets_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_Calling_Out_Jets_out_loop", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam2\Acts_Calling_Out_Jets_action.rtm";
+			InterpolateTo[] = {"Acts_Calling_Out_Jets_out_loop", 0.0001};
+			interpolationRestart = 1;
+			leftHandIKCurve[] = {0, 1, 0.005, 1, 0.012, 0, 0.55, 0, 0.602, 1, 1, 1};
+			looped = 0;
+			minPlayTime = 1;
+			rightHandIKCurve[] = {1};
+			speed = 0.1875;
+			weaponIK = 1;
+		};
+		class Acts_Calling_Out_Jets_in_loop: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Taking_Calling_Out_Jets_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_Calling_Out_Jets_in_loop", 0.0001, "Acts_Calling_Out_Jets_action", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam2\Acts_Calling_Out_Jets_in_loop.rtm";
+			InterpolateTo[] = {"Acts_Calling_Out_Jets_action", 0.0001};
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.0726;
+			weaponIK = 1;
+		};
+		class Acts_Calling_Out_Jets_out_loop: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Taking_Calling_Out_Jets_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_RifleLowStand_Default", 0.0001, "Acts_Calling_Out_Jets_out_loop", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam2\Acts_Calling_Out_Jets_out_loop.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			interpolationRestart = 1;
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 1;
+			minPlayTime = 0;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.1714;
+			weaponIK = 1;
+		};
 		class Acts_carFixingWheel: Campaign_Base
 		{
 			actions = "Acts_CarFixingWheel_actions";
@@ -7198,14 +7822,14 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class Acts_CivilStand_Default: CutSceneAnimationBaseZoZo
 		{
-			actions = "CivilStandCutsceneActions";
-			canPullTrigger = "";
-			ConnectTo[] = {"AmovPercMstpSnonWnonDnon", 0.1};
+			actions = "CivilStandActions";
+			canPullTrigger = 0;
+			ConnectTo[] = {"AmovPercMstpSnonWnonDnon", 1e-005, "Acts_ShockedUnarmed_2_Loop", 0.0001, "Acts_Accessing_Computer_in", 0.0001, "Acts_Hilltop_Calibration_Loop", 0.0001, "Acts_Arriving_Camp", 0.0001, "Acts_CivilStand_Default", 0.001, "Acts_Commenting_On_Fight", 1, "Acts_Mentor_Freeing_Player", 1e-005, "Acts_Taking_Cover_From_Jets_in_loop", 0.001, "Acts_Commenting_On_Fight_in", 0.0001, "Acts_Stunned_Unconscious", 0.0001, "Acts_Watching_Fire_Loop", 0.0001, "amovpercmevasnonwnondf", 0.1, "Act_Alien_Gesture", 0.0001};
 			disableWeapons = 0;
 			file = "a3\anims_f\data\anim\sdr\mov\erc\stp\non\non\amovpercmstpsnonwnondnon.rtm";
-			InterpolateTo[] = {"AmovPercMstpSnonWnonDnon", 0.1};
+			InterpolateTo[] = {"Acts_ShockedUnarmed_2_Loop", 0.0001, "Acts_Accessing_Computer_in", 0.0001, "Acts_Hilltop_Calibration_Loop", 0.0001, "Acts_Arriving_Camp", 0.0001, "Acts_Commenting_On_Fight", 1, "Acts_Mentor_Freeing_Player", 1e-005, "Acts_Commenting_On_Fight_in", 0.0001, "Acts_Stunned_Unconscious", 0.0001, "Acts_Watching_Fire_Loop", 0.0001, "AmovPercMstpSnonWnonDnon", 1e-005, "amovpercmevasnonwnondf", 0.1, "Act_Alien_Gesture", 0.0001};
 			looped = 1;
-			showWeaponAim = "";
+			showWeaponAim = 0;
 			speed = 1e+010;
 			static = 1;
 		};
@@ -7455,6 +8079,60 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			speed = 0.2041;
 			weaponIK = 1;
 		};
+		class Acts_Commenting_On_Fight: CutSceneAnimationBaseZoZo
+		{
+			actions = "CivilStandActions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_CivilStand_Default", 0.0001};
+			file = "\a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam2\Acts_Commenting_On_Fight.rtm";
+			InterpolateTo[] = {"Acts_CivilStand_Default", 0.0001};
+			looped = 0;
+			speed = 0.0401;
+		};
+		class Acts_Commenting_On_Fight_action: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Commenting_On_Fight_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_Commenting_On_Fight_out_loop", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam2\Acts_Commenting_On_Fight_action.rtm";
+			InterpolateTo[] = {"Acts_Commenting_On_Fight_out_loop", 0.0001};
+			interpolationRestart = 1;
+			looped = 0;
+			minPlayTime = 1;
+			speed = 0.1383;
+		};
+		class Acts_Commenting_On_Fight_in: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Commenting_On_Fight_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_Commenting_On_Fight_loop", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam2\Acts_Commenting_On_Fight_in.rtm";
+			looped = 0;
+			speed = 0.3846;
+		};
+		class Acts_Commenting_On_Fight_loop: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Commenting_On_Fight_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_Commenting_On_Fight_loop", 0.001, "Acts_Commenting_On_Fight_action", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam2\Acts_Commenting_On_Fight_loop.rtm";
+			InterpolateTo[] = {"Acts_Commenting_On_Fight_action", 0.0001};
+			interpolationRestart = 0;
+			interpolationSpeed = 2.5;
+			looped = 1;
+			speed = 0.0847;
+		};
+		class Acts_Commenting_On_Fight_out_loop: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Commenting_On_Fight_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_Commenting_On_Fight_out_loop", 0.001, "Acts_CivilStand_Default", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam2\Acts_Commenting_On_Fight_out_loop.rtm";
+			interpolationRestart = 1;
+			looped = 1;
+			minPlayTime = 1;
+			speed = 0.577;
+		};
 		class Acts_CrouchGetLowGesture: Campaign_Base
 		{
 			ConnectTo[] = {};
@@ -7583,6 +8261,21 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			useIdles = 0;
 			weaponIK = 0;
 		};
+		class Acts_Dance_08: CutSceneAnimationBase
+		{
+			canBlendStep = 0;
+			ConnectTo[] = {};
+			file = "\a3\Cargoposes_F_Contact\data\dance_08";
+			InterpolateTo[] = {"Unconscious", 0.1};
+			interpolationRestart = 1;
+			interpolationSpeed = 4;
+			leftHandIKCurve[] = {0};
+			looped = 1;
+			rightHandIKCurve[] = {0};
+			speed = 0.015;
+			useIdles = 0;
+			weaponIK = 0;
+		};
 		class Acts_Ending_Adams1: CutSceneAnimationBase
 		{
 			actions = "StaticCutsceneLoopPlayerWalk";
@@ -7675,6 +8368,28 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file = "\A3\Anims_F_Kart\data\Anim\sdr\cts\EpicSplit\Acts_EpicSplit_out.rtm";
 			interpolationSpeed = 0.1;
 			speed = -10;
+		};
+		class Acts_Examining_Device_Player: CutSceneAnimationBaseZoZo
+		{
+			actions = "PistolStandActions";
+			canBlendStep = 0;
+			canPullTrigger = 0;
+			ConnectTo[] = {"Acts_PistolRaisedStand_Default", 0.0001};
+			disableWeapons = 1;
+			disableWeaponsLong = 1;
+			enableDirectControl = 0;
+			file = "\a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Examining_Device_Player.rtm";
+			InterpolateTo[] = {"Acts_PistolRaisedStand_Default", 0.0001};
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 0;
+			minPlayTime = 1;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			showHandGun = 1;
+			speed = 0.25;
+			weaponIK = 0;
 		};
 		class Acts_Executioner_Backhand: Acts_Executioner_Forehand
 		{
@@ -7840,6 +8555,52 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			speed = 0.17544;
 			useIdles = 0;
 		};
+		class Acts_Explaining_EW_Idle: CutSceneAnimationBase {};
+		class Acts_Explaining_EW_Idle01: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Explaining_EW_Idle01.rtm";
+			speed = 0.1176;
+		};
+		class Acts_Explaining_EW_Idle02: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Explaining_EW_Idle02.rtm";
+			speed = 0.0923;
+		};
+		class Acts_Explaining_EW_Idle03: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Explaining_EW_Idle03.rtm";
+			speed = 0.0804;
+		};
+		class Acts_Explaining_EW_In: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Explaining_EW_In.rtm";
+			speed = 0.0443;
+		};
+		class Acts_Explaining_EW_Loop01: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Explaining_EW_Loop01.rtm";
+			speed = 0.0781;
+		};
+		class Acts_Explaining_EW_Loop02: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Explaining_EW_Loop02.rtm";
+			speed = 0.0651;
+		};
+		class Acts_Explaining_EW_Loop03: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Explaining_EW_Loop03.rtm";
+			speed = 0.0271;
+		};
+		class Acts_Explaining_EW_Loop04: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Explaining_EW_Loop04.rtm";
+			speed = 0.1639;
+		};
+		class Acts_Explaining_EW_Loop05: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Explaining_EW_Loop05.rtm";
+			speed = 0.0489;
+		};
 		class Acts_FarmIncident_Adams1: CutSceneAnimationBase
 		{
 			actions = "StaticCutsceneLoopPlayerWalk";
@@ -7944,6 +8705,33 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			speed = 0.1163;
 			weaponIK = 1;
 		};
+		class Acts_Flashes_Recovery_1: CutSceneAnimationBaseZoZo
+		{
+			actions = "PistolLowStandActions";
+			aiming = "aimingNo";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_PistolLowStand_Default", 0.001};
+			enableDirectControl = 0;
+			file = "\a3\anims_f_contact\data\anim\sdr\cts\FreeRoam1\acts_flashes_recovery_1.rtm";
+			headBobMode = 3;
+			headBobStrength = 0.492537;
+			InterpolateTo[] = {};
+			interpolationRestart = 0;
+			looped = 0;
+			minPlayTime = 0.9;
+			showHandGun = 1;
+			showItemInRightHand = 1;
+			speed = 0.1087;
+			weaponIK = 0;
+		};
+		class Acts_Flashes_Recovery_2: Acts_Flashes_Recovery_1
+		{
+			ConnectTo[] = {"Acts_PistolLowStand_Default", 0.001};
+			file = "\a3\anims_f_contact\data\anim\sdr\cts\FreeRoam2\acts_flashes_recovery_2.rtm";
+			headBobMode = 6;
+			headBobStrength = -1;
+			speed = 0.1176;
+		};
 		class Acts_GetAttention_End: AmovPercMstpSlowWrflDnon
 		{
 			canBlendStep = 0;
@@ -7986,6 +8774,18 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEnabled = 0;
 			speed = 0.1107;
 			useIdles = 0;
+		};
+		class Acts_Getting_Up_Player: Acts_Waking_Up_Player
+		{
+			actions = "Acts_Waking_Up_Player_action";
+			ConnectTo[] = {"Acts_PistolLowStand_Default", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam2\Acts_Getting_Up_Player.rtm";
+			InterpolateTo[] = {"Acts_PistolLowStand_Default", 0.0001};
+			interpolationRestart = 1;
+			interpolationSpeed = 0.8;
+			looped = 0;
+			minPlayTime = 1;
+			speed = 0.126;
 		};
 		class Acts_gunner_MRAP_01_mocap: CutSceneAnimationBase
 		{
@@ -8176,6 +8976,118 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			speed = 0.2679;
 			weaponIK = 1;
 		};
+		class Acts_Helping_Wake_Up_1: CutSceneAnimationBaseZoZo
+		{
+			ConnectTo[] = {"Acts_Helping_Wake_Up_2", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Freeroam2\Acts_Helping_Wake_Up_1.rtm";
+			InterpolateTo[] = {"Acts_Helping_Wake_Up_2", 0.0001};
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 0;
+			minPlayTime = 1;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.625;
+			weaponIK = 1;
+		};
+		class Acts_Helping_Wake_Up_2: CutSceneAnimationBaseZoZo
+		{
+			ConnectTo[] = {"Acts_Helping_Wake_Up_2", 0.001, "Acts_Helping_Wake_Up_3", 0.0001};
+			file = "\a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam2\Acts_Helping_Wake_Up_2.rtm";
+			InterpolateTo[] = {"Acts_Helping_Wake_Up_3", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.0154, 1, 0.0194, 0, 0.3376, 0, 0.3676, 1, 0.4627, 1, 0.4927, 0, 0.5689, 0, 0.5989, 1, 0.6735, 1, 0.6935, 0, 0.9262, 0, 0.9562, 1};
+			rightHandIKCurve[] = {1};
+			speed = 0.0452;
+			weaponIK = 1;
+		};
+		class Acts_Helping_Wake_Up_3: CutSceneAnimationBaseZoZo
+		{
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Freeroam2\Acts_Helping_Wake_Up_3.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			interpolationRestart = 1;
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 0;
+			minPlayTime = 1;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.6257;
+			weaponIK = 1;
+		};
+		class Acts_HEMTT_Briefing: CutSceneAnimationBaseZoZo
+		{
+			ConnectTo[] = {"Acts_HEMTT_Briefing", 0.0001, "Acts_HEMTT_Casual_Loop", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro2\Acts_HEMTT_Briefing.rtm";
+			InterpolateTo[] = {"Acts_HEMTT_Casual_Loop", 0.0001};
+			speed = 0.0472;
+		};
+		class Acts_HEMTT_Casual_Loop: CutSceneAnimationBaseZoZo
+		{
+			ConnectTo[] = {"Acts_HEMTT_Casual_Loop", 1e-006, "Acts_HEMTT_Briefing", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro2\Acts_HEMTT_Casual_Loop.rtm";
+			InterpolateTo[] = {"Acts_HEMTT_Briefing", 0.0001};
+			speed = 0.0267;
+		};
+		class Acts_Hilltop_Calibration_Heli_In: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Hilltop_Calibration_Actions";
+			ConnectTo[] = {"Acts_Hilltop_Calibration_Heli_Out", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro2\Acts_Hilltop_Calibration_Heli_In.rtm";
+			InterpolateTo[] = {"Acts_Hilltop_Calibration_Heli_Out", 0.0001};
+			interpolationRestart = 1;
+			looped = 0;
+			minPlayTime = 1;
+			speed = 0.2222;
+		};
+		class Acts_Hilltop_Calibration_Heli_Out: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Hilltop_Calibration_Actions";
+			ConnectTo[] = {"Acts_Hilltop_Calibration_Loop", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro2\Acts_Hilltop_Calibration_Heli_Out.rtm";
+			InterpolateTo[] = {"Acts_Hilltop_Calibration_Loop", 0.0001};
+			interpolationRestart = 1;
+			looped = 0;
+			minPlayTime = 1;
+			speed = 0.25;
+		};
+		class Acts_Hilltop_Calibration_Loop: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Hilltop_Calibration_Actions";
+			canBlendStep = 1;
+			ConnectTo[] = {"Acts_Hilltop_Calibration_Loop", 0.0001, "Acts_CivilStand_Default", 0.0001, "Acts_Hilltop_Calibration_Pointing_Right", 0.0001, "Acts_Hilltop_Calibration_Pointing_Left", 0.0001, "Acts_Hilltop_Calibration_Heli_In", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro2\Acts_Hilltop_Calibration_Loop.rtm";
+			InterpolateTo[] = {"Acts_Hilltop_Calibration_Pointing_Right", 0.0001, "Acts_Hilltop_Calibration_Pointing_Left", 0.0001, "Acts_Hilltop_Calibration_Heli_In", 0.0001};
+			interpolationRestart = 0;
+			interpolationSpeed = 1;
+			looped = 1;
+			speed = 0.0472;
+		};
+		class Acts_Hilltop_Calibration_Pointing_Left: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Hilltop_Calibration_Actions";
+			ConnectTo[] = {"Acts_Hilltop_Calibration_Loop", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro2\Acts_Hilltop_Calibration_Pointing_Left.rtm";
+			InterpolateTo[] = {"Acts_Hilltop_Calibration_Loop", 0.0001};
+			interpolationRestart = 1;
+			looped = 0;
+			minPlayTime = 1;
+			speed = 0.1714;
+		};
+		class Acts_Hilltop_Calibration_Pointing_Right: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Hilltop_Calibration_Actions";
+			ConnectTo[] = {"Acts_Hilltop_Calibration_Loop", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro2\Acts_Hilltop_Calibration_Pointing_Right.rtm";
+			InterpolateTo[] = {"Acts_Hilltop_Calibration_Loop", 0.0001};
+			interpolationRestart = 1;
+			looped = 0;
+			minPlayTime = 1;
+			speed = 0.25;
+		};
 		class Acts_HUBABriefing: Campaign_Base
 		{
 			boundingSphere = 4;
@@ -8186,6 +9098,105 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEdge[] = {0.001};
 			soundOverride = "Acts_HUBABriefing";
 			speed = 0.025;
+		};
+		class Acts_In_Sinkhole: CutSceneAnimationBaseZoZo
+		{
+			actions = "NoActions";
+			collisionShape = "A3\anims_f\Data\Geom\Sdr\geom_empty.p3d";
+			ConnectTo[] = {"Acts_In_Sinkhole", 0.0001};
+			file = "a3\anims_f_contact\data\anim\sdr\cts\Intro1\acts_in_sinkhole.rtm";
+			legs = "legsNo";
+			speed = 0.1899;
+			weaponLowered = 0;
+		};
+		class Acts_In_Sinkhole_1: CutSceneAnimationBase
+		{
+			actions = "Acts_In_Sinkhole_actions";
+			ConnectTo[] = {"Acts_In_Sinkhole_loop", 0.001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_In_Sinkhole.rtm";
+			InterpolateTo[] = {"Acts_In_Sinkhole_loop", 0.001};
+			interpolationRestart = 0;
+			looped = 1;
+			speed = 0.1899;
+			VariantsAfter[] = {2, 3, 4};
+			VariantsAI[] = {};
+			VariantsPlayer[] = {};
+		};
+		class Acts_In_Sinkhole_2: CutSceneAnimationBase
+		{
+			actions = "Acts_In_Sinkhole_actions";
+			ConnectTo[] = {"Acts_In_Sinkhole_loop", 0.001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_In_Sinkhole_2.rtm";
+			InterpolateTo[] = {"Acts_In_Sinkhole_loop", 0.001};
+			interpolationRestart = 0;
+			looped = 1;
+			speed = 0.0997;
+			VariantsAfter[] = {2, 3, 4};
+			VariantsAI[] = {};
+			VariantsPlayer[] = {};
+		};
+		class Acts_In_Sinkhole_3: CutSceneAnimationBase
+		{
+			actions = "Acts_In_Sinkhole_actions";
+			ConnectTo[] = {"Acts_In_Sinkhole_loop", 0.001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_In_Sinkhole_3.rtm";
+			InterpolateTo[] = {"Acts_In_Sinkhole_loop", 0.001};
+			interpolationRestart = 0;
+			looped = 1;
+			speed = 0.1172;
+			VariantsAfter[] = {2, 3, 4};
+			VariantsAI[] = {};
+			VariantsPlayer[] = {};
+		};
+		class Acts_In_Sinkhole_4: CutSceneAnimationBase
+		{
+			actions = "Acts_In_Sinkhole_actions";
+			ConnectTo[] = {"Acts_In_Sinkhole_loop", 0.001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_In_Sinkhole_4.rtm";
+			InterpolateTo[] = {"Acts_In_Sinkhole_loop", 0.001};
+			interpolationRestart = 0;
+			looped = 1;
+			speed = 0.1132;
+			VariantsAfter[] = {2, 3, 4};
+			VariantsAI[] = {};
+			VariantsPlayer[] = {};
+		};
+		class Acts_In_Sinkhole_loop: CutSceneAnimationBase
+		{
+			actions = "Acts_In_Sinkhole_actions";
+			canBlendStep = 1;
+			ConnectTo[] = {"Acts_In_Sinkhole_1", 0.001, "Acts_In_Sinkhole_2", 0.001, "Acts_In_Sinkhole_3", 0.001, "Acts_In_Sinkhole_4", 0.001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_In_Sinkhole_still.rtm";
+			InterpolateTo[] = {"Acts_In_Sinkhole_1", 0.001, "Acts_In_Sinkhole_2", 0.001, "Acts_In_Sinkhole_3", 0.001, "Acts_In_Sinkhole_4", 0.001};
+			interpolationRestart = 0;
+			looped = 1;
+			speed = 1e+006;
+			VariantsAfter[] = {2, 3, 4};
+			VariantsAI[] = {"Acts_In_Sinkhole_1", 0.25, "Acts_In_Sinkhole_2", 0.25, "Acts_In_Sinkhole_3", 0.25, "Acts_In_Sinkhole_4", 0.25};
+			VariantsPlayer[] = {};
+		};
+		class Acts_Injured_Driver_go: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Injured_Driver_Actions";
+			ConnectTo[] = {"Acts_Injured_Driver_Loop", 1};
+			disableWeapons = 1;
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Injured_Driver_go.rtm";
+			InterpolateTo[] = {"Acts_Injured_Driver_Loop", 1};
+			interpolationRestart = 1;
+			interpolationSpeed = 0.75;
+			looped = 0;
+			minPlayTime = 1;
+			speed = 0.1038;
+		};
+		class Acts_Injured_Driver_Loop: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Injured_Driver_Actions";
+			ConnectTo[] = {"Acts_Injured_Driver_Loop", 0.0001, "Acts_Injured_Driver_go", 0.01};
+			disableWeapons = 1;
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Injured_Driver_loop.rtm";
+			InterpolateTo[] = {"Acts_Injured_Driver_go", 0.01};
+			looped = 1;
+			speed = 0.0571;
 		};
 		class Acts_InjuredAngryRifle01: CutSceneAnimationBaseZoZo
 		{
@@ -9395,6 +10406,21 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundOverride = "Acts_LyingWounded_loop3";
 			speed = 0.0405;
 		};
+		class Acts_Mentor_Freeing_Player: CutSceneAnimationBaseZoZo
+		{
+			ConnectTo[] = {"Acts_CivilStand_Default", 1e-005};
+			disableWeapons = 1;
+			file = "\a3\anims_f_contact\data\anim\sdr\cts\FreeRoam1\Acts_Mentor_Freeing_Player.rtm";
+			InterpolateTo[] = {};
+			leftHandIKBeg = 1;
+			leftHandIKEnd = 1;
+			looped = 0;
+			minPlayTime = 1;
+			rightHandIKBeg = 1;
+			rightHandIKEnd = 1;
+			speed = 0.037;
+			weaponIK = 1;
+		};
 		class Acts_MHCargo_JumpToWater_all: CutSceneAnimationBaseSit
 		{
 			actions = "NoActions";
@@ -9845,6 +10871,96 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			interpolationRestart = 0;
 			speed = 0.033;
 		};
+		class Acts_Peering_Back: CutSceneAnimationBaseZoZo
+		{
+			actions = "RifleLowStandActions";
+			ConnectTo[] = {};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Peering_Back.rtm";
+			InterpolateTo[] = {"Acts_Rifle_Operations_Default", 1};
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 0;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.1936;
+			weaponIK = 1;
+		};
+		class Acts_Peering_Down: CutSceneAnimationBaseZoZo
+		{
+			actions = "RifleLowStandActions";
+			ConnectTo[] = {};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Peering_Down.rtm";
+			InterpolateTo[] = {"Acts_Rifle_Operations_Default", 1};
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 0;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.25;
+			weaponIK = 1;
+		};
+		class Acts_Peering_Front: CutSceneAnimationBaseZoZo
+		{
+			actions = "RifleLowStandActions";
+			ConnectTo[] = {};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Peering_Front.rtm";
+			InterpolateTo[] = {"Acts_Rifle_Operations_Default", 1};
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 0;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.25;
+			weaponIK = 1;
+		};
+		class Acts_Peering_Left: CutSceneAnimationBaseZoZo
+		{
+			actions = "RifleLowStandActions";
+			ConnectTo[] = {};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Peering_Left.rtm";
+			InterpolateTo[] = {"Acts_Rifle_Operations_Default", 1};
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 0;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.2728;
+			weaponIK = 1;
+		};
+		class Acts_Peering_Right: CutSceneAnimationBaseZoZo
+		{
+			actions = "RifleLowStandActions";
+			ConnectTo[] = {};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Peering_Right.rtm";
+			InterpolateTo[] = {"Acts_Rifle_Operations_Default", 1};
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 0;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.25;
+			weaponIK = 1;
+		};
+		class Acts_Peering_Up: CutSceneAnimationBaseZoZo
+		{
+			actions = "RifleLowStandActions";
+			ConnectTo[] = {};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Peering_Up.rtm";
+			InterpolateTo[] = {"Acts_Rifle_Operations_Default", 1};
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 0;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.3;
+			weaponIK = 1;
+		};
 		class Acts_PercMstpSlowWrflDnon_handup1: Campaign_Base
 		{
 			ConnectTo[] = {};
@@ -9933,9 +11049,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class Acts_PistolLowStand_Default: CutSceneAnimationBaseZoZo
 		{
 			actions = "PistolLowStandActions";
-			ConnectTo[] = {"AmovPercMstpSlowWpstDnon", 0.1};
+			ConnectTo[] = {"Acts_Flashes_Recovery_1", 0.0001, "Acts_PistolLowStand_Default", 0.1, "AmovPercMstpSlowWpstDnon", 0.0001};
+			enableDirectControl = 1;
 			file = "a3\anims_f\data\anim\sdr\mov\erc\stp\low\pst\amovpercmstpslowwpstdnon.rtm";
-			InterpolateTo[] = {"AmovPercMstpSlowWpstDnon", 0.1};
+			InterpolateTo[] = {"Acts_Flashes_Recovery_1", 0.0001};
 			looped = 1;
 			showHandGun = 1;
 			speed = 1e+010;
@@ -9943,10 +11060,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class Acts_PistolRaisedStand_Default: Acts_PistolLowStand_Default
 		{
-			actions = "PistolRaisedStandCutsceneActions";
-			ConnectTo[] = {"AmovPercMstpSrasWpstDnon", 0.1};
+			actions = "PistolStandActions";
+			ConnectTo[] = {"Acts_Examining_Device_Player", 0.0001, "Acts_UGV_Jamming_Loop", 0.0001, "AmovPercMstpSrasWpstDnon", 1e-005};
 			file = "a3\anims_f\data\anim\sdr\mov\erc\stp\ras\pst\amovpercmstpsraswpstdnon.rtm";
-			InterpolateTo[] = {"AmovPercMstpSrasWpstDnon", 0.1};
+			InterpolateTo[] = {"Acts_Examining_Device_Player", 0.0001, "Acts_UGV_Jamming_Loop", 0.0001, "AmovPercMstpSrasWpstDnon", 1e-005};
 			showHandGun = 1;
 		};
 		class Acts_PknlMstpSlowWrflDnon: HubSpectator_walk
@@ -9957,6 +11074,66 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundOverride = "Acts_PknlMstpSlowWrflDnon";
 			speed = 0.067;
 		};
+		class Acts_Pointing_Back: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Pointing_Back.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.015, 1, 0.022, 0, 0.97, 0, 0.978, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.3333;
+			weaponIK = 1;
+		};
+		class Acts_Pointing_Down: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Pointing_Down.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.02, 1, 0.02469, 0, 0.96, 0, 0.98766, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.3751;
+			weaponIK = 1;
+		};
+		class Acts_Pointing_Front: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Pointing_Front.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.02, 1, 0.02469, 0, 0.95, 0, 0.98766, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.3751;
+			weaponIK = 1;
+		};
+		class Acts_Pointing_Left: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Pointing_Left.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.02, 1, 0.02469, 0, 0.96, 0, 0.98766, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.3751;
+			weaponIK = 1;
+		};
+		class Acts_Pointing_Right: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Pointing_Right.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.015, 1, 0.022, 0, 0.95, 0, 0.978, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.3333;
+			weaponIK = 1;
+		};
+		class Acts_Pointing_Up: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Pointing_Up.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.05, 1, 0.0594, 0, 0.95, 0, 0.97, 1, 1, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.3;
+			weaponIK = 1;
+		};
 		class Acts_PointingLeftUnarmed: CutSceneAnimationBaseZoZo
 		{
 			actions = "NoActions";
@@ -9965,6 +11142,132 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEdge[] = {0.001};
 			soundOverride = "Acts_PointingLeftUnarmed";
 			speed = 0.0135;
+		};
+		class Acts_Rifle_Operations_Back: CutSceneAnimationBaseZoZo
+		{
+			actions = "ActsRifleOperationsActions";
+			ConnectTo[] = {"Acts_Rifle_Operations_Default", 1};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Rifle_Operations_Back.rtm";
+			InterpolateTo[] = {"Acts_Rifle_Operations_Default", 0.0001};
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 0;
+			minPlayTime = 1;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.1038;
+			weaponIK = 1;
+		};
+		class Acts_Rifle_Operations_Barrel: CutSceneAnimationBaseZoZo
+		{
+			actions = "ActsRifleOperationsActions";
+			ConnectTo[] = {"Acts_Rifle_Operations_Default", 1};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Rifle_Operations_Barrel.rtm";
+			InterpolateTo[] = {"Acts_Rifle_Operations_Default", 0.0001};
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 0;
+			minPlayTime = 1;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.248;
+			weaponIK = 1;
+		};
+		class Acts_Rifle_Operations_Checking_Chamber: CutSceneAnimationBaseZoZo
+		{
+			actions = "ActsRifleOperationsActions";
+			ConnectTo[] = {"Acts_Rifle_Operations_Default", 1};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Rifle_Operations_Checking_Chamber.rtm";
+			InterpolateTo[] = {"Acts_Rifle_Operations_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.03, 1, 0.035, 0, 0.9, 0, 0.95, 1};
+			looped = 0;
+			minPlayTime = 1;
+			rightHandIKCurve[] = {1};
+			speed = 0.2158;
+			weaponIK = 1;
+		};
+		class Acts_Rifle_Operations_Default: CutSceneAnimationBaseZoZo
+		{
+			actions = "RifleLowStandActions";
+			ConnectTo[] = {"Acts_Rifle_Operations_Front", 0.001, "Acts_Rifle_Operations_Back", 0.001, "Acts_Rifle_Operations_Barrel", 0.001, "Acts_Rifle_Operations_Zeroing", 0.001, "Acts_Rifle_Operations_Checking_Chamber", 0.001, "Acts_Rifle_Operations_Left", 0.001, "Acts_RifleLowStand_Default", 1e-006, "Acts_Peering_Up", 0.0001, "Acts_Peering_Down", 0.0001, "Acts_Peering_Front", 0.0001, "Acts_Peering_Left", 0.0001, "Acts_Peering_Back", 0.0001, "Acts_Peering_Right", 0.0001, "Acts_Rifle_Operations_Right", 0.0001};
+			enableAutoActions = 0;
+			enableDirectControl = 1;
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Rifle_Operations_Default.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 1e-006, "Acts_Peering_Up", 0.0001, "Acts_Peering_Down", 0.0001, "Acts_Peering_Front", 0.0001, "Acts_Peering_Left", 0.0001, "Acts_Peering_Back", 0.0001, "Acts_Peering_Right", 0.0001};
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 1;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 1e+009;
+			static = 1;
+			weaponIK = 1;
+			weaponLowered = 1;
+		};
+		class Acts_Rifle_Operations_Front: CutSceneAnimationBaseZoZo
+		{
+			actions = "ActsRifleOperationsActions";
+			ConnectTo[] = {"Acts_Rifle_Operations_Default", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Rifle_Operations_Front.rtm";
+			InterpolateTo[] = {"Acts_Rifle_Operations_Default", 0.0001};
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 0;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.1649;
+			weaponIK = 1;
+		};
+		class Acts_Rifle_Operations_Left: CutSceneAnimationBaseZoZo
+		{
+			actions = "ActsRifleOperationsActions";
+			ConnectTo[] = {"Acts_Rifle_Operations_Default", 1};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Rifle_Operations_Left.rtm";
+			InterpolateTo[] = {"Acts_Rifle_Operations_Default", 0.0001};
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 0;
+			minPlayTime = 1;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.1255;
+			weaponIK = 1;
+		};
+		class Acts_Rifle_Operations_Right: CutSceneAnimationBaseZoZo
+		{
+			actions = "ActsRifleOperationsActions";
+			ConnectTo[] = {"Acts_Rifle_Operations_Default", 0.0001};
+			enableAutoActions = 0;
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Rifle_Operations_Right.rtm";
+			InterpolateTo[] = {"Acts_Rifle_Operations_Default", 0.0001};
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 0;
+			minPlayTime = 1;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.1079;
+			static = 0;
+			weaponIK = 1;
+		};
+		class Acts_Rifle_Operations_Zeroing: CutSceneAnimationBaseZoZo
+		{
+			actions = "ActsRifleOperationsActions";
+			ConnectTo[] = {"Acts_Rifle_Operations_Default", 1};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Common\Acts_Rifle_Operations_Zeroing.rtm";
+			InterpolateTo[] = {"Acts_Rifle_Operations_Default", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.0158, 1, 0.0188, 0, 0.93, 0, 0.95, 1};
+			looped = 0;
+			minPlayTime = 1;
+			rightHandIKCurve[] = {1};
+			speed = 0.1899;
+			weaponIK = 1;
 		};
 		class Acts_RifleLowKneel_Default: AmovPknlMstpSlowWrflDnon
 		{
@@ -9975,18 +11278,109 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			access = 3;
 			actions = "RifleLowStandActions";
-			canBlendStep = 1;
-			ConnectTo[] = {"AmovPercMstpSlowWrflDnon", 0.1};
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_RifleLowStand_Default", 1e-005, "Acts_Shocked_1_Loop", 0.0001, "Acts_Shocked_3", 0.0001, "Acts_Shocked_4_Loop", 0.0001, "AmovPercMstpSlowWrflDnon", 1e-006, "Acts_Breakout_Rifleman", 0.0001, "Acts_Breakout_Player", 1e-005, "Acts_Training_Reveal_Ambusher_In", 0.0001, "Acts_Arriving_Camp_Player", 0.0001, "Acts_Soldier_Moves_Inside_1", 1e-005, "Acts_Calling_Out_Jets", 0.0001, "Acts_Pointing_Back", 0.0001, "Acts_Pointing_Down", 0.0001, "Acts_Pointing_Front", 0.0001, "Acts_Pointing_Left", 0.0001, "Acts_Pointing_Right", 0.0001, "Acts_Pointing_Up", 0.0001, "Acts_Rifle_Operations_Default", 0.1, "Acts_Ambient_Agreeing", 0.0001, "Acts_Ambient_Disagreeing", 0.0001, "Acts_Ambient_Disagreeing_with_pointing", 0.0001, "Acts_Ambient_Aggressive", 0.0001, "Acts_Ambient_Defensive", 0.0001, "Acts_Ambient_Dismissing", 0.0001, "Acts_Ambient_Facepalm_1", 0.0001, "Acts_Ambient_Facepalm_2", 0.0001, "Acts_Ambient_Huh", 0.0001, "Acts_Ambient_Approximate", 0.0001, "Acts_Ambient_Relax_2", 0.0001, "Acts_Ambient_Relax_3", 0.0001, "Acts_Ambient_Relax_4", 0.0001, "Acts_Ambient_Rifle_Drop", 0.0001, "Acts_Breakout_SquadLeader_1", 0.0001, "Acts_Calling_Out_Jets_in_loop", 0.001, "Acts_Ambient_Relax_1", 0.0001, "Acts_Breakout_Rifleman_1", 1e-005, "Acts_Helping_Wake_Up_1", 0.01, "Acts_Ambient_Picking_Up", 0.0001, "Acts_Ambient_Gestures_Tired", 0.0001, "Acts_Ambient_Gestures_Yawn", 0.0001, "Acts_Ambient_Gestures_Sneeze", 0.0001, "Acts_Ambient_Cleaning_Nose", 0.0001, "Acts_Ambient_Stretching", 0.0001, "Acts_Ambient_Shoelaces", 0.0001, "Act_Alien_Gesture_Rifle", 0.0001, "Acts_RU_Briefing_Overview", 0.0001, "HubSpectator_stand_Contact", 1e-005};
 			disableWeapons = 0;
-			file = "a3\anims_f\data\Anim\sdr\cts\cts_RifleLowStandDefault.rtm";
-			InterpolateTo[] = {"AmovPercMstpSlowWrflDnon", 0.1};
+			enableDirectControl = 1;
+			file = "a3\anims_f\data\anim\sdr\mov\erc\stp\low\rfl\amovpercmstpslowwrfldnon.rtm";
+			InterpolateTo[] = {"Acts_Shocked_1_Loop", 0.0001, "Acts_Shocked_3", 0.0001, "Acts_Shocked_4_Loop", 0.0001, "Acts_Breakout_Rifleman", 0.0001, "Acts_Breakout_Player", 1e-005, "Acts_Training_Reveal_Ambusher_In", 0.0001, "Acts_Arriving_Camp_Player", 0.0001, "Acts_Calling_Out_Jets", 0.0001, "Acts_Pointing_Back", 0.0001, "Acts_Pointing_Down", 0.0001, "Acts_Pointing_Front", 0.0001, "Acts_Pointing_Left", 0.0001, "Acts_Pointing_Right", 0.0001, "Acts_Pointing_Up", 0.0001, "Acts_Rifle_Operations_Default", 0.1, "Acts_Ambient_Agreeing", 0.0001, "Acts_Ambient_Disagreeing", 0.0001, "Acts_Ambient_Disagreeing_with_pointing", 0.0001, "Acts_Ambient_Aggressive", 0.0001, "Acts_Ambient_Defensive", 0.0001, "Acts_Ambient_Dismissing", 0.0001, "Acts_Ambient_Facepalm_1", 0.0001, "Acts_Ambient_Facepalm_2", 0.0001, "Acts_Ambient_Huh", 0.0001, "Acts_Ambient_Approximate", 0.0001, "Acts_Ambient_Relax_2", 0.0001, "Acts_Ambient_Relax_3", 0.0001, "Acts_Ambient_Relax_4", 0.0001, "Acts_Ambient_Rifle_Drop", 0.0001, "Acts_Breakout_SquadLeader_1", 0.0001, "AmovPercMstpSlowWrflDnon", 1e-006, "Acts_Ambient_Relax_1", 0.0001, "Acts_Breakout_Rifleman_1", 1e-005, "Acts_Helping_Wake_Up_1", 0.01, "Acts_Ambient_Picking_Up", 0.0001, "Acts_Ambient_Gestures_Tired", 0.0001, "Acts_Ambient_Gestures_Yawn", 0.0001, "Acts_Ambient_Gestures_Sneeze", 0.0001, "Acts_Ambient_Cleaning_Nose", 0.0001, "Acts_Ambient_Stretching", 0.0001, "Acts_Ambient_Shoelaces", 0.0001, "Act_Alien_Gesture_Rifle", 0.0001, "Acts_RU_Briefing_Overview", 0.0001, "HubSpectator_stand_Contact", 1e-005};
 			leftHandIKCurve[] = {1};
 			leftHandIKEnd = 1;
 			looped = 1;
 			rightHandIKBeg = 1;
 			rightHandIKCurve[] = {1};
 			rightHandIKEnd = 1;
-			speed = 1e+009;
+			speed = 1e+010;
+			weaponIK = 1;
+			weaponLowered = 1;
+		};
+		class Acts_RU_Briefing_Move: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_RU_Briefing_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_RU_Briefing_Speaking", 0.01};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Outro2\Acts_RU_Briefing_Move.rtm";
+			InterpolateTo[] = {"Acts_RU_Briefing_Speaking", 0.01};
+			interpolationRestart = 1;
+			leftHandIKCurve[] = {0, 1, 0.0641, 1, 0.1282, 0, 0.7436, 0, 0.8462, 1, 1, 1};
+			minPlayTime = 1;
+			rightHandIKCurve[] = {1};
+			speed = 0.3846;
+			weaponIK = 1;
+		};
+		class Acts_RU_Briefing_Overview: CutSceneAnimationBaseZoZo
+		{
+			actions = "NoActions";
+			ConnectTo[] = {"Acts_RU_Briefing_Turn", 0.001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Outro2\Acts_RU_Briefing_Overview.rtm";
+			InterpolateTo[] = {"Acts_RU_Briefing_Turn", 0.001};
+			leftHandIKCurve[] = {0, 1, 0.8, 1, 0.83, 0, 0.944, 0, 0.994, 1, 1, 1};
+			minPlayTime = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.0417;
+			weaponIK = 1;
+		};
+		class Acts_RU_Briefing_Point: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_RU_Briefing_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_RU_Briefing_Speaking", 0.01};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Outro2\Acts_RU_Briefing_Point.rtm";
+			InterpolateTo[] = {"Acts_RU_Briefing_Speaking", 0.01};
+			interpolationRestart = 1;
+			leftHandIKCurve[] = {0, 1, 0.0205, 1, 0.0973, 0, 0.5067, 0, 0.5473, 1, 1, 1};
+			minPlayTime = 1;
+			rightHandIKCurve[] = {1};
+			speed = 0.2;
+			weaponIK = 1;
+		};
+		class Acts_RU_Briefing_Point_TL: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_RU_Briefing_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_RU_Briefing_Speaking", 0.01};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Outro2\Acts_RU_Briefing_Point_TL.rtm";
+			InterpolateTo[] = {"Acts_RU_Briefing_Speaking", 0.01};
+			interpolationRestart = 1;
+			leftHandIKCurve[] = {0, 1, 0.1294, 1, 0.2118, 0, 0.7059, 0, 0.8706, 1, 1, 1};
+			minPlayTime = 1;
+			rightHandIKCurve[] = {1};
+			speed = 0.3846;
+			weaponIK = 1;
+		};
+		class Acts_RU_Briefing_Speaking: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_RU_Briefing_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_RU_Briefing_Speaking", 0.01, "Acts_RU_Briefing_Point_TL", 0.01, "Acts_RU_Briefing_Point", 0.01, "Acts_RU_Briefing_Move", 0.01};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Outro2\Acts_RU_Briefing_Speaking.rtm";
+			InterpolateTo[] = {"Acts_RU_Briefing_Point_TL", 0.01, "Acts_RU_Briefing_Point", 0.01, "Acts_RU_Briefing_Move", 0.01};
+			interpolationRestart = 1;
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 1;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.0546;
+			weaponIK = 1;
+		};
+		class Acts_RU_Briefing_Turn: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_RU_Briefing_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_RU_Briefing_Speaking", 0.01};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Outro2\Acts_RU_Briefing_Turn.rtm";
+			InterpolateTo[] = {"Acts_RU_Briefing_Speaking", 0.01};
+			interpolationRestart = 1;
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 0;
+			minPlayTime = 1;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = "0.3093 ";
 			weaponIK = 1;
 		};
 		class Acts_ShieldFromSun_in: Campaign_Base
@@ -10014,6 +11408,57 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			InterpolateTo[] = {"AmovPercMstpSlowWrflDnon", 0.001};
 			soundOverride = "Acts_ShieldFromSun_out";
 			speed = 0.5456;
+		};
+		class Acts_Shocked_1_Loop: CutSceneAnimationBaseZoZo
+		{
+			actions = "RifleStandActions";
+			canBlendStep = 1;
+			ConnectTo[] = {"Acts_Shocked_1_Loop", 0.002, "Acts_RifleLowStand_Default", 0.1};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Shocked_1_Loop.rtm";
+			interpolationSpeed = 0.75;
+			leftHandIKBeg = 1;
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 1;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.0547;
+			WeaponIK = 1;
+			weaponLowered = 0;
+		};
+		class Acts_Shocked_3: CutSceneAnimationBaseZoZo
+		{
+			actions = "RifleLowStandActions";
+			ConnectTo[] = {"Acts_RifleLowStand_Default", 0.1};
+			disableWeapons = 0;
+			file = "a3\anims_f_contact\data\anim\sdr\cts\Intro1\acts_shocked_3.rtm";
+			interpolationSpeed = 0.8;
+			leftHandIKCurve[] = {0, 1, 0.0079, 0, 0.94958, 0, 0.953781, 1};
+			looped = 0;
+			rightHandIKCurve[] = {1};
+			speed = 0.063;
+			weaponIK = 1;
+		};
+		class Acts_Shocked_4_Loop: CutSceneAnimationBaseZoZo
+		{
+			actions = "RifleStandActions";
+			ConnectTo[] = {"Acts_Shocked_4_Loop", 1e-005, "Acts_RifleLowStand_Default", 0.1};
+			file = "a3\anims_f_contact\data\anim\sdr\cts\Intro1\acts_shocked_4_loop.rtm";
+			interpolationSpeed = 0.8;
+			leftHandIKCurve[] = {0, 1, 0.097, 0, 0.2852, 0, 0.2952, 1, 0.4993, 0, 0.8553, 0, 0.8653, 1};
+			looped = 1;
+			rightHandIKCurve[] = {1};
+			speed = 0.0409;
+			weaponIK = 1;
+		};
+		class Acts_ShockedUnarmed_2_Loop: CutSceneAnimationBaseZoZo
+		{
+			actions = "NoActions";
+			ConnectTo[] = {"Acts_ShockedUnarmed_2_Loop", 1e-005, "Acts_CivilStand_Default", 0.1};
+			file = "a3\anims_f_contact\data\anim\sdr\cts\Intro1\acts_shockedunarmed_2_loop.rtm";
+			InterpolateTo[] = {"Acts_CivilStand_Default", 0.1};
+			speed = 0.0598;
 		};
 		class Acts_ShowingTheRightWay_in: Campaign_Base
 		{
@@ -10190,6 +11635,39 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			showItemInRightHand = 1;
 			speed = 0.322581;
 		};
+		class Acts_Soldier_Moves_Inside_1: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Soldier_Moves_Inside_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_Soldier_Moves_Inside_1", 1};
+			file = "\a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam1\Acts_Soldier_Moves_Inside_1.rtm";
+			InterpolateTo[] = {"Acts_Soldier_Moves_Inside_1b", 0.0001};
+			interpolationRestart = 1;
+			looped = 1;
+			speed = 0.094;
+		};
+		class Acts_Soldier_Moves_Inside_1b: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Soldier_Moves_Inside_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_Soldier_Moves_Inside_2", 0.0001};
+			file = "\a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam1\Acts_Soldier_Moves_Inside_1b.rtm";
+			interpolationRestart = 1;
+			looped = 0;
+			speed = 1e+011;
+		};
+		class Acts_Soldier_Moves_Inside_2: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Soldier_Moves_Inside_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_RifleLowStand_Default", 0.1};
+			file = "\a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam1\Acts_Soldier_Moves_Inside_2.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 0.1};
+			interpolationRestart = 1;
+			looped = 0;
+			minPlayTime = 1;
+			speed = 0.4055;
+		};
 		class Acts_StandingSpeakingUnarmed: CutSceneAnimationBaseZoZo
 		{
 			actions = "NoActions";
@@ -10198,6 +11676,24 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEdge[] = {0.001};
 			soundOverride = "Acts_StandingSpeakingUnarmed";
 			speed = 0.0139;
+		};
+		class Acts_Stargazer: CutSceneAnimationBaseZoZo
+		{
+			actions = "RifleLowStandActions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_RifleLowStand_Default", 0.0001};
+			enableDirectControl = 0;
+			file = "\a3\anims_f_contact\data\anim\sdr\cts\Intro2\acts_stargazer.rtm";
+			headBobMode = 6;
+			headBobStrength = -1;
+			InterpolateTo[] = {"AmovPercMstpSlowWrflDnon", 1e-005, "Acts_RifleLowStand_Default", 0.0001};
+			interpolationRestart = 0;
+			leftHandIKCurve[] = {0, 1, 0.669369, 1, 0.679369, 0, 0.8318, 0, 0.834428, 1};
+			looped = 0;
+			minPlayTime = 1;
+			rightHandIKCurve[] = {1};
+			speed = 0.0394;
+			weaponIK = 1;
 		};
 		class Acts_starterPistol_fire: CutSceneAnimationBase
 		{
@@ -10252,6 +11748,93 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			showHandGun = 1;
 			showItemInRightHand = 1;
 			speed = 0.4617;
+		};
+		class Acts_StaticDeath_01: Acts_StaticDeath_base
+		{
+			file = "\a3\Anims_F_Contact\Data\Anim\sdr\dth\static\Static_dead_01.rtm";
+		};
+		class Acts_StaticDeath_02: Acts_StaticDeath_base
+		{
+			file = "\a3\Anims_F_Contact\Data\Anim\sdr\dth\static\Static_dead_02.rtm";
+		};
+		class Acts_StaticDeath_03: Acts_StaticDeath_base
+		{
+			file = "\a3\Anims_F_Contact\Data\Anim\sdr\dth\static\Static_dead_03.rtm";
+		};
+		class Acts_StaticDeath_04: Acts_StaticDeath_base
+		{
+			file = "\a3\Anims_F_Contact\Data\Anim\sdr\dth\static\Static_dead_04.rtm";
+		};
+		class Acts_StaticDeath_05: Acts_StaticDeath_base
+		{
+			file = "\a3\Anims_F_Contact\Data\Anim\sdr\dth\static\Static_dead_05.rtm";
+		};
+		class Acts_StaticDeath_06: Acts_StaticDeath_base
+		{
+			file = "\a3\Anims_F_Contact\Data\Anim\sdr\dth\static\Static_dead_06.rtm";
+		};
+		class Acts_StaticDeath_07: Acts_StaticDeath_base
+		{
+			file = "\a3\Anims_F_Contact\Data\Anim\sdr\dth\static\Static_dead_07.rtm";
+		};
+		class Acts_StaticDeath_08: Acts_StaticDeath_base
+		{
+			file = "\a3\Anims_F_Contact\Data\Anim\sdr\dth\static\Static_dead_08.rtm";
+		};
+		class Acts_StaticDeath_09: Acts_StaticDeath_base
+		{
+			file = "\a3\Anims_F_Contact\Data\Anim\sdr\dth\static\Static_dead_09.rtm";
+		};
+		class Acts_StaticDeath_base: CutSceneAnimationBase
+		{
+			actions = "DeadActions";
+			boundingSphere = 5;
+			ConnectTo[] = {};
+			InterpolateTo[] = {"Unconscious", 0.1};
+			interpolationRestart = 1;
+			interpolationSpeed = 4;
+			looped = 1;
+			speed = -1000;
+		};
+		class Acts_StaticDeath_Strecher: Acts_StaticDeath_base
+		{
+			file = "\a3\Anims_F_Contact\Data\Anim\sdr\dth\static\Static_dead_stretcher.rtm";
+		};
+		class Acts_StaticPose_Base: CutSceneAnimationBase
+		{
+			actions = "NoActions";
+			boundingSphere = 5;
+			InterpolateTo[] = {"Unconscious", 0.1};
+			interpolationRestart = 1;
+			interpolationSpeed = 4;
+			looped = 1;
+			showHandGun = 1;
+			speed = -1000;
+		};
+		class Acts_StaticPose_ContactBoxArt_01: CutSceneAnimationBase
+		{
+			file = "\a3\Anims_F_Contact\data\anim\sdr\cts\Box_Art_Pose.rtm";
+		};
+		class Acts_Stunned_Unconscious: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Stunned_Unconscious_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_Stunned_Unconscious_end", 1};
+			disableWeapons = 1;
+			enableDirectControl = 0;
+			file = "\a3\anims_f_contact\data\anim\sdr\cts\FreeRoam2\Acts_Stunned_Unconscious.rtm";
+			InterpolateTo[] = {"Acts_Stunned_Unconscious_end", 1};
+			looped = 0;
+			minPlayTime = 1;
+			speed = 0.1422;
+		};
+		class Acts_Stunned_Unconscious_end: CutSceneAnimationBaseZoZo
+		{
+			file = "\a3\anims_f_contact\data\anim\sdr\cts\FreeRoam2\Acts_Stunned_Unconscious_end.rtm";
+			interpolationRestart = 1;
+			looped = 0;
+			speed = 1e+008;
+			terminal = 1;
 		};
 		class Acts_SupportTeam_Back_FromKneelLoop: AmovPercMstpSlowWrflDnon
 		{
@@ -10545,6 +12128,77 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			looped = 1;
 			speed = 0.566;
 		};
+		class Acts_Taking_Cover_From_Jets: CutSceneAnimationBaseZoZo
+		{
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_Taking_Cover_From_Jets", 0.001};
+			file = "\a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam2\Acts_Taking_Cover_From_Jets.rtm";
+			InterpolateTo[] = {};
+			interpolationRestart = 1;
+			looped = 1;
+			minPlayTime = 1;
+			speed = 0.0532;
+		};
+		class Acts_Taking_Cover_From_Jets_action: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Taking_Cover_From_Jets_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_Taking_Cover_From_Jets_loop", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam2\Acts_Taking_Cover_From_Jets_action.rtm";
+			InterpolateTo[] = {"Acts_Taking_Cover_From_Jets_loop", 0.0001};
+			interpolationRestart = 1;
+			looped = 0;
+			minPlayTime = 1;
+			speed = 0.1829;
+		};
+		class Acts_Taking_Cover_From_Jets_in_loop: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Taking_Cover_From_Jets_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_Taking_Cover_From_Jets_in_loop", 0.0001, "Acts_Taking_Cover_From_Jets_action", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam2\Acts_Taking_Cover_From_Jets_in_loop.rtm";
+			InterpolateTo[] = {"Acts_Taking_Cover_From_Jets_action", 0.0001};
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.1132;
+			weaponIK = 1;
+		};
+		class Acts_Taking_Cover_From_Jets_in_loop_steady: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Taking_Cover_From_Jets_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_Taking_Cover_From_Jets_out", 0.0001};
+			file = "a3\anims_f_contact\data\anim\sdr\cts\FreeRoam2\Acts_Taking_Cover_From_Jets_loop_steady.rtm";
+			interpolationRestart = 1;
+			looped = 0;
+			speed = 1;
+		};
+		class Acts_Taking_Cover_From_Jets_loop: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Taking_Cover_From_Jets_Actions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_Taking_Cover_From_Jets_loop", 0.001, "Acts_Taking_Cover_From_Jets_in_loop_steady", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam2\Acts_Taking_Cover_From_Jets_loop.rtm";
+			InterpolateTo[] = {"Acts_Taking_Cover_From_Jets_in_loop_steady", 0.0001};
+			interpolationRestart = 0;
+			interpolationSpeed = 2.5;
+			looped = 1;
+			speed = 0.3571;
+		};
+		class Acts_Taking_Cover_From_Jets_out: CutSceneAnimationBaseZoZo
+		{
+			actions = "CivilKneelActions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_CivilStand_Default", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam2\Acts_Taking_Cover_From_Jets_out.rtm";
+			interpolationRestart = 1;
+			looped = 0;
+			minPlayTime = 1;
+			speed = 1.111;
+		};
 		class Acts_TerminalOpen: CutSceneAnimationBase
 		{
 			actions = "CivilKneelActions";
@@ -10553,6 +12207,150 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			forceAim = 0;
 			interpolateTo[] = {};
 			speed = 0.16216;
+		};
+		class Acts_trailer_campCommander: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\trailer\acts_trailer_campCommander.rtm";
+			speed = 0.0544;
+		};
+		class Acts_trailer_campScientist: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\trailer\acts_trailer_campScientist.rtm";
+			speed = 0.0574;
+		};
+		class Acts_trailer_inspectShock_A: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\trailer\acts_trailer_inspectShock_A.rtm";
+			leftHandIKCurve[] = {0, 0, 0.0205, 1};
+			rightHandIKCurve[] = {1};
+			speed = 0.0474;
+			weaponIK = 1;
+		};
+		class Acts_trailer_inspectShock_B: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\trailer\acts_trailer_inspectShock_B.rtm";
+			leftHandIKCurve[] = {1};
+			rightHandIKCurve[] = {1};
+			speed = 0.0455;
+			weaponIK = 1;
+		};
+		class Acts_trailer_nodCommander: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\trailer\acts_trailer_nodCommander.rtm";
+			speed = 0.0665;
+		};
+		class Acts_trailer_nodScientist: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\trailer\acts_trailer_nodScientist.rtm";
+			speed = 0.0435;
+		};
+		class Acts_trailer_relaxedWalk_B: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\trailer\acts_trailer_relaxedWalk_B.rtm";
+			leftHandIKCurve[] = {1};
+			rightHandIKCurve[] = {1};
+			speed = 0.0865;
+			weaponIK = 1;
+		};
+		class Acts_trailer_relaxedWalk_F: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\trailer\acts_trailer_relaxedWalk_F.rtm";
+			leftHandIKCurve[] = {1};
+			rightHandIKCurve[] = {1};
+			speed = 0.075;
+			weaponIK = 1;
+		};
+		class Acts_trailer_relaxedWalk_L: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\trailer\acts_trailer_relaxedWalk_L.rtm";
+			leftHandIKCurve[] = {1};
+			rightHandIKCurve[] = {1};
+			speed = 0.0915;
+			weaponIK = 1;
+		};
+		class Acts_trailer_relaxedWalk_R: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\trailer\acts_trailer_relaxedWalk_R.rtm";
+			leftHandIKCurve[] = {0, 1, 0.02521, 1, 0.047619, 0, 0.358543, 0, 0.37535, 1, 0.803922, 1, 0.829132, 0, 0.991597, 0};
+			rightHandIKCurve[] = {1};
+			speed = 0.084;
+			weaponIK = 1;
+		};
+		class Acts_trailer_sendUGVOff: CutSceneAnimationBaseZoZo
+		{
+			file = "a3\Anims_F_Contact\data\anim\trailer\acts_trailer_sendUGVOff.rtm";
+			leftHandIKCurve[] = {0, 1, 0.234513, 1, 0.25885, 0, 0.422566, 0, 0.431416, 1};
+			rightHandIKCurve[] = {1};
+			speed = 0.0664;
+			weaponIK = 1;
+		};
+		class Acts_Training_Reveal_Ambusher_In: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Training_Reveal_Ambusher";
+			canPullTrigger = 1;
+			ConnectTo[] = {"Acts_Training_Reveal_Ambusher_Loop", 0.0001};
+			disableWeapons = 0;
+			disableWeaponsLong = 0;
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Training_Reveal_Ambusher_In.rtm";
+			InterpolateTo[] = {"Acts_Training_Reveal_Ambusher_Loop", 0.0001};
+			leftHandIKCurve[] = {0, 1, 0.57205, 1, 0.58733, 0, 0.74017, 0, 0.75546, 1};
+			looped = 0;
+			minplaytime = 0.9;
+			rightHandIKCurve[] = {1};
+			speed = 0.0655;
+			weaponIK = 1;
+		};
+		class Acts_Training_Reveal_Ambusher_Loop: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Training_Reveal_Ambusher";
+			canBlendStep = 1;
+			ConnectTo[] = {"Acts_Training_Reveal_Ambusher_Loop", 1, "Acts_Training_Reveal_Ambusher_Out", 0.0001};
+			disableWeapons = 0;
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Training_Reveal_Ambusher_Loop.rtm";
+			InterpolateTo[] = {"Acts_Training_Reveal_Ambusher_Out", 0.0001};
+			leftHandIKBeg = 1;
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 1;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			speed = 1e+007;
+			static = 1;
+			weaponIK = 1;
+		};
+		class Acts_Training_Reveal_Ambusher_Out: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Training_Reveal_Ambusher";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_RifleLowStand_Default", 1e-005};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Training_Reveal_Ambusher_Out.rtm";
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 1e-005};
+			interpolationRestart = 0;
+			leftHandIKBeg = 1;
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 0;
+			minPlayTime = 1;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.2068;
+			static = 0;
+			weaponIK = 1;
+		};
+		class Acts_Training_Reveal_Ambusher_Out_single: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Training_Reveal_Ambusher";
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_Training_Reveal_Ambusher_Out.rtm";
+			leftHandIKBeg = 1;
+			leftHandIKCurve[] = {1};
+			leftHandIKEnd = 1;
+			looped = 0;
+			rightHandIKBeg = 1;
+			rightHandIKCurve[] = {1};
+			rightHandIKEnd = 1;
+			speed = 0.2083;
+			weaponIK = 1;
 		};
 		class Acts_TreatingWounded01: Acts_TreatingWounded_loop
 		{
@@ -10634,6 +12432,19 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEdge[] = {0.001};
 			soundOverride = "Acts_TreatingWounded_Out";
 			speed = 0.2543;
+		};
+		class Acts_UGV_Jamming_Loop: CutSceneAnimationBaseZoZo
+		{
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_UGV_Jamming_Loop", 0.0001};
+			file = "a3\Anims_F_Contact\data\anim\sdr\cts\Intro1\Acts_UGV_Jamming_Loop.rtm";
+			InterpolateTo[] = {"Acts_UGV_Jamming_Loop", 0.0001, "Acts_PistolRaisedStand_Default", 0.0001};
+			interpolationRestart = 1;
+			interpolationSpeed = 0.7;
+			looped = 1;
+			showHandGun = 1;
+			speed = 0.0294;
+			weaponIK = 0;
 		};
 		class Acts_UnconsciousStandUp_part1: Campaign_Base
 		{
@@ -10734,6 +12545,22 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			speed = 0.05618;
 			weaponIK = 1;
 		};
+		class Acts_Waking_Up_Player: CutSceneAnimationBaseZoZo
+		{
+			actions = "Acts_Waking_Up_Player_action";
+			canBlendStep = 0;
+			canPullTrigger = 0;
+			ConnectTo[] = {"Acts_Getting_Up_Player", 0.001, "Acts_Waking_Up_Player", 0.001};
+			disableWeapons = 1;
+			disableWeaponsLong = 1;
+			enableDirectControl = 0;
+			file = "\a3\Anims_F_Contact\data\anim\sdr\cts\FreeRoam2\Acts_Waking_Up_Player.rtm";
+			InterpolateTo[] = {"Acts_Getting_Up_Player", 0.001};
+			looped = 1;
+			minPlayTime = 0.1;
+			showHandGun = 1;
+			speed = 0.0509;
+		};
 		class Acts_WalkingChecking: Campaign_Base
 		{
 			boundingSphere = 10;
@@ -10759,6 +12586,17 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class Acts_WarmupBaseKneel: Acts_WarmupBase
 		{
 			file = "\A3\Anims_F\data\Anim\sdr\mov\erc\stp\low\rfl\AmovPercMstpSlowWrflDnon";
+		};
+		class Acts_Watching_Fire_Loop: CutSceneAnimationBaseZoZo
+		{
+			actions = "NoActions";
+			canBlendStep = 0;
+			ConnectTo[] = {"Acts_Watching_Fire_Loop", 1, "Acts_Arrival_Response", 0.0001};
+			file = "a3\anims_f_contact\data\anim\sdr\cts\Intro2\acts_watching_fire_loop.rtm";
+			InterpolateTo[] = {"Acts_Arrival_Response", 0.0001};
+			interpolationRestart = 1;
+			looped = 1;
+			speed = 0.075;
 		};
 		class Acts_welcomeOnHUB01_AIWalk: CutSceneAnimationBase
 		{
@@ -11748,6 +13586,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			speed = 0.625;
 			weaponIK = 1;
 		};
+		class ActsPknlMstpSnonWnonDnon_AI: AidlPknlMstpSnonWnonDnon_AI
+		{
+			actions = "CivilKneelActions";
+			ConnectTo[] = {"AmovPknlMstpSnonWnonDnon", 0.1};
+			InterpolateTo[] = {"AmovPknlMstpSnonWnonDnon", 0.1};
+		};
 		class AdvePercMrunSnonWnonDb: AdvePercMrunSnonWnonDf
 		{
 			actions = "DivingActionsRunB";
@@ -11777,7 +13621,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			InterpolateTo[] = {"Unconscious", 0.02, "AdvePercMsprSnonWnonDf", 0.02, "AdvePercMwlkSnonWnonDf", 0.02, "AdvePercMtacSnonWnonDf", 0.02, "AdvePercMrunSnonWnonDfr", 0.02, "AdvePercMrunSnonWnonDfl", 0.02, "AdvePercMrunSnonWnonDl", 0.02, "AdvePercMrunSnonWnonDr", 0.02, "AbdvPercMrunSnonWnonDf", 0.02, "AsdvPercMrunSnonWnonDf", 0.02, "AdvePercMstpSnonWnonDnon_relax", 0.1, "AmovPercMstpSnonWnonDnon", 0.03, "AdvePercMstpSnonWnonDnon", 0.03, "AbdvPercMstpSnonWnonDnon", 0.03, "AsdvPercMstpSnonWnonDnon", 0.03};
 			relSpeedMax = 1.5;
 			speed = 0.122414;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AdvePercMrunSnonWnonDfl: AdvePercMrunSnonWnonDf
 		{
@@ -11839,7 +13683,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitGunMovement = 0;
 			relSpeedMax = 1.5;
 			speed = 0.122414;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AdvePercMrunSnonWrflDfl: AdvePercMrunSnonWrflDf
 		{
@@ -11974,7 +13818,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file = "a3\anims_f\data\anim\sdr\dve\erc\stp\non\non\advepercmstpsnonwnondnon_godown.rtm";
 			InterpolateTo[] = {"AdvePercMstpSnonWnonDnon", 0.2, "Unconscious", 0.02, "AbdvPercMstpSnonWnonDnon", 0.2, "AsdvPercMstpSnonWnonDnon", 0.2, "AsdvPercMstpSnonWnonDnon_godown", 0.1, "AbdvPercMstpSnonWnonDnon_godown", 0.1};
 			speed = 0.8;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AdvePercMstpSnonWnonDnon_goup: AdvePercMstpSnonWnonDnon
 		{
@@ -11984,7 +13828,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file = "a3\anims_f\data\anim\sdr\dve\erc\stp\non\non\advepercmstpsnonwnondnon_goup.rtm";
 			InterpolateTo[] = {"AdvePercMstpSnonWnonDnon", 0.2, "Unconscious", 0.02, "AsdvPercMstpSnonWnonDnon", 0.2, "AbdvPercMstpSnonWnonDnon", 0.2, "AsdvPercMstpSnonWnonDnon_goup", 0.1, "AbdvPercMstpSnonWnonDnon_goup", 0.1};
 			speed = 0.6;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AdvePercMstpSnonWnonDnon_putDown_AdvePercMstpSnonWnonDnon: AdvePercMstpSnonWnonDnon
 		{
@@ -12105,7 +13949,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file = "a3\anims_f\data\anim\sdr\dve\erc\stp\non\rfl\advepercmstpsnonwrfldnon_godown.rtm";
 			InterpolateTo[] = {"AdvePercMstpSnonWrflDnon", 0.2, "Unconscious", 0.02, "AbdvPercMstpSnonWrflDnon", 0.2, "AsdvPercMstpSnonWrflDnon", 0.2, "AsdvPercMstpSnonWrflDnon_godown", 0.1, "AbdvPercMstpSnonWrflDnon_godown", 0.1};
 			speed = 0.8;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AdvePercMstpSnonWrflDnon_goup: AdvePercMstpSnonWrflDnon
 		{
@@ -12116,7 +13960,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file = "a3\anims_f\data\anim\sdr\dve\erc\stp\non\rfl\advepercmstpsnonwrfldnon_goup.rtm";
 			InterpolateTo[] = {"AdvePercMstpSnonWrflDnon", 0.2, "Unconscious", 0.02, "AsdvPercMstpSnonWrflDnon", 0.2, "AbdvPercMstpSnonWrflDnon", 0.2, "AsdvPercMstpSnonWrflDnon_goup", 0.1, "AbdvPercMstpSnonWrflDnon_goup", 0.1};
 			speed = 0.6;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AdvePercMstpSnonWrflDnon_putDown_AdvePercMstpSnonWrflDnon: AdvePercMstpSnonWrflDnon
 		{
@@ -12302,7 +14146,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			InterpolateTo[] = {"Unconscious", 0.02, "AdvePercMsprSnonWnonDf", 0.02, "AdvePercMrunSnonWnonDf", 0.02, "AdvePercMtacSnonWnonDf", 0.02, "AdvePercMwlkSnonWnonDfr", 0.02, "AdvePercMwlkSnonWnonDfl", 0.02, "AdvePercMwlkSnonWnonDl", 0.02, "AdvePercMwlkSnonWnonDr", 0.02, "AbdvPercMwlkSnonWnonDf", 0.02, "AsdvPercMwlkSnonWnonDf", 0.02, "AdvePercMstpSnonWnonDnon_relax", 0.1, "AmovPercMstpSnonWnonDnon", 0.03, "AdvePercMstpSnonWnonDnon", 0.03, "AbdvPercMstpSnonWnonDnon", 0.03, "AsdvPercMstpSnonWnonDnon", 0.03};
 			relSpeedMax = 1.5;
 			speed = 0.122414;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AdvePercMwlkSnonWnonDfl: AdvePercMwlkSnonWnonDf
 		{
@@ -12364,7 +14208,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitGunMovement = 0;
 			relSpeedMax = 1.5;
 			speed = 0.122414;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AdvePercMwlkSnonWrflDfl: AdvePercMwlkSnonWrflDf
 		{
@@ -16801,7 +18645,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEnabled = 1;
 			soundOverride = "run";
 			speed = 0.62475;
-			stamina = -0.1;
+			stamina = -0.05;
 			static = 1;
 			visiblesize = 0.9;
 			Walkcycles = 2;
@@ -16859,7 +18703,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			aimPrecision = 3;
 			enableOptics = 0;
 			InterpolateTo[] = {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon", 0.02, "AmovPercMstpSlowWpstDnon", 0.02, "AmovPercMwlkSlowWpstDf", 0.025, "AmovPknlMrunSlowWpstDf", 0.025, "AmovPercMrunSlowWpstDfl", 0.025, "AmovPercMrunSlowWpstDfr", 0.025, "AmovPercMevaSlowWpstDf", 0.025, "Unconscious", 0.02, "AmovPercMwlkSrasWpstDf", 0.2, "AmovPercMtacSrasWpstDf", 0.02, "AmovPercMtacSlowWpstDf", 0.025, "AmovPercMrunSrasWpstDf", 0.2};
-			stamina = -0.1;
+			stamina = -0.05;
 			weaponLowered = 1;
 		};
 		class AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthArm: AmovPercMrunSlowWpstDf_AmovPercMstpSrasWpstDnon_gthThrow
@@ -16973,7 +18817,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEnabled = 1;
 			soundOverride = "run";
 			speed = 0.715882;
-			stamina = -0.1;
+			stamina = -0.05;
 			static = 1;
 			variantsPlayer[] = {};
 			visibleSize = 0.900121;
@@ -17227,7 +19071,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEdge[] = {0.5, 1};
 			soundOverride = "run";
 			speed = 1.2485;
-			stamina = -0.1;
+			stamina = -0.05;
 			static = 1;
 		};
 		class AmovPercMrunSnonWbinDf_lnr: AmovPercMwlkSoptWbinDf_lnr
@@ -17458,7 +19302,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEnabled = 1;
 			soundOverride = "run";
 			speed = 1.2485;
-			stamina = -0.1;
+			stamina = -0.05;
 			static = 1;
 			variantsPlayer[] = {};
 			visiblesize = 0.9;
@@ -17622,7 +19466,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEnabled = 1;
 			soundOverride = "run";
 			speed = 0.76624;
-			stamina = -0.1;
+			stamina = -0.05;
 			static = 1;
 			variantsPlayer[] = {};
 			visibleSize = 0.900121;
@@ -17715,7 +19559,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEnabled = 1;
 			soundOverride = "run";
 			speed = 0.684541;
-			stamina = -0.1;
+			stamina = -0.05;
 			static = 1;
 			variantsAI[] = {};
 			variantsPlayer[] = {};
@@ -20115,7 +21959,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			headBobStrength = 0.124378;
 			InterpolateTo[] = {"AmovPercMstpSlowWpstDnon", 0.02, "AmovPercMtacSlowWpstDfl", 0.01, "AmovPercMtacSlowWpstDfr", 0.01, "AmovPercMrunSlowWpstDf", 0.02, "AmovPercMwlkSlowWpstDf", 0.02, "AovrPercMstpSlowWpstDf", 0.02, "Unconscious", 0.02, "AmovPercMrunSrasWpstDf", 0.02, "AmovPercMevaSlowWpstDf", 0.02, "AmovPknlMtacSlowWpstDf", 0.02};
 			speed = 0.6;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AmovPercMtacSlowWpstDfl: AmovPercMtacSlowWpstDf
 		{
@@ -20198,7 +22042,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			SoundEdge[] = {0.181818, 0.431818, 0.681818, 0.931818};
 			soundOverride = "run";
 			speed = 0.64865;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AmovPercMtacSlowWrflDfl: AmovPercMtacSlowWrflDfl_ver2
 		{
@@ -20215,7 +22059,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			interpolationSpeed = 3;
 			SoundEdge[] = {0.181818, 0.431818, 0.681818, 0.931818};
 			speed = 0.64865;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AmovPercMtacSlowWrflDfr: AmovPercMtacSlowWrflDfr_ver2
 		{
@@ -20292,7 +22136,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEnabled = 1;
 			soundOverride = "walk";
 			speed = 1.22699;
-			stamina = -0.1;
+			stamina = -0.05;
 			visiblesize = 0.9;
 		};
 		class AmovPercMtacSrasWlnrDfl: AmovPercMtacSrasWlnrDf
@@ -20352,7 +22196,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			interpolationSpeed = 3.05;
 			soundOverride = "Tactical";
 			speed = 0.850592;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AmovPercMtacSrasWpstDfl: AmovPercMtacSrasWpstDf
 		{
@@ -20414,7 +22258,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			relSpeedMin = 0.5;
 			soundOverride = "Tactical";
 			speed = 0.785714;
-			stamina = -0.1;
+			stamina = -0.05;
 			static = 1;
 		};
 		class AmovPercMtacSrasWrflDf_AmovPercMtacSrasWlnrDf: AmovPercMtacSrasWrflDf
@@ -22566,7 +24410,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEnabled = 1;
 			soundOverride = "run";
 			speed = 0.827586;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AmovPknlMrunSlowWpstDfl: AmovPknlMrunSlowWpstDf
 		{
@@ -22639,7 +24483,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEnabled = 1;
 			soundOverride = "run";
 			speed = 0.7;
-			stamina = -0.1;
+			stamina = -0.05;
 			static = 1;
 			visibleSize = 0.600122;
 		};
@@ -22784,7 +24628,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			relSpeedMin = 0.5;
 			soundOverride = "run";
 			speed = 0.666667;
-			stamina = -0.1;
+			stamina = -0.05;
 			static = 1;
 		};
 		class AmovPknlMrunSnonWbinDf_lnr: AmovPknlMwlkSoptWbinDf_lnr
@@ -23009,7 +24853,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEnabled = 1;
 			soundOverride = "run";
 			speed = 0.666667;
-			stamina = -0.1;
+			stamina = -0.05;
 			variantsPlayer[] = {};
 			visibleSize = 0.6;
 			Walkcycles = 2;
@@ -23072,7 +24916,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			headBobStrength = 0.20398;
 			InterpolateTo[] = {"AmovPknlMstpSrasWlnrDnon", 0.02, "AmovPercMrunSlowWlnrDf", 0.03, "AmovPknlMevaSlowWlnrDf", 0.03, "AmovPknlMrunSrasWlnrDfl", 0.025, "AmovPknlMrunSrasWlnrDfr", 0.025, "AmovPercMevaSlowWlnrDf", 0.025, "AmovPknlMwlkSrasWlnrDf", 0.025, "Unconscious", 0.02, "AmovPercMrunSrasWlnrDf", 0.03, "AmovPknlMstpSrasWlnrDnon_relax", 0.1, "AmovPknlMtacSrasWlnrDf", 0.025, "AmovPknlMstpSrasWlnrDnon_AmovPpneMstpSnonWnonDnon", 0.02, "AmovPknlMstpSrasWlnrDnon_AmovPknlMstpSrasWrflDnon", 0.01, "AmovPknlMstpSrasWlnrDnon_AmovPknlMstpSrasWpstDnon", 0.02};
 			speed = 0.623053;
-			stamina = -0.1;
+			stamina = -0.05;
 			visibleSize = 0.6;
 		};
 		class AmovPknlMrunSrasWlnrDfl: AmovPknlMrunSrasWlnrDf
@@ -23148,7 +24992,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEnabled = 1;
 			soundOverride = "run";
 			speed = 0.67734;
-			stamina = -0.1;
+			stamina = -0.05;
 			static = 1;
 			visibleSize = 0.600122;
 			Walkcycles = 2;
@@ -23239,7 +25083,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEnabled = 1;
 			soundOverride = "run";
 			speed = 0.6;
-			stamina = -0.1;
+			stamina = -0.05;
 			static = 1;
 			variantsPlayer[] = {};
 			visibleSize = 0.600122;
@@ -24960,7 +26804,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			InterpolateTo[] = {"AmovPknlMstpSlowWpstDnon", 0.02, "AmovPknlMtacSlowWpstDfl", 0.01, "AmovPknlMtacSlowWpstDfr", 0.01, "AmovPknlMrunSlowWpstDf", 0.02, "AmovPknlMwlkSlowWpstDf", 0.02, "AovrPercMstpSlowWpstDf", 0.02, "Unconscious", 0.02, "AmovPknlMrunSrasWpstDf", 0.02, "AmovPknlMevaSrasWpstDf", 0.02, "AmovPercMtacSlowWpstDf", 0.02};
 			soundOverride = "tactical";
 			speed = 0.75;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AmovPknlMtacSlowWpstDfl: AmovPknlMtacSlowWpstDf
 		{
@@ -25035,7 +26879,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitgunmovement = 0.8;
 			soundOverride = "tactical";
 			speed = 1.45;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AmovPknlMtacSlowWrflDfl: AmovPknlMrunSlowWrflDfl
 		{
@@ -25124,7 +26968,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEnabled = 1;
 			soundOverride = "walk";
 			speed = 1;
-			stamina = -0.1;
+			stamina = -0.05;
 			visibleSize = 0.6;
 		};
 		class AmovPknlMtacSrasWlnrDfl: AmovPknlMtacSrasWlnrDf
@@ -25190,7 +27034,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitgunmovement = 1;
 			soundoverride = "tactical";
 			speed = 0.767223;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AmovPknlMtacSrasWpstDfl: AmovPknlMtacSrasWpstDf
 		{
@@ -25257,7 +27101,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			showWeaponAim = 1;
 			soundOverride = "walk";
 			speed = 0.55;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AmovPknlMtacSrasWrflDfl: AmovPknlMtacSrasWrflDf
 		{
@@ -26087,7 +27931,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEnabled = 1;
 			soundOverride = "crawl";
 			speed = 0.443333;
-			stamina = -0.1;
+			stamina = -0.05;
 			static = 1;
 			visibleSize = 0.2;
 		};
@@ -26163,7 +28007,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEnabled = 1;
 			soundOverride = "crawl";
 			speed = 0.650541;
-			stamina = -0.1;
+			stamina = -0.05;
 			static = 1;
 			variantsPlayer[] = {};
 			visibleSize = 0.2;
@@ -26316,7 +28160,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEdge[] = {0.2, 0.7};
 			soundOverride = "crawl";
 			speed = 0.775862;
-			stamina = -0.1;
+			stamina = -0.05;
 			static = 1;
 		};
 		class AmovPpneMrunSnonWbinDf_lnr: AmovPpneMwlkSoptWbinDf_lnr
@@ -26553,7 +28397,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEnabled = 1;
 			soundOverride = "crawl";
 			speed = 0.775862;
-			stamina = -0.1;
+			stamina = -0.05;
 			static = 1;
 			visibleSize = 0.2;
 		};
@@ -29262,7 +31106,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			InterpolateTo[] = {"Unconscious", 0.02, "AsdvPercMsprSnonWnonDf", 0.02, "AsdvPercMwlkSnonWnonDf", 0.02, "AsdvPercMtacSnonWnonDf", 0.02, "AsdvPercMrunSnonWnonDfr", 0.02, "AsdvPercMrunSnonWnonDfl", 0.02, "AsdvPercMrunSnonWnonDl", 0.02, "AsdvPercMrunSnonWnonDr", 0.02, "AbdvPercMrunSnonWnonDf", 0.02, "AdvePercMrunSnonWnonDf", 0.02, "AsdvPercMstpSnonWnonDnon_relax", 0.1, "AmovPercMstpSnonWnonDnon", 0.03, "AsdvPercMstpSnonWnonDnon", 0.03, "AbdvPercMstpSnonWnonDnon", 0.03, "AdvePercMstpSnonWnonDnon", 0.03};
 			relSpeedMax = 1.5;
 			speed = 0.122414;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AsdvPercMrunSnonWnonDfl: AsdvPercMrunSnonWnonDf
 		{
@@ -29325,7 +31169,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitGunMovement = 0;
 			relSpeedMax = 1.5;
 			speed = 0.122414;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AsdvPercMrunSnonWrflDfl: AsdvPercMrunSnonWrflDf
 		{
@@ -29461,7 +31305,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file = "a3\anims_f\data\anim\sdr\dve\erc\stp\non\non\advepercmstpsnonwnondnon_godown.rtm";
 			InterpolateTo[] = {"AsdvPercMstpSnonWnonDnon", 0.2, "Unconscious", 0.02, "AbdvPercMstpSnonWnonDnon", 0.2, "AdvePercMstpSnonWnonDnon", 0.2, "AdvePercMstpSnonWnonDnon_godown", 0.1, "AbdvPercMstpSnonWnonDnon_godown", 0.1};
 			speed = 0.8;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AsdvPercMstpSnonWnonDnon_goup: AsdvPercMstpSnonWnonDnon
 		{
@@ -29472,7 +31316,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file = "a3\anims_f\data\anim\sdr\dve\erc\stp\non\non\advepercmstpsnonwnondnon_goup.rtm";
 			InterpolateTo[] = {"AsdvPercMstpSnonWnonDnon", 0.2, "Unconscious", 0.02, "AdvePercMstpSnonWnonDnon", 0.2, "AbdvPercMstpSnonWnonDnon", 0.2, "AdvePercMstpSnonWnonDnon_goup", 0.1, "AbdvPercMstpSnonWnonDnon_goup", 0.1};
 			speed = 0.6;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AsdvPercMstpSnonWnonDnon_putDown_AsdvPercMstpSnonWnonDnon: AsdvPercMstpSnonWnonDnon
 		{
@@ -29590,7 +31434,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file = "a3\anims_f\data\anim\sdr\dve\erc\stp\non\rfl\advepercmstpsnonwrfldnon_godown.rtm";
 			InterpolateTo[] = {"AsdvPercMstpSnonWrflDnon", 0.2, "Unconscious", 0.02, "AbdvPercMstpSnonWrflDnon", 0.2, "AdvePercMstpSnonWrflDnon", 0.2, "AdvePercMstpSnonWrflDnon_godown", 0.1, "AbdvPercMstpSnonWrflDnon_godown", 0.1};
 			speed = 0.8;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AsdvPercMstpSnonWrflDnon_goup: AsdvPercMstpSnonWrflDnon
 		{
@@ -29602,7 +31446,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file = "a3\anims_f\data\anim\sdr\dve\erc\stp\non\rfl\advepercmstpsnonwrfldnon_goup.rtm";
 			InterpolateTo[] = {"AsdvPercMstpSnonWrflDnon", 0.2, "Unconscious", 0.02, "AdvePercMstpSnonWrflDnon", 0.2, "AbdvPercMstpSnonWrflDnon", 0.2, "AdvePercMstpSnonWrflDnon_goup", 0.1, "AbdvPercMstpSnonWrflDnon_goup", 0.1};
 			speed = 0.6;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AsdvPercMstpSnonWrflDnon_putDown_AsdvPercMstpSnonWrflDnon: AsdvPercMstpSnonWrflDnon
 		{
@@ -29675,7 +31519,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			InterpolateTo[] = {"Unconscious", 0.02, "AsdvPercMsprSnonWnonDf", 0.02, "AsdvPercMwlkSnonWnonDf", 0.02, "AsdvPercMrunSnonWnonDf", 0.02, "AsdvPercMtacSnonWnonDfr", 0.02, "AsdvPercMtacSnonWnonDfl", 0.02, "AsdvPercMtacSnonWnonDl", 0.02, "AsdvPercMtacSnonWnonDr", 0.02, "AbdvPercMtacSnonWnonDf", 0.02, "AdvePercMtacSnonWnonDf", 0.02, "AsdvPercMstpSnonWnonDnon_relax", 0.1, "AmovPercMstpSnonWnonDnon", 0.03, "AsdvPercMstpSnonWnonDnon", 0.03, "AbdvPercMstpSnonWnonDnon", 0.03, "AdvePercMstpSnonWnonDnon", 0.03};
 			relSpeedMax = 1.5;
 			speed = 0.122414;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AsdvPercMtacSnonWnonDfl: AsdvPercMtacSnonWnonDf
 		{
@@ -29741,7 +31585,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitGunMovement = 0;
 			relSpeedMax = 1.5;
 			speed = 0.122414;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AsdvPercMtacSnonWrflDfl: AsdvPercMtacSnonWrflDf
 		{
@@ -29801,7 +31645,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			InterpolateTo[] = {"Unconscious", 0.02, "AsdvPercMsprSnonWnonDf", 0.02, "AsdvPercMrunSnonWnonDf", 0.02, "AsdvPercMtacSnonWnonDf", 0.02, "AsdvPercMwlkSnonWnonDfr", 0.02, "AsdvPercMwlkSnonWnonDfl", 0.02, "AsdvPercMwlkSnonWnonDl", 0.02, "AsdvPercMwlkSnonWnonDr", 0.02, "AbdvPercMwlkSnonWnonDf", 0.02, "AdvePercMwlkSnonWnonDf", 0.02, "AsdvPercMstpSnonWnonDnon_relax", 0.1, "AmovPercMstpSnonWnonDnon", 0.03, "AsdvPercMstpSnonWnonDnon", 0.03, "AbdvPercMstpSnonWnonDnon", 0.03, "AdvePercMstpSnonWnonDnon", 0.03};
 			relSpeedMax = 1.5;
 			speed = 0.122414;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AsdvPercMwlkSnonWnonDfl: AsdvPercMwlkSnonWnonDf
 		{
@@ -29865,7 +31709,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitGunMovement = 0;
 			relSpeedMax = 1.5;
 			speed = 0.122414;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AsdvPercMwlkSnonWrflDfl: AsdvPercMwlkSnonWrflDf
 		{
@@ -29996,14 +31840,14 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			duty = 0.1;
 			file = "a3\anims_f\data\anim\sdr\dve\erc\stp\non\non\advepercmstpsnonwnondnon_godown.rtm";
 			InterpolateTo[] = {"AsswPercMstpSnonWnonDnon", 0.2, "AswmPercMstpSnonWnonDnon", 0.2, "AbswPercMstpSnonWnonDnon", 0.2};
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AsswPercMstpSnonWnonDnon_goup: AsswPercMstpSnonWnonDnon
 		{
 			duty = 0.1;
 			file = "a3\anims_f\data\anim\sdr\dve\erc\stp\non\non\advepercmstpsnonwnondnon_goup.rtm";
 			InterpolateTo[] = {"AsswPercMstpSnonWnonDnon", 0.2};
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AsswPercMstpSnonWnonDnon_putDown: AsswPercMstpSnonWnonDnon
 		{
@@ -30066,7 +31910,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			soundEnabled = 1;
 			soundOverride = "swim";
 			speed = 0.238347;
-			stamina = -0.1;
+			stamina = -0.05;
 			static = 1;
 		};
 		class AswmPercMrunSnonWnonDf_AswmPercMstpSnonWnonDnon: AswmPercMrunSnonWnonDf
@@ -30191,7 +32035,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file = "a3\anims_f\data\anim\sdr\dve\erc\stp\non\non\advepercmstpsnonwnondnon_godown.rtm";
 			InterpolateTo[] = {"AswmPercMstpSnonWnonDnon", 0.2, "AbswPercMstpSnonWnonDnon", 0.2};
 			speed = 0.6;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AswmPercMstpSnonWnonDnon_goup: AswmPercMstpSnonWnonDnon
 		{
@@ -30199,7 +32043,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file = "a3\anims_f\data\anim\sdr\dve\erc\stp\non\non\advepercmstpsnonwnondnon_goup.rtm";
 			InterpolateTo[] = {"AswmPercMstpSnonWnonDnon", 0.2, "AsswPercMstpSnonWnonDnon", 0.2};
 			speed = 0.6;
-			stamina = -0.1;
+			stamina = -0.05;
 		};
 		class AswmPercMstpSnonWnonDnon_putDown: AswmPercMstpSnonWnonDnon
 		{
@@ -35803,11 +37647,14 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			actions = "InjuredManDraggedActionsNon";
 			InterpolateTo[] = {"AinjPfalMstpSnonWnonDnon_carried_Up", 0.1};
 		};
-		class HubBriefing_ext: HubTemplate_Briefing
+		class HubBriefing_ext: CutSceneAnimationBaseZoZo
 		{
+			actions = "NoActions";
+			ConnectTo[] = {};
 			file = "a3\anims_f_epa\data\anim\sdr\cts\hubcleaned\briefing\hubbriefing_loop.rtm";
-			InterpolateTo[] = {"HubBriefing_loop", 0.01};
-			speed = 1e+009;
+			InterpolateTo[] = {"Acts_Briefing_Intro2_Major_1", 0.01, "Acts_Briefing_Intro2_Major_2", 0.01, "Acts_Briefing_Intro3_Major_1", 0.1, "Acts_Briefing_Intro3_Major_2", 0.1};
+			looped = 0;
+			speed = 0.0306;
 		};
 		class HubBriefing_lookAround1: HubTemplate_Briefing
 		{
@@ -36192,6 +38039,14 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			showWeaponAim = 0;
 			speed = -45;
 			weaponLowered = 1;
+		};
+		class HubSpectator_stand_Contact: HubSpectator_stand
+		{
+			ConnectTo[] = {"Acts_RifleLowStand_Default", 1e-005};
+			disableWeapons = 1;
+			disableWeaponsLong = 1;
+			InterpolateTo[] = {"Acts_RifleLowStand_Default", 1e-005};
+			looped = 1;
 		};
 		class HubSpectator_standU: HubSpectator_stand
 		{

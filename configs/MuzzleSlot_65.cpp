@@ -9,5 +9,6 @@ class MuzzleSlot_65: MuzzleSlot
 		muzzle_snds_h_khk_F = 1;
 		muzzle_snds_h_snd_F = 1;
 		muzzle_snds_H_SW = 1;
+		muzzle_tma_65 = 1;
 	};
 };

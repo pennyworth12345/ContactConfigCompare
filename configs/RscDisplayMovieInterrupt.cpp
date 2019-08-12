@@ -8,7 +8,7 @@ class RscDisplayMovieInterrupt: RscStandardDisplay
 	scriptPath = "GUI";
 	class controls
 	{
-		class ButtonAudio: RscButtonMenu
+		class ButtonAudio: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 302;
@@ -18,7 +18,7 @@ class RscDisplayMovieInterrupt: RscStandardDisplay
 			x = "2 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "16.4 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class ButtonControls: RscButtonMenu
+		class ButtonControls: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 303;
@@ -28,7 +28,7 @@ class RscDisplayMovieInterrupt: RscStandardDisplay
 			x = "2 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "17.5 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class ButtonGame: RscButtonMenu
+		class ButtonGame: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 307;
@@ -38,7 +38,7 @@ class RscDisplayMovieInterrupt: RscStandardDisplay
 			x = "2 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "18.6 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class ButtonTutorialHints: RscButtonMenu
+		class ButtonTutorialHints: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 122;
@@ -48,7 +48,7 @@ class RscDisplayMovieInterrupt: RscStandardDisplay
 			x = "1 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "19.7 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class ButtonVideo: RscButtonMenu
+		class ButtonVideo: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 301;
@@ -116,7 +116,7 @@ class RscDisplayMovieInterrupt: RscStandardDisplay
 				};
 			};
 		};
-		class MI_Resume: RscButtonMenu
+		class MI_Resume: RscButtonMenuLeft
 		{
 			default = 1;
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
@@ -131,7 +131,7 @@ class RscDisplayMovieInterrupt: RscStandardDisplay
 				left = "14 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
 			};
 		};
-		class MI_Skip: RscButtonMenu
+		class MI_Skip: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 1;

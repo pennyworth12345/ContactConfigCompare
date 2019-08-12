@@ -1,5 +1,9 @@
 class CfgMarkerClasses
 {
+	class Contact
+	{
+		displayName = "Arma 3 Contact";
+	};
 	class Default
 	{
 		displayName = "Default";

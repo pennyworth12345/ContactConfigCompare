@@ -2,6 +2,7 @@ class RscHintGroup: RscControlsGroupNoScrollbars
 {
 	h = "5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 	idc = 12957;
+	onLoad = "		params ['_ctrl'];		ctrlposition _ctrl params ['_ctrlX','','_ctrlW'];		if (_ctrlX == (['IGUI_Grid','Hint'] call BIS_fnc_GUIgrid) # 0) then {			_ctrl ctrlsetpositionX (_ctrlX min (safezoneX + safezoneW - _ctrlW - (ctrlposition (finddisplay 12 displayctrl 2068) # 2) * 1.1));			_ctrl ctrlcommit 0;		};	";
 	w = "(12 * 			(			((safezoneW / safezoneH) min 1.2) / 40))";
 	x = "0 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(profilenamespace getvariable [""IGUI_GRID_HINT_X"",		((safezoneX + safezoneW) - 		(12 * 			(			((safezoneW / safezoneH) min 1.2) / 40)) - 1 * 			(			((safezoneW / safezoneH) min 1.2) / 40))])";
 	y = "0 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(profilenamespace getvariable [""IGUI_GRID_HINT_Y"",		(safezoneY + 6 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";

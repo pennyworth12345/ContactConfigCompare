@@ -16,7 +16,7 @@ class RscDisplayGameOptions
 			x = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
 			y = "23 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 		};
-		class ButtonDifficulty: RscButtonMenu
+		class ButtonDifficulty: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 304;
@@ -25,7 +25,7 @@ class RscDisplayGameOptions
 			x = "9 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
 			y = "2.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 		};
-		class ButtonGeneral: RscButtonMenu
+		class ButtonGeneral: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 2402;
@@ -34,7 +34,7 @@ class RscDisplayGameOptions
 			x = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
 			y = "2.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 		};
-		class ButtonGUI: RscButtonMenu
+		class ButtonGUI: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 2404;
@@ -43,7 +43,7 @@ class RscDisplayGameOptions
 			x = "17 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
 			y = "2.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 		};
-		class ButtonLayout: RscButtonMenu
+		class ButtonLayout: RscButtonMenuLegacy
 		{
 			action = "finddisplay 151 createdisplay 'RscDisplayOptionsLayout'";
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
@@ -907,10 +907,10 @@ class RscDisplayGameOptions
 						{
 							h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 							idc = 1044;
-							optionDescription = "Manages visibility of waypoint markers.";
-							optionPicture = "\A3\Ui_f\data\GUI\Rsc\RscDisplayGameOptions\Diff_Waypoints_co.paa";
+							optionDescription = "";
+							optionPicture = "\a3\UI_F_Contact\Data\Displays\RscDisplayGameOptions\Diff_Waypoints_co.paa";
 							shadow = 0;
-							text = "Waypoints";
+							text = "Compass";
 							w = "11.3 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 							x = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 							y = "(12 * 1.2) * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";

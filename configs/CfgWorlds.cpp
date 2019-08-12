@@ -6879,6 +6879,70 @@ class CfgWorlds
 			focusDistanceWater = 1;
 			focusDistanceWaterGoggles = 4;
 		};
+		class DrawMap
+		{
+			class BlackBottom: BlackLeft
+			{
+				h = 30000;
+				w = "worldsize + 2 * 			30000";
+				y = "-			30000";
+			};
+			class BlackLeft
+			{
+				color[] = {0, 0, 0, 1};
+				h = "worldsize + 2 * 			30000";
+				texture = "#(rgb,1,1,1)color(1,1,1,1)";
+				type = "rectangle";
+				w = 30000;
+				x = "-			30000";
+				y = "-			30000";
+			};
+			class BlackRight: BlackLeft
+			{
+				x = "worldsize";
+			};
+			class BlackTop: BlackLeft
+			{
+				h = 30000;
+				w = "worldsize + 2 * 			30000";
+				y = "worldsize";
+			};
+			class Frame
+			{
+				color[] = {0, 0, 0, 1};
+				h = "worldsize";
+				type = "rectangle";
+				w = "worldsize";
+				x = 0;
+				y = 0;
+			};
+			class PaperBottom: PaperLeft
+			{
+				h = 360;
+				w = "worldsize + 2 * 		360";
+				y = "-		360";
+			};
+			class PaperLeft
+			{
+				color[] = {0.866667, 0.866667, 0.866667, 1};
+				h = "worldsize + 2 * 		360";
+				texture = "#(rgb,1,1,1)color(1,1,1,1)";
+				type = "rectangle";
+				w = 360;
+				x = "-		360";
+				y = "-		360";
+			};
+			class PaperRight: PaperLeft
+			{
+				x = "worldsize";
+			};
+			class PaperTop: PaperLeft
+			{
+				h = 360;
+				w = "worldsize + 		360 + 		360";
+				y = "worldsize";
+			};
+		};
 		class EnvSounds: CfgEnvSounds {};
 		class Grid
 		{
@@ -7384,7 +7448,7 @@ class CfgWorlds
 		ilsTaxiIn[] = {4028.66, 10246.9, 4078.23, 10307.5, 4188.1, 10413.5, 4303.81, 10523.8, 4278.56, 10556.5, 4240.21, 10588.2, 4213.98, 10572.2};
 		ilsTaxiOff[] = {3988.14, 10343.3, 3825.63, 10184.5, 3706.05, 10065.2, 3594.96, 9953.42, 3544.35, 9902.28, 3545.61, 9870.25, 3565.93, 9855.43, 3589.01, 9862.32, 3638.88, 9907.5, 3706.12, 9966.08, 3821, 10065.9, 3945.81, 10175.6, 4028.69, 10246.9};
 		latitude = -54;
-		loadingTexts[] = {"The geographic coordinates of Nadbór are 54°14'58.1""N 22°51'42.6""E.", "The early inhabitants of Livonia spoke a Balto-Slavic language but adopted Polish during the Middle Ages.", "The Nadbór Region became an army training area in the 1990s. Since 2035, it has grown extensively to accommodate biennial military exercises, held between NATO member states.", "The abandoned SIŁA Factory was once renowned for producing one of the world's finest sport and hunting rifles.", "The River Biela is personified as a benevolent spirit in Livonian mythology, often in the form of a white snake.", "The hills to the south of Nadbór appear in folklore as the seat of an ancient and unspeakable evil.", "A popular pub on Dambog Hill was demolished in the 1970s and replaced by a military observation tower.", "Livonia was part of the Soviet Union from 1940. It gained its independence in 1991, during the Singing Revolution.", "Despite being a Polish-speaking, landlocked country, Livonia is generally recognized as a Baltic state on account of its shared history, heritage, and culture.", "Livonia's megalithic sites are rarely considered genuine. All too often, they are dismissed as the work of the country's National Rebirth movement.", "Although the Nadbór Region is thought to have been inhabited since prehistoric times, no serious archaeological research has ever been conducted.", "The Biela River Valley is known locally as the ""Valley of Blossoms"", owing to its rich agricultural production.", "Forest management within the Nadbór training area is overseen by the Military Forests Directorate and enforced by armed Forest Rangers.", "The town of Nadbór is situated inside a much larger military exclusion zone. It is connected to the outside world by a road corridor, leading to nearby Gieraltów.", "Deer are not what they seem...", "Occasionally, urban explorers are caught trespassing at the old Swarog radar station and SIŁA arms factory.", "Nadbór was excluded from the military training area, as it was originally the home for many workers at the SIŁA arms factory.", "The Nadbór Region is rumored to be the birthplace of traditional Livonian ""jarzębnica"" - oatmeal topped with bitter-sour rowanberry jam.", "The Wrzeszcz crossroads are strategically important, yet NATO exercises rarely encompass them.", "The town of Topolin saw fierce fighting between a Soviet penal battalion and retreating Wehrmacht troops on December 31, 1944.", "The last anti-Soviet partisans were allegedly hiding in the hills around Nadbór as late as 1965.", "The biggest deer ever hunted in Livonia was a 32-point stag, shot in the Muratyn forest district in 1864.", "The yellow of Livonia's flag suggests hope for the future and continuity with the past. The white represents peace and justice, while the blue signifies freedom and the distant Baltic Sea.", "The ruins near Bielawa mark the site of Branżów Castle, which opposed the Knights of the Teutonic Order until 1306.", "Jan of Branżów (c. 1213 - 1265) was known as the 'Bloody Baron' after his heroic feats during the Battle of Bajorki.", "Topolin is the district capital of the Upper Biela Valley Region.", "Before the outbreak of WW2, Livonian armed forces followed Poland's military doctrine and built a number of fortified defensive lines.", "The highly militarized Nadbór Region is part of Andrzejów, one of Livonia's three administrative divisions.", "The Livonian Romantic composer, Grzegorz Brzęczyszczykiewicz, wrote the famous ""Livonian Suite"" after visiting Polana in 1842.", "Livonia's emblem is the stag, symbolizing independence, indomitability, and instinctual readiness. The antlers - shed and regrown annually - reflect the nation's post-Soviet restoration and continual rebirth.", "There are 54 bunkers scattered across the Nadbór Region.", "The so-called ""Andrzejów Gap"" is south of Nadbór and runs through the heart of Livonia. It is of great strategic importance, linking NATO Baltic States to the rest of Europe.", "Fireflies or Lightning Bugs can be found all across Livonia. The females are famed for their yellowish-green, bioluminescent glow.", "According to official data, there are around 700 wolves in Livonia.", "Many mushrooms grow in the forests of Livonia. Some are edible, while others, such as the brown-capped Deadly Galerina, are highly poisonous.", "Livonia was founded in 1920 by Zbigniew Sokolski, a Polish mutineer general, sympathetic to refugees fleeing war and political turmoil in the northern Baltic States.", "Livonia borders Lithuania, Belarus, Poland, and the Kaliningrad Region of Russia."};
+		loadingTexts[] = {"The geographic coordinates of Nadbór are 54°14'58.1""N 22°51'42.6""E.", "The early inhabitants of Livonia spoke a Balto-Slavic language but adopted Polish during the Middle Ages.", "The Nadbór Region became an army training area in the 1990s. Since 2035, it has grown extensively to accommodate biennial military exercises, held between NATO member states.", "The abandoned SIŁA Factory was once renowned for producing one of the world's finest sport and hunting rifles.", "The River Biela is personified as a benevolent spirit in Livonian mythology, often in the form of a white snake.", "The hills to the south of Nadbór appear in folklore as the seat of an ancient and unspeakable evil.", "A popular pub on Dambog Hill was demolished in the 1970s and replaced by a military observation tower.", "Livonia was part of the Soviet Union from 1940. It gained its independence in 1991, during the Singing Revolution.", "Despite being a Polish-speaking, landlocked country, Livonia is generally recognized as a Baltic state on account of its shared history, heritage, and culture.", "Livonia's megalithic sites are rarely considered genuine. All too often, they are dismissed as the work of the country's National Rebirth movement.", "Although the Nadbór Region is thought to have been inhabited since prehistoric times, no serious archaeological research has ever been conducted.", "The Biela River Valley is known locally as the ""Valley of Blossoms"", owing to its rich agricultural production.", "Forest management within the Nadbór training area is overseen by the Military Forests Directorate and enforced by armed Forest Rangers.", "The town of Nadbór is situated inside a much larger military exclusion zone. It is connected to the outside world by a road corridor, leading to nearby Gieraltów.", "Deer are not what they seem...", "Occasionally, urban explorers are caught trespassing at the old Swarog radar station and SIŁA arms factory.", "Nadbór was excluded from the military training area, as it was originally the home for many workers at the SIŁA arms factory.", "The Nadbór Region is rumored to be the birthplace of traditional Livonian ""jarzębnica"" - oatmeal topped with bitter-sour rowanberry jam.", "The Wrzeszcz crossroads are strategically important, yet NATO exercises rarely encompass them.", "The town of Topolin saw fierce fighting between a Soviet penal battalion and retreating Wehrmacht troops on December 31, 1944.", "The last anti-Soviet partisans were allegedly hiding in the hills around Nadbór as late as 1965.", "The biggest deer ever hunted in Livonia was a 32-point stag, shot in the Muratyn forest district in 1864.", "The yellow of Livonia's flag suggests hope for the future and continuity with the past. The white represents peace and justice, while the blue signifies freedom and the distant Baltic Sea.", "The ruins near Bielawa mark the site of Branżów Castle, which opposed the Knights of the Teutonic Order until 1306.", "Jan of Branżów (c. 1213 - 1265) was known as the 'Bloody Baron' after his heroic feats during the Battle of Bajorki.", "Topolin is the district capital of the Upper Biela Valley Region.", "Before the outbreak of WW2, Livonian armed forces followed Poland's military doctrine and built a number of fortified defensive lines.", "The highly militarized Nadbór Region is part of Andrzejów, one of Livonia's three administrative divisions.", "The Livonian Romantic composer, Grzegorz Brzęczyszczykiewicz, wrote the famous ""Livonian Suite"" after visiting Polana in 1842.", "Livonia's emblem is the stag, symbolizing independence, indomitability, and instinctual readiness. The antlers - shed and regrown annually - reflect the nation's post-Soviet restoration and continual rebirth.", "There are 54 bunkers scattered across the Nadbór Region.", "The so-called ""Andrzejów Gap"" is south of Nadbór and runs through the heart of Livonia. It is of great strategic importance, linking NATO Baltic States to the rest of Europe.", "Fireflies or Lightning Bugs can be found all across Livonia. The females are famed for their yellowish-green, bioluminescent glow.", "According to official data, there are around 700 wolves in Livonia.", "Many mushrooms grow in the forests of Livonia. Some are edible, while others, such as the brown-capped Deadly Galerina, are highly poisonous.", "Livonia was founded in 1920 by Zbigniew Sokolski, a Polish mutineer general, sympathetic to refugees fleeing war and political turmoil in the northern Baltic States.", "Livonia borders Lithuania, Belarus, Poland, and the Kaliningrad Region of Russia.", "The Siła Factory closed down and relocated in 1995, due to structural instability.", "Livonia's neighbor, Belarus, is in accession talks with CSAT, following the 2035 Moscow Summit.", "On July 15, 2039, Russia will consider an action plan for joining CSAT. Many Livonians fear that membership will end a tenuous balance of world power.", "Due to increasing tensions with Russia, a growing number of Livonians are joining civilian militias.", "In 1982, a group of triangular shaped UFOs were spotted over Livonia's Lukow Airfield.", "Crop circles are a common phenomenon in Livonia.", "The first widely reported UFO sighting in the USA was made by Kenneth Arnold in 1947, also spawning the term ""flying saucer"" in press reporting.", "Many believe an extraterrestrial spacecraft crash-landed near the town of Roswell, USA, in 1947. The government has always denied this.", "Following projects Sign and Grudge, project Blue Book was a US Air Force study into UFOs. It concluded there was no evidence of extraterrestrials and that these sightings were not a threat.", "The Wow! signal was a powerful deep space radio transmission that has never been adequately explained as having a terrestrial or natural source.", "The UK government declassified their Alsworth Report in June 2029, analyzing in great detail the possible implications of the discovery of extraterrestrial life.", "SETI is the search for extraterrestrial intelligence, often focused on potential alien transmissions in the electromagnetic spectrum.", "In 1974, the Arecibo message, containing info about Earth and humanity, was sent into space. Not everybody agrees with making our presence known in this way.", "The scientific study of extraterrestrial life is also referred to as xenology.", "High probability estimates for extraterrestrial life and the lack of evidence of such life are analyzed in the Fermi paradox.", "2026's multiple meteor impacts in Dongting Lake near Changsha, China, triggered worldwide conspiracy theories on extraterrestrial invasions."};
 		longitude = 23;
 		mapArea[] = {};
 		mapSize = 12800;
@@ -7411,7 +7475,7 @@ class CfgWorlds
 		skyTexture = "A3\Map_Enoch\Data\sky_semicloudy_sky.paa";
 		skyTextureR = "A3\Map_Enoch\Data\sky_semicloudy_lco.paa";
 		soundMapSizeCoef = 4;
-		startDate = "24/6/2035";
+		startDate = "6/6/2039";
 		startFog = 0;
 		startFogBase = 250;
 		startFogDecay = 0.018;
@@ -8179,6 +8243,633 @@ class CfgWorlds
 			morning[] = {-15, {0.005, 0.01, 0.01}, {0, 0.002, 0.003}, {0, 0, 0}, {0, 0, 0}, {0, 0.002, 0.003}, {0, 0.002, 0.003}, 0};
 			noon[] = {-15, {0.005, 0.01, 0.01}, {0, 0.002, 0.003}, {0, 0, 0}, {0, 0, 0}, {0, 0.002, 0.003}, {0, 0.002, 0.003}, 0};
 			sunMoon[] = {-15, {0.005, 0.01, 0.01}, {0, 0.002, 0.003}, {0, 0, 0}, {0, 0, 0}, {0, 0.002, 0.003}, {0, 0.002, 0.003}, 0};
+		};
+		class DrawMap: DrawMap
+		{
+			class BlackBottom: BlackBottom {};
+			class BlackLeft: BlackLeft {};
+			class BlackRight: BlackRight {};
+			class BlackTop: BlackTop {};
+			class Compass
+			{
+				color[] = {0, 0, 0, 0.8};
+				texture = "#(rgb,1,1,1)color(1,1,1,1)";
+				type = "triangle";
+				vertices[] = {{"worldsize * 0.755", "worldsize * -0.026", 0}, {"worldsize * 0.75", "worldsize * -0.06", 0}, {"worldsize * 0.76", "worldsize * -0.06", 0}};
+			};
+			class CompassLabel
+			{
+				align = "center";
+				color[] = {0, 0, 0, 0.8};
+				font = "RobotoCondensedBold";
+				text = "N";
+				textSize = 0.2;
+				type = "iconFixed";
+				x = "worldsize * 0.755";
+				y = "worldsize * -0.019";
+			};
+			class Frame: Frame {};
+			class GridBottom_01: GridTop_01
+			{
+				y = "-worldsize * 0.007";
+			};
+			class GridBottom_02: GridBottom_01
+			{
+				text = "02";
+				x = 2000;
+			};
+			class GridBottom_03: GridBottom_01
+			{
+				text = "03";
+				x = 3000;
+			};
+			class GridBottom_04: GridBottom_01
+			{
+				text = "04";
+				x = 4000;
+			};
+			class GridBottom_05: GridBottom_01
+			{
+				text = "05";
+				x = 5000;
+			};
+			class GridBottom_06: GridBottom_01
+			{
+				text = "06";
+				x = 6000;
+			};
+			class GridBottom_07: GridBottom_01
+			{
+				text = "07";
+				x = 7000;
+			};
+			class GridBottom_08: GridBottom_01
+			{
+				text = "08";
+				x = 8000;
+			};
+			class GridBottom_09: GridBottom_01
+			{
+				text = "09";
+				x = 9000;
+			};
+			class GridBottom_10: GridBottom_01
+			{
+				text = "10";
+				x = 10000;
+			};
+			class GridBottom_11: GridBottom_01
+			{
+				text = "11";
+				x = 11000;
+			};
+			class GridBottom_12: GridBottom_01
+			{
+				text = "12";
+				x = 12000;
+			};
+			class GridLeft_01: GridTop_01
+			{
+				align = "left";
+				text = "01";
+				x = "-worldsize * 0.007";
+				y = 1000;
+			};
+			class GridLeft_02: GridLeft_01
+			{
+				text = "02";
+				y = 2000;
+			};
+			class GridLeft_03: GridLeft_01
+			{
+				text = "03";
+				y = 3000;
+			};
+			class GridLeft_04: GridLeft_01
+			{
+				text = "04";
+				y = 4000;
+			};
+			class GridLeft_05: GridLeft_01
+			{
+				text = "05";
+				y = 5000;
+			};
+			class GridLeft_06: GridLeft_01
+			{
+				text = "06";
+				y = 6000;
+			};
+			class GridLeft_07: GridLeft_01
+			{
+				text = "07";
+				y = 7000;
+			};
+			class GridLeft_08: GridLeft_01
+			{
+				text = "08";
+				y = 8000;
+			};
+			class GridLeft_09: GridLeft_01
+			{
+				text = "09";
+				y = 9000;
+			};
+			class GridLeft_10: GridLeft_01
+			{
+				text = "10";
+				y = 10000;
+			};
+			class GridLeft_11: GridLeft_01
+			{
+				text = "11";
+				y = 11000;
+			};
+			class GridLeft_12: GridLeft_01
+			{
+				text = "12";
+				y = 12000;
+			};
+			class GridRight_01: GridLeft_01
+			{
+				align = "right";
+				x = "worldsize * 1.007";
+			};
+			class GridRight_02: GridRight_01
+			{
+				text = "02";
+				y = 2000;
+			};
+			class GridRight_03: GridRight_01
+			{
+				text = "03";
+				y = 3000;
+			};
+			class GridRight_04: GridRight_01
+			{
+				text = "04";
+				y = 4000;
+			};
+			class GridRight_05: GridRight_01
+			{
+				text = "05";
+				y = 5000;
+			};
+			class GridRight_06: GridRight_01
+			{
+				text = "06";
+				y = 6000;
+			};
+			class GridRight_07: GridRight_01
+			{
+				text = "07";
+				y = 7000;
+			};
+			class GridRight_08: GridRight_01
+			{
+				text = "08";
+				y = 8000;
+			};
+			class GridRight_09: GridRight_01
+			{
+				text = "09";
+				y = 9000;
+			};
+			class GridRight_10: GridRight_01
+			{
+				text = "10";
+				y = 10000;
+			};
+			class GridRight_11: GridRight_01
+			{
+				text = "11";
+				y = 11000;
+			};
+			class GridRight_12: GridRight_01
+			{
+				text = "12";
+				y = 12000;
+			};
+			class GridTop_01
+			{
+				align = "center";
+				color[] = {0, 0, 0, 0.7};
+				font = "RobotoCondensedBold";
+				text = "01";
+				textSize = 0.04;
+				type = "icon";
+				x = 1000;
+				y = "worldsize * 1.007";
+			};
+			class GridTop_02: GridTop_01
+			{
+				text = "02";
+				x = 2000;
+			};
+			class GridTop_03: GridTop_01
+			{
+				text = "03";
+				x = 3000;
+			};
+			class GridTop_04: GridTop_01
+			{
+				text = "04";
+				x = 4000;
+			};
+			class GridTop_05: GridTop_01
+			{
+				text = "05";
+				x = 5000;
+			};
+			class GridTop_06: GridTop_01
+			{
+				text = "06";
+				x = 6000;
+			};
+			class GridTop_07: GridTop_01
+			{
+				text = "07";
+				x = 7000;
+			};
+			class GridTop_08: GridTop_01
+			{
+				text = "08";
+				x = 8000;
+			};
+			class GridTop_09: GridTop_01
+			{
+				text = "09";
+				x = 9000;
+			};
+			class GridTop_10: GridTop_01
+			{
+				text = "10";
+				x = 10000;
+			};
+			class GridTop_11: GridTop_01
+			{
+				text = "11";
+				x = 11000;
+			};
+			class GridTop_12: GridTop_01
+			{
+				text = "12";
+				x = 12000;
+			};
+			class InfoEllipsoidLeft
+			{
+				align = "right";
+				color[] = {0, 0, 0, 0.8};
+				font = "RobotoCondensed";
+				text = "ELLIPSOID . . . . . . . . . . . . . . . . . .";
+				textSize = 0.15;
+				type = "iconFixed";
+				x = "worldsize * 0.8015";
+				y = "-	1000 * 0.229";
+			};
+			class InfoEllipsoidRight: InfoEllipsoidLeft
+			{
+				align = "left";
+				text = "LIVONIAN NAT. MAPS 2019";
+				x = "worldsize";
+			};
+			class InfoGridLeft: InfoEllipsoidLeft
+			{
+				text = "GRID . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+				y = "-	1000 * 0.359";
+			};
+			class InfoGridRight: InfoGridLeft
+			{
+				align = "left";
+				text = "1,000 METER LWIG";
+				x = "worldsize";
+			};
+			class InfoHorizontalDatumLeft: InfoEllipsoidLeft
+			{
+				text = "HORIZONTAL DATUM . . . . . . . . .";
+				y = "-	1000 * 0.749";
+			};
+			class InfoHorizontalDatumRight: InfoHorizontalDatumLeft
+			{
+				align = "left";
+				text = "LIVONIAN NAT. MAPS 2019";
+				x = "worldsize";
+			};
+			class InfoProjectionLeft: InfoEllipsoidLeft
+			{
+				text = "PROJECTION . . . . . . . . . . . . . . . . . . . . . . . . . .";
+				y = "-	1000 * 0.489";
+			};
+			class InfoProjectionRight: InfoProjectionLeft
+			{
+				align = "left";
+				text = "HORVATH 1989";
+				x = "worldsize";
+			};
+			class InfoVerticalDatumLeft: InfoEllipsoidLeft
+			{
+				text = "VERTICAL DATUM . . . . . . . . . . . . . . . . . . . .";
+				y = "-	1000 * 0.619";
+			};
+			class InfoVerticalDatumRight: InfoVerticalDatumLeft
+			{
+				align = "left";
+				text = "MEAN SEA LEVEL";
+				x = "worldsize";
+			};
+			class LogoElectron
+			{
+				color[] = {1, 1, 1, 1};
+				h = "worldsize * 0.031";
+				texture = "\a3\UI_F_Contact\Data\RscMapControl\Draw\logo_electron_ca.paa";
+				type = "iconFixed";
+				w = "worldsize * 0.031";
+				x = "worldsize * 0.9715";
+				y = "worldsize + 	1200 * 0.59";
+			};
+			class LogoInstytut
+			{
+				color[] = {1, 1, 1, 0.8};
+				h = "worldsize * 0.0219";
+				texture = "\a3\UI_F_Contact\Data\RscMapControl\Draw\logo_instytut_co.paa";
+				type = "iconFixed";
+				w = "worldsize * 0.0219";
+				x = "worldsize * 0.0215";
+				y = "-	1000 * 0.5";
+			};
+			class MeasureKM
+			{
+				color[] = {0, 0, 0, 0.8};
+				h = 80;
+				type = "rectangle";
+				w = "1000 * 5";
+				x = 4000;
+				y = -350;
+			};
+			class MeasureKM_100m: MeasureKM
+			{
+				h = "80 * 0.5";
+				texture = "#(rgb,1,1,1)color(1,1,1,1)";
+				w = "1000 * 0.1";
+				x = 4000;
+				y = -350;
+			};
+			class MeasureKM_1km: MeasureKM
+			{
+				texture = "#(rgb,1,1,1)color(1,1,1,1)";
+				w = "1000 * 0.5";
+				x = "4000 + 		1000 * 0.5";
+			};
+			class MeasureKM_200m: MeasureKM_100m
+			{
+				x = "4000 + 		1000 * 0.1";
+				y = "-350 + 		80 * 0.5";
+			};
+			class MeasureKM_300m: MeasureKM_100m
+			{
+				x = "4000 + 		1000 * 0.2";
+			};
+			class MeasureKM_3km: MeasureKM_1km
+			{
+				w = 1000;
+				x = "4000 + 		1000 * 2";
+			};
+			class MeasureKM_400m: MeasureKM_200m
+			{
+				x = "4000 + 		1000 * 0.3";
+			};
+			class MeasureKM_500m: MeasureKM_100m
+			{
+				x = "4000 + 		1000 * 0.4";
+			};
+			class MeasureKM_5km: MeasureKM_3km
+			{
+				x = "4000 + 		1000 * 4";
+			};
+			class MeasureMI
+			{
+				color[] = {0, 0, 0, 0.8};
+				h = 80;
+				type = "rectangle";
+				w = "1609.344 * 3";
+				x = 4000;
+				y = -640;
+			};
+			class MeasureMI_176y: MeasureMI
+			{
+				h = "80 * 0.5";
+				texture = "#(rgb,1,1,1)color(1,1,1,1)";
+				w = "1609.344 * 0.1";
+				x = 4000;
+				y = -640;
+			};
+			class MeasureMI_1MI: MeasureMI
+			{
+				texture = "#(rgb,1,1,1)color(1,1,1,1)";
+				w = "1609.344 * 0.5";
+				x = "4000 + 		1609.344 * 0.5";
+			};
+			class MeasureMI_352y: MeasureMI_176y
+			{
+				x = "4000 + 		1609.344 * 0.1";
+				y = "-640 + 				80 * 0.5";
+			};
+			class MeasureMI_3MI: MeasureMI_1MI
+			{
+				w = 1609.34;
+				x = "4000 + 		1609.344 * 2";
+			};
+			class MeasureMI_528y: MeasureMI_176y
+			{
+				x = "4000 + 		1609.344 * 0.2";
+			};
+			class MeasureMI_704y: MeasureMI_352y
+			{
+				x = "4000 + 		1609.344 * 0.3";
+			};
+			class MeasureMI_880y: MeasureMI_176y
+			{
+				x = "4000 + 		1609.344 * 0.4";
+			};
+			class PaperBottom: PaperBottom
+			{
+				h = 1000;
+				w = "worldsize + 	360 + 	360";
+				y = "-	1000";
+			};
+			class PaperLeft: PaperLeft
+			{
+				h = "worldsize + 	1000 + 	1200";
+				type = "rectangle";
+				w = 360;
+				x = "-	360";
+				y = "-	1000";
+			};
+			class PaperRight: PaperRight {};
+			class PaperTop: PaperTop
+			{
+				h = 1200;
+				w = "worldsize + 	360 + 	360";
+				y = "worldsize";
+			};
+			class StripeBlue
+			{
+				color[] = {0.192157, 0.407843, 0.678431, 0.8};
+				texture = "#(rgb,1,1,1)color(1,1,1,1)";
+				type = "triangle";
+				vertices[] = {{"worldsize * 0.865", "worldsize + 	1200", 0}, {"worldsize * 0.815", "worldsize + 	200", 0}, {"worldsize + 	360", "worldsize + 	200", 0}, {"worldsize * 0.865", "worldsize + 	1200", 0}, {"worldsize + 	360", "worldsize + 	200", 0}, {"worldsize + 	360", "worldsize + 	1200", 0}};
+			};
+			class StripeYellow
+			{
+				color[] = {0.94902, 0.733333, 0.156863, 0.8};
+				texture = "#(rgb,1,1,1)color(1,1,1,1)";
+				type = "triangle";
+				vertices[] = {{"worldsize * 0.675", "worldsize + 	200", 0}, {"worldsize * 0.725", "worldsize + 	1200", 0}, {"worldsize * 0.815", "worldsize + 	200", 0}, {"worldsize * 0.725", "worldsize + 	1200", 0}, {"worldsize * 0.865", "worldsize + 	1200", 0}, {"worldsize * 0.815", "worldsize + 	200", 0}};
+			};
+			class SurveyEnglish
+			{
+				align = "right";
+				color[] = {0, 0, 0, 0.8};
+				font = "RobotoCondensed";
+				text = "Livonia Military Survey";
+				textSize = 0.25;
+				type = "iconFixed";
+				x = "worldsize * 0.048";
+				y = "-	1000 * 0.393";
+			};
+			class SurveyPolish: SurveyEnglish
+			{
+				text = "Liwoński Wojskowy Instytut Geograficzny";
+				y = "-	1000 * 0.6";
+			};
+			class TitleCountry
+			{
+				align = "right";
+				color[] = {0, 0, 0, 0.8};
+				font = "RobotoCondensed";
+				text = "LIVONIA 11-38A";
+				textSize = 0.4;
+				type = "iconFixed";
+				x = 0;
+				y = "worldsize + 	1200 * 0.665";
+			};
+			class TitleDate: TitleExercise
+			{
+				text = "15.6-10.7.2039";
+				textSize = 0.21;
+				x = "worldsize * 0.938";
+				y = "worldsize + 	1200 * 0.41";
+			};
+			class TitleElectron: TitleExercise
+			{
+				text = "ELECTRON-39";
+				textSize = 0.29;
+				x = "worldsize * 0.938";
+				y = "worldsize + 	1200 * 0.59";
+			};
+			class TitleExercise
+			{
+				align = "left";
+				color[] = {1, 1, 1, 1};
+				font = "RobotoCondensed";
+				text = "JTF EXERCISE";
+				textSize = 0.25;
+				type = "iconFixed";
+				x = "worldsize * 0.937";
+				y = "worldsize + 	1200 * 0.75";
+			};
+			class TitleRegion: TitleCountry
+			{
+				text = "TOPOLIN-NADBÓR";
+				textSize = 0.77;
+				y = "worldsize + 	1200 * 0.345";
+			};
+			class TitleUnclassified
+			{
+				align = "left";
+				color[] = {0.929412, 0.109804, 0.141176, 0.8};
+				font = "RobotoCondensed";
+				text = "UNCLASSIFIED";
+				textSize = 0.38;
+				type = "iconFixed";
+				x = "worldsize * 0.665";
+				y = "worldsize + 	1200 * 0.255";
+			};
+			class ValueKM
+			{
+				align = "center";
+				color[] = {0, 0, 0, 0.8};
+				h = 80;
+				text = "0";
+				textSize = 0.16;
+				type = "iconFixed";
+				w = "1000 * 5";
+				x = 4000;
+				y = "-350 - 		80 * 1.15";
+			};
+			class ValueKM_1km: ValueKM
+			{
+				text = "1";
+				x = "4000 + 		1000 * 1";
+			};
+			class ValueKM_2km: ValueKM
+			{
+				text = "2";
+				x = "4000 + 		1000 * 2";
+			};
+			class ValueKM_3km: ValueKM
+			{
+				text = "3";
+				x = "4000 + 		1000 * 3";
+			};
+			class ValueKM_4km: ValueKM
+			{
+				text = "4";
+				x = "4000 + 		1000 * 4";
+			};
+			class ValueKM_500m: ValueKM
+			{
+				text = "0.5";
+				x = "4000 + 		1000 * 0.5";
+			};
+			class ValueKM_5km: ValueKM
+			{
+				align = "center";
+				text = "5 km";
+				x = "4000 + 		1000 * 5";
+			};
+			class ValueMI
+			{
+				align = "center";
+				color[] = {0, 0, 0, 0.8};
+				h = 80;
+				text = "0";
+				textSize = 0.16;
+				type = "iconFixed";
+				w = "1609.344 * 5";
+				x = 4000;
+				y = "-640 - 				80 * 1.15";
+			};
+			class ValueMI_1MI: ValueMI
+			{
+				text = "1";
+				x = "4000 + 		1609.344 * 1";
+			};
+			class ValueMI_2MI: ValueMI
+			{
+				text = "2";
+				x = "4000 + 		1609.344 * 2";
+			};
+			class ValueMI_3MI: ValueMI
+			{
+				text = "3 mi";
+				x = "4000 + 		1609.344 * 3";
+			};
+			class ValueMI_880y: ValueMI
+			{
+				text = "0.5";
+				x = "4000 + 		1609.344 * 0.5";
+			};
 		};
 		class EnvMaps
 		{
@@ -9766,7 +10457,7 @@ class CfgWorlds
 				formatY = "000";
 				stepX = 100;
 				stepY = -100;
-				zoomMax = 0.05;
+				zoomMax = 0.04;
 			};
 			class Zoom2
 			{
@@ -9775,7 +10466,7 @@ class CfgWorlds
 				formatY = "00";
 				stepX = 1000;
 				stepY = -1000;
-				zoomMax = 0.5;
+				zoomMax = 1;
 			};
 			class Zoom3
 			{
@@ -9846,6 +10537,12 @@ class CfgWorlds
 				};
 			};
 		};
+		class MilitaryAreas
+		{
+			Main[] = {{498.73, 4009.74, 0}, {863.509, 4058.9, 0}, {886.474, 4000.28, 0}, {888.188, 3871.92, 0}, {1090.04, 3918.45, 0}, {1102.46, 3975.97, 0}, {1127.31, 4002.15, 0}, {1115.27, 4096.71, 0}, {1158.76, 4150.04, 0}, {1157.54, 4199.79, 0}, {1128.78, 4247.05, 0}, {1145.98, 4353.41, 0}, {1150.15, 4511.61, 0}, {1183.32, 4571.83, 0}, {1214.79, 4836.19, 0}, {1295.94, 4858.9, 0}, {1420.02, 4768.89, 0}, {1438.21, 4796.09, 0}, {1396.85, 4825.85, 0}, {1449.8, 4874.35, 0}, {1538.58, 4831, 0}, {1617.92, 4863.42, 0}, {1716.92, 5000.49, 0}, {1902.38, 4978.14, 0}, {2046.81, 4983.54, 0}, {2129.35, 4871.53, 0}, {2177.5, 4865.14, 0}, {2238.91, 4833.46, 0}, {2304.74, 4867.6, 0}, {2435.67, 4776.71, 0}, {2539.57, 4851.39, 0}, {2559.47, 4895.6, 0}, {2613.51, 4921.39, 0}, {2776.86, 5052.08, 0}, {2710.78, 5104.4, 0}, {2835.27, 5281.5, 0}, {2862.26, 5253.08, 0}, {2918.26, 5310.79, 0}, {2860.81, 5363.01, 0}, {2934.15, 5461.42, 0}, {2937.58, 5536.61, 0}, {2915.55, 5615.64, 0}, {2925.55, 5675.3, 0}, {3041.04, 5853.11, 0}, {3172.6, 5989.37, 0}, {3348.19, 6096.56, 0}, {3280.79, 6183.62, 0}, {3239.66, 6184.31, 0}, {3178.77, 6258.01, 0}, {3178.03, 6299.03, 0}, {3288.57, 6388.94, 0}, {3299.38, 6432.66, 0}, {3399.85, 6505.62, 0}, {3349.98, 6555.73, 0}, {3445.54, 6627.21, 0}, {3528.81, 6666.52, 0}, {3511.37, 6749.79, 0}, {3512.1, 6848.78, 0}, {3604.71, 6848.78, 0}, {3616.26, 6973.32, 0}, {3704.2, 7128.57, 0}, {3830.21, 7270.79, 0}, {3859.47, 7340.22, 0}, {3990.22, 7258.19, 0}, {4011.25, 7139.42, 0}, {4008.23, 7070.16, 0}, {4035.38, 7011.42, 0}, {4156.72, 6887.34, 0}, {4243.95, 6827.36, 0}, {4355.17, 6784.99, 0}, {4424.58, 6749.23, 0}, {4525.77, 6630.48, 0}, {4560.14, 6638.71, 0}, {4572.82, 6685.48, 0}, {4604.36, 6712.18, 0}, {4701.96, 6757.11, 0}, {4823.59, 6887.68, 0}, {4908.22, 6996.11, 0}, {4974.91, 7118.83, 0}, {5056.95, 7109.5, 0}, {5194.35, 7106.26, 0}, {5217.85, 7121.04, 0}, {5262.8, 7112.69, 0}, {5290.31, 7159.12, 0}, {5408.22, 7109.74, 0}, {5450.89, 7198.75, 0}, {5492.4, 7222.89, 0}, {5549.24, 7311.26, 0}, {5582.17, 7425.88, 0}, {5628.27, 7494.21, 0}, {5647.71, 7487.72, 0}, {5678.67, 7526.94, 0}, {5340.14, 7693.38, 0}, {5347.95, 7764.89, 0}, {5379.18, 7870.44, 0}, {5373.24, 8153.05, 0}, {5422.9, 8262.03, 0}, {5215.78, 8467.49, 0}, {5624.2, 8866.65, 0}, {5753.26, 8923.98, 0}, {5823.05, 8903.76, 0}, {5932.18, 8969.96, 0}, {5918.05, 8986.85, 0}, {5999.75, 9037.53, 0}, {6253.38, 9338.09, 0}, {6285.61, 9318.79, 0}, {6306.89, 9274.71, 0}, {6456.29, 9181.57, 0}, {6502.08, 9179.02, 0}, {6537.92, 9094.59, 0}, {6626.84, 9060.54, 0}, {6668.16, 8804.58, 0}, {6902.78, 8836.13, 0}, {7108.01, 8902.05, 0}, {7114.1, 9004.52, 0}, {7173.1, 9195.63, 0}, {7159.25, 9332.72, 0}, {7248.43, 9549.58, 0}, {7256.74, 9627.96, 0}, {7245.11, 9677.54, 0}, {7299.67, 9791.92, 0}, {7356.44, 9844.27, 0}, {7358.66, 9952.28, 0}, {7399.77, 10068.6, 0}, {7332.68, 10082.3, 0}, {7088.31, 10078, 0}, {7060.45, 10362.9, 0}, {7225.28, 10667, 0}, {7270.87, 10843.4, 0}, {7276.18, 10910.6, 0}, {7330.51, 11019.9, 0}, {7330.2, 11127.3, 0}, {7425.45, 11180.1, 0}, {7546.61, 11211.9, 0}, {7632.17, 11246.6, 0}, {7850.14, 11297.8, 0}, {7995.65, 11303.4, 0}, {8028.53, 11181.3, 0}, {8150.85, 11201.9, 0}, {8212.68, 11262.8, 0}, {8308.55, 11281.5, 0}, {8388.8, 11368.4, 0}, {8758.58, 11260.2, 0}, {8741.59, 11134.9, 0}, {8810.09, 11109.7, 0}, {8926.1, 11100.1, 0}, {9078.4, 10968.9, 0}, {8964.18, 10819.8, 0}, {8896.14, 10790.6, 0}, {8796.16, 10572.2, 0}, {8793.89, 10186.1, 0}, {8630.54, 9996.11, 0}, {8526.88, 9943.79, 0}, {8548.25, 9831.28, 0}, {8523.68, 9792.22, 0}, {8550.7, 9629.88, 0}, {8636.19, 9568.2, 0}, {8634.47, 9507.03, 0}, {8801.75, 9449.31, 0}, {8849.86, 9598.71, 0}, {9036.05, 9437.32, 0}, {9235.76, 9416.69, 0}, {9405.25, 9364.62, 0}, {9583.1, 9272.75, 0}, {9747.72, 9078.65, 0}, {9735.11, 9013.64, 0}, {9677.78, 8897.04, 0}, {10144.7, 8770.74, 0}, {10210.1, 8733.91, 0}, {10227.3, 8701.01, 0}, {10159.2, 8656.57, 0}, {10361.3, 8377.04, 0}, {10417.3, 8242.84, 0}, {10483.9, 8251.99, 0}, {10600.9, 8240.22, 0}, {10687.6, 8178.79, 0}, {10809.2, 8045.02, 0}, {10802.9, 7996.21, 0}, {10876.1, 7949.37, 0}, {10973, 7845.67, 0}, {11058.3, 7785.11, 0}, {10957.3, 7605.37, 0}, {10751.3, 7193.09, 0}, {10680, 7092.13, 0}, {10641.5, 7090.74, 0}, {10475.8, 6866.95, 0}, {10503.4, 6851.45, 0}, {10467.5, 6800.7, 0}, {10497.1, 6771.47, 0}, {10435.7, 6535.53, 0}, {10409.7, 6400.92, 0}, {10401.1, 6339.99, 0}, {10321.6, 6211.19, 0}, {10296.3, 6146.05, 0}, {10262.3, 6094.85, 0}, {10245.1, 6019.9, 0}, {10196.8, 5960.64, 0}, {9938.15, 5764.78, 0}, {9917.67, 5637.98, 0}, {9918.98, 5585.48, 0}, {9950.35, 5524.04, 0}, {9956.01, 5471.1, 0}, {9997.41, 5463.69, 0}, {10107.2, 5514.46, 0}, {10334.7, 4200.51, 0}, {10905.1, 4114.84, 0}, {10909.3, 4080.69, 0}, {10855.6, 3687.37, 0}, {10866.7, 3619.62, 0}, {10910.9, 3554.47, 0}, {10980.2, 3493.69, 0}, {11235.7, 3304.8, 0}, {11364.7, 3124.19, 0}, {11434.6, 3037.92, 0}, {11981.5, 2660.58, 0}, {12214.4, 2564.93, 0}, {12327.9, 2532.04, 0}, {12353.4, 2510.47, 0}, {12393.5, 2412.87, 0}, {12461.2, 2157.91, 0}, {12444, 2096.91, 0}, {12459.3, 1887.98, 0}, {12403.9, 1715.86, 0}, {12436.6, 1421.75, 0}, {12346.7, 1262.95, 0}, {12269.4, 1300.78, 0}, {12185.3, 1279.16, 0}, {12027.4, 1168.38, 0}, {12071.4, 1097.88, 0}, {12009.2, 1050.72, 0}, {11860.4, 1126.62, 0}, {11828.2, 1091.98, 0}, {11768.2, 1078.72, 0}, {11679.7, 1115.37, 0}, {11431.2, 1136.69, 0}, {11463.2, 1248.12, 0}, {11278.7, 1249.52, 0}, {11059.8, 1232.49, 0}, {10975.7, 1189.57, 0}, {10915, 1198.41, 0}, {10905, 1288.07, 0}, {10779.7, 1273.09, 0}, {10786, 1121.08, 0}, {10679.3, 1096.47, 0}, {10720.5, 968.24, 0}, {10720.3, 906.61, 0}, {10749.8, 867.439, 0}, {10862.1, 836.563, 0}, {10881.2, 789.877, 0}, {10811.6, 737.808, 0}, {10826.2, 693.701, 0}, {10935.4, 666.512, 0}, {11090.6, 674.807, 0}, {11114.4, 692.941, 0}, {11181.3, 638.86, 0}, {11212.2, 584.021, 0}, {11347.6, 500.148, 0}, {11378, 434.709, 0}, {11576.9, 282.483, 0}, {11634.8, 215.182, 0}, {11639.6, 180.328, 0}, {11663.3, 130.154, 0}, {11705.4, 95.2576, 0}, {11743.9, 114.922, 0}, {11843.1, -61.4822, 0}, {-58.5629, -60.0616, 0}, {-38.5478, 3805.74, 0}};
+			Nadbor[] = {{4610.49, 3057.21, 0}, {4732.83, 3025.34, 0}, {4746.48, 3047.6, 0}, {4820.8, 2980.07, 0}, {4868.2, 3076.99, 0}, {5033.46, 3055.85, 0}, {5157.75, 3066.66, 0}, {5160.7, 3036.2, 0}, {5352.14, 3046.42, 0}, {5477.74, 3039.07, 0}, {5606.81, 3103.42, 0}, {5627.49, 3088.07, 0}, {5709.77, 3128.46, 0}, {5808.36, 3112.2, 0}, {5988.62, 3118.06, 0}, {6095.92, 3083.82, 0}, {6452.05, 3068.03, 0}, {6572.36, 3123.05, 0}, {6615.2, 3178.57, 0}, {6697.98, 3212.16, 0}, {6836.11, 3232.56, 0}, {6900.72, 3197.25, 0}, {6938.59, 3214.05, 0}, {6985.04, 3168.29, 0}, {7117.34, 3112.42, 0}, {7181.78, 3072.15, 0}, {7201.83, 3109.34, 0}, {7199.43, 3155.44, 0}, {7145.1, 3210.45, 0}, {7143.9, 3244.73, 0}, {7203.88, 3445.92, 0}, {7259.88, 3742.8, 0}, {7336.01, 3925.98, 0}, {7405.96, 3880.77, 0}, {7399.78, 4119.6, 0}, {7416.2, 4281.72, 0}, {7400.16, 4399.2, 0}, {7344.32, 4603.44, 0}, {7202.49, 4802.08, 0}, {7160.17, 4788.17, 0}, {7112.06, 4892.71, 0}, {7177.37, 4931.35, 0}, {7331.18, 5000.14, 0}, {7353.59, 5026.61, 0}, {7413.5, 5063.33, 0}, {7455.81, 5139.07, 0}, {7503.54, 5192.4, 0}, {7462.77, 5228.54, 0}, {7418.13, 5202.45, 0}, {7309.54, 5262.74, 0}, {7255.24, 5264.67, 0}, {7179.69, 5249.79, 0}, {7146.84, 5256.94, 0}, {7149.54, 5285.93, 0}, {7116.31, 5345.83, 0}, {6907.43, 5345.83, 0}, {6773.52, 5316.85, 0}, {6668.79, 5314.14, 0}, {6598.46, 5420.03, 0}, {6567.34, 5508.92, 0}, {6537.2, 5675.87, 0}, {6512.27, 5706.01, 0}, {6570.05, 5708.13, 0}, {6660.09, 5739.82, 0}, {6724.82, 5813.06, 0}, {6700.28, 5848.03, 0}, {6654.68, 5827.55, 0}, {6623.77, 5860.01, 0}, {6409.86, 5850.74, 0}, {6339.14, 5862.52, 0}, {6227.26, 5812.09, 0}, {6061.08, 5651.9, 0}, {5961.38, 5579.83, 0}, {5919.25, 5472.2, 0}, {5813.94, 5499.44, 0}, {5761, 5529.2, 0}, {5660.52, 5512.97, 0}, {5641.78, 5525.14, 0}, {5539.36, 5512.39, 0}, {5547.29, 5281.68, 0}, {5572.21, 5208.25, 0}, {5504, 5138.88, 0}, {5567.57, 5068.74, 0}, {5386.71, 4929.81, 0}, {5608.92, 4722.47, 0}, {5582.65, 4690.4, 0}, {5588.06, 4669.14, 0}, {5561.97, 4578.71, 0}, {5662.06, 4547.79, 0}, {5674.81, 4528.28, 0}, {5661.87, 4421.04, 0}, {5724.86, 4247.52, 0}, {5418.21, 4307.42, 0}, {5273.86, 4299.88, 0}, {5035.42, 4325.77, 0}, {4887.79, 4320.36, 0}, {4809.73, 4304.52, 0}, {4763.16, 4271.67, 0}, {4685.48, 4223.75, 0}, {4732.44, 4092.35, 0}, {4793.11, 3850.24, 0}, {4761.23, 3825.89, 0}, {4746.15, 3800, 0}, {4745.19, 3756.91, 0}, {4848.56, 3650.25, 0}, {4858.81, 3627.45, 0}, {4843.54, 3617.21, 0}, {4730.89, 3602.33, 0}, {4922.57, 3246.21, 0}, {4846.05, 3195.97, 0}, {4753.11, 3150.75, 0}, {4658.23, 3147.27, 0}};
+			North[] = {{2011.43, 11345.7, 0}, {2045.71, 11355.9, 0}, {2162.5, 11367.3, 0}, {2204.46, 11351.7, 0}, {2256.78, 11077.8, 0}, {2300.4, 10903.6, 0}, {2279.29, 10725, 0}, {2256.19, 10683, 0}, {2212.73, 10674.6, 0}, {2165.1, 10701.2, 0}, {2092.94, 10814.5, 0}, {2011.02, 11089.9, 0}, {1933.26, 11300.9, 0}};
+		};
 		class Names
 		{
 			class Adamow
@@ -9891,7 +10588,7 @@ class CfgWorlds
 				position[] = {9807.49, 8495.07};
 				radiusA = 750;
 				radiusB = 750;
-				type = "NameVillage";
+				type = "NameVillageFormer";
 			};
 			class Branzow_castle
 			{
@@ -10026,7 +10723,7 @@ class CfgWorlds
 				position[] = {5141.47, 5472.78};
 				radiusA = 750;
 				radiusB = 750;
-				type = "NameVillage";
+				type = "NameVillageFormer";
 			};
 			class ind1
 			{
@@ -10089,7 +10786,7 @@ class CfgWorlds
 				position[] = {10072.7, 6956.96};
 				radiusA = 750;
 				radiusB = 750;
-				type = "NameVillage";
+				type = "NameVillageFormer";
 			};
 			class Kolembrody
 			{
@@ -10143,7 +10840,7 @@ class CfgWorlds
 				position[] = {5941.87, 6820.01};
 				radiusA = 750;
 				radiusB = 750;
-				type = "NameVillage";
+				type = "NameVillageFormer";
 			};
 			class Lukow
 			{
@@ -10188,7 +10885,7 @@ class CfgWorlds
 				position[] = {4567.5, 6384.4};
 				radiusA = 750;
 				radiusB = 750;
-				type = "NameVillage";
+				type = "NameVillageFormer";
 			};
 			class Nadbor
 			{
@@ -10206,7 +10903,7 @@ class CfgWorlds
 				position[] = {6128.89, 8013.34};
 				radiusA = 750;
 				radiusB = 750;
-				type = "NameVillage";
+				type = "NameVillageFormer";
 			};
 			class Olszanka
 			{
@@ -10269,7 +10966,7 @@ class CfgWorlds
 				position[] = {7298.38, 6491.9};
 				radiusA = 1000;
 				radiusB = 1000;
-				type = "NameCity";
+				type = "NameCityFormer";
 			};
 			class Rodzanica
 			{
@@ -10287,7 +10984,7 @@ class CfgWorlds
 				position[] = {7695.28, 5317.47};
 				radiusA = 500;
 				radiusB = 500;
-				type = "NameVillage";
+				type = "NameVillageFormer";
 			};
 			class sawmill
 			{
@@ -10397,6 +11094,15 @@ class CfgWorlds
 				radiusB = 600;
 				type = "NameMarine";
 			};
+			class WorldSize
+			{
+				angle = 0;
+				name = "WorldSize";
+				position[] = {6400, 6400};
+				radiusA = 6400;
+				radiusB = 6400;
+				type = "Area";
+			};
 			class Wrzeszcz
 			{
 				angle = 0;
@@ -10422,7 +11128,7 @@ class CfgWorlds
 				position[] = {8058.25, 8711.76};
 				radiusA = 750;
 				radiusB = 750;
-				type = "NameVillage";
+				type = "NameVillageFormer";
 			};
 		};
 		class OutsideTerrain
@@ -10649,7 +11355,874 @@ class CfgWorlds
 					overcast = 1;
 				};
 			};
-			class LightingNew
+			class LightingNew: LightingNewBase
+			{
+				class Lighting0: Lighting0
+				{
+					ambient[] = {{0.52, 0.67, 1}, 5};
+					ambientCloud[] = {{0.52, 0.67, 1}, 1};
+					ambientMid[] = {{0.572, 0.67, 0.9}, 0.5};
+					ambientMidCloud[] = {0.572, 0.67, 0.9};
+					apertureMax = "9 * 0.9";
+					apertureMin = "6 * 0.9";
+					apertureStandard = "6 * 0.9";
+					bidirect[] = {0.09, 0.09, 0.09};
+					bidirectCloud[] = {0.09, 0.09, 0.09};
+					cloudsColor[] = {{1, 1, 1}, 9};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{0.1, 0.14, 0.22}, 8};
+					diffuseCloud[] = {{0.1, 0.1, 0.2}, 8};
+					fogColor[] = {{0.09, 0.137, 0.22}, 0.025};
+					groundReflection[] = {0.572, 0.67, 0.9};
+					groundReflectionCloud[] = {0.572, 0.67, 0.9};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.01, 0.0075, 0.005};
+					overcast = 0.25;
+					rayleigh[] = {0.007, 0.052, 0.103};
+					sky[] = {0.0231, 0.314, 0.467};
+					skyAroundSun[] = {{0.2, 0.25, 0.45}, 0.02};
+					standardAvgLum = 4;
+					sunAngle = -15;
+					sunOrMoon = 0;
+					swBrightness = 3;
+				};
+				class Lighting1: Lighting1
+				{
+					ambient[] = {{0.52, 0.67, 1}, 4};
+					ambientCloud[] = {0.52, 0.67, 1};
+					ambientMid[] = {{0.572, 0.67, 0.9}, 2};
+					ambientMidCloud[] = {0.572, 0.67, 0.9};
+					apertureMax = 9;
+					apertureMin = 7;
+					apertureStandard = 8;
+					bidirect[] = {0.09, 0.09, 0.09};
+					bidirectCloud[] = {0.09, 0.09, 0.09};
+					cloudsColor[] = {{1, 1, 1}, 9};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{0.09, 0.09, 0.1}, 1.5};
+					diffuseCloud[] = {0.09, 0.09, 0.2};
+					fogColor[] = {{0.15, 0.15, 0.175}, 3};
+					groundReflection[] = {0.572, 0.67, 0.9};
+					groundReflectionCloud[] = {0.572, 0.67, 0.9};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.01, 0.0075, 0.005};
+					overcast = 0.25;
+					rayleigh[] = {0.007, 0.052, 0.103};
+					sky[] = {{0.1, 0.15, 0.3}, 4};
+					skyAroundSun[] = {{0.4, 0.3, 0.3}, 9};
+					standardAvgLum = 4;
+					sunAngle = -4;
+					sunOrMoon = 1;
+					swBrightness = 3;
+				};
+				class Lighting10: Lighting10
+				{
+					ambient[] = {{0.52, 0.67, 1}, 3};
+					ambientCloud[] = {1, 1, 1};
+					ambientMid[] = {{0.572, 0.67, 0.9}, 2};
+					ambientMidCloud[] = {0.572, 0.67, 0.9};
+					apertureMax = 9;
+					apertureMin = 7;
+					apertureStandard = 8;
+					bidirect[] = {0.09, 0.09, 0.09};
+					bidirectCloud[] = {0.09, 0.09, 0.09};
+					cloudsColor[] = {{1, 1, 1}, 4};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{0.09, 0.09, 0.2}, 1};
+					diffuseCloud[] = {0, 0, 0};
+					fogColor[] = {{0.15, 0.15, 0.175}, 2};
+					groundReflection[] = {0.572, 0.67, 0.9};
+					groundReflectionCloud[] = {0.572, 0.67, 0.9};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.01, 0.0075, 0.005};
+					overcast = 0.6;
+					rayleigh[] = {0.007, 0.052, 0.103};
+					sky[] = {{0.1, 0.15, 0.3}, 4};
+					skyAroundSun[] = {{0.5, 0.3, 0.2}, 8};
+					standardAvgLum = 4;
+					sunAngle = -4;
+					sunOrMoon = 1;
+					swBrightness = 3;
+				};
+				class Lighting11: Lighting11
+				{
+					ambient[] = {{0.7, 0.6, 0.6}, 7};
+					ambientCloud[] = {{1, 1, 1}, 1};
+					ambientMid[] = {{0.55, 0.6, 0.9}, 4.5};
+					ambientMidCloud[] = {{0.55, 0.6, 0.9}, 0.5};
+					apertureMax = 25;
+					apertureMin = 8;
+					apertureStandard = 10;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{0.7, 0.7, 0.7}, 4};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{0.9, 0.35, 0.075}, 4};
+					diffuseCloud[] = {0.9, 0.35, 0.075};
+					fogColor[] = {{0.15, 0.15, 0.175}, 5};
+					groundReflection[] = {{0.55, 0.6, 0.8}, 3};
+					groundReflectionCloud[] = {{0.55, 0.6, 0.8}, 0.25};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.005, 0.005, 0.005};
+					overcast = 0.6;
+					rayleigh[] = {0.05, 0.12, 0.17};
+					sky[] = {{0.11, 0.2, 0.5}, 6};
+					skyAroundSun[] = {{0.5, 0.15, 0}, 10};
+					standardAvgLum = 50;
+					sunAngle = 0;
+					sunOrMoon = 1;
+					swBrightness = 2;
+				};
+				class Lighting12: Lighting12
+				{
+					ambient[] = {{0.3, 0.23, 0.2}, 8.7};
+					ambientCloud[] = {{0.3, 0.23, 0.2}, 8.7};
+					ambientMid[] = {{0.55, 0.5, 0.5}, 8};
+					ambientMidCloud[] = {{0.55, 0.5, 0.5}, 7.5};
+					apertureMax = 30;
+					apertureMin = 9;
+					apertureStandard = 13;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{0.25, 0.25, 0.2}, 8};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{0.9, 0.35, 0.1}, 8};
+					diffuseCloud[] = {{0.9, 0.3, 0.05}, 4};
+					fogColor[] = {{0.15, 0.13, 0.12}, 6.5};
+					groundReflection[] = {{0.55, 0.5, 0.5}, 7};
+					groundReflectionCloud[] = {{0.55, 0.5, 0.5}, 6.5};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.005, 0.005, 0.005};
+					overcast = 0.6;
+					rayleigh[] = {0.05, 0.06, 0.17};
+					sky[] = {{0.2, 0.3, 0.4}, 9.5};
+					skyAroundSun[] = {{0.5, 0.2, 0.05}, 11.5};
+					standardAvgLum = 75;
+					sunAngle = 4;
+					sunOrMoon = 1;
+					swBrightness = 1;
+				};
+				class Lighting13: Lighting13
+				{
+					ambient[] = {{0.7, 0.67, 0.68}, 10};
+					ambientCloud[] = {{0.7, 0.67, 0.68}, 9.6};
+					ambientMid[] = {{0.65, 0.6, 0.6}, 9.2};
+					ambientMidCloud[] = {{0.65, 0.6, 0.6}, 9};
+					apertureMax = 40;
+					apertureMin = 10;
+					apertureStandard = 15;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{0.25, 0.25, 0.2}, 8.5};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{1, 0.45, 0.16}, 10.25};
+					diffuseCloud[] = {{1, 0.45, 0.16}, 6};
+					fogColor[] = {{0.13, 0.125, 0.11}, 7.5};
+					groundReflection[] = {{0.65, 0.6, 0.6}, 9};
+					groundReflectionCloud[] = {{0.65, 0.6, 0.6}, 8.6};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.002, 0.002, 0.002};
+					overcast = 0.6;
+					rayleigh[] = {0.06, 0.09, 0.09};
+					sky[] = {{0.13, 0.3, 0.5}, 11};
+					skyAroundSun[] = {{0.5, 0.23, 0.1}, 12.5};
+					standardAvgLum = 100;
+					sunAngle = 8;
+					sunOrMoon = 1;
+					swBrightness = 1;
+				};
+				class Lighting14: Lighting14
+				{
+					ambient[] = {{0.65, 0.612, 0.7}, 10.8};
+					ambientCloud[] = {{0.65, 0.612, 0.72}, 10.9};
+					ambientMid[] = {{0.57, 0.55, 0.6}, 9.5};
+					ambientMidCloud[] = {{0.57, 0.55, 0.62}, 9.5};
+					apertureMax = 55;
+					apertureMin = 18;
+					apertureStandard = 20;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{0.25, 0.25, 0.2}, 9};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{1, 0.675, 0.45}, 12};
+					diffuseCloud[] = {{1, 0.7, 0.45}, 8};
+					fogColor[] = {{0.125, 0.13, 0.135}, 9.75};
+					groundReflection[] = {{0.57, 0.55, 0.6}, 9.3};
+					groundReflectionCloud[] = {{0.57, 0.612, 0.7}, 8.3};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.005, 0.005, 0.005};
+					overcast = 0.6;
+					rayleigh[] = {0.09, 0.1, 0.1};
+					sky[] = {{0.11, 0.3, 0.55}, 11.5};
+					skyAroundSun[] = {{0.2, 0.3, 0.35}, 12};
+					standardAvgLum = 175;
+					sunAngle = 15;
+					sunOrMoon = 1;
+					swBrightness = 1;
+				};
+				class Lighting15: Lighting15
+				{
+					ambient[] = {{0.57, 0.58, 0.63}, 11.1};
+					ambientCloud[] = {{0.57, 0.58, 0.65}, 11};
+					ambientMid[] = {{0.57, 0.522, 0.56}, 10.4};
+					ambientMidCloud[] = {{0.57, 0.522, 0.56}, 10.3};
+					apertureMax = 55;
+					apertureMin = 20;
+					apertureStandard = 22;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{1, 1, 0.8}, 10.5};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{1, 0.75, 0.6}, 12.4};
+					diffuseCloud[] = {{1, 0.75, 0.68}, 11};
+					fogColor[] = {{0.105, 0.13, 0.18}, 10};
+					groundReflection[] = {{0.57, 0.522, 0.56}, 10};
+					groundReflectionCloud[] = {{0.5, 0.5, 0.5}, 9.2};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.005, 0.005, 0.005};
+					overcast = 0.6;
+					rayleigh[] = {0.001, 0.01388, 0.02878};
+					sky[] = {0.11, 0.3, 0.65};
+					skyAroundSun[] = {{0.11, 0.3, 0.65}, 11.7};
+					standardAvgLum = 250;
+					sunAngle = 22;
+					sunOrMoon = 1;
+					swBrightness = 1;
+				};
+				class Lighting16: Lighting16
+				{
+					ambient[] = {{0.57, 0.58, 0.68}, 11.8};
+					ambientCloud[] = {{0.57, 0.58, 0.68}, 11.9};
+					ambientMid[] = {{0.57, 0.522, 0.5}, 11.3};
+					ambientMidCloud[] = {{0.57, 0.522, 0.5}, 11.1};
+					apertureMax = 60;
+					apertureMin = 28;
+					apertureStandard = 35;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{1, 1, 0.8}, 11};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{1, 0.8, 0.65}, 13.75};
+					diffuseCloud[] = {{1, 0.8, 0.65}, 11.8};
+					fogColor[] = {{0.105, 0.13, 0.17}, 10.75};
+					groundReflection[] = {{0.57, 0.522, 0.5}, 10.5};
+					groundReflectionCloud[] = {{0.5, 0.5, 0.5}, 9.3};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.005, 0.005, 0.005};
+					overcast = 0.6;
+					rayleigh[] = {0.001, 0.01388, 0.02878};
+					sky[] = {{0.11, 0.3, 0.8}, 12};
+					skyAroundSun[] = {{0.11, 0.3, 0.8}, 12.2};
+					standardAvgLum = 500;
+					sunAngle = 35;
+					sunOrMoon = 1;
+					swBrightness = 1;
+				};
+				class Lighting17: Lighting17
+				{
+					ambient[] = {{0.57, 0.58, 0.7}, 12.1};
+					ambientCloud[] = {{0.57, 0.58, 0.7}, 12};
+					ambientMid[] = {{0.57, 0.522, 0.56}, 11.8};
+					ambientMidCloud[] = {{0.57, 0.522, 0.56}, 11.6};
+					apertureMax = 60;
+					apertureMin = 33;
+					apertureStandard = 36;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{1, 1, 0.8}, 12};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{1, 0.8, 0.66}, 14.1};
+					diffuseCloud[] = {{1, 0.8, 0.66}, 12.2};
+					fogColor[] = {{0.105, 0.145, 0.2}, 11.2};
+					groundReflection[] = {{0.57, 0.522, 0.56}, 11.2};
+					groundReflectionCloud[] = {{0.5, 0.5, 0.5}, 11};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.005, 0.005, 0.005};
+					overcast = 0.6;
+					rayleigh[] = {0.001, 0.01388, 0.02878};
+					sky[] = {{0.11, 0.3, 1}, 13};
+					skyAroundSun[] = {{0.11, 0.3, 1}, 13};
+					standardAvgLum = 500;
+					sunAngle = 40;
+					sunOrMoon = 1;
+					swBrightness = 1;
+				};
+				class Lighting18: Lighting18
+				{
+					ambient[] = {{0.52, 0.67, 1}, 5};
+					ambientCloud[] = {{0.52, 0.67, 1}, 4};
+					ambientMid[] = {{0.55, 0.55, 0.85}, 4};
+					ambientMidCloud[] = {1, 1, 1};
+					apertureMax = "9 * 0.9";
+					apertureMin = "6 * 0.9";
+					apertureStandard = "6 * 0.9";
+					bidirect[] = {0.09, 0.09, 0.09};
+					bidirectCloud[] = {0.09, 0.09, 0.09};
+					cloudsColor[] = {{1, 1, 1}, 3};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{0.1, 0.14, 0.22}, 6};
+					diffuseCloud[] = {{0.1, 0.1, 0.2}, 6};
+					fogColor[] = {0.09, 0.137, 0.22};
+					groundReflection[] = {0.572, 0.67, 0.9};
+					groundReflectionCloud[] = {1, 1, 1};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.01, 0.0075, 0.005};
+					overcast = 0.8;
+					rayleigh[] = {0.007, 0.052, 0.103};
+					sky[] = {0.0231, 0.314, 0.467};
+					skyAroundSun[] = {{0.2, 0.25, 0.45}, 0.02};
+					standardAvgLum = 4;
+					sunAngle = -15;
+					sunOrMoon = 0;
+					swBrightness = 3;
+				};
+				class Lighting19: Lighting19
+				{
+					ambient[] = {{0.5, 0.55, 1}, 2};
+					ambientCloud[] = {1, 1, 1};
+					ambientMid[] = {{0.55, 0.55, 0.85}, 2};
+					ambientMidCloud[] = {1, 1, 1};
+					apertureMax = 9;
+					apertureMin = 7;
+					apertureStandard = 8;
+					bidirect[] = {0.09, 0.09, 0.09};
+					bidirectCloud[] = {0.09, 0.09, 0.09};
+					cloudsColor[] = {{0.1, 0.1, 0.1}, 3};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {0.2, 0.2, 0.2};
+					diffuseCloud[] = {0, 0, 0};
+					fogColor[] = {0.08, 0.08, 0.095};
+					groundReflection[] = {0.55, 0.55, 0.85};
+					groundReflectionCloud[] = {1, 1, 1};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.05, 0.05, 0.05};
+					overcast = 0.8;
+					rayleigh[] = {0.5, 0.5, 0.5};
+					sky[] = {{0.1, 0.3, 0.7}, 3};
+					skyAroundSun[] = {{0.2, 0.3, 0.6}, 7};
+					standardAvgLum = 4;
+					sunAngle = -4;
+					sunOrMoon = 1;
+					swBrightness = 3;
+				};
+				class Lighting2: Lighting2
+				{
+					ambient[] = {{0.7, 0.5, 0.5}, 7.75};
+					ambientCloud[] = {{0.6, 0.5, 0.5}, 1};
+					ambientMid[] = {{0.55, 0.6, 0.8}, 6.5};
+					ambientMidCloud[] = {{0.55, 0.6, 0.8}, 0.5};
+					apertureMax = 25;
+					apertureMin = 8;
+					apertureStandard = 10;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{0.7, 0.7, 0.7}, 9};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{0.8, 0.4, 0.18}, 5};
+					diffuseCloud[] = {{1, 0.35, 0.34}, 2};
+					fogColor[] = {{0.15, 0.15, 0.175}, 5.5};
+					groundReflection[] = {{0.55, 0.6, 0.8}, 6.5};
+					groundReflectionCloud[] = {{0.55, 0.6, 0.9}, 0.25};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.005, 0.005, 0.005};
+					overcast = 0.25;
+					rayleigh[] = {0.007, 0.5, 0.5};
+					sky[] = {{0.11, 0.2, 0.4}, 6};
+					skyAroundSun[] = {{0.25, 0.1, 0.03}, 11};
+					standardAvgLum = 50;
+					sunAngle = 0;
+					sunOrMoon = 1;
+					swBrightness = 2;
+				};
+				class Lighting20: Lighting20
+				{
+					ambient[] = {{0.5, 0.5, 0.6}, 2.5};
+					ambientCloud[] = {{1, 1, 1}, 1};
+					ambientMid[] = {{0.55, 0.5, 0.8}, 2};
+					ambientMidCloud[] = {{1, 1, 1}, 0.5};
+					apertureMax = 25;
+					apertureMin = 8;
+					apertureStandard = 10;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{0.45, 0.22, 0.15}, 3};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{0.375, 0.225, 0.04}, 0.05};
+					diffuseCloud[] = {{1, 1, 1}, 0.05};
+					fogColor[] = {{0.08, 0.08, 0.095}, 0.25};
+					groundReflection[] = {{0.55, 0.5, 0.8}, 0.25};
+					groundReflectionCloud[] = {{1, 1, 1}, 0.25};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.005, 0.005, 0.005};
+					overcast = 0.8;
+					rayleigh[] = {0.5, 0.5, 0.5};
+					sky[] = {{0.11, 0.15, 0.2}, 1};
+					skyAroundSun[] = {{0.2, 0.25, 0.3}, 1};
+					standardAvgLum = 50;
+					sunAngle = 0;
+					sunOrMoon = 1;
+					swBrightness = 2;
+				};
+				class Lighting21: Lighting21
+				{
+					ambient[] = {{0.6, 0.6, 0.75}, 8.2};
+					ambientCloud[] = {{1, 1, 1}, 8};
+					ambientMid[] = {{0.55, 0.5, 0.62}, 7.2};
+					ambientMidCloud[] = {{1, 1, 1}, 7};
+					apertureMax = 30;
+					apertureMin = 9;
+					apertureStandard = 13;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{0.45, 0.3, 0.15}, 3};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{0.1, 0.1, 0.1}, 0.1};
+					diffuseCloud[] = {{1, 1, 1}, 0.005};
+					fogColor[] = {{0.125, 0.125, 0.14}, 7.5};
+					groundReflection[] = {{0.55, 0.5, 0.62}, 6.5};
+					groundReflectionCloud[] = {{1, 1, 1}, 6};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.005, 0.005, 0.005};
+					overcast = 0.8;
+					rayleigh[] = {0.5, 0.5, 0.3};
+					sky[] = {{0.11, 0.15, 0.2}, 9};
+					skyAroundSun[] = {{0.2, 0.2, 0.3}, 10};
+					standardAvgLum = 75;
+					sunAngle = 4;
+					sunOrMoon = 1;
+					swBrightness = 1;
+				};
+				class Lighting22: Lighting22
+				{
+					ambient[] = {{0.65, 0.65, 0.8}, 9};
+					ambientCloud[] = {{1, 1, 1}, 9};
+					ambientMid[] = {{0.57, 0.5, 0.62}, 8};
+					ambientMidCloud[] = {{1, 1, 1}, 7.8};
+					apertureMax = 40;
+					apertureMin = 10;
+					apertureStandard = 15;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{0.6, 0.3, 0.15}, 5};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{0.3, 0.3, 0.35}, 0.75};
+					diffuseCloud[] = {{1, 1, 1}, 1};
+					fogColor[] = {{0.125, 0.125, 0.15}, 8};
+					groundReflection[] = {{0.57, 0.5, 0.62}, 7.8};
+					groundReflectionCloud[] = {{1, 1, 1}, 7.6};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.005, 0.005, 0.005};
+					overcast = 0.8;
+					rayleigh[] = {0.5, 0.5, 0.3};
+					sky[] = {{0.11, 0.15, 0.2}, 10};
+					skyAroundSun[] = {{0.16, 0.18, 0.2}, 10};
+					standardAvgLum = 100;
+					sunAngle = 8;
+					sunOrMoon = 1;
+					swBrightness = 1;
+				};
+				class Lighting23: Lighting23
+				{
+					ambient[] = {{0.7, 0.7, 0.8}, 10};
+					ambientCloud[] = {{1, 1, 1}, 10};
+					ambientMid[] = {{0.57, 0.5, 0.6}, 9.3};
+					ambientMidCloud[] = {{1, 1, 1}, 9};
+					apertureMax = 55;
+					apertureMin = 18;
+					apertureStandard = 20;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{0.75, 0.6, 0.4}, 5};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{0.32, 0.3, 0.35}, 1};
+					diffuseCloud[] = {{0.1, 0.1, 0.1}, 2};
+					fogColor[] = {{0.3, 0.34, 0.44}, 9};
+					groundReflection[] = {{0.57, 0.5, 0.6}, 8.8};
+					groundReflectionCloud[] = {{1, 1, 1}, 8.6};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.005, 0.005, 0.005};
+					overcast = 0.8;
+					rayleigh[] = {0.00759, 0.01388, 0.02878};
+					sky[] = {{0.11, 0.15, 0.2}, 10.8};
+					skyAroundSun[] = {{0.16, 0.18, 0.2}, 11.4};
+					standardAvgLum = 175;
+					sunAngle = 15;
+					sunOrMoon = 1;
+					swBrightness = 1;
+				};
+				class Lighting24: Lighting24
+				{
+					ambient[] = {{0.7, 0.7, 0.8}, 11};
+					ambientCloud[] = {{1, 1, 1}, 10.8};
+					ambientMid[] = {{0.57, 0.5, 0.57}, 10};
+					ambientMidCloud[] = {{1, 1, 1}, 9.8};
+					apertureMax = 55;
+					apertureMin = 20;
+					apertureStandard = 22;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{0.9, 1, 1}, 6};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{0.8, 0.8, 0.8}, 3.5};
+					diffuseCloud[] = {{0.1, 0.1, 0.1}, 2.5};
+					fogColor[] = {{0.105, 0.12, 0.16}, 10};
+					groundReflection[] = {{0.57, 0.5, 0.57}, 9.8};
+					groundReflectionCloud[] = {{1, 1, 1}, 9.6};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.005, 0.005, 0.005};
+					overcast = 0.8;
+					rayleigh[] = {0.00759, 0.01388, 0.02878};
+					sky[] = {{0.11, 0.15, 0.2}, 12.6};
+					skyAroundSun[] = {{0.11, 0.145, 0.19}, 12.6};
+					standardAvgLum = 250;
+					sunAngle = 22;
+					sunOrMoon = 1;
+					swBrightness = 1;
+				};
+				class Lighting25: Lighting25
+				{
+					ambient[] = {{0.7, 0.7, 0.8}, 11.5};
+					ambientCloud[] = {{1, 1, 1}, 11.2};
+					ambientMid[] = {{0.57, 0.5, 0.57}, 11};
+					ambientMidCloud[] = {{1, 1, 1}, 10.5};
+					apertureMax = 60;
+					apertureMin = 28;
+					apertureStandard = 35;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{0.9, 1, 1}, 6};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{0.8, 0.8, 0.8}, 9.8};
+					diffuseCloud[] = {{0.1, 0.1, 0.1}, 6};
+					fogColor[] = {{0.105, 0.12, 0.16}, 10.75};
+					groundReflection[] = {{0.57, 0.5, 0.57}, 10};
+					groundReflectionCloud[] = {{1, 1, 1}, 9.5};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.005, 0.005, 0.005};
+					overcast = 0.8;
+					rayleigh[] = {0.00759, 0.01388, 0.02878};
+					sky[] = {{0.11, 0.15, 0.2}, 13};
+					skyAroundSun[] = {{0.11, 0.145, 0.188}, 13};
+					standardAvgLum = 500;
+					sunAngle = 35;
+					sunOrMoon = 1;
+					swBrightness = 1;
+				};
+				class Lighting26: Lighting26
+				{
+					ambient[] = {{0.7, 0.65, 0.8}, 12.5};
+					ambientCloud[] = {{1, 1, 1}, 12};
+					ambientMid[] = {{0.57, 0.55, 0.57}, 11.5};
+					ambientMidCloud[] = {{1, 1, 1}, 11};
+					apertureMax = 60;
+					apertureMin = 33;
+					apertureStandard = 36;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{0.9, 1, 1}, 7};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{0.8, 0.8, 0.8}, 10};
+					diffuseCloud[] = {{0.1, 0.1, 0.1}, 6};
+					fogColor[] = {{0.105, 0.12, 0.16}, 11.5};
+					groundReflection[] = {{0.57, 0.5, 0.57}, 11};
+					groundReflectionCloud[] = {{1, 1, 1}, 10};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.005, 0.005, 0.005};
+					overcast = 0.8;
+					rayleigh[] = {0.00759, 0.01388, 0.02878};
+					sky[] = {{0.11, 0.15, 0.2}, 13};
+					skyAroundSun[] = {{0.11, 0.145, 0.188}, 13};
+					standardAvgLum = 500;
+					sunAngle = 40;
+					sunOrMoon = 1;
+					swBrightness = 1;
+				};
+				class Lighting3: Lighting3
+				{
+					ambient[] = {{0.5, 0.39, 0.35}, 9};
+					ambientCloud[] = {{0.5, 0.39, 0.35}, 9};
+					ambientMid[] = {{0.55, 0.5, 0.45}, 8.1};
+					ambientMidCloud[] = {{0.55, 0.5, 0.45}, 7.7};
+					apertureMax = 30;
+					apertureMin = 9;
+					apertureStandard = 13;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{0.2, 0.2, 0.2}, 11};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{0.9, 0.4, 0.16}, 8};
+					diffuseCloud[] = {{0.8, 0.4, 0.16}, 9};
+					fogColor[] = {{0.15, 0.135, 0.13}, 7};
+					groundReflection[] = {{0.55, 0.5, 0.45}, 7.1};
+					groundReflectionCloud[] = {{0.55, 0.5, 0.5}, 6.5};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.003, 0.002, 0.003};
+					overcast = 0.25;
+					rayleigh[] = {0.12, 0.05, 0.05};
+					sky[] = {{0.11, 0.25, 0.4}, 10.5};
+					skyAroundSun[] = {{0.3, 0.2, 0.1}, 12};
+					standardAvgLum = 75;
+					sunAngle = 4;
+					sunOrMoon = 1;
+					swBrightness = 1;
+				};
+				class Lighting4: Lighting4
+				{
+					ambient[] = {{0.55, 0.4, 0.35}, 9.8};
+					ambientCloud[] = {{0.6, 0.4, 0.4}, 9.8};
+					ambientMid[] = {{0.55, 0.5, 0.45}, 8.3};
+					ambientMidCloud[] = {{0.55, 0.5, 0.5}, 8};
+					apertureMax = 40;
+					apertureMin = 10;
+					apertureStandard = 15;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{0.2, 0.2, 0.15}, 11};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{1, 0.5, 0.26}, 10.25};
+					diffuseCloud[] = {{1, 0.45, 0.26}, 10.25};
+					fogColor[] = {{0.125, 0.13, 0.14}, 8.2};
+					groundReflection[] = {{0.55, 0.5, 0.45}, 7.75};
+					groundReflectionCloud[] = {{0.6, 0.65, 0.768}, 7};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.002, 0.002, 0.002};
+					overcast = 0.25;
+					rayleigh[] = {0.06, 0.1, 0.09};
+					sky[] = {{0.11, 0.3, 0.7}, 10.5};
+					skyAroundSun[] = {{0.15, 0.2, 0.2}, 12};
+					standardAvgLum = 100;
+					sunAngle = 8;
+					sunOrMoon = 1;
+					swBrightness = 1;
+				};
+				class Lighting5: Lighting5
+				{
+					ambient[] = {{0.6, 0.6, 0.6}, 10.75};
+					ambientCloud[] = {{0.57, 0.6, 0.7}, 10.75};
+					ambientMid[] = {{0.57, 0.5, 0.51}, 9.2};
+					ambientMidCloud[] = {{0.57, 0.5, 0.51}, 9};
+					apertureMax = 55;
+					apertureMin = 18;
+					apertureStandard = 20;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{0.5, 0.5, 0.3}, 11};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{1, 0.63, 0.4}, 12};
+					diffuseCloud[] = {{1, 0.63, 0.4}, 11.5};
+					fogColor[] = {{0.11, 0.125, 0.14}, 9.75};
+					groundReflection[] = {{0.57, 0.5, 0.51}, 9};
+					groundReflectionCloud[] = {{0.57, 0.612, 0.7}, 8.3};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.005, 0.005, 0.005};
+					overcast = 0.25;
+					rayleigh[] = {0.1, 0.13, 0.2};
+					sky[] = {{0.11, 0.33, 0.8}, 10.75};
+					skyAroundSun[] = {{0.1, 0.3, 0.6}, 12};
+					standardAvgLum = 175;
+					sunAngle = 15;
+					sunOrMoon = 1;
+					swBrightness = 1;
+				};
+				class Lighting6: Lighting6
+				{
+					ambient[] = {{0.58, 0.59, 0.63}, 11};
+					ambientCloud[] = {{0.57, 0.58, 0.63}, 11};
+					ambientMid[] = {{0.58, 0.51, 0.48}, 10.2};
+					ambientMidCloud[] = {{0.57, 0.522, 0.56}, 10};
+					apertureMax = 55;
+					apertureMin = 20;
+					apertureStandard = 22;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{1, 0.9, 0.7}, 11};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{1, 0.75, 0.55}, 12.4};
+					diffuseCloud[] = {{1, 0.75, 0.55}, 12.1};
+					fogColor[] = {{0.105, 0.13, 0.17}, 10};
+					groundReflection[] = {{0.58, 0.51, 0.48}, 10};
+					groundReflectionCloud[] = {{0.57, 0.522, 0.56}, 9.9};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.005, 0.005, 0.005};
+					overcast = 0.25;
+					rayleigh[] = {0.00759, 0.01388, 0.02878};
+					sky[] = {{0.11, 0.28, 0.95}, 11};
+					skyAroundSun[] = {{0.1, 0.28, 0.8}, 12};
+					standardAvgLum = 250;
+					sunAngle = 22;
+					sunOrMoon = 1;
+					swBrightness = 1;
+				};
+				class Lighting7: Lighting7
+				{
+					ambient[] = {{0.58, 0.59, 0.68}, 11.75};
+					ambientCloud[] = {{0.57, 0.59, 0.68}, 11.7};
+					ambientMid[] = {{0.58, 0.531, 0.476}, 11};
+					ambientMidCloud[] = {{0.57, 0.522, 0.56}, 11};
+					apertureMax = 60;
+					apertureMin = 28;
+					apertureStandard = 35;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{1, 0.9, 0.7}, 12};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{1, 0.8, 0.65}, 13.75};
+					diffuseCloud[] = {{1, 0.8, 0.65}, 13.5};
+					fogColor[] = {{0.105, 0.14, 0.2}, 11.2};
+					groundReflection[] = {{0.58, 0.531, 0.476}, 10.5};
+					groundReflectionCloud[] = {{0.57, 0.522, 0.56}, 10.5};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.005, 0.005, 0.005};
+					overcast = 0.25;
+					rayleigh[] = {0.00759, 0.01388, 0.02878};
+					sky[] = {{0.075, 0.2, 1}, 12};
+					skyAroundSun[] = {{0.075, 0.23, 1}, 12.5};
+					standardAvgLum = 500;
+					sunAngle = 35;
+					sunOrMoon = 1;
+					swBrightness = 1;
+				};
+				class Lighting8: Lighting8
+				{
+					ambient[] = {{0.57, 0.58, 0.7}, 12.1};
+					ambientCloud[] = {{0.57, 0.58, 0.7}, 12};
+					ambientMid[] = {{0.57, 0.522, 0.49}, 12.1};
+					ambientMidCloud[] = {{0.57, 0.522, 0.56}, 12};
+					apertureMax = 60;
+					apertureMin = 33;
+					apertureStandard = 36;
+					bidirect[] = {0, 0, 0};
+					bidirectCloud[] = {0, 0, 0};
+					cloudsColor[] = {{1, 0.9, 0.7}, 12};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{1, 0.8, 0.66}, 14};
+					diffuseCloud[] = {{1, 0.8, 0.66}, 13.7};
+					fogColor[] = {{0.105, 0.145, 0.2}, 11.5};
+					groundReflection[] = {{0.57, 0.522, 0.49}, 11.2};
+					groundReflectionCloud[] = {{0.57, 0.522, 0.56}, 11};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.005, 0.005, 0.005};
+					overcast = 0.25;
+					rayleigh[] = {0.00759, 0.01388, 0.02878};
+					sky[] = {{0.075, 0.22, 1}, 13};
+					skyAroundSun[] = {{0.075, 0.22, 1}, 13};
+					standardAvgLum = 500;
+					sunAngle = 40;
+					sunOrMoon = 1;
+					swBrightness = 1;
+				};
+				class Lighting9: Lighting9
+				{
+					ambient[] = {{0.52, 0.67, 1}, 5};
+					ambientCloud[] = {{0.52, 0.67, 1}, 5};
+					ambientMid[] = {{0.572, 0.67, 0.9}, 1};
+					ambientMidCloud[] = {{0.572, 0.67, 0.9}, 0.1};
+					apertureMax = "9 * 0.9";
+					apertureMin = "6 * 0.9";
+					apertureStandard = "6 * 0.9";
+					bidirect[] = {0.09, 0.09, 0.09};
+					bidirectCloud[] = {0.09, 0.09, 0.09};
+					cloudsColor[] = {{1, 1, 1}, 4};
+					desiredLuminanceCoef = 1;
+					desiredLuminanceCoefCloud = 1;
+					diffuse[] = {{0.1, 0.14, 0.22}, 7};
+					diffuseCloud[] = {{0.1, 0.1, 0.2}, 7};
+					fogColor[] = {{0.09, 0.137, 0.22}, 0.025};
+					groundReflection[] = {{0.572, 0.67, 0.9}, 0.1};
+					groundReflectionCloud[] = {{0.572, 0.67, 0.9}, 0.1};
+					height = 0;
+					luminanceRectCoef = 1;
+					luminanceRectCoefCloud = 0.5;
+					mie[] = {0.01, 0.0075, 0.005};
+					overcast = 0.6;
+					rayleigh[] = {0.007, 0.052, 0.103};
+					sky[] = {0.0231, 0.314, 0.467};
+					skyAroundSun[] = {{0.2, 0.25, 0.45}, 0.02};
+					standardAvgLum = 4;
+					sunAngle = -15;
+					sunOrMoon = 0;
+					swBrightness = 3;
+				};
+			};
+			class LightingNewBase
 			{
 				class Lighting0
 				{
@@ -11623,6 +13196,272 @@ class CfgWorlds
 				Sununu = "Sununu";
 				Tinibu = "Tinibu";
 				Zambo = "Zambo";
+			};
+		};
+		class AlienMen
+		{
+			class FirstNames
+			{
+				Agamemno = "Agamemno";
+				AirWalker = "Air-Walker";
+				Alien = "Alien";
+				AmonSur = "Amon Sur";
+				Annihilus = "Annihilus";
+				AntiMonitor = "Anti-Monitor";
+				Arkillo = "Arkillo";
+				Atrocitus = "Atrocitus";
+				Beyonder = "Beyonder";
+				BlackBeetle = "Black Beetle";
+				BlackDwarf = "Black Dwarf";
+				Blackfire = "Blackfire";
+				BlackGuardian = "Black Guardian";
+				BlackMoonClan = "Black Moon Clan";
+				Blastaar = "Blastaar";
+				Bleez = "Bleez";
+				BloodBrothers = "Blood Brothers";
+				BobaFett = "Boba Fett";
+				Brainiac = "Brainiac";
+				Brak = "Brak";
+				Byth = "Byth";
+				CadBane = "Cad Bane";
+				Carnage = "Carnage";
+				Cathexis = "Cathexis";
+				Catra = "Catra";
+				CelestialToymaker = "Celestial Toymaker";
+				ChampionoftheUniverse = "Champion of the Universe";
+				Chitauri = "Chitauri";
+				Chroma = "Chroma";
+				Collector = "Collector";
+				CompositeSuperman = "Composite Superman";
+				Controllers = "Controllers";
+				CorvusGlaive = "Corvus Glaive";
+				CosmicKing = "Cosmic King";
+				CultofSkaro = "Cult of Skaro";
+				Dalek = "Dalek";
+				DarthBane = "Darth Bane";
+				DarthMaul = "Darth Maul";
+				Davros = "Davros";
+				Deathbird = "Deathbird";
+				Decepticon = "Decepticon";
+				Despero = "Despero";
+				DevostheDevastator = "Devos the Devastator";
+				DKen = "D'Ken";
+				DoctorNefarious = "Doctor Nefarious";
+				Doomsday = "Doomsday";
+				DorrekVII = "Dorrek VII";
+				Dukat = "Dukat";
+				EbonyMaw = "Ebony Maw";
+				EgotheLivingPlanet = "Ego the Living Planet";
+				EmeraldEmpress = "Emerald Empress";
+				EmperorZarkon = "Emperor Zarkon";
+				Eradicator = "Eradicator";
+				EriktheRed = "Erik the Red";
+				Eviless = "Eviless";
+				EvilStar = "Evil Star";
+				FacelessHunters = "Faceless Hunters";
+				Fallen = "Fallen";
+				Faora = "Faora";
+				FatalFive = "Fatal Five";
+				Fatality = "Fatality";
+				FinFangFoom = "Fin Fang Foom";
+				Fisherman = "Fisherman";
+				Galactus = "Galactus";
+				GalaxyMaster = "Galaxy Master";
+				Galvatron = "Galvatron";
+				Gardener = "Gardener";
+				Garguax = "Garguax";
+				GeneralGrievous = "General Grievous";
+				GeneralZod = "General Zod";
+				Gigan = "Gigan";
+				Glorith = "Glorith";
+				GonzotheMechanicalBastard = "Gonzo the Mechanical Bastard";
+				GrandAdmiralThrawn = "Grand Admiral Thrawn";
+				Grandmaster = "Grandmaster";
+				Hawkman = "Hawkman";
+				Hedorah = "Hedorah";
+				HerrKleiser = "Herr Kleiser";
+				Hfuhruhurr = "Hfuhruhurr";
+				Hordak = "Hordak";
+				Hyathis = "Hyathis";
+				Hybrid = "Hybrid";
+				Imperiex = "Imperiex";
+				InvaderZim = "Invader Zim";
+				JabbatheHutt = "Jabba the Hutt";
+				JaxUr = "Jax-Ur";
+				Jemm = "Jemm";
+				KangandKodos = "Kang and Kodos";
+				KanjarRo = "Kanjar Ro";
+				KaruSil = "Karu-Sil";
+				KingGhidorah = "King Ghidorah";
+				KingHiss = "King Hiss";
+				KingMondo = "King Mondo";
+				KoraththePursuer = "Korath the Pursuer";
+				Krang = "Krang";
+				Kroloteans = "Kroloteans";
+				Krona = "Krona";
+				Kruun = "Kruun";
+				KyloRen = "Kylo Ren";
+				LadyStyx = "Lady Styx";
+				Larfleeze = "Larfleeze";
+				LastThreeofVenus = "Last Three of Venus";
+				Legion = "Legion";
+				LightningLord = "Lightning Lord";
+				Lobo = "Lobo";
+				LordChaos = "Lord Chaos";
+				Lucifer = "Lucifer";
+				LyssaDrak = "Lyssa Drak";
+				MachineEmpire = "Machine Empire";
+				Mageddon = "Mageddon";
+				Magus = "Magus";
+				Mala = "Mala";
+				MangaKhan = "Manga Khan";
+				Mano = "Mano";
+				Martian = "Martian";
+				MarvintheMartian = "Marvin the Martian";
+				Massacre = "Massacre";
+				Maxima = "Maxima";
+				Megatron = "Megatron";
+				Mercuriothe4DMan = "Mercurio the 4-D Man";
+				MingtheMerciless = "Ming the Merciless";
+				MisterMindand = "Mister Mind and the Monster Society of Evil";
+				MisterMxyzptlk = "Mister Mxyzptlk";
+				Modulok = "Modulok";
+				Mongal = "Mongal";
+				Mongul = "Mongul";
+				Monitor = "Monitor";
+				Monsteroso = "Monsteroso";
+				MonsterX = "Monster X";
+				Morg = "Morg";
+				MsGsptlsnz = "Ms. Gsptlsnz";
+				Mysteron = "Mysteron";
+				Nebula = "Nebula";
+				NemesisKid = "Nemesis Kid";
+				Nero = "Nero";
+				NohVarr = "Noh-Varr";
+				Non = "Non";
+				OlVir = "Ol-Vir";
+				Omega = "Omega";
+				OmniMan = "Omni-Man";
+				OnimarSynn = "Onimar Synn";
+				Ord = "Ord";
+				Orga = "Orga";
+				Overmaster = "Overmaster";
+				Paibok = "Paibok";
+				Palpatine = "Palpatine";
+				Parallax = "Parallax";
+				Predator = "Predator";
+				Preus = "Preus";
+				PrinceEvillo = "Prince Evillo";
+				PrinceLotor = "Prince Lotor";
+				ProximaMidnight = "Proxima Midnight";
+				PulsarStargrave = "Pulsar Stargrave";
+				QueenBee = "Queen Bee";
+				QuexUl = "Quex-Ul";
+				RanxtheSentientCity = "Ranx the Sentient City";
+				RedKing = "Red King";
+				RedLanternCorps = "Red Lantern Corps";
+				RedShift = "Red Shift";
+				Ripjak = "Ripjak";
+				RitaRepulsa = "Rita Repulsa";
+				Rlnnd = "Rl'nnd";
+				RonantheAccuser = "Ronan the Accuser";
+				SaturnQueen = "Saturn Queen";
+				ScarletSkier = "Scarlet Skier";
+				ShadowGalactica = "Shadow Galactica";
+				ShadowWeaver = "Shadow Weaver";
+				Sinestro = "Sinestro";
+				SinestroCorps = "Sinestro Corps";
+				Skeletor = "Skeletor";
+				Solaris = "Solaris";
+				SpaceGodzilla = "Space Godzilla";
+				SpeedQueen = "Speed Queen";
+				Starbreaker = "Starbreaker";
+				Starro = "Starro";
+				Starscream = "Starscream";
+				Stinkor = "Stinkor";
+				SuperboyPrime = "Superboy-Prime";
+				Supergiant = "Supergiant";
+				Supernova = "Supernova";
+				SuperSkrull = "Super-Skrull";
+				SupremeLeaderSnoke = "Supreme Leader Snoke";
+				Terminus = "Terminus";
+				Terrax = "Terrax";
+				Thanos = "Thanos";
+				TheMaster = "The Master";
+				TheMekon = "The Mekon";
+				TheMooninites = "The Mooninites";
+				TheRani = "The Rani";
+				TimeTrapper = "Time Trapper";
+				Timewyrm = "Timewyrm";
+				Titannus = "Titannus";
+				Trauma = "Trauma";
+				Ultimus = "Ultimus";
+			};
+			class LastNames
+			{
+				Achie = "Achie";
+				Bawers = "Bawers";
+				Bilmitsua = "Bilmitsua";
+				Bovvt = "Bovvt";
+				Brivvits = "Brivvits";
+				Cebbopsue = "Cebbopsue";
+				Chuelh = "Chuelh";
+				Cluydabae = "Cluydabae";
+				Conoba = "Con'oba";
+				Daekhy = "Daekhy";
+				Ederk = "Ederk";
+				Eibhuth = "Eibhuth";
+				Esrk = "Esrk";
+				Fih = "Fih'";
+				Flelfuhma = "Flelfuhma";
+				Fouqlli = "Fouqlli";
+				Fraesu = "Fraes'u";
+				Gluocoxea = "Gluocoxea";
+				Iywth = "Iywth";
+				Javrypt = "Javrypt";
+				Jiwryrtae = "Jiwryrtae";
+				Kexuolphea = "Kex'uolphea";
+				Knoewrlt = "Knoewrlt";
+				Krouhlaekxy = "Krouhlaekxy";
+				Kruq = "Kruq";
+				Krykroso = "Krykroso";
+				Kuglnt = "Kuglnt";
+				Oebblt = "Oebblt";
+				Oegez = "Oegez";
+				Pegow = "Pegow";
+				Plealphywtheo = "Plealphywtheo";
+				Praetrohz = "Praetrohz";
+				Prauslk = "Prauslk";
+				Preihq = "Preihq";
+				Qlehitsi = "Qlehitsi";
+				Qreihm = "Qreihm";
+				Qryxxylzu = "Qryxxylzu";
+				Qupruks = "Qupruks";
+				Rozohr = "Rozohr";
+				Sleps = "Sleps";
+				Stenemeo = "Sten'emeo";
+				Stiwrork = "Stiwrork";
+				Stravrrt = "Stravrrt";
+				Streihamae = "Streihamae";
+				Struaehr = "Struaehr";
+				Tievvuylstie = "Tievvuylstie";
+				Trauxihx = "Traux'ihx";
+				Truopsalf = "Truopsalf";
+				Trurrq = "Trur'rq";
+				Tyfaphae = "Tyfaphae";
+				Ubleo = "Ubleo";
+				Vlilhykhoe = "Vlilhykhoe";
+				Vlimnab = "Vlimnab";
+				Vlinothi = "Vlin'othi";
+				Vlyphiph = "Vlyphiph";
+				Vlyssea = "Vlyssea";
+				Wuod = "Wuod";
+				Ximnl = "Ximnl";
+				Ydlt = "Ydlt";
+				Zorb = "Zorb";
+				Zraebrx = "Zraebrx";
+				Zruqryr = "Zruqryr";
+				Zyrourstua = "Zyr'ourstua";
 			};
 		};
 		class AsianMen

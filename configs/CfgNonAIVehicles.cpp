@@ -1302,6 +1302,13 @@ class CfgNonAIVehicles
 		shadow = 1;
 		simulation = "randomshape";
 	};
+	class RenderCamera
+	{
+		crossHairs = "\A3\ui_f\data\igui\cfg\nonaivehicles\camera_ca.paa";
+		model = "";
+		scope = 2;
+		simulation = "Camera";
+	};
 	class RopeEnd: RopeSegment
 	{
 		access = 0;

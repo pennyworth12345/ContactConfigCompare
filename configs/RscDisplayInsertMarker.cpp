@@ -2,10 +2,10 @@ class RscDisplayInsertMarker
 {
 	idd = 54;
 	movingEnable = 0;
-	onLoad = "[""onLoad"",_this,""RscDisplayInsertMarker"",'GUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
-	onUnload = "[""onUnload"",_this,""RscDisplayInsertMarker"",'GUI'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+	onLoad = "[""onLoad"",_this,""RscDisplayInsertMarker"",'ContactDisplaysTemp'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+	onUnload = "[""onUnload"",_this,""RscDisplayInsertMarker"",'ContactDisplaysTemp'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
 	scriptName = "RscDisplayInsertMarker";
-	scriptPath = "GUI";
+	scriptPath = "ContactDisplaysTemp";
 	class controls
 	{
 		class ButtonMenuCancel: RscButtonMenuCancel

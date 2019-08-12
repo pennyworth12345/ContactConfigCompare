@@ -3,6 +3,7 @@ class CfgUIColors
 	class GUI
 	{
 		displayName = "Menu";
+		scope = 1;
 		class Grids
 		{
 			class grid
@@ -39,7 +40,7 @@ class CfgUIColors
 			};
 			class PresetApex
 			{
-				default = 1;
+				default = 0;
 				displayName = "Arma 3 Apex";
 				class Variables
 				{
@@ -67,6 +68,7 @@ class CfgUIColors
 			};
 			class PresetContact
 			{
+				default = 1;
 				displayName = "Contact Blue";
 				class Variables
 				{

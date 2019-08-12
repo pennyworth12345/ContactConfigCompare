@@ -71,6 +71,11 @@ class CfgSounds
 		sound[] = {"A3\Sounds_F\sfx\alarmCar", 1.12202, 1, 300, 1, 0, 0, 0};
 		titles[] = {};
 	};
+	class AlienDrone_01_Puzzle_Data_Flash
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Puzzles\Puzzle_DataFlash_02", 1, 1};
+		titles[] = {};
+	};
 	class assemble_target
 	{
 		sound[] = {"A3\Missions_F_Bootcamp\data\sounds\assemble_target", 1, 1};
@@ -499,7 +504,7 @@ class CfgSounds
 	};
 	class combat_deafness
 	{
-		sound[] = {"A3\Missions_F_EPA\data\sounds\combat_deafness", 0.446684, 1};
+		sound[] = {"A3\Missions_F_EPA\data\sounds\combat_deafness", 0.223872, 1};
 		titles[] = {};
 	};
 	class communicationMenuItemAdded
@@ -727,6 +732,21 @@ class CfgSounds
 		sound[] = {"A3\Sounds_F_Tacops\SFX\Missions\Crowd_b", 1, 1};
 		titles[] = {};
 	};
+	class DangerZone_Enter_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\DangerZone_Enter_01", 0.5, 1};
+		titles[] = {};
+	};
+	class DangerZone_Exit_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\DangerZone_Exit_01", 0.7, 1};
+		titles[] = {};
+	};
+	class DangerZone_Resolved_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\DangerZone_Resolved_01", 0.7, 1};
+		titles[] = {};
+	};
 	class DataTerminalLoop
 	{
 		sound[] = {"A3\Sounds_F\sfx\objects\upload_terminal\Upload_terminal_loop", 1, 1, 20};
@@ -755,30 +775,3030 @@ class CfgSounds
 	class Earthquake_01
 	{
 		name = "Earthquake 1";
-		sound[] = {"\a3\Sounds_F\environment\ambient\quakes\earthquake1", 3.16228, 1};
+		sound[] = {"\a3\Sounds_F\environment\ambient\quakes\earthquake1", 0, 1};
 		titles[] = {};
 	};
 	class Earthquake_02
 	{
 		name = "Earthquake 2";
-		sound[] = {"\a3\Sounds_F\environment\ambient\quakes\earthquake2", 3.16228, 1};
+		sound[] = {"\a3\Sounds_F\environment\ambient\quakes\earthquake2", 0, 1};
 		titles[] = {};
 	};
 	class Earthquake_03
 	{
 		name = "Earthquake 3";
-		sound[] = {"\a3\Sounds_F\environment\ambient\quakes\earthquake3", 3.16228, 1};
+		sound[] = {"\a3\Sounds_F\environment\ambient\quakes\earthquake3", 0, 1};
 		titles[] = {};
 	};
 	class Earthquake_04
 	{
 		name = "Earthquake 4";
-		sound[] = {"\a3\Sounds_F\environment\ambient\quakes\earthquake4", 3.16228, 1};
+		sound[] = {"\a3\Sounds_F\environment\ambient\quakes\earthquake4", 0, 1};
 		titles[] = {};
 	};
 	class electricity_loop
 	{
 		sound[] = {"A3\Missions_F_EPA\data\sounds\electricity_loop", 0.630957, 1};
+		titles[] = {};
+	};
+	class EM_AutoTurret_Enc_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_AutoTurret_Enc_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_AutoTurret_Enc_01_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_AutoTurret_Enc_01_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_AutoTurret_Jammed_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_AutoTurret_Jammed_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_AutoTurret_Jammed_01_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_AutoTurret_Jammed_01_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Base_Noise_01_Outro3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Noise\EM_Base_Noise_01_Outro3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Base_Noise_01_Outro3_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Noise\EM_Base_Noise_01_Outro3_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Base_Noise_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Noise\EM_Base_Noise_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Base_Noise_01_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Noise\EM_Base_Noise_01_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_BlackBox_DistressSignal_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_BlackBox_DistressSignal_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Darter_Enc_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_Darter_Enc_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Darter_Enc_01_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_Darter_Enc_01_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Darter_Jammed_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_Darter_Jammed_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Darter_Jammed_01_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_Darter_Jammed_01_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Drone_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Alien\EM_Drone_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Drone_01_Tracking_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Alien\EM_Drone_01_Tracking_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Drone_01_Tracking_01_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Alien\EM_Drone_01_Tracking_01_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Drone_01_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Alien\EM_Drone_01_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Emergency_Broadcast_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_Emergency_Broadcast_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Emergency_Broadcast_01_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_Emergency_Broadcast_01_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_ESD_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_ESD_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_am_nato_prisoner_request_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\am_nato_prisoner_request\EM_freeroam1_am_nato_prisoner_request_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_am_nato_prisoner_request_SOLDIERA_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\am_nato_prisoner_request\EM_freeroam1_am_nato_prisoner_request_SOLDIERA_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_device_searching_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_searching\EM_freeroam1_em_device_searching_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_device_searching_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_searching\EM_freeroam1_em_device_searching_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_device_searching_SOLDIERA_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_searching\EM_freeroam1_em_device_searching_SOLDIERA_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_device_searching_SOLDIERA_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_searching\EM_freeroam1_em_device_searching_SOLDIERA_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_device_turret_defense_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_turret_defense\EM_freeroam1_em_device_turret_defense_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_device_turret_defense_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_turret_defense\EM_freeroam1_em_device_turret_defense_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_device_turret_defense_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_turret_defense\EM_freeroam1_em_device_turret_defense_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_device_turret_defense_SOLDIERC_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_turret_defense\EM_freeroam1_em_device_turret_defense_SOLDIERC_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_device_turret_defense_SOLDIERC_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_turret_defense\EM_freeroam1_em_device_turret_defense_SOLDIERC_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_device_turret_defense_SOLDIERC_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_turret_defense\EM_freeroam1_em_device_turret_defense_SOLDIERC_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_ugv_actual_location_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_actual_location\EM_freeroam1_em_ugv_actual_location_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_ugv_actual_location_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_actual_location\EM_freeroam1_em_ugv_actual_location_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_ugv_actual_location_SOLDIERB_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_actual_location\EM_freeroam1_em_ugv_actual_location_SOLDIERB_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_ugv_actual_location_SOLDIERB_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_actual_location\EM_freeroam1_em_ugv_actual_location_SOLDIERB_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_ugv_probe_tip_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_probe_tip\EM_freeroam1_em_ugv_probe_tip_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_ugv_probe_tip_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_probe_tip\EM_freeroam1_em_ugv_probe_tip_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_ugv_probe_tip_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_probe_tip\EM_freeroam1_em_ugv_probe_tip_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_ugv_probe_tip_SOLDIERA_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_probe_tip\EM_freeroam1_em_ugv_probe_tip_SOLDIERA_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_ugv_probe_tip_SOLDIERA_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_probe_tip\EM_freeroam1_em_ugv_probe_tip_SOLDIERA_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_ugv_probe_tip_SOLDIERA_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_probe_tip\EM_freeroam1_em_ugv_probe_tip_SOLDIERA_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_valley_probe_awe_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_valley_probe_awe\EM_freeroam1_em_valley_probe_awe_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_valley_probe_awe_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_valley_probe_awe\EM_freeroam1_em_valley_probe_awe_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_valley_probe_awe_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_valley_probe_awe\EM_freeroam1_em_valley_probe_awe_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_valley_probe_awe_SOLDIERC_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_valley_probe_awe\EM_freeroam1_em_valley_probe_awe_SOLDIERC_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_valley_probe_awe_SOLDIERC_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_valley_probe_awe\EM_freeroam1_em_valley_probe_awe_SOLDIERC_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam1_em_valley_probe_awe_SOLDIERC_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_valley_probe_awe\EM_freeroam1_em_valley_probe_awe_SOLDIERC_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_HQ_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_HQ_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_HQ_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_HQ_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_SOLDIERB_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_SOLDIERB_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_SOLDIERB_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_SOLDIERB_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_SOLDIERB_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_SOLDIERB_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_SOLDIERB_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_SOLDIERB_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_SOLDIERB_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_SOLDIERB_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_looters_found_radio_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_looters_found_radio\EM_freeroam2_am_looters_found_radio_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_looters_found_radio_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_looters_found_radio\EM_freeroam2_am_looters_found_radio_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_looters_found_radio_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_looters_found_radio\EM_freeroam2_am_looters_found_radio_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_looters_found_radio_SOLDIERB_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_looters_found_radio\EM_freeroam2_am_looters_found_radio_SOLDIERB_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_looters_found_radio_SOLDIERB_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_looters_found_radio\EM_freeroam2_am_looters_found_radio_SOLDIERB_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_looters_found_radio_SOLDIERB_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_looters_found_radio\EM_freeroam2_am_looters_found_radio_SOLDIERB_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_matter_ball_found_ldf_investigate\EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_matter_ball_found_ldf_investigate\EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_matter_ball_found_ldf_investigate\EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_matter_ball_found_ldf_investigate\EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_matter_ball_found_ldf_investigate\EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_matter_ball_found_ldf_investigate\EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_radio_station_message\EM_freeroam2_am_radio_station_message_MAJOR_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_radio_station_message\EM_freeroam2_am_radio_station_message_MAJOR_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_radio_station_message\EM_freeroam2_am_radio_station_message_MAJOR_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_radio_station_message\EM_freeroam2_am_radio_station_message_MAJOR_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_radio_station_message\EM_freeroam2_am_radio_station_message_MAJOR_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_5_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_radio_station_message\EM_freeroam2_am_radio_station_message_MAJOR_5_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_6_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_radio_station_message\EM_freeroam2_am_radio_station_message_MAJOR_6_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_7_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_radio_station_message\EM_freeroam2_am_radio_station_message_MAJOR_7_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_SOLDIERC_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_SOLDIERC_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_SOLDIERC_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_SOLDIERC_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task_var1\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task_var1\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_SOLDIERC_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task_var1\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_SOLDIERC_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_SOLDIERC_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task_var1\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_SOLDIERC_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task_var2\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task_var2\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_SOLDIERC_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task_var2\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_SOLDIERC_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_SOLDIERC_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task_var2\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_SOLDIERC_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_a2q_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\a2q\EM_handshake_a2q_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_a2q_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\a2q\EM_handshake_a2q_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_a2q_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\a2q\EM_handshake_a2q_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_a2q_SQUAD_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\a2q\EM_handshake_a2q_SQUAD_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_a2q_SQUAD_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\a2q\EM_handshake_a2q_SQUAD_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_b2q_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\b2q\EM_handshake_b2q_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_b2q_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\b2q\EM_handshake_b2q_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_b2q_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\b2q\EM_handshake_b2q_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_b2q_SQUAD_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\b2q\EM_handshake_b2q_SQUAD_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_b2q_SQUAD_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\b2q\EM_handshake_b2q_SQUAD_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_c2q_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\c2q\EM_handshake_c2q_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_c2q_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\c2q\EM_handshake_c2q_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_c2q_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\c2q\EM_handshake_c2q_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_c2q_SQUAD_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\c2q\EM_handshake_c2q_SQUAD_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_c2q_SQUAD_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\c2q\EM_handshake_c2q_SQUAD_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_d2q_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\d2q\EM_handshake_d2q_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_d2q_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\d2q\EM_handshake_d2q_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_d2q_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\d2q\EM_handshake_d2q_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_d2q_SQUAD_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\d2q\EM_handshake_d2q_SQUAD_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_d2q_SQUAD_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\d2q\EM_handshake_d2q_SQUAD_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_e2q_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\e2q\EM_handshake_e2q_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_e2q_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\e2q\EM_handshake_e2q_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_e2q_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\e2q\EM_handshake_e2q_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_e2q_SQUAD_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\e2q\EM_handshake_e2q_SQUAD_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_e2q_SQUAD_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\e2q\EM_handshake_e2q_SQUAD_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_f2q_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\f2q\EM_handshake_f2q_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_f2q_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\f2q\EM_handshake_f2q_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_f2q_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\f2q\EM_handshake_f2q_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_f2q_SQUAD_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\f2q\EM_handshake_f2q_SQUAD_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_f2q_SQUAD_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\f2q\EM_handshake_f2q_SQUAD_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_g2q_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\g2q\EM_handshake_g2q_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_g2q_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\g2q\EM_handshake_g2q_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_g2q_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\g2q\EM_handshake_g2q_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_g2q_SQUAD_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\g2q\EM_handshake_g2q_SQUAD_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_g2q_SQUAD_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\g2q\EM_handshake_g2q_SQUAD_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_h2q_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\h2q\EM_handshake_h2q_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_h2q_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\h2q\EM_handshake_h2q_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_h2q_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\h2q\EM_handshake_h2q_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_h2q_SQUAD_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\h2q\EM_handshake_h2q_SQUAD_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_h2q_SQUAD_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\h2q\EM_handshake_h2q_SQUAD_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2a_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2a\EM_handshake_q2a_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2a_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2a\EM_handshake_q2a_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2a_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2a\EM_handshake_q2a_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2a_HQ_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2a\EM_handshake_q2a_HQ_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2a_HQ_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2a\EM_handshake_q2a_HQ_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2b_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2b\EM_handshake_q2b_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2b_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2b\EM_handshake_q2b_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2b_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2b\EM_handshake_q2b_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2b_HQ_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2b\EM_handshake_q2b_HQ_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2b_HQ_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2b\EM_handshake_q2b_HQ_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2c_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2c\EM_handshake_q2c_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2c_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2c\EM_handshake_q2c_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2c_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2c\EM_handshake_q2c_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2c_HQ_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2c\EM_handshake_q2c_HQ_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2c_HQ_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2c\EM_handshake_q2c_HQ_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2d_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2d\EM_handshake_q2d_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2d_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2d\EM_handshake_q2d_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2d_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2d\EM_handshake_q2d_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2d_HQ_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2d\EM_handshake_q2d_HQ_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2d_HQ_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2d\EM_handshake_q2d_HQ_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2e_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2e\EM_handshake_q2e_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2e_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2e\EM_handshake_q2e_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2e_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2e\EM_handshake_q2e_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2e_HQ_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2e\EM_handshake_q2e_HQ_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2e_HQ_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2e\EM_handshake_q2e_HQ_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2f_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2f\EM_handshake_q2f_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2f_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2f\EM_handshake_q2f_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2f_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2f\EM_handshake_q2f_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2f_HQ_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2f\EM_handshake_q2f_HQ_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2g_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2g\EM_handshake_q2g_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2g_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2g\EM_handshake_q2g_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2g_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2g\EM_handshake_q2g_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2g_HQ_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2g\EM_handshake_q2g_HQ_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2g_HQ_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2g\EM_handshake_q2g_HQ_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2h_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2h\EM_handshake_q2h_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2h_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2h\EM_handshake_q2h_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2h_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2h\EM_handshake_q2h_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2h_HQ_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2h\EM_handshake_q2h_HQ_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_handshake_q2h_HQ_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2h\EM_handshake_q2h_HQ_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_confirm_help_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\confirm_help\EM_hq_confirm_help_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_confirm_help_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\confirm_help\EM_hq_confirm_help_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_confirm_help_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\confirm_help\EM_hq_confirm_help_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_confused_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\confused\EM_hq_confused_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_confused_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\confused\EM_hq_confused_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_confused_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\confused\EM_hq_confused_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_deny_help_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\deny_help\EM_hq_deny_help_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_deny_help_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\deny_help\EM_hq_deny_help_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_deny_help_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\deny_help\EM_hq_deny_help_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_dummy_reply_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\dummy_reply\EM_hq_dummy_reply_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_dummy_reply_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\dummy_reply\EM_hq_dummy_reply_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_dummy_reply_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\dummy_reply\EM_hq_dummy_reply_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_dummy_reply_HQ_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\dummy_reply\EM_hq_dummy_reply_HQ_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_dummy_reply_HQ_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\dummy_reply\EM_hq_dummy_reply_HQ_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_HQ_Enc_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_HQ_Enc_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_HQ_Enc_01_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_HQ_Enc_01_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_identify_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\identify\EM_hq_identify_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_identify_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\identify\EM_hq_identify_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_identify_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\identify\EM_hq_identify_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_e_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_e\EM_hq_move_e_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_e_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_e\EM_hq_move_e_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_e_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_e\EM_hq_move_e_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_e_HQ_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_e\EM_hq_move_e_HQ_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_e_HQ_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_e\EM_hq_move_e_HQ_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_n_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_n\EM_hq_move_n_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_n_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_n\EM_hq_move_n_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_n_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_n\EM_hq_move_n_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_n_HQ_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_n\EM_hq_move_n_HQ_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_n_HQ_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_n\EM_hq_move_n_HQ_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_s_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_s\EM_hq_move_s_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_s_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_s\EM_hq_move_s_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_s_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_s\EM_hq_move_s_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_s_HQ_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_s\EM_hq_move_s_HQ_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_s_HQ_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_s\EM_hq_move_s_HQ_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_w_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_w\EM_hq_move_w_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_w_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_w\EM_hq_move_w_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_w_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_w\EM_hq_move_w_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_w_HQ_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_w\EM_hq_move_w_HQ_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_move_w_HQ_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_w\EM_hq_move_w_HQ_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_negative_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\negative\EM_hq_negative_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_negative_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\negative\EM_hq_negative_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_negative_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\negative\EM_hq_negative_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_help_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_help\EM_hq_no_help_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_help_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_help\EM_hq_no_help_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_help_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_help\EM_hq_no_help_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_move_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_move\EM_hq_no_move_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_move_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_move\EM_hq_no_move_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_move_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_move\EM_hq_no_move_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_a_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_a\EM_hq_no_response_a_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_a_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_a\EM_hq_no_response_a_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_a_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_a\EM_hq_no_response_a_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_b_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_b\EM_hq_no_response_b_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_b_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_b\EM_hq_no_response_b_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_b_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_b\EM_hq_no_response_b_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_c_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_c\EM_hq_no_response_c_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_c_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_c\EM_hq_no_response_c_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_c_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_c\EM_hq_no_response_c_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_d_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_d\EM_hq_no_response_d_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_d_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_d\EM_hq_no_response_d_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_d_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_d\EM_hq_no_response_d_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_e_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_e\EM_hq_no_response_e_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_e_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_e\EM_hq_no_response_e_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_e_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_e\EM_hq_no_response_e_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_f_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_f\EM_hq_no_response_f_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_f_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_f\EM_hq_no_response_f_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_f_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_f\EM_hq_no_response_f_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_g_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_g\EM_hq_no_response_g_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_g_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_g\EM_hq_no_response_g_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_g_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_g\EM_hq_no_response_g_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_h_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_h\EM_hq_no_response_h_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_h_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_h\EM_hq_no_response_h_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_no_response_h_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_h\EM_hq_no_response_h_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_positive_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\positive\EM_hq_positive_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_positive_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\positive\EM_hq_positive_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_positive_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\positive\EM_hq_positive_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_posrep_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\posrep\EM_hq_posrep_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_posrep_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\posrep\EM_hq_posrep_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_posrep_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\posrep\EM_hq_posrep_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_HQ_Russian_Enc_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_HQ_Russian_Enc_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_HQ_Russian_Enc_01_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_HQ_Russian_Enc_01_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_safe_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\safe\EM_hq_safe_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_safe_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\safe\EM_hq_safe_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_safe_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\safe\EM_hq_safe_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_say_again_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\say_again\EM_hq_say_again_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_say_again_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\say_again\EM_hq_say_again_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_say_again_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\say_again\EM_hq_say_again_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_a_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_a\EM_hq_send_help_a_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_a_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_a\EM_hq_send_help_a_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_a_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_a\EM_hq_send_help_a_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_b_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_b\EM_hq_send_help_b_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_b_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_b\EM_hq_send_help_b_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_b_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_b\EM_hq_send_help_b_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_c_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_c\EM_hq_send_help_c_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_c_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_c\EM_hq_send_help_c_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_c_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_c\EM_hq_send_help_c_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_d_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_d\EM_hq_send_help_d_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_d_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_d\EM_hq_send_help_d_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_d_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_d\EM_hq_send_help_d_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_e_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_e\EM_hq_send_help_e_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_e_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_e\EM_hq_send_help_e_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_e_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_e\EM_hq_send_help_e_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_f_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_f\EM_hq_send_help_f_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_f_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_f\EM_hq_send_help_f_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_f_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_f\EM_hq_send_help_f_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_g_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_g\EM_hq_send_help_g_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_g_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_g\EM_hq_send_help_g_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_send_help_g_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_g\EM_hq_send_help_g_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_silence_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\silence\EM_hq_silence_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_silence_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\silence\EM_hq_silence_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_silence_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\silence\EM_hq_silence_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_strange_signal_reply_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\strange_signal_reply\EM_hq_strange_signal_reply_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_strange_signal_reply_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\strange_signal_reply\EM_hq_strange_signal_reply_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_hq_strange_signal_reply_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\hq\strange_signal_reply\EM_hq_strange_signal_reply_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_physicist_am_4_1_PHYSICIST_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_1\EM_intro2_physicist_am_4_1_PHYSICIST_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_physicist_am_4_2_PHYSICIST_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_2\EM_intro2_physicist_am_4_2_PHYSICIST_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_physicist_am_4_3_PHYSICIST_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_3\EM_intro2_physicist_am_4_3_PHYSICIST_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_physicist_am_4_4_PHYSICIST_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_4\EM_intro2_physicist_am_4_4_PHYSICIST_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_physicist_am_4_5_PHYSICIST_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_5\EM_intro2_physicist_am_4_5_PHYSICIST_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_physicist_am_4_6_PHYSICIST_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_6\EM_intro2_physicist_am_4_6_PHYSICIST_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_physicist_am_4_7_PHYSICIST_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_7\EM_intro2_physicist_am_4_7_PHYSICIST_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_physicist_am_4_8_PHYSICIST_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_8\EM_intro2_physicist_am_4_8_PHYSICIST_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_physicist_am_4_9_PHYSICIST_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_9\EM_intro2_physicist_am_4_9_PHYSICIST_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_physicist_am_4_loop_PHYSICIST_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_loop\EM_intro2_physicist_am_4_loop_PHYSICIST_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q2raven_am_2_1_RAVEN_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2raven_am_2_1\EM_intro2_q2raven_am_2_1_RAVEN_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q2raven_am_2_2_RAVEN_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2raven_am_2_2\EM_intro2_q2raven_am_2_2_RAVEN_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q2raven_am_2_3_RAVEN_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2raven_am_2_3\EM_intro2_q2raven_am_2_3_RAVEN_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q2raven_am_2_4_RAVEN_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2raven_am_2_4\EM_intro2_q2raven_am_2_4_RAVEN_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q2raven_am_2_5_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2raven_am_2_5\EM_intro2_q2raven_am_2_5_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q2raven_am_2_6_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2raven_am_2_6\EM_intro2_q2raven_am_2_6_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q2raven_am_2_7_RAVEN_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2raven_am_2_7\EM_intro2_q2raven_am_2_7_RAVEN_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q2s_am_1_1_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_1\EM_intro2_q2s_am_1_1_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q2s_am_1_2_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_2\EM_intro2_q2s_am_1_2_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q2s_am_1_3_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_3\EM_intro2_q2s_am_1_3_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q2s_am_1_4_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_4\EM_intro2_q2s_am_1_4_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q2s_am_1_5_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_5\EM_intro2_q2s_am_1_5_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q2s_am_1_6_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_6\EM_intro2_q2s_am_1_6_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q2s_am_1_7_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_7\EM_intro2_q2s_am_1_7_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q2s_am_1_8_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_8\EM_intro2_q2s_am_1_8_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q2s_am_1_9_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_9\EM_intro2_q2s_am_1_9_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q2s_am_1_loop_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_loop\EM_intro2_q2s_am_1_loop_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q_am_3_1_UNKNOWN_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_1\EM_intro2_q_am_3_1_UNKNOWN_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q_am_3_2_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_2\EM_intro2_q_am_3_2_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q_am_3_3_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_3\EM_intro2_q_am_3_3_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q_am_3_4_UNKNOWN_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_4\EM_intro2_q_am_3_4_UNKNOWN_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q_am_3_5_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_5\EM_intro2_q_am_3_5_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q_am_3_6_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_6\EM_intro2_q_am_3_6_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q_am_3_7_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_7\EM_intro2_q_am_3_7_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q_am_3_8_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_8\EM_intro2_q_am_3_8_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q_am_3_loop_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_loop\EM_intro2_q_am_3_loop_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q_am_3_loop_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_loop\EM_intro2_q_am_3_loop_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_q_am_3_loop_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_loop\EM_intro2_q_am_3_loop_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_2_1_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_1\EM_intro2_s_am_2_1_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_2_2_AMBIENTA_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_2\EM_intro2_s_am_2_2_AMBIENTA_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_2_3_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_3\EM_intro2_s_am_2_3_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_2_4_AMBIENTA_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_4\EM_intro2_s_am_2_4_AMBIENTA_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_2_5_AMBIENTA_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_5\EM_intro2_s_am_2_5_AMBIENTA_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_2_6_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_6\EM_intro2_s_am_2_6_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_2_7_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_7\EM_intro2_s_am_2_7_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_2_8_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_8\EM_intro2_s_am_2_8_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_2_loop_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_loop\EM_intro2_s_am_2_loop_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_2_loop_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_loop\EM_intro2_s_am_2_loop_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_2_loop_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_loop\EM_intro2_s_am_2_loop_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_3_1_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_1\EM_intro2_s_am_3_1_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_3_2_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_2\EM_intro2_s_am_3_2_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_3_3_AMBIENTB_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_3\EM_intro2_s_am_3_3_AMBIENTB_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_3_4_AMBIENTB_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_4\EM_intro2_s_am_3_4_AMBIENTB_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_3_5_AMBIENTB_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_5\EM_intro2_s_am_3_5_AMBIENTB_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_3_6_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_6\EM_intro2_s_am_3_6_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_3_7_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_7\EM_intro2_s_am_3_7_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_3_8_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_8\EM_intro2_s_am_3_8_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_3_loop_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_loop\EM_intro2_s_am_3_loop_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_3_loop_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_loop\EM_intro2_s_am_3_loop_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_intro2_s_am_3_loop_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_loop\EM_intro2_s_am_3_loop_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Mission_FreeRoam1_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Missions\EM_Mission_FreeRoam1_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Mission_FreeRoam2_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Missions\EM_Mission_FreeRoam2_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Mission_Intro1_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Missions\EM_Mission_Intro1_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Mission_Intro2_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Missions\EM_Mission_Intro2_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Mission_Intro3_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Missions\EM_Mission_Intro3_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Mission_Outro2_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Missions\EM_Mission_Outro2_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Mission_Outro3_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Missions\EM_Mission_Outro3_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_MorseCode_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_MorseCode_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_MotherShip_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Alien\EM_MotherShip_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Mothership_01_Tracking_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Alien\EM_Mothership_01_Tracking_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Mothership_01_Tracking_01_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Alien\EM_Mothership_01_Tracking_01_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_aet_jammed_2_SOLDIERB_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\aet_jammed_2\EM_outro2_aet_jammed_2_SOLDIERB_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_aet_jammed_3_SOLDIERC_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\aet_jammed_3\EM_outro2_aet_jammed_3_SOLDIERC_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_aet_jammed_4_SOLDIERA_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\aet_jammed_4\EM_outro2_aet_jammed_4_SOLDIERA_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_aet_jammed_SOLDIERA_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\aet_jammed\EM_outro2_aet_jammed_SOLDIERA_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_aet_resuming_2_SOLDIERB_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\aet_resuming_2\EM_outro2_aet_resuming_2_SOLDIERB_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_aet_resuming_3_SOLDIERC_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\aet_resuming_3\EM_outro2_aet_resuming_3_SOLDIERC_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_aet_resuming_4_SOLDIERA_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\aet_resuming_4\EM_outro2_aet_resuming_4_SOLDIERA_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_aet_resuming_SOLDIERA_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\aet_resuming\EM_outro2_aet_resuming_SOLDIERA_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_fox_2_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\fox_2\EM_outro2_fox_2_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_fox_2_SOLDIERA_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\fox_2\EM_outro2_fox_2_SOLDIERA_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_ldf_counterattack_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\ldf_counterattack\EM_outro2_ldf_counterattack_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_ldf_counterattack_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\ldf_counterattack\EM_outro2_ldf_counterattack_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_ldf_counterattack_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\ldf_counterattack\EM_outro2_ldf_counterattack_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_ldf_counterattack_HQ_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\ldf_counterattack\EM_outro2_ldf_counterattack_HQ_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_ldf_counterattack_HQ_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\ldf_counterattack\EM_outro2_ldf_counterattack_HQ_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_probe_explosives_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\probe_explosives\EM_outro2_probe_explosives_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_probe_explosives_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\probe_explosives\EM_outro2_probe_explosives_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_probe_explosives_HQ_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\probe_explosives\EM_outro2_probe_explosives_HQ_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_probe_explosives_SOLDIERB_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\probe_explosives\EM_outro2_probe_explosives_SOLDIERB_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_probe_explosives_SOLDIERB_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\probe_explosives\EM_outro2_probe_explosives_SOLDIERB_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_probe_explosives_SOLDIERB_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\probe_explosives\EM_outro2_probe_explosives_SOLDIERB_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_probe_target_HQ_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\probe_target\EM_outro2_probe_target_HQ_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro2_probe_target_HQ_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro2\probe_target\EM_outro2_probe_target_HQ_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_aan_radio_news_merged_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Credits\EM_outro3_am_aan_radio_news_merged_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_aan_radio_news\EM_outro3_am_aan_radio_news_NEWSREADERB_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_aan_radio_news\EM_outro3_am_aan_radio_news_NEWSREADERB_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_aan_radio_news\EM_outro3_am_aan_radio_news_NEWSREADERB_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_aan_radio_news\EM_outro3_am_aan_radio_news_NEWSREADERB_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_aan_radio_news\EM_outro3_am_aan_radio_news_NEWSREADERB_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_5_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_aan_radio_news\EM_outro3_am_aan_radio_news_NEWSREADERB_5_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_6_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_aan_radio_news\EM_outro3_am_aan_radio_news_NEWSREADERB_6_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_7_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_aan_radio_news\EM_outro3_am_aan_radio_news_NEWSREADERB_7_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_8_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_aan_radio_news\EM_outro3_am_aan_radio_news_NEWSREADERB_8_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_cbn_radio_news_merged_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Credits\EM_outro3_am_cbn_radio_news_merged_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_5_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_5_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_6_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_6_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_7_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_7_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_8_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_8_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_9_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_9_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_merged_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Credits\EM_outro3_am_conspiracy_radio_merged_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_10_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_10_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_11_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_11_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_12_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_12_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_13_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_13_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_14_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_14_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_15_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_15_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_16_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_16_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_17_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_17_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_18_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_18_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_19_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_19_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_20_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_20_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_21_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_21_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_5_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_5_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_6_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_6_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_7_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_7_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_8_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_8_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_9_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_9_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_polish_radio_news_merged_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Credits\EM_outro3_am_polish_radio_news_merged_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_5_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_5_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_6_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_6_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_7_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_7_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_8_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_8_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_9_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_9_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_science_chat_INTERVIEWERB_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_INTERVIEWERB_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_science_chat_INTERVIEWERB_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_INTERVIEWERB_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_science_chat_INTERVIEWERB_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_INTERVIEWERB_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_science_chat_INTERVIEWERB_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_INTERVIEWERB_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_science_chat_merged_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Credits\EM_outro3_am_science_chat_merged_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_5_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_5_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_6_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_6_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_7_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_7_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_8_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_8_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_9_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_9_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_10_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_10_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_5_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_5_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_6_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_6_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_7_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_7_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_8_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_8_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_9_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_9_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_merged_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Credits\EM_outro3_am_talkshow_radio_merged_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_10_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_10_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_11_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_11_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_12_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_12_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_13_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_13_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_14_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_14_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_5_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_5_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_6_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_6_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_7_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_7_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_8_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_8_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_9_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_9_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Puzzle_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Alien\EM_Puzzle_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Puzzle_02_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Alien\EM_Puzzle_02_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Puzzle_03_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Alien\EM_Puzzle_03_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_RadioStation_Song_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_RadioStation_Song_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_RadioStation_Song_01_Transmission_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_RadioStation_Song_01_Transmission_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_RadioStation_Song_01_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_RadioStation_Song_01_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_RadioStation_Song_02_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_RadioStation_Song_02_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_RadioStation_Song_02_Transmission_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_RadioStation_Song_02_Transmission_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_RadioStation_Song_02_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_RadioStation_Song_02_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_RadioStation_Song_03_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_RadioStation_Song_03_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_RadioStation_Song_03_Transmission_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_RadioStation_Song_03_Transmission_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_RadioStation_Song_03_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_RadioStation_Song_03_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_RussianBeacon_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_RussianBeacon_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Send_Hack_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Noise\EM_Send_Hack_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Send_Signal_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Noise\EM_Send_Signal_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Silence_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Noise\EM_Silence_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_compromised_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\compromised\EM_squad_compromised_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_compromised_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\compromised\EM_squad_compromised_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_compromised_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\compromised\EM_squad_compromised_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_confused_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\confused\EM_squad_confused_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_confused_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\confused\EM_squad_confused_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_confused_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\confused\EM_squad_confused_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_event_e_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_e\EM_squad_event_e_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_event_e_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_e\EM_squad_event_e_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_event_e_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_e\EM_squad_event_e_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_event_n_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_n\EM_squad_event_n_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_event_n_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_n\EM_squad_event_n_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_event_n_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_n\EM_squad_event_n_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_event_s_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_s\EM_squad_event_s_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_event_s_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_s\EM_squad_event_s_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_event_s_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_s\EM_squad_event_s_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_event_w_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_w\EM_squad_event_w_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_event_w_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_w\EM_squad_event_w_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_event_w_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_w\EM_squad_event_w_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_explosion_e_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_e\EM_squad_explosion_e_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_explosion_e_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_e\EM_squad_explosion_e_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_explosion_e_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_e\EM_squad_explosion_e_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_explosion_n_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_n\EM_squad_explosion_n_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_explosion_n_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_n\EM_squad_explosion_n_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_explosion_n_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_n\EM_squad_explosion_n_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_explosion_s_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_s\EM_squad_explosion_s_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_explosion_s_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_s\EM_squad_explosion_s_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_explosion_s_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_s\EM_squad_explosion_s_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_explosion_w_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_w\EM_squad_explosion_w_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_explosion_w_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_w\EM_squad_explosion_w_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_explosion_w_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_w\EM_squad_explosion_w_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_flare_e_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_e\EM_squad_flare_e_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_flare_e_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_e\EM_squad_flare_e_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_flare_e_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_e\EM_squad_flare_e_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_flare_n_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_n\EM_squad_flare_n_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_flare_n_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_n\EM_squad_flare_n_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_flare_n_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_n\EM_squad_flare_n_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_flare_s_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_s\EM_squad_flare_s_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_flare_s_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_s\EM_squad_flare_s_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_flare_s_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_s\EM_squad_flare_s_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_flare_w_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_w\EM_squad_flare_w_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_flare_w_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_w\EM_squad_flare_w_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_flare_w_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_w\EM_squad_flare_w_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_gunfire_e_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_e\EM_squad_gunfire_e_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_gunfire_e_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_e\EM_squad_gunfire_e_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_gunfire_e_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_e\EM_squad_gunfire_e_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_gunfire_n_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_n\EM_squad_gunfire_n_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_gunfire_n_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_n\EM_squad_gunfire_n_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_gunfire_n_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_n\EM_squad_gunfire_n_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_gunfire_s_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_s\EM_squad_gunfire_s_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_gunfire_s_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_s\EM_squad_gunfire_s_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_gunfire_s_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_s\EM_squad_gunfire_s_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_gunfire_w_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_w\EM_squad_gunfire_w_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_gunfire_w_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_w\EM_squad_gunfire_w_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_gunfire_w_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_w\EM_squad_gunfire_w_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Squad_Id_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Ping\EM_Squad_Id_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Squad_Id_02_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Ping\EM_Squad_Id_02_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Squad_Id_03_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Ping\EM_Squad_Id_03_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Squad_Id_04_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Ping\EM_Squad_Id_04_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Squad_Id_05_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Ping\EM_Squad_Id_05_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Squad_Id_06_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Ping\EM_Squad_Id_06_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Squad_Id_07_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Ping\EM_Squad_Id_07_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Squad_Id_08_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Ping\EM_Squad_Id_08_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_identify_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\identify\EM_squad_identify_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_identify_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\identify\EM_squad_identify_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_identify_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\identify\EM_squad_identify_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_negative_combat_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\negative_combat\EM_squad_negative_combat_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_negative_combat_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\negative_combat\EM_squad_negative_combat_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_negative_combat_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\negative_combat\EM_squad_negative_combat_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_negative_move_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\negative_move\EM_squad_negative_move_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_negative_move_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\negative_move\EM_squad_negative_move_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_negative_move_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\negative_move\EM_squad_negative_move_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_negative_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\negative\EM_squad_negative_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_negative_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\negative\EM_squad_negative_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_negative_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\negative\EM_squad_negative_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_positive_move_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive_move\EM_squad_positive_move_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_positive_move_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive_move\EM_squad_positive_move_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_positive_move_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive_move\EM_squad_positive_move_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_positive_move_SQUAD_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive_move\EM_squad_positive_move_SQUAD_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_positive_move_SQUAD_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive_move\EM_squad_positive_move_SQUAD_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_positive_move_SQUAD_5_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive_move\EM_squad_positive_move_SQUAD_5_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_positive_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive\EM_squad_positive_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_positive_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive\EM_squad_positive_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_positive_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive\EM_squad_positive_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_positive_SQUAD_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive\EM_squad_positive_SQUAD_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_positive_SQUAD_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive\EM_squad_positive_SQUAD_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_positive_SQUAD_5_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive\EM_squad_positive_SQUAD_5_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_posrep_reply_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\posrep_reply\EM_squad_posrep_reply_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_posrep_reply_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\posrep_reply\EM_squad_posrep_reply_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_posrep_reply_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\posrep_reply\EM_squad_posrep_reply_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_posrep_reply_SQUAD_3_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\posrep_reply\EM_squad_posrep_reply_SQUAD_3_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_posrep_reply_SQUAD_4_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\posrep_reply\EM_squad_posrep_reply_SQUAD_4_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_posrep_reply_SQUAD_5_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\posrep_reply\EM_squad_posrep_reply_SQUAD_5_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_request_help_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\request_help\EM_squad_request_help_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_request_help_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\request_help\EM_squad_request_help_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_request_help_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\request_help\EM_squad_request_help_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_say_again_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\say_again\EM_squad_say_again_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_say_again_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\say_again\EM_squad_say_again_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_say_again_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\say_again\EM_squad_say_again_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_strange_signal_SQUAD_0_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\strange_signal\EM_squad_strange_signal_SQUAD_0_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_strange_signal_SQUAD_1_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\strange_signal\EM_squad_strange_signal_SQUAD_1_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_squad_strange_signal_SQUAD_2_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\squad\strange_signal\EM_squad_strange_signal_SQUAD_2_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Stomper_Enc_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_Stomper_Enc_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Stomper_Enc_01_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_Stomper_Enc_01_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Stomper_Jammed_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_Stomper_Jammed_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Stomper_Jammed_01_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_Stomper_Jammed_01_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Ugv_Enc_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_Ugv_Enc_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Ugv_Enc_01_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_Ugv_Enc_01_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Ugv_Jammed_01_S
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_Ugv_Jammed_01_S.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class EM_Ugv_Jammed_01_W
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\EM\Human\EM_Ugv_Jammed_01_W.ogg", 1, 1, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Event_Q_Probe_Radarstation_Cabin_Nearby
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Stingers\Event_Q_Probe_Radarstation_Cabin_Nearby", 1.75, 1};
+		titles[] = {};
+	};
+	class Event_Q_Probe_Radarstation_Objective
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Stingers\Event_Q_Probe_Radarstation_Objective", 1.75, 1};
 		titles[] = {};
 	};
 	class EXP_m04_flare
@@ -1353,6 +4373,856 @@ class CfgSounds
 		sound[] = {"A3\Missions_F_EPA\data\sounds\HubBriefing_A_m02.ogg", 1, 1};
 		titles[] = {};
 	};
+	class Intel_PickUp_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Intel_PickUp_01", 1, 1};
+		titles[] = {};
+	};
+	class intro3_008_eve_connecting_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\008_eve_connecting\intro3_008_eve_connecting_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_008_eve_connecting_astrobio_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\008_eve_connecting\intro3_008_eve_connecting_ASTROBIO_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_008_eve_connecting_astrobio_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\008_eve_connecting\intro3_008_eve_connecting_ASTROBIO_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_008_eve_connecting_astrobio_3
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\008_eve_connecting\intro3_008_eve_connecting_ASTROBIO_3.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_008_eve_connecting_astrobio_4
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\008_eve_connecting\intro3_008_eve_connecting_ASTROBIO_4.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_008_eve_connecting_physicist_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\008_eve_connecting\intro3_008_eve_connecting_PHYSICIST_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_008_eve_connecting_physicist_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\008_eve_connecting\intro3_008_eve_connecting_PHYSICIST_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_008_eve_connecting_physicist_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\008_eve_connecting\intro3_008_eve_connecting_PHYSICIST_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_008_eve_connecting_player_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\008_eve_connecting\intro3_008_eve_connecting_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_008_eve_connecting_player_1
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\008_eve_connecting\intro3_008_eve_connecting_PLAYER_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_008_eve_connecting_player_2
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\008_eve_connecting\intro3_008_eve_connecting_PLAYER_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_008_eve_connecting_player_3
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\008_eve_connecting\intro3_008_eve_connecting_PLAYER_3.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_008_eve_connecting_player_4
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\008_eve_connecting\intro3_008_eve_connecting_PLAYER_4.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_008_eve_connecting_player_5
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\008_eve_connecting\intro3_008_eve_connecting_PLAYER_5.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_008_eve_connecting_player_6
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\008_eve_connecting\intro3_008_eve_connecting_PLAYER_6.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_009_eve_connected_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\009_eve_connected\intro3_009_eve_connected_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_009_eve_connected_major_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\009_eve_connected\intro3_009_eve_connected_MAJOR_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_009_eve_connected_player_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\009_eve_connected\intro3_009_eve_connected_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_010_ta_test_camera_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\010_ta_test_camera\intro3_010_ta_test_camera_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_010_ta_test_camera_astrobio_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\010_ta_test_camera\intro3_010_ta_test_camera_ASTROBIO_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_010_ta_test_camera_player_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\010_ta_test_camera\intro3_010_ta_test_camera_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_011_in_pan_left_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\011_in_pan_left\intro3_011_in_pan_left_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_012_in_pan_right_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\012_in_pan_right\intro3_012_in_pan_right_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_013_in_pan_other_left_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\013_in_pan_other_left\intro3_013_in_pan_other_left_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_014_in_pan_to_me_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\014_in_pan_to_me\intro3_014_in_pan_to_me_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_015_in_straight_ahead_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\015_in_straight_ahead\intro3_015_in_straight_ahead_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_016_in_nod_camera_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\016_in_nod_camera\intro3_016_in_nod_camera_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_017_in_nodding_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\017_in_nodding\intro3_017_in_nodding_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_018_in_not_nodding_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\018_in_not_nodding\intro3_018_in_not_nodding_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_019_ta_test_manipulator_ASTROBIO_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\019_ta_test_manipulator\intro3_019_ta_test_manipulator_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_019_ta_test_manipulator_ASTROBIO_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\019_ta_test_manipulator\intro3_019_ta_test_manipulator_ASTROBIO_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_020_in_raise_arm_ASTROBIO_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\020_in_raise_arm\intro3_020_in_raise_arm_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_021_in_arm_already_raised_ASTROBIO_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\021_in_arm_already_raised\intro3_021_in_arm_already_raised_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_022_in_lower_arm_ASTROBIO_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\022_in_lower_arm\intro3_022_in_lower_arm_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_023_in_move_arm_forward_ASTROBIO_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\023_in_move_arm_forward\intro3_023_in_move_arm_forward_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_024_in_move_arm_backward_ASTROBIO_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\024_in_move_arm_backward\intro3_024_in_move_arm_backward_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_025_ta_laser_test_ASTROBIO_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\025_ta_laser_test\intro3_025_ta_laser_test_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_025_ta_laser_test_ASTROBIO_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\025_ta_laser_test\intro3_025_ta_laser_test_ASTROBIO_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_025_ta_laser_test_ASTROBIO_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\025_ta_laser_test\intro3_025_ta_laser_test_ASTROBIO_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_025_ta_laser_test_ASTROBIO_3
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\025_ta_laser_test\intro3_025_ta_laser_test_ASTROBIO_3.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_025_ta_laser_test_ASTROBIO_4
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\025_ta_laser_test\intro3_025_ta_laser_test_ASTROBIO_4.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_025_ta_laser_test_ASTROBIO_5
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\025_ta_laser_test\intro3_025_ta_laser_test_ASTROBIO_5.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_025_ta_laser_test_ASTROBIO_6
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\025_ta_laser_test\intro3_025_ta_laser_test_ASTROBIO_6.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_025_ta_laser_test_ASTROBIO_7
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\025_ta_laser_test\intro3_025_ta_laser_test_ASTROBIO_7.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_025_ta_laser_test_PHYSICIST_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\025_ta_laser_test\intro3_025_ta_laser_test_PHYSICIST_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_025_ta_laser_test_PHYSICIST_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\025_ta_laser_test\intro3_025_ta_laser_test_PHYSICIST_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_025_ta_laser_test_PLAYER_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\025_ta_laser_test\intro3_025_ta_laser_test_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_025_ta_laser_test_PLAYER_1
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\025_ta_laser_test\intro3_025_ta_laser_test_PLAYER_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_026_in_unknown_sample_ASTROBIO_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\026_in_unknown_sample\intro3_026_in_unknown_sample_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_026_in_unknown_sample_ASTROBIO_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\026_in_unknown_sample\intro3_026_in_unknown_sample_ASTROBIO_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_026_in_unknown_sample_ASTROBIO_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\026_in_unknown_sample\intro3_026_in_unknown_sample_ASTROBIO_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_027_in_foliage_sample_ASTROBIO_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\027_in_foliage_sample\intro3_027_in_foliage_sample_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_027_in_foliage_sample_ASTROBIO_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\027_in_foliage_sample\intro3_027_in_foliage_sample_ASTROBIO_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_027_in_foliage_sample_ASTROBIO_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\027_in_foliage_sample\intro3_027_in_foliage_sample_ASTROBIO_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_028_in_rock_sample_ASTROBIO_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\028_in_rock_sample\intro3_028_in_rock_sample_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_028_in_rock_sample_ASTROBIO_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\028_in_rock_sample\intro3_028_in_rock_sample_ASTROBIO_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_028_in_rock_sample_ASTROBIO_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\028_in_rock_sample\intro3_028_in_rock_sample_ASTROBIO_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_028_in_rock_sample_ASTROBIO_3
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\028_in_rock_sample\intro3_028_in_rock_sample_ASTROBIO_3.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_028_in_rock_sample_PHYSICIST_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\028_in_rock_sample\intro3_028_in_rock_sample_PHYSICIST_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_029_in_tree_sample_ASTROBIO_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\029_in_tree_sample\intro3_029_in_tree_sample_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_029_in_tree_sample_ASTROBIO_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\029_in_tree_sample\intro3_029_in_tree_sample_ASTROBIO_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_029_in_tree_sample_ASTROBIO_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\029_in_tree_sample\intro3_029_in_tree_sample_ASTROBIO_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_029_in_tree_sample_ASTROBIO_3
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\029_in_tree_sample\intro3_029_in_tree_sample_ASTROBIO_3.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_030_in_soil_sample_ASTROBIO_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\030_in_soil_sample\intro3_030_in_soil_sample_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_030_in_soil_sample_ASTROBIO_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\030_in_soil_sample\intro3_030_in_soil_sample_ASTROBIO_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_030_in_soil_sample_ASTROBIO_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\030_in_soil_sample\intro3_030_in_soil_sample_ASTROBIO_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_030_in_soil_sample_ASTROBIO_3
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\030_in_soil_sample\intro3_030_in_soil_sample_ASTROBIO_3.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_030_in_soil_sample_ASTROBIO_4
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\030_in_soil_sample\intro3_030_in_soil_sample_ASTROBIO_4.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_031_in_man_sample_start_ASTROBIO_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\031_in_man_sample_start\intro3_031_in_man_sample_start_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_031_in_man_sample_start_MAJOR_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\031_in_man_sample_start\intro3_031_in_man_sample_start_MAJOR_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_032_in_man_sample_ASTROBIO_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\032_in_man_sample\intro3_032_in_man_sample_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_032_in_man_sample_PHYSICIST_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\032_in_man_sample\intro3_032_in_man_sample_PHYSICIST_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_033_ta_laser_tested_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\033_ta_laser_tested\intro3_033_ta_laser_tested_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_033_ta_laser_tested_major_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\033_ta_laser_tested\intro3_033_ta_laser_tested_MAJOR_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_033_ta_laser_tested_major_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\033_ta_laser_tested\intro3_033_ta_laser_tested_MAJOR_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_033_ta_laser_tested_major_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\033_ta_laser_tested\intro3_033_ta_laser_tested_MAJOR_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_033_ta_laser_tested_major_3
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\033_ta_laser_tested\intro3_033_ta_laser_tested_MAJOR_3.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_033_ta_laser_tested_major_4
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\033_ta_laser_tested\intro3_033_ta_laser_tested_MAJOR_4.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_033_ta_laser_tested_major_5
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\033_ta_laser_tested\intro3_033_ta_laser_tested_MAJOR_5.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_033_ta_laser_tested_major_6
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\033_ta_laser_tested\intro3_033_ta_laser_tested_MAJOR_6.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_033_ta_laser_tested_player_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\033_ta_laser_tested\intro3_033_ta_laser_tested_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_034_ta_at_road_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\034_ta_at_road\intro3_034_ta_at_road_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_034_ta_at_road_astrobio_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\034_ta_at_road\intro3_034_ta_at_road_ASTROBIO_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_034_ta_at_road_major_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\034_ta_at_road\intro3_034_ta_at_road_MAJOR_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_034_ta_at_road_major_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\034_ta_at_road\intro3_034_ta_at_road_MAJOR_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_034_ta_at_road_major_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\034_ta_at_road\intro3_034_ta_at_road_MAJOR_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_034_ta_at_road_major_3
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\034_ta_at_road\intro3_034_ta_at_road_MAJOR_3.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_034_ta_at_road_major_4
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\034_ta_at_road\intro3_034_ta_at_road_MAJOR_4.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_034_ta_at_road_major_5
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\034_ta_at_road\intro3_034_ta_at_road_MAJOR_5.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_034_ta_at_road_major_6
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\034_ta_at_road\intro3_034_ta_at_road_MAJOR_6.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_034_ta_at_road_major_7
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\034_ta_at_road\intro3_034_ta_at_road_MAJOR_7.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_034_ta_at_road_physicist_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\034_ta_at_road\intro3_034_ta_at_road_PHYSICIST_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_034_ta_at_road_physicist_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\034_ta_at_road\intro3_034_ta_at_road_PHYSICIST_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_034_ta_at_road_physicist_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\034_ta_at_road\intro3_034_ta_at_road_PHYSICIST_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_034_ta_at_road_physicist_3
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\034_ta_at_road\intro3_034_ta_at_road_PHYSICIST_3.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_035_fil_emi_1_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\035_fil_emi_1\intro3_035_fil_emi_1_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_035_fil_emi_1_player_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\035_fil_emi_1\intro3_035_fil_emi_1_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_035_fil_emi_1_player_1
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\035_fil_emi_1\intro3_035_fil_emi_1_PLAYER_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_036_ta_anomaly_sample_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\036_ta_anomaly_sample\intro3_036_ta_anomaly_sample_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_036_ta_anomaly_sample_astrobio_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\036_ta_anomaly_sample\intro3_036_ta_anomaly_sample_ASTROBIO_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_036_ta_anomaly_sample_major_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\036_ta_anomaly_sample\intro3_036_ta_anomaly_sample_MAJOR_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_036_ta_anomaly_sample_major_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\036_ta_anomaly_sample\intro3_036_ta_anomaly_sample_MAJOR_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_036_ta_anomaly_sample_major_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\036_ta_anomaly_sample\intro3_036_ta_anomaly_sample_MAJOR_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_037_eve_in_anomalous_zone_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\037_eve_in_anomalous_zone\intro3_037_eve_in_anomalous_zone_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_037_eve_in_anomalous_zone_astrobio_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\037_eve_in_anomalous_zone\intro3_037_eve_in_anomalous_zone_ASTROBIO_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_037_eve_in_anomalous_zone_astrobio_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\037_eve_in_anomalous_zone\intro3_037_eve_in_anomalous_zone_ASTROBIO_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_037_eve_in_anomalous_zone_major_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\037_eve_in_anomalous_zone\intro3_037_eve_in_anomalous_zone_MAJOR_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_037_eve_in_anomalous_zone_physicist_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\037_eve_in_anomalous_zone\intro3_037_eve_in_anomalous_zone_PHYSICIST_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_037_eve_in_anomalous_zone_physicist_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\037_eve_in_anomalous_zone\intro3_037_eve_in_anomalous_zone_PHYSICIST_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_037_eve_in_anomalous_zone_physicist_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\037_eve_in_anomalous_zone\intro3_037_eve_in_anomalous_zone_PHYSICIST_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_037_eve_in_anomalous_zone_physicist_3
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\037_eve_in_anomalous_zone\intro3_037_eve_in_anomalous_zone_PHYSICIST_3.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_037_eve_in_anomalous_zone_player_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\037_eve_in_anomalous_zone\intro3_037_eve_in_anomalous_zone_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_038_ta_anomaly_sampled_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\038_ta_anomaly_sampled\intro3_038_ta_anomaly_sampled_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_038_ta_anomaly_sampled_astrobio_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\038_ta_anomaly_sampled\intro3_038_ta_anomaly_sampled_ASTROBIO_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_038_ta_anomaly_sampled_astrobio_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\038_ta_anomaly_sampled\intro3_038_ta_anomaly_sampled_ASTROBIO_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_038_ta_anomaly_sampled_astrobio_3
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\038_ta_anomaly_sampled\intro3_038_ta_anomaly_sampled_ASTROBIO_3.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_038_ta_anomaly_sampled_major_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\038_ta_anomaly_sampled\intro3_038_ta_anomaly_sampled_MAJOR_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_038_ta_anomaly_sampled_major_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\038_ta_anomaly_sampled\intro3_038_ta_anomaly_sampled_MAJOR_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_038_ta_anomaly_sampled_physicist_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\038_ta_anomaly_sampled\intro3_038_ta_anomaly_sampled_PHYSICIST_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_038_ta_anomaly_sampled_physicist_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\038_ta_anomaly_sampled\intro3_038_ta_anomaly_sampled_PHYSICIST_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_038_ta_anomaly_sampled_physicist_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\038_ta_anomaly_sampled\intro3_038_ta_anomaly_sampled_PHYSICIST_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_038_ta_anomaly_sampled_physicist_3
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\038_ta_anomaly_sampled\intro3_038_ta_anomaly_sampled_PHYSICIST_3.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_038_ta_anomaly_sampled_player_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\038_ta_anomaly_sampled\intro3_038_ta_anomaly_sampled_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_038_ta_anomaly_sampled_player_1
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\038_ta_anomaly_sampled\intro3_038_ta_anomaly_sampled_PLAYER_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_039_eve_looking_at_afo_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\039_eve_looking_at_afo\intro3_039_eve_looking_at_afo_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_039_eve_looking_at_afo_astrobio_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\039_eve_looking_at_afo\intro3_039_eve_looking_at_afo_ASTROBIO_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_039_eve_looking_at_afo_astrobio_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\039_eve_looking_at_afo\intro3_039_eve_looking_at_afo_ASTROBIO_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_039_eve_looking_at_afo_major_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\039_eve_looking_at_afo\intro3_039_eve_looking_at_afo_MAJOR_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_039_eve_looking_at_afo_physicist_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\039_eve_looking_at_afo\intro3_039_eve_looking_at_afo_PHYSICIST_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_039_eve_looking_at_afo_physicist_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\039_eve_looking_at_afo\intro3_039_eve_looking_at_afo_PHYSICIST_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_040_eve_matter_ball_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\040_eve_matter_ball\intro3_040_eve_matter_ball_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_040_eve_matter_ball_major_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\040_eve_matter_ball\intro3_040_eve_matter_ball_MAJOR_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_040_eve_matter_ball_major_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\040_eve_matter_ball\intro3_040_eve_matter_ball_MAJOR_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_040_eve_matter_ball_major_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\040_eve_matter_ball\intro3_040_eve_matter_ball_MAJOR_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_040_eve_matter_ball_physicist_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\040_eve_matter_ball\intro3_040_eve_matter_ball_PHYSICIST_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_040_eve_matter_ball_physicist_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\040_eve_matter_ball\intro3_040_eve_matter_ball_PHYSICIST_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_040_eve_matter_ball_physicist_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\040_eve_matter_ball\intro3_040_eve_matter_ball_PHYSICIST_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_040_eve_matter_ball_player_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\040_eve_matter_ball\intro3_040_eve_matter_ball_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_041_ta_matter_ball_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\041_ta_matter_ball\intro3_041_ta_matter_ball_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_041_ta_matter_ball_astrobio_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\041_ta_matter_ball\intro3_041_ta_matter_ball_ASTROBIO_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_041_ta_matter_ball_astrobio_2
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\041_ta_matter_ball\intro3_041_ta_matter_ball_ASTROBIO_2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_041_ta_matter_ball_astrobio_3
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\041_ta_matter_ball\intro3_041_ta_matter_ball_ASTROBIO_3.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_041_ta_matter_ball_astrobio_4
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\041_ta_matter_ball\intro3_041_ta_matter_ball_ASTROBIO_4.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_041_ta_matter_ball_physicist_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\041_ta_matter_ball\intro3_041_ta_matter_ball_PHYSICIST_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_041_ta_matter_ball_player_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\041_ta_matter_ball\intro3_041_ta_matter_ball_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_042_in_matter_ball_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\042_in_matter_ball\intro3_042_in_matter_ball_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_042_in_matter_ball_astrobio_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\042_in_matter_ball\intro3_042_in_matter_ball_ASTROBIO_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_043_ta_matter_ball_sampled_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\043_ta_matter_ball_sampled\intro3_043_ta_matter_ball_sampled_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_043_ta_matter_ball_sampled_player_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\043_ta_matter_ball_sampled\intro3_043_ta_matter_ball_sampled_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_044_ta_investigate_major_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\044_ta_investigate\intro3_044_ta_investigate_MAJOR_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_044_ta_investigate_player_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\044_ta_investigate\intro3_044_ta_investigate_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_045_eve_in_compound_major_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\045_eve_in_compound\intro3_045_eve_in_compound_MAJOR_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_045_eve_in_compound_player_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\045_eve_in_compound\intro3_045_eve_in_compound_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_046_fil_emi_2_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\046_fil_emi_2\intro3_046_fil_emi_2_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_046_fil_emi_2_major_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\046_fil_emi_2\intro3_046_fil_emi_2_MAJOR_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_046_fil_emi_2_player_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\046_fil_emi_2\intro3_046_fil_emi_2_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_093_ex_toppled_player_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\093_ex_toppled\intro3_093_ex_toppled_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_094_ex_toppled_bridge_major_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\094_ex_toppled_bridge\intro3_094_ex_toppled_bridge_MAJOR_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_094_ex_toppled_bridge_player_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\094_ex_toppled_bridge\intro3_094_ex_toppled_bridge_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_094_ex_toppled_bridge_player_1
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\094_ex_toppled_bridge\intro3_094_ex_toppled_bridge_PLAYER_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_095_ex_toppled_reset_1_major_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\095_ex_toppled_reset_1\intro3_095_ex_toppled_reset_1_MAJOR_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_096_ex_toppled_reset_2_player_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\096_ex_toppled_reset_2\intro3_096_ex_toppled_reset_2_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_097_ex_toppled_reset_3_player_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\097_ex_toppled_reset_3\intro3_097_ex_toppled_reset_3_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_098_ex_toppled_alone_player_0
+	{
+		sound[] = {"\a3\dubbing_f_contact\intro3\098_ex_toppled_alone\intro3_098_ex_toppled_alone_PLAYER_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_103_ex_leaving_ao_ugv_major_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\103_ex_leaving_ao_ugv\intro3_103_ex_leaving_ao_ugv_MAJOR_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_105_ex_left_ao_ugv_major_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\105_ex_left_ao_ugv\intro3_105_ex_left_ao_ugv_MAJOR_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_105_ex_left_ao_ugv_major_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\105_ex_left_ao_ugv\intro3_105_ex_left_ao_ugv_MAJOR_1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_109_ex_biosampler_astrobio_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\109_ex_biosampler\intro3_109_ex_biosampler_ASTROBIO_0.ogg", 1, 1};
+		titles[] = {};
+	};
+	class intro3_109_ex_biosampler_astrobio_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\LaptopConversation\intro3\109_ex_biosampler\intro3_109_ex_biosampler_ASTROBIO_1.ogg", 1, 1};
+		titles[] = {};
+	};
 	class Land_Carrier_01_blast_deflector_down_sound
 	{
 		duration = 5;
@@ -1736,6 +5606,46 @@ class CfgSounds
 		sound[] = {"A3\Sounds_F_Jets\vehicles\air\Shared\FX_Plane_Jet_tailhook_up", 1.41254, 1, 100};
 		titles[] = {};
 	};
+	class ProbeData_PickUp_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\ProbeData_PickUp_01", 1.9, 1};
+		titles[] = {};
+	};
+	class Puzzle_PrivateZone_Collision_High
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Puzzles\Puzzle_PrivateZone_Collision_High", 0.15, 1};
+		titles[] = {};
+	};
+	class Puzzle_PrivateZone_Collision_Low
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Puzzles\Puzzle_PrivateZone_Collision_Low", 0.15, 1};
+		titles[] = {};
+	};
+	class Q_Alien_RadioTower_Lights_On_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Q_Alien_RadioTower_Lights_On_01", 1, 1};
+		titles[] = {};
+	};
+	class Q_Alien_RadioTower_Lights_On_02
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Q_Alien_RadioTower_Lights_On_02", 1, 1};
+		titles[] = {};
+	};
+	class Q_Alien_RadioTower_Lights_On_03
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Q_Alien_RadioTower_Lights_On_03", 1, 1};
+		titles[] = {};
+	};
+	class Q_Alien_RadioTower_Lights_On_04
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Q_Alien_RadioTower_Lights_On_04", 1, 1};
+		titles[] = {};
+	};
+	class Q_Alien_RadioTower_Lights_On_05
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Q_Alien_RadioTower_Lights_On_05", 1, 1};
+		titles[] = {};
+	};
 	class radio_track_01
 	{
 		duration = 403;
@@ -1895,6 +5805,61 @@ class CfgSounds
 		sound[] = {"\a3\Ui_f\data\Sound\RscTitles\RscTilesGroup_Expand", 0.00177828, 1};
 		titles[] = {};
 	};
+	class Sa_Equip_01
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Arsenal\Spectrum_Analyser\UI_Interaction\Sa_Equip_01", 0.398107, 1, 15, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sa_Equip_Antenna_01
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Arsenal\Spectrum_Analyser\UI_Interaction\Sa_Equip_Antenna_01", 0.398107, 1, 15, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sa_Equip_Antenna_02
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Arsenal\Spectrum_Analyser\UI_Interaction\Sa_Equip_Antenna_02", 0.398107, 1, 15, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sa_Equip_UI_01
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Arsenal\Spectrum_Analyser\UI_Interaction\Sa_Equip_UI_01", 0.398107, 1, 15, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sa_Scan_Start_01
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Arsenal\Spectrum_Analyser\UI_Interaction\Sa_Scan_Start_01", 0.398107, 1, 15, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sa_Select_Arsenal_01
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Arsenal\Spectrum_Analyser\UI_Interaction\Sa_Select_Arsenal_01", 0.398107, 1, 15, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sa_Source_Bookmark_01
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Arsenal\Spectrum_Analyser\UI_Interaction\Sa_Source_Bookmark_01", 0.398107, 1, 15, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sa_Source_Bookmark_Existing_01
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Arsenal\Spectrum_Analyser\UI_Interaction\Sa_Source_Bookmark_Existing_01", 0.398107, 1, 15, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sa_UI_Appear_01
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Arsenal\Spectrum_Analyser\UI_Interaction\Sa_UI_Appear_01", 1, 1, 15, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sa_UI_Disappear_01
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Arsenal\Spectrum_Analyser\UI_Interaction\Sa_UI_Dissappear_01", 1, 1, 15, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sa_Unequip_01
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Arsenal\Spectrum_Analyser\UI_Interaction\Sa_Unequip_01", 0.398107, 1, 15, 1, 0, 0, 0};
+		titles[] = {};
+	};
 	class Scared_Animal1
 	{
 		sound[] = {"A3\Sounds_F\environment\animals\scared_animal1", 0.316228, 1};
@@ -1955,9 +5920,334 @@ class CfgSounds
 		sound[] = {"\a3\Ui_f\data\Sound\CfgNotifications\sectorLost", 1, 1};
 		titles[] = {};
 	};
+	class Sfx_Arrival
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Arrival", 1.75, 1};
+		titles[] = {};
+	};
+	class Sfx_BlackBox_DistressSignal_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_BlackBox_DistressSignal_01", 1.5, 1, 30, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sfx_BlueOnBlue_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Stingers\Stinger_BlueOnBlue_01", 1.75, 1};
+		titles[] = {};
+	};
+	class Sfx_Contact_Vision_01
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Contact_Vision_01", 0.707946, 1};
+		titles[] = {};
+	};
+	class Sfx_Contact_Vision_02
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Contact_Vision_02", 0.707946, 1};
+		titles[] = {};
+	};
+	class Sfx_Contact_Vision_03
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Contact_Vision_03", 0.707946, 1};
+		titles[] = {};
+	};
+	class Sfx_Contact_Vision_04
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Contact_Vision_04", 0.707946, 1};
+		titles[] = {};
+	};
+	class Sfx_Contact_Vision_05
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Contact_Vision_05", 0.707946, 1};
+		titles[] = {};
+	};
+	class Sfx_DieselGenerator_Start_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_DieselGenerator_Start_01", 1.75, 1};
+		titles[] = {};
+	};
+	class Sfx_DieselGenerator_Switch_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_DieselGenerator_Switch_01", 1.5, 1};
+		titles[] = {};
+	};
+	class Sfx_Engine_Dead_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_Engine_Dead_01", 1, 1};
+		titles[] = {};
+	};
+	class Sfx_Keyboard_Typing_Loop_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Keyboard_Typing_Loop_01", 1.5, 1, 15, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sfx_Laptop_ScreenSwap_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_Laptop_ScreenSwap_01", 1.5, 1, 10, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sfx_Laptop_Start_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_Laptop_Start_01", 1.5, 1, 10, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sfx_Light_Flicker_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Light_Flicker_01", 1, 1};
+		titles[] = {};
+	};
+	class Sfx_Light_Flicker_02
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Light_Flicker_02", 1, 1};
+		titles[] = {};
+	};
+	class Sfx_Light_Flicker_03
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Light_Flicker_03", 1, 1};
+		titles[] = {};
+	};
+	class Sfx_Light_Flicker_04
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Light_Flicker_04", 1, 1};
+		titles[] = {};
+	};
+	class Sfx_Light_Flicker_05
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Light_Flicker_05", 1, 1};
+		titles[] = {};
+	};
+	class Sfx_Light_Flicker_Short_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Light_Flicker_Short_01", 1, 1};
+		titles[] = {};
+	};
+	class Sfx_Light_Flicker_Short_02
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Light_Flicker_Short_02", 0.5, 1};
+		titles[] = {};
+	};
+	class Sfx_Light_Flicker_Short_03
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Light_Flicker_Short_03", 0.5, 1};
+		titles[] = {};
+	};
+	class Sfx_Light_Flicker_Short_04
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Light_Flicker_Short_04", 0.5, 1};
+		titles[] = {};
+	};
+	class Sfx_Light_Flicker_Short_05
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Light_Flicker_Short_05", 0.5, 1};
+		titles[] = {};
+	};
+	class Sfx_Light_Flicker_Short_06
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Light_Flicker_Short_06", 0.5, 1};
+		titles[] = {};
+	};
+	class Sfx_Light_Flicker_Short_07
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Light_Flicker_Short_07", 0.5, 1};
+		titles[] = {};
+	};
+	class Sfx_Light_Flicker_Short_08
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Light_Flicker_Short_08", 0.5, 1};
+		titles[] = {};
+	};
+	class Sfx_Light_Flicker_Short_09
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Light_Flicker_Short_09", 0.5, 1};
+		titles[] = {};
+	};
+	class Sfx_Map_PickUp
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_01\Sfx_Map_PickUp", 1, 1};
+		titles[] = {};
+	};
+	class Sfx_Mothership_Emp
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Mothership_Emp", 1.75, 1};
+		titles[] = {};
+	};
+	class Sfx_Outro3_SignalBurst_01
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Outro_03\Sfx_Outro3_SignalBurst_01", 0.9, 1};
+		titles[] = {};
+	};
+	class Sfx_Outro_02_Earthquake_01
+	{
+		sound[] = {"\a3\Sounds_F\environment\ambient\quakes\earthquake1", 0.2, 1};
+		titles[] = {};
+	};
+	class Sfx_Outro_02_Earthquake_02
+	{
+		sound[] = {"\a3\Sounds_F\environment\ambient\quakes\earthquake2", 0.2, 1};
+		titles[] = {};
+	};
+	class Sfx_Outro_02_Earthquake_03
+	{
+		sound[] = {"\a3\Sounds_F\environment\ambient\quakes\earthquake3", 0.2, 1};
+		titles[] = {};
+	};
+	class Sfx_Outro_02_Earthquake_04
+	{
+		sound[] = {"\a3\Sounds_F\environment\ambient\quakes\earthquake4", 0.2, 1};
+		titles[] = {};
+	};
+	class Sfx_Outro_02_Mothership_Warp_2D_01
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Outro_02\Sfx_Mothership_Warp_2D_01", 1.5, 1};
+		titles[] = {};
+	};
+	class Sfx_Player_Diary_Add_Paper_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_Player_Diary_Add_Paper_01", 1.5, 1};
+		titles[] = {};
+	};
+	class Sfx_ProbeCore_Destruction_2D_01
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Outro_02\Sfx_ProbeCore_Destruction_2D_01", 1.9, 1};
+		titles[] = {};
+	};
+	class Sfx_q_alien_radiotower_031_ta_alien_communication_completed_black_out_MENTOR_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Dialogue_Sfx\Sfx_q_alien_radiotower_031_ta_alien_communication_completed_black_out_MENTOR_1", 1.41254, 1};
+		titles[] = {};
+	};
+	class Sfx_q_alien_radiotower_031_ta_alien_communication_completed_black_out_SQUADLEADER_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Dialogue_Sfx\Sfx_q_alien_radiotower_031_ta_alien_communication_completed_black_out_SQUADLEADER_0", 1.41254, 1};
+		titles[] = {};
+	};
+	class Sfx_q_alien_radiotower_031_ta_alien_communication_completed_black_out_SQUADLEADER_1
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Dialogue_Sfx\Sfx_q_alien_radiotower_031_ta_alien_communication_completed_black_out_SQUADLEADER_1", 1.41254, 1};
+		titles[] = {};
+	};
+	class Sfx_q_alien_radiotower_032_ta_player_wake_up_briefing_russian_MENTOR_0
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Dialogue_Sfx\Sfx_q_alien_radiotower_032_ta_player_wake_up_briefing_russian_MENTOR_0", 1.41254, 1};
+		titles[] = {};
+	};
+	class Sfx_q_alien_radioTower_CarHorn_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_q_alien_radioTower_CarHorn_01", 1.5, 1, 75, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sfx_q_east_rtb_DoubleDoor_Lockdown_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_q_east_rtb_DoubleDoor_Lockdown_01", 2, 1, 30, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sfx_q_east_rtb_DoubleDoor_Unlock_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_q_east_rtb_DoubleDoor_Unlock_01", 1.7, 1, 30, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sfx_q_east_rtb_SingleDoor_Lockdown_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_q_east_rtb_SingleDoor_Lockdown_01", 2, 1, 30, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sfx_q_east_rtb_SingleDoor_Unlock_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_q_east_rtb_SingleDoor_Unlock_01", 1.7, 1, 30, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sfx_Rangefinder_Tap_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Rangefinder_Tap_01", 1, 1};
+		titles[] = {};
+	};
 	class Sfx_RuggedPhone_Ringing_01
 	{
 		sound[] = {"A3\Sounds_F_Enoch\Assets\Props\Sfx_RuggedPhone_Ringing_01", 0.9, 1, 20, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sfx_s_polana_00_Zipties_Untie_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_s_polana_00_Zipties_Untie_01", 1.5, 1, 30, 1, 0, 0, 0};
+		titles[] = {};
+	};
+	class Sfx_Shockvest_Impact_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Shockvest_Impact_02", 0.3, 1};
+		titles[] = {};
+	};
+	class Sfx_Stinger_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Stingers\Stinger_01", 1.75, 1};
+		titles[] = {};
+	};
+	class Sfx_Stinger_02
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Stingers\Stinger_02", 1.75, 1};
+		titles[] = {};
+	};
+	class Sfx_Terminal_Disabled_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_01\Sfx_Terminal_Disabled_01", 1, 1};
+		titles[] = {};
+	};
+	class Sfx_Transformer_Start_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Q_Alien_RadioTower_Transformer_Start_01", 1.75, 1};
+		titles[] = {};
+	};
+	class Sfx_Ugv_FailedConnection_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Sfx_Ugv_FailedConnection_01", 1.5, 1};
+		titles[] = {};
+	};
+	class Sfx_Ugv_Ui_Glitch_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Sfx_Ugv_Ui_Glitch_01", 1, 1};
+		titles[] = {};
+	};
+	class Sfx_Ugv_Ui_Glitch_02
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Sfx_Ugv_Ui_Glitch_02", 1, 1};
+		titles[] = {};
+	};
+	class Sfx_Ugv_Ui_Glitch_03
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Sfx_Ugv_Ui_Glitch_03", 1, 1};
+		titles[] = {};
+	};
+	class Sfx_Ugv_Ui_Glitch_04
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Sfx_Ugv_Ui_Glitch_04", 1, 1};
+		titles[] = {};
+	};
+	class Sfx_Ugv_Ui_Glitch_05
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Sfx_Ugv_Ui_Glitch_05", 1, 1};
+		titles[] = {};
+	};
+	class Sfx_Ugv_Ui_Static_01
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Sfx_Ugv_Ui_Static_01", 1, 1};
+		titles[] = {};
+	};
+	class Sfx_Ugv_Ui_Static_02
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Sfx_Ugv_Ui_Static_02", 1, 1};
+		titles[] = {};
+	};
+	class Sfx_Ugv_Ui_Static_03
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Sfx_Ugv_Ui_Static_03", 1, 1};
+		titles[] = {};
+	};
+	class Sfx_Ugv_Ui_Static_04
+	{
+		sound[] = {"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Sfx_Ugv_Ui_Static_04", 1, 1};
+		titles[] = {};
+	};
+	class Sfx_Vision_Start_01
+	{
+		sound[] = {"\A3\Sounds_F_Contact\Assets\Mission_Sfx\Global\Sfx_Vision_Start_01", 0.707946, 1};
 		titles[] = {};
 	};
 	class Sheep_Danger {};
@@ -3699,7 +7989,7 @@ class CfgSounds
 	class Worship
 	{
 		name = "Worship";
-		sound[] = {"\A3\Sounds_F\environment\structures\church\worship", 3.16228, 1};
+		sound[] = {"\A3\Sounds_F\environment\structures\church\worship", 1, 1};
 		titles[] = {};
 	};
 	class WoundedGuyA_01

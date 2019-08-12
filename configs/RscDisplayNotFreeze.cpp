@@ -1,10 +1,10 @@
 class RscDisplayNotFreeze: RscStandardDisplay
 {
 	idd = 105;
-	onLoad = "[""onLoad"",_this,""RscDisplayLoading"",'3DENDisplaysTemp'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
-	onUnload = "[""onUnload"",_this,""RscDisplayLoading"",'3DENDisplaysTemp'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+	onLoad = "[""onLoad"",_this,""RscDisplayLoading"",'ContactDisplaysTemp'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+	onUnload = "[""onUnload"",_this,""RscDisplayLoading"",'ContactDisplaysTemp'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
 	scriptName = "RscDisplayLoading";
-	scriptPath = "3DENDisplaysTemp";
+	scriptPath = "ContactDisplaysTemp";
 	class controls
 	{
 		class Disclaimer: RscControlsGroupNoScrollbars
@@ -65,7 +65,8 @@ class RscDisplayNotFreeze: RscStandardDisplay
 				{
 					h = "0.25 * safezoneH";
 					idc = 1200;
-					text = "\A3\Ui_f\data\Logos\arma3_splash_ca.paa";
+					onLoad = "";
+					text = "\a3\data_f_contact\logos\logoTitle_ca.paa";
 					w = "0.5 * safezoneW";
 					x = "0.25 * safezoneW";
 					y = "0.3125 * safezoneH";

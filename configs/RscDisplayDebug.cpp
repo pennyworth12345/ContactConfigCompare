@@ -58,18 +58,6 @@ class RscDisplayDebug
 			x = "1 * 					(		((safezoneW / safezoneH) min 1.2) / 32) + 		(safezoneX + (safezoneW - 				((safezoneW / safezoneH) min 1.2))/2)";
 			y = "18 * 					(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) + 		(safezoneY + safezoneH - 				(		((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class B_Clear: RscButtonMenu
-		{
-			default = 0;
-			h = 0;
-			idc = 151;
-			size = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-			sizeEx = 0.027;
-			text = "Clear";
-			w = 0;
-			x = -10;
-			y = -10;
-		};
 		class B_OK: RscButtonMenu
 		{
 			default = 1;
@@ -81,6 +69,41 @@ class RscDisplayDebug
 			w = "5 * 					(		((safezoneW / safezoneH) min 1.2) / 32)";
 			x = "26 * 					(		((safezoneW / safezoneH) min 1.2) / 32) + 		(safezoneX + (safezoneW - 				((safezoneW / safezoneH) min 1.2))/2)";
 			y = "18 * 					(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) + 		(safezoneY + safezoneH - 				(		((safezoneW / safezoneH) min 1.2) / 1.2))";
+		};
+		class ButtonAddAntennas: ButtonResetVars
+		{
+			onButtonClick = "[] call bin_fnc_diag_addAllSpectrumAnalyzers;";
+			onLoad = "if (isnull (finddisplay 46)) then {(_this # 0) ctrlenable false;};";
+			text = "Add Analyzers";
+			tooltip = "Add all spectrum analyzers and antennas";
+			y = "14 * 					(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) + 		(safezoneY + safezoneH - 				(		((safezoneW / safezoneH) min 1.2) / 1.2))";
+		};
+		class ButtonDebugVars: ButtonResetVars
+		{
+			onButtonClick = "'debug' call bin_fnc_persistentVariables;";
+			onLoad = "if (isnull (finddisplay 46)) then {(_this # 0) ctrlenable false;};";
+			text = "Copy Vars";
+			tooltip = "Copy the current state of persistent variables to clipboard";
+			y = "13 * 					(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) + 		(safezoneY + safezoneH - 				(		((safezoneW / safezoneH) min 1.2) / 1.2))";
+		};
+		class ButtonResetVars: RscButtonMenu
+		{
+			h = "0.9 * 					(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20)";
+			onButtonClick = "'reset' call bin_fnc_persistentVariables;";
+			onLoad = "";
+			text = "Reset Vars";
+			tooltip = "Reset campaign variables";
+			w = "7 * 					(		((safezoneW / safezoneH) min 1.2) / 32)";
+			x = "18.5 * 					(		((safezoneW / safezoneH) min 1.2) / 32) + 		(safezoneX + (safezoneW - 				((safezoneW / safezoneH) min 1.2))/2)";
+			y = "12 * 					(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) + 		(safezoneY + safezoneH - 				(		((safezoneW / safezoneH) min 1.2) / 1.2))";
+		};
+		class ButtonRevealAntennas: ButtonResetVars
+		{
+			onButtonClick = "[] call bin_fnc_diag_revealAllAntennas;";
+			onLoad = "if (isnull (finddisplay 46)) then {(_this # 0) ctrlenable false;};";
+			text = "Reveal Antennas";
+			tooltip = "Reveal all antennas in the world";
+			y = "15 * 					(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) + 		(safezoneY + safezoneH - 				(		((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
 		class ButtonScript1: RscButtonMenu
 		{
@@ -192,13 +215,45 @@ class RscDisplayDebug
 			x = "25.5 * 					(		((safezoneW / safezoneH) min 1.2) / 32) + 		(safezoneX + (safezoneW - 				((safezoneW / safezoneH) min 1.2))/2)";
 			y = "1 * 					(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) + safezoneY";
 		};
-		class FrameLog: RscFrame
+		class ContactDebug: RscListBox
 		{
 			h = "6 * 					(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20)";
-			idc = 12537;
+			idc = -1;
+			onLbDblClick = "				params ['_ctrl','_cursel'];				_data = _ctrl lbdata _cursel;				_value = !(uinamespace getvariable [_data,false]);				uinamespace setvariable [_data,_value];				_ctrl lbsetpicture [_cursel,['\a3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa','\a3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa'] select _value];			";
+			onLoad = "				params ['_ctrl','_cursel'];				for '_cursel' from 0 to (lbsize _ctrl - 1) do {					_value = uinamespace getvariable [_ctrl lbdata _cursel,false];					_ctrl lbsetpicture [_cursel,['\a3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa','\a3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa'] select _value];				};			";
+			sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+			w = "7 * 					(		((safezoneW / safezoneH) min 1.2) / 32)";
+			x = "11.5 * 					(		((safezoneW / safezoneH) min 1.2) / 32) + 		(safezoneX + (safezoneW - 				((safezoneW / safezoneH) min 1.2))/2)";
+			y = "12 * 					(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) + 		(safezoneY + safezoneH - 				(		((safezoneW / safezoneH) min 1.2) / 1.2))";
+			class Items
+			{
+				class DiagMap
+				{
+					data = "bin_diagMap";
+					text = "Simple Map";
+					tooltip = "Disables paper map effects, revealing the whole terrain.";
+				};
+				class DiagProbeMap
+				{
+					data = "bin_diagProbeMap";
+					text = "Probe Map";
+					tooltip = "Show probe network.";
+				};
+			};
+		};
+		class ContactTitle: RscText
+		{
+			colorBackground[] = {0, 0, 0, 1};
+			h = "1 * 					(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20)";
+			text = "CONTACT";
 			w = "14 * 					(		((safezoneW / safezoneH) min 1.2) / 32)";
 			x = "11.5 * 					(		((safezoneW / safezoneH) min 1.2) / 32) + 		(safezoneX + (safezoneW - 				((safezoneW / safezoneH) min 1.2))/2)";
-			y = "11.5 * 					(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) + 		(safezoneY + safezoneH - 				(		((safezoneW / safezoneH) min 1.2) / 1.2))";
+			y = "11 * 					(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) + 		(safezoneY + safezoneH - 				(		((safezoneW / safezoneH) min 1.2) / 1.2))";
+		};
+		class EventHandler: RscText
+		{
+			onLoad = "[missionnamespace,'debugConsoleOpened',[ctrlparent (_this # 0)]] call bis_fnc_callScriptedEventHandler;";
+			show = 0;
 		};
 		class G_Design: RscControlsGroup
 		{
@@ -644,24 +699,6 @@ class RscDisplayDebug
 					y = "5.5 * 					(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20)";
 				};
 			};
-		};
-		class ValueLog: RscListBox
-		{
-			h = "5.5 * 					(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20)";
-			idc = 103;
-			sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-			w = "14 * 					(		((safezoneW / safezoneH) min 1.2) / 32)";
-			x = "11.5 * 					(		((safezoneW / safezoneH) min 1.2) / 32) + 		(safezoneX + (safezoneW - 				((safezoneW / safezoneH) min 1.2))/2)";
-			y = "12 * 					(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) + 		(safezoneY + safezoneH - 				(		((safezoneW / safezoneH) min 1.2) / 1.2))";
-		};
-		class ValueLogFilter: RscEdit
-		{
-			h = "0.5 * 					(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20)";
-			idc = 152;
-			sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-			w = "14 * 					(		((safezoneW / safezoneH) min 1.2) / 32)";
-			x = "11.5 * 					(		((safezoneW / safezoneH) min 1.2) / 32) + 		(safezoneX + (safezoneW - 				((safezoneW / safezoneH) min 1.2))/2)";
-			y = "11.5 * 					(		(		((safezoneW / safezoneH) min 1.2) / 1.2) / 20) + 		(safezoneY + safezoneH - 				(		((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
 	};
 	class controlsBackground

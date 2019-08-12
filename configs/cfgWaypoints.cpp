@@ -28,12 +28,80 @@ class cfgWaypoints
 				};
 			};
 		};
+		class DroneMove
+		{
+			displayName = "ALIEN: MOVE";
+			file = "\A3\functions_f_contact\waypoints\fn_wpDroneMove.sqf";
+			icon = "\a3\UI_F_Contact\Data\CfgWaypoints\droneMove_ca.paa";
+			class Attributes
+			{
+				class CellSize
+				{
+					control = "Edit";
+					defaultValue = "[4,4,16]";
+					displayName = "Cell size - array";
+					expression = "[_this,_value,['A3','DroneMove'],'CellSize',2] call bin_fnc_wpAddScript;";
+					property = "CellSize";
+					typeName = "ARRAY";
+				};
+				class GenerateGrid
+				{
+					control = "Checkbox";
+					defaultValue = "false";
+					displayName = "Generate grid on first waypoint";
+					expression = "[_this,_value,['A3','DroneMove'],'GenerateGrid',1] call bin_fnc_wpAddScript;";
+					property = "GenerateGrid";
+					typeName = "BOOL";
+				};
+				class MovementType
+				{
+					control = "Edit";
+					defaultValue = "'drone'";
+					displayName = "Alien movement type";
+					expression = "[_this,_value,['A3','DroneMove'],'MovementType',0] call bin_fnc_wpAddScript;";
+					property = "MovementType";
+					typeName = "STRING";
+				};
+				class Resolution
+				{
+					control = "Edit";
+					defaultValue = "[20,20,3]";
+					displayName = "Resolution - array";
+					expression = "[_this,_value,['A3','DroneMove'],'Resolution',3] call bin_fnc_wpAddScript;";
+					property = "Resolution";
+					typeName = "ARRAY";
+				};
+			};
+		};
 		class Land
 		{
 			displayName = "LAND";
 			displayNameDebug = "Land";
 			file = "A3\functions_f\waypoints\fn_wpLand.sqf";
 			icon = "\a3\Ui_f\data\Map\MapControl\waypointeditor_CA.paa";
+		};
+		class MoveFast
+		{
+			displayName = "MOVE FAST";
+			file = "\A3\functions_f_contact\AI_Human\fn_wpMoveFast.sqf";
+			icon = "\a3\UI_F_Contact\Data\CfgWaypoints\moveFast_ca.paa";
+		};
+		class Patrol
+		{
+			displayName = "PATROL";
+			file = "\A3\functions_f_contact\AI_Human\fn_wpPatrol.sqf";
+			icon = "\a3\UI_F_Contact\Data\CfgWaypoints\patrol_ca.paa";
+			class Attributes
+			{
+				class Repeat
+				{
+					control = "Checkbox";
+					defaultValue = "false";
+					displayName = "Repeat";
+					expression = "_this setwaypointscript (waypointscript _this + "" "" + str _value);";
+					property = "Repeat";
+				};
+			};
 		};
 	};
 	class Default

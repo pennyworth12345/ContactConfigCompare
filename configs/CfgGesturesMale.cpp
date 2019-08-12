@@ -145,6 +145,15 @@ class CfgGesturesMale
 			mask = "handsWeapon";
 			speed = 0.4;
 		};
+		class GestureChangeAntenna: Default
+		{
+			file = "\a3\anims_f_contact\data\anim\sdr\cts\Common\Acts_Changing_Antenna.rtm";
+			looped = 0;
+			mask = "handsWeapon_pst";
+			showHandGun = 1;
+			speed = 0.4;
+			weaponIK = 0;
+		};
 		class GestureCover: Default
 		{
 			file = "a3\anims_f\data\anim\sdr\gst\gesturecover.rtm";

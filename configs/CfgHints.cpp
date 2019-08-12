@@ -58,6 +58,123 @@ class CfgHints
 			tip = "";
 		};
 	};
+	class CBRN
+	{
+		displayName = "CBRN";
+		logicalOrder = 24;
+		class BiopsySampling
+		{
+			arguments[] = {{{"optics"}}, {{"nextWeapon"}}, {{"defaultAction"}}, {"STR_A3_C_CfgHints_BiopsySampling_arg0"}};
+			description = "Mounted on the <t %5>ED-1E mini UGV</t> variant is a telescopic <t %5>biopsy probe</t>. %14%1%2Switch to the UGV's optics view using %11 for aiming.%1%2Select the tool using %12.%1%2Position the UGV and its arm into a suitable and unobstructed position.%1%2Use %13 for the probe lance to take its sample.";
+			displayName = "Biopsy Sampling";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\cbrn_ca.paa";
+			logicalOrder = 7;
+			tip = "Biopsy samples require very precise aim. The lance also has a small range, so check the HUD to learn whether you are in range of any surface.";
+			class Hint
+			{
+				arguments[] = {{{"optics"}}, {{"nextWeapon"}}, {{"defaultAction"}}, """"""};
+				description = "Mounted on the <t %5>ED-1E mini UGV</t> variant is a telescopic <t %5>biopsy probe</t>. %14%1%2Switch to the UGV's optics view using %11 for aiming.%1%2Select the tool using %12.%1%2Position the UGV and its arm into a suitable and unobstructed position.%1%2Use %13 for the probe lance to take its sample.";
+				displayName = "Biopsy Sampling";
+				image = "\a3\ui_f_contact\data\gui\cfg\hints\cbrn_ca.paa";
+				tip = "Biopsy samples require very precise aim. The lance also has a small range, so check the HUD to learn whether you are in range of any surface.";
+			};
+		};
+		class ChemicalDetector
+		{
+			arguments[] = {{{"watch"}}};
+			description = "Some hazards may be observed visibly, but others require specialized detectors to detect. The <t %5>chemical detector</t> samples air constantly and will sound an <t %5>audible warning</t> when a threat is detected.%1%2Hold or double-tap %11 to bring up an equipped detector.";
+			displayName = "Chemical Detector";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\chemical_detector_ca.paa";
+			logicalOrder = 2;
+			tip = "The audio alarm will sound even without looking at the detector.";
+		};
+		class LaserSampling
+		{
+			arguments[] = {{{"optics"}}, {{"nextWeapon"}}, {{"defaultAction"}}, {"STR_A3_C_CfgHints_LaserSampling_arg0"}};
+			description = "The <t %5>ED-1E mini UGV</t> variant features a <t %5>sampling laser</t>. %14%1%2Switch to the UGV's optics view using %11 for aiming.%1%2Select the tool using %12.%1%2Position the UGV and its arm into a suitable and unobstructed position.%1%2<t %5>Hold</t> %13 until a full sample sequence has completed. Do not move the instrument during this step!";
+			displayName = "Laser Sampling";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\laser_sampling_ca.paa";
+			logicalOrder = 6;
+			tip = "You can sample remotely, but your range is limited to just a few meters. The HUD will inform you of successful / failed results.";
+			class Hint
+			{
+				arguments[] = {{{"optics"}}, {{"nextWeapon"}}, {{"defaultAction"}}, """"""};
+				description = "The <t %5>ED-1E mini UGV</t> variant features a <t %5>sampling laser</t>. %14%1%2Switch to the UGV's optics view using %11 for aiming.%1%2Select the tool using %12.%1%2Position the UGV and its arm into a suitable and unobstructed position.%1%2<t %5>Hold</t> %13 until a full sample sequence has completed. Do not move the instrument during this step!";
+				displayName = "Laser Sampling";
+				image = "\a3\ui_f_contact\data\gui\cfg\hints\laser_sampling_ca.paa";
+				tip = "You can sample remotely, but your range is limited to just a few meters. The HUD will inform you of successful / failed results.";
+			};
+		};
+		class MiniUGV
+		{
+			arguments[] = {{"STR_A3_C_CfgHints_MiniUGV_arg0"}, {"STR_A3_C_CfgHints_MiniUGV_arg1"}};
+			description = "The ED-1D <t %5>mini UGV</t> is used for various field science tasks during your mission. %11%1%2Use the <t %5>Disassemble</t> action to pack it into a backpack, and the <t %5>Assemble</t> action to deploy it onto the ground for use.%1%2<t %5>Connections</t> to the UGV are <t %5>automatically established</t>. %12%1%2When assembled, use the action menu to <t %5>take remote control</t> of the UGV.%1%2When damaged, you may need to approach the UGV and use a hold action to <t %5>repair</t> it.";
+			displayName = "Mini UGV";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\mini_ugv_ca.paa";
+			logicalOrder = 3;
+			tip = "Don't forget your UGV, you will need it! Check the map for its position when deployed.";
+			class Hint
+			{
+				arguments[] = {"""""", """"""};
+				description = "The ED-1D <t %5>mini UGV</t> is used for various field science tasks during your mission. %11%1%2Use the <t %5>Disassemble</t> action to pack it into a backpack, and the <t %5>Assemble</t> action to deploy it onto the ground for use.%1%2<t %5>Connections</t> to the UGV are <t %5>automatically established</t>. %12%1%2When assembled, use the action menu to <t %5>take remote control</t> of the UGV.%1%2When damaged, you may need to approach the UGV and use a hold action to <t %5>repair</t> it.";
+				displayName = "Mini UGV";
+				image = "\a3\ui_f_contact\data\gui\cfg\hints\mini_ugv_ca.paa";
+				tip = "Don't forget your UGV, you will need it! Check the map for its position when deployed.";
+			};
+		};
+		class MiniUGVArm
+		{
+			arguments[] = {{{"zoomIn"}}, {{"zoomOut"}}, {{"nightVision"}}, {{"turretElevationUp"}}, {{"turretElevationDown"}}, {{"gunElevUp"}}, {{"gunElevDown"}}, {"STR_A3_C_CfgHints_MiniUGVArm_arg0"}, {"STR_A3_C_CfgHints_MiniUGVArm_arg1"}};
+			description = "The ED-1 <t %5>mini UGV</t> has a <t %5>flexible arm</t> and a suite of <t %5>special cameras</t> (front/rear-facing drive and arm). %18%1%2Use %11 and %12 to cycle cameras.%1%2Use %13 to toggle available vision modes.%1%2Use %14 and %15 to move the arm vertically.%1%2Use %16 and %17 to move the arm horizontally.%19";
+			displayName = "Mini UGV - Arm";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\mini_ugv_ca.paa";
+			logicalOrder = 4;
+			tip = "Skilled operators may flip a stuck UGV using its arm.";
+			class Hint
+			{
+				arguments[] = {{{"zoomIn"}}, {{"zoomOut"}}, {{"nightVision"}}, {{"turretElevationUp"}}, {{"turretElevationDown"}}, {{"gunElevUp"}}, {{"gunElevDown"}}, """""", {"STR_A3_C_CfgHints_MiniUGVArm_arg1"}};
+				description = "The ED-1 <t %5>mini UGV</t> has a <t %5>flexible arm</t> and a suite of <t %5>special cameras</t> (front/rear-facing drive and arm). %18%1%2Use %11 and %12 to cycle cameras.%1%2Use %13 to toggle available vision modes.%1%2Use %14 and %15 to move the arm vertically.%1%2Use %16 and %17 to move the arm horizontally.%19";
+				displayName = "Mini UGV - Arm";
+				image = "\a3\ui_f_contact\data\gui\cfg\hints\mini_ugv_ca.paa";
+				tip = "Skilled operators may flip a stuck UGV using its arm.";
+			};
+		};
+		class MiniUGVMove
+		{
+			arguments[] = {{{"carLeft"}}, {{"carRight"}}, {{"carForward"}}, {{"carBack"}}, {{"turbo"}}, {{"headlights"}}};
+			description = "The <t %5>mini UGV</t> can <t %5>move</t> over a multitude of terrain types, but take care or it may get flipped.%1%2Turn left and right using %11 and %12.%1%2Move forwards and backwards using %13 and %14.%1%2Speed up using %15.%1%2Enable special driving lights using the action menu, or the main arm light using %16.";
+			displayName = "Mini UGV - Movement";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\mini_ugv_ca.paa";
+			logicalOrder = 5;
+			tip = "Mind the position of the arm, as it may affect the UGV's balance. Stow it for longer travel.";
+		};
+		class Overview
+		{
+			arguments[] = {};
+			description = "<t %5>C</t>hemical, <t %5>B</t>iological, <t %5>R</t>adiological, and <t %5>N</t>uclear defense is protective measures in situations where such hazards may be present. Specifically biochemical threats may be encountered and prove damaging without protection.%1%1<t %5>P</t>ersonal <t %5>P</t>rotective <t %5>E</t>quipment (PPE), such as <t %5>A</t>ir <t %5>P</t>urifying <t %5>R</t>espirators (APR) and over-garments can provide limited protection. Especially for military personnel there is a balance between protection and tactical effectiveness. Reduced maneuverability and fatigue are common PPE burdens.";
+			displayName = "Overview";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\cbrn_ca.paa";
+			logicalOrder = 1;
+			tip = "Without proper decontamination, treating symptoms may not be enough.";
+			class Hint
+			{
+				arguments[] = {};
+				description = "<t %5>C</t>hemical, <t %5>B</t>iological, <t %5>R</t>adiological, and <t %5>N</t>uclear defense is protective measures in situations where such hazards may be present. Specifically biochemical threats may be encountered and prove damaging without protection.%1%1<t %5>P</t>ersonal <t %5>P</t>rotective <t %5>E</t>quipment (PPE), such as <t %5>A</t>ir <t %5>P</t>urifying <t %5>R</t>espirators (APR) and over-garments can provide limited protection. Especially for military personnel there is a balance between protection and tactical effectiveness. Reduced maneuverability and fatigue are common PPE burdens.";
+				displayName = "CBRN";
+				image = "\a3\ui_f_contact\data\gui\cfg\hints\cbrn_ca.paa";
+				tip = "Without proper decontamination, treating symptoms may not be enough.";
+			};
+		};
+		class ProbeMapping
+		{
+			arguments[] = {{{"showMap"}}, """<img size='1' shadow='0' image='A3\UI_F_Contact\Data\Common\RscMapCategories\categories_probe_ca' />"""};
+			description = "As of yet its workings are unknown, but the mysterious <t %5>measurement device</t> that was found appears to let us <t %5>map the underground alien structure</t>. It's been <t %5>mounted to the mini UGV</t> for power, and will <t %5>take readings on an interval</t>.%1%2Simply carry or drive the UGV anywhere you wish to map the underground network.%1%2Use %11 to open to topographic map.%1%2Switch to the special map using the toggle on the right of the screen %12.";
+			displayName = "Underground Mapping";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\cbrn_ca.paa";
+			logicalOrder = 8;
+			tip = "Colors indicate range to a positive measurement (red is close). Where nothing was detected, the map stays empty.";
+		};
+	};
 	class CombatantCodeOfConduct
 	{
 		category = "LOAC";
@@ -525,6 +642,81 @@ class CfgHints
 			tip = "You can also move close to the item and open the Inventory %12. The item will be listed on the left side of the Gear window under the label %3Ground%4.";
 		};
 	};
+	class Contact
+	{
+		displayName = "Contact";
+		logicalOrder = 26;
+		class DangerZones
+		{
+			arguments[] = {};
+			description = "Several missions in Contact divide the Area of Operations in so-called '<t %5>danger zones</t>'.%1%1Within these zones <t %5>special rules apply</t>:%1%2Manual saves are not available.%1%2Time acceleration is not available.";
+			displayName = "Danger Zones";
+			image = "\a3\data_f_contact\logos\icon_hint_ca.paa";
+			logicalOrder = 3;
+			tip = "Your progress is saved upon entering a danger zone. Be on your guard while inside!";
+		};
+		class ETComms1
+		{
+			arguments[] = {};
+			description = "Several attempts at <t %5>first contact</t> with the <t %5>extraterrestrial visitors</t> have been attempted. Sound and visible light did not seem effective, but <t %5>microwave transmissions</t> prompt a response.%1%1Some observations:%1%2ET does not appear to want us close by, yet we need to get <t %5>within range</t> for a good signal.%1%2ET is broadcasting multiple signals. We may try to <t %5>transmit</t> on the same frequencies. There could be a <t %5>pattern</t>.";
+			displayName = "First Contact";
+			image = "\a3\data_f_contact\logos\icon_hint_ca.paa";
+			logicalOrder = 5;
+			tip = "Our science staff has narrowed down the main frequency range ET is active on, and built an Experimental Antenna for the Spectrum Device to cover this bandwidth.";
+		};
+		class ETComms2
+		{
+			arguments[] = {{"STR_A3_C_CfgHints_ETComms2_arg0"}};
+			description = "Based on prior attempts at <t %5>communications</t> with <t %5>ET</t>, some more observations were made.%1%2For effective transmissions, we need to <t %5>position</t> ourselves <t %5>inside the anomaly zone</t>.%1%2Pushing too close to the ET entity seems to trigger a less friendly response.%1%2There is a main strong 'tracking' signal, but it does not appear related to comms.%1%2<t %5>Secondary data signals</t> get transmitted in a certain order; our best guess is to <t %5>transmit anything</t> on the <t %5>same frequencies</t> in response. In other cases we may discover a <t %5>pattern</t> in the signal strengths or sequential order.%11";
+			displayName = "First Contact - Clues";
+			image = "\a3\data_f_contact\logos\icon_hint_ca.paa";
+			logicalOrder = 6;
+			tip = "Our hope is to place the entity in a state that will let us approach it safely. Is this communication?";
+			class Hint
+			{
+				arguments[] = {""""""};
+				description = "Based on prior attempts at <t %5>communications</t> with <t %5>ET</t>, some more observations were made.%1%2For effective transmissions, we need to <t %5>position</t> ourselves <t %5>inside the anomaly zone</t>.%1%2Pushing too close to the ET entity seems to trigger a less friendly response.%1%2There is a main strong 'tracking' signal, but it does not appear related to comms.%1%2<t %5>Secondary data signals</t> get transmitted in a certain order; our best guess is to <t %5>transmit anything</t> on the <t %5>same frequencies</t> in response. In other cases we may discover a <t %5>pattern</t> in the signal strengths or sequential order.%11";
+				displayName = "First Contact - Clues";
+				image = "\a3\data_f_contact\logos\icon_hint_ca.paa";
+				tip = "Our hope is to place the entity in a state that will let us approach it safely. Is this communication?";
+			};
+		};
+		class Patrols
+		{
+			arguments[] = {{"STR_A3_C_CfgMods_Enoch_CB_LDF_name"}};
+			description = "There may be some chaos in the <t %5>%11</t>'s ranks after recent events, but they still do <t %5>patrol</t> the region. Fortunately the EMP has forced them to switch to an older form of radio comms, exploitable by us.%1%2Patrols may react to certain <t %5>distractions</t> and <t %5>Electronic Deception</t>.%1%2Use pings and position requests to <t %5>track patrols</t> using your <t %5>Spectrum Device</t> with Military Antenna.%1%2But if patrols sense trouble, they can call in <t %5>reinforcements</t>!";
+			displayName = "Patrols";
+			image = "\a3\data_f_contact\logos\icon_hint_ca.paa";
+			logicalOrder = 4;
+			tip = "It may be wiser to avoid patrols in many circumstances!";
+			class Hint
+			{
+				arguments[] = {{"STR_A3_C_CFGFACTIONCLASSES_IND_E_F0"}};
+				description = "There may be some chaos in the <t %5>%11</t>'s ranks after recent events, but they still do <t %5>patrol</t> the region. Fortunately the EMP has forced them to switch to an older form of radio comms, exploitable by us.%1%2Patrols may react to certain <t %5>distractions</t> and <t %5>Electronic Deception</t>.%1%2Use pings and position requests to <t %5>track patrols</t> using your <t %5>Spectrum Device</t> with Military Antenna.%1%2But if patrols sense trouble, they can call in <t %5>reinforcements</t>!";
+				displayName = "Patrols";
+				image = "\a3\data_f_contact\logos\icon_hint_ca.paa";
+				tip = "It may be wiser to avoid patrols in many circumstances!";
+			};
+		};
+		class Tasks
+		{
+			arguments[] = {{{"tasks"}}, {{"diary"}}, {{"showMap"}}, """<img size='1' shadow='0' image='A3\UI_F_Contact\Data\Common\RscMapTooltip\buttonTrack_track_ca' />""", """<img size='1' shadow='0' color='#ff8000' image='\a3\UI_F_Contact\Data\Common\RscHorizontalCompass\compass_currentTask_ca' />"""};
+			description = "<t %5>Tasks</t> in Contact work slightly differently than the Arma 3 main game. Primarily they are not visualized in the 3D world.%1%2Use %11 to quickly remind yourself of the active task.%1%2Use %12 to bring up the full task listing. Click the task title to assign another available task.%1%2View the topographic map using %13 to look for any known task locations. You can also open the task listing here.";
+			displayName = "Tasks";
+			image = "\a3\ui_f\data\gui\cfg\hints\Tasks_ca.paa";
+			logicalOrder = 1;
+			tip = "The Spectrum Device's display has a horizontal compass that will point out the active task %15.";
+		};
+		class TasksAreas
+		{
+			arguments[] = {"""<img size='1' shadow='0' color='#ff8000' image='\a3\UI_F_Contact\Data\Common\RscHorizontalCompass\compass_currentTask_ca' />""", """<img size='1' shadow='0' color='#ff8000' image='\a3\UI_F_Contact\Data\Common\RscHorizontalCompass\compass_currentTaskIn_ca' />"""};
+			description = "Some <t %5>tasks</t> do not point to a specific position, but rather indicate an <t %5>area</t> (like a search zone).%1%2While <t %5>outside</t> the area, you are pointed towards it (e.g. on your Spectrum Device's compass %11).%1%2Once <t %5>inside</t> the area, the task indication changes %12, and you will need to <t %5>search</t> for the task's objective.";
+			displayName = "Tasks - Areas";
+			image = "\a3\ui_f\data\gui\cfg\hints\Tasks_ca.paa";
+			logicalOrder = 2;
+			tip = "Task areas are also visualized as such on your topographic map; its center icon is not necessarily your objective!";
+		};
+	};
 	class Curator
 	{
 		displayName = "Zeus";
@@ -933,6 +1125,239 @@ class CfgHints
 			description = "You can now %3compete%4 with your friends in the game's %3Firing Drill%4 and %3Time Trial Challenges%4. These modes will log your best competitive times onto <a href='http://steamcommunity.com/stats/107410/leaderboards/'>Steam Leaderboards</a>. Compare your performance to your own friends or the best competitors in the world!";
 			displayName = "Steam Leaderboards";
 			logicalOrder = 7;
+		};
+	};
+	class ElectronicWarfare
+	{
+		displayName = "Electronic Warfare";
+		logicalOrder = 25;
+		class DroneHacking
+		{
+			arguments[] = {{{"nextWeapon"}}, {{"defaultAction"}}, {"STR_A3_C_CFGCONTACT_SIGNALS_EM_SEND_HACK_01"}, """433.76"""};
+			description = "In some cases it may be possible to spoof <t %5>drone</t> access and <t %5>alter its routines</t>. Some of these routines may prove dangerous!%1%2Jam the drone by transmitting noise at its frequency (%14 MHz) using the Spectrum Device (Experimental antenna).%1%2Carefully get <t %5>close enough</t> for the drone to be able to receive your spoofing signal.%1%2<t %5>Hold</t> %11 and select the %13 signal.%1%2Precisely aim the device at the drone antenna.%1%2<t %5>Hold</t> %12 until the signal is fully sent.";
+			displayName = "Drone Hacking";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\ew_ca.paa";
+			logicalOrder = 20;
+			tip = "A successful hack will switch off the drone's lights, while blinking lights indicate you are not yet within range to spoof.";
+		};
+		class DroneInterference
+		{
+			arguments[] = {};
+			description = "There are several methods of <t %5>interfering</t> with autonomous <t %5>drones</t>.%1%2<t %5>Jamming</t>: use a Spectrum Device with appropriate antenna attached to send a strong signal on its frequency band. This forces it into default behavior, such as landing or stopping movement and weapons fire.%1%2<t %5>Hacking</t>: at a very close range, use a special Spectrum Device signal to spoof access and mess with its routines (caution - may prove dangerous).%1%2<t %5>Disabling</t>: physically approach a drone, and use a hold action to permanently disable it.";
+			displayName = "Drone Interference";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\ew_ca.paa";
+			logicalOrder = 19;
+			tip = "Jamming is not permanent; its effects last for as long as you transmit or a little while longer.";
+		};
+		class EDHandshakes
+		{
+			arguments[] = {{{"nextWeapon"}}, {{"defaultAction"}}, {"STR_A3_C_CFGCONTACT_SIGNALSELECTION_BASE"}, {"STR_A3_C_CFGCONTACT_SIGNALSELECTION_SQUAD"}};
+			description = "After learning a squad's callsign, you need to perform a '<t %5>handshake</t>' for further deception.%1%2With the Spectrum Device equipped, <t %5>hold</t> %11 to open the signal selection menu.%1%2Select either the %13 or %14 category, depending on who you wish to impersonate.%1%2Select the correct handshake signal, based on the callsign you will spoof.%1%2Transmit the handshake by aiming at the target and <t %5>holding</t> %12 until the signal has fully played.%1%2You will receive a positive response from the target if the deception was successful.";
+			displayName = "ED - Handshakes";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\ew_ca.paa";
+			logicalOrder = 17;
+			tip = "Make sure the party you are impersonating do not hear your signals, or they may impose radio silence, preventing further deception!";
+		};
+		class EDOrders
+		{
+			arguments[] = {{{"nextWeapon"}}, {{"defaultAction"}}, {"STR_A3_C_CfgHints_EDOrders_arg0"}, {"STR_A3_C_CFGCONTACT_SIGNALS_EM_HQ_POSREP"}};
+			description = "Having successfully performed a <t %5>handshake</t> with a <t %5>callsign</t> (such as a squad), you can now try to send <t %5>fake orders</t>.%1%2<t %5>Hold</t> %11 to open the Spectrum Device's signal selection menu, and select the order of choice.%1%2Move orders will send a squad in a certain direction. They may not comply when a squad is in combat or is ordered out of their AO.%1%2%14 will reveal a squad's exact and real-time map position for a while.%13%1%2Aim at the callsign target and transmit the order by <t %5>holding</t> %12 (fully send it!).";
+			displayName = "ED - Orders";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\ew_ca.paa";
+			logicalOrder = 18;
+			tip = "Squads will typically return to their original behavior after a while, or if their radio operator finds out they have been deceived.";
+			class Hint
+			{
+				arguments[] = {{{"nextWeapon"}}, {{"defaultAction"}}, """"""};
+				description = "Having successfully performed a <t %5>handshake</t> with a <t %5>callsign</t> (such as a squad), you can now try to send <t %5>fake orders</t>.%1%2<t %5>Hold</t> %11 to open the Spectrum Device's signal selection menu, and select the order of choice.%1%2Move orders will send a squad in a certain direction. They may not comply when a squad is in combat or is ordered out of their AO.%1%2%14 will reveal a squad's exact and real-time map position for a while.%13%1%2Aim at the callsign target and transmit the order by <t %5>holding</t> %12 (fully send it!).";
+				displayName = "ED - Orders";
+				image = "\a3\ui_f_contact\data\gui\cfg\hints\ew_ca.paa";
+				tip = "Squads will typically return to their original behavior after a while, or if their radio operator finds out they have been deceived.";
+			};
+		};
+		class EDPings
+		{
+			arguments[] = {{{"prevAction"}}, {{"nextAction"}}, {{"nextWeapon"}}, {{"defaultAction"}}, {"STR_A3_C_CFGCONTACT_SIGNALS_EM_PINGREQUEST"}, {"STR_A3_C_CFGCONTACT_SIGNALSELECTION_DEFAULT"}};
+			description = "<t %5>Squads</t> in the field will automatically send out <t %5>pings</t> at intervals or when <t %5>requested</t>. Ping signals can be scanned to identify <t %5>callsigns</t> (from the meta data) and positions.%1%2Point the Spectrum Device with Military Antenna in the direction of a possible squad.%1%2Select the squad's suspected frequency band using %11 and %12.%1%2Scan, identify, and tag the squad's auto-ping.%1%2Or select the %15 signal by <t %5>holding</t> %13 and picking it in the %16 category.%1%2Transmit the request by keeping aim on the squad and <t %5>holding</t> %14.";
+			displayName = "ED - Pings";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\ew_ca.paa";
+			logicalOrder = 16;
+			tip = "Try to identify the person carrying a radio pack in a squad; they are your best target. You may also overhear a callsign during comms.";
+		};
+		class ElectronicDeception
+		{
+			arguments[] = {"""<img size='1' color='#ff0000' shadow='0' image='\a3\UI_F_Contact\Data\Common\RscHorizontalCompass\compass_hq_ca' />"""};
+			description = "Certain factions have had to switch to older radio comms, so you can use the <t %5>Spectrum Device</t> with <t %5>Military Antenna</t> to <t %5>deceive</t> them. <t %5>Electronic Deception (ED)</t> is achieved by impersonating callsigns and transmitting fake orders.%1%2This works on patrolling <t %5>squads</t> and <t %5>HQ</t> (marked %11 on the device's compass).%1%2Successful deception requires awareness of the <t %5>correct callsigns</t>, or it may lead to HQ-imposed radio silence.%1%2It's also important to consider the <t %5>location and direction</t> of involved parties.";
+			displayName = "Electronic Deception (ED)";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\ew_ca.paa";
+			logicalOrder = 15;
+			tip = "If you want to impersonate HQ, make sure a target squad is not placed between yourself and said HQ. They would both receive your signals and become alerted to your ruse.";
+		};
+		class Intel
+		{
+			arguments[] = {{{"showMap"}}, """<img size='1' shadow='0' image='\a3\UI_F_Contact\Data\RscMapControl\Draw\antenna2_ca.paa' />"""};
+			description = "Information about <t %5>discovered antennas</t> is noted down on your <t %5>map</t> %11.%1%2<t %5>Precision</t>: a scanned antenna is indicated by an area whose precision depends on signal distance.%1%2<t %5>Triangulation</t>: take multiple scans of an antenna, from different directions and closer ranges, to pinpoint a signal's exact origin %12.%1%2<t %5>Identification</t>: fully scanned antennas may show an identifying label.%1%2<t %5>Decay</t>: antennas scanned some time ago are more faded; this data may no longer be accurate!";
+			displayName = "Map Signal Intel";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\ew_ca.paa";
+			logicalOrder = 13;
+			tip = "Via an antenna's icon tooltip, you open the special spectrum map for another view on the electromagnetic spectrum.";
+		};
+		class Jamming
+		{
+			arguments[] = {{{"defaultAction"}}};
+			description = "A <t %5>Spectrum Device</t> with <t %5>Jammer Antenna</t> can only receive signals and transmit noise on a <t %5>fixed frequency</t>. It's used to detect or interfere with autonomous drones.%1%2Aim the device directly at a drone antenna for the best quality.%1%2Keep focus for a while to scan and tag its signal.%1%2<t %5>Hold</t> %11 to send interfering noise.";
+			displayName = "Jamming Signals";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\ew_ca.paa";
+			logicalOrder = 11;
+			tip = "Jamming prevents a drone from receiving new instructions, typically placing it into an autonomous default behavior mode.";
+		};
+		class Overview
+		{
+			arguments[] = {};
+			description = "In <t %5>Electronic Warfare (EW)</t> the <t %5>electromagnetic spectrum</t> is controlled to attack or otherwise impede enemies. Similarly, utilization of this spectrum can be used for less offensive goals, such as <t %5>scientific field study</t> and <t %5>communications</t>.%1%2<t %5>Receiving</t>: locating, identifying, listening to, and recording signals%1%2<t %5>Transmitting</t>: jamming, sending data, radar detecting, and direct energy damaging%1%2<t %5>Blocking</t>: signal path distorting";
+			displayName = "Overview";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\ew_ca.paa";
+			logicalOrder = 1;
+			tip = "A range of frequencies of electromagnetic radiation make up the electromagnetic spectrum.";
+			class Hint
+			{
+				arguments[] = {};
+				description = "In <t %5>Electronic Warfare (EW)</t> the <t %5>electromagnetic spectrum</t> is controlled to attack or otherwise impede enemies. Similarly, utilization of this spectrum can be used for less offensive goals, such as <t %5>scientific field study</t> and <t %5>communications</t>.%1%2<t %5>Receiving</t>: locating, identifying, listening to, and recording signals%1%2<t %5>Transmitting</t>: jamming, sending data, radar detecting, and direct energy damaging%1%2<t %5>Blocking</t>: signal path distorting";
+				displayName = "Electronic Warfare";
+				image = "\a3\ui_f_contact\data\gui\cfg\hints\ew_ca.paa";
+				tip = "A range of frequencies of electromagnetic radiation make up the electromagnetic spectrum.";
+			};
+		};
+		class Passive
+		{
+			arguments[] = {};
+			description = "Carried with you at all times is an <t %5>omnidirectional antenna</t> that <t %5>passively and automatically monitors</t> a broad range of the electromagnetic spectrum for <t %5>signals</t>.%1%1You will be <t %5>notified</t> when there is newly discovered signal activity on any detectable frequency. If the signal was previously scanned, its identifier is shown.";
+			displayName = "Passive Monitoring";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\ew_ca.paa";
+			logicalOrder = 12;
+			tip = "When signal activity is detected, consider using your Spectrum Device for further study. You may uncover useful intelligence!";
+		};
+		class Receiving
+		{
+			arguments[] = {{{"optics"}}, {{"prevAction"}}, {{"nextAction"}}, "['ZeroingDown', 1] call BIN_fnc_getFormattedControl", "['ZeroingUp', 1] call BIN_fnc_getFormattedControl"};
+			description = "Equipping the <t %5>Spectrum Device</t> will <t %5>automatically receive signals</t> within its antenna's capabilities. It will <t %5>play</t> an audio interpretation of any <t %5>signal</t> on the <t %5>selected frequency band</t>.%1%2Use %11 to view the device's detailed display mode.%1%2Use %12 and %13 to select the frequency band.%1%2Or use %14 and %15 to jump between active signals.%1%2Aim the device directly at a signal source for the best quality.%1%2Keep focus for a while to scan, identify, and tag a signal.";
+			displayName = "Receiving Signals";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\receiving_signal_ca.paa";
+			logicalOrder = 8;
+			tip = "Many factors can affect signal quality, including hills and trees.";
+		};
+		class SDAntennas
+		{
+			arguments[] = {{{"reloadMagazine"}}, """<img size='1.5' shadow='0' image='A3\Weapons_F_Contact\Pistols\ESD_01\data\ui\gear_muzzle_antenna_01_ca' />""", """<img size='1.5' shadow='0' image='A3\Weapons_F_Contact\Pistols\ESD_01\data\ui\gear_muzzle_antenna_02_ca' />""", """<img size='1.5' shadow='0' image='A3\Weapons_F_Contact\Pistols\ESD_01\data\ui\gear_muzzle_antenna_03_ca' />""", """"""};
+			description = "The <t %5>Spectrum Device</t> can be mounted with <t %5>different directional antennas</t>. These can receive / transmit signals on <t %5>varying frequency ranges (bandwidths)</t>. To <t %5>swap</t> antennas, use %11%15.%1%%12 <t %5>Military Antenna</t>: used for manipulation of military communications.%1%%13 <t %5>Experimental Antenna</t>: used for unconventional interactions, as well as for jamming some drones.%1%%14 <t %5>Jammer Antenna</t>: used only for drone interference.";
+			displayName = "SD - Antennas";
+			image = "\a3\data_f_contact\logos\icon_hint_ca.paa";
+			logicalOrder = 7;
+			tip = "The device stores several properties, such as the selected transmission signal and frequency band, per antenna.";
+			class Hint
+			{
+				arguments[] = {{{"reloadMagazine"}}};
+				description = "To quickly <t %5>swap</t> antennas, use %11 while the Spectrum Device is equipped.";
+				displayName = "SD - Antennas";
+				image = "\a3\data_f_contact\logos\icon_hint_ca.paa";
+				tip = "The device stores several properties, such as the selected transmission signal and frequency band, per antenna.";
+			};
+			class HintCampaign
+			{
+				arguments[] = {{{"reloadMagazine"}}, """<img size='1.5' shadow='0' image='A3\Weapons_F_Contact\Pistols\ESD_01\data\ui\gear_muzzle_antenna_01_ca' />""", """<img size='1.5' shadow='0' image='A3\Weapons_F_Contact\Pistols\ESD_01\data\ui\gear_muzzle_antenna_02_ca' />""", """<img size='1.5' shadow='0' image='A3\Weapons_F_Contact\Pistols\ESD_01\data\ui\gear_muzzle_antenna_03_ca' />""", """"""};
+				description = "The <t %5>Spectrum Device</t> can be mounted with <t %5>different directional antennas</t>. These can receive / transmit signals on <t %5>varying frequency ranges (bandwidths)</t>. To <t %5>swap</t> antennas, use %11%15.%1%%12 <t %5>Military Antenna</t>: used for manipulation of military communications.%1%%13 <t %5>Experimental Antenna</t>: used for unconventional interactions, as well as for jamming some drones.%1%%14 <t %5>Jammer Antenna</t>: used only for drone interference.";
+				displayName = "SD - Antennas";
+				image = "\a3\data_f_contact\logos\icon_hint_ca.paa";
+				tip = "The device stores several properties, such as the selected transmission signal and frequency band, per antenna.";
+			};
+		};
+		class SDDisplay
+		{
+			arguments[] = {{{"optics"}}, """<img size='1' shadow='0' color='#ff8000' image='\a3\UI_F_Contact\Data\Common\RscHorizontalCompass\compass_currentTask_ca' />""", """<img size='1' shadow='0' color='#ffffff' image='\a3\UI_F_Contact\Data\Common\RscHorizontalCompass\compass_customMark_ca' />""", """<img size='1' shadow='0' color='#ff0000' image='\a3\UI_F_Contact\Data\Common\RscHorizontalCompass\compass_hq_ca' />"""};
+			description = "On the <t %5>Spectrum Device</t> grip there is a small <t %5>multi-function display</t> with integrated <t %5>spectrum analyzer</t>. You see the basic mode by default, but can switch to detailed mode using %11.%1%2<t %5>Basic</t>: selected frequency band, signal strength, reception or transmission status, and compass%1%2<t %5>Detailed</t>: full antenna bandwidth, selected frequency band, signal strengths, selected transmission signal, reception / transmission status, and compass (with active task %12 / custom waypoint %13 / HQ %14 indicators)";
+			displayName = "SD - Display";
+			image = "\a3\data_f_contact\logos\icon_hint_ca.paa";
+			logicalOrder = 6;
+			tip = "The Jammer Antenna has a fixed frequency and detailed mode is not available with it attached.";
+		};
+		class SDEquipping
+		{
+			arguments[] = {{{"gear"}}, {{"switchHandgun"}}, {{"handgun"}}, """<img size='1' shadow='0' image='A3\Ui_f\data\IGUI\Cfg\Actions\take_ca' />""", """<img size='2' shadow='0' image='A3\Weapons_F_Contact\Pistols\ESD_01\data\ui\gear_ESD_01_CA' />""", """"""};
+			description = "Equip the <t %5>Spectrum Device</t> like a <t %5>sidearm</t>.%1%15%1%2Use the %14 action to directly pick it up, or drag it into the desired slot via the inventory menu %11.%16%1%2You don't need to manage depletable resources like batteries.%1%2Use %12 to directly switch to the equipped device.%1%2Use %13 to switch between it and a primary weapon.";
+			displayName = "SD - Equipping";
+			image = "\a3\data_f_contact\logos\icon_hint_ca.paa";
+			logicalOrder = 5;
+			tip = "You cannot have an actual sidearm equipped at the same time, so use your primary weapon for defense instead.";
+			class HintCampaign
+			{
+				arguments[] = {{{"gear"}}, {{"switchHandgun"}}, {{"handgun"}}, """<img size='1' shadow='0' image='A3\Ui_f\data\IGUI\Cfg\Actions\take_ca' />""", """<img size='2' shadow='0' image='A3\Weapons_F_Contact\Pistols\ESD_01\data\ui\gear_ESD_01_CA' />""", """"""};
+				description = "Equip the <t %5>Spectrum Device</t> like a <t %5>sidearm</t>.%1%15%1%2Use the %14 action to directly pick it up, or drag it into the desired slot via the inventory menu %11.%16%1%2You don't need to manage depletable resources like batteries.%1%2Use %12 to directly switch to the equipped device.%1%2Use %13 to switch between it and a primary weapon.";
+				displayName = "SD - Equipping";
+				image = "\a3\data_f_contact\logos\icon_hint_ca.paa";
+				tip = "You cannot have an actual sidearm equipped at the same time, so use your primary weapon for defense instead.";
+			};
+		};
+		class Selecting
+		{
+			arguments[] = {{{"nextWeapon"}}, {"STR_A3_C_CFGCONTACT_SIGNALSELECTION_DEFAULT"}, {"STR_A3_C_CFGCONTACT_SIGNALSELECTION_BASE"}, {"STR_A3_C_CFGCONTACT_SIGNALSELECTION_SQUAD"}};
+			description = "By default your <t %5>Spectrum Device</t> will transmit indistinct digital noise, but you can also <t %5>select and transmit</t> special-purpose <t %5>signals</t>.%1%2With the device in your hands, <t %5>hold</t> %11 to show the selection menu.%1%2Select the signal category of your choice (%12, %13, or %14).%1%2Select the desired signal.";
+			displayName = "Selecting Signals";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\selecting_signal_ca.paa";
+			logicalOrder = 10;
+			tip = "The selected signal is shown on the device's display. This selection is stored per attached antenna.";
+		};
+		class SignalStrength
+		{
+			arguments[] = {};
+			description = "Various factors can influence <t %5>signal quality</t> in the electromagnetic spectrum (the 'link budget').%1%1<t %5>Receivers / Transmitters</t>:%1%2<t %5>Position</t>: higher places provide better 'line of sight' and fewer obstructions%1%2<t %5>Power</t>: stronger signals are easier to receive%1%2<t %5>Antenna</t>: frequencies affect data and quality, gain controls effectiveness, and direction can matter too%1%1<t %5>Path</t>:%1%2<t %5>Distance</t>: signal strength deteriorates with range%1%2<t %5>Environment</t>: obstructions like hills and vegetation can weaken signals%1%2<t %5>Weather</t>: rain can weaken signal strength at higher frequencies (hard to observe)";
+			displayName = "Signal Strength";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\signal_strength_ca.paa";
+			logicalOrder = 3;
+			tip = "Lost track of a signal? Try to reach an elevated position without object obstruction.";
+			class Hint
+			{
+				arguments[] = {};
+				description = "Various factors can influence <t %5>signal quality</t> in the electromagnetic spectrum (the 'link budget').%1%2<t %5>Receivers / Transmitters</t>: position (elevated, good 'line of sight', no obstructions), power, antenna (frequency range, gain, direction)%1%2<t %5>Path</t>: distance, environment (obstructions like hills and vegetation)";
+				displayName = "Signal Strength";
+				image = "\a3\ui_f_contact\data\gui\cfg\hints\signal_strength_ca.paa";
+				tip = "Lost track of a signal? Try to reach an elevated position without object obstruction.";
+			};
+		};
+		class Spectrum
+		{
+			arguments[] = {};
+			description = "The <t %5>electromagnetic spectrum</t> is the <t %5>range of frequencies</t> of <t %5>electromagnetic radiation</t> with their wavelengths and photon energies.%1%1Common <t %5>frequency bands</t>:%1%2<t %5>Radio waves</t>: communications, astronomical objects, etc.%1%2<t %5>Microwaves</t>: radar, cell phones, satellites, quick meals, etc.%1%2<t %5>Infrared</t>: thermal vision, targeting systems, etc.%1%2<t %5>Visible light</t>: anything we humans can see%1%2<t %5>Ultraviolet</t>: tanning lamps, black lights, etc.%1%2<t %5>X-rays</t>: radiology, etc.%1%2<t %5>Gamma rays</t>: nuclear decay, cosmic events, etc.";
+			displayName = "Electromagnetic Spectrum";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\ew_ca.paa";
+			logicalOrder = 2;
+			tip = "Waves in each band have different characteristics, interactions with matter, sources, and applications.";
+		};
+		class SpectrumDevice
+		{
+			arguments[] = {{{"switchHandgun"}}, {{"optics"}}, {{"reloadMagazine"}}, {{"headlights"}}};
+			description = "The <t %5>Spectrum Device</t> uses the <t %5>sidearm slot</t>. It allows for the <t %5>reception</t> and <t %5>transmission</t> of electromagnetic <t %5>signals</t>. There are several functional components:%1%2<t %5>Grip</t>: the main shared body (%11 to select).%1%2<t %5>Screen</t>: switch analyzer detail modes (%12 to switch)%1%2<t %5>Antennas</t>: attach to operate within different frequency ranges (%13 to swap).%1%2<t %5>Flashlight</t>: use the device in the dark (%14 to toggle).";
+			displayName = "Spectrum Device (SD)";
+			image = "\a3\data_f_contact\logos\icon_hint_ca.paa";
+			logicalOrder = 4;
+			tip = "Pick the right antenna for the job! You will not receive all signals on a single antenna.";
+		};
+		class SpectrumMap
+		{
+			arguments[] = {{{"showMap"}}, {{"zoomIn"}}, {{"zoomOut"}}, """<img size='1' shadow='0' image='A3\UI_F_Contact\Data\Common\RscMapCategories\categories_spectrum_ca' />""", """<img size='1' shadow='0' image='A3\UI_F_Contact\Data\Common\RscMapCategories\categories_spectrum_ca' />"""};
+			description = "A special <t %5>spectrum map</t> is available to provide a different 2D view on the <t %5>broad electromagnetic spectrum</t>. It shows major frequency bands and common types of usage, as well as <t %5>frequencies and antennas</t> you have discovered.%1%2Use %11 to open the topographic map.%1%2Switch to the spectrum map using the toggle on the right of the screen %14.%1%2Control zoom using %12 and %13.";
+			displayName = "Spectrum Map";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\ew_ca.paa";
+			logicalOrder = 14;
+			tip = "By clicking on an antenna's %15 icon in a frequency's tooltip, you can locate it on the topographic map.";
+		};
+		class Transmitting
+		{
+			arguments[] = {{{"prevAction"}}, {{"nextAction"}}, {{"defaultAction"}}};
+			description = "An equipped <t %5>Spectrum Device</t> can <t %5>transmit signals</t> on the <t %5>selected frequency band</t> (e.g. noise or a message).%1%2Use %11 and %12 to select the frequency band.%1%2Aim the transceiver directly at an antenna for successful reception.%1%2<t %5>Hold</t> %13 to fully send the selected signal.";
+			displayName = "Transmitting Signals";
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\transmitting_signal_ca.paa";
+			logicalOrder = 9;
+			tip = "Jamming is simply sending a signal at a frequency which you want to deny someone from using effectively.";
 		};
 	};
 	class ExplosivesList
@@ -2450,6 +2875,15 @@ class CfgHints
 			image = "\A3\Ui_f\data\GUI\Cfg\Hints\arma3_bundle_icon_hint.paa";
 			logicalOrder = 2;
 			tip = "";
+		};
+		class PremiumContact
+		{
+			arguments[] = {"""<img size='9' shadow='0' image='A3\Data_F_Contact\Images\contact_fm_overview_co' />"""};
+			description = "The Arma 3 Contact expansion is a military science fiction experience about humanity's first encounter with extraterrestrial intelligence on Earth. The alien motivations being unknown, you will use field science and combat reconnaissance to uncover their technologies and determine their intentions. Amid the tension and chaos, authentic armed conflict inevitably unfolds.%1%11%1%2""First Contact"" - you are a member of a NATO deployment to a remote region of Livonia, presented with a mysterious event that will change the face of human history forever.%1%2Extraterrestrials - meet visitors from outer space, bringing their own technology, vessels, scientific instruments, and defensive measures%1%2Electronic Warfare - control the electromagnetic spectrum to locate, study, deceive, and ultimately defeat your enemies%1%2Field Science - use various tools, such as a mini UGV sampling laser and CBRN defense equipment, to study strange alien anomalies%1%2Spectrum Device - wield this advanced modern tool and its range of antennas for Electronic Deception, navigation, and intelligence gathering";
+			displayName = "Contact Expansion";
+			image = "\a3\data_f_contact\logos\icon_hint_ca.paa";
+			logicalOrder = 11;
+			tip = "Usage of the premium content is limited for the non-owners.";
 		};
 		class PremiumDefine
 		{
@@ -4307,6 +4741,17 @@ class CfgHints
 			logicalOrder = 4;
 			tip = "";
 			weapon = "srifle_DMR_07_hex_F";
+		};
+		class ESD_01
+		{
+			arguments[] = {{"STR_A3_C_CFGWEAPONS_HGUN_ESD_01_F0"}, {"STR_A3_C_CfgMods_Contact_CB_SpectrumDevice_desc"}};
+			description = "%12";
+			displayName = "%11";
+			dlc = 1.02179e+006;
+			image = "\a3\ui_f_contact\data\gui\cfg\hints\esd_01_ca.paa";
+			logicalOrder = 27;
+			tip = "";
+			weapon = "hgun_esd_01_F";
 		};
 		class FlareGun
 		{

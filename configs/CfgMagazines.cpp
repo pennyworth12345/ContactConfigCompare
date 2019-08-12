@@ -209,6 +209,22 @@ class CfgMagazines
 		hiddenSelectionsTextures[] = {"\A3\Weapons_F_EPB\Rifles\MX_Black\Data\XMX_lmg_Black_co.paa"};
 		picture = "\a3\Weapons_F\MagazineProxies\data\UI\icon_100Rnd_65x39_caseless_black_mag_tracer_CA.paa";
 	};
+	class 100Rnd_65x39_caseless_blank_mag: 30Rnd_65x39_caseless_mag
+	{
+		ammo = "B_BlankRound_caseless";
+		author = "Bohemia Interactive";
+		count = 100;
+		descriptionShort = "Blank round";
+		displayName = "6.5 mm 100Rnd Blank Mag";
+		displayNameShort = "Blank";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"\a3\Weapons_F_Contact\MagazineProxies\data\MX_magazines_blank_CO.paa"};
+		initSpeed = 1000;
+		lastRoundsTracer = 0;
+		modelSpecial = "a3\Weapons_F_Contact\MagazineProxies\mag_65x39c_mx_blank_100rnd.p3d";
+		picture = "\a3\Weapons_F_Contact\MagazineProxies\data\UI\icon_100Rnd_65x39_caseless_blank_mag_CA.paa";
+		tracersEvery = 0;
+	};
 	class 100Rnd_65x39_caseless_khaki_mag: 100Rnd_65x39_caseless_mag
 	{
 		author = "Bohemia Interactive";
@@ -1256,6 +1272,18 @@ class CfgMagazines
 		mass = 50;
 		picture = "\A3\Weapons_F\Data\UI\M_200Rnd_65x39_CA.paa";
 	};
+	class 200Rnd_65x39_cased_box_blank: 200Rnd_65x39_cased_Box
+	{
+		ammo = "B_BlankRound_caseless";
+		author = "Bohemia Interactive";
+		descriptionShort = "Blank round";
+		displayName = "6.5 mm 200Rnd Blank Belt";
+		displayNameShort = "Blank";
+		initSpeed = 1000;
+		lastRoundsTracer = 0;
+		picture = "\a3\Weapons_F_Contact\MagazineProxies\data\UI\icon_200Rnd_65x39_cased_box_blank_CA.paa";
+		tracersEvery = 0;
+	};
 	class 200Rnd_65x39_cased_Box_Red: 100Rnd_65x39_caseless_mag
 	{
 		ammo = "B_65x39_Caseless";
@@ -1919,9 +1947,69 @@ class CfgMagazines
 		scope = 2;
 		tracersEvery = 4;
 	};
+	class 300Rnd_AntiMissile_Magazine: CM_Base_Magazine
+	{
+		ammo = "CM_AntiMissile_Ammo";
+		displayName = "Hardkill";
+		displayNameShort = "Hardkill";
+	};
 	class 300Rnd_CMFlare_Chaff_Magazine: 60Rnd_CMFlare_Chaff_Magazine
 	{
 		count = 300;
+	};
+	class 300Rnd_Decoy_Magazine: CM_Base_Magazine
+	{
+		ammo = "CM_Decoy_Ammo";
+		displayName = "Decoy";
+		displayNameShort = "Decoy";
+		initSpeed = 40;
+	};
+	class 300Rnd_GravityBurst_Magazine: CM_Base_Magazine
+	{
+		ammo = "CM_GravityBurst_Ammo";
+		displayName = "Gravity Burst";
+		displayNameShort = "Gravity Burst";
+		initSpeed = 10;
+	};
+	class 300Rnd_GrenadeDefence_Magazine: CM_Base_Magazine
+	{
+		ammo = "CM_GrenadeDefence_Ammo";
+		displayName = "Gravity Burst";
+		displayNameShort = "Gravity Burst";
+		initSpeed = 10;
+	};
+	class 300Rnd_Light_Fake_Magazine: CM_Base_Magazine
+	{
+		ammo = "CM_Light_Fake_Ammo";
+		displayName = "Light";
+		displayNameShort = "Light";
+		initSpeed = 40;
+	};
+	class 300Rnd_Light_Magazine: CM_Base_Magazine
+	{
+		ammo = "CM_Light_Ammo";
+		displayName = "Light";
+		displayNameShort = "Light";
+		initSpeed = 40;
+	};
+	class 300Rnd_Refract_Magazine: CM_Base_Magazine
+	{
+		ammo = "CM_Refract_Ammo";
+		displayName = "Refract";
+		displayNameShort = "Refract";
+		initSpeed = 20;
+	};
+	class 300Rnd_Universal_Magazine: CM_Base_Magazine
+	{
+		ammo = "CM_Universal_Ammo";
+		displayName = "Universal";
+		displayNameShort = "Universal";
+	};
+	class 300Rnd_Visual_Magazine: CM_Base_Magazine
+	{
+		ammo = "CM_Visual_Ammo";
+		displayName = "Visual";
+		displayNameShort = "Visual";
 	};
 	class 30Rnd_120mm_APFSDS_shells: 30Rnd_120mm_HE_shells
 	{
@@ -2090,6 +2178,17 @@ class CfgMagazines
 		scope = 2;
 		tracersEvery = 0;
 	};
+	class 30Rnd_556x45_Stanag_Blank: 30Rnd_556x45_Stanag
+	{
+		ammo = "B_BlankRound";
+		author = "Bohemia Interactive";
+		descriptionShort = "Blank round";
+		displayName = "Blank round magazine";
+		displayNameShort = "Blank";
+		initSpeed = 1000;
+		lastRoundsTracer = 0;
+		tracersEvery = 0;
+	};
 	class 30Rnd_556x45_Stanag_green: 30Rnd_556x45_Stanag
 	{
 		ammo = "B_556x45_Ball_Tracer_Green";
@@ -2223,6 +2322,21 @@ class CfgMagazines
 		hiddenSelectionsTextures[] = {"\A3\Weapons_F_EPB\Rifles\MX_Black\Data\XMX_Base_Black_co.paa"};
 		picture = "\a3\Weapons_F\MagazineProxies\data\UI\icon_30Rnd_65x39_caseless_black_mag_Tracer_CA.paa";
 	};
+	class 30Rnd_65x39_caseless_blank_mag: 30Rnd_65x39_caseless_mag
+	{
+		ammo = "B_BlankRound_caseless";
+		author = "Bohemia Interactive";
+		descriptionShort = "Blank round";
+		displayName = "6.5 mm 30Rnd Blank Mag";
+		displayNameShort = "Blank";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"\a3\Weapons_F_Contact\MagazineProxies\data\MX_magazines_blank_CO.paa"};
+		initSpeed = 1000;
+		lastRoundsTracer = 0;
+		modelSpecial = "a3\Weapons_F_Contact\MagazineProxies\mag_65x39c_mx_blank_30rnd.p3d";
+		picture = "\a3\Weapons_F_Contact\MagazineProxies\data\UI\icon_30Rnd_65x39_caseless_blank_mag_CA.paa";
+		tracersEvery = 0;
+	};
 	class 30Rnd_65x39_caseless_green: 30Rnd_65x39_caseless_mag
 	{
 		ammo = "B_65x39_Caseless_green";
@@ -2230,6 +2344,18 @@ class CfgMagazines
 		descriptionShort = "Caliber: 6.5x39 mm - Caseless<br />Rounds: 30<br />Used in: Katiba, Type 115";
 		displayName = "6.5 mm 30Rnd Caseless Mag";
 		picture = "\A3\weapons_f\data\ui\m_20stanag_CA.paa";
+	};
+	class 30Rnd_65x39_caseless_green_blank_mag: 30Rnd_65x39_caseless_green
+	{
+		ammo = "B_BlankRound_caseless";
+		author = "Bohemia Interactive";
+		descriptionShort = "Blank round";
+		displayName = "6.5 mm 30Rnd Blank Mag";
+		displayNameShort = "Blank";
+		initSpeed = 1000;
+		lastRoundsTracer = 0;
+		picture = "\a3\Weapons_F_Contact\MagazineProxies\data\UI\icon_30Rnd_65x39_caseless_green_blank_mag_CA.paa";
+		tracersEvery = 0;
 	};
 	class 30Rnd_65x39_caseless_green_mag_Tracer: 30Rnd_65x39_caseless_green
 	{
@@ -2282,6 +2408,19 @@ class CfgMagazines
 		lastRoundsTracer = 30;
 		picture = "\A3\weapons_f\data\ui\m_30stanag_caseless_red_CA.paa";
 		tracersEvery = 1;
+	};
+	class 30Rnd_65x39_caseless_msbs_blank_mag: 30Rnd_65x39_caseless_mag
+	{
+		ammo = "B_BlankRound_caseless";
+		author = "Bohemia Interactive";
+		descriptionShort = "Blank round";
+		displayName = "6.5 mm 30Rnd Promet Blank Mag";
+		displayNameShort = "Blank";
+		initSpeed = 1000;
+		lastRoundsTracer = 0;
+		modelSpecial = "a3\Weapons_F_Contact\MagazineProxies\mag_65x39c_msbs_blank_30rnd.p3d";
+		picture = "\a3\Weapons_F_Contact\MagazineProxies\data\UI\icon_30Rnd_65x39_caseless_msbs_blank_mag_CA.paa";
+		tracersEvery = 0;
 	};
 	class 30Rnd_65x39_caseless_msbs_mag: 30Rnd_65x39_caseless_mag
 	{
@@ -3536,6 +3675,36 @@ class CfgMagazines
 		lastRoundsTracer = 0;
 		mass = 6;
 	};
+	class Alien_Magazine_Base: CA_Magazine
+	{
+		allowedSlots[] = {801, 701, 901};
+		count = 999;
+		initSpeed = 900;
+		mass = 1;
+	};
+	class AlienBeam_01_Base_Mag: Alien_Magazine_Base
+	{
+		initSpeed = 3300;
+		tracersEvery = 0;
+	};
+	class AlienBeam_01_Mag: AlienBeam_01_Base_Mag
+	{
+		ammo = "AlienBeam_01_Ammo_F";
+		displayName = "Beam";
+		displayNameShort = "Beam";
+	};
+	class AlienDrone_01_Sounds_DummyMagazine: Dummy_Magazine_Base
+	{
+		ammo = "AlienDrone_01_Sounds_DummyAmmo";
+		initSpeed = 11;
+		muzzleImpulseFactor[] = {0, 0};
+	};
+	class AlienDrone_02_Sounds_DummyMagazine: AlienDrone_01_Sounds_DummyMagazine {};
+	class AlienDrone_03_Sounds_DummyMagazine: AlienDrone_01_Sounds_DummyMagazine {};
+	class AlienDrone_04_Sounds_DummyMagazine: AlienDrone_01_Sounds_DummyMagazine {};
+	class AlienDrone_05_Sounds_DummyMagazine: AlienDrone_01_Sounds_DummyMagazine {};
+	class AlienDrone_06_Sounds_DummyMagazine: AlienDrone_01_Sounds_DummyMagazine {};
+	class AlienDrone_07_Sounds_DummyMagazine: AlienDrone_01_Sounds_DummyMagazine {};
 	class APERSBoundingMine_Range_Mag: ATMine_Range_Mag
 	{
 		allowedSlots[] = {901, 701};
@@ -3744,6 +3913,10 @@ class CfgMagazines
 			libTextDesc = "A Claymore fragmentation charge is one of the deadliest anti-personnel charges available. On a timed or remote-triggered detonation, the Claymore sends deadly steel balls in a frontal direction. Effective kill radius is up to 50 meters. Unlike dug-in mines the Claymore is placed on the ground and is easier to spot.";
 		};
 	};
+	class CM_Base_Magazine: Alien_Magazine_Base
+	{
+		initSpeed = 100;
+	};
 	class Default
 	{
 		ammo = "";
@@ -3790,6 +3963,249 @@ class CfgMagazines
 		{
 			libTextDesc = "An explosive charge is placeable on the ground. It could be set to detonate either by the built-in timer or a remote detonator.";
 		};
+	};
+	class Dummy_Magazine_Base: CA_Magazine
+	{
+		allowedSlots[] = {801, 701, 901};
+		ammo = "Default";
+		count = 9999;
+		initSpeed = 1;
+		mass = 0;
+		scope = 1;
+	};
+	class ESD_01_DummyMagazine_1: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_10: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_100: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_101: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_102: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_103: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_104: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_105: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_106: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_107: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_108: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_109: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_11: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_110: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_111: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_112: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_113: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_114: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_115: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_116: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_117: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_118: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_119: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_12: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_120: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_121: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_122: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_123: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_124: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_125: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_126: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_127: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_128: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_129: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_13: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_130: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_131: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_132: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_133: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_134: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_135: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_136: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_137: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_138: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_139: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_14: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_140: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_141: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_142: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_143: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_144: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_145: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_146: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_147: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_148: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_149: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_15: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_150: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_151: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_152: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_153: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_154: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_155: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_156: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_157: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_158: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_159: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_16: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_160: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_161: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_162: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_163: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_164: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_165: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_166: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_167: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_168: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_169: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_17: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_170: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_171: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_172: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_173: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_174: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_175: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_176: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_177: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_178: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_179: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_18: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_180: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_181: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_182: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_183: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_184: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_185: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_186: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_187: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_188: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_189: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_19: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_190: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_191: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_192: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_193: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_194: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_195: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_196: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_197: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_198: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_199: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_2: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_20: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_200: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_201: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_202: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_203: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_204: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_205: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_206: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_207: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_208: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_209: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_21: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_210: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_211: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_212: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_213: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_214: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_215: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_216: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_217: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_218: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_219: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_22: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_220: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_221: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_222: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_223: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_224: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_225: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_226: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_227: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_228: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_229: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_23: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_230: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_24: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_25: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_26: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_27: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_28: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_29: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_3: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_30: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_31: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_32: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_33: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_34: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_35: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_36: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_37: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_38: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_39: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_4: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_40: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_41: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_42: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_43: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_44: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_45: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_46: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_47: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_48: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_49: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_5: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_50: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_51: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_52: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_53: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_54: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_55: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_56: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_57: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_58: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_59: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_6: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_60: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_61: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_62: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_63: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_64: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_65: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_66: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_67: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_68: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_69: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_7: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_70: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_71: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_72: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_73: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_74: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_75: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_76: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_77: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_78: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_79: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_8: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_80: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_81: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_82: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_83: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_84: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_85: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_86: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_87: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_88: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_89: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_9: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_90: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_91: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_92: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_93: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_94: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_95: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_96: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_97: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_98: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_99: ESD_01_DummyMagazine_base {};
+	class ESD_01_DummyMagazine_base: Dummy_Magazine_Base
+	{
+		mass = 0;
 	};
 	class FakeMagazine: Default
 	{
@@ -3843,6 +4259,44 @@ class CfgMagazines
 		displayNameShort = "Yellow Flare";
 		model = "\A3\weapons_f\ammo\flare_yellow";
 		picture = "\A3\Weapons_F\Data\UI\gear_flare_yellow_ca.paa";
+	};
+	class GravityCannon_01_AIMagazine: GravityCannon_01_Base_Magazine
+	{
+		ammo = "GravityCannon_Projectile_01_AI_F";
+		initSpeed = 300;
+		maxLeadSpeed = 9999;
+		muzzleImpulseFactor[] = {0, 0};
+	};
+	class GravityCannon_01_Base_Magazine: CA_Magazine
+	{
+		count = 999;
+		initSpeed = 900;
+		mass = 1;
+		maxLeadSpeed = 1e+010;
+	};
+	class GravityCannon_01_DummyMagazine: GravityCannon_01_Base_Magazine
+	{
+		ammo = "Default";
+		count = 9999;
+		initSpeed = 1;
+		scope = 1;
+	};
+	class GravityCannon_01_Magazine: GravityCannon_01_Base_Magazine
+	{
+		ammo = "GravityCannon_Projectile_01_F";
+		displayName = "Gravity cannon";
+		displayNameShort = "Gravity cannon";
+		initSpeed = 300;
+		maxLeadSpeed = 9999;
+		muzzleImpulseFactor[] = {0, 0};
+	};
+	class GravityShotgun_01_Magazine: GravityCannon_01_Base_Magazine
+	{
+		ammo = "GravityCannon_SmallProjectile_01_F";
+		displayName = "Gravity shotgun";
+		displayNameShort = "Gravity shotgun";
+		initSpeed = 300;
+		muzzleImpulseFactor[] = {0, 0};
 	};
 	class HandGrenade: CA_Magazine
 	{
@@ -9829,6 +10283,16 @@ class CfgMagazines
 		muzzleImpulseFactor[] = {0, 0};
 		picture = "\a3\Weapons_F_Tank\Launchers\Vorona\Data\UI\icon_rocket_vorona_HEAT_F_ca.paa";
 		type = "6 * 		256";
+	};
+	class SwarmMissile_01_mag: CA_Magazine
+	{
+		ammo = "SwarmMissile_01_Ammo_F";
+		count = 999;
+		hardpoints[] = {"EXTRATERRESTRIAL_UNIVERSAL_PYLON"};
+		initSpeed = 0;
+		initSpeedY = 20;
+		mass = 1;
+		pylonWeapon = "SwarmMissile_01_launcher_F";
 	};
 	class Titan_AA: CA_LauncherMagazine
 	{

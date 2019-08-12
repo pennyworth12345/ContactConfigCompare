@@ -176,6 +176,7 @@ class RscDisplayCamera
 		{
 			h = "0.8 * safezoneH";
 			idc = 3141;
+			onLoad = "(_this # 0) call bin_fnc_debugDrawMapInit;";
 			w = "0.8 * safezoneW";
 			x = -10;
 			y = -10;

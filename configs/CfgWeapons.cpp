@@ -1,6 +1,59 @@
 class CfgWeapons
 {
 	access = 1;
+	class acc_esd_01_flashlight: ItemCore
+	{
+		_generalMacro = "acc_esd_01_flashlight";
+		author = "Bohemia Interactive";
+		descriptionShort = "Weapon mounted light.";
+		descriptionUse = "<t color='#9cf953'>Use: </t>Turn Flashlight ON/OFF";
+		displayName = "SD Flashlight";
+		inertia = 0.1;
+		model = "\a3\Weapons_F_Contact\Acc\accv_esd_01_flashlight_F";
+		picture = "\a3\Weapons_F_Contact\Acc\Data\UI\gear_acc_esd_01_flashlight_CA.paa";
+		scope = 2;
+		class ItemInfo: InventoryFlashLightItem_Base_F
+		{
+			mass = 3;
+			class FlashLight
+			{
+				ambient[] = {0.9, 0.81, 0.7};
+				color[] = {180, 160, 130};
+				coneFadeCoef = 8;
+				dayLight = 0;
+				direction = "flash";
+				flareMaxDistance = 100;
+				flareSize = 1.4;
+				innerAngle = 5;
+				intensity = 100;
+				outerAngle = 100;
+				position = "flash dir";
+				scale[] = {0};
+				size = 1;
+				useFlare = 1;
+				class Attenuation
+				{
+					constant = 0.5;
+					hardLimitEnd = 34;
+					hardLimitStart = 27;
+					linear = 0.1;
+					quadratic = 0.2;
+					start = 0;
+				};
+			};
+		};
+	};
+	class acc_esd_01_flashlight_broken: acc_esd_01_flashlight
+	{
+		_generalMacro = "acc_esd_01_flashlight";
+		author = "Bohemia Interactive";
+		scope = 1;
+		class ItemInfo: ItemInfo
+		{
+			class FlashLight {};
+			class Pointer {};
+		};
+	};
 	class acc_flashlight: ItemCore
 	{
 		_generalMacro = "acc_flashlight";
@@ -41,6 +94,18 @@ class CfgWeapons
 					start = 0;
 				};
 			};
+		};
+	};
+	class acc_flashlight_broken: acc_flashlight
+	{
+		_generalMacro = "acc_flashlight_broken";
+		author = "Bohemia Interactive";
+		displayName = "Flashlight (Defunct)";
+		scope = 1;
+		class ItemInfo: ItemInfo
+		{
+			class FlashLight {};
+			class Pointer {};
 		};
 	};
 	class acc_flashlight_pistol: ItemCore
@@ -113,6 +178,147 @@ class CfgWeapons
 				irDistance = 5;
 				irLaserEnd = "laser dir";
 				irLaserPos = "laser pos";
+			};
+		};
+	};
+	class acc_pointer_IR_broken: acc_pointer_IR
+	{
+		_generalMacro = "acc_pointer_IR_broken";
+		author = "Bohemia Interactive";
+		displayName = "IR Laser Pointer (Defunct)";
+		scope = 1;
+		class ItemInfo: ItemInfo
+		{
+			class FlashLight {};
+			class Pointer {};
+		};
+	};
+	class AlienBeam_01_base_f: LMG_RCWS
+	{
+		aiDispersionCoefX = 1;
+		aiDispersionCoefY = 1;
+		displayName = "Beam";
+		magazines[] = {"AlienBeam_01_Mag", "AlienBeam_01_fire_mag", "AlienBeam_01_fast_mag"};
+		modes[] = {"Burst", "Autofire"};
+		class Autofire: Burst
+		{
+			autofire = 1;
+		};
+		class Burst: LMG_RCWS
+		{
+			aiRateOfFire = 0.1;
+			aiRateOfFireDispersion = 5;
+			aiRateOfFireDistance = 3500;
+			autofire = 0;
+			burst = 10;
+			burstRangeMax = 15;
+			dispersion = 0.003;
+			maxRange = 2600;
+			maxRangeProbab = 0.54;
+			midRange = 500;
+			midRangeProbab = 0.58;
+			minRange = 30;
+			minRangeProbab = 0.25;
+			reloadTime = 0.01;
+		};
+	};
+	class AlienBeam_01_f: AlienBeam_01_base_f {};
+	class AlienDrone_01_Sounds_base_F: LMG_RCWS
+	{
+		magazines[] = {"AlienDrone_01_Sounds_DummyMagazine"};
+		modes[] = {"Single"};
+		class GunParticles {};
+		class Single: LMG_RCWS
+		{
+			aiRateOfFire = 10;
+			aiRateOfFireDistance = 1;
+			autofire = 0;
+			maxRange = 3;
+			maxRangeProbab = 0.01;
+			midRange = 2;
+			midRangeProbab = 0.01;
+			minRange = 1;
+			minRangeProbab = 0.01;
+			reloadTime = 0;
+		};
+	};
+	class AlienDrone_01_Sounds_F: AlienDrone_01_Sounds_base_F
+	{
+		muzzles[] = {"MovementSound_01", "MovementSound_02", "MovementSound_03", "MovementSound_04", "MovementSound_05", "MovementSound_06", "LightBurst_End"};
+		class LightBurst_End: AlienDrone_01_Sounds_base_F
+		{
+			magazines[] = {"AlienDrone_07_Sounds_DummyMagazine"};
+			class Single: Single
+			{
+				class StandardSound
+				{
+					soundSetShot[] = {"Photon_Burst_Off_SoundSet"};
+				};
+			};
+		};
+		class MovementSound_01: AlienDrone_01_Sounds_base_F
+		{
+			class Single: Single
+			{
+				class StandardSound
+				{
+					soundSetShot[] = {"AlienDrone_01_Tact_H_Short_01_SoundSet"};
+				};
+			};
+		};
+		class MovementSound_02: AlienDrone_01_Sounds_base_F
+		{
+			magazines[] = {"AlienDrone_02_Sounds_DummyMagazine"};
+			class Single: Single
+			{
+				class StandardSound
+				{
+					soundSetShot[] = {"AlienDrone_01_Tact_H_Medium_01_SoundSet"};
+				};
+			};
+		};
+		class MovementSound_03: AlienDrone_01_Sounds_base_F
+		{
+			magazines[] = {"AlienDrone_03_Sounds_DummyMagazine"};
+			class Single: Single
+			{
+				class StandardSound
+				{
+					soundSetShot[] = {""};
+				};
+			};
+		};
+		class MovementSound_04: AlienDrone_01_Sounds_base_F
+		{
+			magazines[] = {"AlienDrone_04_Sounds_DummyMagazine"};
+			class Single: Single
+			{
+				class StandardSound
+				{
+					soundSetShot[] = {""};
+				};
+			};
+		};
+		class MovementSound_05: AlienDrone_01_Sounds_base_F
+		{
+			magazines[] = {"AlienDrone_05_Sounds_DummyMagazine"};
+			class Single: Single
+			{
+				class StandardSound
+				{
+					soundSetShot[] = {""};
+				};
+			};
+		};
+		class MovementSound_06: AlienDrone_01_Sounds_base_F
+		{
+			magazines[] = {"AlienDrone_06_Sounds_DummyMagazine"};
+			class Single: Single
+			{
+				class StandardSound
+				{
+					soundSetShot[] = {""};
+				};
 			};
 		};
 	};
@@ -3527,12 +3733,61 @@ class CfgWeapons
 		picture = "a3\Weapons_F_Enoch\Rifles\MSBS\Data\UI\icon_arifle_MSBS65_black_F_ca.paa";
 		scope = 2;
 	};
+	class arifle_MSBS65_Black_FL_EMP_f: arifle_MSBS65_black_F
+	{
+		_generalMacro = "arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_flashlight_broken";
+				slot = "PointerSlot";
+			};
+		};
+	};
 	class arifle_MSBS65_black_ico_F: arifle_MSBS65_black_F
 	{
 		_generalMacro = "arifle_MSBS65_black_ico_F";
 		author = "Bohemia Interactive";
 		class LinkedItems
 		{
+			class LinkedItemsOptic
+			{
+				item = "optic_ico_01_black_f";
+				slot = "CowsSlot";
+			};
+		};
+	};
+	class arifle_MSBS65_black_ico_FL_EMP_f: arifle_MSBS65_black_F
+	{
+		_generalMacro = "arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_flashlight_broken";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsOptic
+			{
+				item = "optic_ico_01_black_f";
+				slot = "CowsSlot";
+			};
+		};
+	};
+	class arifle_MSBS65_black_ico_pointer_EMP_f: arifle_MSBS65_black_F
+	{
+		_generalMacro = "arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_pointer_IR_broken";
+				slot = "PointerSlot";
+			};
 			class LinkedItemsOptic
 			{
 				item = "optic_ico_01_black_f";
@@ -3645,6 +3900,42 @@ class CfgWeapons
 			};
 		};
 	};
+	class arifle_MSBS65_GL_black_ico_FL_EMP_f: arifle_MSBS65_GL_black_F
+	{
+		_generalMacro = "arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_flashlight_broken";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsOptic
+			{
+				item = "optic_ico_01_black_f";
+				slot = "CowsSlot";
+			};
+		};
+	};
+	class arifle_MSBS65_GL_black_ico_pointer_EMP_f: arifle_MSBS65_GL_black_F
+	{
+		_generalMacro = "arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_pointer_IR_broken";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsOptic
+			{
+				item = "optic_ico_01_black_f";
+				slot = "CowsSlot";
+			};
+		};
+	};
 	class arifle_MSBS65_GL_black_ico_pointer_f: arifle_MSBS65_GL_black_F
 	{
 		_generalMacro = "arifle_MSBS65_GL_black_ico_pointer_f";
@@ -3694,6 +3985,42 @@ class CfgWeapons
 			};
 		};
 	};
+	class arifle_MSBS65_GL_ico_FL_EMP_f: arifle_MSBS65_GL_F
+	{
+		_generalMacro = "arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_flashlight_broken";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsOptic
+			{
+				item = "optic_ico_01_f";
+				slot = "CowsSlot";
+			};
+		};
+	};
+	class arifle_MSBS65_GL_ico_pointer_EMP_f: arifle_MSBS65_GL_F
+	{
+		_generalMacro = "arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_pointer_IR_broken";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsOptic
+			{
+				item = "optic_ico_01_f";
+				slot = "CowsSlot";
+			};
+		};
+	};
 	class arifle_MSBS65_GL_ico_pointer_f: arifle_MSBS65_GL_F
 	{
 		_generalMacro = "arifle_MSBS65_GL_ico_pointer_f";
@@ -3727,6 +4054,42 @@ class CfgWeapons
 		author = "Bohemia Interactive";
 		class LinkedItems
 		{
+			class LinkedItemsOptic
+			{
+				item = "optic_ico_01_f";
+				slot = "CowsSlot";
+			};
+		};
+	};
+	class arifle_MSBS65_ico_FL_EMP_f: arifle_MSBS65_F
+	{
+		_generalMacro = "arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_flashlight_broken";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsOptic
+			{
+				item = "optic_ico_01_f";
+				slot = "CowsSlot";
+			};
+		};
+	};
+	class arifle_MSBS65_ico_pointer_EMP_f: arifle_MSBS65_F
+	{
+		_generalMacro = "arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_pointer_IR_broken";
+				slot = "PointerSlot";
+			};
 			class LinkedItemsOptic
 			{
 				item = "optic_ico_01_f";
@@ -3889,6 +4252,52 @@ class CfgWeapons
 		picture = "a3\Weapons_F_Enoch\Rifles\MSBS\Data\UI\icon_arifle_MSBS65_Mark_sand_F_ca.paa";
 		scope = 2;
 	};
+	class arifle_MSBS65_Mark_SOS_FL_BI_EMP_F: arifle_MSBS65_Mark_F
+	{
+		_generalMacro = "arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_flashlight_broken";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsOptic
+			{
+				item = "optic_SOS";
+				slot = "CowsSlot";
+			};
+			class LinkedItemsUnder
+			{
+				item = "bipod_01_F_blk";
+				slot = "UnderBarrelSlot";
+			};
+		};
+	};
+	class arifle_MSBS65_Mark_SOS_LP_BI_EMP_F: arifle_MSBS65_Mark_F
+	{
+		_generalMacro = "arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_pointer_IR_broken";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsOptic
+			{
+				item = "optic_SOS";
+				slot = "CowsSlot";
+			};
+			class LinkedItemsUnder
+			{
+				item = "bipod_01_F_blk";
+				slot = "UnderBarrelSlot";
+			};
+		};
+	};
 	class arifle_MSBS65_Mark_SOS_LP_BI_F: arifle_MSBS65_Mark_F
 	{
 		_generalMacro = "arifle_MSBS65_Mark_SOS_LP_BI_F";
@@ -4021,6 +4430,42 @@ class CfgWeapons
 			};
 		};
 	};
+	class arifle_MSBS65_UBS_black_ico_FL_EMP_f: arifle_MSBS65_UBS_black_F
+	{
+		_generalMacro = "arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_flashlight_broken";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsOptic
+			{
+				item = "optic_ico_01_black_f";
+				slot = "CowsSlot";
+			};
+		};
+	};
+	class arifle_MSBS65_UBS_black_ico_pointer_EMP_f: arifle_MSBS65_UBS_black_F
+	{
+		_generalMacro = "arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_pointer_IR_broken";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsOptic
+			{
+				item = "optic_ico_01_black_f";
+				slot = "CowsSlot";
+			};
+		};
+	};
 	class arifle_MSBS65_UBS_black_ico_pointer_f: arifle_MSBS65_UBS_black_F
 	{
 		_generalMacro = "arifle_MSBS65_UBS_black_ico_pointer_f";
@@ -4063,6 +4508,42 @@ class CfgWeapons
 		author = "Bohemia Interactive";
 		class LinkedItems
 		{
+			class LinkedItemsOptic
+			{
+				item = "optic_ico_01_f";
+				slot = "CowsSlot";
+			};
+		};
+	};
+	class arifle_MSBS65_UBS_ico_FL_EMP_f: arifle_MSBS65_UBS_F
+	{
+		_generalMacro = "arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_flashlight_broken";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsOptic
+			{
+				item = "optic_ico_01_f";
+				slot = "CowsSlot";
+			};
+		};
+	};
+	class arifle_MSBS65_UBS_ico_pointer_EMP_f: arifle_MSBS65_UBS_F
+	{
+		_generalMacro = "arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_pointer_IR_broken";
+				slot = "PointerSlot";
+			};
 			class LinkedItemsOptic
 			{
 				item = "optic_ico_01_f";
@@ -4414,6 +4895,19 @@ class CfgWeapons
 		magazines[] = {"30Rnd_65x39_caseless_black_mag"};
 		picture = "\A3\Weapons_F_EPB\Rifles\MX_Black\Data\UI\gear_mx_rifle_black_X_CA.paa";
 	};
+	class arifle_MX_Black_FL_EMP_F: arifle_MX_Black_F
+	{
+		_generalMacro = "arifle_MX_Black_FL_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_flashlight_broken";
+				slot = "PointerSlot";
+			};
+		};
+	};
 	class arifle_MX_Black_Hamr_pointer_F: arifle_MX_Black_F
 	{
 		_generalMacro = "arifle_MX_Black_Hamr_pointer_F";
@@ -4473,6 +4967,19 @@ class CfgWeapons
 			};
 		};
 	};
+	class arifle_MX_Black_Pointer_EMP_F: arifle_MX_Black_F
+	{
+		_generalMacro = "arifle_MX_Black_Pointer_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_pointer_IR_broken";
+				slot = "PointerSlot";
+			};
+		};
+	};
 	class arifle_MX_Black_Pointer_F: arifle_MX_Black_F
 	{
 		_generalMacro = "arifle_MX_Black_Pointer_F";
@@ -4483,6 +4990,42 @@ class CfgWeapons
 			{
 				item = "acc_pointer_IR";
 				slot = "PointerSlot";
+			};
+		};
+	};
+	class arifle_MX_Black_RCO_FL_F: arifle_MX_Black_F
+	{
+		_generalMacro = "arifle_MX_GL_Black_RCO_Pointer_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_flashlight";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsOptic
+			{
+				item = "optic_Hamr";
+				slot = "CowsSlot";
+			};
+		};
+	};
+	class arifle_MX_Black_RCO_Pointer_EMP_F: arifle_MX_Black_F
+	{
+		_generalMacro = "arifle_MX_GL_Black_RCO_Pointer_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_pointer_IR_broken";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsOptic
+			{
+				item = "optic_Hamr";
+				slot = "CowsSlot";
 			};
 		};
 	};
@@ -4605,6 +5148,24 @@ class CfgWeapons
 			class LinkedItemsOptic
 			{
 				item = "optic_holosight_blk_F";
+				slot = "CowsSlot";
+			};
+		};
+	};
+	class arifle_MX_GL_Black_RCO_Pointer_EMP_F: arifle_MX_GL_Black_F
+	{
+		_generalMacro = "arifle_MX_GL_Black_RCO_Pointer_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_pointer_IR_broken";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsOptic
+			{
+				item = "optic_Hamr";
 				slot = "CowsSlot";
 			};
 		};
@@ -4975,6 +5536,24 @@ class CfgWeapons
 			{
 				item = "optic_Hamr";
 				slot = "CowsSlot";
+			};
+		};
+	};
+	class arifle_MX_SW_Black_Pointer_EMP_F: arifle_MX_SW_Black_F
+	{
+		_generalMacro = "arifle_MX_SW_Black_Pointer_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_pointer_IR_broken";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsUnder
+			{
+				item = "bipod_01_F_Blk";
+				slot = "UnderBarrelSlot";
 			};
 		};
 	};
@@ -5622,6 +6201,29 @@ class CfgWeapons
 		magazines[] = {"30Rnd_65x39_caseless_black_mag"};
 		picture = "\A3\Weapons_F_EPB\Rifles\MX_Black\Data\UI\gear_mx_dmr_black_X_CA.paa";
 	};
+	class arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F: arifle_MXM_Black_F
+	{
+		_generalMacro = "arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_pointer_IR_broken";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsOptic
+			{
+				item = "optic_SOS";
+				slot = "CowsSlot";
+			};
+			class LinkedItemsUnder
+			{
+				item = "bipod_01_F_Blk";
+				slot = "UnderBarrelSlot";
+			};
+		};
+	};
 	class arifle_MXM_Black_MOS_Pointer_Bipod_F: arifle_MXM_Black_F
 	{
 		_generalMacro = "arifle_MXM_Black_MOS_Pointer_Bipod_F";
@@ -6222,7 +6824,7 @@ class CfgWeapons
 		overviewPicture = "\A3\Data_F_Exp\Images\WeaponSPAR_ca.paa";
 		recoil = "recoil_spar";
 		reloadAction = "GestureReloadSPAR_01";
-		reloadMagazineSound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_reload", 1, 1, 10};
+		reloadMagazineSound[] = {"A3\Sounds_F_Contact\Assets\Arsenal\Human_Faction\Weapons\Rifles\Spar_01\SPAR01_reload", 1, 1, 10};
 		scope = 0;
 		soundBullet[] = {"bullet1", 0.087, "bullet2", 0.083, "bullet3", 0.083, "bullet4", 0.083, "bullet5", 0.083, "bullet6", 0.083, "bullet7", 0.083, "bullet8", 0.083, "bullet9", 0.083, "bullet10", 0.083, "bullet11", 0.083, "bullet12", 0.083};
 		class FullAuto: Mode_FullAuto
@@ -9434,6 +10036,184 @@ class CfgWeapons
 		reloadTime = 0;
 		scope = 1;
 	};
+	class ChemicalDetector_01_base_F: ItemCore
+	{
+		scope = 1;
+		class ItemInfo: InventoryFlashLightItem_Base_F
+		{
+			mass = 8;
+			type = 302;
+		};
+	};
+	class ChemicalDetector_01_black_F: ChemicalDetector_01_base_F
+	{
+		_generalMacro = "ChemicalDetector_01_black_F";
+		author = "Bohemia Interactive";
+		displayName = "Chemical Detector (Cover, Black)";
+		model = "\a3\Weapons_F_Contact\Items\ChemicalDetector_01_cover_black_F.p3d";
+		picture = "\a3\Weapons_F_Contact\Items\data\ui\gear_ChemicalDetector_01_blk_CA.paa";
+		scope = 2;
+	};
+	class ChemicalDetector_01_olive_F: ChemicalDetector_01_base_F
+	{
+		_generalMacro = "ChemicalDetector_01_olive_F";
+		author = "Bohemia Interactive";
+		displayName = "Chemical Detector (Cover, Olive)";
+		model = "\a3\Weapons_F_Contact\Items\ChemicalDetector_01_cover_olive_F.p3d";
+		picture = "\a3\Weapons_F_Contact\Items\data\ui\gear_ChemicalDetector_01_oli_CA.paa";
+		scope = 2;
+	};
+	class ChemicalDetector_01_tan_F: ChemicalDetector_01_base_F
+	{
+		_generalMacro = "ChemicalDetector_01_tan_F";
+		author = "Bohemia Interactive";
+		displayName = "Chemical Detector (Cover, Tan)";
+		model = "\a3\Weapons_F_Contact\Items\ChemicalDetector_01_cover_tan_F.p3d";
+		picture = "\a3\Weapons_F_Contact\Items\data\ui\gear_ChemicalDetector_01_tan_CA.paa";
+		scope = 2;
+	};
+	class ChemicalDetector_01_watch_broken_F: ChemicalDetector_01_watch_F
+	{
+		_generalMacro = "ChemicalDetector_01_olive_F";
+		author = "Bohemia Interactive";
+		displayName = "Chemical Detector (Defunct)";
+		scope = 2;
+		UImodel = "\a3\Weapons_F_Contact\Items\ChemicalDetector_01_watch_emp_F.p3d";
+	};
+	class ChemicalDetector_01_watch_F: ItemCore
+	{
+		_generalMacro = "ChemicalDetector_01_watch_F";
+		author = "Bohemia Interactive";
+		descriptionShort = "Useful for chemical threat detection";
+		descriptionUse = "<t color='#9cf953'>Use: </t>Show chemical contamination";
+		displayName = "Chemical Detector";
+		model = "\a3\Weapons_F_Contact\Items\ChemicalDetector_01_F.p3d";
+		picture = "\A3\Weapons_F_Contact\Items\data\ui\gear_ChemicalDetector_01_CA.paa";
+		scope = 2;
+		simulation = "ItemWatch";
+		UImodel = "\a3\Weapons_F_Contact\Items\ChemicalDetector_01_watch_F.p3d";
+		class ItemInfo
+		{
+			mass = 2;
+		};
+	};
+	class CM_Universal_01_F: CMFlareLauncher
+	{
+		displayName = "Flares";
+		magazineReloadTime = 0.2;
+		magazines[] = {"300Rnd_CMFlare_Chaff_Magazine", "300Rnd_Refract_Magazine", "300Rnd_Visual_Magazine", "300Rnd_Universal_Magazine"};
+		modes[] = {"Continuous", "Single", "AIBurst"};
+		simulation = "cmlauncher";
+		class AIBurst: Burst
+		{
+			burst = 3;
+			burstRangeMax = 7;
+			maxRange = 10000;
+			minRange = 200;
+			showToPlayer = 0;
+			soundBurst = 0;
+		};
+		class Continuous: Mode_Burst
+		{
+			burst = 60;
+			dispersion = 0.8;
+			displayName = "Continuous";
+			maxRange = 0;
+			minRange = 0;
+			multiplier = 2;
+			reloadTime = 1.2;
+			showToPlayer = 1;
+			soundBurst = 0;
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"A3\Sounds_F\weapons\HMG\HMG_grenade", 1, 1, 300};
+				soundBegin[] = {"begin1", 1};
+			};
+		};
+		class Single: Mode_SemiAuto
+		{
+			burst = 1;
+			dispersion = 0.2;
+			displayName = "Single";
+			maxRange = 200;
+			minRange = 0;
+			multiplier = 2;
+			reloadTime = 0.05;
+			showToPlayer = 1;
+			soundBurst = 0;
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"A3\Sounds_F\weapons\HMG\HMG_grenade", 1, 1, 300};
+				soundBegin[] = {"begin1", 1};
+			};
+		};
+	};
+	class CM_Universal_01_Gravityburst_F: CM_Universal_01_F
+	{
+		magazines[] = {"300Rnd_GravityBurst_Magazine"};
+		modes[] = {"Single"};
+		class EventHandlers
+		{
+			fired = "[_this select 0, 140,2] spawn bin_fnc_gravityBurst;";
+		};
+		class Single: Single
+		{
+			displayName = "Gravity burst";
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				soundSetShot[] = {"Gravity_Burst_Charge_SoundSet", "Gravity_Burst_Discharge_SoundSet", "Gravity_Burst_Particles_SoundSet", "Gravity_Burst_Tail_SoundSet"};
+			};
+		};
+	};
+	class CM_Universal_01_Grenade_F: CM_Universal_01_F
+	{
+		magazines[] = {"300Rnd_GrenadeDefence_Magazine"};
+		modes[] = {"Single"};
+		class Single: Single
+		{
+			displayName = "Grenade defence";
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				soundSetShot[] = {"Anti_Grenade_Laser_Discharge_SoundSet"};
+			};
+		};
+	};
+	class CM_Universal_01_Hardkill_F: CM_Universal_01_F
+	{
+		magazines[] = {"300Rnd_AntiMissile_Magazine"};
+		modes[] = {"Single"};
+		class EventHandlers
+		{
+			fired = "_this spawn bis_fnc_cm_antimissiles;";
+		};
+		class Single: Single
+		{
+			displayName = "Hardkill";
+		};
+	};
+	class CM_Universal_01_Light_F: CM_Universal_01_F
+	{
+		magazines[] = {"300Rnd_Light_Magazine", "300Rnd_Light_Fake_Magazine"};
+		modes[] = {"Single"};
+		class EventHandlers
+		{
+			fired = "[_this select 0,_this select 4] call bin_fnc_lightBurst;";
+		};
+		class Single: Single
+		{
+			displayName = "Light";
+			reloadTime = 5;
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				soundSetShot[] = {"Photon_Burst_On_SoundSet"};
+			};
+		};
+	};
 	class CMFlareLauncher: SmokeLauncher
 	{
 		displayName = "Flares";
@@ -11447,6 +12227,19 @@ class CfgWeapons
 			weaponSoundEffect = "DefaultRifle";
 		};
 	};
+	class FakeWeapon_HMG127_moduleTracers_F: LMG_Mk200_F
+	{
+		magazines[] = {"200Rnd_65x39_belt_Tracer_Green", "200Rnd_65x39_belt_Tracer_Red", "200Rnd_65x39_belt_Tracer_Yellow"};
+		scope = 1;
+		class manual: manual
+		{
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				soundsetshot[] = {"Outro_02_Module_HMG127mm_static_shot_SoundSet", "Outro_02_Module_HMG127mm_static_tail_SoundSet"};
+			};
+		};
+	};
 	class FakeWeapon_moduleTracers_F: LMG_Mk200_F
 	{
 		_generalMacro = "FakeWeapon_moduleTracers_F";
@@ -12420,6 +13213,216 @@ class CfgWeapons
 	class GoggleItem: InventoryItem_Base_F
 	{
 		type = 603;
+	};
+	class GravityCannon_01: GravityCannon_01_base_F
+	{
+		muzzles[] = {"MuzzlePlayer", "MuzzleAI", "MuzzleFiring"};
+		weaponsAI[] = {"MuzzleFiring", "MuzzleAI"};
+		class MuzzleAI: GravityCannon_01_base_F
+		{
+			magazines[] = {"GravityCannon_01_AIMagazine"};
+			showToPlayer = 0;
+			class EventHandlers
+			{
+				fired = "[_this # 0] call bin_fnc_moduleChargeSequence";
+			};
+			class Single: Single
+			{
+				reloadTime = 6;
+				showToPlayer = 0;
+				sounds[] = {};
+			};
+		};
+		class MuzzleFiring: GravityCannon_01_base_F
+		{
+			magazines[] = {"GravityCannon_01_Magazine"};
+			showToPlayer = 1;
+			class Single: Single
+			{
+				aiRateOfFire = 10;
+				aiRateOfFireDistance = 1;
+				maxRange = 3;
+				maxRangeProbab = 0.01;
+				midRange = 2;
+				midRangeProbab = 0.01;
+				minRange = 1;
+				minRangeProbab = 0.01;
+				reloadTime = 3.5;
+				showToPlayer = 1;
+				sounds[] = {"StandardSound"};
+				class BaseSoundModeType {};
+				class StandardSound: BaseSoundModeType
+				{
+					soundSetShot[] = {"Gravity_Cannon_01_Discharge_SoundSet", "Gravity_Cannon_01_Tail_SoundSet"};
+				};
+			};
+		};
+		class MuzzlePlayer: GravityCannon_01_base_F
+		{
+			magazines[] = {"GravityCannon_01_DummyMagazine"};
+			class Single: Single
+			{
+				aiRateOfFire = 10;
+				aiRateOfFireDistance = 1;
+				maxRange = 3;
+				maxRangeProbab = 0.01;
+				midRange = 2;
+				midRangeProbab = 0.01;
+				minRange = 1;
+				minRangeProbab = 0.01;
+				reloadTime = 3;
+			};
+		};
+	};
+	class GravityCannon_01_base_F: LMG_RCWS
+	{
+		aiDispersionCoefX = 1;
+		aiDispersionCoefY = 1;
+		chargeTime = 4.542;
+		displayName = "Matter Shot";
+		modes[] = {"Single"};
+		class ChargingSounds
+		{
+			class Charging
+			{
+				memoryPoint = "gunnerview";
+				offset[] = {0, 0, 0};
+				sounds[] = {"GravityWeapon_Charge_Start_Sound_01_F"};
+			};
+			class Complete: Charging
+			{
+				sounds[] = {};
+			};
+			class Loop: Charging
+			{
+				sounds[] = {""};
+			};
+			class Stop: Charging
+			{
+				sounds[] = {"GravityWeapon_Charge_End_Sound_01_F"};
+			};
+		};
+		class GunParticles {};
+		class Single: LMG_RCWS
+		{
+			aiRateOfFire = 2.1;
+			aiRateOfFireDispersion = 0.1;
+			aiRateOfFireDistance = 3500;
+			autofire = 0;
+			burst = 1;
+			dispersion = 0;
+			maxRange = 3600;
+			maxRangeProbab = 0.54;
+			midRange = 500;
+			midRangeProbab = 0.58;
+			minRange = 30;
+			minRangeProbab = 0.25;
+			reloadTime = 0.05;
+			textureType = "semi";
+		};
+	};
+	class GravityCannon_01_Precise: GravityCannon_01
+	{
+		aiDispersionCoefX = 0.01;
+		aiDispersionCoefY = 0.01;
+		muzzles[] = {"MuzzlePlayer", "MuzzleAI_Precise", "MuzzleFiring_Precise"};
+		weaponsAI[] = {"MuzzleFiring_Precise", "MuzzleAI_Precise"};
+		class MuzzleAI_Precise: MuzzleAI
+		{
+			class Single: Single
+			{
+				aiRateOfFire = 10;
+				aiRateOfFireDistance = 1;
+				dispersion = 0;
+				maxRange = 3;
+				maxRangeProbab = 0.01;
+				midRange = 2;
+				midRangeProbab = 0.01;
+				minRange = 1;
+				minRangeProbab = 0.01;
+			};
+		};
+		class MuzzleFiring_Precise: MuzzleFiring
+		{
+			class Single: Single
+			{
+				dispersion = 0;
+			};
+		};
+	};
+	class GravityShotgun_01: GravityShotgun_01_base_F
+	{
+		aiDispersionCoefX = 1;
+		aiDispersionCoefY = 1;
+		muzzles[] = {"GravityShotgun_MuzzlePlayer", "GravityShotgun_MuzzleAI", "GravityShotgun_MuzzleFiring"};
+		weaponsAI[] = {"GravityShotgun_MuzzleFiring", "GravityShotgun_MuzzleAI"};
+		class GravityShotgun_MuzzleAI: GravityShotgun_01_base_F
+		{
+			magazines[] = {"GravityCannon_01_AIMagazine"};
+			showToPlayer = 0;
+			class EventHandlers
+			{
+				fired = "_this call BIN_fnc_gravityCannon_01_ai";
+			};
+			class Single: Single
+			{
+				reloadTime = 5;
+				showToPlayer = 0;
+				sounds[] = {};
+			};
+		};
+		class GravityShotgun_MuzzleFiring: GravityShotgun_01_base_F
+		{
+			aiDispersionCoefX = 1;
+			aiDispersionCoefY = 1;
+			magazines[] = {"GravityShotgun_01_Magazine"};
+			showToPlayer = 1;
+			class Single: Single
+			{
+				aiDispersionCoefX = 1;
+				aiDispersionCoefY = 1;
+				aiRateOfFire = 10;
+				aiRateOfFireDistance = 1;
+				autofire = 0;
+				burst = 5;
+				dispersion = 0.017;
+				maxRange = 3;
+				maxRangeProbab = 0.01;
+				midRange = 2;
+				midRangeProbab = 0.01;
+				minRange = 1;
+				minRangeProbab = 0.01;
+				reloadTime = 0.2;
+				showToPlayer = 1;
+				soundBurst = 0;
+				sounds[] = {"StandardSound"};
+				class BaseSoundModeType {};
+				class StandardSound: BaseSoundModeType
+				{
+					soundSetShot[] = {"Gravity_Shotgun_01_Discharge_SoundSet", "Gravity_Shotgun_01_Tail_SoundSet"};
+				};
+			};
+		};
+		class GravityShotgun_MuzzlePlayer: GravityShotgun_01_base_F
+		{
+			magazines[] = {"GravityCannon_01_DummyMagazine"};
+			class Single: Single
+			{
+				aiRateOfFire = 10;
+				aiRateOfFireDistance = 1;
+				maxRange = 3;
+				maxRangeProbab = 0.01;
+				midRange = 2;
+				midRangeProbab = 0.01;
+				minRange = 1;
+				minRangeProbab = 0.01;
+				reloadTime = 3;
+			};
+		};
+	};
+	class GravityShotgun_01_base_F: GravityCannon_01_base_F
+	{
+		displayName = "Matter Spray";
 	};
 	class GrenadeCore: Default
 	{
@@ -15486,6 +16489,177 @@ class CfgWeapons
 			};
 		};
 	};
+	class hgun_esd_01_antenna_01_F: hgun_esd_01_F
+	{
+		class LinkedItems
+		{
+			class LinkedItemsFlashlight
+			{
+				item = "acc_esd_01_flashlight";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsMuzzle
+			{
+				item = "muzzle_antenna_01_f";
+				slot = "MuzzleSlot";
+			};
+		};
+	};
+	class hgun_esd_01_antenna_02_F: hgun_esd_01_F
+	{
+		class LinkedItems
+		{
+			class LinkedItemsFlashlight
+			{
+				item = "acc_esd_01_flashlight";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsMuzzle
+			{
+				item = "muzzle_antenna_02_f";
+				slot = "MuzzleSlot";
+			};
+		};
+	};
+	class hgun_esd_01_antenna_03_F: hgun_esd_01_F
+	{
+		class LinkedItems
+		{
+			class LinkedItemsFlashlight
+			{
+				item = "acc_esd_01_flashlight";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsMuzzle
+			{
+				item = "muzzle_antenna_03_f";
+				slot = "MuzzleSlot";
+			};
+		};
+	};
+	class hgun_esd_01_base_F: Pistol_Base_F
+	{
+		cursor = "esd";
+		discreteDistance[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		discreteDistanceInitIndex = 5;
+		inertia = 1;
+		magazines[] = {};
+		modes[] = {"Single"};
+		muzzles[] = {"this", "Muzzle_1", "Muzzle_2", "Muzzle_3", "Muzzle_4", "Muzzle_5", "Muzzle_6", "Muzzle_7", "Muzzle_8", "Muzzle_9", "Muzzle_10"};
+		picture = "\a3\Weapons_F_Contact\Pistols\ESD_01\data\ui\gear_ESD_01_CA.paa";
+		reloadAction = "";
+		scope = 1;
+		weaponInfoType = "RscWeaponSpectrumAnalyzer";
+		class Library
+		{
+			libTextDesc = "Originally developed for the private security industry, the Spectrum Device is a small handheld transceiver with an electromagnetic spectrum analyzer. Its standard grip was designed to fit a range of directional antennas with varying frequency ranges. One common use case for these devices with security services is jamming drones. Fitted with other antennas however, they allow operators to receive and identify a myriad of signals, as well as to transmit them. An integrated screen lets users tune to desired frequency bands, but also analyze the strength and quality of signals. Several extra features have been added to the device's firmware after initial manufacturing and field feedback, including a compass and other useful navigation aids. Not originally incorporated into the grip, night use is sometimes facilitated by jerry-rigging a common flashlight to it.";
+		};
+		class Muzzle_1: Muzzle_base
+		{
+			magazines[] = {"ESD_01_DummyMagazine_1"};
+		};
+		class Muzzle_10: Muzzle_base
+		{
+			magazines[] = {"ESD_01_DummyMagazine_10"};
+		};
+		class Muzzle_2: Muzzle_base
+		{
+			magazines[] = {"ESD_01_DummyMagazine_2"};
+		};
+		class Muzzle_3: Muzzle_base
+		{
+			magazines[] = {"ESD_01_DummyMagazine_3"};
+		};
+		class Muzzle_4: Muzzle_base
+		{
+			magazines[] = {"ESD_01_DummyMagazine_4"};
+		};
+		class Muzzle_5: Muzzle_base
+		{
+			magazines[] = {"ESD_01_DummyMagazine_5"};
+		};
+		class Muzzle_6: Muzzle_base
+		{
+			magazines[] = {"ESD_01_DummyMagazine_6"};
+		};
+		class Muzzle_7: Muzzle_base
+		{
+			magazines[] = {"ESD_01_DummyMagazine_7"};
+		};
+		class Muzzle_8: Muzzle_base
+		{
+			magazines[] = {"ESD_01_DummyMagazine_8"};
+		};
+		class Muzzle_9: Muzzle_base
+		{
+			magazines[] = {"ESD_01_DummyMagazine_9"};
+		};
+		class Muzzle_base: Pistol_Base_F
+		{
+			magazines[] = {"ESD_01_DummyMagazine_1"};
+			showToPlayer = 0;
+		};
+		class Single: Mode_SemiAuto
+		{
+			maxRange = 3;
+			maxRangeProbab = 0.01;
+			midRange = 2;
+			midRangeProbab = 0.01;
+			minRange = 1;
+			minRangeProbab = 0.01;
+			sounds[] = {};
+		};
+		class WeaponSlotsInfo
+		{
+			holsterScale = 0;
+			mass = 5;
+			class MuzzleSlot
+			{
+				compatibleItems[] = {"muzzle_antenna_test_01", "muzzle_antenna_01_f"};
+				iconPicture = "\a3\Weapons_F_Contact\Pistols\ESD_01\data\ui\hgun_esd_01_antenna_01_F_ca.paa";
+				iconPinpoint = "Center";
+				iconPosition[] = {0.3, 0.55};
+				iconScale = 0.75;
+				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+			};
+			class MuzzleSlot2: MuzzleSlot
+			{
+				compatibleItems[] = {"muzzle_antenna_02_f"};
+				iconPicture = "\a3\Weapons_F_Contact\Pistols\ESD_01\data\ui\hgun_esd_01_antenna_02_F_ca.paa";
+				iconPosition[] = {0.4, 0.55};
+			};
+			class MuzzleSlot3: MuzzleSlot
+			{
+				compatibleItems[] = {"muzzle_antenna_03_f"};
+				iconPicture = "\a3\Weapons_F_Contact\Pistols\ESD_01\data\ui\hgun_esd_01_antenna_03_F_ca.paa";
+				iconPosition[] = {0.1, 0.55};
+			};
+			class PointerSlot
+			{
+				compatibleItems[] = {"acc_esd_01_flashlight", "acc_esd_01_flashlight_broken"};
+				iconPicture = "\a3\Weapons_F_Contact\Pistols\ESD_01\data\ui\hgun_esd_01_flashlight_01_F_ca.paa";
+				iconPinpoint = "Center";
+				iconPosition[] = {0.65, 0.73};
+				iconScale = 0.25;
+				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+			};
+		};
+	};
+	class hgun_esd_01_dummy_F: hgun_esd_01_F
+	{
+		_generalMacro = "hgun_esd_01_dummy_F";
+		author = "Bohemia Interactive";
+		weaponInfoType = "RscWeaponZeroing";
+	};
+	class hgun_esd_01_F: hgun_esd_01_base_F
+	{
+		_generalMacro = "hgun_esd_01_F";
+		author = "Bohemia Interactive";
+		baseWeapon = "hgun_esd_01_F";
+		displayName = "Spectrum Device";
+		model = "\a3\Weapons_F_Contact\Pistols\ESD_01\ESD_01_F";
+		scope = 2;
+	};
 	class hgun_P07_F: Pistol_Base_F
 	{
 		_generalMacro = "hgun_P07_F";
@@ -17346,6 +18520,34 @@ class CfgWeapons
 			};
 		};
 	};
+	class launch_MRAWS_green_broken_F: launch_MRAWS_green_F
+	{
+		_generalMacro = "launch_MRAWS_green_broken_F";
+		author = "Bohemia Interactive";
+		displayName = "MAAWS Mk4 Mod 1 (Green, Defunct)";
+		modelOptics = "\a3\weapons_f_contact\Reticle\reticle_MRAWSNew_broken.p3d";
+		scope = 1;
+		weaponInfoType = "RscWeaponEmpty";
+		class OpticsModes
+		{
+			class optic
+			{
+				cameraDir = "look";
+				distanceZoomMax = 300;
+				distanceZoomMin = 300;
+				memoryPointCamera = "eye";
+				opticsDisablePeripherialVision = 1;
+				opticsFlare = 1;
+				opticsID = 1;
+				opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};
+				opticsZoomInit = 0.0875;
+				opticsZoomMax = 0.0875;
+				opticsZoomMin = 0.0875;
+				useModelOptics = 1;
+				visionMode[] = {"Normal"};
+			};
+		};
+	};
 	class launch_MRAWS_green_F: launch_MRAWS_base_F
 	{
 		_generalMacro = "launch_MRAWS_green_F";
@@ -19016,6 +20218,24 @@ class CfgWeapons
 		displayName = "Mk200 6.5 mm (Black)";
 		hiddenSelectionsTextures[] = {"a3\Weapons_F_Enoch\Machineguns\M200\Data\1st_person_black_co.paa", "a3\Weapons_F_Enoch\Machineguns\M200\Data\Body_black_co.paa", "a3\Weapons_F_Enoch\Machineguns\M200\Data\grip_black_co.paa"};
 		picture = "\a3\Weapons_F_Enoch\Machineguns\M200\Data\UI\icon_LMG_Mk200_black_F_ca.paa";
+	};
+	class LMG_Mk200_black_FL_EMP_F: LMG_Mk200_black_F
+	{
+		_generalMacro = "arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F";
+		author = "Bohemia Interactive";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				item = "acc_flashlight_broken";
+				slot = "PointerSlot";
+			};
+			class LinkedItemsUnder
+			{
+				item = "bipod_01_F_blk";
+				slot = "UnderBarrelSlot";
+			};
+		};
 	};
 	class LMG_Mk200_black_LP_BI_F: LMG_Mk200_black_F
 	{
@@ -22476,6 +23696,65 @@ class CfgWeapons
 			SoundSetShot[] = {"Mortar82mm_Shot_SoundSet", "Mortar82mm_Tail_SoundSet"};
 		};
 	};
+	class muzzle_antenna_01_f: muzzle_antenna_base_01_F
+	{
+		_generalMacro = "muzzle_antenna_01_f";
+		author = "Bohemia Interactive";
+		displayName = "SD Military Antenna (78-89 MHz)";
+		model = "\a3\Weapons_F_Contact\Pistols\ESD_01\muzzle_antenna_01_F";
+		picture = "\a3\Weapons_F_Contact\Pistols\ESD_01\data\ui\gear_muzzle_antenna_01_ca.paa";
+		scope = 2;
+		class EM
+		{
+			antenna = "Antenna_01";
+		};
+	};
+	class muzzle_antenna_02_f: muzzle_antenna_base_01_F
+	{
+		_generalMacro = "muzzle_antenna_02_f";
+		author = "Bohemia Interactive";
+		displayName = "SD Experimental Antenna (390-500 MHz)";
+		model = "\a3\Weapons_F_Contact\Pistols\ESD_01\muzzle_antenna_02_F";
+		picture = "\a3\Weapons_F_Contact\Pistols\ESD_01\data\ui\gear_muzzle_antenna_02_ca.paa";
+		scope = 2;
+		class EM
+		{
+			antenna = "Antenna_02";
+		};
+	};
+	class muzzle_antenna_03_f: muzzle_antenna_base_01_F
+	{
+		_generalMacro = "muzzle_antenna_03_f";
+		author = "Bohemia Interactive";
+		displayName = "SD Jammer Antenna (433 MHz)";
+		model = "\a3\Weapons_F_Contact\Pistols\ESD_01\muzzle_antenna_03_F";
+		picture = "\a3\Weapons_F_Contact\Pistols\ESD_01\data\ui\gear_muzzle_antenna_03_ca.paa";
+		scope = 2;
+		class EM
+		{
+			antenna = "Antenna_03";
+		};
+	};
+	class muzzle_antenna_base_01_F: ItemCore
+	{
+		class ItemInfo: InventoryMuzzleItem_Base_F
+		{
+			alternativeFire = "";
+			mass = 6;
+			muzzleEnd = "konec hlavne";
+			muzzlePos = "usti hlavne";
+		};
+	};
+	class muzzle_antenna_test_01: muzzle_antenna_base_01_F
+	{
+		displayName = "Antenna Test 01";
+		model = "\a3\Weapons_F_Contact\Pistols\ESD_01\muzzle_antenna_01_F";
+		scope = 1;
+		class EM
+		{
+			antenna = "Test_Directional";
+		};
+	};
 	class muzzle_snds_338_black: ItemCore
 	{
 		_generalMacro = "muzzle_snds_338_black";
@@ -23131,8 +24410,8 @@ class CfgWeapons
 		mfMax = 0;
 		model = "\A3\weapons_f_enoch\acc\acca_tma_65_01_F";
 		picture = "\A3\weapons_F_enoch\acc\data\UI\gear_acca_tma_65_01_CA.paa";
-		scope = 1;
-		scopeArsenal = 1;
+		scope = 2;
+		scopeArsenal = 2;
 		tBody = 100;
 		class ItemInfo: InventoryMuzzleItem_Base_F
 		{
@@ -23170,6 +24449,11 @@ class CfgWeapons
 				recoilProneCoef = 0.25;
 			};
 		};
+	};
+	class muzzleflash_tma: ItemCore
+	{
+		model = "a3\Data_F_Enoch\Proxies\muzzle_flash\muzzle_flash_acca_tma";
+		scope = 2;
 	};
 	class MuzzleSlot {};
 	class NVGoggles: Binocular
@@ -23216,6 +24500,14 @@ class CfgWeapons
 			modelOff = "A3\weapons_f\binocular\NVG_proxy_off_INDEP.p3d";
 			uniformModel = "A3\weapons_f\binocular\nvg_proxy_INDEP.p3d";
 		};
+	};
+	class NVGoggles_INDEP_broken: NVGoggles_INDEP
+	{
+		_generalMacro = "NVGoggles_INDEP_broken";
+		author = "Bohemia Interactive";
+		displayName = "NV Goggles (Green, Defunct)";
+		modelOptics = "\A3\weapons_f_contact\reticle\optics_night_broken";
+		scope = 1;
 	};
 	class NVGoggles_OPFOR: NVGoggles
 	{
@@ -23404,6 +24696,14 @@ class CfgWeapons
 				};
 			};
 		};
+	};
+	class optic_Aco_broken: optic_Aco
+	{
+		_generalMacro = "optic_Aco_broken";
+		author = "Bohemia Interactive";
+		displayName = "ACO (Defunct)";
+		model = "\a3\Weapons_F_Contact\Acc\acco_aco_emp_f.p3d";
+		scope = 1;
 	};
 	class optic_ACO_grn: ItemCore
 	{
@@ -23917,6 +25217,14 @@ class CfgWeapons
 			};
 		};
 	};
+	class optic_Hamr_broken: optic_Hamr
+	{
+		_generalMacro = "optic_Hamr_broken";
+		author = "Bohemia Interactive";
+		displayName = "RCO (Defunct)";
+		model = "\a3\Weapons_F_Contact\Acc\acco_hamr_emp_f.p3d";
+		scope = 1;
+	};
 	class optic_Hamr_khk_F: optic_Hamr
 	{
 		_generalMacro = "optic_Hamr_khk_F";
@@ -24393,6 +25701,14 @@ class CfgWeapons
 				};
 			};
 		};
+	};
+	class optic_MRCO_broken: optic_MRCO
+	{
+		_generalMacro = "optic_MRCO_broken";
+		author = "Bohemia Interactive";
+		displayName = "MRCO (Defunct)";
+		model = "\a3\Weapons_F_Contact\Acc\acco_mrco_emp_f.p3d";
+		scope = 1;
 	};
 	class optic_MRD: ItemCore
 	{
@@ -25396,6 +26712,15 @@ class CfgWeapons
 		{
 			mass = 20;
 		};
+	};
+	class Rangefinder_broken: Rangefinder
+	{
+		_generalMacro = "Rangefinder_broken";
+		author = "Bohemia Interactive";
+		displayName = "Rangefinder (Defunct)";
+		modelOptics = "\A3\weapons_f_contact\reticle\LRTV_optics_broken.p3d";
+		scope = 1;
+		weaponInfoType = "RscWeaponEmpty";
 	};
 	class Rifle: RifleCore
 	{
@@ -29170,6 +30495,39 @@ class CfgWeapons
 				item = "optic_LRPS_tna_F";
 				slot = "CowsSlot";
 			};
+		};
+	};
+	class SwarmMissile_01_launcher_F: MissileLauncher
+	{
+		aiRateOfFire = 5;
+		aiRateOfFireDistance = 2000;
+		burst = 5;
+		canLock = 2;
+		cursor = "missile";
+		cursorAim = "EmptyCursor";
+		cursorSize = 0;
+		dispersion = 3.4;
+		displayName = "Launcher";
+		displayNameMagazine = "Launcher";
+		lockedTargetSound[] = {"\A3\Sounds_F\weapons\Rockets\locked_3", 1.31623, 2.5};
+		lockingTargetSound[] = {"\A3\Sounds_F\weapons\Rockets\locked_1", 1.31623, 1};
+		magazineReloadTime = 30;
+		magazines[] = {"SwarmMissile_01_mag"};
+		maxRange = 500;
+		maxRangeProbab = 0.3;
+		midRange = 100;
+		midRangeProbab = 0.9;
+		minRange = 1;
+		minRangeProbab = 0.25;
+		reloadTime = 0.1;
+		scope = 2;
+		shortNameMagazine = "Launcher";
+		sounds[] = {"StandardSound"};
+		weaponLockDelay = 3;
+		weaponLockSystem = 2;
+		class StandardSound
+		{
+			soundSetShot[] = {""};
 		};
 	};
 	class Tavor_base_F: Rifle_Base_F

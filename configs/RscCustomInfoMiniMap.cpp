@@ -64,6 +64,7 @@ class RscCustomInfoMiniMap
 					IDC = 101;
 					maxSatelliteAlpha = 0;
 					moveOnEdges = 1;
+					onLoad = "_this call bin_fnc_drawEM2D;";
 					ptsPerSquareFor = 15;
 					ptsPerSquareForEdge = 15;
 					ptsPerSquareForLod1 = 4;

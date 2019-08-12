@@ -10,6 +10,13 @@ class CfgMovesBasic
 	transitionsSimple[] = {};
 	class Actions
 	{
+		class Acts_Accessing_Computer: NoActions
+		{
+			Combat = "Acts_Accessing_Computer_Loop";
+			Default = "Acts_Accessing_Computer_Loop";
+			Stop = "Acts_Accessing_Computer_Loop";
+			StopRelaxed = "Acts_Accessing_Computer_Loop";
+		};
 		class Acts_CarFixingWheel_actions: RifleStandActions
 		{
 			Default = "Acts_carFixingWheel";
@@ -17,6 +24,16 @@ class CfgMovesBasic
 			PrimaryWeapon = "AmovPknlMstpSlowWrflDnon";
 			Stop = "AmovPknlMstpSnonWnonDnon";
 			StopRelaxed = "AmovPknlMstpSnonWnonDnon";
+		};
+		class Acts_Commenting_On_Fight_Actions: NoActions
+		{
+			Combat = "Acts_Commenting_On_Fight_out_loop";
+			Default = "Acts_Commenting_On_Fight_out_loop";
+			Relaxed = "Acts_Commenting_On_Fight_loop";
+			stance = "ManStanceStand";
+			Stop = "Acts_Commenting_On_Fight_loop";
+			StopRelaxed = "Acts_Commenting_On_Fight_loop";
+			upDegree = "ManPosNoWeapon";
 		};
 		class Acts_Helicargo_actions: RifleLowSitActions
 		{
@@ -31,6 +48,48 @@ class CfgMovesBasic
 			Default = "Acts_HeliCargoTalking_loop";
 			Stop = "Acts_HeliCargoTalking_loop";
 			StopRelaxed = "Acts_HeliCargoTalking_loop";
+		};
+		class Acts_Helping_Wake_Up_Actions: NoActions
+		{
+			Combat = "Acts_RifleLowStand_Default";
+			Default = "Acts_Helping_Wake_Up_2";
+			Relaxed = "Acts_Helping_Wake_Up_2";
+			stance = "ManStanceStand";
+			Stop = "Acts_Helping_Wake_Up_2";
+			StopRelaxed = "Acts_Helping_Wake_Up_2";
+			upDegree = "ManPosStand";
+		};
+		class Acts_Hilltop_Calibration_Actions: NoActions
+		{
+			Combat = "Acts_Hilltop_Calibration_Loop";
+			Default = "Acts_Hilltop_Calibration_Loop";
+			Relaxed = "Acts_Hilltop_Calibration_Loop";
+			stance = "ManStanceStand";
+			Stand = "Acts_Hilltop_Calibration_Loop";
+			Stop = "Acts_Hilltop_Calibration_Loop";
+			StopRelaxed = "Acts_Hilltop_Calibration_Loop";
+			upDegree = "ManPosNoWeapon";
+		};
+		class Acts_In_Sinkhole_actions: NoActions
+		{
+			Civil = "Acts_In_Sinkhole_loop";
+			Combat = "Acts_In_Sinkhole_loop";
+			Default = "Acts_In_Sinkhole_loop";
+			Relaxed = "Acts_In_Sinkhole_loop";
+			stance = "ManStanceStand";
+			Stop = "Acts_In_Sinkhole_loop";
+			StopRelaxed = "Acts_In_Sinkhole_loop";
+			upDegree = "ManPosNoWeapon";
+		};
+		class Acts_Injured_Driver_Actions: NoActions
+		{
+			Combat = "Acts_Injured_Driver_Loop";
+			Default = "Acts_Injured_Driver_Loop";
+			Relaxed = "Acts_Injured_Driver_Loop";
+			stance = "ManStanceStand";
+			Stop = "Acts_Injured_Driver_Loop";
+			StopRelaxed = "Acts_Injured_Driver_Loop";
+			upDegree = "ManPosNoWeapon";
 		};
 		class Acts_JetsCrewaidFCrouch_actions: CivilStandActions
 		{
@@ -325,6 +384,16 @@ class CfgMovesBasic
 			Stop = "Acts_NavigatingChopper_Loop";
 			StopRelaxed = "Acts_NavigatingChopper_Loop";
 		};
+		class Acts_RU_Briefing_Actions: NoActions
+		{
+			Combat = "Acts_RU_Briefing_Speaking";
+			Default = "Acts_RU_Briefing_Speaking";
+			Relaxed = "Acts_RU_Briefing_Speaking";
+			stance = "ManStanceStand";
+			Stop = "Acts_RU_Briefing_Speaking";
+			StopRelaxed = "Acts_RU_Briefing_Speaking";
+			upDegree = "ManPosStand";
+		};
 		class Acts_ShieldFromSun_actions: RifleLowStandActions
 		{
 			Combat = "Acts_ShieldFromSun_loop";
@@ -503,6 +572,13 @@ class CfgMovesBasic
 			Stop = "Acts_SittingWounded_loop";
 			StopRelaxed = "Acts_SittingWounded_loop";
 		};
+		class Acts_Soldier_Moves_Inside_Actions: NoActions
+		{
+			Combat = "AmovPercMstpSlowWrflDnon";
+			Default = "Acts_Soldier_Moves_Inside_1";
+			Stop = "Acts_Soldier_Moves_Inside_1";
+			StopRelaxed = "Acts_Soldier_Moves_Inside_1";
+		};
 		class Acts_starterPistol_loop: PistolStandActions
 		{
 			Combat = "Acts_starterPistol_loop";
@@ -510,11 +586,45 @@ class CfgMovesBasic
 			Stop = "Acts_starterPistol_loop";
 			StopRelaxed = "Acts_starterPistol_loop";
 		};
+		class Acts_Stunned_Unconscious_Actions: NoActions
+		{
+			Combat = "Acts_Stunned_Unconscious_end";
+			Default = "Acts_Stunned_Unconscious_end";
+			Stop = "Acts_Stunned_Unconscious_end";
+			StopRelaxed = "Acts_Stunned_Unconscious_end";
+		};
 		class Acts_TacopsPoster_actions: CutsceneLoop
 		{
 			default = "Acts_TacopsPoster";
 			stop = "Acts_TacopsPoster";
 			stoprelaxed = "Acts_TacopsPoster";
+		};
+		class Acts_Taking_Calling_Out_Jets_Actions: NoActions
+		{
+			Combat = "Acts_Calling_Out_Jets_out_loop";
+			Default = "Acts_Calling_Out_Jets_in_loop";
+			Relaxed = "Acts_Calling_Out_Jets_in_loop";
+			stance = "ManStanceStand";
+			Stop = "Acts_RifleLowStand_Default";
+			StopRelaxed = "Acts_Calling_Out_Jets_in_loop";
+			upDegree = "ManPosStand";
+		};
+		class Acts_Taking_Cover_From_Jets_Actions: NoActions
+		{
+			Combat = "Acts_Taking_Cover_From_Jets_loop";
+			Default = "Acts_Taking_Cover_From_Jets_in_loop";
+			Relaxed = "Acts_Taking_Cover_From_Jets_in_loop";
+			stance = "ManStanceStand";
+			Stop = "Acts_Taking_Cover_From_Jets_in_loop";
+			StopRelaxed = "Acts_Taking_Cover_From_Jets_in_loop";
+			upDegree = "ManPosNoWeapon";
+		};
+		class Acts_Training_Reveal_Ambusher: RifleLowStandActions
+		{
+			Combat = "Acts_Training_Reveal_Ambusher_Loop";
+			Default = "Acts_Training_Reveal_Ambusher_Loop";
+			Stop = "Acts_Training_Reveal_Ambusher_Loop";
+			StopRelaxed = "Acts_Training_Reveal_Ambusher_Loop";
 		};
 		class Acts_TreatingWounded_actions: RifleLowStandActions
 		{
@@ -529,6 +639,15 @@ class CfgMovesBasic
 			Default = "Acts_UnconsciousStandUp_part1";
 			Stop = "Acts_UnconsciousStandUp_part1";
 			StopRelaxed = "Acts_UnconsciousStandUp_part1";
+		};
+		class Acts_Waking_Up_Player_action: PistolLowStandActions
+		{
+			Combat = "Acts_PistolLowStand_Default";
+			Default = "Acts_Waking_Up_Player";
+			Player = "Acts_Waking_Up_Player";
+			Relaxed = "Acts_Waking_Up_Player";
+			Stop = "Acts_Waking_Up_Player";
+			StopRelaxed = "Acts_Waking_Up_Player";
 		};
 		class Acts_WarmUp_actions: RifleLowStandActions
 		{
@@ -651,6 +770,18 @@ class CfgMovesBasic
 			WalkRF = "";
 			WeaponOff = "";
 			WeaponOn = "";
+		};
+		class ActsRifleOperationsActions: NoActions
+		{
+			Combat = "Acts_Rifle_Operations_Default";
+			CutsceneRifleLowStand = "Acts_Rifle_Operations_Default";
+			Default = "Acts_Rifle_Operations_Default";
+			Relaxed = "Acts_Rifle_Operations_Default";
+			Stance = "ManStanceStand";
+			Stand = "Acts_Rifle_Operations_Default";
+			Stop = "Acts_Rifle_Operations_Default";
+			StopRelaxed = "Acts_Rifle_Operations_Default";
+			upDegree = "ManPosStand";
 		};
 		class BinocKneelActions: RifleKneelActions
 		{
@@ -8451,6 +8582,7 @@ class CfgMovesBasic
 		{
 			access = 3;
 			GestureAgonyCargo[] = {"GestureAgonyCargo", "Gesture"};
+			GestureChangeAntenna[] = {"GestureChangeAntenna", "Gesture"};
 			GestureDismountMuzzle[] = {"GestureDismountMuzzle", "Gesture"};
 			GestureEmpty[] = {"GestureEmpty", "Gesture"};
 			GestureLegPush[] = {"GestureLegPush", "Gesture"};
@@ -23328,6 +23460,7 @@ class CfgMovesBasic
 		GestureAgonyCargo = "";
 		gestureAttack = "";
 		gestureCeaseFire = "";
+		GestureChangeAntenna = "GestureChangeAntenna";
 		gestureCover = "";
 		GestureDismountMuzzle = "";
 		gestureEmpty = "";

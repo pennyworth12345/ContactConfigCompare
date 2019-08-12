@@ -524,23 +524,23 @@ class CfgWrapperUI
 		};
 		class Scroll
 		{
-			color[] = {0.8, 0.6, 0, 1};
-			height = 24;
-			hotspotX = 0.5;
-			hotspotY = 0.5;
+			color[] = {1, 1, 1, 1};
+			height = 32;
+			hotspotX = 0.1875;
+			hotspotY = 0.03125;
 			shadow = 0;
-			texture = "\A3\ui_f\data\gui\cfg\cursors\scroll_gs.paa";
-			width = 24;
+			texture = "\A3\ui_f\data\gui\cfg\cursors\arrow_gs.paa";
+			width = 32;
 		};
 		class Track
 		{
-			color[] = {0.7, 0.1, 0, 1};
-			height = 24;
-			hotspotX = 0.5;
-			hotspotY = 0.5;
+			color[] = {1, 1, 1, 1};
+			height = 32;
+			hotspotX = 0.1875;
+			hotspotY = 0.03125;
 			shadow = 0;
-			texture = "\A3\ui_f\data\gui\cfg\cursors\track_gs.paa";
-			width = 24;
+			texture = "\A3\ui_f\data\gui\cfg\cursors\arrow_gs.paa";
+			width = 32;
 		};
 		class Track3D
 		{

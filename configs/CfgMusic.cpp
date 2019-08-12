@@ -940,6 +940,230 @@ class CfgMusic
 		sound[] = {"\A3\Music_F_Tank\MainTheme_F_Tank.ogg", 1, 1};
 		theme = "safe";
 	};
+	class Music_Arrival
+	{
+		name = "Contact: Wavering Base";
+		sound[] = {"\A3\Music_F_Contact\Music\Wavering_Base.ogg", 2.23872, 1};
+	};
+	class Music_Battle_Alien
+	{
+		name = "Contact: Contact";
+		sound[] = {"\A3\Music_F_Contact\Music\Contact.ogg", 1, 1};
+	};
+	class Music_Battle_Alien_Loop_01
+	{
+		name = "Contact: Contact (Edit 1)";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Battle_Alien_Loop_01.ogg", 1.77828, 1};
+	};
+	class Music_Battle_Alien_Loop_02
+	{
+		name = "Contact: Contact (Edit 2)";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Battle_Alien_Loop_02.ogg", 1.77828, 1};
+	};
+	class Music_Battle_Alien_Loop_03
+	{
+		name = "Contact: Contact (Edit 3)";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Battle_Alien_Loop_03.ogg", 1.41254, 1};
+	};
+	class Music_Battle_Human
+	{
+		name = "Contact: Infighting";
+		sound[] = {"\A3\Music_F_Contact\Music\Infighting.ogg", 1, 1};
+	};
+	class Music_Battle_Human_Loop
+	{
+		name = "Contact: Contact (Edit 4)";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Battle_Human_Loop.ogg", 1.41254, 1};
+	};
+	class Music_Credits_Contact
+	{
+		name = "Contact: Transilience (Credits)";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Credits_Contact.ogg", 1, 1};
+	};
+	class Music_Failed_Contact
+	{
+		name = "Contact: Failed Contact";
+		sound[] = {"\A3\Music_F_Contact\Music\Failed_Contact.ogg", 1.25893, 1};
+	};
+	class Music_Failed_Contact_02
+	{
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Failed_Contact_02.ogg", 1.25893, 1};
+	};
+	class Music_Freeroam_01_MissionStart
+	{
+		name = "Contact: Free-Roam 1";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Freeroam_01_MissionStart.ogg", 1, 1};
+	};
+	class Music_Freeroam_02_MissionStart
+	{
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Freeroam_02_MissionStart.ogg", 1, 1};
+	};
+	class Music_FreeRoam_Battle_Alien
+	{
+		name = "Contact: Contact (Free-Roam)";
+		sound[] = {"\A3\Music_F_Contact\Music\Contact.ogg", 0.891251, 1};
+	};
+	class Music_FreeRoam_Battle_Alien_Loop_01
+	{
+		name = "Contact: Contact (Free-Roam Edit 1)";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Battle_Alien_Loop_01.ogg", 0.707946, 1};
+	};
+	class Music_FreeRoam_Battle_Alien_Loop_02
+	{
+		name = "Contact: Contact (Free-Roam Edit 2)";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Battle_Alien_Loop_02.ogg", 0.707946, 1};
+	};
+	class Music_FreeRoam_Battle_Alien_Loop_03
+	{
+		name = "Contact: Contact (Free-Roam Edit 3)";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Battle_Alien_Loop_03.ogg", 0.707946, 1};
+	};
+	class Music_FreeRoam_Battle_Human
+	{
+		name = "Contact: Infighting (Free-Roam)";
+		sound[] = {"\A3\Music_F_Contact\Music\Infighting.ogg", 0.630957, 1};
+	};
+	class Music_FreeRoam_Battle_Human_Loop
+	{
+		sound[] = {"\A3\Music_F_Contact\Music\Music_FreeRoam_Battle_Human_Loop.ogg", 0.630957, 1};
+	};
+	class Music_Freeroam_End
+	{
+		name = "Contact: Contact (Free-Roam End)";
+		sound[] = {"\A3\Music_F_Contact\Music\Contact.ogg", 2.23872, 1};
+	};
+	class Music_Freeroam_RootExtract
+	{
+		sound[] = {"\A3\Music_F_Contact\Music\Transilience.ogg", 0.7, 1};
+	};
+	class Music_FreeRoam_Russian_Theme
+	{
+		name = "Contact: Sharper Claws (Free-Roam)";
+		sound[] = {"\A3\Music_F_Contact\Music\Sharper_Claws.ogg", 0.891251, 1};
+	};
+	class Music_FreeRoam_Russian_Theme_Loop
+	{
+		name = "Contact: Sharper Claws (Free-Roam Edit 1)";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_FreeRoam_Russian_Theme_Loop.ogg", 0.446684, 1};
+	};
+	class Music_FreeRoam_Suspended_Loop_01
+	{
+		name = "Contact: Suspense (Free-Roam Edit)";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_FreeRoam_Suspended_Loop_01.ogg", 0.398107, 1};
+	};
+	class Music_FreeRoam_Tension_Loop_01
+	{
+		name = "Contact: Tension (Free-Roam)";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Tension_Loop_01.ogg", 0.501187, 1};
+	};
+	class Music_Hostile_Drone_Close_01
+	{
+		name = "Contact: Hostile";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Hostile_Drone_Close_01.ogg", 0.794328, 1};
+	};
+	class Music_Intro_02_Emp_Tension_01
+	{
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Intro_02_Emp_Tension_01.ogg", 1, 1};
+	};
+	class Music_Intro_02_MissionStart
+	{
+		name = "Contact: Intro 2";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Intro_02_MissionStart.ogg", 1, 1};
+	};
+	class Music_Intro_03_MissionStart
+	{
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Intro_03_MissionStart.ogg", 1.1, 1};
+	};
+	class Music_Intro_ThisIsWarA
+	{
+		name = "Contact: This is War (Cut)";
+		sound[] = {"\A3\Music_F_Contact\Music\ThisisWarA_LeadTrack01a_F.ogg", 1.25893, 1};
+	};
+	class Music_Menu_Contact
+	{
+		name = "Contact: Menu";
+		sound[] = {"\A3\Music_F_Contact\Music\Main_Menu_JukeBox.ogg", 1.15, 1};
+	};
+	class Music_Outro2_Ending
+	{
+		name = "Contact: Outro 2";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Outro2_Ending.ogg", 0.794328, 1};
+	};
+	class Music_Probe_Discovered
+	{
+		name = "Contact: Acclivity Dawn";
+		sound[] = {"\A3\Music_F_Contact\Music\Acclivity_Dawn.ogg", 1.3, 1};
+	};
+	class Music_Roaming_Day
+	{
+		name = "Contact: Sunrise Zero-One";
+		sound[] = {"\A3\Music_F_Contact\Music\Sunrise_Zero_One.ogg", 0.501187, 1};
+	};
+	class Music_Roaming_Day_02
+	{
+		name = "Contact: Sunrise Zero-Two";
+		sound[] = {"\A3\Music_F_Contact\Music\Sunrise_Zero_Two.ogg", 0.630957, 1};
+	};
+	class Music_Roaming_Night
+	{
+		name = "Contact: Night Eyes Zero-One";
+		sound[] = {"\A3\Music_F_Contact\Music\Night_Eyes_Zero_One.ogg", 0.562341, 1};
+	};
+	class Music_Roaming_Night_02
+	{
+		name = "Contact: Night Eyes Zero-Two";
+		sound[] = {"\A3\Music_F_Contact\Music\Night_Eyes_Zero_Two.ogg", 0.446684, 1};
+	};
+	class Music_Roaming_Night_Fragment_01_20s
+	{
+		name = "Contact: Night Eyes (Cut 1)";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Roaming_Night_Fragment_01_20s.ogg", 0.446684, 1};
+	};
+	class Music_Roaming_Night_Fragment_01_30s
+	{
+		name = "Contact: Night Eyes (Cut 2)";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Roaming_Night_Fragment_01_30s.ogg", 0.446684, 1};
+	};
+	class Music_Roaming_Night_Fragment_01_60s
+	{
+		name = "Contact: Night Eyes (Cut 3)";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Roaming_Night_Fragment_01_60s.ogg", 0.446684, 1};
+	};
+	class Music_Roaming_Night_Fragment_02_30s
+	{
+		name = "Contact: Night Eyes (Cut 4)";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Roaming_Night_Fragment_02_30s.ogg", 0.446684, 1};
+	};
+	class Music_Roaming_Night_Fragment_02_60s
+	{
+		name = "Contact: Night Eyes (Cut 5)";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Roaming_Night_Fragment_02_60s.ogg", 0.446684, 1};
+	};
+	class Music_Roaming_Night_Fragment_03_60s
+	{
+		name = "Contact: Night Eyes (Cut 6)";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Roaming_Night_Fragment_03_60s.ogg", 0.446684, 1};
+	};
+	class Music_Russian_Theme
+	{
+		name = "Contact: Sharper Claws";
+		sound[] = {"\A3\Music_F_Contact\Music\Sharper_Claws.ogg", 1, 1};
+	};
+	class Music_Suspended_Loop_01
+	{
+		name = "Contact: Suspense";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Suspended_Loop_01.ogg", 0.562341, 1};
+	};
+	class Music_Tension_Loop_01
+	{
+		name = "Contact: Tension";
+		sound[] = {"\A3\Music_F_Contact\Music\Music_Tension_Loop_01.ogg", 0.794328, 1};
+	};
+	class Music_Theme_Contact
+	{
+		name = "Contact: Transilience (Main Theme)";
+		sound[] = {"\A3\Music_F_Contact\Music\Transilience.ogg", 1, 1};
+	};
 	class radio_music
 	{
 		duration = 151.46;

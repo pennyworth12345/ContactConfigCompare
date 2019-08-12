@@ -1,0 +1,135 @@
+class ImpactEffectsBloodLaser
+{
+	class Blood
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 0.2;
+		position[] = {0, 0, 0};
+		simulation = "particles";
+		type = "Blood";
+	};
+	class Blood1
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 0.65;
+		position[] = {0, 0, 0};
+		simulation = "particles";
+		type = "Blood1";
+	};
+	class Blood2
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 0.4;
+		position[] = {0, 0, 0};
+		simulation = "particles";
+		type = "Blood2";
+	};
+	class Blood3
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 0.4;
+		position[] = {0, 0, 0};
+		simulation = "particles";
+		type = "Blood3";
+	};
+	class BloodMist
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 1;
+		MoveVelocityVar[] = {0, 0, 0};
+		position[] = {0, 0, 0};
+		simulation = "particles";
+		type = "BloodMist";
+	};
+	class BloodUnderwater1
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 0.4;
+		position[] = {0, 0, 0};
+		simulation = "particles";
+		type = "BloodUnderwater1";
+	};
+	class ImpactSmoke2
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 1;
+		position[] = {0, 0, 0};
+		qualityLevel = 2;
+		simulation = "particles";
+		type = "ImpactSmoke2";
+	};
+	class ImpactSmoke2Low
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 1;
+		position[] = {0, 0, 0};
+		qualityLevel = 0;
+		simulation = "particles";
+		type = "ImpactSmokeLow2";
+	};
+	class ImpactSmoke2Med
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 1;
+		position[] = {0, 0, 0};
+		qualityLevel = 1;
+		simulation = "particles";
+		type = "ImpactSmokeMed2";
+	};
+	class ImpactSparks0
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 1;
+		position[] = {0, 0, 0};
+		simulation = "particles";
+		type = "ImpactSparksLaser0";
+	};
+	class ImpactSparks2
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 3;
+		position[] = {0, 0, 0};
+		qualityLevel = 2;
+		simulation = "particles";
+		type = "ImpactSparksLaser2";
+	};
+	class ImpactSparks2Med
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 2;
+		position[] = {0, 0, 0};
+		qualityLevel = 1;
+		simulation = "particles";
+		type = "ImpactSparksLaserMed2";
+	};
+	class ImpactSparksLaser1
+	{
+		intensity = 1;
+		interval = 1;
+		lifeTime = 1;
+		position[] = {0, 0, 0};
+		simulation = "particles";
+		type = "ImpactSparksLaser1";
+	};
+	class SparksLight
+	{
+		intensity = 0.001;
+		interval = 1;
+		lifeTime = 1;
+		position[] = {0, 0, 0};
+		simulation = "light";
+		type = "SparksLight";
+	};
+};

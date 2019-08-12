@@ -427,70 +427,70 @@ class CfgSoundShaders
 		frequency = "0.8 * (1 + 0.65 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) - 0))";
 		range = "5*210";
 		samples[] = {{"A3\Sounds_F_Tank\vehicles\armor\Afv_Wheeled_01\Afv_Wheeled_01_Engine_EXT_RPM0", 1}};
-		volume = "engineOn * 0.7 * 1.3 * (rpm factor [0 *800, (0 *800 + 1.0 *(800-0 *800))]) * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor [(1600 - 800)/(1900 - 800) - (((1600 - 800)/(1900 - 800) - 0) - (1.5 * ((1600 - 800)/(1900 - 800) - 0)))/2, 0])";
+		volume = "engineOn * (0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.3 * (rpm factor [0 *800, (0 *800 + 1.0 *(800-0 *800))]) * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor [(1600 - 800)/(1900 - 800) - (((1600 - 800)/(1900 - 800) - 0) - (1.5 * ((1600 - 800)/(1900 - 800) - 0)))/2, 0])";
 	};
 	class Afv_Wheeled_01_Engine_RPM0_INT_SoundShader: Engine_Base_RPM0_INT_SoundShader
 	{
 		frequency = "0.8 * (1 + 0.65 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) - 0))";
 		range = "5*210";
 		samples[] = {{"A3\Sounds_F_Tank\vehicles\armor\Afv_Wheeled_01\Afv_Wheeled_01_Engine_INT_RPM0", 1}};
-		volume = "engineOn * 0.55 * 1.5 * (rpm factor [0 *800, (0 *800 + 1.0 *(800-0 *800))]) * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor [(1600 - 800)/(1900 - 800) - (((1600 - 800)/(1900 - 800) - 0) - (1.5 * ((1600 - 800)/(1900 - 800) - 0)))/2, 0])";
+		volume = "engineOn * (0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (rpm factor [0 *800, (0 *800 + 1.0 *(800-0 *800))]) * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor [(1600 - 800)/(1900 - 800) - (((1600 - 800)/(1900 - 800) - 0) - (1.5 * ((1600 - 800)/(1900 - 800) - 0)))/2, 0])";
 	};
 	class Afv_Wheeled_01_Engine_RPM1_EXT_SoundShader: Engine_Base_RPM1_EXT_SoundShader
 	{
 		frequency = "0.8 * (1 + 0.65 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) - (1600 - 800)/(1900 - 800)))";
 		range = "5*215";
 		samples[] = {{"A3\Sounds_F_Tank\vehicles\armor\Afv_Wheeled_01\Afv_Wheeled_01_Engine_EXT_RPM1", 1}};
-		volume = "engineOn * 0.7 * 1.3 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor[0, (1600 - 800)/(1900 - 800) - (((1600 - 800)/(1900 - 800) - 0) - (1.5 * ((1600 - 800)/(1900 - 800) - 0)))/2]) * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor [(1700 - 800)/(1900 - 800) - (((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800)) - (1.5 * ((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800))))/2, (1600 - 800)/(1900 - 800) + (((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800)) - (1.5 * ((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800))))/2])";
+		volume = "engineOn * (0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.3 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor[0, (1600 - 800)/(1900 - 800) - (((1600 - 800)/(1900 - 800) - 0) - (1.5 * ((1600 - 800)/(1900 - 800) - 0)))/2]) * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor [(1700 - 800)/(1900 - 800) - (((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800)) - (1.5 * ((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800))))/2, (1600 - 800)/(1900 - 800) + (((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800)) - (1.5 * ((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800))))/2])";
 	};
 	class Afv_Wheeled_01_Engine_RPM1_INT_SoundShader: Engine_Base_RPM1_INT_SoundShader
 	{
 		frequency = "0.8 * (1 + 0.65 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) - (1600 - 800)/(1900 - 800)))";
 		range = "5*215";
 		samples[] = {{"A3\Sounds_F_Tank\vehicles\armor\Afv_Wheeled_01\Afv_Wheeled_01_Engine_INT_RPM1", 1}};
-		volume = "engineOn * 0.55 * 1.5 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor[0, (1600 - 800)/(1900 - 800) - (((1600 - 800)/(1900 - 800) - 0) - (1.5 * ((1600 - 800)/(1900 - 800) - 0)))/2]) * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor [(1700 - 800)/(1900 - 800) - (((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800)) - (1.5 * ((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800))))/2, (1600 - 800)/(1900 - 800) + (((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800)) - (1.5 * ((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800))))/2])";
+		volume = "engineOn * (0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor[0, (1600 - 800)/(1900 - 800) - (((1600 - 800)/(1900 - 800) - 0) - (1.5 * ((1600 - 800)/(1900 - 800) - 0)))/2]) * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor [(1700 - 800)/(1900 - 800) - (((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800)) - (1.5 * ((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800))))/2, (1600 - 800)/(1900 - 800) + (((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800)) - (1.5 * ((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800))))/2])";
 	};
 	class Afv_Wheeled_01_Engine_RPM2_EXT_SoundShader: Engine_Base_RPM2_EXT_SoundShader
 	{
 		frequency = "0.8 * (1 + 0.65 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) - (1700 - 800)/(1900 - 800)))";
 		range = "5*220";
 		samples[] = {{"A3\Sounds_F_Tank\vehicles\armor\Afv_Wheeled_01\Afv_Wheeled_01_Engine_EXT_RPM2", 1}};
-		volume = "engineOn * 0.7 * 1.3 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor[(1600 - 800)/(1900 - 800) + (((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800)) - (1.5 * ((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800))))/2, (1700 - 800)/(1900 - 800) - (((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800)) - (1.5 * ((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800))))/2]) * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor [(1800 - 800)/(1900 - 800) - (((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800)) - (1.5 * ((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800))))/2, (1700 - 800)/(1900 - 800) + (((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800)) - (1.5 * ((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800))))/2])";
+		volume = "engineOn * (0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.3 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor[(1600 - 800)/(1900 - 800) + (((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800)) - (1.5 * ((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800))))/2, (1700 - 800)/(1900 - 800) - (((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800)) - (1.5 * ((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800))))/2]) * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor [(1800 - 800)/(1900 - 800) - (((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800)) - (1.5 * ((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800))))/2, (1700 - 800)/(1900 - 800) + (((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800)) - (1.5 * ((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800))))/2])";
 	};
 	class Afv_Wheeled_01_Engine_RPM2_INT_SoundShader: Engine_Base_RPM2_INT_SoundShader
 	{
 		frequency = "0.8 * (1 + 0.65 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) - (1700 - 800)/(1900 - 800)))";
 		range = "5*220";
 		samples[] = {{"A3\Sounds_F_Tank\vehicles\armor\Afv_Wheeled_01\Afv_Wheeled_01_Engine_INT_RPM2", 1}};
-		volume = "engineOn * 0.55 * 1.5 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor[(1600 - 800)/(1900 - 800) + (((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800)) - (1.5 * ((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800))))/2, (1700 - 800)/(1900 - 800) - (((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800)) - (1.5 * ((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800))))/2]) * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor [(1800 - 800)/(1900 - 800) - (((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800)) - (1.5 * ((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800))))/2, (1700 - 800)/(1900 - 800) + (((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800)) - (1.5 * ((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800))))/2])";
+		volume = "engineOn * (0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor[(1600 - 800)/(1900 - 800) + (((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800)) - (1.5 * ((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800))))/2, (1700 - 800)/(1900 - 800) - (((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800)) - (1.5 * ((1700 - 800)/(1900 - 800) - (1600 - 800)/(1900 - 800))))/2]) * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor [(1800 - 800)/(1900 - 800) - (((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800)) - (1.5 * ((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800))))/2, (1700 - 800)/(1900 - 800) + (((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800)) - (1.5 * ((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800))))/2])";
 	};
 	class Afv_Wheeled_01_Engine_RPM3_EXT_SoundShader: Engine_Base_RPM3_EXT_SoundShader
 	{
 		frequency = "0.8 * (1 + 0.65 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) - (1800 - 800)/(1900 - 800)))";
 		range = "5*225";
 		samples[] = {{"A3\Sounds_F_Tank\vehicles\armor\Afv_Wheeled_01\Afv_Wheeled_01_Engine_EXT_RPM3", 1}};
-		volume = "engineOn * 0.7 * 1.3 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor[(1700 - 800)/(1900 - 800) + (((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800)) - (1.5 * ((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800))))/2, (1800 - 800)/(1900 - 800) - (((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800)) - (1.5 * ((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800))))/2]) * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor [(1900 - 800)/(1900 - 800) - (((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800)) - (1.5 * ((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800))))/2, (1800 - 800)/(1900 - 800) + (((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800)) - (1.5 * ((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800))))/2])";
+		volume = "engineOn * (0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.3 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor[(1700 - 800)/(1900 - 800) + (((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800)) - (1.5 * ((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800))))/2, (1800 - 800)/(1900 - 800) - (((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800)) - (1.5 * ((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800))))/2]) * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor [(1900 - 800)/(1900 - 800) - (((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800)) - (1.5 * ((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800))))/2, (1800 - 800)/(1900 - 800) + (((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800)) - (1.5 * ((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800))))/2])";
 	};
 	class Afv_Wheeled_01_Engine_RPM3_INT_SoundShader: Engine_Base_RPM3_INT_SoundShader
 	{
 		frequency = "0.8 * (1 + 0.65 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) - (1800 - 800)/(1900 - 800)))";
 		range = "5*225";
 		samples[] = {{"A3\Sounds_F_Tank\vehicles\armor\Afv_Wheeled_01\Afv_Wheeled_01_Engine_INT_RPM3", 1}};
-		volume = "engineOn * 0.55 * 1.5 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor[(1700 - 800)/(1900 - 800) + (((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800)) - (1.5 * ((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800))))/2, (1800 - 800)/(1900 - 800) - (((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800)) - (1.5 * ((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800))))/2]) * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor [(1900 - 800)/(1900 - 800) - (((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800)) - (1.5 * ((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800))))/2, (1800 - 800)/(1900 - 800) + (((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800)) - (1.5 * ((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800))))/2])";
+		volume = "engineOn * (0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor[(1700 - 800)/(1900 - 800) + (((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800)) - (1.5 * ((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800))))/2, (1800 - 800)/(1900 - 800) - (((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800)) - (1.5 * ((1800 - 800)/(1900 - 800) - (1700 - 800)/(1900 - 800))))/2]) * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor [(1900 - 800)/(1900 - 800) - (((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800)) - (1.5 * ((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800))))/2, (1800 - 800)/(1900 - 800) + (((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800)) - (1.5 * ((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800))))/2])";
 	};
 	class Afv_Wheeled_01_Engine_RPM4_EXT_SoundShader: Engine_Base_RPM4_EXT_SoundShader
 	{
 		frequency = "0.8 * (1 + 0.65 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) - (1900 - 800)/(1900 - 800)))";
 		range = "5*230";
 		samples[] = {{"A3\Sounds_F_Tank\vehicles\armor\Afv_Wheeled_01\Afv_Wheeled_01_Engine_EXT_RPM4", 1}};
-		volume = "engineOn * 0.7 * 1.3 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor[(1800 - 800)/(1900 - 800) + (((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800)) - (1.5 * ((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800))))/2, (1900 - 800)/(1900 - 800) - (((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800)) - (1.5 * ((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800))))/2])";
+		volume = "engineOn * (0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.3 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor[(1800 - 800)/(1900 - 800) + (((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800)) - (1.5 * ((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800))))/2, (1900 - 800)/(1900 - 800) - (((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800)) - (1.5 * ((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800))))/2])";
 	};
 	class Afv_Wheeled_01_Engine_RPM4_INT_SoundShader: Engine_Base_RPM4_INT_SoundShader
 	{
 		frequency = "0.8 * (1 + 0.65 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) - (1900 - 800)/(1900 - 800)))";
 		range = "5*230";
 		samples[] = {{"A3\Sounds_F_Tank\vehicles\armor\Afv_Wheeled_01\Afv_Wheeled_01_Engine_INT_RPM4", 1}};
-		volume = "engineOn * 0.55 * 1.5 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor[(1800 - 800)/(1900 - 800) + (((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800)) - (1.5 * ((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800))))/2, (1900 - 800)/(1900 - 800) - (((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800)) - (1.5 * ((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800))))/2])";
+		volume = "engineOn * (0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (((1+0.1*0.8 *thrust) * ((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 0.8 *thrust)*((1-0.8) * (speed factor [0, 29]) + 0.8 * (rpm factor [800,	2400])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2400])) factor[(1800 - 800)/(1900 - 800) + (((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800)) - (1.5 * ((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800))))/2, (1900 - 800)/(1900 - 800) - (((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800)) - (1.5 * ((1900 - 800)/(1900 - 800) - (1800 - 800)/(1900 - 800))))/2])";
 	};
 	class Afv_Wheeled_01_Movement_Dirt_Ext_01_SoundShader
 	{
@@ -510,287 +510,287 @@ class CfgSoundShaders
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\add_layers\Rain_01_EXT", 1}};
-		volume = "0.7 * 1 * rain";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1 * rain";
 	};
 	class Afv_Wheeled_01_Rain_INT_SoundShader
 	{
 		frequency = 1;
 		range = 60;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\add_layers\Rain_01_INT", 1}};
-		volume = "0.55 * 1 * rain";
+		volume = "(0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1 * rain";
 	};
 	class Afv_Wheeled_01_Rattling_INT_SoundShader
 	{
 		frequency = 1;
 		range = 60;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\add_layers\Rattling_03_INT", 1}};
-		volume = "0.55 * 1 * 0.3 * ((rpm factor[0,800]) + ((speed factor[0,20]) + (0.1 * thrust)))";
+		volume = "(0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1 * 0.3 * ((rpm factor[0,800]) + ((speed factor[0,20]) + (0.1 * thrust)))";
 	};
 	class Afv_Wheeled_01_Stress_EXT_SoundShader
 	{
 		frequency = 2;
 		range = 60;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\add_layers\Stress_01_EXT", 1}};
-		volume = "0.7 * 0 * ((damper0 factor [0.5,1.5 ]) + (0.2*(gmeterz factor[0.5, 3]))) * (speed factor [12, 35])";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0 * ((damper0 factor [0.5,1.5 ]) + (0.2*(gmeterz factor[0.5, 3]))) * (speed factor [12, 35])";
 	};
 	class Afv_Wheeled_01_Stress_INT_SoundShader
 	{
 		frequency = 1;
 		range = 60;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\add_layers\Stress_01_INT", 1}};
-		volume = "0.55 * 1 * ((damper0 factor [0.5,1.5 ]) + (0.2*(gmeterz factor[0.5, 3]))) * (speed factor [12, 35])";
+		volume = "(0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1 * ((damper0 factor [0.5,1.5 ]) + (0.2*(gmeterz factor[0.5, 3]))) * (speed factor [12, 35])";
 	};
 	class Afv_Wheeled_01_Tires_Asphalt_Fast_EXT_SoundShader: Base_Tires_Asphalt_Fast_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 40;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Asphalt_Fast_EXT", 1}};
-		volume = "0.7 * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.9 * asphalt";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.9 * asphalt";
 	};
 	class Afv_Wheeled_01_Tires_Asphalt_Fast_INT_SoundShader: Base_Tires_Asphalt_Fast_Int_SoundShader
 	{
 		frequency = 1;
 		range = 40;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Asphalt_Fast_INT", 1}};
-		volume = "0.55 * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.9 * asphalt";
+		volume = "(0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.9 * asphalt";
 	};
 	class Afv_Wheeled_01_Tires_Asphalt_Slow_EXT_SoundShader: Base_Tires_Asphalt_Slow_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 40;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Asphalt_Slow_EXT", 1}};
-		volume = "0.7 * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.9 * asphalt";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.9 * asphalt";
 	};
 	class Afv_Wheeled_01_Tires_Asphalt_Slow_INT_SoundShader: Base_Tires_Asphalt_Slow_Int_SoundShader
 	{
 		frequency = 1;
 		range = 40;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Asphalt_Slow_INT", 1}};
-		volume = "0.55 * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.9 * asphalt";
+		volume = "(0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.9 * asphalt";
 	};
 	class Afv_Wheeled_01_Tires_Brake_Hard_EXT_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires_brakes\Tires_Brake_Hard_01_EXT", 1}};
-		volume = "1.5*(asphalt max rock) * (longSlip factor [-0.1,-0.3]) * 0.7 * 1.9";
+		volume = "1.5*(asphalt max rock) * (longSlip factor [-0.1,-0.3]) * (0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.9";
 	};
 	class Afv_Wheeled_01_Tires_Brake_Hard_INT_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires_brakes\Tires_Brake_Hard_01_INT", 1}};
-		volume = "1.5*(asphalt max rock) * (longSlip factor [-0.1,-0.3]) * 0.55 * 0.6";
+		volume = "1.5*(asphalt max rock) * (longSlip factor [-0.1,-0.3]) * (0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.6";
 	};
 	class Afv_Wheeled_01_Tires_Brake_Soft_EXT_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires_brakes\Tires_Brake_Soft_01_EXT", 1}};
-		volume = "1.5*(1-asphalt)*(1-rock)*(1-water)*(1-sand) * (longSlip factor [-0.1,-0.3]) * 0.7 * 1.9";
+		volume = "1.5*(1-asphalt)*(1-rock)*(1-water)*(1-sand) * (longSlip factor [-0.1,-0.3]) * (0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.9";
 	};
 	class Afv_Wheeled_01_Tires_Brake_Soft_INT_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires_brakes\Tires_Brake_Soft_01_INT", 1}};
-		volume = "1.5*(1-asphalt)*(1-rock)*(1-water)*(1-sand) * (longSlip factor [-0.1,-0.3]) * 0.55 * 0.4";
+		volume = "1.5*(1-asphalt)*(1-rock)*(1-water)*(1-sand) * (longSlip factor [-0.1,-0.3]) * (0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.4";
 	};
 	class Afv_Wheeled_01_Tires_Grass_Fast_EXT_SoundShader: Base_Tires_Grass_Fast_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Grass_Fast_EXT", 1}};
-		volume = "0.7 * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.5 * grass";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.5 * grass";
 	};
 	class Afv_Wheeled_01_Tires_Grass_Fast_INT_SoundShader: Base_Tires_Grass_Fast_Int_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Grass_Fast_INT", 1}};
-		volume = "0.55 * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.5 * grass";
+		volume = "(0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.5 * grass";
 	};
 	class Afv_Wheeled_01_Tires_Grass_Slow_EXT_SoundShader: Base_Tires_Grass_Slow_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Grass_Slow_EXT", 1}};
-		volume = "0.7 * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.5 * grass";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.5 * grass";
 	};
 	class Afv_Wheeled_01_Tires_Grass_Slow_INT_SoundShader: Base_Tires_Grass_Slow_Int_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Grass_Slow_INT", 1}};
-		volume = "0.55 * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.5 * grass";
+		volume = "(0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.5 * grass";
 	};
 	class Afv_Wheeled_01_Tires_Gravel_Fast_EXT_SoundShader: Base_Tires_Gravel_Fast_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Gravel_Fast_EXT", 1}};
-		volume = "0.7 * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.9 * gravel";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.9 * gravel";
 	};
 	class Afv_Wheeled_01_Tires_Gravel_Fast_INT_SoundShader: Base_Tires_Gravel_Fast_Int_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Gravel_Fast_INT", 1}};
-		volume = "0.55 * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.9 * gravel";
+		volume = "(0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.9 * gravel";
 	};
 	class Afv_Wheeled_01_Tires_Gravel_Slow_EXT_SoundShader: Base_Tires_Gravel_Slow_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Gravel_Slow_EXT", 1}};
-		volume = "0.7 * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.9 * gravel";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.9 * gravel";
 	};
 	class Afv_Wheeled_01_Tires_Gravel_Slow_INT_SoundShader: Base_Tires_Gravel_Slow_Int_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Gravel_Slow_INT", 1}};
-		volume = "0.55 * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.9 * gravel";
+		volume = "(0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.9 * gravel";
 	};
 	class Afv_Wheeled_01_Tires_Mud_Fast_EXT_SoundShader: Base_Tires_Mud_Fast_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Mud_Fast_EXT", 1}};
-		volume = "0.7 * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.5 * mud";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.5 * mud";
 	};
 	class Afv_Wheeled_01_Tires_Mud_Fast_INT_SoundShader: Base_Tires_Mud_Fast_Int_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Mud_Fast_INT", 1}};
-		volume = "0.55 * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.5 * mud";
+		volume = "(0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.5 * mud";
 	};
 	class Afv_Wheeled_01_Tires_Mud_Slow_EXT_SoundShader: Base_Tires_Mud_Slow_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Mud_Slow_EXT", 1}};
-		volume = "0.7 * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.5 * mud";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.5 * mud";
 	};
 	class Afv_Wheeled_01_Tires_Mud_Slow_INT_SoundShader: Base_Tires_Mud_Slow_Int_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Mud_Slow_INT", 1}};
-		volume = "0.55 * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.5 * mud";
+		volume = "(0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.5 * mud";
 	};
 	class Afv_Wheeled_01_Tires_Rock_Fast_EXT_SoundShader: Base_Tires_Rock_Fast_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 30;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Rock_Fast_EXT", 1}};
-		volume = "0.7 * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.9 * rock";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.9 * rock";
 	};
 	class Afv_Wheeled_01_Tires_Rock_Fast_INT_SoundShader: Base_Tires_Rock_Fast_Int_SoundShader
 	{
 		frequency = 1;
 		range = 30;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Rock_Fast_INT", 1}};
-		volume = "0.55 * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.9 * rock";
+		volume = "(0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.9 * rock";
 	};
 	class Afv_Wheeled_01_Tires_Rock_Slow_EXT_SoundShader: Base_Tires_Rock_Slow_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 30;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Rock_Slow_EXT", 1}};
-		volume = "0.7 * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.9 * rock";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.9 * rock";
 	};
 	class Afv_Wheeled_01_Tires_Rock_Slow_INT_SoundShader: Base_Tires_Rock_Slow_Int_SoundShader
 	{
 		frequency = 1;
 		range = 30;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Rock_Slow_INT", 1}};
-		volume = "0.55 * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.9 * rock";
+		volume = "(0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.9 * rock";
 	};
 	class Afv_Wheeled_01_Tires_Sand_Fast_EXT_SoundShader: Base_Tires_Sand_Fast_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 30;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Sand_Fast_EXT", 1}};
-		volume = "0.7 * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.9 * sand";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.9 * sand";
 	};
 	class Afv_Wheeled_01_Tires_Sand_Fast_INT_SoundShader: Base_Tires_Sand_Fast_Int_SoundShader
 	{
 		frequency = 1;
 		range = 30;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Sand_Fast_INT", 1}};
-		volume = "0.55 * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.9 * sand";
+		volume = "(0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 1.9 * sand";
 	};
 	class Afv_Wheeled_01_Tires_Sand_Slow_EXT_SoundShader: Base_Tires_Sand_Slow_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 30;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Sand_Slow_EXT", 1}};
-		volume = "0.7 * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.9 * sand";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.9 * sand";
 	};
 	class Afv_Wheeled_01_Tires_Sand_Slow_INT_SoundShader: Base_Tires_Sand_Slow_Int_SoundShader
 	{
 		frequency = 1;
 		range = 30;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Sand_Slow_INT", 1}};
-		volume = "0.55 * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.9 * sand";
+		volume = "(0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 1.9 * sand";
 	};
 	class Afv_Wheeled_01_Tires_Turn_Hard_EXT_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires_turns\Tires_Turn_Hard_01_EXT", 1}};
-		volume = "1.5*(asphalt max rock) * (abs(latSlip) factor [0.01,0.1]) * 0.7 * 1.9";
+		volume = "1.5*(asphalt max rock) * (abs(latSlip) factor [0.01,0.1]) * (0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.9";
 	};
 	class Afv_Wheeled_01_Tires_Turn_Hard_INT_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires_turns\Tires_Turn_Hard_01_INT", 1}};
-		volume = "1.5*(asphalt max rock) * (abs(latSlip) factor [0.01,0.1]) * 0.55 * 0.7";
+		volume = "1.5*(asphalt max rock) * (abs(latSlip) factor [0.01,0.1]) * (0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.7";
 	};
 	class Afv_Wheeled_01_Tires_Turn_Soft_EXT_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires_turns\Tires_Turn_Soft_01_EXT", 1}};
-		volume = "1.5*(1-asphalt)*(1-rock)*(1-water)*(1-sand) * (abs(latSlip) factor [0.01,0.1]) * 0.7 * 1.9";
+		volume = "1.5*(1-asphalt)*(1-rock)*(1-water)*(1-sand) * (abs(latSlip) factor [0.01,0.1]) * (0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.9";
 	};
 	class Afv_Wheeled_01_Tires_Turn_Soft_INT_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires_turns\Tires_Turn_Soft_01_INT", 1}};
-		volume = "1.5*(1-asphalt)*(1-rock)*(1-water)*(1-sand) * (abs(latSlip) factor [0.01,0.1]) * 0.55 * 0.4";
+		volume = "1.5*(1-asphalt)*(1-rock)*(1-water)*(1-sand) * (abs(latSlip) factor [0.01,0.1]) * (0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.4";
 	};
 	class Afv_Wheeled_01_Tires_Water_Fast_EXT_SoundShader: Base_Tires_Water_Fast_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 40;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Water_Fast_EXT", 1}};
-		volume = "0.7 * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 0.2 * water";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 0.2 * water";
 	};
 	class Afv_Wheeled_01_Tires_Water_Fast_INT_SoundShader: Base_Tires_Water_Fast_Int_SoundShader
 	{
 		frequency = 1;
 		range = 40;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Water_Fast_INT", 1}};
-		volume = "0.55 * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 0.2 * water";
+		volume = "(0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [1.5, 10]) * 0.2 * water";
 	};
 	class Afv_Wheeled_01_Tires_Water_Slow_EXT_SoundShader: Base_Tires_Water_Slow_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 40;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Water_Slow_EXT", 1}};
-		volume = "0.7 * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.2 * water";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1  * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.2 * water";
 	};
 	class Afv_Wheeled_01_Tires_Water_Slow_INT_SoundShader: Base_Tires_Water_Slow_Int_SoundShader
 	{
 		frequency = 1;
 		range = 40;
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\shared\tires01\Tires_Water_Slow_INT", 1}};
-		volume = "0.55 * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.2 * water";
+		volume = "(0.55 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.2 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.9*(abs(speed) factor [0, 1.5])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.2 * water";
 	};
 	class Air_Condition_SoundShader
 	{
@@ -1170,6 +1170,221 @@ class CfgSoundShaders
 		samples[] = {{"\A3\Sounds_F_Exp\arsenal\weapons\Rifles\Rifle_AK74\AK74_tailtrees", 1}};
 		volume = "(1-interior/1.4)*trees/3";
 	};
+	class AlienDrone_01_Crash_Primary_Heavy_SoundShader
+	{
+		frequency = 1;
+		limitation = 1;
+		range = 200;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Crash_Collision_Close_01", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Crash_Collision_Close_02", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Crash_Collision_Close_03", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Crash_Collision_Close_04", 1}};
+		volume = 1;
+	};
+	class AlienDrone_01_Crash_Roll_01_SoundShader
+	{
+		frequency = 1;
+		limitation = 1;
+		range = 100;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Collision_Roll_01", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Collision_Roll_02", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Collision_Roll_03", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Collision_Roll_04", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Collision_Roll_05", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Collision_Roll_06", 1}};
+		volume = 0.7;
+	};
+	class AlienDrone_01_Crash_Secondary_SoundShader
+	{
+		frequency = 0.9;
+		limitation = 1;
+		range = 100;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Collision_Sec_Close_01", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Collision_Sec_Close_02", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Collision_Sec_Close_03", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Collision_Sec_Close_04", 1}};
+		volume = 0.6;
+	};
+	class AlienDrone_01_Destroyed_High_01_SoundShader
+	{
+		frequency = 1;
+		range = 200;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Death_High_01", 1}};
+		volume = 1;
+	};
+	class AlienDrone_01_Destroyed_Low_01_SoundShader
+	{
+		frequency = 1;
+		range = 200;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Death_Low_01", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Death_Low_02", 1}};
+		volume = 1;
+	};
+	class AlienDrone_01_Downwash_Debris_SoundShader
+	{
+		frequency = 1;
+		range = 100;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\AlienDrone_01_Downwash_Debris", 1}};
+		volume = "0.7 * engineon * (altRadar factor [15,10])";
+	};
+	class AlienDrone_01_Dummy_1000m_SoundShader
+	{
+		frequency = 1;
+		range = 1000;
+		samples[] = {{"\a3\Sounds_F_Enoch\Assets\Environment\Dummy_3sec", 1}};
+		volume = 1;
+	};
+	class AlienDrone_01_Matter_Collection_SoundShader
+	{
+		frequency = 1;
+		range = 80;
+		rangeCurve[] = {{0, 1}, {5, 1}, {80, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\AlienDrone_01_Matter_Collection_01", 1}};
+		volume = 0.6;
+	};
+	class AlienDrone_01_Pulse_SoundShader
+	{
+		frequency = 1;
+		rangeCurve[] = {{0, 0.5}, {25, 0.5}, {25, 0.5}, {750, 1}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Puzzles\Drone_Pulse_01", 1}};
+		volume = "0*1.2";
+	};
+	class AlienDrone_01_Puzzle_Aggro_01_SoundShader
+	{
+		frequency = 1;
+		range = 750;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Puzzles\Puzzle_Aggro_Max_01", 1}};
+		volume = 1.1;
+	};
+	class AlienDrone_01_Puzzle_Step_Failed_SoundShader
+	{
+		frequency = 1;
+		range = 750;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Puzzles\Puzzle_Step_Failed_01", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Puzzles\Puzzle_Step_Failed_02", 1}};
+		volume = 1.1;
+	};
+	class AlienDrone_01_Puzzle_Step_Success_SoundShader
+	{
+		frequency = 1;
+		range = 750;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Puzzles\Puzzle_Step_Success_01", 1}};
+		volume = 1.1;
+	};
+	class AlienDrone_01_Puzzle_Success_SoundShader
+	{
+		frequency = 1;
+		range = 750;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Puzzles\Puzzle_Success_01", 1}};
+		volume = 1.1;
+	};
+	class AlienDrone_01_Strat_End_01_SoundShader: AlienDrone_01_Strategic_Base_SoundShader
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Strat_End_01", 1}};
+	};
+	class AlienDrone_01_Strat_End_Land_01_SoundShader: AlienDrone_01_Strategic_Base_SoundShader
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Strat_End_Land_01", 1}};
+	};
+	class AlienDrone_01_Strat_Start_01_SoundShader: AlienDrone_01_Strategic_Base_SoundShader
+	{
+		frequency = 1;
+		limitation = 0;
+		range = 1500;
+		rangeCurve[] = {{0, 1}, {300, 1}, {1500, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Strat_Start_01", 1}};
+		volume = 1;
+	};
+	class AlienDrone_01_Strat_Stop_01_SoundShader: AlienDrone_01_Strategic_Base_SoundShader
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Strat_End_Land_01", 1}};
+	};
+	class AlienDrone_01_Strat_Travel_01_Distant_SoundShader
+	{
+		frequency = 1;
+		limitation = 0;
+		range = 3000;
+		rangeCurve[] = {{0, 0}, {650, 0}, {1500, 1}, {3000, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Strat_Travel_01_Distant", 1}};
+		volume = 1.6;
+	};
+	class AlienDrone_01_Strat_Travel_01_SoundShader
+	{
+		frequency = 1;
+		limitation = 0;
+		range = 1500;
+		rangeCurve[] = {{0, 1}, {300, 1}, {1500, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Strat_Travel_01", 1}};
+		volume = 1;
+	};
+	class AlienDrone_01_Strategic_Base_SoundShader
+	{
+		frequency = 1;
+		limitation = 0;
+		range = 1500;
+		rangeCurve[] = {{0, 1}, {300, 1}, {1500, 0}};
+		volume = 1.4;
+	};
+	class AlienDrone_01_Tact_H_Leap_01_SoundShader: AlienDrone_01_Tactical_Base_SoundShader
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Tact_H_Long_01", 1}};
+		volume = 0.8;
+	};
+	class AlienDrone_01_Tact_H_Long_01_SoundShader: AlienDrone_01_Tactical_Base_SoundShader
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Tact_H_Long_01", 1}};
+		volume = 0.8;
+	};
+	class AlienDrone_01_Tact_H_Long_Plus_01_SoundShader: AlienDrone_01_Tactical_Base_SoundShader
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Tact_H_Long_01", 1}};
+		volume = 0.8;
+	};
+	class AlienDrone_01_Tact_H_Medium_01_SoundShader: AlienDrone_01_Tact_Short_Settings_SoundShader
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Tact_H_Short_01", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Tact_H_Short_03", 1}};
+	};
+	class AlienDrone_01_Tact_H_Medium_Long_01_SoundShader: AlienDrone_01_Tactical_Base_SoundShader
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Tact_H_Medium_Long_01", 1}};
+		volume = 0.8;
+	};
+	class AlienDrone_01_Tact_H_Medium_Long_02_SoundShader: AlienDrone_01_Tactical_Base_SoundShader
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Tact_H_Medium_Long_02", 1}};
+	};
+	class AlienDrone_01_Tact_H_Short_01_SoundShader: AlienDrone_01_Tact_Short_Settings_SoundShader
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Tact_H_Short_06", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Tact_H_Short_07", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Tact_H_Short_08", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Tact_H_Short_09", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Tact_H_Short_10", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Tact_H_Short_11", 1}};
+	};
+	class AlienDrone_01_Tact_Short_Settings_SoundShader
+	{
+		frequency = 1;
+		limitation = 0;
+		range = 200;
+		rangeCurve[] = {{0, 1}, {200, 0}};
+		volume = 1;
+	};
+	class AlienDrone_01_Tact_V_Down_Long_01_SoundShader: AlienDrone_01_Tactical_Base_SoundShader
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Tact_V_Down_Long_01", 1}};
+		volume = 0.8;
+	};
+	class AlienDrone_01_Tact_V_Down_Short_01_SoundShader: AlienDrone_01_Tactical_Base_SoundShader
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Tact_V_Down_Long_01", 1}};
+		volume = 0.8;
+	};
+	class AlienDrone_01_Tact_V_Up_Long_01_SoundShader: AlienDrone_01_Tactical_Base_SoundShader
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Tact_V_Down_Short_01", 1}};
+	};
+	class AlienDrone_01_Tact_V_Up_Short_01_SoundShader: AlienDrone_01_Tactical_Base_SoundShader
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Tact_V_Up_Short_01", 1}};
+	};
+	class AlienDrone_01_Tactical_Base_SoundShader
+	{
+		frequency = 1;
+		limitation = 0;
+		range = 1800;
+		rangeCurve[] = {{0, 0.3}, {300, 1}, {1800, 0}};
+		volume = 1.2;
+	};
+	class Anti_Grenade_Laser_Discharge_SoundShader
+	{
+		range = 250;
+		rangeCurve[] = {{0, 1}, {250, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\AntiGrenadeLaser\Drone_01_Agl_01", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\AntiGrenadeLaser\Drone_01_Agl_02", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\AntiGrenadeLaser\Drone_01_Agl_03", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\AntiGrenadeLaser\Drone_01_Agl_04", 1}};
+		volume = 1.2;
+	};
 	class APC_Tracked_01_Drive_Dirt_EXT_SoundShader: Base_Drive_Dirt_EXT_SoundShader
 	{
 		frequency = 1;
@@ -1197,70 +1412,70 @@ class CfgSoundShaders
 	class APC_Tracked_01_Engine_RPM0_EXT_SoundShader: Engine_Base_RPM0_EXT_SoundShader
 	{
 		frequency = "1 * (1 + 0.9 * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) - 0))";
-		range = "5*210";
+		range = "2*210";
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\APC_Tracked_01\APC_Tracked_01_Engine_EXT_RPM0", 1}};
 		volume = "engineOn * 0.7 * 2 * (rpm factor [0 *800, (0 *800 + 0.3 *(800-0 *800))]) * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) factor [(1200 - 800)/(2200 - 800) - (((1200 - 800)/(2200 - 800) - 0) - (1 * ((1200 - 800)/(2200 - 800) - 0)))/2, 0])";
 	};
 	class APC_Tracked_01_Engine_RPM0_INT_SoundShader: Engine_Base_RPM0_INT_SoundShader
 	{
 		frequency = "1 * (1 + 0.9 * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) - 0))";
-		range = "5*210";
+		range = "2*210";
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\APC_Tracked_01\APC_Tracked_01_Engine_INT_RPM0", 1}};
 		volume = "engineOn * 1 * 1.3 * (rpm factor [0 *800, (0 *800 + 0.3 *(800-0 *800))]) * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) factor [(1200 - 800)/(2200 - 800) - (((1200 - 800)/(2200 - 800) - 0) - (1 * ((1200 - 800)/(2200 - 800) - 0)))/2, 0])";
 	};
 	class APC_Tracked_01_Engine_RPM1_EXT_SoundShader: Engine_Base_RPM1_EXT_SoundShader
 	{
 		frequency = "1 * (1 + 0.9 * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) - (1200 - 800)/(2200 - 800)))";
-		range = "5*215";
+		range = "2*215";
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\APC_Tracked_01\APC_Tracked_01_Engine_EXT_RPM1", 1}};
 		volume = "engineOn * 0.7 * 2 * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) factor[0, (1200 - 800)/(2200 - 800) - (((1200 - 800)/(2200 - 800) - 0) - (1 * ((1200 - 800)/(2200 - 800) - 0)))/2]) * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) factor [(1600 - 800)/(2200 - 800) - (((1600 - 800)/(2200 - 800) - (1200 - 800)/(2200 - 800)) - (1.1 * ((1600 - 800)/(2200 - 800) - (1200 - 800)/(2200 - 800))))/2, (1200 - 800)/(2200 - 800) + (((1600 - 800)/(2200 - 800) - (1200 - 800)/(2200 - 800)) - (1.1 * ((1600 - 800)/(2200 - 800) - (1200 - 800)/(2200 - 800))))/2])";
 	};
 	class APC_Tracked_01_Engine_RPM1_INT_SoundShader: Engine_Base_RPM1_INT_SoundShader
 	{
 		frequency = "1 * (1 + 0.9 * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) - (1200 - 800)/(2200 - 800)))";
-		range = "5*215";
+		range = "2*215";
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\APC_Tracked_01\APC_Tracked_01_Engine_INT_RPM1", 1}};
 		volume = "engineOn * 1 * 1.3 * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) factor[0, (1200 - 800)/(2200 - 800) - (((1200 - 800)/(2200 - 800) - 0) - (1 * ((1200 - 800)/(2200 - 800) - 0)))/2]) * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) factor [(1600 - 800)/(2200 - 800) - (((1600 - 800)/(2200 - 800) - (1200 - 800)/(2200 - 800)) - (1.1 * ((1600 - 800)/(2200 - 800) - (1200 - 800)/(2200 - 800))))/2, (1200 - 800)/(2200 - 800) + (((1600 - 800)/(2200 - 800) - (1200 - 800)/(2200 - 800)) - (1.1 * ((1600 - 800)/(2200 - 800) - (1200 - 800)/(2200 - 800))))/2])";
 	};
 	class APC_Tracked_01_Engine_RPM2_EXT_SoundShader: Engine_Base_RPM2_EXT_SoundShader
 	{
 		frequency = "1 * (1 + 0.9 * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) - (1600 - 800)/(2200 - 800)))";
-		range = "5*220";
+		range = "2*220";
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\APC_Tracked_01\APC_Tracked_01_Engine_EXT_RPM2", 1}};
 		volume = "engineOn * 0.7 * 2 * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) factor[(1200 - 800)/(2200 - 800) + (((1600 - 800)/(2200 - 800) - (1200 - 800)/(2200 - 800)) - (1.1 * ((1600 - 800)/(2200 - 800) - (1200 - 800)/(2200 - 800))))/2, (1600 - 800)/(2200 - 800) - (((1600 - 800)/(2200 - 800) - (1200 - 800)/(2200 - 800)) - (1.1 * ((1600 - 800)/(2200 - 800) - (1200 - 800)/(2200 - 800))))/2]) * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) factor [(1950 - 800)/(2200 - 800) - (((1950 - 800)/(2200 - 800) - (1600 - 800)/(2200 - 800)) - (1.2 * ((1950 - 800)/(2200 - 800) - (1600 - 800)/(2200 - 800))))/2, (1600 - 800)/(2200 - 800) + (((1950 - 800)/(2200 - 800) - (1600 - 800)/(2200 - 800)) - (1.2 * ((1950 - 800)/(2200 - 800) - (1600 - 800)/(2200 - 800))))/2])";
 	};
 	class APC_Tracked_01_Engine_RPM2_INT_SoundShader: Engine_Base_RPM2_INT_SoundShader
 	{
 		frequency = "1 * (1 + 0.9 * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) - (1600 - 800)/(2200 - 800)))";
-		range = "5*220";
+		range = "2*220";
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\APC_Tracked_01\APC_Tracked_01_Engine_INT_RPM2", 1}};
 		volume = "engineOn * 1 * 1.3 * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) factor[(1200 - 800)/(2200 - 800) + (((1600 - 800)/(2200 - 800) - (1200 - 800)/(2200 - 800)) - (1.1 * ((1600 - 800)/(2200 - 800) - (1200 - 800)/(2200 - 800))))/2, (1600 - 800)/(2200 - 800) - (((1600 - 800)/(2200 - 800) - (1200 - 800)/(2200 - 800)) - (1.1 * ((1600 - 800)/(2200 - 800) - (1200 - 800)/(2200 - 800))))/2]) * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) factor [(1950 - 800)/(2200 - 800) - (((1950 - 800)/(2200 - 800) - (1600 - 800)/(2200 - 800)) - (1.2 * ((1950 - 800)/(2200 - 800) - (1600 - 800)/(2200 - 800))))/2, (1600 - 800)/(2200 - 800) + (((1950 - 800)/(2200 - 800) - (1600 - 800)/(2200 - 800)) - (1.2 * ((1950 - 800)/(2200 - 800) - (1600 - 800)/(2200 - 800))))/2])";
 	};
 	class APC_Tracked_01_Engine_RPM3_EXT_SoundShader: Engine_Base_RPM3_EXT_SoundShader
 	{
 		frequency = "1 * (1 + 0.9 * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) - (1950 - 800)/(2200 - 800)))";
-		range = "5*225";
+		range = "2*225";
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\APC_Tracked_01\APC_Tracked_01_Engine_EXT_RPM3", 1}};
 		volume = "engineOn * 0.7 * 2 * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) factor[(1600 - 800)/(2200 - 800) + (((1950 - 800)/(2200 - 800) - (1600 - 800)/(2200 - 800)) - (1.2 * ((1950 - 800)/(2200 - 800) - (1600 - 800)/(2200 - 800))))/2, (1950 - 800)/(2200 - 800) - (((1950 - 800)/(2200 - 800) - (1600 - 800)/(2200 - 800)) - (1.2 * ((1950 - 800)/(2200 - 800) - (1600 - 800)/(2200 - 800))))/2]) * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) factor [(2200 - 800)/(2200 - 800) - (((2200 - 800)/(2200 - 800) - (1950 - 800)/(2200 - 800)) - (1.3 * ((2200 - 800)/(2200 - 800) - (1950 - 800)/(2200 - 800))))/2, (1950 - 800)/(2200 - 800) + (((2200 - 800)/(2200 - 800) - (1950 - 800)/(2200 - 800)) - (1.3 * ((2200 - 800)/(2200 - 800) - (1950 - 800)/(2200 - 800))))/2])";
 	};
 	class APC_Tracked_01_Engine_RPM3_INT_SoundShader: Engine_Base_RPM3_INT_SoundShader
 	{
 		frequency = "1 * (1 + 0.9 * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) - (1950 - 800)/(2200 - 800)))";
-		range = "5*225";
+		range = "2*225";
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\APC_Tracked_01\APC_Tracked_01_Engine_INT_RPM3", 1}};
 		volume = "engineOn * 1 * 1.3 * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) factor[(1600 - 800)/(2200 - 800) + (((1950 - 800)/(2200 - 800) - (1600 - 800)/(2200 - 800)) - (1.2 * ((1950 - 800)/(2200 - 800) - (1600 - 800)/(2200 - 800))))/2, (1950 - 800)/(2200 - 800) - (((1950 - 800)/(2200 - 800) - (1600 - 800)/(2200 - 800)) - (1.2 * ((1950 - 800)/(2200 - 800) - (1600 - 800)/(2200 - 800))))/2]) * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) factor [(2200 - 800)/(2200 - 800) - (((2200 - 800)/(2200 - 800) - (1950 - 800)/(2200 - 800)) - (1.3 * ((2200 - 800)/(2200 - 800) - (1950 - 800)/(2200 - 800))))/2, (1950 - 800)/(2200 - 800) + (((2200 - 800)/(2200 - 800) - (1950 - 800)/(2200 - 800)) - (1.3 * ((2200 - 800)/(2200 - 800) - (1950 - 800)/(2200 - 800))))/2])";
 	};
 	class APC_Tracked_01_Engine_RPM4_EXT_SoundShader: Engine_Base_RPM4_EXT_SoundShader
 	{
 		frequency = "1 * (1 + 0.9 * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) - (2200 - 800)/(2200 - 800)))";
-		range = "5*230";
+		range = "2*230";
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\APC_Tracked_01\APC_Tracked_01_Engine_EXT_RPM4", 1}};
 		volume = "engineOn * 0.7 * 2 * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) factor[(1950 - 800)/(2200 - 800) + (((2200 - 800)/(2200 - 800) - (1950 - 800)/(2200 - 800)) - (1.3 * ((2200 - 800)/(2200 - 800) - (1950 - 800)/(2200 - 800))))/2, (2200 - 800)/(2200 - 800) - (((2200 - 800)/(2200 - 800) - (1950 - 800)/(2200 - 800)) - (1.3 * ((2200 - 800)/(2200 - 800) - (1950 - 800)/(2200 - 800))))/2])";
 	};
 	class APC_Tracked_01_Engine_RPM4_INT_SoundShader: Engine_Base_RPM4_INT_SoundShader
 	{
 		frequency = "1 * (1 + 0.9 * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) - (2200 - 800)/(2200 - 800)))";
-		range = "5*230";
+		range = "2*230";
 		samples[] = {{"A3\Sounds_F\vehicles2\armor\APC_Tracked_01\APC_Tracked_01_Engine_INT_RPM4", 1}};
 		volume = "engineOn * 1 * 1.3 * (((1+0.1*1 *thrust) * ((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.7  ) * (speed factor [0, 20]) + 0.7   * (rpm factor [800,	2300])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [800,	2300])) factor[(1950 - 800)/(2200 - 800) + (((2200 - 800)/(2200 - 800) - (1950 - 800)/(2200 - 800)) - (1.3 * ((2200 - 800)/(2200 - 800) - (1950 - 800)/(2200 - 800))))/2, (2200 - 800)/(2200 - 800) - (((2200 - 800)/(2200 - 800) - (1950 - 800)/(2200 - 800)) - (1.3 * ((2200 - 800)/(2200 - 800) - (1950 - 800)/(2200 - 800))))/2])";
 	};
@@ -4415,6 +4630,12 @@ class CfgSoundShaders
 		samples[] = {{"A3\Sounds_F\environment\animals\insect\redesigned\crickets_single01", 1}, {"A3\Sounds_F\environment\animals\insect\redesigned\crickets_single02", 1}, {"A3\Sounds_F\environment\animals\insect\crickets_4", 1}};
 		volume = "(rain factor [0.5,0.3]) * (daytime factor [0.25, 0.33]) * (daytime factor [0.88, 0.79])";
 	};
+	class Debris_FlyBy_SoundShader
+	{
+		range = 160;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_01", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_02", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_03", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_04", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_05", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_06", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_07", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_08", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_09", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_10", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_11", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_12", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_13", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_14", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_15", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_16", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_17", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_18", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_20", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_21", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_22", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_23", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_24", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Debris\Debris_Flyby_25", 1}};
+		volume = 0.8;
+	};
 	class DebrisFlyBy_SoundShader
 	{
 		range = 160;
@@ -5314,6 +5535,3002 @@ class CfgSoundShaders
 		range = 6;
 		samples[] = {{"A3\Sounds_F_Exp\environment\structures\electric_box\electric_box_1", 1}, {"A3\Sounds_F_Exp\environment\structures\electric_box\electric_box_2", 1}, {"A3\Sounds_F_Exp\environment\structures\electric_box\electric_box_3", 1}, {"A3\Sounds_F_Exp\environment\structures\electric_box\electric_box_4", 1}};
 		volume = 0.3;
+	};
+	class EM_AutoTurret_Enc_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_AutoTurret_Enc_01_S.ogg", 1}};
+		volume = "1.5 * (1 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_AutoTurret_Enc_01_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_AutoTurret_Enc_01_W.ogg", 1}};
+		volume = "1.5 * (0.75 * (	CustomSoundController1 factor [0.45,0.01]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_AutoTurret_Jammed_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_AutoTurret_Jammed_01_S.ogg", 1}};
+		volume = "1.5 * (1 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_AutoTurret_Jammed_01_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_AutoTurret_Jammed_01_W.ogg", 1}};
+		volume = "1.5 * (0.75 * (	CustomSoundController1 factor [0.45,0.01]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Base
+	{
+		frequency = 1;
+		range = 100;
+		volume = 1;
+	};
+	class EM_Base_Noise_01_Outro3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Noise\EM_Base_Noise_01_Outro3_S.ogg", 1}};
+		volume = "1.5 * (0.75 * 	CustomSoundController1)";
+	};
+	class EM_Base_Noise_01_Outro3_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Noise\EM_Base_Noise_01_Outro3_W.ogg", 1}};
+		volume = "1.5 * (1.5  * CustomSoundController2)";
+	};
+	class EM_Base_Noise_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Noise\EM_Base_Noise_01_S.ogg", 1}};
+		volume = "1.5 * (0.45* 	CustomSoundController1)";
+	};
+	class EM_Base_Noise_01_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Noise\EM_Base_Noise_01_W.ogg", 1}};
+		volume = "1.5 * (0.45* CustomSoundController2)";
+	};
+	class EM_BlackBox_DistressSignal_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_BlackBox_DistressSignal_01_S.ogg", 1}};
+		volume = "1.5 * (0.5 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Darter_Enc_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_Darter_Enc_01_S.ogg", 1}};
+		volume = "1.5 * (0.25 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Darter_Enc_01_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_Darter_Enc_01_W.ogg", 1}};
+		volume = "1.5 * (0.2 * (	CustomSoundController1 factor [0.45,0.01]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Darter_Jammed_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_Darter_Jammed_01_S.ogg", 1}};
+		volume = "1.5 * (0.4 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Darter_Jammed_01_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_Darter_Jammed_01_W.ogg", 1}};
+		volume = "1.5 * (0.25 * (	CustomSoundController1 factor [0.45,0.01]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Drone_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Alien\EM_Drone_01_S.ogg", 1}};
+		volume = "1.5 * (1.5 * (	CustomSoundController1 factor [0.01,1]))";
+	};
+	class EM_Drone_01_Tracking_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Alien\EM_Drone_01_Tracking_01_S.ogg", 1}};
+		volume = "(1.5 * (1 * (	CustomSoundController1 factor [0.25,1]))) min 0.6";
+	};
+	class EM_Drone_01_Tracking_01_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Alien\EM_Drone_01_Tracking_01_W.ogg", 1}};
+		volume = "1.5 * (1.9 * (	CustomSoundController1 factor [0.35,0.1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Drone_01_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Alien\EM_Drone_01_W.ogg", 1}};
+		volume = "1.5 * (0 * (	CustomSoundController1 factor [0.5,0.001]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Emergency_Broadcast_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_Emergency_Broadcast_01_S.ogg", 1}};
+		volume = "1.5 * (0.1 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Emergency_Broadcast_01_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_Emergency_Broadcast_01_W.ogg", 1}};
+		volume = "1.5 * (0* 0.35 * (	CustomSoundController1 factor [0.45,0.01]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_ESD_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_ESD_01_S.ogg", 1}};
+		volume = "1.5 * (0.3 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_am_nato_prisoner_request_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\am_nato_prisoner_request\EM_freeroam1_am_nato_prisoner_request_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_am_nato_prisoner_request_SOLDIERA_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\am_nato_prisoner_request\EM_freeroam1_am_nato_prisoner_request_SOLDIERA_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_device_searching_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_searching\EM_freeroam1_em_device_searching_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_device_searching_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_searching\EM_freeroam1_em_device_searching_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_device_searching_SOLDIERA_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_searching\EM_freeroam1_em_device_searching_SOLDIERA_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_device_searching_SOLDIERA_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_searching\EM_freeroam1_em_device_searching_SOLDIERA_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_device_turret_defense_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_turret_defense\EM_freeroam1_em_device_turret_defense_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_device_turret_defense_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_turret_defense\EM_freeroam1_em_device_turret_defense_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_device_turret_defense_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_turret_defense\EM_freeroam1_em_device_turret_defense_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_device_turret_defense_SOLDIERC_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_turret_defense\EM_freeroam1_em_device_turret_defense_SOLDIERC_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_device_turret_defense_SOLDIERC_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_turret_defense\EM_freeroam1_em_device_turret_defense_SOLDIERC_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_device_turret_defense_SOLDIERC_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_device_turret_defense\EM_freeroam1_em_device_turret_defense_SOLDIERC_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_ugv_actual_location_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_actual_location\EM_freeroam1_em_ugv_actual_location_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_ugv_actual_location_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_actual_location\EM_freeroam1_em_ugv_actual_location_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_ugv_actual_location_SOLDIERB_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_actual_location\EM_freeroam1_em_ugv_actual_location_SOLDIERB_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_ugv_actual_location_SOLDIERB_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_actual_location\EM_freeroam1_em_ugv_actual_location_SOLDIERB_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_ugv_probe_tip_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_probe_tip\EM_freeroam1_em_ugv_probe_tip_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_ugv_probe_tip_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_probe_tip\EM_freeroam1_em_ugv_probe_tip_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_ugv_probe_tip_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_probe_tip\EM_freeroam1_em_ugv_probe_tip_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_ugv_probe_tip_SOLDIERA_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_probe_tip\EM_freeroam1_em_ugv_probe_tip_SOLDIERA_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_ugv_probe_tip_SOLDIERA_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_probe_tip\EM_freeroam1_em_ugv_probe_tip_SOLDIERA_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_ugv_probe_tip_SOLDIERA_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_ugv_probe_tip\EM_freeroam1_em_ugv_probe_tip_SOLDIERA_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_valley_probe_awe_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_valley_probe_awe\EM_freeroam1_em_valley_probe_awe_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_valley_probe_awe_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_valley_probe_awe\EM_freeroam1_em_valley_probe_awe_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_valley_probe_awe_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_valley_probe_awe\EM_freeroam1_em_valley_probe_awe_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_valley_probe_awe_SOLDIERC_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_valley_probe_awe\EM_freeroam1_em_valley_probe_awe_SOLDIERC_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_valley_probe_awe_SOLDIERC_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_valley_probe_awe\EM_freeroam1_em_valley_probe_awe_SOLDIERC_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam1_em_valley_probe_awe_SOLDIERC_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam1\em_valley_probe_awe\EM_freeroam1_em_valley_probe_awe_SOLDIERC_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_forest_probe_discussion_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_forest_probe_discussion_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_forest_probe_discussion_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_forest_probe_discussion_HQ_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_HQ_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_forest_probe_discussion_HQ_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_HQ_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_forest_probe_discussion_SOLDIERB_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_SOLDIERB_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_forest_probe_discussion_SOLDIERB_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_SOLDIERB_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_forest_probe_discussion_SOLDIERB_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_SOLDIERB_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_forest_probe_discussion_SOLDIERB_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_SOLDIERB_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_forest_probe_discussion_SOLDIERB_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_forest_probe_discussion\EM_freeroam2_am_forest_probe_discussion_SOLDIERB_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_looters_found_radio_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_looters_found_radio\EM_freeroam2_am_looters_found_radio_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_looters_found_radio_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_looters_found_radio\EM_freeroam2_am_looters_found_radio_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_looters_found_radio_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_looters_found_radio\EM_freeroam2_am_looters_found_radio_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_looters_found_radio_SOLDIERB_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_looters_found_radio\EM_freeroam2_am_looters_found_radio_SOLDIERB_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_looters_found_radio_SOLDIERB_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_looters_found_radio\EM_freeroam2_am_looters_found_radio_SOLDIERB_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_looters_found_radio_SOLDIERB_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_looters_found_radio\EM_freeroam2_am_looters_found_radio_SOLDIERB_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_matter_ball_found_ldf_investigate\EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_matter_ball_found_ldf_investigate\EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_matter_ball_found_ldf_investigate\EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_matter_ball_found_ldf_investigate\EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_matter_ball_found_ldf_investigate\EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_matter_ball_found_ldf_investigate\EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_radio_station_message\EM_freeroam2_am_radio_station_message_MAJOR_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_radio_station_message\EM_freeroam2_am_radio_station_message_MAJOR_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_radio_station_message\EM_freeroam2_am_radio_station_message_MAJOR_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_radio_station_message\EM_freeroam2_am_radio_station_message_MAJOR_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_radio_station_message\EM_freeroam2_am_radio_station_message_MAJOR_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_5_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_radio_station_message\EM_freeroam2_am_radio_station_message_MAJOR_5_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_6_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_radio_station_message\EM_freeroam2_am_radio_station_message_MAJOR_6_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_7_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\am_radio_station_message\EM_freeroam2_am_radio_station_message_MAJOR_7_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_SOLDIERC_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_SOLDIERC_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_SOLDIERC_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_SOLDIERC_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task_var1\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task_var1\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_SOLDIERC_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task_var1\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_SOLDIERC_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_SOLDIERC_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task_var1\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_SOLDIERC_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task_var2\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task_var2\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_SOLDIERC_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task_var2\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_SOLDIERC_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_SOLDIERC_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\freeroam2\ta_ambush_probe_eavesdrop_assign_task_var2\EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_SOLDIERC_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_a2q_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\a2q\EM_handshake_a2q_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_a2q_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\a2q\EM_handshake_a2q_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_a2q_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\a2q\EM_handshake_a2q_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_a2q_SQUAD_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\a2q\EM_handshake_a2q_SQUAD_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_a2q_SQUAD_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\a2q\EM_handshake_a2q_SQUAD_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_b2q_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\b2q\EM_handshake_b2q_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_b2q_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\b2q\EM_handshake_b2q_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_b2q_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\b2q\EM_handshake_b2q_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_b2q_SQUAD_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\b2q\EM_handshake_b2q_SQUAD_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_b2q_SQUAD_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\b2q\EM_handshake_b2q_SQUAD_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_c2q_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\c2q\EM_handshake_c2q_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_c2q_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\c2q\EM_handshake_c2q_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_c2q_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\c2q\EM_handshake_c2q_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_c2q_SQUAD_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\c2q\EM_handshake_c2q_SQUAD_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_c2q_SQUAD_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\c2q\EM_handshake_c2q_SQUAD_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_d2q_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\d2q\EM_handshake_d2q_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_d2q_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\d2q\EM_handshake_d2q_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_d2q_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\d2q\EM_handshake_d2q_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_d2q_SQUAD_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\d2q\EM_handshake_d2q_SQUAD_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_d2q_SQUAD_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\d2q\EM_handshake_d2q_SQUAD_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_e2q_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\e2q\EM_handshake_e2q_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_e2q_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\e2q\EM_handshake_e2q_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_e2q_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\e2q\EM_handshake_e2q_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_e2q_SQUAD_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\e2q\EM_handshake_e2q_SQUAD_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_e2q_SQUAD_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\e2q\EM_handshake_e2q_SQUAD_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_f2q_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\f2q\EM_handshake_f2q_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_f2q_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\f2q\EM_handshake_f2q_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_f2q_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\f2q\EM_handshake_f2q_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_f2q_SQUAD_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\f2q\EM_handshake_f2q_SQUAD_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_f2q_SQUAD_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\f2q\EM_handshake_f2q_SQUAD_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_g2q_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\g2q\EM_handshake_g2q_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_g2q_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\g2q\EM_handshake_g2q_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_g2q_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\g2q\EM_handshake_g2q_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_g2q_SQUAD_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\g2q\EM_handshake_g2q_SQUAD_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_g2q_SQUAD_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\g2q\EM_handshake_g2q_SQUAD_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_h2q_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\h2q\EM_handshake_h2q_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_h2q_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\h2q\EM_handshake_h2q_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_h2q_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\h2q\EM_handshake_h2q_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_h2q_SQUAD_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\h2q\EM_handshake_h2q_SQUAD_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_h2q_SQUAD_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\h2q\EM_handshake_h2q_SQUAD_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2a_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2a\EM_handshake_q2a_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2a_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2a\EM_handshake_q2a_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2a_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2a\EM_handshake_q2a_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2a_HQ_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2a\EM_handshake_q2a_HQ_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2a_HQ_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2a\EM_handshake_q2a_HQ_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2b_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2b\EM_handshake_q2b_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2b_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2b\EM_handshake_q2b_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2b_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2b\EM_handshake_q2b_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2b_HQ_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2b\EM_handshake_q2b_HQ_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2b_HQ_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2b\EM_handshake_q2b_HQ_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2c_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2c\EM_handshake_q2c_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2c_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2c\EM_handshake_q2c_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2c_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2c\EM_handshake_q2c_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2c_HQ_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2c\EM_handshake_q2c_HQ_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2c_HQ_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2c\EM_handshake_q2c_HQ_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2d_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2d\EM_handshake_q2d_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2d_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2d\EM_handshake_q2d_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2d_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2d\EM_handshake_q2d_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2d_HQ_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2d\EM_handshake_q2d_HQ_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2d_HQ_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2d\EM_handshake_q2d_HQ_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2e_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2e\EM_handshake_q2e_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2e_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2e\EM_handshake_q2e_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2e_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2e\EM_handshake_q2e_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2e_HQ_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2e\EM_handshake_q2e_HQ_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2e_HQ_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2e\EM_handshake_q2e_HQ_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2f_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2f\EM_handshake_q2f_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2f_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2f\EM_handshake_q2f_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2f_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2f\EM_handshake_q2f_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2f_HQ_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2f\EM_handshake_q2f_HQ_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2g_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2g\EM_handshake_q2g_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2g_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2g\EM_handshake_q2g_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2g_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2g\EM_handshake_q2g_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2g_HQ_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2g\EM_handshake_q2g_HQ_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2g_HQ_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2g\EM_handshake_q2g_HQ_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2h_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2h\EM_handshake_q2h_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2h_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2h\EM_handshake_q2h_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2h_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2h\EM_handshake_q2h_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2h_HQ_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2h\EM_handshake_q2h_HQ_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_handshake_q2h_HQ_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\handshake\q2h\EM_handshake_q2h_HQ_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_confirm_help_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\confirm_help\EM_hq_confirm_help_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_confirm_help_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\confirm_help\EM_hq_confirm_help_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_confirm_help_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\confirm_help\EM_hq_confirm_help_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_confused_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\confused\EM_hq_confused_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_confused_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\confused\EM_hq_confused_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_confused_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\confused\EM_hq_confused_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_deny_help_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\deny_help\EM_hq_deny_help_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_deny_help_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\deny_help\EM_hq_deny_help_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_deny_help_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\deny_help\EM_hq_deny_help_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_dummy_reply_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\dummy_reply\EM_hq_dummy_reply_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_dummy_reply_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\dummy_reply\EM_hq_dummy_reply_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_dummy_reply_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\dummy_reply\EM_hq_dummy_reply_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_dummy_reply_HQ_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\dummy_reply\EM_hq_dummy_reply_HQ_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_dummy_reply_HQ_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\dummy_reply\EM_hq_dummy_reply_HQ_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_HQ_Enc_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_HQ_Enc_01_S.ogg", 1}};
+		volume = "1.5 * (0.1 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_HQ_Enc_01_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_HQ_Enc_01_W.ogg", 1}};
+		volume = "1.5 * (0* 0.35 * (	CustomSoundController1 factor [0.45,0.01]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_hq_identify_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\identify\EM_hq_identify_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_identify_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\identify\EM_hq_identify_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_identify_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\identify\EM_hq_identify_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_e_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_e\EM_hq_move_e_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_e_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_e\EM_hq_move_e_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_e_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_e\EM_hq_move_e_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_e_HQ_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_e\EM_hq_move_e_HQ_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_e_HQ_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_e\EM_hq_move_e_HQ_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_n_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_n\EM_hq_move_n_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_n_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_n\EM_hq_move_n_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_n_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_n\EM_hq_move_n_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_n_HQ_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_n\EM_hq_move_n_HQ_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_n_HQ_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_n\EM_hq_move_n_HQ_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_s_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_s\EM_hq_move_s_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_s_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_s\EM_hq_move_s_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_s_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_s\EM_hq_move_s_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_s_HQ_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_s\EM_hq_move_s_HQ_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_s_HQ_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_s\EM_hq_move_s_HQ_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_w_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_w\EM_hq_move_w_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_w_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_w\EM_hq_move_w_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_w_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_w\EM_hq_move_w_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_w_HQ_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_w\EM_hq_move_w_HQ_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_move_w_HQ_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\move_w\EM_hq_move_w_HQ_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_negative_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\negative\EM_hq_negative_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_negative_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\negative\EM_hq_negative_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_negative_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\negative\EM_hq_negative_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_help_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_help\EM_hq_no_help_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_help_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_help\EM_hq_no_help_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_help_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_help\EM_hq_no_help_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_move_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_move\EM_hq_no_move_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_move_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_move\EM_hq_no_move_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_move_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_move\EM_hq_no_move_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_a_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_a\EM_hq_no_response_a_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_a_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_a\EM_hq_no_response_a_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_a_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_a\EM_hq_no_response_a_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_b_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_b\EM_hq_no_response_b_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_b_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_b\EM_hq_no_response_b_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_b_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_b\EM_hq_no_response_b_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_c_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_c\EM_hq_no_response_c_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_c_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_c\EM_hq_no_response_c_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_c_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_c\EM_hq_no_response_c_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_d_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_d\EM_hq_no_response_d_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_d_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_d\EM_hq_no_response_d_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_d_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_d\EM_hq_no_response_d_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_e_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_e\EM_hq_no_response_e_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_e_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_e\EM_hq_no_response_e_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_e_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_e\EM_hq_no_response_e_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_f_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_f\EM_hq_no_response_f_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_f_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_f\EM_hq_no_response_f_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_f_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_f\EM_hq_no_response_f_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_g_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_g\EM_hq_no_response_g_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_g_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_g\EM_hq_no_response_g_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_g_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_g\EM_hq_no_response_g_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_h_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_h\EM_hq_no_response_h_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_h_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_h\EM_hq_no_response_h_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_no_response_h_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\no_response_h\EM_hq_no_response_h_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_positive_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\positive\EM_hq_positive_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_positive_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\positive\EM_hq_positive_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_positive_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\positive\EM_hq_positive_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_posrep_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\posrep\EM_hq_posrep_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_posrep_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\posrep\EM_hq_posrep_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_posrep_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\posrep\EM_hq_posrep_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_HQ_Russian_Enc_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_HQ_Russian_Enc_01_S.ogg", 1}};
+		volume = "1.5 * (0.1 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_HQ_Russian_Enc_01_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_HQ_Russian_Enc_01_W.ogg", 1}};
+		volume = "1.5 * (0* 0.35 * (	CustomSoundController1 factor [0.45,0.01]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_hq_safe_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\safe\EM_hq_safe_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_safe_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\safe\EM_hq_safe_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_safe_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\safe\EM_hq_safe_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_say_again_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\say_again\EM_hq_say_again_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_say_again_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\say_again\EM_hq_say_again_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_say_again_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\say_again\EM_hq_say_again_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_a_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_a\EM_hq_send_help_a_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_a_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_a\EM_hq_send_help_a_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_a_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_a\EM_hq_send_help_a_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_b_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_b\EM_hq_send_help_b_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_b_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_b\EM_hq_send_help_b_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_b_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_b\EM_hq_send_help_b_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_c_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_c\EM_hq_send_help_c_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_c_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_c\EM_hq_send_help_c_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_c_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_c\EM_hq_send_help_c_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_d_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_d\EM_hq_send_help_d_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_d_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_d\EM_hq_send_help_d_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_d_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_d\EM_hq_send_help_d_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_e_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_e\EM_hq_send_help_e_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_e_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_e\EM_hq_send_help_e_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_e_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_e\EM_hq_send_help_e_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_f_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_f\EM_hq_send_help_f_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_f_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_f\EM_hq_send_help_f_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_f_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_f\EM_hq_send_help_f_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_g_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_g\EM_hq_send_help_g_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_g_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_g\EM_hq_send_help_g_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_send_help_g_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\send_help_g\EM_hq_send_help_g_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_silence_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\silence\EM_hq_silence_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_silence_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\silence\EM_hq_silence_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_silence_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\silence\EM_hq_silence_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_strange_signal_reply_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\strange_signal_reply\EM_hq_strange_signal_reply_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_strange_signal_reply_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\strange_signal_reply\EM_hq_strange_signal_reply_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_hq_strange_signal_reply_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\hq\strange_signal_reply\EM_hq_strange_signal_reply_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_physicist_am_4_1_PHYSICIST_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_1\EM_intro2_physicist_am_4_1_PHYSICIST_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_physicist_am_4_2_PHYSICIST_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_2\EM_intro2_physicist_am_4_2_PHYSICIST_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_physicist_am_4_3_PHYSICIST_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_3\EM_intro2_physicist_am_4_3_PHYSICIST_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_physicist_am_4_4_PHYSICIST_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_4\EM_intro2_physicist_am_4_4_PHYSICIST_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_physicist_am_4_5_PHYSICIST_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_5\EM_intro2_physicist_am_4_5_PHYSICIST_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_physicist_am_4_6_PHYSICIST_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_6\EM_intro2_physicist_am_4_6_PHYSICIST_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_physicist_am_4_7_PHYSICIST_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_7\EM_intro2_physicist_am_4_7_PHYSICIST_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_physicist_am_4_8_PHYSICIST_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_8\EM_intro2_physicist_am_4_8_PHYSICIST_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_physicist_am_4_9_PHYSICIST_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_9\EM_intro2_physicist_am_4_9_PHYSICIST_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_physicist_am_4_loop_PHYSICIST_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\physicist_am_4_loop\EM_intro2_physicist_am_4_loop_PHYSICIST_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q2raven_am_2_1_RAVEN_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2raven_am_2_1\EM_intro2_q2raven_am_2_1_RAVEN_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q2raven_am_2_2_RAVEN_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2raven_am_2_2\EM_intro2_q2raven_am_2_2_RAVEN_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q2raven_am_2_3_RAVEN_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2raven_am_2_3\EM_intro2_q2raven_am_2_3_RAVEN_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q2raven_am_2_4_RAVEN_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2raven_am_2_4\EM_intro2_q2raven_am_2_4_RAVEN_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q2raven_am_2_5_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2raven_am_2_5\EM_intro2_q2raven_am_2_5_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q2raven_am_2_6_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2raven_am_2_6\EM_intro2_q2raven_am_2_6_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q2raven_am_2_7_RAVEN_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2raven_am_2_7\EM_intro2_q2raven_am_2_7_RAVEN_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q2s_am_1_1_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_1\EM_intro2_q2s_am_1_1_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q2s_am_1_2_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_2\EM_intro2_q2s_am_1_2_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q2s_am_1_3_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_3\EM_intro2_q2s_am_1_3_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q2s_am_1_4_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_4\EM_intro2_q2s_am_1_4_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q2s_am_1_5_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_5\EM_intro2_q2s_am_1_5_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q2s_am_1_6_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_6\EM_intro2_q2s_am_1_6_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q2s_am_1_7_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_7\EM_intro2_q2s_am_1_7_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q2s_am_1_8_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_8\EM_intro2_q2s_am_1_8_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q2s_am_1_9_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_9\EM_intro2_q2s_am_1_9_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q2s_am_1_loop_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q2s_am_1_loop\EM_intro2_q2s_am_1_loop_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q_am_3_1_UNKNOWN_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_1\EM_intro2_q_am_3_1_UNKNOWN_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q_am_3_2_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_2\EM_intro2_q_am_3_2_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q_am_3_3_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_3\EM_intro2_q_am_3_3_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q_am_3_4_UNKNOWN_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_4\EM_intro2_q_am_3_4_UNKNOWN_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q_am_3_5_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_5\EM_intro2_q_am_3_5_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q_am_3_6_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_6\EM_intro2_q_am_3_6_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q_am_3_7_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_7\EM_intro2_q_am_3_7_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q_am_3_8_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_8\EM_intro2_q_am_3_8_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q_am_3_loop_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_loop\EM_intro2_q_am_3_loop_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q_am_3_loop_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_loop\EM_intro2_q_am_3_loop_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_q_am_3_loop_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\q_am_3_loop\EM_intro2_q_am_3_loop_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_2_1_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_1\EM_intro2_s_am_2_1_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_2_2_AMBIENTA_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_2\EM_intro2_s_am_2_2_AMBIENTA_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_2_3_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_3\EM_intro2_s_am_2_3_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_2_4_AMBIENTA_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_4\EM_intro2_s_am_2_4_AMBIENTA_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_2_5_AMBIENTA_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_5\EM_intro2_s_am_2_5_AMBIENTA_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_2_6_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_6\EM_intro2_s_am_2_6_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_2_7_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_7\EM_intro2_s_am_2_7_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_2_8_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_8\EM_intro2_s_am_2_8_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_2_loop_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_loop\EM_intro2_s_am_2_loop_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_2_loop_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_loop\EM_intro2_s_am_2_loop_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_2_loop_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_2_loop\EM_intro2_s_am_2_loop_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_3_1_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_1\EM_intro2_s_am_3_1_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_3_2_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_2\EM_intro2_s_am_3_2_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_3_3_AMBIENTB_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_3\EM_intro2_s_am_3_3_AMBIENTB_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_3_4_AMBIENTB_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_4\EM_intro2_s_am_3_4_AMBIENTB_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_3_5_AMBIENTB_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_5\EM_intro2_s_am_3_5_AMBIENTB_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_3_6_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_6\EM_intro2_s_am_3_6_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_3_7_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_7\EM_intro2_s_am_3_7_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_3_8_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_8\EM_intro2_s_am_3_8_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_3_loop_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_loop\EM_intro2_s_am_3_loop_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_3_loop_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_loop\EM_intro2_s_am_3_loop_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_intro2_s_am_3_loop_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\intro2\s_am_3_loop\EM_intro2_s_am_3_loop_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_Mission_FreeRoam1_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Missions\EM_Mission_FreeRoam1_01_S.ogg", 1}};
+		volume = "1.5 * (0.3 * 	CustomSoundController1)";
+	};
+	class EM_Mission_FreeRoam2_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Missions\EM_Mission_FreeRoam2_01_S.ogg", 1}};
+		volume = "1.5 * (0.3 * 	CustomSoundController1)";
+	};
+	class EM_Mission_Intro1_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Missions\EM_Mission_Intro1_01_S.ogg", 1}};
+		volume = "1.5 * (0.3 * 	CustomSoundController1)";
+	};
+	class EM_Mission_Intro2_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Missions\EM_Mission_Intro2_01_S.ogg", 1}};
+		volume = "1.5 * (0.3 * 	CustomSoundController1)";
+	};
+	class EM_Mission_Intro3_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Missions\EM_Mission_Intro3_01_S.ogg", 1}};
+		volume = "1.5 * (0.3 * 	CustomSoundController1)";
+	};
+	class EM_Mission_Outro2_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Missions\EM_Mission_Outro2_01_S.ogg", 1}};
+		volume = "1.5 * (0.3 * 	CustomSoundController1)";
+	};
+	class EM_Mission_Outro3_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Missions\EM_Mission_Outro3_01_S.ogg", 1}};
+		volume = "1.5 * (0.3 * 	CustomSoundController1)";
+	};
+	class EM_MorseCode_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_MorseCode_01_S.ogg", 1}};
+		volume = "1.5 * (0.25 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_MotherShip_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Alien\EM_MotherShip_01_S.ogg", 1}};
+		volume = "1.5 * (0.13 * (	CustomSoundController1 factor [0.1,1]))";
+	};
+	class EM_Mothership_01_Tracking_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Alien\EM_Mothership_01_Tracking_01_S.ogg", 1}};
+		volume = "(1.5 * (1.45 * (	CustomSoundController1 factor [0.25,1]))) min 0.6";
+	};
+	class EM_Mothership_01_Tracking_01_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Alien\EM_Mothership_01_Tracking_01_W.ogg", 1}};
+		volume = "1.5 * (1 * (	CustomSoundController1 factor [0.65,0.1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_outro2_aet_jammed_2_SOLDIERB_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\aet_jammed_2\EM_outro2_aet_jammed_2_SOLDIERB_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_aet_jammed_3_SOLDIERC_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\aet_jammed_3\EM_outro2_aet_jammed_3_SOLDIERC_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_aet_jammed_4_SOLDIERA_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\aet_jammed_4\EM_outro2_aet_jammed_4_SOLDIERA_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_aet_jammed_SOLDIERA_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\aet_jammed\EM_outro2_aet_jammed_SOLDIERA_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_aet_resuming_2_SOLDIERB_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\aet_resuming_2\EM_outro2_aet_resuming_2_SOLDIERB_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_aet_resuming_3_SOLDIERC_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\aet_resuming_3\EM_outro2_aet_resuming_3_SOLDIERC_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_aet_resuming_4_SOLDIERA_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\aet_resuming_4\EM_outro2_aet_resuming_4_SOLDIERA_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_aet_resuming_SOLDIERA_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\aet_resuming\EM_outro2_aet_resuming_SOLDIERA_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_fox_2_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\fox_2\EM_outro2_fox_2_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_fox_2_SOLDIERA_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\fox_2\EM_outro2_fox_2_SOLDIERA_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_ldf_counterattack_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\ldf_counterattack\EM_outro2_ldf_counterattack_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_ldf_counterattack_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\ldf_counterattack\EM_outro2_ldf_counterattack_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_ldf_counterattack_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\ldf_counterattack\EM_outro2_ldf_counterattack_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_ldf_counterattack_HQ_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\ldf_counterattack\EM_outro2_ldf_counterattack_HQ_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_ldf_counterattack_HQ_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\ldf_counterattack\EM_outro2_ldf_counterattack_HQ_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_probe_explosives_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\probe_explosives\EM_outro2_probe_explosives_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_probe_explosives_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\probe_explosives\EM_outro2_probe_explosives_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_probe_explosives_HQ_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\probe_explosives\EM_outro2_probe_explosives_HQ_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_probe_explosives_SOLDIERB_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\probe_explosives\EM_outro2_probe_explosives_SOLDIERB_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_probe_explosives_SOLDIERB_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\probe_explosives\EM_outro2_probe_explosives_SOLDIERB_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_probe_explosives_SOLDIERB_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\probe_explosives\EM_outro2_probe_explosives_SOLDIERB_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_probe_target_HQ_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\probe_target\EM_outro2_probe_target_HQ_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro2_probe_target_HQ_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro2\probe_target\EM_outro2_probe_target_HQ_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_outro3_am_aan_radio_news_merged_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Credits\EM_outro3_am_aan_radio_news_merged_S.ogg", 1}};
+		volume = "1.1 * (	CustomSoundController1 factor [0,0.1])";
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_aan_radio_news\EM_outro3_am_aan_radio_news_NEWSREADERB_0_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_aan_radio_news\EM_outro3_am_aan_radio_news_NEWSREADERB_1_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_aan_radio_news\EM_outro3_am_aan_radio_news_NEWSREADERB_2_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_aan_radio_news\EM_outro3_am_aan_radio_news_NEWSREADERB_3_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_aan_radio_news\EM_outro3_am_aan_radio_news_NEWSREADERB_4_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_5_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_aan_radio_news\EM_outro3_am_aan_radio_news_NEWSREADERB_5_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_6_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_aan_radio_news\EM_outro3_am_aan_radio_news_NEWSREADERB_6_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_7_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_aan_radio_news\EM_outro3_am_aan_radio_news_NEWSREADERB_7_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_8_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_aan_radio_news\EM_outro3_am_aan_radio_news_NEWSREADERB_8_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_cbn_radio_news_merged_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Credits\EM_outro3_am_cbn_radio_news_merged_S.ogg", 1}};
+		volume = "1.2 * (	CustomSoundController1 factor [0,0.1])";
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_0_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_1_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_2_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_3_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_4_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_5_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_5_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_6_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_6_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_7_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_7_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_8_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_8_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_9_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_cbn_radio_news\EM_outro3_am_cbn_radio_news_NEWSREADERC_9_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_merged_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Credits\EM_outro3_am_conspiracy_radio_merged_S.ogg", 1}};
+		volume = "1.2 * (	CustomSoundController1 factor [0,0.1])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_0_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_10_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_10_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_11_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_11_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_12_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_12_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_13_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_13_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_14_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_14_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_15_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_15_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_16_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_16_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_17_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_17_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_18_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_18_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_19_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_19_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_1_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_20_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_20_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_21_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_21_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_2_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_3_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_4_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_5_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_5_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_6_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_6_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_7_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_7_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_8_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_8_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_9_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_conspiracy_radio\EM_outro3_am_conspiracy_radio_THEORIST_9_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_polish_radio_news_merged_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Credits\EM_outro3_am_polish_radio_news_merged_S.ogg", 1}};
+		volume = "1.2 * (	CustomSoundController1 factor [0,0.1])";
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_0_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_1_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_2_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_3_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_4_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_5_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_5_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_6_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_6_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_7_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_7_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_8_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_8_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_9_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_polish_radio_news\EM_outro3_am_polish_radio_news_NEWSREADERA_9_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_science_chat_INTERVIEWERB_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_INTERVIEWERB_0_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_science_chat_INTERVIEWERB_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_INTERVIEWERB_1_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_science_chat_INTERVIEWERB_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_INTERVIEWERB_2_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_science_chat_INTERVIEWERB_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_INTERVIEWERB_3_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_science_chat_merged_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Credits\EM_outro3_am_science_chat_merged_S.ogg", 1}};
+		volume = "1.2 * (	CustomSoundController1 factor [0,0.1])";
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_0_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_1_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_2_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_3_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_4_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_5_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_5_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_6_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_6_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_7_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_7_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_8_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_8_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_9_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_science_chat\EM_outro3_am_science_chat_SCIENTIST_9_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_0_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_10_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_10_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_1_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_2_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_3_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_4_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_5_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_5_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_6_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_6_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_7_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_7_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_8_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_8_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_9_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_INTERVIEWERA_9_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_merged_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Credits\EM_outro3_am_talkshow_radio_merged_S.ogg", 1}};
+		volume = "1.3 * (	CustomSoundController1 factor [0,0.1])";
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_0_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_10_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_10_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_11_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_11_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_12_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_12_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_13_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_13_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_14_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_14_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_1_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_2_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_3_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_4_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_5_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_5_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_6_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_6_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_7_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_7_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_8_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_8_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_9_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\outro3\am_talkshow_radio\EM_outro3_am_talkshow_radio_PHYSICIST_9_S.ogg", 1}};
+		volume = "1.5 * (	CustomSoundController1 factor [0,0.25])";
+	};
+	class EM_Puzzle_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Alien\EM_Puzzle_01_S.ogg", 1}};
+		volume = "1.5 * (1.4 * (	CustomSoundController1 factor [0.01,1]))";
+	};
+	class EM_Puzzle_02_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Alien\EM_Puzzle_02_S.ogg", 1}};
+		volume = "1.5 * (1.4 * (	CustomSoundController1 factor [0.01,1]))";
+	};
+	class EM_Puzzle_03_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Alien\EM_Puzzle_03_S.ogg", 1}};
+		volume = "1.5 * (1.4 * (	CustomSoundController1 factor [0.01,1]))";
+	};
+	class EM_RadioStation_Song_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_RadioStation_Song_01_S.ogg", 1}};
+		volume = "1.5 * (0.22 * (	CustomSoundController1 factor [0.25,1]))";
+	};
+	class EM_RadioStation_Song_01_Transmission_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_RadioStation_Song_01_Transmission_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_RadioStation_Song_01_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_RadioStation_Song_01_W.ogg", 1}};
+		volume = "1.5 * (0.25 * (	CustomSoundController1 factor [0.75,0.5]) * (	CustomSoundController1 factor [0,0.5]))";
+	};
+	class EM_RadioStation_Song_02_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_RadioStation_Song_02_S.ogg", 1}};
+		volume = "1.5 * (0.22 * (	CustomSoundController1 factor [0.45,1]))";
+	};
+	class EM_RadioStation_Song_02_Transmission_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_RadioStation_Song_02_Transmission_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_RadioStation_Song_02_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_RadioStation_Song_02_W.ogg", 1}};
+		volume = "1.5 * (0.25 * (	CustomSoundController1 factor [0.7,0.6]) * (	CustomSoundController1 factor [0,0.5]))";
+	};
+	class EM_RadioStation_Song_03_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_RadioStation_Song_03_S.ogg", 1}};
+		volume = "1.5 * (0.22 * (	CustomSoundController1 factor [0.45,1]))";
+	};
+	class EM_RadioStation_Song_03_Transmission_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_RadioStation_Song_03_Transmission_S.ogg", 1}};
+		volume = "1.5 * (0.7 * 	CustomSoundController1)";
+	};
+	class EM_RadioStation_Song_03_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_RadioStation_Song_03_W.ogg", 1}};
+		volume = "1.5 * (0.25 * (	CustomSoundController1 factor [0.7,0.6]) * (	CustomSoundController1 factor [0,0.5]))";
+	};
+	class EM_RussianBeacon_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_RussianBeacon_01_S.ogg", 1}};
+		volume = "1.5 * (0.5 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Send_Hack_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Noise\EM_Send_Hack_01_S.ogg", 1}};
+		volume = "1.5 * (0.3 * 	CustomSoundController1)";
+	};
+	class EM_Send_Signal_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Noise\EM_Send_Signal_01_S.ogg", 1}};
+		volume = "1.5 * (0.3 * 	CustomSoundController1)";
+	};
+	class EM_Silence_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Noise\EM_Silence_01_S.ogg", 1}};
+		volume = "1.5 * (0.3 * 	CustomSoundController1)";
+	};
+	class EM_squad_compromised_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\compromised\EM_squad_compromised_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_compromised_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\compromised\EM_squad_compromised_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_compromised_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\compromised\EM_squad_compromised_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_confused_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\confused\EM_squad_confused_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_confused_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\confused\EM_squad_confused_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_confused_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\confused\EM_squad_confused_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_event_e_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_e\EM_squad_event_e_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_event_e_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_e\EM_squad_event_e_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_event_e_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_e\EM_squad_event_e_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_event_n_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_n\EM_squad_event_n_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_event_n_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_n\EM_squad_event_n_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_event_n_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_n\EM_squad_event_n_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_event_s_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_s\EM_squad_event_s_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_event_s_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_s\EM_squad_event_s_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_event_s_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_s\EM_squad_event_s_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_event_w_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_w\EM_squad_event_w_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_event_w_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_w\EM_squad_event_w_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_event_w_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\event_w\EM_squad_event_w_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_explosion_e_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_e\EM_squad_explosion_e_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_explosion_e_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_e\EM_squad_explosion_e_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_explosion_e_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_e\EM_squad_explosion_e_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_explosion_n_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_n\EM_squad_explosion_n_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_explosion_n_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_n\EM_squad_explosion_n_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_explosion_n_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_n\EM_squad_explosion_n_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_explosion_s_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_s\EM_squad_explosion_s_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_explosion_s_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_s\EM_squad_explosion_s_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_explosion_s_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_s\EM_squad_explosion_s_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_explosion_w_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_w\EM_squad_explosion_w_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_explosion_w_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_w\EM_squad_explosion_w_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_explosion_w_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\explosion_w\EM_squad_explosion_w_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_flare_e_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_e\EM_squad_flare_e_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_flare_e_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_e\EM_squad_flare_e_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_flare_e_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_e\EM_squad_flare_e_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_flare_n_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_n\EM_squad_flare_n_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_flare_n_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_n\EM_squad_flare_n_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_flare_n_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_n\EM_squad_flare_n_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_flare_s_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_s\EM_squad_flare_s_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_flare_s_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_s\EM_squad_flare_s_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_flare_s_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_s\EM_squad_flare_s_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_flare_w_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_w\EM_squad_flare_w_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_flare_w_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_w\EM_squad_flare_w_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_flare_w_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\flare_w\EM_squad_flare_w_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_gunfire_e_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_e\EM_squad_gunfire_e_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_gunfire_e_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_e\EM_squad_gunfire_e_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_gunfire_e_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_e\EM_squad_gunfire_e_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_gunfire_n_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_n\EM_squad_gunfire_n_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_gunfire_n_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_n\EM_squad_gunfire_n_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_gunfire_n_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_n\EM_squad_gunfire_n_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_gunfire_s_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_s\EM_squad_gunfire_s_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_gunfire_s_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_s\EM_squad_gunfire_s_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_gunfire_s_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_s\EM_squad_gunfire_s_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_gunfire_w_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_w\EM_squad_gunfire_w_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_gunfire_w_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_w\EM_squad_gunfire_w_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_gunfire_w_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\gunfire_w\EM_squad_gunfire_w_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_Squad_Id_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Ping\EM_Squad_Id_01_S.ogg", 1}};
+		volume = "1.5 * (0.25 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Squad_Id_02_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Ping\EM_Squad_Id_02_S.ogg", 1}};
+		volume = "1.5 * (0.25 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Squad_Id_03_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Ping\EM_Squad_Id_03_S.ogg", 1}};
+		volume = "1.5 * (0.25 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Squad_Id_04_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Ping\EM_Squad_Id_04_S.ogg", 1}};
+		volume = "1.5 * (0.25 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Squad_Id_05_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Ping\EM_Squad_Id_05_S.ogg", 1}};
+		volume = "1.5 * (0.25 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Squad_Id_06_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Ping\EM_Squad_Id_06_S.ogg", 1}};
+		volume = "1.5 * (0.25 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Squad_Id_07_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Ping\EM_Squad_Id_07_S.ogg", 1}};
+		volume = "1.5 * (0.25 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Squad_Id_08_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Ping\EM_Squad_Id_08_S.ogg", 1}};
+		volume = "1.5 * (0.25 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_squad_identify_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\identify\EM_squad_identify_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_identify_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\identify\EM_squad_identify_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_identify_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\identify\EM_squad_identify_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_negative_combat_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\negative_combat\EM_squad_negative_combat_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_negative_combat_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\negative_combat\EM_squad_negative_combat_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_negative_combat_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\negative_combat\EM_squad_negative_combat_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_negative_move_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\negative_move\EM_squad_negative_move_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_negative_move_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\negative_move\EM_squad_negative_move_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_negative_move_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\negative_move\EM_squad_negative_move_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_negative_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\negative\EM_squad_negative_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_negative_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\negative\EM_squad_negative_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_negative_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\negative\EM_squad_negative_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_positive_move_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive_move\EM_squad_positive_move_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_positive_move_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive_move\EM_squad_positive_move_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_positive_move_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive_move\EM_squad_positive_move_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_positive_move_SQUAD_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive_move\EM_squad_positive_move_SQUAD_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_positive_move_SQUAD_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive_move\EM_squad_positive_move_SQUAD_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_positive_move_SQUAD_5_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive_move\EM_squad_positive_move_SQUAD_5_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_positive_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive\EM_squad_positive_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_positive_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive\EM_squad_positive_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_positive_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive\EM_squad_positive_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_positive_SQUAD_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive\EM_squad_positive_SQUAD_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_positive_SQUAD_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive\EM_squad_positive_SQUAD_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_positive_SQUAD_5_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\positive\EM_squad_positive_SQUAD_5_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_posrep_reply_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\posrep_reply\EM_squad_posrep_reply_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_posrep_reply_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\posrep_reply\EM_squad_posrep_reply_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_posrep_reply_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\posrep_reply\EM_squad_posrep_reply_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_posrep_reply_SQUAD_3_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\posrep_reply\EM_squad_posrep_reply_SQUAD_3_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_posrep_reply_SQUAD_4_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\posrep_reply\EM_squad_posrep_reply_SQUAD_4_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_posrep_reply_SQUAD_5_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\posrep_reply\EM_squad_posrep_reply_SQUAD_5_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_request_help_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\request_help\EM_squad_request_help_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_request_help_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\request_help\EM_squad_request_help_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_request_help_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\request_help\EM_squad_request_help_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_say_again_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\say_again\EM_squad_say_again_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_say_again_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\say_again\EM_squad_say_again_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_say_again_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\say_again\EM_squad_say_again_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_strange_signal_SQUAD_0_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\strange_signal\EM_squad_strange_signal_SQUAD_0_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_strange_signal_SQUAD_1_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\strange_signal\EM_squad_strange_signal_SQUAD_1_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_squad_strange_signal_SQUAD_2_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\squad\strange_signal\EM_squad_strange_signal_SQUAD_2_S.ogg", 1}};
+		volume = "1.5 * (0.5 * 	CustomSoundController1)";
+	};
+	class EM_Stomper_Enc_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_Stomper_Enc_01_S.ogg", 1}};
+		volume = "1.5 * (1 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Stomper_Enc_01_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_Stomper_Enc_01_W.ogg", 1}};
+		volume = "1.5 * (0.75 * (	CustomSoundController1 factor [0.45,0.01]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Stomper_Jammed_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_Stomper_Jammed_01_S.ogg", 1}};
+		volume = "1.5 * (1 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Stomper_Jammed_01_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_Stomper_Jammed_01_W.ogg", 1}};
+		volume = "1.5 * (0.75 * (	CustomSoundController1 factor [0.45,0.01]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Ugv_Enc_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_Ugv_Enc_01_S.ogg", 1}};
+		volume = "1.5 * (1 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Ugv_Enc_01_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_Ugv_Enc_01_W.ogg", 1}};
+		volume = "1.5 * (0.75 * (	CustomSoundController1 factor [0.45,0.01]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Ugv_Jammed_01_S_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_Ugv_Jammed_01_S.ogg", 1}};
+		volume = "1.5 * (1 * (	CustomSoundController1 factor [0,1]) * 	CustomSoundController1 max 0)";
+	};
+	class EM_Ugv_Jammed_01_W_SoundShader: EM_Base
+	{
+		samples[] = {{"A3\Sounds_F_Contact\Assets\EM\Human\EM_Ugv_Jammed_01_W.ogg", 1}};
+		volume = "1.5 * (0.75 * (	CustomSoundController1 factor [0.45,0.01]) * 	CustomSoundController1 max 0)";
 	};
 	class Engine_Base_RPM0_EXT_SoundShader
 	{
@@ -8536,6 +11753,111 @@ class CfgSoundShaders
 		rangeCurve[] = {{0, 1}, {1300, 0.3}};
 		samples[] = {{"A3\Sounds_F\arsenal\weapons_vehicles\GMG_40mm\GMG40mm_tailtrees", 1}};
 		volume = "(1-interior/1.4)*trees/3";
+	};
+	class Gravity_Burst_Charge_SoundShader
+	{
+		range = 500;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Charge", 1}};
+		volume = 0.45;
+	};
+	class Gravity_Burst_Discharge_SoundShader
+	{
+		limitation = 0;
+		range = 500;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Discharge", 1}};
+		volume = 1.3;
+	};
+	class Gravity_Burst_Particles_SoundShader
+	{
+		limitation = 0;
+		range = 250;
+		rangeCurve[] = {{0, 1}, {250, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Burst\Gravity_Burst_Particles", 1}};
+		volume = 1.65;
+	};
+	class Gravity_Cannon_01_Discharge_Distant_SoundShader
+	{
+		limitation = 0;
+		range = 5000;
+		rangeCurve[] = {{0, 0}, {50, 0}, {100, 0.5}, {700, 1}, {5000, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_04", 1}};
+		volume = 1.6;
+	};
+	class Gravity_Cannon_01_Discharge_SoundShader
+	{
+		range = 5000;
+		rangeCurve[] = {{0, 1}, {100, 1}, {5000, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\GravityCannon01\Gravity_Cannon_Discharge_01", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\GravityCannon01\Gravity_Cannon_Discharge_02", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\GravityCannon01\Gravity_Cannon_Discharge_03", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\GravityCannon01\Gravity_Cannon_Discharge_04", 1}};
+		volume = 1.3;
+	};
+	class Gravity_Cannon_01_Tail_Forest_SoundShader
+	{
+		limitation = 1;
+		range = 5000;
+		rangeCurve[] = {{0, 0.3}, {150, 0.3}, {500, 1}, {5000, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_04", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_05", 1}};
+		volume = "1.5*forest";
+	};
+	class Gravity_Cannon_01_Tail_Houses_SoundShader
+	{
+		limitation = 1;
+		range = 5000;
+		rangeCurve[] = {{0, 0.3}, {150, 0.3}, {500, 1}, {5000, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_04", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_05", 1}};
+		volume = "1.5*houses";
+	};
+	class Gravity_Cannon_01_Tail_Meadows_SoundShader
+	{
+		limitation = 1;
+		range = 5000;
+		rangeCurve[] = {{0, 0.3}, {150, 0.3}, {500, 1}, {5000, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_04", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_05", 1}};
+		volume = "1.5*meadows max sea/2";
+	};
+	class Gravity_Projectile_FlyBy_SoundShader
+	{
+		range = 350;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Projectile_Flyby_01", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Projectile_Flyby_02", 0.2}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Projectile_Flyby_03", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Projectile_Flyby_04", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Projectile_Flyby_05", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Projectile_Flyby_06", 1}};
+		volume = 0.25;
+	};
+	class Gravity_Shotgun_01_Discharge_Distant_SoundShader
+	{
+		limitation = 0;
+		range = 3000;
+		rangeCurve[] = {{0, 0}, {50, 0}, {100, 0.5}, {700, 1}, {3000, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_04", 1}};
+		volume = 1.6;
+	};
+	class Gravity_Shotgun_01_Discharge_SoundShader
+	{
+		range = 3000;
+		rangeCurve[] = {{0, 1}, {100, 1}, {3000, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_04", 1}};
+		volume = 1.3;
+	};
+	class Gravity_Shotgun_01_Tail_Forest_SoundShader
+	{
+		limitation = 1;
+		range = 3000;
+		rangeCurve[] = {{0, 0.3}, {150, 0.3}, {500, 1}, {3000, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_04", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_05", 1}};
+		volume = "1.5*forest";
+	};
+	class Gravity_Shotgun_01_Tail_Houses_SoundShader
+	{
+		limitation = 1;
+		range = 3000;
+		rangeCurve[] = {{0, 0.3}, {150, 0.3}, {500, 1}, {3000, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_04", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_05", 1}};
+		volume = "1.5*houses";
+	};
+	class Gravity_Shotgun_01_Tail_Meadows_SoundShader
+	{
+		limitation = 1;
+		range = 3000;
+		rangeCurve[] = {{0, 0.3}, {150, 0.3}, {500, 1}, {3000, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_04", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_05", 1}};
+		volume = "1.5*meadows max sea/2";
 	};
 	class Greek_Crickets_Day_SoundShader
 	{
@@ -13536,14 +16858,14 @@ class CfgSoundShaders
 		range = 2000;
 		rangeCurve[] = {{0, 0}, {50, 0}, {300, 1}, {2000, 1}};
 		samples[] = {{"\A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Mk200_distShot_01", 1}, {"\A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Mk200_distShot_02", 1}, {"\A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Mk200_distShot_03", 1}};
-		volume = 1;
+		volume = 1.77828;
 	};
 	class Mk200_midShot_SoundShader
 	{
 		range = 2000;
 		rangeCurve[] = {{0, 0.2}, {50, 1}, {300, 0}, {2000, 0}};
 		samples[] = {{"\A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Mk200_midShot_01", 1}, {"\A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Mk200_midShot_02", 1}, {"\A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Mk200_midShot_03", 1}};
-		volume = 0.501187;
+		volume = 0.707946;
 	};
 	class Mk200_silencerShot_SoundShader
 	{
@@ -13622,7 +16944,7 @@ class CfgSoundShaders
 		range = 350;
 		rangeCurve[] = {{0, 1}, {50, 0.4}, {100, 0.2}, {350, 0}};
 		samples[] = {{"\A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Mk200_tailinterior", 1}};
-		volume = "interior";
+		volume = "0.3*interior";
 	};
 	class Mk200_tailMeadows_SoundShader
 	{
@@ -13866,7 +17188,7 @@ class CfgSoundShaders
 		range = 350;
 		rangeCurve[] = {{0, 1}, {50, 0.4}, {100, 0.2}, {350, 0}};
 		samples[] = {{"\A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_01_Navid\MMG01_tailinterior", 1}};
-		volume = "interior";
+		volume = "0.3*interior";
 	};
 	class MMG01_tailMeadows_SoundShader
 	{
@@ -13886,7 +17208,7 @@ class CfgSoundShaders
 	};
 	class MMG02_closeShot_SoundShader
 	{
-		range = 50;
+		range = 100;
 		rangeCurve = "closeShotCurve";
 		samples[] = {{"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_02_SPGM\MMG02_closeShot_01", 1}, {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_02_SPGM\MMG02_closeShot_02", 1}, {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_02_SPGM\MMG02_closeShot_03", 1}};
 		volume = 1;
@@ -13899,15 +17221,15 @@ class CfgSoundShaders
 	};
 	class MMG02_distShot_SoundShader
 	{
-		range = 2000;
-		rangeCurve[] = {{0, 0}, {50, 0}, {300, 1}, {2000, 1}};
+		range = 3000;
+		rangeCurve[] = {{0, 0.5}, {50, 0.5}, {300, 1}, {2000, 1}, {3000, 0}};
 		samples[] = {{"\A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_02_SPGM\MMG02_distShot_01", 1}, {"\A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_02_SPGM\MMG02_distShot_02", 1}, {"\A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_02_SPGM\MMG02_distShot_03", 1}};
-		volume = 1;
+		volume = 0.630957;
 	};
 	class MMG02_midShot_SoundShader
 	{
 		range = 2000;
-		rangeCurve[] = {{0, 0.2}, {50, 1}, {300, 0}, {2000, 0}};
+		rangeCurve[] = {{0, 0.2}, {50, 1}, {300, 0.2}, {2000, 0}};
 		samples[] = {{"\A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_02_SPGM\MMG02_midShot_01", 1}, {"\A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_02_SPGM\MMG02_midShot_02", 1}, {"\A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_02_SPGM\MMG02_midShot_03", 1}};
 		volume = 0.501187;
 	};
@@ -13961,10 +17283,10 @@ class CfgSoundShaders
 	class MMG02_tailDistant_SoundShader
 	{
 		limitation = 1;
-		range = 2000;
-		rangeCurve[] = {{0, 0}, {600, 0.7}, {2000, 1}};
+		range = 2500;
+		rangeCurve[] = {{0, 0.1}, {600, 0.4}, {2000, 1}, {2500, 0}};
 		samples[] = {{"\A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_02_SPGM\MMG02_taildistant", 1}};
-		volume = 1;
+		volume = 0.6;
 	};
 	class MMG02_tailForest_SoundShader
 	{
@@ -13988,7 +17310,7 @@ class CfgSoundShaders
 		range = 350;
 		rangeCurve[] = {{0, 1}, {50, 0.4}, {100, 0.2}, {350, 0}};
 		samples[] = {{"\A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_02_SPGM\MMG02_tailinterior", 1}};
-		volume = "interior";
+		volume = "0.3*interior";
 	};
 	class MMG02_tailMeadows_SoundShader
 	{
@@ -14072,6 +17394,81 @@ class CfgSoundShaders
 		rangeCurve[] = {{0, 1}, {1700, 0.3}};
 		samples[] = {{"A3\Sounds_F_Exp\arsenal\vehicle_weapons\MMG_SPMG\MMG_SPMG_tailTrees", 1}};
 		volume = "(1-interior/1.4)*trees/3";
+	};
+	class Module_Battle_01_Fins_Close_SoundShader
+	{
+		frequency = 1;
+		limitation = 1;
+		range = 150;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\Modules\Module_Battle_01_Fins_Close_01", 1}};
+		volume = 1;
+	};
+	class Module_Battle_01_Fins_Open_SoundShader
+	{
+		frequency = 1;
+		limitation = 1;
+		range = 150;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\Modules\Module_Battle_01_Fins_Open_01", 1}};
+		volume = 1;
+	};
+	class Module_Battle_01_Fins_Start_SoundShader
+	{
+		frequency = 1;
+		limitation = 1;
+		range = 1500;
+		rangeCurve[] = {{0, 1}, {100, 1}, {2500, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\Modules\Module_Battle_01_Fins_Start_02", 1}};
+		volume = 0.8;
+	};
+	class Module_Battle_01_Fins_Stop_SoundShader
+	{
+		frequency = 1;
+		limitation = 1;
+		range = 1500;
+		rangeCurve[] = {{0, 1}, {100, 1}, {2500, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\Modules\Module_Battle_01_Fins_Stop_01", 1}};
+		volume = 0.8;
+	};
+	class Module_Battle_02_Fins_Close_SoundShader
+	{
+		frequency = 1;
+		limitation = 1;
+		range = 150;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\Modules\Module_Battle_01_Fins_Close_01", 1}};
+		volume = 1;
+	};
+	class Module_Battle_02_Fins_Open_SoundShader
+	{
+		frequency = 1;
+		limitation = 1;
+		range = 150;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\Modules\Module_Battle_01_Fins_Open_01", 1}};
+		volume = 1;
+	};
+	class Module_Battle_02_Fins_Start_SoundShader
+	{
+		frequency = 1;
+		limitation = 1;
+		range = 1500;
+		rangeCurve[] = {{0, 1}, {100, 1}, {1000, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\Modules\Module_Battle_02_Fins_Start_02", 1}};
+		volume = 0.8;
+	};
+	class Module_Battle_02_Fins_Stop_SoundShader
+	{
+		frequency = 1;
+		limitation = 1;
+		range = 1500;
+		rangeCurve[] = {{0, 1}, {100, 1}, {1000, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\Modules\Module_Battle_01_Fins_Stop_01", 1}};
+		volume = 0.8;
+	};
+	class Module_Scout_01_Movement_01_SoundShader
+	{
+		frequency = 1;
+		range = 100;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\Modules\Module_Orbit_Loop_03", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\Modules\Module_Orbit_Loop_04", 1}};
+		volume = "1 * engineon * (altRadar factor [25,5])";
 	};
 	class Mortar82mm_closeShot_SoundShader
 	{
@@ -15612,6 +19009,12 @@ class CfgSoundShaders
 		samples[] = {{"A3\Sounds_F\arsenal\weapons\UGL\UGL_tailtrees", 1}};
 		volume = "(1-interior/1.4)*trees/3";
 	};
+	class Music_Transition_Tension_Battle_01_SoundShader
+	{
+		range = 10;
+		samples[] = {{"A3\Music_F_Contact\Music\Drafts\Transitions\Music_Transition_Tension_Battle_01", 1}};
+		volume = "1* CustomSoundController1";
+	};
 	class MX_closeShot_SoundShader
 	{
 		range = 50;
@@ -15868,6 +19271,15 @@ class CfgSoundShaders
 		range = 1800;
 		samples[] = {{"A3\Sounds_F\arsenal\weapons\Rifles\MX\MX_tailTrees", 1}};
 		volume = "(1-interior/1.4)*trees/3";
+	};
+	class MyTestSoundShader
+	{
+		frequency = 1;
+		limitation = 0;
+		range = 200;
+		rangeCurve[] = {{0, 0.5}, {60, 1}, {200, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Tact_H_Medium_Long_01", 1}};
+		volume = 1.5;
 	};
 	class Night_Trills_SoundShader
 	{
@@ -16603,6 +20015,80 @@ class CfgSoundShaders
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires01\Tires_Water_Slow_EXT", 1}};
 		volume = "0.5 * 0.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.8*(abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.2*water";
 	};
+	class Outro_02_Module_HMG127mm_static_closeShot_SoundShader
+	{
+		range = 1100;
+		rangeCurve = "closeShotCurve";
+		samples[] = {{"A3\Sounds_F\arsenal\weapons_static\HMG_127mm_static\HMG127mm_static_closeShot_01", 1}, {"A3\Sounds_F\arsenal\weapons_static\HMG_127mm_static\HMG127mm_static_closeShot_02", 1}, {"A3\Sounds_F\arsenal\weapons_static\HMG_127mm_static\HMG127mm_static_closeShot_03", 1}};
+		volume = 0.8;
+	};
+	class Outro_02_Module_HMG127mm_static_Closure_SoundShader
+	{
+		range = 5;
+		samples[] = {{"A3\Sounds_F\arsenal\weapons_static\HMG_127mm_static\HMG127mm_static_closure_01", 1}, {"A3\Sounds_F\arsenal\weapons_static\HMG_127mm_static\HMG127mm_static_closure_02", 1}};
+		volume = 0;
+	};
+	class Outro_02_Module_HMG127mm_static_distShot_SoundShader
+	{
+		range = 5000;
+		rangeCurve[] = {{0, 0}, {100, 0}, {400, 1}, {3500, 0}};
+		samples[] = {{"A3\Sounds_F\arsenal\weapons_static\HMG_127mm_static\HMG127mm_static_distShot_01", 1}, {"A3\Sounds_F\arsenal\weapons_static\HMG_127mm_static\HMG127mm_static_distShot_02", 1}, {"A3\Sounds_F\arsenal\weapons_static\HMG_127mm_static\HMG127mm_static_distShot_03", 1}};
+		volume = 0.8;
+	};
+	class Outro_02_Module_HMG127mm_static_MidShot_SoundShader
+	{
+		range = 1100;
+		rangeCurve[] = {{0, 0.2}, {275, 1}, {500, 1}, {1100, 0}};
+		samples[] = {{"A3\Sounds_F\arsenal\weapons_static\HMG_127mm_static\HMG127mm_static_midShot_01", 1}, {"A3\Sounds_F\arsenal\weapons_static\HMG_127mm_static\HMG127mm_static_midShot_02", 1}, {"A3\Sounds_F\arsenal\weapons_static\HMG_127mm_static\HMG127mm_static_midShot_03", 1}};
+		volume = 0.8;
+	};
+	class Outro_02_Module_HMG127mm_static_Sweetener_01_SoundShader
+	{
+		range = 8000;
+		rangeCurve[] = {{0, 0.2}, {100, 0.2}, {400, 1}, {3500, 1}, {8000, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Props\Outro_02 TracerModule\Module_Sweetener_Low_01", 1}, {"A3\Sounds_F_Contact\Assets\Props\Outro_02 TracerModule\Module_Sweetener_Low_02", 1}, {"A3\Sounds_F_Contact\Assets\Props\Outro_02 TracerModule\Module_Sweetener_Low_03", 1}, {"A3\Sounds_F_Contact\Assets\Props\Outro_02 TracerModule\Module_Sweetener_Low_04", 1}};
+		volume = 1;
+	};
+	class Outro_02_Module_HMG127mm_static_tailDistant_SoundShader
+	{
+		limitable = 1;
+		range = 5000;
+		rangeCurve[] = {{0, 0}, {600, 1}, {5000, 1}};
+		samples[] = {{"A3\Sounds_F\arsenal\weapons_static\HMG_127mm_static\HMG127mm_static_taildistant", 1}};
+		volume = 1;
+	};
+	class Outro_02_Module_HMG127mm_static_tailForest_SoundShader
+	{
+		limitable = 1;
+		range = 5000;
+		rangeCurve[] = {{0, 1}, {5000, 0.3}};
+		samples[] = {{"A3\Sounds_F\arsenal\weapons_static\HMG_127mm_static\HMG127mm_static_tailforest", 1}};
+		volume = "(1-interior/1.4)*forest/3";
+	};
+	class Outro_02_Module_HMG127mm_static_tailHouses_SoundShader
+	{
+		limitable = 1;
+		range = 2000;
+		rangeCurve[] = {{0, 1}, {400, 0.5}, {2000, 0.3}};
+		samples[] = {{"A3\Sounds_F\arsenal\weapons_static\HMG_127mm_static\HMG127mm_static_tailhouses", 1}};
+		volume = "(1-interior/1.4)*houses/3";
+	};
+	class Outro_02_Module_HMG127mm_static_tailMeadows_SoundShader
+	{
+		limitable = 1;
+		range = 5000;
+		rangeCurve[] = {{0, 1}, {5000, 0.3}};
+		samples[] = {{"A3\Sounds_F\arsenal\weapons_static\HMG_127mm_static\HMG127mm_static_tailmeadows", 1}};
+		volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
+	};
+	class Outro_02_Module_HMG127mm_static_tailTrees_SoundShader
+	{
+		limitable = 1;
+		range = 5000;
+		rangeCurve[] = {{0, 1}, {5000, 0.3}};
+		samples[] = {{"A3\Sounds_F\arsenal\weapons_static\HMG_127mm_static\HMG127mm_static_tailtrees", 1}};
+		volume = "(1-interior/1.4)*trees/3";
+	};
 	class P07_closeShot_SoundShader
 	{
 		range = 50;
@@ -16725,36 +20211,48 @@ class CfgSoundShaders
 		samples[] = {{"\A3\Sounds_F\arsenal\weapons\Pistols\P07\P07_tailtrees", 1}};
 		volume = "(1-interior/1.4)*trees/3";
 	};
+	class Photon_Burst_Off_SoundShader
+	{
+		range = 250;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\LightBurst\Drone_01_LightBurst_Off", 1}};
+		volume = 1.4;
+	};
+	class Photon_Burst_On_SoundShader
+	{
+		range = 250;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\LightBurst\Drone_01_LightBurst_On", 1}};
+		volume = 1.4;
+	};
 	class Plane_CAS_01_EngineExt_Dist_Front_SoundShader
 	{
 		frequency = 1;
-		range = 4000;
-		rangeCurve[] = {{0, 0}, {50, 0}, {400, 1}, {4000, 1}};
+		range = "4000 * 1";
+		rangeCurve[] = {{0, 0}, {"50* 1", 0}, {"400* 1", 1}, {"4000* 1", 1}};
 		samples[] = {{"A3\Sounds_F\vehicles\air\CAS_01\CAS_01_engine_ext_dist_front", 1}};
-		volume = "camPos*(rpm factor[0.5, 1])";
+		volume = "camPos*(rpm factor[0.5, 1])* (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))";
 	};
 	class Plane_CAS_01_EngineExt_Dist_Rear_SoundShader
 	{
 		frequency = 1;
-		range = 4000;
-		rangeCurve[] = {{0, 0}, {50, 0}, {400, 1}, {4000, 1}};
+		range = "4000 * 1";
+		rangeCurve[] = {{0, 0}, {"50* 1", 0}, {"400* 1", 1}, {"4000* 1", 1}};
 		samples[] = {{"A3\Sounds_F\vehicles\air\CAS_01\CAS_01_engine_ext_dist_rear", 1}};
-		volume = "camPos*(rpm factor[0.5, 1])";
+		volume = "camPos*(rpm factor[0.5, 1])* (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))";
 	};
 	class Plane_CAS_01_EngineExt_Middle_SoundShader
 	{
 		frequency = 1;
-		range = 2000;
-		rangeCurve[] = {{0, 0}, {50, 1}, {400, 0}, {2000, 0}};
+		range = "2000 * 1";
+		rangeCurve[] = {{0, 0}, {"50* 1", 1}, {"400* 1", 0}, {"2000* 1", 0}};
 		samples[] = {{"A3\Sounds_F\vehicles\air\CAS_01\CAS_01_engine_ext_mid", 1}};
-		volume = "camPos*(rpm factor[0.5, 1])";
+		volume = "camPos*(rpm factor[0.5, 1])* (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))";
 	};
 	class Plane_CAS_01_EngineHighExt_SoundShader
 	{
 		frequency = 1.1;
-		range = 600;
+		range = "600 * 1";
 		samples[] = {{"A3\Sounds_F\vehicles\air\CAS_01\CAS_01_engine_ext", 1}};
-		volume = "camPos*4*(rpm factor[0.5, 1.1])*(rpm factor[1.1, 0.5])";
+		volume = "camPos*4*(rpm factor[0.5, 1.1])*(rpm factor[1.1, 0.5])* (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))";
 	};
 	class Plane_CAS_01_EngineHighInt_SoundShader
 	{
@@ -16765,9 +20263,9 @@ class CfgSoundShaders
 	class Plane_CAS_01_EngineLowExt_SoundShader
 	{
 		frequency = "1.0 min (rpm + 0.5)";
-		range = 400;
+		range = "400 * 1";
 		samples[] = {{"A3\Sounds_F\vehicles\air\CAS_01\CAS_01_engine_idle_ext", 1}};
-		volume = "camPos*2*(rpm factor[0.95, 0])*(rpm factor[0, 0.95])";
+		volume = "camPos*2*(rpm factor[0.95, 0])*(rpm factor[0, 0.95]) * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))";
 	};
 	class Plane_CAS_01_EngineLowInt_SoundShader
 	{
@@ -16778,9 +20276,9 @@ class CfgSoundShaders
 	class Plane_CAS_01_ForsageExt_SoundShader
 	{
 		frequency = 1.2;
-		range = 2800;
+		range = "2800 * 1";
 		samples[] = {{"A3\Sounds_F\vehicles\air\CAS_01\CAS_01_forsage_ext", 1}};
-		volume = "1.4*engineOn*camPos*(thrust factor[0.6, 1.0])";
+		volume = "1.4*engineOn*camPos*(thrust factor[0.6, 1.0])* (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))";
 	};
 	class Plane_CAS_01_ForsageInt_SoundShader
 	{
@@ -16791,9 +20289,9 @@ class CfgSoundShaders
 	class Plane_CAS_01_WindNoiseExt_SoundShader
 	{
 		frequency = "0.1+(1.2*(speed factor[1, 150]))";
-		range = 800;
+		range = "800 * 1";
 		samples[] = {{"A3\Sounds_F\air\Plane_Fighter_03\noise", 1}};
-		volume = "0.6*camPos*(speed factor[1, 150])";
+		volume = "0.6*camPos*(speed factor[1, 150])* (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))";
 	};
 	class Plane_CAS_01_WindNoiseInt_SoundShader
 	{
@@ -16890,7 +20388,7 @@ class CfgSoundShaders
 		range = 5000;
 		rangeCurve[] = {{0, 0}, {50, 1}, {5000, 1}};
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\plane_fighter_02\o_plane_fighter_02_engine_front", 1}};
-		volume = "0.6 * machcone*camPos*(rpm factor[0.5, 1])";
+		volume = "0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * machcone*camPos*(rpm factor[0.5, 1])";
 	};
 	class Plane_Fighter_02_EngineExt_Dist_Rear_SoundShader
 	{
@@ -16898,7 +20396,7 @@ class CfgSoundShaders
 		range = 5000;
 		rangeCurve[] = {{0, 0}, {50, 1}, {5000, 1}};
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\plane_fighter_02\o_plane_fighter_02_engine_back", 1}};
-		volume = "0.6 * machcone*camPos*(rpm factor[0.5, 1])";
+		volume = "0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * machcone*camPos*(rpm factor[0.5, 1])";
 	};
 	class Plane_Fighter_02_EngineExt_Middle_SoundShader
 	{
@@ -16906,33 +20404,33 @@ class CfgSoundShaders
 		range = 4000;
 		rangeCurve[] = {{0, 0}, {50, 1}, {4000, 1}};
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\plane_fighter_02\o_plane_fighter_02_engine_middle", 1}};
-		volume = "0.6 * machcone*camPos*(rpm factor[0.5, 1])";
+		volume = "0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * machcone*camPos*(rpm factor[0.5, 1])";
 	};
 	class Plane_Fighter_02_EngineHighExt_SoundShader
 	{
 		frequency = "1.0 min (rpm + 0.5)*(rpm factor[0.5, 1.1])";
 		range = 1300;
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\Plane_Fighter_02\O_Plane_Fighter_02_engine_high_ext", 1}};
-		volume = "0.6 * machcone*engineOn*camPos*(rpm factor[0, 1])*(thrust factor[0, 0.75])";
+		volume = "0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * machcone*engineOn*camPos*(rpm factor[0, 1])*(thrust factor[0, 0.75])";
 	};
 	class Plane_Fighter_02_EngineHighInt_SoundShader
 	{
 		frequency = "1.0 min (rpm + 0.25)*(rpm factor[0.25, 1.1])";
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\Plane_Fighter_02\O_Plane_Fighter_02_engine_high_int", 1}};
-		volume = "1 * engineOn*(1-camPos)*(rpm factor[0, 1])";
+		volume = "1 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * engineOn*(1-camPos)*(rpm factor[0, 1])";
 	};
 	class Plane_Fighter_02_EngineLowExt_SoundShader
 	{
 		frequency = "1.0 min (rpm + 0.5)*(rpm factor[0, 1])";
 		range = 1200;
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\Plane_Fighter_02\O_Plane_Fighter_02_engine_low_ext", 1}};
-		volume = "0.6 * machcone*engineOn*camPos*(rpm factor[0, 1])*(thrust factor[0.75, 0])";
+		volume = "0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * machcone*engineOn*camPos*(rpm factor[0, 1])*(thrust factor[0.75, 0])";
 	};
 	class Plane_Fighter_02_EngineLowInt_SoundShader
 	{
 		frequency = "1.0 min (rpm + 0.25)*(rpm factor[0, 1])";
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\Plane_Fighter_02\O_Plane_Fighter_02_engine_low_int", 1}};
-		volume = "1 * engineOn*(1-camPos)*(rpm factor[0.5, 1])";
+		volume = "1 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * engineOn*(1-camPos)*(rpm factor[0.5, 1])";
 	};
 	class Plane_Fighter_02_ForsageExt_SoundShader
 	{
@@ -16940,32 +20438,32 @@ class CfgSoundShaders
 		range = 1500;
 		rangeCurve[] = {{0, 1}, {200, 0.75}, {1000, 0.25}, {1500, 0}};
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\Plane_Fighter_02\O_Plane_Fighter_02_engine_forsage_ext", 1}};
-		volume = "0.6 * machcone*engineOn*camPos*(thrust factor[0.6, 1.0])";
+		volume = "0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * machcone*engineOn*camPos*(thrust factor[0.6, 1.0])";
 	};
 	class Plane_Fighter_02_ForsageInt_SoundShader
 	{
 		frequency = "1.0 min (rpm + 0.5)*(rpm factor[0, 1])";
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\Plane_Fighter_02\O_Plane_Fighter_02_engine_forsage_int", 1}};
-		volume = "1 * engineOn*(1-camPos)*(rpm factor[0.5, 1])*(thrust factor[0.5, 1.0])";
+		volume = "1 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * engineOn*(1-camPos)*(rpm factor[0.5, 1])*(thrust factor[0.5, 1.0])";
 	};
 	class Plane_Fighter_02_VelocityInt_SoundShader
 	{
 		frequency = "0.75*(speed factor[1, 150])";
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\Shared\FX_Plane_Jet_velocity_int", 1}};
-		volume = "1 * (1-camPos)*(gmeterZ factor[1.5, 6])*(speed factor[1, 50])";
+		volume = "1 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * (1-camPos)*(gmeterZ factor[1.5, 6])*(speed factor[1, 50])";
 	};
 	class Plane_Fighter_02_WindNoiseExt_SoundShader
 	{
 		frequency = "3*(speed factor[1, 200])";
 		range = 200;
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\Shared\FX_Plane_Jet_wind_ext", 1}};
-		volume = "0.6 * machcone*4*camPos*(speed factor[1, 200])";
+		volume = "0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * machcone*4*camPos*(speed factor[1, 200])";
 	};
 	class Plane_Fighter_02_WindNoiseInt_SoundShader
 	{
 		frequency = "3*(speed factor[1, 200])";
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\Shared\FX_Plane_Jet_wind_int", 1}};
-		volume = "1 * 3*(1-camPos)*(speed factor[1, 200])";
+		volume = "1 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * 3*(1-camPos)*(speed factor[1, 200])";
 	};
 	class Plane_Fighter_04_EngineExt_Dist_Front_SoundShader
 	{
@@ -16973,7 +20471,7 @@ class CfgSoundShaders
 		range = 5000;
 		rangeCurve[] = {{0, 0}, {50, 1}, {5000, 1}};
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\plane_fighter_04\I_plane_fighter_04_engine_front", 1}};
-		volume = "0.6 * machcone*camPos*(rpm factor[0.5, 1])";
+		volume = "0.75 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * machcone*camPos*(rpm factor[0.5, 1])";
 	};
 	class Plane_Fighter_04_EngineExt_Dist_Rear_SoundShader
 	{
@@ -16981,7 +20479,7 @@ class CfgSoundShaders
 		range = 5000;
 		rangeCurve[] = {{0, 0}, {50, 1}, {5000, 1}};
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\plane_fighter_04\I_plane_fighter_04_engine_back", 1}};
-		volume = "0.6 * machcone*camPos*(rpm factor[0.5, 1])";
+		volume = "0.75 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * machcone*camPos*(rpm factor[0.5, 1])";
 	};
 	class Plane_Fighter_04_EngineExt_Middle_SoundShader
 	{
@@ -16989,33 +20487,33 @@ class CfgSoundShaders
 		range = 4000;
 		rangeCurve[] = {{0, 1}, {50, 1}, {4000, 1}};
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\plane_fighter_04\I_plane_fighter_04_engine_middle", 1}};
-		volume = "0.6 * machcone*camPos*(rpm factor[0.5, 1])";
+		volume = "0.75 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * machcone*camPos*(rpm factor[0.5, 1])";
 	};
 	class Plane_Fighter_04_EngineHighExt_SoundShader
 	{
 		frequency = "1.0 min (rpm + 0.5)*(rpm factor[0.5, 1.1])";
 		range = 1300;
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\Plane_Fighter_04\I_Plane_Fighter_04_engine_high_ext", 1}};
-		volume = "0.6 * machcone*engineOn*camPos*(rpm factor[0, 1])*(thrust factor[0, 0.75])";
+		volume = "0.75 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * machcone*engineOn*camPos*(rpm factor[0, 1])*(thrust factor[0, 0.75])";
 	};
 	class Plane_Fighter_04_EngineHighInt_SoundShader
 	{
 		frequency = "1.0 min (rpm + 0.25)*(rpm factor[0.25, 1.1])";
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\Plane_Fighter_04\I_Plane_Fighter_04_engine_high_int", 1}};
-		volume = "1 * engineOn*(1-camPos)*(rpm factor[0, 1])";
+		volume = "1 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * engineOn*(1-camPos)*(rpm factor[0, 1])";
 	};
 	class Plane_Fighter_04_EngineLowExt_SoundShader
 	{
 		frequency = "1.0 min (rpm + 0.5)*(rpm factor[0, 1])";
 		range = 1200;
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\Plane_Fighter_04\I_Plane_Fighter_04_engine_low_ext", 1}};
-		volume = "0.6 * machcone*engineOn*camPos*(rpm factor[0, 1])*(thrust factor[0.75, 0])";
+		volume = "0.75 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * machcone*engineOn*camPos*(rpm factor[0, 1])*(thrust factor[0.75, 0])";
 	};
 	class Plane_Fighter_04_EngineLowInt_SoundShader
 	{
 		frequency = "1.0 min (rpm + 0.25)*(rpm factor[0, 1])";
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\Plane_Fighter_04\I_Plane_Fighter_04_engine_low_int", 1}};
-		volume = "1 * engineOn*(1-camPos)*(rpm factor[0.5, 1])";
+		volume = "1 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * engineOn*(1-camPos)*(rpm factor[0.5, 1])";
 	};
 	class Plane_Fighter_04_ForsageExt_SoundShader
 	{
@@ -17023,32 +20521,32 @@ class CfgSoundShaders
 		range = 1500;
 		rangeCurve[] = {{0, 1}, {200, 0.75}, {1000, 0.25}, {1500, 0}};
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\Plane_Fighter_04\I_Plane_Fighter_04_engine_forsage_ext", 1}};
-		volume = "0.6 * machcone*engineOn*camPos*(thrust factor[0.6, 1.0])";
+		volume = "0.75 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * machcone*engineOn*camPos*(thrust factor[0.6, 1.0])";
 	};
 	class Plane_Fighter_04_ForsageInt_SoundShader
 	{
 		frequency = "1.0 min (rpm + 0.5)*(rpm factor[0, 1])";
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\Plane_Fighter_04\I_Plane_Fighter_04_engine_forsage_int", 1}};
-		volume = "1 * engineOn*(1-camPos)*(rpm factor[0.5, 1])*(thrust factor[0.5, 1.0])";
+		volume = "1 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * engineOn*(1-camPos)*(rpm factor[0.5, 1])*(thrust factor[0.5, 1.0])";
 	};
 	class Plane_Fighter_04_VelocityInt_SoundShader
 	{
 		frequency = "0.75*(speed factor[1, 150])";
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\Shared\FX_Plane_Jet_velocity_int", 1}};
-		volume = "1 * (1-camPos)*(gmeterZ factor[1.5, 6])*(speed factor[1, 50])";
+		volume = "1 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * (1-camPos)*(gmeterZ factor[1.5, 6])*(speed factor[1, 50])";
 	};
 	class Plane_Fighter_04_WindNoiseExt_SoundShader
 	{
 		frequency = "3*(speed factor[1, 200])";
 		range = 200;
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\Shared\FX_Plane_Jet_wind_ext", 1}};
-		volume = "0.6 * machcone*4*camPos*(speed factor[1, 200])";
+		volume = "0.75 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * machcone*4*camPos*(speed factor[1, 200])";
 	};
 	class Plane_Fighter_04_WindNoiseInt_SoundShader
 	{
 		frequency = "3*(speed factor[1, 200])";
 		samples[] = {{"A3\Sounds_F_Jets\vehicles\air\Shared\FX_Plane_Jet_wind_int", 1}};
-		volume = "1 * 3*(1-camPos)*(speed factor[1, 200])";
+		volume = "1 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0])) * 3*(1-camPos)*(speed factor[1, 200])";
 	};
 	class Plane_Fighter_SonicBoom_SoundShader
 	{
@@ -17130,6 +20628,52 @@ class CfgSoundShaders
 		range = 25;
 		samples[] = {{"A3\Sounds_F_Enoch\Assets\Arsenal\Ugv_02\ProbingWeapon_01\Ugv_02_ProbingWeapon_02_Lance_01", 1}, {"A3\Sounds_F_Enoch\Assets\Arsenal\Ugv_02\ProbingWeapon_01\Ugv_02_ProbingWeapon_02_Lance_02", 1}, {"A3\Sounds_F_Enoch\Assets\Arsenal\Ugv_02\ProbingWeapon_01\Ugv_02_ProbingWeapon_02_Lance_03", 1}};
 		volume = "campos*1";
+	};
+	class Prototype_Cannon_01_Discharge_01_SoundShader
+	{
+		range = 200;
+		rangeCurve[] = {{0, 1}, {75, 1}, {175, 0.75}, {300, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_04", 1}};
+		volume = 1;
+	};
+	class Prototype_Cannon_01_Discharge_Distant_01_SoundShader
+	{
+		limitation = 1;
+		range = 2200;
+		rangeCurve[] = {{0, 0}, {150, 0}, {300, 1}, {1500, 1}, {2200, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_04", 1}};
+		volume = 1;
+	};
+	class Prototype_Cannon_01_Tail_Forest_SoundShader
+	{
+		limitation = 1;
+		range = 500;
+		rangeCurve[] = {{0, 1}, {1000, 0.5}, {2200, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_04", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_05", 1}};
+		volume = "forest";
+	};
+	class Prototype_Cannon_01_Tail_Houses_SoundShader
+	{
+		limitation = 1;
+		range = 2200;
+		rangeCurve[] = {{0, 1}, {1000, 0.5}, {2200, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_04", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_05", 1}};
+		volume = "houses";
+	};
+	class Prototype_Cannon_01_Tail_Meadows_SoundShader
+	{
+		limitation = 1;
+		range = 2200;
+		rangeCurve[] = {{0, 1}, {1000, 0.5}, {2200, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_04", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_05", 1}};
+		volume = "meadows max sea/2";
+	};
+	class Puzzle_01_Charge_3Sec_SoundShader
+	{
+		frequency = 1;
+		range = 750;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Puzzles\Puzzle_01_Charge_3Sec", 1}};
+		volume = "1.1 * CustomSoundController19";
 	};
 	class Quadbike_01_Engine_RPM0_EXT_SoundShader: Engine_Base_RPM0_EXT_SoundShader
 	{
@@ -18384,26 +21928,47 @@ class CfgSoundShaders
 		samples[] = {{"A3\Sounds_F_Exp\environment\sfx\small_debris\rock_debris_01", 1}, {"A3\Sounds_F_Exp\environment\sfx\small_debris\rock_debris_02", 1}, {"A3\Sounds_F_Exp\environment\sfx\small_debris\rock_debris_03", 1}, {"A3\Sounds_F_Exp\environment\sfx\small_debris\rock_debris_04", 1}, {"A3\Sounds_F_Exp\environment\sfx\small_debris\rock_debris_05", 1}, {"A3\Sounds_F_Exp\environment\sfx\small_debris\rock_debris_06", 1}};
 		volume = "0.5*(wind factor[0.3, 0.6]) * (rain factor[0.7,0.5])";
 	};
+	class RocketsHeavy_closeExp_02_SoundShader
+	{
+		range = 110;
+		rangeCurve = "CannonCloseShotCurve";
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_Close_04", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_Close_03", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_Close_02", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_Close_01", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_Close_10", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_Close_09", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_Close_08", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_Close_07", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_Close_06", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_Close_05", 1}};
+		volume = 0.55;
+	};
 	class RocketsHeavy_closeExp_SoundShader
 	{
 		range = 110;
 		rangeCurve = "CannonCloseShotCurve";
 		samples[] = {{"A3\Sounds_F\arsenal\explosives\rockets\Rocket_closeExp_01", 1}, {"A3\Sounds_F\arsenal\explosives\rockets\Rocket_closeExp_02", 1}, {"A3\Sounds_F\arsenal\explosives\rockets\Rocket_closeExp_03", 1}};
-		volume = 1;
+		volume = 0.3;
+	};
+	class RocketsHeavy_distExp_02_SoundShader
+	{
+		range = 4000;
+		rangeCurve[] = {{0, 0}, {100, 0}, {300, 1}, {3000, 1}, {4000, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_04", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_03", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_02", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_01", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_12", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_11", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_10", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_09", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_08", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_07", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_06", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Heavy_05", 1}};
+		volume = 0.8;
 	};
 	class RocketsHeavy_distExp_SoundShader
 	{
 		range = 4000;
-		rangeCurve[] = {{0, 0}, {100, 0}, {300, 1}, {4000, 1}};
+		rangeCurve[] = {{0, 0}, {100, 0}, {300, 1}, {3000, 1}, {4000, 0}};
 		samples[] = {{"A3\Sounds_F\arsenal\explosives\rockets\RocketHeavy_distExp_01", 1}, {"A3\Sounds_F\arsenal\explosives\rockets\RocketHeavy_distExp_02", 1}, {"A3\Sounds_F\arsenal\explosives\rockets\RocketHeavy_distExp_03", 1}};
-		volume = 1;
+		volume = "0*0.2";
+	};
+	class RocketsHeavy_midExp_02_SoundShader
+	{
+		range = 400;
+		rangeCurve = "CannonMidShotCurve";
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Medium_04", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Medium_03", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Medium_02", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Medium_01", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Medium_10", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Medium_09", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Medium_08", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Medium_07", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Medium_06", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Explosive_Impacts\Impact_Medium_05", 1}};
+		volume = 0.55;
 	};
 	class RocketsHeavy_midExp_SoundShader
 	{
 		range = 400;
 		rangeCurve = "CannonMidShotCurve";
 		samples[] = {{"A3\Sounds_F\arsenal\explosives\rockets\RocketHeavy_midExp_01", 1}, {"A3\Sounds_F\arsenal\explosives\rockets\RocketHeavy_midExp_02", 1}, {"A3\Sounds_F\arsenal\explosives\rockets\RocketHeavy_midExp_03", 1}};
-		volume = 1;
+		volume = 0.2;
 	};
 	class RocketsHeavy_shot_SoundShader
 	{
@@ -18782,6 +22347,24 @@ class CfgSoundShaders
 		samples[] = {{"\A3\Sounds_F\arsenal\weapons\Pistols\Rook40\Rook40_tailtrees", 1}};
 		volume = "(1-interior/1.4)*trees/3";
 	};
+	class ScanBeam_01_End_01_SoundShader
+	{
+		range = 150;
+		samples[] = {{"\A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\ScanBeam\Drone_01_Scan_End_01", 1}};
+		volume = 1.05;
+	};
+	class ScanBeam_01_Loop_SoundShader
+	{
+		range = 150;
+		samples[] = {{"\A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\ScanBeam\Drone_01_Scan_Active_01", 1}};
+		volume = 1;
+	};
+	class ScanBeam_01_Start_01_SoundShader
+	{
+		range = 150;
+		samples[] = {{"\A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\ScanBeam\Drone_01_Scan_Start_01", 1}};
+		volume = 1.05;
+	};
 	class SDAR_closeShot_SoundShader
 	{
 		range = 50;
@@ -18867,6 +22450,93 @@ class CfgSoundShaders
 		samples[] = {{"A3\Sounds_F_Exp\Environment\ambient\Sea\sea", 1}};
 		volume = "(altitudeSea factor [60,15]) * (altitudeSea factor [60,15]) * (waterdepth factor[0,1])*(waterdepth factor[0,1])";
 	};
+	class Sfx_Ammo_Burning_Close_SoundShader
+	{
+		range = 50;
+		rangeCurve[] = {{0, 1}, {10, 1}, {50, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Ammo_Burning_Close", 1}};
+		volume = "1*CustomSoundController1";
+	};
+	class Sfx_Ammo_Burning_Distant_SoundShader
+	{
+		range = 750;
+		rangeCurve[] = {{0, 0.2}, {50, 1}, {650, 0.5}, {750, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Ammo_Burning_Distant", 1}};
+		volume = "1.3*CustomSoundController1";
+	};
+	class Sfx_Ammo_Burning_Intro_Close_SoundShader
+	{
+		range = 100;
+		rangeCurve = "closeShotCurve";
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Ammo_Burning_Intro_Close", 1}};
+		volume = 1;
+	};
+	class Sfx_Ammo_Burning_Intro_Distant_SoundShader
+	{
+		range = 1750;
+		rangeCurve[] = {{0, 0.1}, {50, 0.75}, {650, 0.5}, {1750, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Ammo_Burning_Intro_Distant", 1}};
+		volume = 1;
+	};
+	class Sfx_Ammo_Burning_Outro_Close_SoundShader
+	{
+		range = 100;
+		rangeCurve = "closeShotCurve";
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Ammo_Burning_Outro_Close", 1}};
+		volume = 1;
+	};
+	class Sfx_Ammo_Burning_Outro_Distant_SoundShader
+	{
+		range = 1750;
+		rangeCurve[] = {{0, 0.1}, {50, 0.75}, {650, 0.5}, {1750, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Ammo_Burning_Outro_Distant", 1}};
+		volume = 1;
+	};
+	class Sfx_Bombing_Failed_Close_01_SoundShader
+	{
+		limitation = 0;
+		range = 350;
+		rangeCurve = "InverseSquare1Curve";
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_01\Sfx_Bombing_Failed_Close_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Bombing_Failed_Distant_01_SoundShader
+	{
+		limitation = 0;
+		range = 20000;
+		rangeCurve[] = {{0, 0}, {300, 0}, {1000, 1}, {2000, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_01\Sfx_Bombing_Failed_Distant_01", 1}};
+		volume = 1.5;
+	};
+	class Sfx_Bombing_Failed_MediumClose_01_SoundShader
+	{
+		limitation = 0;
+		range = 1000;
+		rangeCurve[] = {{0, 0}, {500, 1}, {1000, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_01\Sfx_Bombing_Failed_MediumClose_01", 1}};
+		volume = 0.75;
+	};
+	class Sfx_BombingDistant_01_SoundShader
+	{
+		limitation = 0;
+		range = 1500;
+		rangeCurve = "InverseSquare1Curve";
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_BombingDistant_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Burnpit_Fire_01_Loop_SoundShader
+	{
+		limitation = 0;
+		range = 65;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Burnpit_Fire_01_Loop", 1}};
+		volume = 1;
+	};
+	class Sfx_Container_Drop_SoundShader
+	{
+		range = 200;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Sfx_Container_Drop", 1}};
+		volume = 1.5;
+	};
 	class Sfx_DeconShower_Center_01_SoundShader
 	{
 		range = 24;
@@ -18884,6 +22554,494 @@ class CfgSoundShaders
 		range = 15;
 		samples[] = {{"A3\Sounds_F_Enoch\Assets\Props\DeconShower_Nozzle_Loop_04", 1}, {"A3\Sounds_F_Enoch\Assets\Props\DeconShower_Nozzle_Loop_03", 1}, {"A3\Sounds_F_Enoch\Assets\Props\DeconShower_Nozzle_Loop_02", 1}, {"A3\Sounds_F_Enoch\Assets\Props\DeconShower_Nozzle_Loop_01", 1}};
 		volume = 1;
+	};
+	class Sfx_DieselGenerator_Loop_01_SoundShader
+	{
+		range = 40;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_DieselGenerator_Loop_01", 1}};
+		volume = "1*CustomSoundController1";
+	};
+	class Sfx_Drone_Attention_Close_SoundShader
+	{
+		range = 300;
+		rangeCurve[] = {{0, 1}, {10, 1}, {300, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Attention_01_Close_01", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Attention_01_Close_02", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Attention_01_Close_03", 1}};
+		volume = 1.5;
+	};
+	class Sfx_Drone_Attention_Distant_SoundShader
+	{
+		range = 600;
+		rangeCurve[] = {{0, 0}, {10, 0}, {300, 1}, {600, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Attention_01_Distant_01", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Attention_01_Distant_02", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Attention_01_Distant_03", 1}};
+		volume = 1.5;
+	};
+	class Sfx_Drone_Escape_Fake_02_SoundShader
+	{
+		range = 200;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Drone_Fake\Sfx_Drone_Escape_Fake_02", 1}};
+		volume = 1.3;
+	};
+	class Sfx_Drone_Escape_Up_Fake_01_SoundShader
+	{
+		range = 200;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Drone_Fake\Sfx_Drone_Escape_Up_Fake_01", 1}};
+		volume = 1.3;
+	};
+	class Sfx_Drone_Intimidate_Close_SoundShader
+	{
+		range = 300;
+		rangeCurve[] = {{0, 1}, {10, 1}, {300, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Intimidate_01_Close_01", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Intimidate_01_Close_02", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Intimidate_01_Close_03", 1}};
+		volume = 1.5;
+	};
+	class Sfx_Drone_Intimidate_Distant_SoundShader
+	{
+		range = 600;
+		rangeCurve[] = {{0, 0}, {10, 0}, {300, 1}, {600, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Intimidate_01_Distant_01", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Intimidate_01_Distant_02", 1}, {"A3\Sounds_F_Contact\Assets\Vehicles\Air\AlienDrone_01\Drone_01_Intimidate_01_Distant_03", 1}};
+		volume = 1.5;
+	};
+	class Sfx_Drone_Moving_Fake_01_SoundShader
+	{
+		range = 200;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Drone_Fake\Sfx_Drone_Moving_Fake_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Drone_Moving_Fake_02_SoundShader
+	{
+		range = 200;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Drone_Fake\Sfx_Drone_Moving_Fake_02", 1}};
+		volume = 1;
+	};
+	class Sfx_Drone_ScanBeam_Fake_01_SoundShader
+	{
+		range = 200;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Drone_Fake\Sfx_Drone_ScanBeam_Fake_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Drone_ScanBeam_Fake_02_SoundShader
+	{
+		range = 200;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Drone_Fake\Sfx_Drone_ScanBeam_Fake_02", 1}};
+		volume = 1;
+	};
+	class Sfx_Drone_Shout_Fake_01_SoundShader
+	{
+		range = 200;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Drone_Fake\Sfx_Drone_Shout_Fake_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Earthquake_SoundShader
+	{
+		range = 100;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Outro_02\Sfx_Earthquake_Loop_01", 1}};
+		volume = "1.3 * CustomSoundController1";
+	};
+	class Sfx_Emergency_Broadcast_Tape_01_SoundShader
+	{
+		range = 15;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_Emergency_Broadcast_Tape_01", 1}};
+		volume = 1.7;
+	};
+	class Sfx_Factory_Alarm_01_SoundShader
+	{
+		limitation = 0;
+		range = 1300;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Factory_Alarm_01", 1}};
+		volume = "CustomSoundController1*1";
+	};
+	class Sfx_Factory_Alarm_02_SoundShader
+	{
+		limitation = 0;
+		range = 1500;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Factory_Alarm_02", 1}};
+		volume = "CustomSoundController1*1";
+	};
+	class Sfx_Freeroam_02_Site_Explosion_01_Close_SoundShader
+	{
+		range = 1500;
+		rangeCurve[] = {{0, 1}, {1500, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Helicopter_Crash_Explosion", 1}};
+		volume = 1.9;
+	};
+	class Sfx_Freeroam_02_Site_Explosion_01_Distant_SoundShader
+	{
+		range = 4000;
+		rangeCurve[] = {{0, 0}, {500, 1}, {4000, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_01\Sfx_Bombing_Failed_Distant_01", 1}};
+		volume = 1.9;
+	};
+	class Sfx_Freeroam_02_Site_Explosion_01_MediumClose_SoundShader
+	{
+		range = 2500;
+		rangeCurve[] = {{0, 0.5}, {250, 1}, {2500, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_01\Sfx_Bombing_Failed_MediumClose_01", 1}};
+		volume = 1.9;
+	};
+	class Sfx_Helicopter_Crash_Explosion_SoundShader
+	{
+		limitation = 0;
+		range = 500;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Helicopter_Crash_Explosion", 1}};
+		volume = 1;
+	};
+	class Sfx_Helicopter_Wreck_Burning_SoundShader
+	{
+		limitation = 0;
+		range = 150;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Helicopter_Wreck_Burning_Loop", 1}};
+		volume = 1;
+	};
+	class Sfx_Hunter_Wreck_Burning_SoundShader
+	{
+		limitation = 0;
+		range = 75;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_01\Hunter_Wreck_Burning_Loop", 1}};
+		volume = 1;
+	};
+	class Sfx_Loudspeaker_01_Close_01_SoundShader
+	{
+		range = 300;
+		rangeCurve[] = {{0, 1}, {65, 1}, {300, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Loudspeaker_01_Close_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Loudspeaker_01_Distant_01_SoundShader
+	{
+		range = 600;
+		rangeCurve[] = {{0, 0.3}, {50, 0.5}, {160, 1}, {600, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Loudspeaker_01_Distant_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Loudspeaker_02_Close_01_SoundShader
+	{
+		range = 300;
+		rangeCurve[] = {{0, 1}, {65, 1}, {300, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Loudspeaker_02_Close_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Loudspeaker_02_Distant_01_SoundShader
+	{
+		range = 600;
+		rangeCurve[] = {{0, 0.3}, {50, 0.5}, {160, 1}, {600, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Loudspeaker_02_Distant_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Loudspeaker_Ldf_Close_01_SoundShader
+	{
+		range = 300;
+		rangeCurve[] = {{0, 1}, {65, 1}, {300, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Loudspeaker_Ldf_Close_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Loudspeaker_Ldf_Distant_01_SoundShader
+	{
+		range = 600;
+		rangeCurve[] = {{0, 0.3}, {50, 0.5}, {160, 1}, {600, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Loudspeaker_Ldf_Distant_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Mothership_Jammed_01_SoundShader
+	{
+		range = 100000;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_Mothership_Jammed_01", 1}};
+		volume = 1.7;
+	};
+	class Sfx_Mothership_LiftOff_01_SoundShader
+	{
+		range = 10000;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Outro_02\Sfx_Mothership_LiftOff_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Mothership_LiftOff_02_SoundShader
+	{
+		range = 10000;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Outro_02\Sfx_Mothership_LiftOff_02", 1}};
+		volume = 1;
+	};
+	class Sfx_Mothership_Puzzle_Activate_01_SoundShader
+	{
+		range = 100000;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_Mothership_Puzzle_Activate_01", 1}};
+		volume = 1.7;
+	};
+	class Sfx_Mothership_Puzzle_Reward_01_SoundShader
+	{
+		range = 100000;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_Mothership_Puzzle_Reward_01", 1}};
+		volume = 1.7;
+	};
+	class Sfx_Mothership_Warp_SoundShader
+	{
+		range = 100000;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Outro_02\Sfx_Mothership_Warp_01", 1}};
+		volume = 1.7;
+	};
+	class Sfx_Offroad_Alarm_SoundShader
+	{
+		range = 200;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Sfx_Offroad_Alarm", 1}};
+		volume = 1.5;
+	};
+	class Sfx_Offroad_Pa_TheHebrides_Close_SoundShader
+	{
+		range = 200;
+		rangeCurve[] = {{0, 1}, {50, 1}, {200, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Sfx_Offroad_Pa_TheHebrides_Close", 1}};
+		volume = "1* CustomSoundController2";
+	};
+	class Sfx_Offroad_Pa_TheHebrides_Distant_SoundShader
+	{
+		range = 500;
+		rangeCurve[] = {{0, 0.1}, {100, 1}, {500, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_03\Sfx_Offroad_Pa_TheHebrides_Distant", 1}};
+		volume = "1.9*CustomSoundController1";
+	};
+	class Sfx_Probe_01_Destruction_Close_01_SoundShader
+	{
+		frequency = 1;
+		range = 500;
+		rangeCurve[] = {{0, 0}, {175, 0}, {250, 1}, {350, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Alien_Probe\Probe_01_Destruction_Dist_01", 1}};
+		volume = 0.7;
+	};
+	class Sfx_Probe_01_Destruction_Dist_01_SoundShader
+	{
+		frequency = 1;
+		range = 100;
+		rangeCurve[] = {{0, 1}, {30, 1}, {100, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Alien_Probe\Probe_01_Destruction_Close_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Probe_01_Destruction_Mid_01_SoundShader
+	{
+		frequency = 1;
+		range = 250;
+		rangeCurve[] = {{0, 0}, {30, 0}, {100, 1}, {175, 1}, {250, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Alien_Probe\Probe_01_Destruction_Mid_01", 1}};
+		volume = 0.7;
+	};
+	class Sfx_Probe_Calcification_01_Bottom_SoundShader
+	{
+		range = 50;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Alien_Probe\Probe_Calcification_01", 1}};
+		volume = 1.5;
+	};
+	class Sfx_Probe_Expand_01_Bottom_SoundShader
+	{
+		range = 50;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Alien_Probe\Probe_Expand_01", 1}};
+		volume = 1.5;
+	};
+	class Sfx_Probe_Expand_01_SoundShader
+	{
+		range = 50;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Alien_Probe\Probe_Expand_01", 1}};
+		volume = 0.75;
+	};
+	class Sfx_Probe_Extraction_Close_01_SoundShader
+	{
+		frequency = 1;
+		range = 1000;
+		rangeCurve = "InverseSquare1Curve";
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_Probe_Extraction_Close_01", 1}};
+		volume = 0.75;
+	};
+	class Sfx_Probe_Extraction_Distant_01_SoundShader
+	{
+		frequency = 1;
+		range = 1000;
+		rangeCurve[] = {{0, 0.1}, {200, 1}, {500, 1}, {1000, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_Probe_Extraction_Distant_01", 1}};
+		volume = 0.7;
+	};
+	class Sfx_Probe_Extraction_Drone_Close_01_SoundShader
+	{
+		frequency = 1;
+		range = 1000;
+		rangeCurve = "InverseSquare1Curve";
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_Probe_Extraction_Drone_Close_01", 1}};
+		volume = 0.75;
+	};
+	class Sfx_Probe_Extraction_Drone_Distant_01_SoundShader
+	{
+		frequency = 1;
+		range = 1000;
+		rangeCurve[] = {{0, 0.1}, {200, 0.3}, {500, 1}, {1000, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_Probe_Extraction_Drone_Distant_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Probe_Loop_01_Bottom_SoundShader
+	{
+		range = 50;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Alien_Probe\Probe_Idle_01_Loop", 1}};
+		volume = 1.5;
+	};
+	class Sfx_Probe_Loop_01_SoundShader
+	{
+		range = 50;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Alien_Probe\Probe_Idle_01_Loop", 1}};
+		volume = "0*CustomSoundController1";
+	};
+	class Sfx_Probe_Retract_01_Bottom_SoundShader
+	{
+		range = 50;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Alien_Probe\Probe_Retract_01", 1}};
+		volume = 1.5;
+	};
+	class Sfx_Probe_Retract_01_SoundShader
+	{
+		range = 50;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Alien_Probe\Probe_Retract_01", 1}};
+		volume = 0.75;
+	};
+	class Sfx_ProbeCore_Destruction_01_Close_SoundShader
+	{
+		range = 2000;
+		rangeCurve[] = {{0, 1}, {1000, 1}, {2000, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Outro_02\Sfx_ProbeCore_Destruction_01_Close", 1}};
+		volume = 1.9;
+	};
+	class Sfx_ProbeCore_Destruction_01_SoundShader
+	{
+		range = 100000;
+		rangeCurve[] = {{0, 0}, {1000, 0.2}, {2000, 1}, {100000, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Outro_02\Sfx_ProbeCore_Destruction_01", 1}};
+		volume = 1.9;
+	};
+	class Sfx_RadioBeat_Close_Loop_SoundShader
+	{
+		range = 65;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_RadioBeat_Close_Loop", 1}};
+		volume = 1.5;
+	};
+	class Sfx_RadioBeat_Distant_Loop_SoundShader
+	{
+		range = 250;
+		rangeCurve[] = {{0, 0.1}, {65, 1}, {100, 1}, {250, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_RadioBeat_Distant_Loop", 1}};
+		volume = 1.5;
+	};
+	class Sfx_RavenPilot_Pa_Close_01_SoundShader
+	{
+		range = 250;
+		rangeCurve[] = {{0, 1}, {100, 1}, {250, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_RavenPilot_Pa_Close_01", 1}};
+		volume = 1;
+	};
+	class Sfx_RavenPilot_Pa_Close_02_SoundShader
+	{
+		range = 250;
+		rangeCurve[] = {{0, 1}, {100, 1}, {250, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_RavenPilot_Pa_Close_02", 1}};
+		volume = 1;
+	};
+	class Sfx_RavenPilot_Pa_Distant_01_SoundShader
+	{
+		range = 500;
+		rangeCurve[] = {{35, 0.1}, {100, 1}, {500, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_RavenPilot_Pa_Distant_01", 1}};
+		volume = 1.5;
+	};
+	class Sfx_RavenPilot_Pa_Distant_02_SoundShader
+	{
+		range = 500;
+		rangeCurve[] = {{35, 0.1}, {100, 1}, {500, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_RavenPilot_Pa_Distant_02", 1}};
+		volume = 1.5;
+	};
+	class Sfx_RewardRocket_Flickr_01_SoundShader
+	{
+		range = 30;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_RewardRocket_Flickr_01", 1}};
+		volume = 1;
+	};
+	class Sfx_RewardRocket_Flickr_02_SoundShader
+	{
+		range = 30;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_RewardRocket_Flickr_02", 1}};
+		volume = 1;
+	};
+	class Sfx_RewardRocket_Loop_01_SoundShader
+	{
+		range = 1000;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_RewardRocket_Loop_01", 1}};
+		volume = 1;
+	};
+	class Sfx_RewardRocket_Stop_01_SoundShader
+	{
+		range = 50;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_RewardRocket_Stop_01", 1}};
+		volume = 1;
+	};
+	class Sfx_SonicBoom_01_SoundShader
+	{
+		frequency = 1;
+		range = 1000;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_SonicBoom_01", 1}};
+		volume = 1;
+	};
+	class Sfx_SonicBoom_02_SoundShader
+	{
+		frequency = 1;
+		range = 1000;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Sfx_SonicBoom_02", 1}};
+		volume = 1;
+	};
+	class Sfx_Terminal_01_SoundShader
+	{
+		limitation = 0;
+		range = 10;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_01\Sfx_Terminal_01_Loop", 1}};
+		volume = 1;
+	};
+	class Sfx_Training_01_Close_01_SoundShader
+	{
+		range = 300;
+		rangeCurve[] = {{0, 1}, {65, 1}, {300, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Training_01_Close_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Training_01_Distant_01_SoundShader
+	{
+		range = 600;
+		rangeCurve[] = {{0, 0.3}, {50, 0.5}, {160, 1}, {600, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Training_01_Distant_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Training_02_Close_01_SoundShader
+	{
+		range = 300;
+		rangeCurve[] = {{0, 1}, {65, 1}, {300, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Training_02_Close_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Training_02_Distant_01_SoundShader
+	{
+		range = 600;
+		rangeCurve[] = {{0, 0.3}, {50, 0.5}, {160, 1}, {600, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Training_02_Distant_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Training_03_Close_01_SoundShader
+	{
+		range = 300;
+		rangeCurve[] = {{0, 1}, {65, 1}, {300, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Training_03_Close_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Training_03_Distant_01_SoundShader
+	{
+		range = 600;
+		rangeCurve[] = {{0, 0.3}, {50, 0.5}, {160, 1}, {600, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_02\Sfx_Training_03_Distant_01", 1}};
+		volume = 1;
+	};
+	class Sfx_Transformer_Loop_01_SoundShader
+	{
+		range = 40;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\FreeRoam\Q_Alien_RadioTower_Transformer_Loop_01", 1}};
+		volume = "1*CustomSoundController1";
 	};
 	class Shell105mm130mm_closeExp_SoundShader
 	{
@@ -19042,6 +23200,22 @@ class CfgSoundShaders
 		range = 2000;
 		samples[] = {{"A3\Sounds_F\dummysound", 1}};
 		volume = 1;
+	};
+	class Sinkhole_Collapse_Close_SoundShader
+	{
+		limitation = 0;
+		range = 100;
+		rangeCurve[] = {{0, 1}, {20, 1}, {200, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_01\Sinkhole_Collapse_Close_01", 1}};
+		volume = 0.5;
+	};
+	class Sinkhole_Collapse_Distant_SoundShader
+	{
+		limitation = 0;
+		range = 500;
+		rangeCurve[] = {{0, 0}, {100, 1}, {400, 1}, {500, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Mission_Sfx\Intro_01\Sinkhole_Collapse_Distant_01", 1}};
+		volume = 1.5;
 	};
 	class SmallIED_closeExp_SoundShader
 	{
@@ -19455,7 +23629,7 @@ class CfgSoundShaders
 	};
 	class SPAR01_closeShot_SoundShader
 	{
-		range = 50;
+		range = 100;
 		rangeCurve = "closeShotCurve";
 		samples[] = {{"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_closeShot_01", 1}, {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_closeShot_02", 1}, {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_closeShot_03", 1}};
 		volume = 1;
@@ -19468,17 +23642,17 @@ class CfgSoundShaders
 	};
 	class SPAR01_distShot_SoundShader
 	{
-		range = 2000;
-		rangeCurve[] = {{0, 0}, {50, 0}, {300, 1}, {2000, 1}};
+		range = 3000;
+		rangeCurve[] = {{0, 0}, {50, 0.2}, {300, 0.7}, {2000, 1}, {3000, 0}};
 		samples[] = {{"\A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_distShot_01", 1}, {"\A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_distShot_02", 1}, {"\A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_distShot_03", 1}};
-		volume = 1;
+		volume = 0.501187;
 	};
 	class SPAR01_midShot_SoundShader
 	{
 		range = 2000;
-		rangeCurve[] = {{0, 0.2}, {50, 1}, {300, 0}, {2000, 0}};
+		rangeCurve[] = {{0, 0}, {50, 1}, {300, 1}, {1000, 0}, {2000, 0}};
 		samples[] = {{"\A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_midShot_01", 1}, {"\A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_midShot_02", 1}, {"\A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_midShot_03", 1}};
-		volume = 0.501187;
+		volume = 0.398107;
 	};
 	class SPAR01_silencerShot_SoundShader
 	{
@@ -19530,10 +23704,10 @@ class CfgSoundShaders
 	class SPAR01_tailDistant_SoundShader
 	{
 		limitation = 1;
-		range = 2000;
-		rangeCurve[] = {{0, 0}, {600, 0.7}, {2000, 1}};
+		range = 3000;
+		rangeCurve[] = {{0, 0}, {50, 0}, {300, 0.75}, {2000, 1}, {3000, 0}};
 		samples[] = {{"\A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_taildistant", 1}};
-		volume = 1;
+		volume = 1.15;
 	};
 	class SPAR01_tailForest_SoundShader
 	{
@@ -19557,7 +23731,7 @@ class CfgSoundShaders
 		range = 350;
 		rangeCurve[] = {{0, 1}, {50, 0.4}, {100, 0.2}, {350, 0}};
 		samples[] = {{"\A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_tailinterior", 1}};
-		volume = "interior";
+		volume = "0.3*interior";
 	};
 	class SPAR01_tailMeadows_SoundShader
 	{
@@ -19577,7 +23751,7 @@ class CfgSoundShaders
 	};
 	class SPAR02_closeShot_SoundShader
 	{
-		range = 50;
+		range = 100;
 		rangeCurve = "closeShotCurve";
 		samples[] = {{"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR02\SPAR02_closeShot_01", 1}, {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR02\SPAR02_closeShot_02", 1}, {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR02\SPAR02_closeShot_03", 1}};
 		volume = 1;
@@ -19590,17 +23764,17 @@ class CfgSoundShaders
 	};
 	class SPAR02_distShot_SoundShader
 	{
-		range = 2000;
-		rangeCurve[] = {{0, 0}, {50, 0}, {300, 1}, {2000, 1}};
+		range = 3000;
+		rangeCurve[] = {{0, 0}, {50, 0.2}, {300, 0.7}, {2000, 1}, {3000, 0}};
 		samples[] = {{"\A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR02\SPAR02_distShot_01", 1}, {"\A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR02\SPAR02_distShot_02", 1}, {"\A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR02\SPAR02_distShot_03", 1}};
-		volume = 1;
+		volume = 0.501187;
 	};
 	class SPAR02_midShot_SoundShader
 	{
 		range = 2000;
-		rangeCurve[] = {{0, 0.2}, {50, 1}, {300, 0}, {2000, 0}};
+		rangeCurve[] = {{0, 0}, {50, 1}, {300, 1}, {1000, 0}, {2000, 0}};
 		samples[] = {{"\A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR02\SPAR02_midShot_01", 1}, {"\A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR02\SPAR02_midShot_02", 1}, {"\A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR02\SPAR02_midShot_03", 1}};
-		volume = 0.501187;
+		volume = 0.398107;
 	};
 	class SPAR02_silencerShot_SoundShader
 	{
@@ -19652,10 +23826,10 @@ class CfgSoundShaders
 	class SPAR02_tailDistant_SoundShader
 	{
 		limitation = 1;
-		range = 2000;
-		rangeCurve[] = {{0, 0}, {600, 0.7}, {2000, 1}};
+		range = 3000;
+		rangeCurve[] = {{0, 0}, {50, 0}, {300, 0.75}, {2000, 1}, {3000, 0}};
 		samples[] = {{"\A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR02\SPAR02_taildistant", 1}};
-		volume = 1;
+		volume = 1.15;
 	};
 	class SPAR02_tailForest_SoundShader
 	{
@@ -19679,7 +23853,7 @@ class CfgSoundShaders
 		range = 350;
 		rangeCurve[] = {{0, 1}, {50, 0.4}, {100, 0.2}, {350, 0}};
 		samples[] = {{"\A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR02\SPAR02_tailinterior", 1}};
-		volume = "interior";
+		volume = "0.3*interior";
 	};
 	class SPAR02_tailMeadows_SoundShader
 	{
@@ -19699,7 +23873,7 @@ class CfgSoundShaders
 	};
 	class SPAR_17_closeShot_SoundShader
 	{
-		range = 50;
+		range = 100;
 		rangeCurve = "closeShotCurve";
 		samples[] = {{"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR_17\SPAR_17_closeShot_01", 1}, {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR_17\SPAR_17_closeShot_02", 1}, {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR_17\SPAR_17_closeShot_03", 1}};
 		volume = 0.794328;
@@ -19712,17 +23886,17 @@ class CfgSoundShaders
 	};
 	class SPAR_17_distShot_SoundShader
 	{
-		range = 1800;
-		rangeCurve[] = {{0, 0}, {50, 0}, {300, 1}, {1800, 1}};
+		range = 3000;
+		rangeCurve[] = {{0, 0}, {50, 0.2}, {300, 0.7}, {2000, 1}, {3000, 0}};
 		samples[] = {{"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR_17\SPAR_17_distShot_01", 1}, {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR_17\SPAR_17_distShot_02", 1}, {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR_17\SPAR_17_distShot_03", 1}};
-		volume = 1;
+		volume = 0.501187;
 	};
 	class SPAR_17_midShot_SoundShader
 	{
-		range = 1800;
-		rangeCurve[] = {{0, 0.2}, {50, 1}, {300, 0}, {1800, 0}};
+		range = 2000;
+		rangeCurve[] = {{0, 0}, {50, 1}, {300, 1}, {1000, 0}, {2000, 0}};
 		samples[] = {{"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR_17\SPAR_17_midShot_01", 1}, {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR_17\SPAR_17_midShot_02", 1}, {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR_17\SPAR_17_midShot_03", 1}};
-		volume = 1;
+		volume = 0.398107;
 	};
 	class SPAR_17_Shot_Silenced_SoundShader
 	{
@@ -19817,7 +23991,7 @@ class CfgSoundShaders
 		limitation = 0;
 		range = 500;
 		samples[] = {{"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR_17\SPAR_17_tail_interior", 1}};
-		volume = "interior";
+		volume = "0.3*interior";
 	};
 	class SPAR_17_tailMeadows_Silenced_SoundShader
 	{
@@ -20261,6 +24435,110 @@ class CfgSoundShaders
 		range = 40;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires01\Tires_Water_Slow_INT", 1}};
 		volume = "1 * 1 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * 1.8*(abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.2*water * (1 + 0.2*(damper0 factor [0.6,1]))*(1 + 0.3*(gmeterz factor [1,1.3]))";
+	};
+	class Swarm_Grenade_Explosion_SoundShader
+	{
+		range = 250;
+		rangeCurve[] = {{0, 1}, {250, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\Swarm\Swarm_Grenade_Explosion_01", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\Swarm\Swarm_Grenade_Explosion_02", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\Swarm\Swarm_Grenade_Explosion_03", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\Swarm\Swarm_Grenade_Explosion_04", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\Swarm\Swarm_Grenade_Explosion_05", 0.8}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\Swarm\Swarm_Grenade_Explosion_06", 0.8}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\Swarm\Swarm_Grenade_Explosion_07", 0.8}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\Swarm\Swarm_Grenade_Explosion_08", 0.8}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\Swarm\Swarm_Grenade_Explosion_09", 0.8}};
+		volume = 0.6;
+	};
+	class Swarm_Grenade_Explosion_Tail_Forest_SoundShader
+	{
+		limitation = 1;
+		range = 250;
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_04", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_05", 1}};
+		volume = "1.2*forest";
+	};
+	class Swarm_Grenade_Explosion_Tail_Houses_SoundShader
+	{
+		limitation = 1;
+		range = 250;
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_04", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_05", 1}};
+		volume = "1.2*houses";
+	};
+	class Swarm_Grenade_Explosion_Tail_Meadows_SoundShader
+	{
+		limitation = 1;
+		range = 250;
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_04", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_05", 1}};
+		volume = "1.2*meadows max sea/2";
+	};
+	class Swarm_Grenade_FlyBy_SoundShader
+	{
+		range = 350;
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Projectile_Flyby_01", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Projectile_Flyby_02", 0.2}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Projectile_Flyby_03", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Projectile_Flyby_04", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Projectile_Flyby_05", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\Gravity_Projectile_Flyby_06", 1}};
+		volume = 1;
+	};
+	class Swarm_Shell_Impact_Disperse_SoundShader
+	{
+		range = 5000;
+		rangeCurve[] = {{0, 1}, {100, 1}, {5000, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\GravityCannon01\Gravity_Cannon_Discharge_01", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\GravityCannon01\Gravity_Cannon_Discharge_02", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\GravityCannon01\Gravity_Cannon_Discharge_03", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\GravityWeapons\GravityCannon01\Gravity_Cannon_Discharge_04", 1}};
+		volume = 1.5;
+	};
+	class Swarm_Shell_Launch_01_Distant_SoundShader
+	{
+		limitation = 0;
+		range = 5000;
+		rangeCurve[] = {{0, 0}, {50, 0}, {100, 0.5}, {700, 1}, {5000, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_04", 1}};
+		volume = 1.5;
+	};
+	class Swarm_Shell_Launch_01_Start_SoundShader
+	{
+		limitation = 0;
+		range = 10000;
+		rangeCurve[] = {{0, 1}, {100, 1}, {10000, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\Swarm\Swarm_Shell_Launch_01_01", 1}};
+		volume = 1.9;
+	};
+	class Swarm_Shell_Launch_02_Distant_SoundShader
+	{
+		limitation = 0;
+		range = 5000;
+		rangeCurve[] = {{0, 0}, {50, 0}, {100, 0.5}, {700, 1}, {5000, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_Distant_04", 1}};
+		volume = 1.5;
+	};
+	class Swarm_Shell_Launch_02_Projectile_SoundShader
+	{
+		range = 5000;
+		rangeCurve[] = {{0, 1}, {100, 1}, {5000, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_04", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_01", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_02", 1}, {"A3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Discharge_03", 1}};
+		volume = 1.9;
+	};
+	class Swarm_Shell_Launch_02_SoundShader
+	{
+		limitation = 0;
+		range = 5000;
+		rangeCurve[] = {{0, 1}, {100, 1}, {5000, 0}};
+		samples[] = {{"A3\Sounds_F_Contact\Assets\Arsenal\Drone_01\Swarm\Swarm_Shell_Launch_02_01", 1}};
+		volume = 1.5;
+	};
+	class Swarm_Shell_Launch_Tail_Forest_SoundShader
+	{
+		limitation = 1;
+		range = 5000;
+		rangeCurve[] = {{0, 0.3}, {150, 0.3}, {500, 1}, {5000, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_04", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_05", 1}};
+		volume = "1.5*forest";
+	};
+	class Swarm_Shell_Launch_Tail_Houses_SoundShader
+	{
+		limitation = 1;
+		range = 5000;
+		rangeCurve[] = {{0, 0.3}, {150, 0.3}, {500, 1}, {5000, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_04", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_05", 1}};
+		volume = "1.5*houses";
+	};
+	class Swarm_Shell_Launch_Tail_Meadows_SoundShader
+	{
+		limitation = 1;
+		range = 5000;
+		rangeCurve[] = {{0, 0.3}, {150, 0.3}, {500, 1}, {5000, 0}};
+		samples[] = {{"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_01", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_02", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_03", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_04", 1}, {"a3\Sounds_F_Contact\Assets\Arsenal\Prototype_Cannon_01\Prototype_Cannon_01_Tail_Open_05", 1}};
+		volume = "1.5*meadows max sea/2";
 	};
 	class SyndikatLMG_closeShot_SoundShader
 	{
@@ -21481,364 +25759,364 @@ class CfgSoundShaders
 		frequency = "0.9 * (1 + 0.7 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) - 0))";
 		range = "2.8*210";
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\Truck_02\Truck_02_Engine_EXT_RPM0", 1}};
-		volume = "engineOn * 0.7 * 1.3 * (rpm factor [0.05 *600, (0.05 *600 + 0.5 *(600-0.05 *600))]) * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor [(950 - 600)/(2000 - 600) - (((950 - 600)/(2000 - 600) - 0) - (1.4 * ((950 - 600)/(2000 - 600) - 0)))/2, 0])";
+		volume = "engineOn * (0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.3 * (rpm factor [0.05 *600, (0.05 *600 + 0.5 *(600-0.05 *600))]) * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor [(950 - 600)/(2000 - 600) - (((950 - 600)/(2000 - 600) - 0) - (1.4 * ((950 - 600)/(2000 - 600) - 0)))/2, 0])";
 	};
 	class Truck_02_Engine_RPM0_INT_SoundShader: Engine_Base_RPM0_INT_SoundShader
 	{
 		frequency = "0.9 * (1 + 0.7 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) - 0))";
 		range = "2.8*210";
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\Truck_02\Truck_02_Engine_INT_RPM0", 1}};
-		volume = "engineOn * 0.6 * 1.3 * (rpm factor [0.05 *600, (0.05 *600 + 0.5 *(600-0.05 *600))]) * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor [(950 - 600)/(2000 - 600) - (((950 - 600)/(2000 - 600) - 0) - (1.4 * ((950 - 600)/(2000 - 600) - 0)))/2, 0])";
+		volume = "engineOn * (0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.3 * (rpm factor [0.05 *600, (0.05 *600 + 0.5 *(600-0.05 *600))]) * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor [(950 - 600)/(2000 - 600) - (((950 - 600)/(2000 - 600) - 0) - (1.4 * ((950 - 600)/(2000 - 600) - 0)))/2, 0])";
 	};
 	class Truck_02_Engine_RPM1_EXT_SoundShader: Engine_Base_RPM1_EXT_SoundShader
 	{
 		frequency = "0.9 * (1 + 0.7 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) - (950 - 600)/(2000 - 600)))";
 		range = "2.8*215";
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\Truck_02\Truck_02_Engine_EXT_RPM1", 1}};
-		volume = "engineOn * 0.7 * 1.3 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor[0, (950 - 600)/(2000 - 600) - (((950 - 600)/(2000 - 600) - 0) - (1.4 * ((950 - 600)/(2000 - 600) - 0)))/2]) * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor [(1300 - 600)/(2000 - 600) - (((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600)) - (1.3 * ((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600))))/2, (950 - 600)/(2000 - 600) + (((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600)) - (1.3 * ((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600))))/2])";
+		volume = "engineOn * (0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.3 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor[0, (950 - 600)/(2000 - 600) - (((950 - 600)/(2000 - 600) - 0) - (1.4 * ((950 - 600)/(2000 - 600) - 0)))/2]) * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor [(1300 - 600)/(2000 - 600) - (((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600)) - (1.3 * ((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600))))/2, (950 - 600)/(2000 - 600) + (((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600)) - (1.3 * ((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600))))/2])";
 	};
 	class Truck_02_Engine_RPM1_INT_SoundShader: Engine_Base_RPM1_INT_SoundShader
 	{
 		frequency = "0.9 * (1 + 0.7 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) - (950 - 600)/(2000 - 600)))";
 		range = "2.8*215";
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\Truck_02\Truck_02_Engine_INT_RPM1", 1}};
-		volume = "engineOn * 0.6 * 1.3 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor[0, (950 - 600)/(2000 - 600) - (((950 - 600)/(2000 - 600) - 0) - (1.4 * ((950 - 600)/(2000 - 600) - 0)))/2]) * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor [(1300 - 600)/(2000 - 600) - (((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600)) - (1.3 * ((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600))))/2, (950 - 600)/(2000 - 600) + (((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600)) - (1.3 * ((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600))))/2])";
+		volume = "engineOn * (0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.3 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor[0, (950 - 600)/(2000 - 600) - (((950 - 600)/(2000 - 600) - 0) - (1.4 * ((950 - 600)/(2000 - 600) - 0)))/2]) * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor [(1300 - 600)/(2000 - 600) - (((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600)) - (1.3 * ((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600))))/2, (950 - 600)/(2000 - 600) + (((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600)) - (1.3 * ((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600))))/2])";
 	};
 	class Truck_02_Engine_RPM2_EXT_SoundShader: Engine_Base_RPM2_EXT_SoundShader
 	{
 		frequency = "0.9 * (1 + 0.7 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) - (1300 - 600)/(2000 - 600)))";
 		range = "2.8*220";
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\Truck_02\Truck_02_Engine_EXT_RPM2", 1}};
-		volume = "engineOn * 0.7 * 1.3 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor[(950 - 600)/(2000 - 600) + (((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600)) - (1.3 * ((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600))))/2, (1300 - 600)/(2000 - 600) - (((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600)) - (1.3 * ((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600))))/2]) * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor [(1650 - 600)/(2000 - 600) - (((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600)) - (1.2 * ((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600))))/2, (1300 - 600)/(2000 - 600) + (((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600)) - (1.2 * ((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600))))/2])";
+		volume = "engineOn * (0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.3 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor[(950 - 600)/(2000 - 600) + (((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600)) - (1.3 * ((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600))))/2, (1300 - 600)/(2000 - 600) - (((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600)) - (1.3 * ((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600))))/2]) * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor [(1650 - 600)/(2000 - 600) - (((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600)) - (1.2 * ((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600))))/2, (1300 - 600)/(2000 - 600) + (((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600)) - (1.2 * ((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600))))/2])";
 	};
 	class Truck_02_Engine_RPM2_INT_SoundShader: Engine_Base_RPM2_INT_SoundShader
 	{
 		frequency = "0.9 * (1 + 0.7 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) - (1300 - 600)/(2000 - 600)))";
 		range = "2.8*220";
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\Truck_02\Truck_02_Engine_INT_RPM2", 1}};
-		volume = "engineOn * 0.6 * 1.3 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor[(950 - 600)/(2000 - 600) + (((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600)) - (1.3 * ((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600))))/2, (1300 - 600)/(2000 - 600) - (((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600)) - (1.3 * ((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600))))/2]) * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor [(1650 - 600)/(2000 - 600) - (((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600)) - (1.2 * ((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600))))/2, (1300 - 600)/(2000 - 600) + (((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600)) - (1.2 * ((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600))))/2])";
+		volume = "engineOn * (0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.3 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor[(950 - 600)/(2000 - 600) + (((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600)) - (1.3 * ((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600))))/2, (1300 - 600)/(2000 - 600) - (((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600)) - (1.3 * ((1300 - 600)/(2000 - 600) - (950 - 600)/(2000 - 600))))/2]) * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor [(1650 - 600)/(2000 - 600) - (((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600)) - (1.2 * ((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600))))/2, (1300 - 600)/(2000 - 600) + (((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600)) - (1.2 * ((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600))))/2])";
 	};
 	class Truck_02_Engine_RPM3_EXT_SoundShader: Engine_Base_RPM3_EXT_SoundShader
 	{
 		frequency = "0.9 * (1 + 0.7 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) - (1650 - 600)/(2000 - 600)))";
 		range = "2.8*225";
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\Truck_02\Truck_02_Engine_EXT_RPM3", 1}};
-		volume = "engineOn * 0.7 * 1.3 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor[(1300 - 600)/(2000 - 600) + (((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600)) - (1.2 * ((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600))))/2, (1650 - 600)/(2000 - 600) - (((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600)) - (1.2 * ((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600))))/2]) * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor [(2000 - 600)/(2000 - 600) - (((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600)) - (1.1 * ((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600))))/2, (1650 - 600)/(2000 - 600) + (((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600)) - (1.1 * ((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600))))/2])";
+		volume = "engineOn * (0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.3 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor[(1300 - 600)/(2000 - 600) + (((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600)) - (1.2 * ((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600))))/2, (1650 - 600)/(2000 - 600) - (((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600)) - (1.2 * ((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600))))/2]) * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor [(2000 - 600)/(2000 - 600) - (((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600)) - (1.1 * ((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600))))/2, (1650 - 600)/(2000 - 600) + (((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600)) - (1.1 * ((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600))))/2])";
 	};
 	class Truck_02_Engine_RPM3_INT_SoundShader: Engine_Base_RPM3_INT_SoundShader
 	{
 		frequency = "0.9 * (1 + 0.7 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) - (1650 - 600)/(2000 - 600)))";
 		range = "2.8*225";
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\Truck_02\Truck_02_Engine_INT_RPM3", 1}};
-		volume = "engineOn * 0.6 * 1.3 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor[(1300 - 600)/(2000 - 600) + (((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600)) - (1.2 * ((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600))))/2, (1650 - 600)/(2000 - 600) - (((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600)) - (1.2 * ((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600))))/2]) * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor [(2000 - 600)/(2000 - 600) - (((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600)) - (1.1 * ((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600))))/2, (1650 - 600)/(2000 - 600) + (((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600)) - (1.1 * ((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600))))/2])";
+		volume = "engineOn * (0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.3 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor[(1300 - 600)/(2000 - 600) + (((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600)) - (1.2 * ((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600))))/2, (1650 - 600)/(2000 - 600) - (((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600)) - (1.2 * ((1650 - 600)/(2000 - 600) - (1300 - 600)/(2000 - 600))))/2]) * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor [(2000 - 600)/(2000 - 600) - (((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600)) - (1.1 * ((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600))))/2, (1650 - 600)/(2000 - 600) + (((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600)) - (1.1 * ((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600))))/2])";
 	};
 	class Truck_02_Engine_RPM4_EXT_SoundShader: Engine_Base_RPM4_EXT_SoundShader
 	{
 		frequency = "0.9 * (1 + 0.7 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) - (2000 - 600)/(2000 - 600)))";
 		range = "2.8*230";
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\Truck_02\Truck_02_Engine_EXT_RPM4", 1}};
-		volume = "engineOn * 0.7 * 1.3 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor[(1650 - 600)/(2000 - 600) + (((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600)) - (1.1 * ((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600))))/2, (2000 - 600)/(2000 - 600) - (((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600)) - (1.1 * ((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600))))/2])";
+		volume = "engineOn * (0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.3 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor[(1650 - 600)/(2000 - 600) + (((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600)) - (1.1 * ((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600))))/2, (2000 - 600)/(2000 - 600) - (((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600)) - (1.1 * ((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600))))/2])";
 	};
 	class Truck_02_Engine_RPM4_INT_SoundShader: Engine_Base_RPM4_INT_SoundShader
 	{
 		frequency = "0.9 * (1 + 0.7 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) - (2000 - 600)/(2000 - 600)))";
 		range = "2.8*230";
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\Truck_02\Truck_02_Engine_INT_RPM4", 1}};
-		volume = "engineOn * 0.6 * 1.3 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor[(1650 - 600)/(2000 - 600) + (((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600)) - (1.1 * ((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600))))/2, (2000 - 600)/(2000 - 600) - (((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600)) - (1.1 * ((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600))))/2])";
+		volume = "engineOn * (0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.3 * (((1+0.1*1 *thrust) * ((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - 1 *thrust)*((1-0.9 ) * (speed factor [0, 22]) + 0.9  * (rpm factor [600,	2200])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [600,	2200])) factor[(1650 - 600)/(2000 - 600) + (((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600)) - (1.1 * ((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600))))/2, (2000 - 600)/(2000 - 600) - (((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600)) - (1.1 * ((2000 - 600)/(2000 - 600) - (1650 - 600)/(2000 - 600))))/2])";
 	};
 	class Truck_02_Rain_EXT_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\add_layers\Rain_01_EXT", 1}};
-		volume = "0.7 * 1 * rain";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1 * rain";
 	};
 	class Truck_02_Rain_INT_SoundShader
 	{
 		frequency = 1;
 		range = 60;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\add_layers\Rain_01_INT", 1}};
-		volume = "0.6 * 1 * rain";
+		volume = "(0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1 * rain";
 	};
 	class Truck_02_Rattling_EXT_SoundShader
 	{
 		frequency = 1;
 		range = 60;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\add_layers\Rattling_03_EXT", 1}};
-		volume = "0.7 * 2 * (1 + 2*(damper0 factor [0.3, 0.8])) * (speed factor[5, 15]) * (1 - 0.8*(rock max asphalt)) * (1 - 0.4*(gravel))";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 2 * (1 + 2*(damper0 factor [0.3, 0.8])) * (speed factor[5, 15]) * (1 - 0.8*(rock max asphalt)) * (1 - 0.4*(gravel))";
 	};
 	class Truck_02_Rattling_INT_SoundShader
 	{
 		frequency = 1;
 		range = 60;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\add_layers\Rattling_03_INT", 1}};
-		volume = "0.6 * 0.5 * (1 + 2*(damper0 factor [0.3, 0.8])) * (speed factor[5, 15]) * (1 - 0.8*(rock max asphalt)) * (1 - 0.4*(gravel))";
+		volume = "(0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.5 * (1 + 2*(damper0 factor [0.3, 0.8])) * (speed factor[5, 15]) * (1 - 0.8*(rock max asphalt)) * (1 - 0.4*(gravel))";
 	};
 	class Truck_02_Stress_EXT_SoundShader
 	{
 		frequency = 1.3;
 		range = 60;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\add_layers\Stress_01_EXT", 1}};
-		volume = "0.7 * 1 * ((damper0 factor [0.9,1]) * (speed factor [5, 15]))";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1 * ((damper0 factor [0.9,1]) * (speed factor [5, 15]))";
 	};
 	class Truck_02_Stress_INT_SoundShader
 	{
 		frequency = 1.3;
 		range = 60;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\add_layers\Stress_01_INT", 1}};
-		volume = "0.6 * 0.8 * ((damper0 factor [0.9,1]) * (speed factor [5, 15]))";
+		volume = "(0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.8 * ((damper0 factor [0.9,1]) * (speed factor [5, 15]))";
 	};
 	class Truck_02_Tires_Asphalt_Fast_EXT_SoundShader: Base_Tires_Asphalt_Fast_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 40;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Asphalt_Fast_EXT", 1}};
-		volume = "0.7 * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.3*asphalt*(1+0.7*((abs(speed)) factor[5,15]))*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.3*asphalt*(1+0.7*((abs(speed)) factor[5,15]))*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Asphalt_Fast_INT_SoundShader: Base_Tires_Asphalt_Fast_Int_SoundShader
 	{
 		frequency = 1;
 		range = 40;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Asphalt_Fast_INT", 1}};
-		volume = "0.6 * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.3*asphalt*(1+0.7*((abs(speed)) factor[5,15]))*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.3*asphalt*(1+0.7*((abs(speed)) factor[5,15]))*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Asphalt_Slow_EXT_SoundShader: Base_Tires_Asphalt_Slow_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 40;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Asphalt_Slow_EXT", 1}};
-		volume = "0.7 * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.3*asphalt*(1+0.7*((abs(speed)) factor[5,15]))*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.3*asphalt*(1+0.7*((abs(speed)) factor[5,15]))*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Asphalt_Slow_INT_SoundShader: Base_Tires_Asphalt_Slow_Int_SoundShader
 	{
 		frequency = 1;
 		range = 40;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Asphalt_Slow_INT", 1}};
-		volume = "0.6 * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.3*asphalt*(1+0.7*((abs(speed)) factor[5,15]))*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.3*asphalt*(1+0.7*((abs(speed)) factor[5,15]))*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Brake_Hard_EXT_SoundShader
 	{
 		frequency = 0.7;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires_brakes\Tires_Brake_Hard_01_EXT", 1}};
-		volume = "(asphalt max rock) * (0.5*(abs(longSlip) factor [0.1,0.3])) * 0.7 * 1.9";
+		volume = "(asphalt max rock) * (0.5*(abs(longSlip) factor [0.1,0.3])) * (0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.9";
 	};
 	class Truck_02_Tires_Brake_Hard_INT_SoundShader
 	{
 		frequency = 0.7;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires_brakes\Tires_Brake_Hard_01_INT", 1}};
-		volume = "(asphalt max rock) * (0.5*(abs(longSlip) factor [0.1,0.3])) * 0.6 * 0.5";
+		volume = "(asphalt max rock) * (0.5*(abs(longSlip) factor [0.1,0.3])) * (0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.5";
 	};
 	class Truck_02_Tires_Brake_Soft_EXT_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires_brakes\Tires_Brake_Soft_01_EXT", 1}};
-		volume = "(1-asphalt)*(1-rock)*(1-water)*(1-sand) * ((abs(longSlip) factor [0.07,0.3])) * 0.7 * 1.5";
+		volume = "(1-asphalt)*(1-rock)*(1-water)*(1-sand) * ((abs(longSlip) factor [0.07,0.3])) * (0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5";
 	};
 	class Truck_02_Tires_Brake_Soft_INT_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires_brakes\Tires_Brake_Soft_01_INT", 1}};
-		volume = "(1-asphalt)*(1-rock)*(1-water)*(1-sand) * ((abs(longSlip) factor [0.07,0.3])) * 0.6 * 0.1";
+		volume = "(1-asphalt)*(1-rock)*(1-water)*(1-sand) * ((abs(longSlip) factor [0.07,0.3])) * (0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.1";
 	};
 	class Truck_02_Tires_Grass_Fast_EXT_SoundShader: Base_Tires_Grass_Fast_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Grass_Fast_EXT", 1}};
-		volume = "0.7 * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.65*grass*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.65*grass*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Grass_Fast_INT_SoundShader: Base_Tires_Grass_Fast_Int_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Grass_Fast_INT", 1}};
-		volume = "0.6 * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.65*grass*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.65*grass*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Grass_Slow_EXT_SoundShader: Base_Tires_Grass_Slow_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Grass_Slow_EXT", 1}};
-		volume = "0.7 * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.65*grass*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.65*grass*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Grass_Slow_INT_SoundShader: Base_Tires_Grass_Slow_Int_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Grass_Slow_INT", 1}};
-		volume = "0.6 * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.65*grass*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.65*grass*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Gravel_Fast_EXT_SoundShader: Base_Tires_Gravel_Fast_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Gravel_Fast_EXT", 1}};
-		volume = "0.7 * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.6*gravel*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.6*gravel*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Gravel_Fast_INT_SoundShader: Base_Tires_Gravel_Fast_Int_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Gravel_Fast_INT", 1}};
-		volume = "0.6 * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.6*gravel*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.6*gravel*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Gravel_Slow_EXT_SoundShader: Base_Tires_Gravel_Slow_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Gravel_Slow_EXT", 1}};
-		volume = "0.7 * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.6*gravel*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.6*gravel*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Gravel_Slow_INT_SoundShader: Base_Tires_Gravel_Slow_Int_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Gravel_Slow_INT", 1}};
-		volume = "0.6 * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.6*gravel*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.6*gravel*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Mud_Fast_EXT_SoundShader: Base_Tires_Mud_Fast_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Mud_Fast_EXT", 1}};
-		volume = "0.7 * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.65*mud*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.65*mud*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Mud_Fast_INT_SoundShader: Base_Tires_Mud_Fast_Int_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Mud_Fast_INT", 1}};
-		volume = "0.6 * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.65*mud*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.65*mud*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Mud_Slow_EXT_SoundShader: Base_Tires_Mud_Slow_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Mud_Slow_EXT", 1}};
-		volume = "0.7 * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.65*mud*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.65*mud*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Mud_Slow_INT_SoundShader: Base_Tires_Mud_Slow_Int_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Mud_Slow_INT", 1}};
-		volume = "0.6 * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.65*mud*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.65*mud*(0.9 + 0.3*damper0) * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Rock_Fast_EXT_SoundShader: Base_Tires_Rock_Fast_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 30;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Rock_Fast_EXT", 1}};
-		volume = "0.7 * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.6*rock * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.6*rock * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Rock_Fast_INT_SoundShader: Base_Tires_Rock_Fast_Int_SoundShader
 	{
 		frequency = 1;
 		range = 30;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Rock_Fast_INT", 1}};
-		volume = "0.6 * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.6*rock * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.6*rock * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Rock_Slow_EXT_SoundShader: Base_Tires_Rock_Slow_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 30;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Rock_Slow_EXT", 1}};
-		volume = "0.7 * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.6*rock * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.6*rock * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Rock_Slow_INT_SoundShader: Base_Tires_Rock_Slow_Int_SoundShader
 	{
 		frequency = 1;
 		range = 30;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Rock_Slow_INT", 1}};
-		volume = "0.6 * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.6*rock * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.6*rock * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Sand_Fast_EXT_SoundShader: Base_Tires_Sand_Fast_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 30;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Sand_Fast_EXT", 1}};
-		volume = "0.7 * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.2*sand * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.2*sand * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Sand_Fast_INT_SoundShader: Base_Tires_Sand_Fast_Int_SoundShader
 	{
 		frequency = 1;
 		range = 30;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Sand_Fast_INT", 1}};
-		volume = "0.6 * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.2*sand * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.2*sand * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Sand_Slow_EXT_SoundShader: Base_Tires_Sand_Slow_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 30;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Sand_Slow_EXT", 1}};
-		volume = "0.7 * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.2*sand * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.2*sand * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Sand_Slow_INT_SoundShader: Base_Tires_Sand_Slow_Int_SoundShader
 	{
 		frequency = 1;
 		range = 30;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Sand_Slow_INT", 1}};
-		volume = "0.6 * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.2*sand * (1 + 0.1*(damper0 factor [0.6,1]))";
+		volume = "(0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.2*sand * (1 + 0.1*(damper0 factor [0.6,1]))";
 	};
 	class Truck_02_Tires_Turn_Hard_EXT_SoundShader
 	{
 		frequency = 0.7;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires_turns\Tires_Turn_Hard_01_EXT", 1}};
-		volume = "(asphalt max rock) * (abs(latSlip) factor [0.1,0.2]) * 0.7 * 1.9";
+		volume = "(asphalt max rock) * (abs(latSlip) factor [0.1,0.2]) * (0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.9";
 	};
 	class Truck_02_Tires_Turn_Hard_INT_SoundShader
 	{
 		frequency = 0.7;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires_turns\Tires_Turn_Hard_01_INT", 1}};
-		volume = "(asphalt max rock) * (abs(latSlip) factor [0.1,0.2]) * 0.6 * 0.5";
+		volume = "(asphalt max rock) * (abs(latSlip) factor [0.1,0.2]) * (0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.5";
 	};
 	class Truck_02_Tires_Turn_Soft_EXT_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires_turns\Tires_Turn_Soft_01_EXT", 1}};
-		volume = "(1-asphalt)*(1-rock)*(1-water)*(1-sand) * (abs(latSlip) factor [0.07,0.2]) * 0.7 * 1.5";
+		volume = "(1-asphalt)*(1-rock)*(1-water)*(1-sand) * (abs(latSlip) factor [0.07,0.2]) * (0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5";
 	};
 	class Truck_02_Tires_Turn_Soft_INT_SoundShader
 	{
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires_turns\Tires_Turn_Soft_01_INT", 1}};
-		volume = "(1-asphalt)*(1-rock)*(1-water)*(1-sand) * (abs(latSlip) factor [0.07,0.2]) * 0.6 * 0.1";
+		volume = "(1-asphalt)*(1-rock)*(1-water)*(1-sand) * (abs(latSlip) factor [0.07,0.2]) * (0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.1";
 	};
 	class Truck_02_Tires_Water_Fast_EXT_SoundShader: Base_Tires_Water_Fast_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 40;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Water_Fast_EXT", 1}};
-		volume = "0.7 * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.2*water";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.2*water";
 	};
 	class Truck_02_Tires_Water_Fast_INT_SoundShader: Base_Tires_Water_Fast_Int_SoundShader
 	{
 		frequency = 1;
 		range = 40;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Water_Fast_INT", 1}};
-		volume = "0.6 * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.2*water";
+		volume = "(0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [4, 10]) * 0.2*water";
 	};
 	class Truck_02_Tires_Water_Slow_EXT_SoundShader: Base_Tires_Water_Slow_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 40;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Water_Slow_EXT", 1}};
-		volume = "0.7 * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.2*water";
+		volume = "(0.7 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 1.5 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.2*water";
 	};
 	class Truck_02_Tires_Water_Slow_INT_SoundShader: Base_Tires_Water_Slow_Int_SoundShader
 	{
 		frequency = 1;
 		range = 40;
 		samples[] = {{"A3\Sounds_F\vehicles2\soft\shared\tires04\Tires_Water_Slow_INT", 1}};
-		volume = "0.6 * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.2*water";
+		volume = "(0.6 * (CustomSoundController1 + (CustomSoundController1 factor [0.01,0]))) * 0.35 * (1 + ((2*damper0) factor [0, 2]) + (3*abs(latSlip))) * (abs(speed) factor [0, 4])*(abs(speed) factor [0, 4])*(abs(speed) factor [10, 5]) * 0.2*water";
 	};
 	class Truck_03_Engine_RPM0_EXT_SoundShader: Engine_Base_RPM0_EXT_SoundShader
 	{
@@ -23271,7 +27549,7 @@ class CfgSoundShaders
 		frequency = 1;
 		range = 75;
 		samples[] = {{"A3\Sounds_F_Orange\vehicles\soft\Van_02\Van_02_Brakes_Asphalt_Ext", 1}};
-		volume = "1  * 0.5 * asphalt * (LongSlipDrive factor[-0.08, -0.1]) * (Speed factor[12, 15])";
+		volume = "0.65  * 0.5 * asphalt * (LongSlipDrive factor[-0.08, -0.1]) * (Speed factor[12, 15])";
 	};
 	class Van_02_Brakes_Asphalt_01_Int_SoundShader
 	{
@@ -23284,7 +27562,7 @@ class CfgSoundShaders
 		frequency = 1;
 		range = 75;
 		samples[] = {{"A3\Sounds_F_Orange\vehicles\soft\Van_02\Van_02_Brakes_Dirt_Ext_02", 1}};
-		volume = "1  * 0.6 * (1-asphalt) * (LongSlipDrive factor[-0.01, -0.1]) * (Speed factor[12, 15])";
+		volume = "0.65  * 0.6 * (1-asphalt) * (LongSlipDrive factor[-0.01, -0.1]) * (Speed factor[12, 15])";
 	};
 	class Van_02_Brakes_Dirt_01_Int_SoundShader
 	{
@@ -23295,80 +27573,80 @@ class CfgSoundShaders
 	class Van_02_Eng_01_Idle_Ext_SoundShader
 	{
 		frequency = "1  * 1 * 1	+	((rpm/	3500) factor[(900/	3500),(1530/	3500)])*0.25 +  (0.8 * (speed factor[0, -8]))";
-		range = "1.5*220";
+		range = 75;
 		samples[] = {{"A3\Sounds_F_Orange\Vehicles\Soft\Van_02\Van_02_Eng_02_Idle_Ext_Mono", 1}};
-		volume = "1  * 1.75  * 0.4 * engineOn * (((rpm/	3500) factor[(0/	3500),(750/	3500)])	*	((rpm/	3500) factor[(3000/	3500),(900/	3500)])) + (0.15*((speed factor[0, -8]) factor [0, 1]))";
+		volume = "0.65  * 1.25  * 0.4 * engineOn * (((rpm/	3500) factor[(0/	3500),(750/	3500)])	*	((rpm/	3500) factor[(3000/	3500),(900/	3500)])) + (0.15*((speed factor[0, -8]) factor [0, 1]))";
 	};
 	class Van_02_Eng_01_Idle_Int_SoundShader
 	{
 		frequency = "1  * 1 * 1	+	((rpm/	3500) factor[(900/	3500),(1530/	3500)])*0.25 +  (0.8 * (speed factor[0, -8]))";
 		samples[] = {{"A3\Sounds_F_Orange\Vehicles\Soft\Van_02\Van_02_Eng_02_Idle_Int_Mono", 1}};
-		volume = "1  * 1.65  * 0.12 * engineOn * (((rpm/	3500) factor[(0/	3500),(750/	3500)])	*	((rpm/	3500) factor[(3000/	3500),(900/	3500)])) + (0.15*((speed factor[0, -8]) factor [0, 1]))";
+		volume = "1  * 1.15  * 0.12 * engineOn * (((rpm/	3500) factor[(0/	3500),(750/	3500)])	*	((rpm/	3500) factor[(3000/	3500),(900/	3500)])) + (0.15*((speed factor[0, -8]) factor [0, 1]))";
 	};
 	class Van_02_Eng_01_Rpm_01_Ext_SoundShader
 	{
 		frequency = "1  * 1 * 1	+	((rpm/	3500) factor[(880/	3500),(1960/	3500)])*0.4 +  (0.8 * (speed factor[0, -8])) + (0.1*(thrust factor [0,1]))";
-		range = "1.5*230";
+		range = 75;
 		samples[] = {{"A3\Sounds_F_Orange\Vehicles\Soft\Van_02\Van_02_Eng_01_Rpm_01_Ext_Mono", 1}};
-		volume = "1  * 1.75  * 0.75 * engineOn *(((rpm/	3500) factor[(580/	3500),(900/	3500)])	*	((rpm/	3500) factor[(2160/	3500),(1000/	3500)])) * (0.7 * (speed factor [0,20])) + (0.1*((speed factor[0, -8]) factor [0, 1]))";
+		volume = "0.65  * 1.25  * 0.75 * engineOn *(((rpm/	3500) factor[(580/	3500),(900/	3500)])	*	((rpm/	3500) factor[(2160/	3500),(1000/	3500)])) * (0.7 * (speed factor [0,20])) + (0.1*((speed factor[0, -8]) factor [0, 1]))";
 	};
 	class Van_02_Eng_01_Rpm_01_Int_SoundShader
 	{
 		frequency = "1  * 1 * 1	+	((rpm/	3500) factor[(880/	3500),(1960/	3500)])*0.4 +  (0.8 * (speed factor[0, -8])) + (0.1*(thrust factor [0,1]))";
 		samples[] = {{"A3\Sounds_F_Orange\Vehicles\Soft\Van_02\Van_02_Eng_01_Rpm_01_Int_Mono", 1}};
-		volume = "1  * 1.65  * 0.3 * engineOn *(((rpm/	3500) factor[(580/	3500),(900/	3500)])	*	((rpm/	3500) factor[(2160/	3500),(1000/	3500)])) * (0.7 * (speed factor [0,20])) + (0.1*((speed factor[0, -8]) factor [0, 1]))";
+		volume = "1  * 1.15  * 0.3 * engineOn *(((rpm/	3500) factor[(580/	3500),(900/	3500)])	*	((rpm/	3500) factor[(2160/	3500),(1000/	3500)])) * (0.7 * (speed factor [0,20])) + (0.1*((speed factor[0, -8]) factor [0, 1]))";
 	};
 	class Van_02_Eng_01_Rpm_02_Ext_SoundShader
 	{
 		frequency = "1 * 1 * 1	+	((rpm/	3500) factor[(1200/	3500),(2400/	3500)])*0.45  + (0.1*(thrust factor [0,1]))";
-		range = "1.5*240";
+		range = 75;
 		samples[] = {{"A3\Sounds_F_Orange\Vehicles\Soft\Van_02\Van_02_Eng_01_Rpm_02_Ext_Mono", 1}};
-		volume = "1  * 1.75  * 0.8 * engineOn * (((rpm/	3500) factor[(1200/	3500),(2110/	3500)])	*	((rpm/	3500) factor[(2600/	3500),(2300/	3500)])) * (0.7 * (speed factor [0,20]))";
+		volume = "0.65  * 1.25  * 0.8 * engineOn * (((rpm/	3500) factor[(1200/	3500),(2110/	3500)])	*	((rpm/	3500) factor[(2600/	3500),(2300/	3500)])) * (0.7 * (speed factor [0,20]))";
 	};
 	class Van_02_Eng_01_Rpm_02_Int_SoundShader
 	{
 		frequency = "1 * 1 * 1	+	((rpm/	3500) factor[(1200/	3500),(2400/	3500)])*0.45  + (0.1*(thrust factor [0,1]))";
 		samples[] = {{"A3\Sounds_F_Orange\Vehicles\Soft\Van_02\Van_02_Eng_01_Rpm_02_Int_Mono", 1}};
-		volume = "1  * 1.65  * 0.35 * engineOn * (((rpm/	3500) factor[(1200/	3500),(2110/	3500)])	*	((rpm/	3500) factor[(2600/	3500),(2300/	3500)])) * (0.7 * (speed factor [0,20]))";
+		volume = "1  * 1.15  * 0.35 * engineOn * (((rpm/	3500) factor[(1200/	3500),(2110/	3500)])	*	((rpm/	3500) factor[(2600/	3500),(2300/	3500)])) * (0.7 * (speed factor [0,20]))";
 	};
 	class Van_02_Eng_01_Rpm_03_Ext_SoundShader
 	{
 		frequency = "1  * 1 * 1	+	((rpm/	3500) factor[(2100/	3500),(2860/	3500)])*0.5 + (0.09*(thrust factor [0,1]))";
-		range = "1.5*250";
+		range = 75;
 		samples[] = {{"A3\Sounds_F_Orange\Vehicles\Soft\Van_02\Van_02_Eng_01_Rpm_03_Ext_Mono", 1}};
-		volume = "1  * 1.75  * 0.81 * engineOn *(((rpm/	3500) factor[(2100/	3500),(2350/	3500)])	*	((rpm/	3500) factor[(2860/	3500),(2570/	3500)])) * (0.7 * (speed factor [0,20]))";
+		volume = "0.65  * 1.25  * 0.81 * engineOn *(((rpm/	3500) factor[(2100/	3500),(2350/	3500)])	*	((rpm/	3500) factor[(2860/	3500),(2570/	3500)])) * (0.7 * (speed factor [0,20]))";
 	};
 	class Van_02_Eng_01_Rpm_03_Int_SoundShader
 	{
 		frequency = "1  * 1 * 1	+	((rpm/	3500) factor[(2100/	3500),(2860/	3500)])*0.5 + (0.09*(thrust factor [0,1]))";
 		samples[] = {{"A3\Sounds_F_Orange\Vehicles\Soft\Van_02\Van_02_Eng_01_Rpm_03_Int_Mono", 1}};
-		volume = "1  * 1.65  * 0.4 * engineOn *(((rpm/	3500) factor[(2100/	3500),(2350/	3500)])	*	((rpm/	3500) factor[(2860/	3500),(2570/	3500)])) * (0.7 * (speed factor [0,20]))";
+		volume = "1  * 1.15  * 0.4 * engineOn *(((rpm/	3500) factor[(2100/	3500),(2350/	3500)])	*	((rpm/	3500) factor[(2860/	3500),(2570/	3500)])) * (0.7 * (speed factor [0,20]))";
 	};
 	class Van_02_Eng_01_Rpm_04_Ext_SoundShader
 	{
 		frequency = "1  * 1 * 1	+	((rpm/	3500) factor[(2570/	3500),(3350/	3500)])*0.45 + (0.08*(thrust factor [0,1]))+  (0.8 * (speed factor[0, -8]))";
-		range = "1.5*250";
+		range = 75;
 		samples[] = {{"A3\Sounds_F_Orange\Vehicles\Soft\Van_02\Van_02_Eng_01_Rpm_04_Ext_Mono", 1}};
-		volume = "1  * 1.75  * 0.83 * engineOn * (((rpm/	3500) factor[(2570/	3500),(2810/	3500)])	*	((rpm/	3500) factor[(3350/	3500),(3050/	3500)])) * (0.7 * (speed factor [0,20])) + (0.1*((speed factor[0, -8]) factor [0, 1]))";
+		volume = "0.65  * 1.25  * 0.83 * engineOn * (((rpm/	3500) factor[(2570/	3500),(2810/	3500)])	*	((rpm/	3500) factor[(3350/	3500),(3050/	3500)])) * (0.7 * (speed factor [0,20])) + (0.1*((speed factor[0, -8]) factor [0, 1]))";
 	};
 	class Van_02_Eng_01_Rpm_04_Int_SoundShader
 	{
 		frequency = "1  * 1 * 1	+	((rpm/	3500) factor[(2570/	3500),(3350/	3500)])*0.45 + (0.08*(thrust factor [0,1]))+  (0.8 * (speed factor[0, -8]))";
 		samples[] = {{"A3\Sounds_F_Orange\Vehicles\Soft\Van_02\Van_02_Eng_01_Rpm_04_Int_Mono", 1}};
-		volume = "1  * 1.65  * 0.45 * engineOn * (((rpm/	3500) factor[(2570/	3500),(2810/	3500)])	*	((rpm/	3500) factor[(3350/	3500),(3050/	3500)])) * (0.7 * (speed factor [0,20])) + (0.1*((speed factor[0, -8]) factor [0, 1]))";
+		volume = "1  * 1.15  * 0.45 * engineOn * (((rpm/	3500) factor[(2570/	3500),(2810/	3500)])	*	((rpm/	3500) factor[(3350/	3500),(3050/	3500)])) * (0.7 * (speed factor [0,20])) + (0.1*((speed factor[0, -8]) factor [0, 1]))";
 	};
 	class Van_02_Eng_01_Rpm_05_Ext_SoundShader
 	{
 		frequency = "1  * 1 * 1.1	+	((rpm/	3500) factor[(3000/	3500),(3900/	3500)])*0.4 + (0.07*(thrust factor [0,1])) +  (0.8 * (speed factor[0, -8]))";
-		range = "1.5*250";
+		range = 75;
 		samples[] = {{"A3\Sounds_F_Orange\Vehicles\Soft\Van_02\Van_02_Eng_01_Rpm_04_Ext_Mono", 1}};
-		volume = "1  * 1.75  * 0.85 * engineOn * (((rpm/	3500) factor[(3000/	3500),(3300/	3500)])	*	((rpm/	3500) factor[(5000/	3500),(3900/	3500)])) * (0.7 * (speed factor [0,20]))+ (0.1*((speed factor[0, -8]) factor [0, 1]))";
+		volume = "0.65  * 1.25  * 0.85 * engineOn * (((rpm/	3500) factor[(3000/	3500),(3300/	3500)])	*	((rpm/	3500) factor[(5000/	3500),(3900/	3500)])) * (0.7 * (speed factor [0,20]))+ (0.1*((speed factor[0, -8]) factor [0, 1]))";
 	};
 	class Van_02_Eng_01_Rpm_05_Int_SoundShader
 	{
 		frequency = "1  * 1 * 1.1	+	((rpm/	3500) factor[(3000/	3500),(3900/	3500)])*0.4 + (0.07*(thrust factor [0,1])) +  (0.8 * (speed factor[0, -8]))";
 		samples[] = {{"A3\Sounds_F_Orange\Vehicles\Soft\Van_02\Van_02_Eng_01_Rpm_04_Int_Mono", 1}};
-		volume = "1  * 1.65  * 0.5 * engineOn * (((rpm/	3500) factor[(3000/	3500),(3300/	3500)])	*	((rpm/	3500) factor[(5000/	3500),(3900/	3500)])) * (0.7 * (speed factor [0,20])) + (0.15*((speed factor[0, -8]) factor [0, 1]))";
+		volume = "1  * 1.15  * 0.5 * engineOn * (((rpm/	3500) factor[(3000/	3500),(3300/	3500)])	*	((rpm/	3500) factor[(5000/	3500),(3900/	3500)])) * (0.7 * (speed factor [0,20])) + (0.15*((speed factor[0, -8]) factor [0, 1]))";
 	};
 	class Van_02_Noise_Hard_01_Int_SoundShader
 	{
@@ -23396,7 +27674,7 @@ class CfgSoundShaders
 		range = 15;
 		rangeCurve[] = {{0, 1}, {15, 0}};
 		samples[] = {{"A3\Sounds_F_Orange\Vehicles\Shared\Rain\Vehicles_Rain_01_Ext", 1}};
-		volume = "1  * 0.7 * rain";
+		volume = "0.65  * 0.7 * rain";
 	};
 	class Van_02_Rain_01_Int_SoundShader
 	{
@@ -23409,7 +27687,7 @@ class CfgSoundShaders
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F_Orange\vehicles\soft\Van_02\Van_02_Tires_Asphalt_Ext", 1}};
-		volume = "1  * 0.6 * Asphalt * (speed factor[1, 10]) + (0.65 * Asphalt * (speed factor[0, -8]))";
+		volume = "0.65  * 0.6 * Asphalt * (speed factor[1, 10]) + (0.65 * Asphalt * (speed factor[0, -8]))";
 	};
 	class Van_02_Tires_Asphalt_01_Int_SoundShader
 	{
@@ -23422,7 +27700,7 @@ class CfgSoundShaders
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F_Orange\vehicles\soft\Van_02\Van_02_Tires_Grass_Mud_Int", 1}};
-		volume = "1  * 0.6 * (grass + mud + gravel) * (speed factor[1, 10]) + (0.75 * (grass + mud + gravel) * (speed factor[0, -8]))";
+		volume = "0.65  * 0.6 * (grass + mud + gravel) * (speed factor[1, 10]) + (0.75 * (grass + mud + gravel) * (speed factor[0, -8]))";
 	};
 	class Van_02_Tires_Grass_Mud_01_Int_SoundShader
 	{
@@ -23435,7 +27713,7 @@ class CfgSoundShaders
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F_Orange\vehicles\soft\Van_02\Van_02_Tires_Gravel_Int", 1}};
-		volume = "1  * 0.5 * gravel * (speed factor[1, 10]) + (0.5 * gravel * (speed factor[0, -8]))";
+		volume = "0.65  * 0.5 * gravel * (speed factor[1, 10]) + (0.5 * gravel * (speed factor[0, -8]))";
 	};
 	class Van_02_Tires_Gravel_01_Int_SoundShader
 	{
@@ -23448,7 +27726,7 @@ class CfgSoundShaders
 		frequency = 1;
 		range = 75;
 		samples[] = {{"A3\Sounds_F_Orange\vehicles\soft\Van_02\Van_02_Tires_Movement_Dirt_Ext_01", 1}};
-		volume = "1  * 0.4 * ((0.6 * (		(mud+gravel+grass) * (latSlipDrive factor[-0.01, -0.15]) + (mud+gravel+grass) * (latSlipDrive factor[0.01, 0.15]))) * (speed factor [0,10])) + (0.1 * ((mud+gravel+grass) * (speed factor[-0, -5]) * (latSlipDrive factor[-0.01, -0.06]) + (mud+gravel+grass) * (speed factor[-0, -5]) * (latSlipDrive factor[0.01, 0.06]))) + ((0.25*(asphalt * (latSlipDrive factor [0.1, 0.2]) + asphalt * (latSlipDrive factor [-0.1, -0.2]))) * (speed factor[5,15])) + ((0.75*(asphalt * (latSlipDrive factor [0.1, 0.2]) + asphalt * (latSlipDrive factor [-0.1, -0.2]))) * (speed factor[0,-7])) + ((mud+gravel+grass)*0.25*(speed factor[0, -8]))";
+		volume = "0.65  * 0.4 * ((0.6 * (		(mud+gravel+grass) * (latSlipDrive factor[-0.01, -0.15]) + (mud+gravel+grass) * (latSlipDrive factor[0.01, 0.15]))) * (speed factor [0,10])) + (0.1 * ((mud+gravel+grass) * (speed factor[-0, -5]) * (latSlipDrive factor[-0.01, -0.06]) + (mud+gravel+grass) * (speed factor[-0, -5]) * (latSlipDrive factor[0.01, 0.06]))) + ((0.25*(asphalt * (latSlipDrive factor [0.1, 0.2]) + asphalt * (latSlipDrive factor [-0.1, -0.2]))) * (speed factor[5,15])) + ((0.75*(asphalt * (latSlipDrive factor [0.1, 0.2]) + asphalt * (latSlipDrive factor [-0.1, -0.2]))) * (speed factor[0,-7])) + ((mud+gravel+grass)*0.25*(speed factor[0, -8]))";
 	};
 	class Van_02_Tires_Movement_Dirt_Int_01_SoundShader
 	{
@@ -23461,7 +27739,7 @@ class CfgSoundShaders
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F_Orange\vehicles\soft\Van_02\Van_02_Tires_Asphalt_Ext", 1}};
-		volume = "1  * 0.6 * rock * (speed factor[1, 10]) + (1.5 * rock * (speed factor[0, -8]))";
+		volume = "0.65  * 0.6 * rock * (speed factor[1, 10]) + (1.5 * rock * (speed factor[0, -8]))";
 	};
 	class Van_02_Tires_Rock_01_Int_SoundShader
 	{
@@ -23474,7 +27752,7 @@ class CfgSoundShaders
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F_Orange\vehicles\soft\Van_02\Van_02_Tires_Sand", 1}};
-		volume = "1  * 0.33 * (sand * (speed factor[1, 10]) + (1 * sand * (speed factor[0, -8])))";
+		volume = "0.65  * 0.33 * (sand * (speed factor[1, 10]) + (1 * sand * (speed factor[0, -8])))";
 	};
 	class Van_02_Tires_Sand_01_Int_SoundShader
 	{
@@ -23487,7 +27765,7 @@ class CfgSoundShaders
 		frequency = 1;
 		range = 50;
 		samples[] = {{"A3\Sounds_F_Orange\vehicles\soft\Van_02\Van_02_Tires_Water", 1}};
-		volume = "1  * 0.6 * water * (speed factor[1, 10]) + (0.65 * water * (speed factor[0, -8]))";
+		volume = "0.65  * 0.6 * water * (speed factor[1, 10]) + (0.65 * water * (speed factor[0, -8]))";
 	};
 	class Van_02_Tires_Water_01_Int_SoundShader
 	{
@@ -23500,7 +27778,7 @@ class CfgSoundShaders
 		frequency = 1;
 		range = 75;
 		samples[] = {{"A3\Sounds_F_Orange\vehicles\soft\Van_02\Van_02_Tires_Turns_Asphalt_01", 1}};
-		volume = "1  * 1 * (0.75*asphalt * (latSlipDrive factor [0.1, 0.2])) * (Speed factor[5, 10]) + (0.8 * asphalt * (latSlipDrive factor [0.1, 0.2]) * asphalt * (speed factor[0, -8]))";
+		volume = "0.65  * 1 * (0.75*asphalt * (latSlipDrive factor [0.1, 0.2])) * (Speed factor[5, 10]) + (0.8 * asphalt * (latSlipDrive factor [0.1, 0.2]) * asphalt * (speed factor[0, -8]))";
 	};
 	class Van_02_TurnLeft_Asphalt_01_Int_SoundShader
 	{
@@ -23513,14 +27791,14 @@ class CfgSoundShaders
 		frequency = 1;
 		range = 75;
 		samples[] = {{"A3\Sounds_F_Orange\vehicles\soft\Van_02\Van_02_Tires_Turns_Dirt_01", 1}};
-		volume = "1  * 0.5 * (1 * (mud+gravel+grass) * (latSlipDrive factor[0.01, 0.15])) + (0.3 * (mud+gravel+grass) * (speed factor[-0, -5]) * (latSlipDrive factor[0.01, 0.06]))";
+		volume = "0.65  * 0.5 * (1 * (mud+gravel+grass) * (latSlipDrive factor[0.01, 0.15])) + (0.3 * (mud+gravel+grass) * (speed factor[-0, -5]) * (latSlipDrive factor[0.01, 0.06]))";
 	};
 	class Van_02_TurnRight_Asphalt_01_Ext_SoundShader
 	{
 		frequency = 1;
 		range = 75;
 		samples[] = {{"A3\Sounds_F_Orange\vehicles\soft\Van_02\Van_02_Tires_Turns_Asphalt_01", 1}};
-		volume = "1  * 1 * (0.75*asphalt * (latSlipDrive factor [-0.1, -0.2])) * (Speed factor[5, 10]) + (0.8 * asphalt * (latSlipDrive factor [-0.1, -0.2]) * asphalt * (speed factor[0, -8]))";
+		volume = "0.65  * 1 * (0.75*asphalt * (latSlipDrive factor [-0.1, -0.2])) * (Speed factor[5, 10]) + (0.8 * asphalt * (latSlipDrive factor [-0.1, -0.2]) * asphalt * (speed factor[0, -8]))";
 	};
 	class Van_02_TurnRight_Asphalt_01_Int_SoundShader
 	{
@@ -23533,7 +27811,7 @@ class CfgSoundShaders
 		frequency = 1;
 		range = 75;
 		samples[] = {{"A3\Sounds_F_Orange\vehicles\soft\Van_02\Van_02_Tires_Turns_Dirt_01", 1}};
-		volume = "1  * 0.5 * (1 * 		(mud+gravel+grass) * (latSlipDrive factor[-0.01, -0.15])) + (0.3 * (mud+gravel+grass) * (speed factor[-0, -5]) * (latSlipDrive factor[-0.01, -0.06]))";
+		volume = "0.65  * 0.5 * (1 * 		(mud+gravel+grass) * (latSlipDrive factor[-0.01, -0.15])) + (0.3 * (mud+gravel+grass) * (speed factor[-0, -5]) * (latSlipDrive factor[-0.01, -0.06]))";
 	};
 	class VLS_01_distShot_SoundShader
 	{

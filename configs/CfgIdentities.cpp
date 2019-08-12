@@ -77,6 +77,222 @@ class CfgIdentities
 		pitch = 1;
 		speaker = "Male01GRE";
 	};
+	class Contact_Astrobio
+	{
+		face = "WhiteHead_24";
+		glasses = "None";
+		name = "Šimon Čapek";
+		pitch = 1;
+		speaker = "Male04GRE";
+		variable = "BIN_astrobio";
+	};
+	class Contact_Captain
+	{
+		face = "WhiteHead_29";
+		glasses = "None";
+		name = "Cpt. Severov";
+		pitch = 1;
+		speaker = "Male01RUS";
+		variable = "BIN_captain";
+	};
+	class Contact_CoPilot
+	{
+		face = "GreekHead_A3_08";
+		glasses = "None";
+		name = "Ladya 1";
+		pitch = 1;
+		speaker = "NoVoice";
+		variable = "BIN_coPilot";
+	};
+	class Contact_HQ
+	{
+		face = "whitehead_01";
+		glasses = "None";
+		name = "Gray Wolf";
+		pitch = 1;
+		speaker = "Male01POL";
+		variable = "BIN_HQ";
+	};
+	class Contact_Major
+	{
+		face = "WhiteHead_26";
+		glasses = "None";
+		name = "Maj. Homewood";
+		pitch = 1;
+		speaker = "Male10ENG";
+		variable = "BIN_major";
+	};
+	class Contact_Marksman
+	{
+		face = "whitehead_09";
+		glasses = "None";
+		name = "Pvt. Lane";
+		pitch = 1;
+		speaker = "Male11ENG";
+		variable = "BIN_marksman";
+	};
+	class Contact_Medic
+	{
+		face = "LivonianHead_5";
+		glasses = "None";
+		name = "Pvt. Baker";
+		pitch = 1;
+		speaker = "Male04ENG";
+		variable = "BIN_medic";
+	};
+	class Contact_Mentor
+	{
+		face = "WhiteHead_31";
+		glasses = "None";
+		name = "Jack Stype";
+		pitch = 1;
+		speaker = "Male01ENG";
+		variable = "BIN_mentor";
+	};
+	class Contact_Mentor_intro1
+	{
+		face = "WhiteHead_31";
+		glasses = "None";
+		name = "Cpl. Stype";
+		pitch = 1;
+		speaker = "Male01ENG";
+		variable = "BIN_mentor";
+	};
+	class Contact_Officer
+	{
+		face = "WhiteHead_30";
+		glasses = "None";
+		name = "Jan Smolko";
+		pitch = 1;
+		speaker = "Male01Pol";
+		variable = "BIN_officer";
+	};
+	class Contact_Operator
+	{
+		face = "RussianHead_2";
+		glasses = "None";
+		name = "Sgt. Krupin";
+		pitch = 1;
+		speaker = "Male02RUS";
+		variable = "BIN_operator";
+	};
+	class Contact_Physicist
+	{
+		face = "WhiteHead_27";
+		glasses = "None";
+		name = "Ian Kesson";
+		pitch = 1;
+		speaker = "Male04ENGB";
+		variable = "BIN_physicist";
+	};
+	class Contact_Player
+	{
+		face = "WhiteHead_32";
+		glasses = "None";
+		name = "Aiden Rudwell";
+		pitch = 1;
+		speaker = "Male06ENG";
+		variable = "BIN_player";
+	};
+	class Contact_Rifleman
+	{
+		face = "whitehead_25";
+		glasses = "None";
+		name = "Pvt. Dillon";
+		pitch = 1;
+		speaker = "Male02ENG";
+		variable = "BIN_rifleman";
+	};
+	class Contact_SoldierA
+	{
+		face = "LivonianHead_1";
+		glasses = "None";
+		name = "Aleksy Nowak";
+		pitch = 1;
+		speaker = "Male02POL";
+		variable = "BIN_soldierA";
+	};
+	class Contact_SoldierB
+	{
+		face = "LivonianHead_4";
+		glasses = "None";
+		name = "Zbigniew Stolarski";
+		pitch = 1;
+		speaker = "Male02POL";
+		variable = "BIN_soldierB";
+	};
+	class Contact_SoldierC
+	{
+		face = "LivonianHead_9";
+		glasses = "None";
+		name = "Jacek Burak";
+		pitch = 1;
+		speaker = "Male03POL";
+		variable = "BIN_soldierC";
+	};
+	class Contact_SoldierD
+	{
+		face = "whitehead_14";
+		glasses = "None";
+		name = "James Cooper";
+		pitch = 1;
+		speaker = "Male01ENG";
+		variable = "BIN_soldierD";
+	};
+	class Contact_SoldierE
+	{
+		face = "whitehead_13";
+		glasses = "None";
+		name = "Corporal Keats";
+		pitch = 1;
+		speaker = "Male02ENG";
+		variable = "BIN_soldierE";
+	};
+	class Contact_SoldierF
+	{
+		face = "whitehead_10";
+		glasses = "None";
+		name = "John Ackerman";
+		pitch = 1;
+		speaker = "Male03ENG";
+		variable = "BIN_soldierF";
+	};
+	class Contact_SoldierG
+	{
+		face = "LivonianHead_4";
+		glasses = "None";
+		name = "Captain Spender";
+		pitch = 1;
+		speaker = "Male04ENG";
+		variable = "BIN_soldierE";
+	};
+	class Contact_SquadLeader
+	{
+		face = "WhiteHead_28";
+		glasses = "None";
+		name = "Lt. Kingsly";
+		pitch = 1;
+		speaker = "Male08ENG";
+		variable = "BIN_squadLeader";
+	};
+	class Contact_SquadLeader_Intro3
+	{
+		face = "WhiteHead_28";
+		glasses = "G_AirPurifyingRespirator_01_F";
+		name = "Lt. Kingsly";
+		pitch = 1;
+		speaker = "Male08ENG";
+		variable = "BIN_squadLeader";
+	};
+	class Contact_TinHat
+	{
+		face = "whitehead_01";
+		glasses = "None";
+		name = "Pavel Rolik";
+		pitch = 1;
+		speaker = "Male05ENG";
+		variable = "BIN_tinHat";
+	};
 	class EPA_B_Adams
 	{
 		face = "WhiteHead_10";

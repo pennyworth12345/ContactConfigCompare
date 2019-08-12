@@ -1,15 +1,15 @@
 class RscButtonMenu: RscShortcutButton
 {
-	animTextureDefault = "#(argb,8,8,3)color(1,1,1,1)";
-	animTextureDisabled = "#(argb,8,8,3)color(1,1,1,1)";
+	animTextureDefault = "\a3\UI_F_Contact\Data\Common\RscButtonMenu\normal_ca.paa";
+	animTextureDisabled = "\a3\UI_F_Contact\Data\Common\RscButtonMenu\disabled_ca.paa";
 	animTextureFocused = "#(argb,8,8,3)color(1,1,1,1)";
-	animTextureNormal = "#(argb,8,8,3)color(1,1,1,1)";
+	animTextureNormal = "\a3\UI_F_Contact\Data\Common\RscButtonMenu\normal_ca.paa";
 	animTextureOver = "#(argb,8,8,3)color(1,1,1,1)";
 	animTexturePressed = "#(argb,8,8,3)color(1,1,1,1)";
 	color[] = {1, 1, 1, 1};
 	color2[] = {0, 0, 0, 1};
 	color2Secondary[] = {0, 0, 0, 1};
-	colorBackground[] = {0, 0, 0, 0.8};
+	colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.13])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.54])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.21])", 0.8};
 	colorBackground2[] = {0.75, 0.75, 0.75, 1};
 	colorBackgroundFocused[] = {1, 1, 1, 1};
 	colorDisabled[] = {1, 1, 1, 0.25};
@@ -44,7 +44,7 @@ class RscButtonMenu: RscShortcutButton
 	y = 0;
 	class Attributes
 	{
-		align = "left";
+		align = "center";
 		color = "#E5E5E5";
 		font = "PuristaLight";
 		shadow = "false";
@@ -58,9 +58,9 @@ class RscButtonMenu: RscShortcutButton
 	};
 	class TextPos
 	{
-		bottom = 0;
+		bottom = "0.0625 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		left = "0.25 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-		right = 0.005;
-		top = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) - 		(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)) / 2";
+		right = "0.25 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
+		top = "-0.0625 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 	};
 };

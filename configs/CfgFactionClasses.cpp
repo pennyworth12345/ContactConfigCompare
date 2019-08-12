@@ -19,6 +19,14 @@ class CfgFactionClasses
 		priority = 8;
 		side = 7;
 	};
+	class BLU_ALIEN_F
+	{
+		displayName = "Extraterrestrials";
+		flag = "\a3\Data_F_Exp\Flags\flag_SYND_CO.paa";
+		icon = "\a3\Data_F_Exp\FactionIcons\icon_SYND_CA.paa";
+		priority = 3;
+		side = 1;
+	};
 	class BLU_CTRG_F
 	{
 		displayName = "CTRG";
@@ -59,6 +67,14 @@ class CfgFactionClasses
 		priority = 3;
 		side = 1;
 	};
+	class BLU_W_EMP_F
+	{
+		displayName = "NATO (Woodland, EMP)";
+		flag = "\a3\Data_f\Flags\flag_nato_co.paa";
+		icon = "\a3\Data_f\cfgFactionClasses_BLU_ca.paa";
+		priority = 3;
+		side = 1;
+	};
 	class BLU_W_F
 	{
 		displayName = "NATO (Woodland)";
@@ -66,6 +82,10 @@ class CfgFactionClasses
 		icon = "\a3\Data_f\cfgFactionClasses_BLU_ca.paa";
 		priority = 3;
 		side = 1;
+	};
+	class CBRN: NO_CATEGORY
+	{
+		displayName = "CBRN";
 	};
 	class Chemlights
 	{
@@ -93,6 +113,12 @@ class CfgFactionClasses
 	{
 		displayName = "Combat Patrol";
 		priority = 10;
+		side = 7;
+	};
+	class Contact
+	{
+		displayName = "Contact";
+		priority = 8;
 		side = 7;
 	};
 	class Curator
@@ -143,11 +169,27 @@ class CfgFactionClasses
 		priority = 8;
 		side = 7;
 	};
+	class IND_ALIEN_F
+	{
+		displayName = "Extraterrestrials";
+		flag = "\a3\Data_F_Exp\Flags\flag_SYND_CO.paa";
+		icon = "\a3\Data_F_Exp\FactionIcons\icon_SYND_CA.paa";
+		priority = 3;
+		side = 2;
+	};
 	class IND_C_F
 	{
 		displayName = "Syndikat";
 		flag = "\a3\Data_F_Exp\Flags\flag_SYND_CO.paa";
 		icon = "\a3\Data_F_Exp\FactionIcons\icon_SYND_CA.paa";
+		priority = 3;
+		side = 2;
+	};
+	class IND_E_EMP_F
+	{
+		displayName = "LDF (EMP)";
+		flag = "\a3\Data_F_Enoch\Flags\flag_EAF_co.paa";
+		icon = "\a3\Data_F_Enoch\FactionIcons\icon_EAF_CA.paa";
 		priority = 3;
 		side = 2;
 	};
@@ -244,6 +286,14 @@ class CfgFactionClasses
 		displayName = "Object Modifiers";
 		priority = 8;
 		side = 7;
+	};
+	class OPF_ALIEN_F
+	{
+		displayName = "Extraterrestrials";
+		flag = "\a3\Data_F_Exp\Flags\flag_SYND_CO.paa";
+		icon = "\a3\Data_F_Exp\FactionIcons\icon_SYND_CA.paa";
+		priority = 3;
+		side = 0;
 	};
 	class OPF_F
 	{

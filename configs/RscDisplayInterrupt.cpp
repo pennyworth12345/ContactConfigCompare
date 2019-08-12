@@ -9,7 +9,7 @@ class RscDisplayInterrupt: RscStandardDisplay
 	scriptPath = "3DENDisplaysTemp";
 	class controls
 	{
-		class ButtonAbort: RscButtonMenu
+		class ButtonAbort: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 104;
@@ -27,7 +27,7 @@ class RscDisplayInterrupt: RscStandardDisplay
 				};
 			};
 		};
-		class ButtonAgain: RscButtonMenu
+		class ButtonAgain: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 1003;
@@ -46,7 +46,7 @@ class RscDisplayInterrupt: RscStandardDisplay
 				};
 			};
 		};
-		class ButtonAudio: RscButtonMenu
+		class ButtonAudio: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 302;
@@ -56,7 +56,7 @@ class RscDisplayInterrupt: RscStandardDisplay
 			x = "2 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "16.4 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class ButtonCancel: RscButtonMenu
+		class ButtonCancel: RscButtonMenuLeft
 		{
 			default = 1;
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
@@ -72,7 +72,7 @@ class RscDisplayInterrupt: RscStandardDisplay
 				left = "14 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
 			};
 		};
-		class ButtonControls: RscButtonMenu
+		class ButtonControls: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 303;
@@ -82,7 +82,7 @@ class RscDisplayInterrupt: RscStandardDisplay
 			x = "2 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "17.5 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class ButtonGame: RscButtonMenu
+		class ButtonGame: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 307;
@@ -92,7 +92,7 @@ class RscDisplayInterrupt: RscStandardDisplay
 			x = "2 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "18.6 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class ButtonOptions: RscButtonMenu
+		class ButtonOptions: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 101;
@@ -110,7 +110,7 @@ class RscDisplayInterrupt: RscStandardDisplay
 				};
 			};
 		};
-		class ButtonReturnToHub: RscButtonMenu
+		class ButtonReturnToHub: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 2408;
@@ -121,7 +121,7 @@ class RscDisplayInterrupt: RscStandardDisplay
 			x = "1 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "19.7 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class ButtonRevert: RscButtonMenu
+		class ButtonRevert: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 119;
@@ -139,10 +139,12 @@ class RscDisplayInterrupt: RscStandardDisplay
 				};
 			};
 		};
-		class ButtonSave: RscButtonMenu
+		class ButtonSave: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 103;
+			onLoad = "				params ['_ctrl'];				if (ctrlenabled _ctrl && {!call bin_fnc_inDangerZone}) exitwith {};				_display = ctrlparent _ctrl;				_ctrlFake = _display ctrlcreate ['RscButtonMenuLeft',-1];				_ctrlFake ctrlsettext ctrltext _ctrl;				_ctrlFake ctrlsetposition ctrlposition _ctrl;				_ctrlFake ctrlcommit 0;				_ctrlFake ctrlenable false;				_ctrl setvariable ['buttonSaveFake',_ctrlFake];				_ctrl ctrlshow false;				_ctrl ctrlsettooltip format ['%1\n%2',localize 'str_a3_c_cfgvehicles_moduledangerzone_f_0',localize 'str_a3_c_fnc_showsimplenotification_dangerzone_cannotSave'];				{					_display displayaddeventhandler [						_x,						{							_ctrl = (_this # 0) displayctrl 103;							_ctrl ctrlshow true;							_ctrl ctrlenable false;							ctrldelete (_ctrl getvariable 'buttonSaveFake');						}					];				} foreach ['mouseholding','mousemoving'];			";
+			show = 1;
 			text = "Save";
 			tooltip = "Save current state.";
 			w = "15 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
@@ -157,7 +159,7 @@ class RscDisplayInterrupt: RscStandardDisplay
 				};
 			};
 		};
-		class ButtonSkip: RscButtonMenu
+		class ButtonSkip: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 1002;
@@ -176,7 +178,7 @@ class RscDisplayInterrupt: RscStandardDisplay
 				};
 			};
 		};
-		class ButtonTutorialHints: RscButtonMenu
+		class ButtonTutorialHints: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 122;
@@ -186,7 +188,7 @@ class RscDisplayInterrupt: RscStandardDisplay
 			x = "1 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "19.7 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class ButtonVideo: RscButtonMenu
+		class ButtonVideo: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 301;
@@ -202,6 +204,11 @@ class RscDisplayInterrupt: RscStandardDisplay
 			w = "22 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
 			x = "17 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "0.5 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
+		};
+		class EventHandler: RscText
+		{
+			onLoad = "[missionnamespace,'pauseMenuOpened',[ctrlparent (_this # 0)]] call bis_fnc_callScriptedEventHandler;";
+			show = 0;
 		};
 		class Feedback: RscFeedback {};
 		class MissionTitle: RscText

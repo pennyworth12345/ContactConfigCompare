@@ -47,6 +47,7 @@ class CfgMagazineWells
 	};
 	class Katiba_65x39
 	{
+		BI_Blank_Magazines[] = {"30Rnd_65x39_caseless_green_blank_mag"};
 		BI_Magazines[] = {"30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green_mag_Tracer"};
 	};
 	class M14_762x51
@@ -68,10 +69,12 @@ class CfgMagazineWells
 	};
 	class Mk200_65x39
 	{
+		BI_Blank_Magazines[] = {"200Rnd_65x39_cased_box_blank"};
 		BI_Magazines[] = {"200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box_Tracer", "200Rnd_65x39_cased_Box_Red", "200Rnd_65x39_cased_Box_Tracer_Red"};
 	};
 	class MX_65x39
 	{
+		BI_Blank_Magazines[] = {"30Rnd_65x39_caseless_blank_mag", "100Rnd_65x39_caseless_blank_mag"};
 		BI_Magazines[] = {"30Rnd_65x39_caseless_mag", "30Rnd_65x39_caseless_khaki_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_65x39_caseless_khaki_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"};
 	};
 	class MX_65x39_Large
@@ -80,6 +83,7 @@ class CfgMagazineWells
 	};
 	class MX_65x39_MSBS
 	{
+		BI_Blank_Magazines[] = {"30Rnd_65x39_caseless_msbs_blank_mag"};
 		BI_Enoch_Magazines[] = {"30Rnd_65x39_caseless_msbs_mag", "30Rnd_65x39_caseless_msbs_mag_Tracer"};
 	};
 	class NLAW
@@ -112,6 +116,7 @@ class CfgMagazineWells
 	};
 	class STANAG_556x45
 	{
+		BI_Blank_Magazines[] = {"30Rnd_556x45_Stanag_Blank"};
 		BI_Magazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_green", "30Rnd_556x45_Stanag_red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Green", "30Rnd_556x45_Stanag_Tracer_Yellow", "30Rnd_556x45_Stanag_Sand", "30Rnd_556x45_Stanag_Sand_green", "30Rnd_556x45_Stanag_Sand_red", "30Rnd_556x45_Stanag_Sand_Tracer_Red", "30Rnd_556x45_Stanag_Sand_Tracer_Green", "30Rnd_556x45_Stanag_Sand_Tracer_Yellow"};
 	};
 	class STANAG_556x45_Large

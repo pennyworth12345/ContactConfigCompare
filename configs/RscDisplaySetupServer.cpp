@@ -191,7 +191,7 @@ class RscDisplaySetupServer: RscStandardDisplay
 			x = "safezoneX + (11.5 * 					(			((safezoneW / safezoneH) min 1.2) / 40)) + 0.45*(safezoneW - 				((safezoneW / safezoneH) min 1.2))";
 			y = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
 		};
-		class TabDirectConnect: RscButtonMenu
+		class TabDirectConnect: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 166;
@@ -202,7 +202,7 @@ class RscDisplaySetupServer: RscStandardDisplay
 			x = "16.2 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(SafezoneX)";
 			y = "2.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
 		};
-		class TabQuickPlay: RscButtonMenu
+		class TabQuickPlay: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 164;
@@ -212,7 +212,7 @@ class RscDisplaySetupServer: RscStandardDisplay
 			x = "1.2 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(SafezoneX)";
 			y = "2.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
 		};
-		class TabServers: RscButtonMenu
+		class TabServers: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 165;
@@ -222,7 +222,7 @@ class RscDisplaySetupServer: RscStandardDisplay
 			x = "8.7 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(SafezoneX)";
 			y = "2.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
 		};
-		class TabSetupServer: RscButtonMenu
+		class TabSetupServer: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 167;

@@ -8905,6 +8905,428 @@ class CfgGroups
 				};
 			};
 		};
+		class IND_E_EMP_F
+		{
+			name = "LDF (EMP)";
+			class Infantry_Deserters
+			{
+				name = "Infantry (Deserters)";
+				class I_E_ParamilitarySquad
+				{
+					faction = "IND_E_EMP_F";
+					icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+					name = "Militia Group";
+					side = 2;
+					class Unit0
+					{
+						position[] = {0, 0, 0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "I_E_Militiaman_Leader_F";
+					};
+					class Unit1
+					{
+						position[] = {5, -5, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_Militiaman_SMG_F";
+					};
+					class Unit2
+					{
+						position[] = {-5, -5, 0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "I_E_Militiaman_Rifle_F";
+					};
+					class Unit3
+					{
+						position[] = {10, -10, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_Deserter_Rifle_F";
+					};
+					class Unit4
+					{
+						position[] = {-10, -10, 0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "I_E_Deserter_AR_F";
+					};
+					class Unit5
+					{
+						position[] = {15, -15, 0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "I_E_Deserter_GL_F";
+					};
+				};
+			};
+			class Infantry_EMP
+			{
+				name = "Infantry";
+				class I_E_InfSentry
+				{
+					faction = "IND_E_EMP_F";
+					icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+					name = "Sentry";
+					side = 2;
+					class Unit0
+					{
+						position[] = {0, 0, 0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "I_E_soldier_GL_EMP_F";
+					};
+					class Unit1
+					{
+						position[] = {5, -5, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_soldier_EMP_F";
+					};
+				};
+				class I_E_InfSquad_E
+				{
+					faction = "IND_E_EMP_F";
+					icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+					name = "Rifle Squad";
+					side = 2;
+					class Unit0
+					{
+						position[] = {0, 0, 0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "I_E_soldier_SL_EMP_F";
+					};
+					class Unit1
+					{
+						position[] = {5, -5, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_RadioOperator_EMP_F";
+					};
+					class Unit2
+					{
+						position[] = {-5, -5, 0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "I_E_soldier_LAT2_EMP_F";
+					};
+					class Unit3
+					{
+						position[] = {10, -10, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_soldier_M_EMP_F";
+					};
+					class Unit4
+					{
+						position[] = {-10, -10, 0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "I_E_soldier_TL_EMP_F";
+					};
+					class Unit5
+					{
+						position[] = {15, -15, 0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "I_E_soldier_AR_EMP_F";
+					};
+					class Unit6
+					{
+						position[] = {-15, -15, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_soldier_EMP_F";
+					};
+					class Unit7
+					{
+						position[] = {20, -20, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_medic_EMP_F";
+					};
+				};
+				class I_E_InfTeam
+				{
+					faction = "IND_E_EMP_F";
+					icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+					name = "Fire Team";
+					side = 2;
+					class Unit0
+					{
+						position[] = {0, 0, 0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "I_E_soldier_TL_EMP_F";
+					};
+					class Unit1
+					{
+						position[] = {5, -5, 0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "I_E_soldier_AR_EMP_F";
+					};
+					class Unit2
+					{
+						position[] = {-5, -5, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_soldier_GL_EMP_F";
+					};
+					class Unit3
+					{
+						position[] = {10, -10, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_RadioOperator_EMP_F";
+					};
+				};
+			};
+			class Motorized
+			{
+				name = "Motorized Infantry";
+				class I_E_MotInf_Reinforcements
+				{
+					faction = "IND_E_EMP_F";
+					icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+					name = "Motorized Reinforcements";
+					side = 2;
+					class Unit0
+					{
+						position[] = {0, 0, 0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "I_E_Truck_02_transport_EMP_F";
+					};
+					class Unit1
+					{
+						position[] = {5, 0, 0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "I_E_soldier_SL_EMP_F";
+					};
+					class Unit10
+					{
+						position[] = {-5, -2, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_soldier_EMP_F";
+					};
+					class Unit11
+					{
+						position[] = {-5, -4, 0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "I_E_soldier_LAT2_EMP_F";
+					};
+					class Unit12
+					{
+						position[] = {-5, -6, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_soldier_M_EMP_F";
+					};
+					class Unit13
+					{
+						position[] = {-5, -8, 0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "I_E_soldier_TL_EMP_F";
+					};
+					class Unit14
+					{
+						position[] = {-5, -10, 0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "I_E_soldier_AR_EMP_F";
+					};
+					class Unit15
+					{
+						position[] = {-5, -12, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_soldier_EMP_F";
+					};
+					class Unit16
+					{
+						position[] = {-5, -14, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_medic_EMP_F";
+					};
+					class Unit2
+					{
+						position[] = {5, -2, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_soldier_EMP_F";
+					};
+					class Unit3
+					{
+						position[] = {5, -4, 0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "I_E_soldier_LAT2_EMP_F";
+					};
+					class Unit4
+					{
+						position[] = {5, -6, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_soldier_M_EMP_F";
+					};
+					class Unit5
+					{
+						position[] = {5, -8, 0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "I_E_soldier_TL_EMP_F";
+					};
+					class Unit6
+					{
+						position[] = {5, -10, 0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "I_E_soldier_AR_EMP_F";
+					};
+					class Unit7
+					{
+						position[] = {5, -12, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_soldier_EMP_F";
+					};
+					class Unit8
+					{
+						position[] = {5, -14, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_medic_EMP_F";
+					};
+					class Unit9
+					{
+						position[] = {-5, 0, 0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "I_E_soldier_SL_EMP_F";
+					};
+				};
+				class I_E_MotInf_Squad
+				{
+					faction = "IND_E_EMP_F";
+					icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+					name = "Motorized Infantry Squad";
+					side = 2;
+					class Unit0
+					{
+						position[] = {0, 0, 0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "I_E_Truck_02_transport_EMP_F";
+					};
+					class Unit1
+					{
+						position[] = {5, 0, 0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "I_E_soldier_SL_EMP_F";
+					};
+					class Unit2
+					{
+						position[] = {5, -2, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_soldier_EMP_F";
+					};
+					class Unit3
+					{
+						position[] = {5, -4, 0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "I_E_soldier_LAT2_EMP_F";
+					};
+					class Unit4
+					{
+						position[] = {5, -6, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_soldier_M_EMP_F";
+					};
+					class Unit5
+					{
+						position[] = {5, -8, 0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "I_E_soldier_TL_EMP_F";
+					};
+					class Unit6
+					{
+						position[] = {5, -10, 0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "I_E_soldier_AR_EMP_F";
+					};
+					class Unit7
+					{
+						position[] = {5, -12, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_soldier_EMP_F";
+					};
+					class Unit8
+					{
+						position[] = {5, -14, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_medic_EMP_F";
+					};
+				};
+				class I_E_MotInf_Team
+				{
+					faction = "IND_E_EMP_F";
+					icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+					name = "Motorized Team";
+					side = 2;
+					class Unit0
+					{
+						position[] = {0, 0, 0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "I_E_Offroad_01_EMP_F";
+					};
+					class Unit1
+					{
+						position[] = {5, 0, 0};
+						rank = "SERGEANT";
+						side = 2;
+						vehicle = "I_E_soldier_TL_EMP_F";
+					};
+					class Unit2
+					{
+						position[] = {5, -2, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_RadioOperator_EMP_F";
+					};
+					class Unit3
+					{
+						position[] = {5, -4, 0};
+						rank = "CORPORAL";
+						side = 2;
+						vehicle = "I_E_Soldier_EMP_F";
+					};
+					class Unit4
+					{
+						position[] = {5, -6, 0};
+						rank = "PRIVATE";
+						side = 2;
+						vehicle = "I_E_Soldier_AR_EMP_F";
+					};
+				};
+			};
+		};
 		class IND_E_F
 		{
 			name = "LDF";
@@ -15061,6 +15483,133 @@ class CfgGroups
 						rank = "PRIVATE";
 						side = 1;
 						vehicle = "B_T_support_AMort_F";
+					};
+				};
+			};
+		};
+		class BLU_W_EMP_F
+		{
+			name = "NATO (Woodland, EMP)";
+			class Infantry_EMP
+			{
+				name = "Infantry";
+				class B_W_InfSentry
+				{
+					faction = "BLU_W_EMP_F";
+					icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+					name = "Sentry";
+					side = 1;
+					class Unit0
+					{
+						position[] = {0, 0, 0};
+						rank = "CORPORAL";
+						side = 1;
+						vehicle = "B_W_soldier_GL_EMP_F";
+					};
+					class Unit1
+					{
+						position[] = {5, -5, 0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "B_W_soldier_EMP_F";
+					};
+				};
+				class B_W_InfSquad
+				{
+					faction = "BLU_W_EMP_F";
+					icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+					name = "Rifle Squad";
+					side = 1;
+					class Unit0
+					{
+						position[] = {0, 0, 0};
+						rank = "SERGEANT";
+						side = 1;
+						vehicle = "B_W_soldier_SL_EMP_F";
+					};
+					class Unit1
+					{
+						position[] = {5, -5, 0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "B_W_Soldier_A_EMP_F";
+					};
+					class Unit2
+					{
+						position[] = {-5, -5, 0};
+						rank = "CORPORAL";
+						side = 1;
+						vehicle = "B_W_Soldier_EMP_F";
+					};
+					class Unit3
+					{
+						position[] = {10, -10, 0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "B_W_soldier_M_EMP_F";
+					};
+					class Unit4
+					{
+						position[] = {-10, -10, 0};
+						rank = "SERGEANT";
+						side = 1;
+						vehicle = "B_W_soldier_TL_EMP_F";
+					};
+					class Unit5
+					{
+						position[] = {15, -15, 0};
+						rank = "CORPORAL";
+						side = 1;
+						vehicle = "B_W_soldier_AR_EMP_F";
+					};
+					class Unit6
+					{
+						position[] = {-15, -15, 0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "B_W_Soldier_LAT2_EMP_F";
+					};
+					class Unit7
+					{
+						position[] = {20, -20, 0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "B_W_medic_EMP_F";
+					};
+				};
+				class B_W_InfTeam
+				{
+					faction = "BLU_W_EMP_F";
+					icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+					name = "Fire Team";
+					side = 1;
+					class Unit0
+					{
+						position[] = {0, 0, 0};
+						rank = "SERGEANT";
+						side = 1;
+						vehicle = "B_W_soldier_TL_EMP_F";
+					};
+					class Unit1
+					{
+						position[] = {5, -5, 0};
+						rank = "CORPORAL";
+						side = 1;
+						vehicle = "B_W_soldier_AR_EMP_F";
+					};
+					class Unit2
+					{
+						position[] = {-5, -5, 0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "B_W_soldier_GL_EMP_F";
+					};
+					class Unit3
+					{
+						position[] = {10, -10, 0};
+						rank = "PRIVATE";
+						side = 1;
+						vehicle = "B_W_Soldier_LAT2_EMP_F";
 					};
 				};
 			};

@@ -9,7 +9,7 @@ class RscDisplayConfigure
 	scriptPath = "GUI";
 	class controls
 	{
-		class ButtonKeyboard: RscButtonMenu
+		class ButtonKeyboard: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 2400;
@@ -18,7 +18,7 @@ class RscDisplayConfigure
 			x = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
 			y = "2.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 		};
-		class ButtonMouse: RscButtonMenu
+		class ButtonMouse: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 2401;
@@ -62,7 +62,7 @@ class RscDisplayConfigure
 			x = "7.35 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
 			y = "23 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 		};
-		class CA_ValueJoystick: RscButtonMenu
+		class CA_ValueJoystick: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 106;

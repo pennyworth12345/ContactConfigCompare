@@ -74,7 +74,7 @@ class CfgActions
 	};
 	class Assemble: None
 	{
-		priority = 6;
+		priority = 5.2;
 		showWindow = 0;
 		text = "Assemble %1";
 		textDefault = "Assemble %1";
@@ -97,6 +97,7 @@ class CfgActions
 	};
 	class BackFromUAV: None
 	{
+		shortcut = "GetOut";
 		text = "Release UAV controls";
 		textDefault = "Release UAV controls";
 	};
@@ -306,6 +307,7 @@ class CfgActions
 	class FireInflame: None
 	{
 		priority = 0.99;
+		show = 0;
 		showWindow = 1;
 		text = "Light fire";
 		textDefault = "Light fire";
@@ -313,6 +315,7 @@ class CfgActions
 	class FirePutDown: None
 	{
 		priority = 0.99;
+		show = 0;
 		showWindow = 1;
 		text = "Put out fire";
 		textDefault = "Put out fire";
@@ -702,7 +705,7 @@ class CfgActions
 	class LoadOtherMagazine: LoadMagazine
 	{
 		priority = 2;
-		show = 1;
+		show = 0;
 		showWindow = 0;
 	};
 	class LoadVehicle: None

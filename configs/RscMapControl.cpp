@@ -1,62 +1,76 @@
 class RscMapControl
 {
 	access = 0;
-	alphaFadeEndScale = 2;
-	alphaFadeStartScale = 2;
-	colorBackground[] = {0.969, 0.957, 0.949, 1};
+	alphaFadeEndScale = 2e-005;
+	alphaFadeStartScale = 1e-005;
+	colorBackground[] = {1, 1, 1, 1};
 	colorCountlines[] = {0.572, 0.354, 0.188, 0.25};
-	colorCountlinesWater[] = {0.491, 0.577, 0.702, 0.3};
-	colorForest[] = {0.624, 0.78, 0.388, 0.5};
-	colorForestBorder[] = {0, 0, 0, 0};
-	colorGrid[] = {0.1, 0.1, 0.1, 0.6};
-	colorGridMap[] = {0.1, 0.1, 0.1, 0.6};
+	colorCountlinesWater[] = {0.491, 0.577, 0.702, 0.25};
+	colorForest[] = {0.384314, 0.729412, 0, 0.25};
+	colorForestBorder[] = {0.384314, 0.729412, 0, 0};
+	colorForestTextured[] = {0.384314, 0.729412, 0, 0.25};
+	colorGrid[] = {0, 0, 0, 0.3};
+	colorGridMap[] = {0, 0, 0, 0.3};
 	colorInactive[] = {1, 1, 1, 0.5};
-	colorLevels[] = {0.286, 0.177, 0.094, 0.5};
+	colorLevels[] = {0, 0, 0, 0.5};
 	colorMainCountlines[] = {0.572, 0.354, 0.188, 0.5};
-	colorMainCountlinesWater[] = {0.491, 0.577, 0.702, 0.6};
-	colorMainRoads[] = {0.9, 0.5, 0.3, 1};
-	colorMainRoadsFill[] = {1, 0.6, 0.4, 1};
+	colorMainCountlinesWater[] = {0.491, 0.577, 0.702, 0.5};
+	colorMainRoads[] = {0.909804, 0.647059, 0.254902, 1};
+	colorMainRoadsFill[] = {0.968627, 0.580392, 0.113725, 1};
 	colorNames[] = {0.1, 0.1, 0.1, 0.9};
 	colorOutside[] = {0, 0, 0, 1};
-	colorPowerLines[] = {0.1, 0.1, 0.1, 1};
+	colorPowerLines[] = {0, 0, 0, 1};
 	colorRailWay[] = {0.8, 0.2, 0, 1};
-	colorRoads[] = {0.7, 0.7, 0.7, 1};
-	colorRoadsFill[] = {1, 1, 1, 1};
-	colorRocks[] = {0, 0, 0, 0.3};
-	colorRocksBorder[] = {0, 0, 0, 0};
-	colorSea[] = {0.467, 0.631, 0.851, 0.5};
+	colorRoads[] = {0.705882, 0.705882, 0.705882, 0.75};
+	colorRoadsFill[] = {1, 0.843137, 0.407843, 1};
+	colorRocks[] = {0.615686, 0.631373, 0.552941, 0};
+	colorRocksBorder[] = {0.615686, 0.631373, 0.552941, 0};
+	colorSea[] = {0.290196, 0.615686, 0.886275, 0.5};
 	colorText[] = {0, 0, 0, 1};
-	colorTracks[] = {0.84, 0.76, 0.65, 0.15};
-	colorTracksFill[] = {0.84, 0.76, 0.65, 1};
+	colorTown[] = {0.756863, 0.737255, 0.733333, 1};
+	colorTownBorder[] = {0, 0, 0, 0};
+	colorTracks[] = {0.647059, 0.611765, 0.494118, 0.5};
+	colorTracksFill[] = {0.647059, 0.611765, 0.494118, 1};
 	colorTrails[] = {0.84, 0.76, 0.65, 0.15};
 	colorTrailsFill[] = {0.84, 0.76, 0.65, 0.65};
 	deletable = 0;
+	drawObjects = 1;
+	drawShaded = 0.25;
 	fade = 0;
 	font = "TahomaB";
 	fontGrid = "TahomaB";
 	fontInfo = "RobotoCondensed";
 	fontLabel = "RobotoCondensed";
 	fontLevel = "TahomaB";
-	fontNames = "RobotoCondensed";
+	fontNames = "Caveat";
 	fontUnits = "TahomaB";
-	h = "SafeZoneH - 1.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	h = "safezoneH";
 	idc = 51;
 	idcMarkerColor = -1;
 	idcMarkerIcon = -1;
+	mapOrientation = 0;
 	maxSatelliteAlpha = 0.85;
-	moveOnEdges = 1;
+	moveOnEdges = 0;
 	ptsPerSquareCLn = 10;
 	ptsPerSquareCost = 10;
 	ptsPerSquareExp = 10;
-	ptsPerSquareFor = 9;
-	ptsPerSquareForEdge = 9;
-	ptsPerSquareObj = 9;
-	ptsPerSquareRoad = 6;
-	ptsPerSquareSea = 5;
+	ptsPerSquareFor = 14;
+	ptsPerSquareForEdge = 1000;
+	ptsPerSquareForLod1 = 7;
+	ptsPerSquareForLod2 = 1;
+	ptsPerSquareMainRoad = 14;
+	ptsPerSquareMainRoadSimple = 1;
+	ptsPerSquareObj = 14;
+	ptsPerSquareObjLod1 = 14;
+	ptsPerSquareRoad = 14;
+	ptsPerSquareRoadSimple = 1;
+	ptsPerSquareSea = 20;
+	ptsPerSquareTown = 1;
+	ptsPerSquareTownEdge = 7;
 	ptsPerSquareTxt = 20;
 	scaleDefault = 0.16;
-	scaleMax = 1;
-	scaleMin = 0.001;
+	scaleMax = 0.6;
+	scaleMin = 0.04;
 	shadow = 0;
 	showCountourInterval = 0;
 	showMarkers = 1;
@@ -65,18 +79,19 @@ class RscMapControl
 	sizeExInfo = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 	sizeExLabel = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 	sizeExLevel = 0.02;
-	sizeExNames = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8) * 2";
+	sizeExNames = 0.125;
 	sizeExUnits = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 	stickX[] = {0.2, {"Gamma", 1, 1.5}};
 	stickY[] = {0.2, {"Gamma", 1, 1.5}};
 	style = 48;
-	text = "#(argb,8,8,3)color(1,1,1,1)";
+	text = "#(rgb,1,1,1)color(1,1,1,1)";
 	textureComboBoxColor = "#(argb,8,8,3)color(1,1,1,1)";
 	type = 101;
-	w = "SafeZoneWAbs";
+	w = "safezoneWAbs";
+	widthPowerLines = 3;
 	widthRailWay = 4;
-	x = "SafeZoneXAbs";
-	y = "SafeZoneY + 1.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	x = "safezoneXAbs";
+	y = "safezoneY";
 	class ActiveMarker
 	{
 		color[] = {0.3, 0.1, 0.9, 1};
@@ -105,16 +120,16 @@ class RscMapControl
 		coefMax = 1;
 		coefMin = 0.85;
 		color[] = {1, 1, 1, 1};
-		icon = "\A3\ui_f\data\map\mapcontrol\busstop_CA.paa";
+		icon = "\A3\ui_f_contact\data\rscmapcontrol\BusStop_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 48;
 	};
 	class Chapel
 	{
 		coefMax = 1;
 		coefMin = 0.85;
-		color[] = {0, 0, 0, 1};
-		icon = "\A3\ui_f\data\map\mapcontrol\Chapel_CA.paa";
+		color[] = {1, 1, 1, 1};
+		icon = "\A3\ui_f_contact\data\rscmapcontrol\Chapel_CA.paa";
 		importance = 1;
 		size = 24;
 	};
@@ -123,9 +138,9 @@ class RscMapControl
 		coefMax = 1;
 		coefMin = 0.85;
 		color[] = {1, 1, 1, 1};
-		icon = "\A3\ui_f\data\map\mapcontrol\church_CA.paa";
+		icon = "\A3\ui_f_contact\data\rscmapcontrol\Church_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 48;
 	};
 	class Command
 	{
@@ -140,8 +155,8 @@ class RscMapControl
 	{
 		coefMax = 1;
 		coefMin = 0.85;
-		color[] = {0, 0, 0, 1};
-		icon = "\A3\ui_f\data\map\mapcontrol\Cross_CA.paa";
+		color[] = {1, 1, 1, 1};
+		icon = "\A3\ui_f_contact\data\rscmapcontrol\Cross_CA.paa";
 		importance = 1;
 		size = 24;
 	};
@@ -149,10 +164,10 @@ class RscMapControl
 	{
 		coefMax = 1;
 		coefMin = 1;
-		color[] = {1, 1, 1, 1};
-		icon = "\a3\ui_f\data\map\mapcontrol\custommark_ca.paa";
+		color[] = {1, 1, 0, 1};
+		icon = "\A3\ui_f_contact\data\rscmapcontrol\customMark_ca.paa";
 		importance = 1;
-		size = 18;
+		size = 32;
 	};
 	class Fortress
 	{
@@ -177,7 +192,7 @@ class RscMapControl
 		coefMax = 1;
 		coefMin = 0.85;
 		color[] = {1, 1, 1, 1};
-		icon = "\A3\ui_f\data\map\mapcontrol\fuelstation_CA.paa";
+		icon = "\A3\ui_f_contact\data\rscmapcontrol\FuelStation_CA.paa";
 		importance = 1;
 		size = 24;
 	};
@@ -186,7 +201,7 @@ class RscMapControl
 		coefMax = 1;
 		coefMin = 0.85;
 		color[] = {1, 1, 1, 1};
-		icon = "\A3\ui_f\data\map\mapcontrol\hospital_CA.paa";
+		icon = "\A3\ui_f_contact\data\rscmapcontrol\Hospital_CA.paa";
 		importance = 1;
 		size = 24;
 	};
@@ -206,7 +221,7 @@ class RscMapControl
 		coefMax = 1;
 		coefMin = 0.85;
 		color[] = {1, 1, 1, 1};
-		icon = "\A3\ui_f\data\map\mapcontrol\lighthouse_CA.paa";
+		icon = "\A3\ui_f_contact\data\rscmapcontrol\Lighthouse_CA.paa";
 		importance = 1;
 		size = 24;
 	};
@@ -223,7 +238,7 @@ class RscMapControl
 		coefMax = 1;
 		coefMin = 0.85;
 		color[] = {1, 1, 1, 1};
-		icon = "\A3\ui_f\data\map\mapcontrol\power_CA.paa";
+		icon = "\A3\ui_f_contact\data\rscmapcontrol\Power_CA.paa";
 		importance = 1;
 		size = 24;
 	};
@@ -232,7 +247,7 @@ class RscMapControl
 		coefMax = 1;
 		coefMin = 0.85;
 		color[] = {1, 1, 1, 1};
-		icon = "\A3\ui_f\data\map\mapcontrol\powersolar_CA.paa";
+		icon = "\A3\ui_f_contact\data\rscmapcontrol\PowerSolar_CA.paa";
 		importance = 1;
 		size = 24;
 	};
@@ -241,7 +256,7 @@ class RscMapControl
 		coefMax = 1;
 		coefMin = 0.85;
 		color[] = {1, 1, 1, 1};
-		icon = "\A3\ui_f\data\map\mapcontrol\powerwave_CA.paa";
+		icon = "\A3\ui_f_contact\data\rscmapcontrol\PowerWave_CA.paa";
 		importance = 1;
 		size = 24;
 	};
@@ -250,27 +265,27 @@ class RscMapControl
 		coefMax = 1;
 		coefMin = 0.85;
 		color[] = {1, 1, 1, 1};
-		icon = "\A3\ui_f\data\map\mapcontrol\powerwind_CA.paa";
+		icon = "\A3\ui_f_contact\data\rscmapcontrol\PowerWind_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 48;
 	};
 	class Quay
 	{
 		coefMax = 1;
 		coefMin = 0.85;
 		color[] = {1, 1, 1, 1};
-		icon = "\A3\ui_f\data\map\mapcontrol\quay_CA.paa";
+		icon = "\A3\ui_f_contact\data\rscmapcontrol\Quay_CA.paa";
 		importance = 1;
 		size = 24;
 	};
 	class Rock
 	{
-		coefMax = 4;
-		coefMin = 0.25;
-		color[] = {0.1, 0.1, 0.1, 0.8};
-		icon = "\A3\ui_f\data\map\mapcontrol\rock_ca.paa";
-		importance = "0.5 * 12 * 0.05";
-		size = 12;
+		coefMax = 1;
+		coefMin = 0.85;
+		color[] = {1, 1, 1, 1};
+		icon = "\A3\ui_f_contact\data\rscmapcontrol\Rock_CA.paa";
+		importance = 1;
+		size = 24;
 	};
 	class Ruin
 	{
@@ -285,8 +300,8 @@ class RscMapControl
 	{
 		coefMax = 1;
 		coefMin = 0.85;
-		color[] = {0, 0, 0, 1};
-		icon = "\A3\ui_f\data\map\mapcontrol\Shipwreck_CA.paa";
+		color[] = {1, 1, 1, 1};
+		icon = "\A3\ui_f_contact\data\rscmapcontrol\Shipwreck_CA.paa";
 		importance = 1;
 		size = 24;
 	};
@@ -345,9 +360,9 @@ class RscMapControl
 		coefMax = 1;
 		coefMin = 0.85;
 		color[] = {1, 1, 1, 1};
-		icon = "\A3\ui_f\data\map\mapcontrol\transmitter_CA.paa";
+		icon = "\A3\ui_f_contact\data\rscmapcontrol\Transmitter_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 48;
 	};
 	class Tree
 	{
@@ -372,9 +387,9 @@ class RscMapControl
 		coefMax = 1;
 		coefMin = 0.85;
 		color[] = {1, 1, 1, 1};
-		icon = "\A3\ui_f\data\map\mapcontrol\watertower_CA.paa";
+		icon = "\A3\ui_f_contact\data\rscmapcontrol\WaterTower_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 48;
 	};
 	class Waypoint
 	{

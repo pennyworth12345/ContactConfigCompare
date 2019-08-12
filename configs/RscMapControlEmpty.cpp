@@ -20,15 +20,26 @@ class RscMapControlEmpty: RscMapControl
 	colorRocks[] = {0, 0, 0, 0};
 	colorRocksBorder[] = {0, 0, 0, 0};
 	colorSea[] = {0, 0, 0, 0};
+	drawObjects = 0;
+	drawShaded = 0;
 	ptsPerSquareCLn = 1000;
 	ptsPerSquareCost = 1000;
 	ptsPerSquareExp = 1000;
 	ptsPerSquareFor = 1000;
 	ptsPerSquareForEdge = 1000;
+	ptsPerSquareForLod1 = 1000;
+	ptsPerSquareForLod2 = 1000;
+	ptsPerSquareMainRoad = 1000;
+	ptsPerSquareMainRoadSimple = 1000;
 	ptsPerSquareObj = 1000;
+	ptsPerSquareObjLod1 = 1000;
 	ptsPerSquareRoad = 1000;
+	ptsPerSquareRoadSimple = 1000;
 	ptsPerSquareSea = 1000;
+	ptsPerSquareTown = 1000;
+	ptsPerSquareTownEdge = 1000;
 	ptsPerSquareTxt = 1000;
+	text = "#(rgb,1,1,1)color(1,1,1,1)";
 	type = 101;
 	class Bunker: Bunker
 	{

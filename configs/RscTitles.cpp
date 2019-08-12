@@ -316,6 +316,16 @@ class RscTitles
 		onLoad = "uiNamespace setVariable ['bis_animatedScreen_displayOverlay',_this select 0];";
 		class Controls {};
 	};
+	class RscBlindfold: RscCBRN_APR
+	{
+		class Controls: Controls
+		{
+			class Texture: Texture
+			{
+				text = "\a3\ui_f_contact\data\objects\data\optics_blindfold_CA.paa";
+			};
+		};
+	};
 	class RscCameraPIP
 	{
 		duration = 1e+011;
@@ -342,6 +352,59 @@ class RscTitles
 				w = "16 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 				x = "safezoneX + 0.15 * safezoneW";
 				y = "safezoneY + 0.05 * safezoneH";
+			};
+		};
+	};
+	class RscCBRN_APR
+	{
+		duration = 1000;
+		fadeIn = 0;
+		idd = -1;
+		movingEnable = 0;
+		class Controls
+		{
+			class BlackLeft: RscText
+			{
+				colorBackground[] = {0, 0, 0, 1};
+				h = "safezoneH";
+				w = 10;
+				x = "-9.5 - safezoneH * 	1.8 * 0.5";
+				y = "safezoneY";
+			};
+			class BlackRight: BlackLeft
+			{
+				x = "0.5 + safezoneH * 	1.8 * 0.5";
+			};
+			class Texture: RscPicture
+			{
+				angle = 180;
+				h = "safezoneH * 	1.8";
+				text = "\a3\ui_f_contact\data\objects\data\optics_apr_ca.paa";
+				w = "safezoneH * 	1.8";
+				x = "0.5 - safezoneH * 	1.8 * 0.5";
+				y = "0.5 - safezoneH * 	1.8 * 0.5";
+			};
+		};
+	};
+	class RscCBRN_APR_02: RscCBRN_APR
+	{
+		class Controls: Controls
+		{
+			class BlackLeft: BlackLeft {};
+			class BlackRight: BlackRight {};
+			class Texture: Texture
+			{
+				text = "\a3\ui_f_contact\data\objects\data\optics_APR_02_CA.paa";
+			};
+		};
+	};
+	class RscCBRN_Regulator: RscCBRN_APR
+	{
+		class Controls: Controls
+		{
+			class Texture: Texture
+			{
+				text = "\a3\ui_f_contact\data\objects\data\optics_regulator_CA.paa";
 			};
 		};
 	};
@@ -1143,6 +1206,1256 @@ class RscTitles
 			class Vignette: RscVignette
 			{
 				idc = 114998;
+			};
+		};
+	};
+	class RscCompass
+	{
+		duration = 1e+010;
+		fadein = 0;
+		fadeout = 0;
+		idd = -1;
+		movingEnable = 0;
+		class Controls
+		{
+			class Compass: RscHorizontalCompass
+			{
+				h = "(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+				w = "(12 * 			(			((safezoneW / safezoneH) min 1.2) / 40))";
+				x = "0.5 - 	(12 * 			(			((safezoneW / safezoneH) min 1.2) / 40)) / 2";
+				y = "safezoneY + 0.5 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+			};
+		};
+	};
+	class RscContactCredits
+	{
+		duration = 1e+010;
+		fadein = 0;
+		fadeout = 0;
+		idd = -1;
+		movingEnable = 0;
+		onLoad = "[""onLoad"",_this,""RscContactCredits"",'ContactTitles'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		onUnload = "[""onUnload"",_this,""RscContactCredits"",'ContactTitles'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		scriptName = "RscContactCredits";
+		scriptPath = "ContactTitles";
+		class Controls
+		{
+			class Grid: RscControlsGroupNoScrollbars
+			{
+				h = "safezoneH";
+				w = "safezoneW";
+				x = "safezoneX";
+				y = "safezoneY";
+				class Controls
+				{
+					class Grid_H00: RscPicture
+					{
+						h = "1 * pixelH";
+						text = "#(rgb,1,1,1)color(0.196078,0.223529,0.239216,1)";
+						w = "safezoneW";
+						x = 0;
+						y = "pixelH";
+					};
+					class Grid_H01: Grid_H00
+					{
+						y = "(01 / 	5) * 			safezoneH - (01 / 	5) * 	1 * pixelH";
+					};
+					class Grid_H02: Grid_H00
+					{
+						y = "(02 / 	5) * 			safezoneH - (02 / 	5) * 	1 * pixelH";
+					};
+					class Grid_H03: Grid_H00
+					{
+						y = "(03 / 	5) * 			safezoneH - (03 / 	5) * 	1 * pixelH";
+					};
+					class Grid_H04: Grid_H00
+					{
+						y = "(04 / 	5) * 			safezoneH - (04 / 	5) * 	1 * pixelH";
+					};
+					class Grid_H05: Grid_H00
+					{
+						y = "(05 / 	5) * 			safezoneH - (05 / 	5) * 	1 * pixelH";
+					};
+					class Grid_H06: Grid_H00
+					{
+						y = "(06 / 	5) * 			safezoneH - (06 / 	5) * 	1 * pixelH";
+					};
+					class Grid_H07: Grid_H00
+					{
+						y = "(07 / 	5) * 			safezoneH - (07 / 	5) * 	1 * pixelH";
+					};
+					class Grid_H08: Grid_H00
+					{
+						y = "(08 / 	5) * 			safezoneH - (08 / 	5) * 	1 * pixelH";
+					};
+					class Grid_H09: Grid_H00
+					{
+						y = "(09 / 	5) * 			safezoneH - (09 / 	5) * 	1 * pixelH";
+					};
+					class Grid_H10: Grid_H00
+					{
+						y = "(10 / 	5) * 			safezoneH - (10 / 	5) * 	1 * pixelH";
+					};
+					class Grid_H11: Grid_H00
+					{
+						y = "(11 / 	5) * 			safezoneH - (11 / 	5) * 	1 * pixelH";
+					};
+					class Grid_V00: Grid_H00
+					{
+						h = "safezoneH";
+						w = "1 * pixelW";
+					};
+					class Grid_V01: Grid_V00
+					{
+						x = "(01 / 				11) * 			safezoneW - (01 / 				11) * 	1 * pixelW";
+					};
+					class Grid_V02: Grid_V00
+					{
+						x = "(02 / 				11) * 			safezoneW - (02 / 				11) * 	1 * pixelW";
+					};
+					class Grid_V03: Grid_V00
+					{
+						x = "(03 / 				11) * 			safezoneW - (03 / 				11) * 	1 * pixelW";
+					};
+					class Grid_V04: Grid_V00
+					{
+						x = "(04 / 				11) * 			safezoneW - (04 / 				11) * 	1 * pixelW";
+					};
+					class Grid_V05: Grid_V00
+					{
+						x = "(05 / 				11) * 			safezoneW - (05 / 				11) * 	1 * pixelW";
+					};
+					class Grid_V06: Grid_V00
+					{
+						x = "(06 / 				11) * 			safezoneW - (06 / 				11) * 	1 * pixelW";
+					};
+					class Grid_V07: Grid_V00
+					{
+						x = "(07 / 				11) * 			safezoneW - (07 / 				11) * 	1 * pixelW";
+					};
+					class Grid_V08: Grid_V00
+					{
+						x = "(08 / 				11) * 			safezoneW - (08 / 				11) * 	1 * pixelW";
+					};
+					class Grid_V09: Grid_V00
+					{
+						x = "(09 / 				11) * 			safezoneW - (09 / 				11) * 	1 * pixelW";
+					};
+					class Grid_V10: Grid_V00
+					{
+						x = "(10 / 				11) * 			safezoneW - (10 / 				11) * 	1 * pixelW";
+					};
+					class Grid_V11: Grid_V00
+					{
+						x = "(11 / 				11) * 			safezoneW - (11 / 				11) * 	1 * pixelW";
+					};
+				};
+			};
+			class Lines: RscControlsGroupNoScrollbars
+			{
+				h = "safezoneH";
+				idc = 1999;
+				w = "safezoneW";
+				x = "safezoneX";
+				y = "safezoneY";
+				class Controls
+				{
+					class Line00: RscLine
+					{
+						colorText[] = {1, 0.8, 0, 1};
+						idc = 2000;
+						w = "(-			safezoneW / 101)";
+						x = 0;
+					};
+					class Line01: Line00
+					{
+						idc = 2001;
+						x = "(			safezoneW / 101) * (01 + 	0)";
+					};
+					class Line02: Line00
+					{
+						idc = 2002;
+						x = "(			safezoneW / 101) * (02 + 	0)";
+					};
+					class Line03: Line00
+					{
+						idc = 2003;
+						x = "(			safezoneW / 101) * (03 + 	0)";
+					};
+					class Line04: Line00
+					{
+						idc = 2004;
+						x = "(			safezoneW / 101) * (04 + 	0)";
+					};
+					class Line05: Line00
+					{
+						idc = 2005;
+						x = "(			safezoneW / 101) * (05 + 	0)";
+					};
+					class Line06: Line00
+					{
+						idc = 2006;
+						x = "(			safezoneW / 101) * (06 + 	0)";
+					};
+					class Line07: Line00
+					{
+						idc = 2007;
+						x = "(			safezoneW / 101) * (07 + 	0)";
+					};
+					class Line08: Line00
+					{
+						idc = 2008;
+						x = "(			safezoneW / 101) * (08 + 	0)";
+					};
+					class Line09: Line00
+					{
+						idc = 2009;
+						x = "(			safezoneW / 101) * (09 + 	0)";
+					};
+					class Line10: Line00
+					{
+						idc = 2010;
+						x = "(			safezoneW / 101) * (10 + 	0)";
+					};
+					class Line100: Line00
+					{
+						idc = 2100;
+						x = "(			safezoneW / 101) * (100 + 	0)";
+					};
+					class Line11: Line00
+					{
+						idc = 2011;
+						x = "(			safezoneW / 101) * (11 + 	0)";
+					};
+					class Line12: Line00
+					{
+						idc = 2012;
+						x = "(			safezoneW / 101) * (12 + 	0)";
+					};
+					class Line13: Line00
+					{
+						idc = 2013;
+						x = "(			safezoneW / 101) * (13 + 	0)";
+					};
+					class Line14: Line00
+					{
+						idc = 2014;
+						x = "(			safezoneW / 101) * (14 + 	0)";
+					};
+					class Line15: Line00
+					{
+						idc = 2015;
+						x = "(			safezoneW / 101) * (15 + 	0)";
+					};
+					class Line16: Line00
+					{
+						idc = 2016;
+						x = "(			safezoneW / 101) * (16 + 	0)";
+					};
+					class Line17: Line00
+					{
+						idc = 2017;
+						x = "(			safezoneW / 101) * (17 + 	0)";
+					};
+					class Line18: Line00
+					{
+						idc = 2018;
+						x = "(			safezoneW / 101) * (18 + 	0)";
+					};
+					class Line19: Line00
+					{
+						idc = 2019;
+						x = "(			safezoneW / 101) * (19 + 	0)";
+					};
+					class Line20: Line00
+					{
+						idc = 2020;
+						x = "(			safezoneW / 101) * (20 + 	0)";
+					};
+					class Line21: Line00
+					{
+						idc = 2021;
+						x = "(			safezoneW / 101) * (21 + 	0)";
+					};
+					class Line22: Line00
+					{
+						idc = 2022;
+						x = "(			safezoneW / 101) * (22 + 	0)";
+					};
+					class Line23: Line00
+					{
+						idc = 2023;
+						x = "(			safezoneW / 101) * (23 + 	0)";
+					};
+					class Line24: Line00
+					{
+						idc = 2024;
+						x = "(			safezoneW / 101) * (24 + 	0)";
+					};
+					class Line25: Line00
+					{
+						idc = 2025;
+						x = "(			safezoneW / 101) * (25 + 	0)";
+					};
+					class Line26: Line00
+					{
+						idc = 2026;
+						x = "(			safezoneW / 101) * (26 + 	0)";
+					};
+					class Line27: Line00
+					{
+						idc = 2027;
+						x = "(			safezoneW / 101) * (27 + 	0)";
+					};
+					class Line28: Line00
+					{
+						idc = 2028;
+						x = "(			safezoneW / 101) * (28 + 	0)";
+					};
+					class Line29: Line00
+					{
+						idc = 2029;
+						x = "(			safezoneW / 101) * (29 + 	0)";
+					};
+					class Line30: Line00
+					{
+						idc = 2030;
+						x = "(			safezoneW / 101) * (30 + 	0)";
+					};
+					class Line31: Line00
+					{
+						idc = 2031;
+						x = "(			safezoneW / 101) * (31 + 	0)";
+					};
+					class Line32: Line00
+					{
+						idc = 2032;
+						x = "(			safezoneW / 101) * (32 + 	0)";
+					};
+					class Line33: Line00
+					{
+						idc = 2033;
+						x = "(			safezoneW / 101) * (33 + 	0)";
+					};
+					class Line34: Line00
+					{
+						idc = 2034;
+						x = "(			safezoneW / 101) * (34 + 	0)";
+					};
+					class Line35: Line00
+					{
+						idc = 2035;
+						x = "(			safezoneW / 101) * (35 + 	0)";
+					};
+					class Line36: Line00
+					{
+						idc = 2036;
+						x = "(			safezoneW / 101) * (36 + 	0)";
+					};
+					class Line37: Line00
+					{
+						idc = 2037;
+						x = "(			safezoneW / 101) * (37 + 	0)";
+					};
+					class Line38: Line00
+					{
+						idc = 2038;
+						x = "(			safezoneW / 101) * (38 + 	0)";
+					};
+					class Line39: Line00
+					{
+						idc = 2039;
+						x = "(			safezoneW / 101) * (39 + 	0)";
+					};
+					class Line40: Line00
+					{
+						idc = 2040;
+						x = "(			safezoneW / 101) * (40 + 	0)";
+					};
+					class Line41: Line00
+					{
+						idc = 2041;
+						x = "(			safezoneW / 101) * (41 + 	0)";
+					};
+					class Line42: Line00
+					{
+						idc = 2042;
+						x = "(			safezoneW / 101) * (42 + 	0)";
+					};
+					class Line43: Line00
+					{
+						idc = 2043;
+						x = "(			safezoneW / 101) * (43 + 	0)";
+					};
+					class Line44: Line00
+					{
+						idc = 2044;
+						x = "(			safezoneW / 101) * (44 + 	0)";
+					};
+					class Line45: Line00
+					{
+						idc = 2045;
+						x = "(			safezoneW / 101) * (45 + 	0)";
+					};
+					class Line46: Line00
+					{
+						idc = 2046;
+						x = "(			safezoneW / 101) * (46 + 	0)";
+					};
+					class Line47: Line00
+					{
+						idc = 2047;
+						x = "(			safezoneW / 101) * (47 + 	0)";
+					};
+					class Line48: Line00
+					{
+						idc = 2048;
+						x = "(			safezoneW / 101) * (48 + 	0)";
+					};
+					class Line49: Line00
+					{
+						idc = 2049;
+						x = "(			safezoneW / 101) * (49 + 	0)";
+					};
+					class Line50: Line00
+					{
+						idc = 2050;
+						x = "(			safezoneW / 101) * (50 + 	0)";
+					};
+					class Line51: Line00
+					{
+						idc = 2051;
+						x = "(			safezoneW / 101) * (51 + 	0)";
+					};
+					class Line52: Line00
+					{
+						idc = 2052;
+						x = "(			safezoneW / 101) * (52 + 	0)";
+					};
+					class Line53: Line00
+					{
+						idc = 2053;
+						x = "(			safezoneW / 101) * (53 + 	0)";
+					};
+					class Line54: Line00
+					{
+						idc = 2054;
+						x = "(			safezoneW / 101) * (54 + 	0)";
+					};
+					class Line55: Line00
+					{
+						idc = 2055;
+						x = "(			safezoneW / 101) * (55 + 	0)";
+					};
+					class Line56: Line00
+					{
+						idc = 2056;
+						x = "(			safezoneW / 101) * (56 + 	0)";
+					};
+					class Line57: Line00
+					{
+						idc = 2057;
+						x = "(			safezoneW / 101) * (57 + 	0)";
+					};
+					class Line58: Line00
+					{
+						idc = 2058;
+						x = "(			safezoneW / 101) * (58 + 	0)";
+					};
+					class Line59: Line00
+					{
+						idc = 2059;
+						x = "(			safezoneW / 101) * (59 + 	0)";
+					};
+					class Line60: Line00
+					{
+						idc = 2060;
+						x = "(			safezoneW / 101) * (60 + 	0)";
+					};
+					class Line61: Line00
+					{
+						idc = 2061;
+						x = "(			safezoneW / 101) * (61 + 	0)";
+					};
+					class Line62: Line00
+					{
+						idc = 2062;
+						x = "(			safezoneW / 101) * (62 + 	0)";
+					};
+					class Line63: Line00
+					{
+						idc = 2063;
+						x = "(			safezoneW / 101) * (63 + 	0)";
+					};
+					class Line64: Line00
+					{
+						idc = 2064;
+						x = "(			safezoneW / 101) * (64 + 	0)";
+					};
+					class Line65: Line00
+					{
+						idc = 2065;
+						x = "(			safezoneW / 101) * (65 + 	0)";
+					};
+					class Line66: Line00
+					{
+						idc = 2066;
+						x = "(			safezoneW / 101) * (66 + 	0)";
+					};
+					class Line67: Line00
+					{
+						idc = 2067;
+						x = "(			safezoneW / 101) * (67 + 	0)";
+					};
+					class Line68: Line00
+					{
+						idc = 2068;
+						x = "(			safezoneW / 101) * (68 + 	0)";
+					};
+					class Line69: Line00
+					{
+						idc = 2069;
+						x = "(			safezoneW / 101) * (69 + 	0)";
+					};
+					class Line70: Line00
+					{
+						idc = 2070;
+						x = "(			safezoneW / 101) * (70 + 	0)";
+					};
+					class Line71: Line00
+					{
+						idc = 2071;
+						x = "(			safezoneW / 101) * (71 + 	0)";
+					};
+					class Line72: Line00
+					{
+						idc = 2072;
+						x = "(			safezoneW / 101) * (72 + 	0)";
+					};
+					class Line73: Line00
+					{
+						idc = 2073;
+						x = "(			safezoneW / 101) * (73 + 	0)";
+					};
+					class Line74: Line00
+					{
+						idc = 2074;
+						x = "(			safezoneW / 101) * (74 + 	0)";
+					};
+					class Line75: Line00
+					{
+						idc = 2075;
+						x = "(			safezoneW / 101) * (75 + 	0)";
+					};
+					class Line76: Line00
+					{
+						idc = 2076;
+						x = "(			safezoneW / 101) * (76 + 	0)";
+					};
+					class Line77: Line00
+					{
+						idc = 2077;
+						x = "(			safezoneW / 101) * (77 + 	0)";
+					};
+					class Line78: Line00
+					{
+						idc = 2078;
+						x = "(			safezoneW / 101) * (78 + 	0)";
+					};
+					class Line79: Line00
+					{
+						idc = 2079;
+						x = "(			safezoneW / 101) * (79 + 	0)";
+					};
+					class Line80: Line00
+					{
+						idc = 2080;
+						x = "(			safezoneW / 101) * (80 + 	0)";
+					};
+					class Line81: Line00
+					{
+						idc = 2081;
+						x = "(			safezoneW / 101) * (81 + 	0)";
+					};
+					class Line82: Line00
+					{
+						idc = 2082;
+						x = "(			safezoneW / 101) * (82 + 	0)";
+					};
+					class Line83: Line00
+					{
+						idc = 2083;
+						x = "(			safezoneW / 101) * (83 + 	0)";
+					};
+					class Line84: Line00
+					{
+						idc = 2084;
+						x = "(			safezoneW / 101) * (84 + 	0)";
+					};
+					class Line85: Line00
+					{
+						idc = 2085;
+						x = "(			safezoneW / 101) * (85 + 	0)";
+					};
+					class Line86: Line00
+					{
+						idc = 2086;
+						x = "(			safezoneW / 101) * (86 + 	0)";
+					};
+					class Line87: Line00
+					{
+						idc = 2087;
+						x = "(			safezoneW / 101) * (87 + 	0)";
+					};
+					class Line88: Line00
+					{
+						idc = 2088;
+						x = "(			safezoneW / 101) * (88 + 	0)";
+					};
+					class Line89: Line00
+					{
+						idc = 2089;
+						x = "(			safezoneW / 101) * (89 + 	0)";
+					};
+					class Line90: Line00
+					{
+						idc = 2090;
+						x = "(			safezoneW / 101) * (90 + 	0)";
+					};
+					class Line91: Line00
+					{
+						idc = 2091;
+						x = "(			safezoneW / 101) * (91 + 	0)";
+					};
+					class Line92: Line00
+					{
+						idc = 2092;
+						x = "(			safezoneW / 101) * (92 + 	0)";
+					};
+					class Line93: Line00
+					{
+						idc = 2093;
+						x = "(			safezoneW / 101) * (93 + 	0)";
+					};
+					class Line94: Line00
+					{
+						idc = 2094;
+						x = "(			safezoneW / 101) * (94 + 	0)";
+					};
+					class Line95: Line00
+					{
+						idc = 2095;
+						x = "(			safezoneW / 101) * (95 + 	0)";
+					};
+					class Line96: Line00
+					{
+						idc = 2096;
+						x = "(			safezoneW / 101) * (96 + 	0)";
+					};
+					class Line97: Line00
+					{
+						idc = 2097;
+						x = "(			safezoneW / 101) * (97 + 	0)";
+					};
+					class Line98: Line00
+					{
+						idc = 2098;
+						x = "(			safezoneW / 101) * (98 + 	0)";
+					};
+					class Line99: Line00
+					{
+						idc = 2099;
+						x = "(			safezoneW / 101) * (99 + 	0)";
+					};
+					class LineOld00: RscPicture
+					{
+						colorText[] = {0.262745, 0.243137, 0.113725, 1};
+						idc = 3000;
+						text = "\a3\UI_F_Contact\Data\RscIngameUI\RscWeaponSpectrumAnalyzer\lineOld_ca.paa";
+						w = "(			safezoneW / 101)";
+						x = 0;
+					};
+					class LineOld01: LineOld00
+					{
+						idc = 3001;
+						x = "(			safezoneW / 101) * (01 + 	-0.5)";
+					};
+					class LineOld02: LineOld00
+					{
+						idc = 3002;
+						x = "(			safezoneW / 101) * (02 + 	-0.5)";
+					};
+					class LineOld03: LineOld00
+					{
+						idc = 3003;
+						x = "(			safezoneW / 101) * (03 + 	-0.5)";
+					};
+					class LineOld04: LineOld00
+					{
+						idc = 3004;
+						x = "(			safezoneW / 101) * (04 + 	-0.5)";
+					};
+					class LineOld05: LineOld00
+					{
+						idc = 3005;
+						x = "(			safezoneW / 101) * (05 + 	-0.5)";
+					};
+					class LineOld06: LineOld00
+					{
+						idc = 3006;
+						x = "(			safezoneW / 101) * (06 + 	-0.5)";
+					};
+					class LineOld07: LineOld00
+					{
+						idc = 3007;
+						x = "(			safezoneW / 101) * (07 + 	-0.5)";
+					};
+					class LineOld08: LineOld00
+					{
+						idc = 3008;
+						x = "(			safezoneW / 101) * (08 + 	-0.5)";
+					};
+					class LineOld09: LineOld00
+					{
+						idc = 3009;
+						x = "(			safezoneW / 101) * (09 + 	-0.5)";
+					};
+					class LineOld10: LineOld00
+					{
+						idc = 3010;
+						x = "(			safezoneW / 101) * (10 + 	-0.5)";
+					};
+					class LineOld100: LineOld00
+					{
+						idc = 3100;
+						x = "(			safezoneW / 101) * (100 + 	-0.5)";
+					};
+					class LineOld11: LineOld00
+					{
+						idc = 3011;
+						x = "(			safezoneW / 101) * (11 + 	-0.5)";
+					};
+					class LineOld12: LineOld00
+					{
+						idc = 3012;
+						x = "(			safezoneW / 101) * (12 + 	-0.5)";
+					};
+					class LineOld13: LineOld00
+					{
+						idc = 3013;
+						x = "(			safezoneW / 101) * (13 + 	-0.5)";
+					};
+					class LineOld14: LineOld00
+					{
+						idc = 3014;
+						x = "(			safezoneW / 101) * (14 + 	-0.5)";
+					};
+					class LineOld15: LineOld00
+					{
+						idc = 3015;
+						x = "(			safezoneW / 101) * (15 + 	-0.5)";
+					};
+					class LineOld16: LineOld00
+					{
+						idc = 3016;
+						x = "(			safezoneW / 101) * (16 + 	-0.5)";
+					};
+					class LineOld17: LineOld00
+					{
+						idc = 3017;
+						x = "(			safezoneW / 101) * (17 + 	-0.5)";
+					};
+					class LineOld18: LineOld00
+					{
+						idc = 3018;
+						x = "(			safezoneW / 101) * (18 + 	-0.5)";
+					};
+					class LineOld19: LineOld00
+					{
+						idc = 3019;
+						x = "(			safezoneW / 101) * (19 + 	-0.5)";
+					};
+					class LineOld20: LineOld00
+					{
+						idc = 3020;
+						x = "(			safezoneW / 101) * (20 + 	-0.5)";
+					};
+					class LineOld21: LineOld00
+					{
+						idc = 3021;
+						x = "(			safezoneW / 101) * (21 + 	-0.5)";
+					};
+					class LineOld22: LineOld00
+					{
+						idc = 3022;
+						x = "(			safezoneW / 101) * (22 + 	-0.5)";
+					};
+					class LineOld23: LineOld00
+					{
+						idc = 3023;
+						x = "(			safezoneW / 101) * (23 + 	-0.5)";
+					};
+					class LineOld24: LineOld00
+					{
+						idc = 3024;
+						x = "(			safezoneW / 101) * (24 + 	-0.5)";
+					};
+					class LineOld25: LineOld00
+					{
+						idc = 3025;
+						x = "(			safezoneW / 101) * (25 + 	-0.5)";
+					};
+					class LineOld26: LineOld00
+					{
+						idc = 3026;
+						x = "(			safezoneW / 101) * (26 + 	-0.5)";
+					};
+					class LineOld27: LineOld00
+					{
+						idc = 3027;
+						x = "(			safezoneW / 101) * (27 + 	-0.5)";
+					};
+					class LineOld28: LineOld00
+					{
+						idc = 3028;
+						x = "(			safezoneW / 101) * (28 + 	-0.5)";
+					};
+					class LineOld29: LineOld00
+					{
+						idc = 3029;
+						x = "(			safezoneW / 101) * (29 + 	-0.5)";
+					};
+					class LineOld30: LineOld00
+					{
+						idc = 3030;
+						x = "(			safezoneW / 101) * (30 + 	-0.5)";
+					};
+					class LineOld31: LineOld00
+					{
+						idc = 3031;
+						x = "(			safezoneW / 101) * (31 + 	-0.5)";
+					};
+					class LineOld32: LineOld00
+					{
+						idc = 3032;
+						x = "(			safezoneW / 101) * (32 + 	-0.5)";
+					};
+					class LineOld33: LineOld00
+					{
+						idc = 3033;
+						x = "(			safezoneW / 101) * (33 + 	-0.5)";
+					};
+					class LineOld34: LineOld00
+					{
+						idc = 3034;
+						x = "(			safezoneW / 101) * (34 + 	-0.5)";
+					};
+					class LineOld35: LineOld00
+					{
+						idc = 3035;
+						x = "(			safezoneW / 101) * (35 + 	-0.5)";
+					};
+					class LineOld36: LineOld00
+					{
+						idc = 3036;
+						x = "(			safezoneW / 101) * (36 + 	-0.5)";
+					};
+					class LineOld37: LineOld00
+					{
+						idc = 3037;
+						x = "(			safezoneW / 101) * (37 + 	-0.5)";
+					};
+					class LineOld38: LineOld00
+					{
+						idc = 3038;
+						x = "(			safezoneW / 101) * (38 + 	-0.5)";
+					};
+					class LineOld39: LineOld00
+					{
+						idc = 3039;
+						x = "(			safezoneW / 101) * (39 + 	-0.5)";
+					};
+					class LineOld40: LineOld00
+					{
+						idc = 3040;
+						x = "(			safezoneW / 101) * (40 + 	-0.5)";
+					};
+					class LineOld41: LineOld00
+					{
+						idc = 3041;
+						x = "(			safezoneW / 101) * (41 + 	-0.5)";
+					};
+					class LineOld42: LineOld00
+					{
+						idc = 3042;
+						x = "(			safezoneW / 101) * (42 + 	-0.5)";
+					};
+					class LineOld43: LineOld00
+					{
+						idc = 3043;
+						x = "(			safezoneW / 101) * (43 + 	-0.5)";
+					};
+					class LineOld44: LineOld00
+					{
+						idc = 3044;
+						x = "(			safezoneW / 101) * (44 + 	-0.5)";
+					};
+					class LineOld45: LineOld00
+					{
+						idc = 3045;
+						x = "(			safezoneW / 101) * (45 + 	-0.5)";
+					};
+					class LineOld46: LineOld00
+					{
+						idc = 3046;
+						x = "(			safezoneW / 101) * (46 + 	-0.5)";
+					};
+					class LineOld47: LineOld00
+					{
+						idc = 3047;
+						x = "(			safezoneW / 101) * (47 + 	-0.5)";
+					};
+					class LineOld48: LineOld00
+					{
+						idc = 3048;
+						x = "(			safezoneW / 101) * (48 + 	-0.5)";
+					};
+					class LineOld49: LineOld00
+					{
+						idc = 3049;
+						x = "(			safezoneW / 101) * (49 + 	-0.5)";
+					};
+					class LineOld50: LineOld00
+					{
+						idc = 3050;
+						x = "(			safezoneW / 101) * (50 + 	-0.5)";
+					};
+					class LineOld51: LineOld00
+					{
+						idc = 3051;
+						x = "(			safezoneW / 101) * (51 + 	-0.5)";
+					};
+					class LineOld52: LineOld00
+					{
+						idc = 3052;
+						x = "(			safezoneW / 101) * (52 + 	-0.5)";
+					};
+					class LineOld53: LineOld00
+					{
+						idc = 3053;
+						x = "(			safezoneW / 101) * (53 + 	-0.5)";
+					};
+					class LineOld54: LineOld00
+					{
+						idc = 3054;
+						x = "(			safezoneW / 101) * (54 + 	-0.5)";
+					};
+					class LineOld55: LineOld00
+					{
+						idc = 3055;
+						x = "(			safezoneW / 101) * (55 + 	-0.5)";
+					};
+					class LineOld56: LineOld00
+					{
+						idc = 3056;
+						x = "(			safezoneW / 101) * (56 + 	-0.5)";
+					};
+					class LineOld57: LineOld00
+					{
+						idc = 3057;
+						x = "(			safezoneW / 101) * (57 + 	-0.5)";
+					};
+					class LineOld58: LineOld00
+					{
+						idc = 3058;
+						x = "(			safezoneW / 101) * (58 + 	-0.5)";
+					};
+					class LineOld59: LineOld00
+					{
+						idc = 3059;
+						x = "(			safezoneW / 101) * (59 + 	-0.5)";
+					};
+					class LineOld60: LineOld00
+					{
+						idc = 3060;
+						x = "(			safezoneW / 101) * (60 + 	-0.5)";
+					};
+					class LineOld61: LineOld00
+					{
+						idc = 3061;
+						x = "(			safezoneW / 101) * (61 + 	-0.5)";
+					};
+					class LineOld62: LineOld00
+					{
+						idc = 3062;
+						x = "(			safezoneW / 101) * (62 + 	-0.5)";
+					};
+					class LineOld63: LineOld00
+					{
+						idc = 3063;
+						x = "(			safezoneW / 101) * (63 + 	-0.5)";
+					};
+					class LineOld64: LineOld00
+					{
+						idc = 3064;
+						x = "(			safezoneW / 101) * (64 + 	-0.5)";
+					};
+					class LineOld65: LineOld00
+					{
+						idc = 3065;
+						x = "(			safezoneW / 101) * (65 + 	-0.5)";
+					};
+					class LineOld66: LineOld00
+					{
+						idc = 3066;
+						x = "(			safezoneW / 101) * (66 + 	-0.5)";
+					};
+					class LineOld67: LineOld00
+					{
+						idc = 3067;
+						x = "(			safezoneW / 101) * (67 + 	-0.5)";
+					};
+					class LineOld68: LineOld00
+					{
+						idc = 3068;
+						x = "(			safezoneW / 101) * (68 + 	-0.5)";
+					};
+					class LineOld69: LineOld00
+					{
+						idc = 3069;
+						x = "(			safezoneW / 101) * (69 + 	-0.5)";
+					};
+					class LineOld70: LineOld00
+					{
+						idc = 3070;
+						x = "(			safezoneW / 101) * (70 + 	-0.5)";
+					};
+					class LineOld71: LineOld00
+					{
+						idc = 3071;
+						x = "(			safezoneW / 101) * (71 + 	-0.5)";
+					};
+					class LineOld72: LineOld00
+					{
+						idc = 3072;
+						x = "(			safezoneW / 101) * (72 + 	-0.5)";
+					};
+					class LineOld73: LineOld00
+					{
+						idc = 3073;
+						x = "(			safezoneW / 101) * (73 + 	-0.5)";
+					};
+					class LineOld74: LineOld00
+					{
+						idc = 3074;
+						x = "(			safezoneW / 101) * (74 + 	-0.5)";
+					};
+					class LineOld75: LineOld00
+					{
+						idc = 3075;
+						x = "(			safezoneW / 101) * (75 + 	-0.5)";
+					};
+					class LineOld76: LineOld00
+					{
+						idc = 3076;
+						x = "(			safezoneW / 101) * (76 + 	-0.5)";
+					};
+					class LineOld77: LineOld00
+					{
+						idc = 3077;
+						x = "(			safezoneW / 101) * (77 + 	-0.5)";
+					};
+					class LineOld78: LineOld00
+					{
+						idc = 3078;
+						x = "(			safezoneW / 101) * (78 + 	-0.5)";
+					};
+					class LineOld79: LineOld00
+					{
+						idc = 3079;
+						x = "(			safezoneW / 101) * (79 + 	-0.5)";
+					};
+					class LineOld80: LineOld00
+					{
+						idc = 3080;
+						x = "(			safezoneW / 101) * (80 + 	-0.5)";
+					};
+					class LineOld81: LineOld00
+					{
+						idc = 3081;
+						x = "(			safezoneW / 101) * (81 + 	-0.5)";
+					};
+					class LineOld82: LineOld00
+					{
+						idc = 3082;
+						x = "(			safezoneW / 101) * (82 + 	-0.5)";
+					};
+					class LineOld83: LineOld00
+					{
+						idc = 3083;
+						x = "(			safezoneW / 101) * (83 + 	-0.5)";
+					};
+					class LineOld84: LineOld00
+					{
+						idc = 3084;
+						x = "(			safezoneW / 101) * (84 + 	-0.5)";
+					};
+					class LineOld85: LineOld00
+					{
+						idc = 3085;
+						x = "(			safezoneW / 101) * (85 + 	-0.5)";
+					};
+					class LineOld86: LineOld00
+					{
+						idc = 3086;
+						x = "(			safezoneW / 101) * (86 + 	-0.5)";
+					};
+					class LineOld87: LineOld00
+					{
+						idc = 3087;
+						x = "(			safezoneW / 101) * (87 + 	-0.5)";
+					};
+					class LineOld88: LineOld00
+					{
+						idc = 3088;
+						x = "(			safezoneW / 101) * (88 + 	-0.5)";
+					};
+					class LineOld89: LineOld00
+					{
+						idc = 3089;
+						x = "(			safezoneW / 101) * (89 + 	-0.5)";
+					};
+					class LineOld90: LineOld00
+					{
+						idc = 3090;
+						x = "(			safezoneW / 101) * (90 + 	-0.5)";
+					};
+					class LineOld91: LineOld00
+					{
+						idc = 3091;
+						x = "(			safezoneW / 101) * (91 + 	-0.5)";
+					};
+					class LineOld92: LineOld00
+					{
+						idc = 3092;
+						x = "(			safezoneW / 101) * (92 + 	-0.5)";
+					};
+					class LineOld93: LineOld00
+					{
+						idc = 3093;
+						x = "(			safezoneW / 101) * (93 + 	-0.5)";
+					};
+					class LineOld94: LineOld00
+					{
+						idc = 3094;
+						x = "(			safezoneW / 101) * (94 + 	-0.5)";
+					};
+					class LineOld95: LineOld00
+					{
+						idc = 3095;
+						x = "(			safezoneW / 101) * (95 + 	-0.5)";
+					};
+					class LineOld96: LineOld00
+					{
+						idc = 3096;
+						x = "(			safezoneW / 101) * (96 + 	-0.5)";
+					};
+					class LineOld97: LineOld00
+					{
+						idc = 3097;
+						x = "(			safezoneW / 101) * (97 + 	-0.5)";
+					};
+					class LineOld98: LineOld00
+					{
+						idc = 3098;
+						x = "(			safezoneW / 101) * (98 + 	-0.5)";
+					};
+					class LineOld99: LineOld00
+					{
+						idc = 3099;
+						x = "(			safezoneW / 101) * (99 + 	-0.5)";
+					};
+				};
+			};
+			class Overlay: RscText
+			{
+				colorBackground[] = {0, 0, 0, 0.15};
+				h = "safezoneH";
+				w = "safezoneW";
+				x = "safezoneX";
+				y = "safezoneY";
+			};
+			class Selected: RscControlsGroupNoScrollbars
+			{
+				h = "safezoneH";
+				w = "safezoneW";
+				x = "safezoneX";
+				y = "safezoneY";
+				class Controls
+				{
+					class Focus: RscPicture
+					{
+						colorText[] = {0.28, 0.73, 1, 0.2};
+						fade = 1;
+						h = 0;
+						idc = 4002;
+						text = "#(rgb,1,1,1)color(1,1,1,0.5)";
+						w = 0;
+					};
+					class Progress: RscPicture
+					{
+						colorText[] = {0.28, 0.73, 1, 0.4};
+						fade = 1;
+						h = 0;
+						idc = 4005;
+						text = "#(rgb,1,1,1)color(1,1,1,0.5)";
+						w = 0;
+					};
+					class Selected: RscPicture
+					{
+						colorText[] = {0.28, 0.73, 1, 1};
+						fade = 0;
+						idc = 4000;
+						text = "\a3\UI_F_Contact\Data\RscIngameUI\RscWeaponSpectrumAnalyzer\selectedCredits_ca.paa";
+						w = 0;
+					};
+					class TransmitOverlay: RscPicture
+					{
+						colorText[] = {0, 0, 0, 0.5};
+						h = "safezoneH";
+						idc = 1997;
+						show = 0;
+						text = "#(rgb,1,1,1)color(1,1,1,0.5)";
+						w = "safezoneW";
+					};
+				};
+			};
+			class Vignette: RscVignette
+			{
+				colorText[] = {0, 0, 0, 0.5};
+				h = "safezoneH";
+				w = "safezoneW";
+				x = "safezoneX";
+				y = "safezoneY";
+			};
+		};
+		class ControlsBackground
+		{
+			class Background: RscPicture
+			{
+				h = "safezoneH";
+				text = "#(rgb,1,1,1)color(0.0901961,0.113725,0.129412,1)";
+				w = "safezoneWAbs * 1.1";
+				x = "safezoneXAbs";
+				y = "safezoneY";
+			};
+			class Map: RscMapControlEmpty
+			{
+				h = 0;
+				onDraw = "['onDraw',_this,''] call (uinamespace getvariable 'RscContactCredits_script');";
+				scaleMax = 0.001;
+				scaleMin = 0.001;
+				w = 0;
 			};
 		};
 	};
@@ -3303,6 +4616,121 @@ class RscTitles
 			};
 		};
 	};
+	class RscCurrentTask
+	{
+		duration = 1e+010;
+		fadein = 0;
+		fadeout = 0;
+		idd = -1;
+		movingEnable = 0;
+		onLoad = "[""onLoad"",_this,""RscCurrentTask"",'ContactTitles'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		onUnload = "[""onUnload"",_this,""RscCurrentTask"",'ContactTitles'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		scriptName = "RscCurrentTask";
+		scriptPath = "ContactTitles";
+		class Controls
+		{
+			class Area: RscControlsGroupNoScrollbars
+			{
+				h = "(6 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
+				idc = 1000;
+				w = "(12 * 			(			((safezoneW / safezoneH) min 1.2) / 40))";
+				x = "(profilenamespace getvariable [""IGUI_GRID_NOTIFICATION_X"",	(0.5 - 6 * 			(			((safezoneW / safezoneH) min 1.2) / 40))])";
+				y = "(profilenamespace getvariable [""IGUI_GRID_NOTIFICATION_Y"",	(safezoneY + 6.5 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+				class Controls
+				{
+					class Background: RscPicture
+					{
+						colorText[] = {"(profilenamespace getvariable ['IGUI_BCG_RGB_R',0])", "(profilenamespace getvariable ['IGUI_BCG_RGB_G',1])", "(profilenamespace getvariable ['IGUI_BCG_RGB_B',1])", 0.5};
+						h = "(6 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
+						idc = 10010;
+						text = "\a3\UI_F_Contact\Data\RscTitles\RscSimpleNotification\background_ca.paa";
+						w = "(12 * 			(			((safezoneW / safezoneH) min 1.2) / 40))";
+						x = 0;
+						y = 0;
+					};
+					class Text: RscStructuredText
+					{
+						h = "(6 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";
+						idc = 10011;
+						text = "No task selected.\nPress 2xJ or M to access list of available tasks.";
+						w = "(12 * 			(			((safezoneW / safezoneH) min 1.2) / 40)) - 2 * 	0.01";
+						x = 0.01;
+						y = 0;
+						class Attributes
+						{
+							align = "center";
+							color = "#ffffff";
+							colorLink = "#ffffff";
+							font = "RobotoCondensed";
+							shadow = 1;
+							size = 1;
+						};
+					};
+				};
+			};
+		};
+	};
+	class RscDangerZone
+	{
+		duration = 10;
+		fadein = 0;
+		fadeout = 0;
+		idd = -1;
+		movingEnable = 0;
+		onLoad = "[""onLoad"",_this,""RscDangerZone"",'ContactTitles'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		onUnload = "[""onUnload"",_this,""RscDangerZone"",'ContactTitles'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		scriptName = "RscDangerZone";
+		scriptPath = "ContactTitles";
+		class Controls
+		{
+			class BackgroundOverlay: RscText
+			{
+				colorBackground[] = {0, 0, 0, 0.4};
+				fade = 1;
+				h = "safezoneH";
+				idc = 1080;
+				w = "safezoneWAbs";
+				x = "safezoneXAbs";
+				y = "safezoneY";
+			};
+			class CA_Background: IGUIBack
+			{
+				fade = 1;
+				h = "2 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+				idc = 1083;
+				w = "12 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
+				x = "(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2) + 14 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
+				y = "(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2) + 8 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+			};
+		};
+	};
+	class RscDebugText
+	{
+		duration = 1e+010;
+		fadein = 0;
+		fadeout = 0;
+		idd = -1;
+		movingEnable = 0;
+		onLoad = "uinamespace setvariable ['RscDebugText',_this # 0];";
+		class Controls
+		{
+			class Text: RscListBox
+			{
+				colorBackground[] = {0, 0, 0, 0};
+				colorShadow[] = {0, 0, 0, 1};
+				colorText[] = {1, 1, 0, 1};
+				colorTextRight[] = {1, 1, 0, 1};
+				font = "LucidaConsoleB";
+				h = "safezoneH - 26 * pixelH";
+				idc = 1001;
+				shadow = 2;
+				sizeEx = "(11 * pixelH)";
+				w = "(300 * pixelW)";
+				x = "safezoneX";
+				y = "safezoneY + 26 * pixelH";
+			};
+		};
+	};
 	class RscDisplayMainMenuBackground
 	{
 		duration = 1e+010;
@@ -4504,6 +5932,63 @@ class RscTitles
 			class Interlacing: RscInterlacingScreen {};
 		};
 	};
+	class RscLoadingLogoIn
+	{
+		duration = 10;
+		fadein = 1;
+		fadeout = 0;
+		idd = -1;
+		movingEnable = 0;
+		onLoad = "uinamespace setVariable ['bin_showLoadingLogo',true]";
+		class Controls
+		{
+			class LoadingStart: RscControlsGroup
+			{
+				h = "1 * safezoneH";
+				idc = 2310;
+				w = "1 * safezoneW";
+				x = "0 * safezoneW + safezoneX";
+				y = "0 * safezoneH + safezoneY";
+				class controls
+				{
+					class Black: RscText
+					{
+						colorBackground[] = {0, 0, 0, 1};
+						h = "1 * safezoneH";
+						idc = 1000;
+						w = "1 * safezoneW";
+						x = "0 * safezoneW";
+						y = "0 * safezoneH";
+					};
+					class Logo: RscPictureKeepAspect
+					{
+						h = "0.25 * safezoneH";
+						idc = 1200;
+						text = "\a3\data_f_contact\logos\logoTitle_ca.paa";
+						w = "0.5 * safezoneW";
+						x = "0.25 * safezoneW";
+						y = "0.3125 * safezoneH";
+					};
+					class Noise: RscPicture
+					{
+						h = "1 * safezoneH";
+						idc = 1201;
+						text = "\A3\Ui_f\data\IGUI\RscTitles\SplashArma3\arma3_splashNoise_ca.paa";
+						w = "1 * safezoneW";
+						x = "0 * safezoneW";
+						y = "0 * safezoneH";
+					};
+				};
+			};
+		};
+	};
+	class RscLoadingLogoOut: RscLoadingLogoIn
+	{
+		duration = 5;
+		fadein = 0;
+		fadeout = 1;
+		onLoad = "[] spawn {sleep 0.01; uinamespace setVariable ['bin_showLoadingLogo',false];};";
+	};
 	class RscMissionEnd
 	{
 		duration = "11+2";
@@ -5554,6 +7039,79 @@ class RscTitles
 			};
 		};
 	};
+	class RscRestartOS
+	{
+		duration = 1e+010;
+		fadein = 0;
+		fadeout = 0;
+		idd = -1;
+		movingEnable = 0;
+		onLoad = "[""onLoad"",_this,""RscRestartOS"",'ContactTitles'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		onUnload = "[""onUnload"",_this,""RscRestartOS"",'ContactTitles'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		scriptName = "RscRestartOS";
+		scriptPath = "ContactTitles";
+		class Controls
+		{
+			class Hacked: RscControlsGroupNoScrollbars
+			{
+				h = "safezoneH";
+				w = "safezoneWAbs";
+				x = "safezoneXAbs";
+				y = "safezoneY";
+				class Controls
+				{
+					class Background: RscText
+					{
+						colorBackground[] = {0, 0.470588, 0.843137, 1};
+						h = "safezoneH";
+						w = "safezoneWAbs";
+						x = 0;
+						y = 0;
+					};
+					class SadFace: RscText
+					{
+						h = "(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 10";
+						shadow = 0;
+						sizeEx = "(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 10";
+						text = ":(";
+						w = "(			((safezoneW / safezoneH) min 1.2) / 40) * 10";
+						x = "safezoneWAbs / 2 - 			(			((safezoneW / safezoneH) min 1.2) / 40) * 15";
+						y = "safezoneH / 2 - 			(			((safezoneW / safezoneH) min 1.2) / 40) * 15";
+					};
+					class Subtext: Text
+					{
+						text = "If you'd like to know more, you can search online later for this error: INVALID_FIRMWARE_ACCESS";
+						y = "safezoneH / 2 + 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 6";
+						class Attributes
+						{
+							align = "left";
+							color = "#ffffff";
+							colorLink = "#ffffff";
+							font = "RobotoCondensedLight";
+							size = 1.5;
+						};
+					};
+					class Text: RscStructuredText
+					{
+						h = "(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 5";
+						shadow = 0;
+						text = "Your device ran into a problem and needs to restart. We'll restart for you.";
+						w = "(			((safezoneW / safezoneH) min 1.2) / 40) * 30";
+						x = "safezoneWAbs / 2 - 			(			((safezoneW / safezoneH) min 1.2) / 40) * 15";
+						y = "safezoneH / 2";
+						class Attributes
+						{
+							align = "left";
+							color = "#ffffff";
+							colorLink = "#ffffff";
+							font = "RobotoCondensedLight";
+							size = 2;
+						};
+					};
+				};
+			};
+		};
+	};
 	class RscRevive
 	{
 		duration = 1e+011;
@@ -5685,6 +7243,46 @@ class RscTitles
 				w = "16 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 				x = "12 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
 				y = "18.9 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))";
+			};
+		};
+	};
+	class RscSavegame
+	{
+		duration = 1;
+		fadein = 0;
+		fadeout = 0;
+		idd = -1;
+		movingEnable = 0;
+		onLoad = "[""onLoad"",_this,""RscSavegame"",'ContactTitles'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		onUnload = "[""onUnload"",_this,""RscSavegame"",'ContactTitles'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		scriptName = "RscSavegame";
+		scriptPath = "ContactTitles";
+		class Controls
+		{
+			class Savegame: RscSavegameInfo {};
+		};
+	};
+	class RscSimpleNotification
+	{
+		duration = 1e+010;
+		fadein = 0;
+		fadeout = 0;
+		idd = -1;
+		movingEnable = 0;
+		onLoad = "[""onLoad"",_this,""RscSimpleNotification"",'ContactTitles'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		onUnload = "[""onUnload"",_this,""RscSimpleNotification"",'ContactTitles'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		scriptName = "RscSimpleNotification";
+		scriptPath = "ContactTitles";
+		class Controls
+		{
+			class Area: RscControlsGroupNoScrollbars
+			{
+				h = "10 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+				idc = 1000;
+				w = 1;
+				x = 0;
+				y = "safezoneY + (1.6) * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+				class Controls {};
 			};
 		};
 	};
@@ -9145,6 +10743,27 @@ class RscTitles
 			};
 		};
 	};
+	class RscVision
+	{
+		duration = 1e+010;
+		fadein = 0;
+		fadeout = 0;
+		idd = -1;
+		movingEnable = 0;
+		onLoad = "[""onLoad"",_this,""RscVision"",'ContactTitles'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		onUnload = "[""onUnload"",_this,""RscVision"",'ContactTitles'] call 	(uinamespace getvariable 'BIS_fnc_initDisplay')";
+		scriptName = "RscVision";
+		scriptPath = "ContactTitles";
+		class Controls
+		{
+			class Map: RscMapControlEmpty
+			{
+				h = 0;
+				onDraw = "['draw',_this,''] call (uinamespace getvariable 'RscVision_script')";
+				w = 0;
+			};
+		};
+	};
 	class RscVRMeta
 	{
 		duration = 1e+011;
@@ -9388,6 +11007,60 @@ class RscTitles
 			w = "48 * 		(0.01875 * SafezoneH)";
 			x = "SafeZoneX + SafeZoneW / 2 - (46.5 * 		(0.01875 * SafezoneH)) / 2";
 			y = "SafeZoneY +	SafeZoneH - (0.505 * SafezoneH)";
+		};
+	};
+	class SplashContact
+	{
+		controls[] = {"Picture"};
+		duration = 3;
+		fadein = 0;
+		fadeout = 0;
+		idd = -1;
+		movingEnable = 0;
+		name = "Splash screen Contact";
+		class Picture: RscPicture
+		{
+			h = "10 * 		(0.025 * SafezoneH)";
+			idc = 1200;
+			text = "\a3\data_f_contact\logos\logoTitle_ca.paa";
+			w = "20 * 		(0.01875 * SafezoneH)";
+			x = "0.5 - 10 * 		(0.01875 * SafezoneH)";
+			y = "0.5 - 6 * 		(0.025 * SafezoneH)";
+		};
+	};
+	class SplashContactPrototypeMission
+	{
+		controls[] = {"Picture", "Text"};
+		duration = 15;
+		fadein = 3;
+		fadeout = 3;
+		idd = -1;
+		movingEnable = 0;
+		name = "Splash screen Contact - Prototype Mission";
+		class Picture: RscPicture
+		{
+			h = "10 * 		(0.025 * SafezoneH)";
+			idc = 1200;
+			text = "\a3\data_f_contact\logos\logoTitle_ca.paa";
+			w = "20 * 		(0.01875 * SafezoneH)";
+			x = "0.5 - 10 * 		(0.01875 * SafezoneH)";
+			y = "0.5 - 8 * 		(0.025 * SafezoneH)";
+		};
+		class Text: RscStructuredText
+		{
+			h = "0.39 * SafezoneH";
+			idc = -1;
+			shadow = 0;
+			size = "0.02 * SafezoneH";
+			text = "<t size='3'>PROTOTYPE</t><br /><br />Thanks for playing this early slice of gameplay! Please share your thoughts with us on Confluence.<br /><br />You'll find some more experimental prototypes via the CONCEPTS button in the main menu, and feel free to explore Enoch via the EDITOR.<br /><br /><br /><t color='#ff9900'>CLASSIFIED - INTERNAL USE ONLY</t>";
+			w = "50 * 		(0.01875 * SafezoneH)";
+			x = "SafeZoneX + SafeZoneW / 2 - (50 * 		(0.01875 * SafezoneH)) / 2";
+			y = "SafeZoneY +	SafeZoneH - (0.4 * SafezoneH)";
+			class Attributes
+			{
+				align = "center";
+				shadow = 0;
+			};
 		};
 	};
 	class SplashCopyright

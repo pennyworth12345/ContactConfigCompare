@@ -25,7 +25,10 @@ class CfgFunctions
 			class 3DENExportAttributes {};
 			class 3DENExportOldSQM {};
 			class 3DENExportSQF {};
-			class 3DENExportTerrainBuilder {};
+			class 3DENExportTerrainBuilder
+			{
+				file = "\a3\Functions_F_Contact\TempFunctions\fn_3DENExportTerrainBuilder.sqf";
+			};
 			class 3DENFlashlight {};
 			class 3DENGrid {};
 			class 3DENIntel {};
@@ -1131,6 +1134,17 @@ class CfgFunctions
 				headerType = -1;
 			};
 		};
+		class Conversations
+		{
+			class kbTell
+			{
+				file = "\a3\Functions_F_Contact\TempFunctions\fn_kbTell.sqf";
+			};
+			class kbTellLocal
+			{
+				file = "\a3\Functions_F_Contact\TempFunctions\fn_kbTellLocal.sqf";
+			};
+		};
 		class Curve
 		{
 			file = "A3\functions_f\Animation\Curve\RichCurve";
@@ -1362,6 +1376,7 @@ class CfgFunctions
 			class diagJIRAlink
 			{
 				cheatsEnabled = 1;
+				file = "\a3\Functions_F_Contact\TempFunctions\fn_diagJIRAlink.sqf";
 			};
 			class diagKey
 			{
@@ -1677,7 +1692,10 @@ class CfgFunctions
 			{
 				description = "Hide or show unit info";
 			};
-			class showWelcomeScreen {};
+			class showWelcomeScreen
+			{
+				file = "\a3\Functions_F_Contact\TempFunctions\fn_showWelcomeScreen.sqf";
+			};
 			class textTiles
 			{
 				description = "";
@@ -2185,6 +2203,10 @@ class CfgFunctions
 			class removeCommMenuItem {};
 			class removeScriptedEventHandler {};
 			class runLater {};
+			class saveGame
+			{
+				file = "\a3\Functions_F_Contact\TempFunctions\fn_saveGame.sqf";
+			};
 			class startLoadingScreen {};
 			class sunriseSunsetTime {};
 			class textureMarker
@@ -2622,8 +2644,14 @@ class CfgFunctions
 		{
 			file = "A3\functions_f\Tasks";
 			class deleteTask {};
-			class setTask {};
-			class setTaskLocal {};
+			class setTask
+			{
+				file = "\a3\Functions_F_Contact\TempFunctions\fn_setTask.sqf";
+			};
+			class setTaskLocal
+			{
+				file = "\a3\Functions_F_Contact\TempFunctions\fn_setTaskLocal.sqf";
+			};
 			class sharedObjectives {};
 			class taskAlwaysVisible
 			{
@@ -3182,7 +3210,10 @@ class CfgFunctions
 		class Conversations
 		{
 			file = "a3\functions_f_exp\conversations";
-			class showSubtitle {};
+			class showSubtitle
+			{
+				file = "\a3\Functions_F_Contact\TempFunctions\fn_showSubtitle.sqf";
+			};
 		};
 	};
 	class A3_Expansion_A
@@ -4297,6 +4328,519 @@ class CfgFunctions
 			class WLVarsInit {};
 			class WLVehicleHandle {};
 			class WLVotingBarHandle {};
+		};
+	};
+	class Contact
+	{
+		tag = "BIN";
+		class AI_Human
+		{
+			file = "a3\Functions_F_Contact\AI_Human";
+			class attachChemlight {};
+			class deleteLoopedRadioSignal {};
+			class getAISquadID {};
+			class getAISquadPosition {};
+			class getAllAISquads {};
+			class getFollowingSignals {};
+			class getPatrolRoutes {};
+			class getRadioConversation {};
+			class initAI
+			{
+				postInit = 1;
+			};
+			class initAIBase {};
+			class initAISquad {};
+			class inRadioConversation {};
+			class inRadioConversationWith {};
+			class isAIBase {};
+			class isRadioHandshake {};
+			class isRadioSilence {};
+			class joinAISquad {};
+			class moveAI {};
+			class moveAIReinforcements {};
+			class playPatrolAnim {};
+			class playPatrolAnimDone {};
+			class reactRadio
+			{
+				ext = ".fsm";
+			};
+			class reactRadio_Base
+			{
+				ext = ".fsm";
+			};
+			class reactRadio_Player
+			{
+				ext = ".fsm";
+			};
+			class reactRadio_Squad
+			{
+				ext = ".fsm";
+			};
+			class sendPing {};
+			class sendRadioSignal {};
+			class setAISquadID {};
+			class setRadioConversation {};
+			class setRadioHandshake {};
+			class setRadioSilence {};
+			class wpMoveFast {};
+			class wpPatrol {};
+		};
+		class AI_Misc
+		{
+			file = "a3\Functions_F_Contact\AI_Misc";
+			class hackAIDrone {};
+			class initAIDrone {};
+			class initTurret {};
+			class initUAV {};
+			class initUGV {};
+		};
+		class Behavior
+		{
+			file = "a3\Functions_F_Contact\Behavior";
+			class behaviorInit {};
+			class breatheInit {};
+			class findSafePositions {};
+			class findTargetWeight {};
+			class getBehaviorCoef {};
+			class setBehavior {};
+			class setBehaviorCoef {};
+			class setBreathe {};
+			class setTargetWeight {};
+		};
+		class Campaign
+		{
+			file = "a3\Missions_F_Contact\Functions";
+			class addSiteEntities {};
+			class debugQuests {};
+			class empVehicle {};
+			class exit {};
+			class exitAntennas {};
+			class exitDiary {};
+			class exitGroup {};
+			class exitPersistentObjects {};
+			class exitQuests {};
+			class exitSites {};
+			class exitTasks {};
+			class getSiteLayerEntities {};
+			class initAcctime {};
+			class initActors {};
+			class initAntennas {};
+			class initConstants {};
+			class initCutLayers {};
+			class initDiary {};
+			class initGroup {};
+			class initHub {};
+			class initInventory {};
+			class initLocations {};
+			class initMiniUGV {};
+			class initPersistentObjects {};
+			class initProbeMap {};
+			class initQuests {};
+			class initRevive {};
+			class initSideColors {};
+			class initSites {};
+			class initTasks {};
+			class inList {};
+			class isNull {};
+			class list {};
+			class persistentVariables {};
+			class playMission {};
+			class postInit
+			{
+				postInit = 1;
+			};
+			class preInit
+			{
+				preInit = 1;
+			};
+			class setSite {};
+			class skip {};
+			class taskActive {};
+			class taskAdded {};
+			class travelToPoint {};
+		};
+		class Collisions
+		{
+			file = "a3\Functions_F_Contact\Collisions";
+			class addEntitiesToArea {};
+			class addObjectsToArea {};
+			class crearAllData {};
+			class diag_drawAllAreaObjectsBounds {};
+			class diag_getAllAreaEntities {};
+			class diag_getAllAreaObjects {};
+			class getAllAreas {};
+			class getEntityBoundingBarrel {};
+			class getObjectBoundingBarrel {};
+			class getTerrainObjects {};
+			class markFreeAreaPositions {};
+		};
+		class Debug
+		{
+			file = "a3\Functions_F_Contact\Debug";
+			class debugDraw {};
+			class debugDrawMapInit {};
+			class debugText {};
+		};
+		class Diary
+		{
+			file = "a3\Functions_F_Contact\Diary";
+			class deleteDiaryRecord {};
+			class drawIconFixed {};
+			class drawMap {};
+			class drawProbeMap {};
+			class drawSpectrum {};
+			class drawTooltip {};
+			class handDrawBezier {};
+			class handDrawEllipse {};
+			class initInspectableDiaryRecord {};
+			class selectDiaryCategory {};
+			class selectDiaryRecord {};
+			class selectDiaryTask {};
+			class setDiaryRecord {};
+			class showMapOptions {};
+			class switchMap {};
+		};
+		class Drone
+		{
+			file = "a3\Functions_F_Contact\Drone";
+			class dockModule {};
+			class droneDestructionFX {};
+			class droneModuleDestruction {};
+			class initDroneModule {};
+			class matterballDestruction {};
+			class matterballEffects {};
+			class matterCollectionFX {};
+			class moduleChargeSequence {};
+			class setDroneModuleParams {};
+			class setDroneModuleTarget {};
+			class setModuleSpeed {};
+		};
+		class Effects
+		{
+			file = "a3\Functions_F_Contact\Effects";
+			class circleSmokeMissile {};
+		};
+		class EM_Core
+		{
+			file = "a3\Functions_F_Contact\EM_Core";
+			class addSignal {};
+			class calculateLinkBudget {};
+			class calculateSpectrumAnalyzerValues {};
+			class deleteAntenna {};
+			class deleteSignal {};
+			class deleteSpectrumAnalyzer {};
+			class drawAntennas {};
+			class preInitEM
+			{
+				preInit = 1;
+			};
+			class recordSignal {};
+			class revealAntenna {};
+			class revealFrequency {};
+			class setAntenna {};
+			class setCurrentSignal {};
+			class setPlayerSelectedBand {};
+			class setSpectrumAnalyzer {};
+			class showAntennaIcons {};
+			class showPlayerSpectrumAnalyzer {};
+			class showSpectrumAnalyzerGUI {};
+			class showSpectrumAnalyzerMuzzle {};
+			class showSpectrumAnalyzerPiP {};
+			class updateEM
+			{
+				postInit = 1;
+			};
+			class updatePlayerAntenna {};
+			class updatePlayerInput {};
+			class updatePlayerSpectrumAnalyzer {};
+			class updatePlayerSpectrumAnalyzerSounds {};
+			class updateSignalDurations {};
+		};
+		class EM_Interface
+		{
+			file = "a3\Functions_F_Contact\EM_Interface";
+			class addFaradayCage {};
+			class addRecordedSignal {};
+			class allowAntennaReveal {};
+			class allowedAntennaReveal {};
+			class assignAntenna {};
+			class assignedAntenna {};
+			class bakeAntenna {};
+			class deleteFaradayCage {};
+			class diag_addAllSpectrumAnalyzers {};
+			class diag_logAntenna {};
+			class diag_revealAllAntennas {};
+			class diag_showLinkBudgetMap {};
+			class frequencyToString {};
+			class getAntennaAngle {};
+			class getAntennaCanReveal {};
+			class getAntennaFrequency {};
+			class getAntennaFrequencyClass {};
+			class getAntennaGain {};
+			class getAntennaName {};
+			class getAntennaObject {};
+			class getAntennaPower {};
+			class getAntennaRevealValue {};
+			class getAntennas {};
+			class getAntennaScanPolygon {};
+			class getAntennaScans {};
+			class getAntennaScanSignals {};
+			class getAntennaSensitivity {};
+			class getAntennaSignal {};
+			class getAntennaSignalHistory {};
+			class getAntennaType {};
+			class getCurrentSignal {};
+			class getLinkBudget {};
+			class getLinkDir {};
+			class getLinkedAntennas {};
+			class getLinkStrength {};
+			class getObjectAntennas {};
+			class getRecordedSignals {};
+			class getSignalAge {};
+			class getSignalTypeClass {};
+			class getSignalTypes {};
+			class hasAntennaSignal {};
+			class isAntenna {};
+			class isAntennaBaked {};
+			class isAntennaBroadcasting {};
+			class isAntennaJammed {};
+			class isAntennaRevealed {};
+			class isAntennaSelected {};
+			class moduleAntenna {};
+			class setAntennaAngle {};
+			class setAntennaCanReveal {};
+			class setAntennaClass {};
+			class setAntennaFrequency {};
+			class setAntennaFrequencyFromList {};
+			class setAntennaGain {};
+			class setAntennaName {};
+			class setAntennaObject {};
+			class setAntennaPower {};
+			class setAntennaRevealValue {};
+			class setAntennaScans {};
+			class setAntennaSensitivity {};
+			class setAntennaType {};
+			class showAntennaIcon {};
+		};
+		class Geometry
+		{
+			file = "a3\Functions_F_Contact\Geometry";
+			class eulerToVector {};
+			class matrixMultiply {};
+			class matrixTranspose {};
+			class vectorToEuler {};
+		};
+		class GUI
+		{
+			file = "a3\Functions_F_Contact\GUI";
+			class addButtonEvents {};
+			class callButtonEvent {};
+			class showCurrentTask
+			{
+				postInit = 1;
+			};
+			class showHorizontalCompass
+			{
+				postInit = 1;
+			};
+			class showSimpleNotification {};
+		};
+		class IDWMap
+		{
+			file = "a3\Functions_F_Contact\IDWMap";
+			class addIDWMapMeasurementPoint {};
+			class allIDWMapMeasurementPoints {};
+			class clearIDWMap {};
+			class diag_IDWMap {};
+			class drawIDWMap {};
+			class getIDWMapDrawColorSet {};
+			class getIDWMapDrawPatternIndex {};
+			class getIDWMapParams {};
+			class getIDWMapSaveData {};
+			class getIDWMapStaticDataLayers {};
+			class loadIDWMap {};
+			class preInitIDWMap {};
+			class saveIDWMap {};
+			class setIDWMapDrawColorSet {};
+			class setIDWMapDrawPatternIndex {};
+			class setIDWMapParams {};
+			class setIDWMapStaticDataLayers {};
+			class updateIDWMapDrawData {};
+		};
+		class Misc
+		{
+			file = "a3\Functions_F_Contact\Misc";
+			class addDangerZone {};
+			class addTravelPoint {};
+			class animateSmooth {};
+			class bezier {};
+			class bezierAverage {};
+			class bezierBoundingBox {};
+			class bezierEditor {};
+			class bezierNormalize {};
+			class bezierVelocity {};
+			class colorHSLtoRGB {};
+			class deleteDangerZone {};
+			class deleteTravelPoint {};
+			class distanceToAreaBorder {};
+			class enableSaving {};
+			class getFormattedControl {};
+			class getGroupSeed {};
+			class getRoleIcon {};
+			class inDangerZone {};
+			class isExtensionError {};
+			class isPaused {};
+			class isPausedInit
+			{
+				preInit = 1;
+			};
+			class markDangerZone {};
+			class moduleDangerZone {};
+			class moduleFaradayCage {};
+			class moduleGravityAnomaly {};
+			class modulePointOfInterest {};
+			class moduleSimpleObject {};
+			class moduleTravel {};
+			class savingEnabled {};
+			class scan {};
+			class scanObject {};
+			class setPointOfInterest {};
+			class setRagdoll {};
+			class tvSaveExpanded {};
+		};
+		class ModuleCBRN
+		{
+			file = "a3\modules_f_contact\CBRN\functions";
+			class CBRNCharacterAdd {};
+			class CBRNContaminantAdd {};
+			class CBRNContaminantRemove {};
+			class CBRNGearActivate {};
+			class CBRNGearDeactivate {};
+			class CBRNGearUpdate {};
+			class CBRNInContaminant {};
+			class moduleCBRN {};
+		};
+		class Mothership
+		{
+			file = "a3\Functions_F_Contact\Mothership";
+			class initMothershipLights {};
+		};
+		class Movement
+		{
+			file = "a3\Functions_F_Contact\Movement";
+			class addRotation {};
+			class addTranslation {};
+			class curatorInit {};
+			class editMoveProperties {};
+			class findNearestGrid {};
+			class findPath {};
+			class getGridCollisions {};
+			class getGridMap {};
+			class getGridPath {};
+			class getRotation {};
+			class moduleMovementGrid {};
+			class moveInit
+			{
+				postInit = 1;
+			};
+			class moveModule {};
+			class moveObject {};
+			class moveTo {};
+			class moveToModelSpace {};
+			class moveToOnArc {};
+			class setMoveProperties {};
+			class setObjectGrid {};
+			class translationDone {};
+		};
+		class Probe
+		{
+			file = "a3\Functions_F_Contact\Probe";
+			class probeAnim {};
+			class probeCoreDelete {};
+			class probeCoreEffects {};
+			class probeCoreInit {};
+			class probeCoreLegsDestroyed {};
+			class probeCoreUpdate {};
+			class probeDelete {};
+			class probeHitpoint {};
+			class probeVeinHitpoint {};
+		};
+		class Puzzles
+		{
+			file = "a3\Functions_F_Contact\Puzzles";
+			class initPuzzle {};
+			class isPuzzleReset {};
+			class isPuzzleTerminated {};
+			class onPuzzleCompleted {};
+			class onPuzzleProgress {};
+			class onPuzzleReset {};
+			class onPuzzleStepCompleted {};
+			class onPuzzleTerminated {};
+			class puzzle_mole {};
+			class puzzle_outlier {};
+			class resetPuzzle {};
+			class setGravityPulse {};
+			class showVision {};
+			class terminatePuzzle {};
+			class updateGravityPulse {};
+		};
+		class Sound
+		{
+			file = "a3\Functions_F_Contact\Sound";
+			class createScriptedSoundSource {};
+			class createScriptedSoundSourceVehicle {};
+			class getCharacterSounds {};
+			class playAlternatingSound {};
+			class setCustomSoundController {};
+			class soundDrone {};
+		};
+		class TXScan
+		{
+			file = "a3\Functions_F_Contact\TXScan";
+			class clearTXScan {};
+			class createTXScan {};
+			class cropTXScan {};
+			class deleteTXScan {};
+			class diag_TXScan {};
+			class drawTXScan {};
+			class getAllTXScans {};
+			class getTXScanAngle {};
+			class getTXScanDrawData {};
+			class getTXScanPolygon {};
+			class getTXScanPolygonDetails {};
+			class getTXScanPosition {};
+			class getTXScanPrecision {};
+			class getTXScanSaveData {};
+			class getTXScanWorldBounds {};
+			class loadTXScanState {};
+			class preInitTXScan {};
+			class saveTXScanState {};
+			class scanTX {};
+			class setTXScanAngle {};
+			class setTXScanPolygon {};
+			class setTXScanPosition {};
+			class setTXScanPrecision {};
+			class setTXScanWorldBounds {};
+			class updateTXScanDrawData {};
+		};
+		class Waypoints
+		{
+			file = "a3\Functions_F_Contact\Waypoints";
+			class wpAddScript {};
+			class wpDroneMove {};
+		};
+		class Weapons
+		{
+			file = "a3\Functions_F_Contact\Weapons";
+			class gravityBurst {};
+			class gravityCannon_01_ai {};
+			class grenadeThrowback {};
+			class lightBurst {};
+			class missileDeflection {};
+			class missileSwarm {};
+			class prototypeCannon_01_ai {};
+			class prototypeCannon_01_player {};
+			class prototypeCannon_01_slaved {};
 		};
 	};
 	class HSim

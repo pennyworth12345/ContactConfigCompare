@@ -44,6 +44,11 @@ class SteamManagerConfig
 				title = "Apex";
 				tooltip = "Use this tag for content using the Apex Expansion.";
 			};
+			class Contact: TagCommonBase
+			{
+				title = "Contact";
+				tooltip = "";
+			};
 			class ContactPlatform: TagCommonBase
 			{
 				title = "Contact (Platform)";

@@ -9,7 +9,7 @@ class RscDisplayOptionsVideo
 	scriptPath = "GUI";
 	class controls
 	{
-		class AAPPButton: RscButtonMenu
+		class AAPPButton: RscButtonMenuLegacy
 		{
 			colorBackground[] = {0, 0, 0, 0};
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
@@ -404,7 +404,7 @@ class RscDisplayOptionsVideo
 			x = "9 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
 			y = "2.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 		};
-		class DisplayButton: RscButtonMenu
+		class DisplayButton: RscButtonMenuLegacy
 		{
 			colorBackground[] = {0, 0, 0, 0};
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
@@ -415,7 +415,7 @@ class RscDisplayOptionsVideo
 			x = "9 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(safezoneX + (safezoneW - 					((safezoneW / safezoneH) min 1.2))/2)";
 			y = "3.2 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY + (safezoneH - 					(			((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
 		};
-		class GeneralButton: RscButtonMenu
+		class GeneralButton: RscButtonMenuLegacy
 		{
 			colorBackground[] = {0, 0, 0, 0};
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";

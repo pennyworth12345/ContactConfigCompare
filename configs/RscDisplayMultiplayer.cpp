@@ -46,7 +46,7 @@ class RscDisplayMultiplayer: RscStandardDisplay
 			x = "5.5 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(SafezoneX)";
 			y = "13.6 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class CA_BRemote: CA_Cancel
+		class CA_BRemote: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 166;
@@ -173,7 +173,7 @@ class RscDisplayMultiplayer: RscStandardDisplay
 			w = "1 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
 			x = "safezoneX + (27.8 * 			(			((safezoneW / safezoneH) min 1.2) / 40)) + 0.9*(safezoneW - 			((safezoneW / safezoneH) min 1.2))";
 		};
-		class CA_New: CA_Cancel
+		class CA_New: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 167;
@@ -560,7 +560,7 @@ class RscDisplayMultiplayer: RscStandardDisplay
 			x = "8.8 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(SafezoneX)";
 			y = "19.6 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class TabFriends: RscButtonMenu
+		class TabFriends: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 162;
@@ -570,7 +570,7 @@ class RscDisplayMultiplayer: RscStandardDisplay
 			x = "8.7 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(SafezoneX)";
 			y = "4.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
 		};
-		class TabInternet: RscButtonMenu
+		class TabInternet: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 159;
@@ -580,7 +580,7 @@ class RscDisplayMultiplayer: RscStandardDisplay
 			x = "31.2 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(SafezoneX)";
 			y = "4.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
 		};
-		class TabLAN: RscButtonMenu
+		class TabLAN: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 161;
@@ -590,7 +590,7 @@ class RscDisplayMultiplayer: RscStandardDisplay
 			x = "23.7 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(SafezoneX)";
 			y = "4.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
 		};
-		class TabOfficialServers: RscButtonMenu
+		class TabOfficialServers: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 163;
@@ -600,7 +600,7 @@ class RscDisplayMultiplayer: RscStandardDisplay
 			x = "16.2 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(SafezoneX)";
 			y = "4.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
 		};
-		class TabQuickPlay: CA_Cancel
+		class TabQuickPlay: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 164;
@@ -611,7 +611,7 @@ class RscDisplayMultiplayer: RscStandardDisplay
 			x = "1.2 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(SafezoneX)";
 			y = "2.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
 		};
-		class TabRecent: RscButtonMenu
+		class TabRecent: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 160;
@@ -621,7 +621,7 @@ class RscDisplayMultiplayer: RscStandardDisplay
 			x = "1.2 * 					(			((safezoneW / safezoneH) min 1.2) / 40) + 		(SafezoneX)";
 			y = "4.1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 		(safezoneY)";
 		};
-		class TabServers: CA_Cancel
+		class TabServers: RscButtonMenuLegacy
 		{
 			h = "1 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 165;

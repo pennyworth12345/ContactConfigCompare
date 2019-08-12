@@ -159,6 +159,325 @@ class CfgMarkers
 		side = 1;
 		texture = "\A3\ui_f\data\map\markers\nato\c_unknown.paa";
 	};
+	class Contact_arrow1: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\arrow1_ca.paa";
+		markerClass = "Contact";
+		name = "arrow1";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_arrow2: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\arrow2_ca.paa";
+		markerClass = "Contact";
+		name = "arrow2";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_arrow3: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\arrow3_ca.paa";
+		markerClass = "Contact";
+		name = "arrow3";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_arrowLeft: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\arrowLeft_ca.paa";
+		markerClass = "Contact";
+		name = "arrowLeft";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_arrowRight: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\arrowRight_ca.paa";
+		markerClass = "Contact";
+		name = "arrowRight";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_arrowSmall1: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\arrowSmall1_ca.paa";
+		markerClass = "Contact";
+		name = "arrowSmall1";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_arrowSmall2: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\arrowSmall2_ca.paa";
+		markerClass = "Contact";
+		name = "arrowSmall2";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_art1: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\art1_ca.paa";
+		markerClass = "Contact";
+		name = "art1";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_art2: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\art2_ca.paa";
+		markerClass = "Contact";
+		name = "art2";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_camp: Contact_dot1
+	{
+		icon = "\a3\UI_F_Contact\Data\CfgLocationTypes\handDrawnCamp_ca.paa";
+	};
+	class Contact_circle1: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\circle1_ca.paa";
+		markerClass = "Contact";
+		name = "circle1";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_circle2: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\circle2_ca.paa";
+		markerClass = "Contact";
+		name = "circle2";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_circle3: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\circle3_ca.paa";
+		markerClass = "Contact";
+		name = "circle3";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_circle4: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\circle4_ca.paa";
+		markerClass = "Contact";
+		name = "circle4";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_dashedLine1: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\dashedLine1_ca.paa";
+		markerClass = "Contact";
+		name = "dashedLine1";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_dashedLine2: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\dashedLine2_ca.paa";
+		markerClass = "Contact";
+		name = "dashedLine2";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_dashedLine3: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\dashedLine3_ca.paa";
+		markerClass = "Contact";
+		name = "dashedLine3";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_defenseLine: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\defenseLine_ca.paa";
+		markerClass = "Contact";
+		name = "defenseLine";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_defenseLineOver: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\defenseLineOver_ca.paa";
+		markerClass = "Contact";
+		name = "defenseLineOver";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_dot1: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\dot1_ca.paa";
+		markerClass = "Contact";
+		name = "dot1";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_dot2: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\dot2_ca.paa";
+		markerClass = "Contact";
+		name = "dot2";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_dot3: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\dot3_ca.paa";
+		markerClass = "Contact";
+		name = "dot3";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_dot4: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\dot4_ca.paa";
+		markerClass = "Contact";
+		name = "dot4";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_dot5: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\dot5_ca.paa";
+		markerClass = "Contact";
+		name = "dot5";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_pencilCircle1: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\pencilCircle1_ca.paa";
+		markerClass = "Contact";
+		name = "pencilCircle1";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_pencilCircle2: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\pencilCircle2_ca.paa";
+		markerClass = "Contact";
+		name = "pencilCircle2";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_pencilCircle3: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\pencilCircle3_ca.paa";
+		markerClass = "Contact";
+		name = "pencilCircle3";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_pencilDoodle1: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\pencilDoodle1_ca.paa";
+		markerClass = "Contact";
+		name = "pencilDoodle1";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_pencilDoodle2: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\pencilDoodle2_ca.paa";
+		markerClass = "Contact";
+		name = "pencilDoodle2";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_pencilDoodle3: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\pencilDoodle3_ca.paa";
+		markerClass = "Contact";
+		name = "pencilDoodle3";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_pencilDot1: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\pencilDot1_ca.paa";
+		markerClass = "Contact";
+		name = "pencilDot1";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_pencilDot2: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\pencilDot2_ca.paa";
+		markerClass = "Contact";
+		name = "pencilDot2";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_pencilDot3: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\pencilDot3_ca.paa";
+		markerClass = "Contact";
+		name = "pencilDot3";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_pencilTask1: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\pencilTask1_ca.paa";
+		markerClass = "Contact";
+		name = "pencilTask1";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_pencilTask2: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\pencilTask2_ca.paa";
+		markerClass = "Contact";
+		name = "pencilTask2";
+		scope = 0;
+		shadow = 0;
+	};
+	class Contact_pencilTask3: Flag
+	{
+		color[] = {0, 0, 0, 1};
+		icon = "\a3\UI_F_Contact\Data\CfgMarkers\pencilTask3_ca.paa";
+		markerClass = "Contact";
+		name = "pencilTask3";
+		scope = 0;
+		shadow = 0;
+	};
 	class Empty
 	{
 		color[] = {0.2, 0.1, 0.4, 1};
@@ -611,7 +930,7 @@ class CfgMarkers
 		markerClass = "draw";
 		name = "Dot";
 		scope = 2;
-		shadow = 1;
+		shadow = 0;
 		size = 32;
 	};
 	class hd_dot_noShadow: hd_dot
@@ -1060,7 +1379,7 @@ class CfgMarkers
 		markerClass = "Military";
 		name = "Objective";
 		scope = 1;
-		shadow = 1;
+		shadow = 0;
 		size = 32;
 	};
 	class mil_objective_noShadow: mil_objective

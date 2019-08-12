@@ -9,6 +9,8 @@ class RscDisplayServer: RscDisplayRemoteMissions
 	colorMissionWizard[] = {0.863, 0.584, 0, 1};
 	colorWizard[] = {0.863, 0.584, 0, 1};
 	idd = 17;
+	onMouseHolding = "_this call (uinamespace getvariable 'BIN_fnc_playMissionMPHosted');";
+	onMouseMoving = "_this call (uinamespace getvariable 'BIN_fnc_playMissionMPHosted');";
 	textEdit = "2D Editor";
 	textEdit3DEN = "3D Editor";
 	textNew = "<<New - 2D Editor>>";

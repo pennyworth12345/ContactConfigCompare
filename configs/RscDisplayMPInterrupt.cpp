@@ -9,7 +9,7 @@ class RscDisplayMPInterrupt: RscStandardDisplay
 	scriptPath = "GUI";
 	class controls
 	{
-		class ButtonAbort: RscButtonMenu
+		class ButtonAbort: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 104;
@@ -18,7 +18,7 @@ class RscDisplayMPInterrupt: RscStandardDisplay
 			x = "1 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "20.8 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class ButtonAudio: RscButtonMenu
+		class ButtonAudio: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 302;
@@ -28,7 +28,7 @@ class RscDisplayMPInterrupt: RscStandardDisplay
 			x = "2 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "16.4 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class ButtonCancel: RscButtonMenu
+		class ButtonCancel: RscButtonMenuLeft
 		{
 			default = 1;
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
@@ -43,7 +43,7 @@ class RscDisplayMPInterrupt: RscStandardDisplay
 				left = "14 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
 			};
 		};
-		class ButtonControls: RscButtonMenu
+		class ButtonControls: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 303;
@@ -53,7 +53,7 @@ class RscDisplayMPInterrupt: RscStandardDisplay
 			x = "2 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "17.5 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class ButtonGame: RscButtonMenu
+		class ButtonGame: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 307;
@@ -63,7 +63,7 @@ class RscDisplayMPInterrupt: RscStandardDisplay
 			x = "2 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "18.6 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class ButtonOptions: RscButtonMenu
+		class ButtonOptions: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 101;
@@ -72,7 +72,7 @@ class RscDisplayMPInterrupt: RscStandardDisplay
 			x = "1 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "18.6 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class ButtonRespawn: RscButtonMenu
+		class ButtonRespawn: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 1010;
@@ -81,7 +81,7 @@ class RscDisplayMPInterrupt: RscStandardDisplay
 			x = "1 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "17.5 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class ButtonSAVE: RscButtonMenu
+		class ButtonSAVE: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 103;
@@ -90,7 +90,7 @@ class RscDisplayMPInterrupt: RscStandardDisplay
 			x = "1 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "16.4 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class ButtonSkip: RscButtonMenu
+		class ButtonSkip: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 1002;
@@ -99,7 +99,7 @@ class RscDisplayMPInterrupt: RscStandardDisplay
 			x = "1 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "16.4 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class ButtonTutorialHints: RscButtonMenu
+		class ButtonTutorialHints: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 122;
@@ -109,7 +109,7 @@ class RscDisplayMPInterrupt: RscStandardDisplay
 			x = "1 * 			(			((safezoneW / safezoneH) min 1.2) / 40) + 			(safezoneX)";
 			y = "19.7 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + 			(safezoneY + safezoneH - 			(			((safezoneW / safezoneH) min 1.2) / 1.2))";
 		};
-		class ButtonVideo: RscButtonMenu
+		class ButtonVideo: RscButtonMenuLeft
 		{
 			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			idc = 301;

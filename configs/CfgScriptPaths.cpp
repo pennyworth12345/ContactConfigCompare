@@ -6,6 +6,11 @@ class CfgScriptPaths
 	BootcampCommon = "A3\ui_f_curator\UI\RscCommon\";
 	BootcampDisplays = "A3\ui_f_curator\UI\displays\";
 	BootcampTitles = "A3\ui_f_curator\UI\RscTitles\";
+	ContactCommon = "a3\UI_F_Contact\UI\Common\";
+	ContactDisplays = "a3\UI_F_Contact\UI\Displays\";
+	ContactDisplaysTemp = "a3\UI_F_Contact\UI\DisplaysTemp\";
+	ContactIngameUI = "a3\UI_F_Contact\UI\RscIngameUI\";
+	ContactTitles = "a3\UI_F_Contact\UI\RscTitles\";
 	CuratorCommon = "A3\ui_f_curator\UI\RscCommon\";
 	CuratorDisplays = "A3\ui_f_curator\UI\displays\";
 	CuratorTitles = "A3\ui_f_curator\UI\RscTitles\";

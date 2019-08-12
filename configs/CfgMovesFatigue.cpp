@@ -4,7 +4,7 @@ class CfgMovesFatigue
 	staminaCooldown = 10;
 	staminaDuration = 60;
 	staminaRestoration = 30;
-	terrainDrainRun = -1;
-	terrainDrainSprint = -1;
+	terrainDrainRun = -0.25;
+	terrainDrainSprint = -0.25;
 	terrainSpeedCoef = 0.9;
 };

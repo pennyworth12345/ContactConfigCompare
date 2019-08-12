@@ -487,6 +487,574 @@ class CfgSoundSets
 	{
 		soundShaders[] = {"AK74_tailDistant_SoundShader", "AK74_tailForest_SoundShader", "AK74_tailHouses_SoundShader", "AK74_tailMeadows_SoundShader", "AK74_tailTrees_SoundShader"};
 	};
+	class AlienDrone_01_Base_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		sound3DProcessingType = "DroneMovement3DProcessingType";
+		soundShadersLimit = 0;
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class AlienDrone_01_Crash_Primary_Heavy_01_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		playTrigger = "((CustomSoundController10 factor [11.98, 11.99]) * (CustomSoundController10 factor [13.99, 13.98])) * (altRadar factor [4,3.99])";
+		posOffset[] = {0, 0, 0};
+		sound3DProcessingType = "VehicleExt_3DProcessingType";
+		soundShaders[] = {"AlienDrone_01_Crash_Primary_Heavy_SoundShader"};
+		soundShadersLimit = 1;
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 0.8;
+	};
+	class AlienDrone_01_Crash_Primary_Heavy_02_SoundSet: AlienDrone_01_Crash_Primary_Heavy_01_SoundSet
+	{
+		frequencyFactor = 0.7;
+		playTrigger = "1 * (CustomSoundController10 factor [13.99, 15.99]) * (altRadar factor [4,3.99])";
+		soundShaders[] = {"AlienDrone_01_Crash_Primary_Heavy_SoundShader"};
+		volumeFactor = 0.8;
+	};
+	class AlienDrone_01_Crash_Roll_01_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 0;
+		frequencyFactor = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		playTrigger = "((CustomSoundController10 factor [0.29,0.3]) * (CustomSoundController10 factor [3,2.99])) * (altRadar factor [1,0.99])";
+		posOffset[] = {0, 0, 0};
+		sound3DProcessingType = "VehicleExt_3DProcessingType";
+		soundShaders[] = {"AlienDrone_01_Crash_Roll_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class AlienDrone_01_Crash_Roll_02_SoundSet: AlienDrone_01_Crash_Roll_01_SoundSet
+	{
+		frequencyFactor = 0.8;
+		playTrigger = "1 * ((CustomSoundController10 factor [2.99,3]) * (CustomSoundController10 factor [6,5.99])) * (altRadar factor [1,0.99])";
+		soundShaders[] = {"AlienDrone_01_Crash_Roll_01_SoundShader"};
+		volumeFactor = 0.8;
+	};
+	class AlienDrone_01_Crash_Roll_03_SoundSet: AlienDrone_01_Crash_Roll_01_SoundSet
+	{
+		frequencyFactor = 0.6;
+		playTrigger = "1 * ((CustomSoundController10 factor [5.99,6]) * (CustomSoundController10 factor [8.99,8.98])) * (altRadar factor [1,0.99])";
+		soundShaders[] = {"AlienDrone_01_Crash_Roll_01_SoundShader"};
+		volumeFactor = 1;
+	};
+	class AlienDrone_01_Crash_Roll_04_SoundSet: AlienDrone_01_Crash_Roll_01_SoundSet
+	{
+		frequencyFactor = 0.5;
+		playTrigger = "1 * ((CustomSoundController10 factor [8.98,8.99]) * (CustomSoundController10 factor [12,10.99])) * (altRadar factor [1,0.99])";
+		soundShaders[] = {"AlienDrone_01_Crash_Roll_01_SoundShader"};
+		volumeFactor = 1;
+	};
+	class AlienDrone_01_Crash_Roll_05_SoundSet: AlienDrone_01_Crash_Roll_01_SoundSet
+	{
+		frequencyFactor = 0.4;
+		playTrigger = "1 * (CustomSoundController10 factor [10.99,12]) * (altRadar factor [1,0.99])";
+		soundShaders[] = {"AlienDrone_01_Crash_Roll_01_SoundShader"};
+		volumeFactor = 1.3;
+	};
+	class AlienDrone_01_Crash_Secondary_01_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		playTrigger = "1 * ((CustomSoundController10 factor [0.29,0.3]) * (CustomSoundController10 factor [3,2.99]))* (altRadar factor [4,3.99])";
+		posOffset[] = {0, 0, 0};
+		sound3DProcessingType = "VehicleExt_3DProcessingType";
+		soundShaders[] = {"AlienDrone_01_Crash_Roll_01_SoundShader"};
+		soundShadersLimit = 2;
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 0.8;
+	};
+	class AlienDrone_01_Crash_Secondary_02_SoundSet: AlienDrone_01_Crash_Secondary_01_SoundSet
+	{
+		frequencyFactor = 0.8;
+		playTrigger = "1 * ((CustomSoundController10 factor [2.99,3]) * (CustomSoundController10 factor [6,5.99]))* (altRadar factor [4,3.99])";
+		soundShaders[] = {"AlienDrone_01_Crash_Roll_01_SoundShader"};
+	};
+	class AlienDrone_01_Crash_Secondary_03_SoundSet: AlienDrone_01_Crash_Secondary_01_SoundSet
+	{
+		frequencyFactor = 0.6;
+		playTrigger = "1 * ((CustomSoundController10 factor [5.99,6]) * (CustomSoundController10 factor [8.99,8.98]))* (altRadar factor [4,3.99])";
+		soundShaders[] = {"AlienDrone_01_Crash_Roll_01_SoundShader"};
+	};
+	class AlienDrone_01_Crash_Secondary_04_SoundSet: AlienDrone_01_Crash_Secondary_01_SoundSet
+	{
+		frequencyFactor = 1;
+		playTrigger = "1 * ((CustomSoundController10 factor [8.98,8.99]) * (CustomSoundController10 factor [12,10.99]))* (altRadar factor [4,3.99])";
+		soundShaders[] = {"AlienDrone_01_Crash_Secondary_SoundShader"};
+	};
+	class AlienDrone_01_Crash_Secondary_05_SoundSet: AlienDrone_01_Crash_Secondary_01_SoundSet
+	{
+		frequencyFactor = 0.8;
+		playTrigger = "1 * (CustomSoundController10 factor [10.99,12])";
+		soundShaders[] = {"AlienDrone_01_Crash_Secondary_SoundShader"};
+	};
+	class AlienDrone_01_Destroyed_High_01_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		playTrigger = "(rotorDamage factor [0.99999,1]) * (altRadar factor [4.999,5])";
+		posOffset[] = {0, 0, 0};
+		sound3DProcessingType = "VehicleExt_3DProcessingType";
+		soundShaders[] = {"AlienDrone_01_Destroyed_High_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class AlienDrone_01_Destroyed_Low_01_SoundSet: AlienDrone_01_Destroyed_High_01_SoundSet
+	{
+		playTrigger = "(rotorDamage factor [0.99999,1]) * (altRadar factor [5,4.999])";
+		soundShaders[] = {"AlienDrone_01_Destroyed_Low_01_SoundShader"};
+		volumeFactor = 1;
+	};
+	class AlienDrone_01_Downwash_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		posOffset[] = {0, 0, 0};
+		sound3DProcessingType = "VehicleExt_3DProcessingType";
+		soundShaders[] = {"AlienDrone_01_Downwash_Debris_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class AlienDrone_01_Dummy_1000m_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		sound3DProcessingType = "VehicleExt_3DProcessingType";
+		soundShaders[] = {"AlienDrone_01_Dummy_1000m_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class AlienDrone_01_Matter_Collection_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		playTrigger = "(CustomSoundController15 factor [0.99,1])";
+		posOffset[] = {0, 0, 0};
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"AlienDrone_01_Matter_Collection_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve[] = {{0, 1}, {0.1, 0.9}, {0.2, 0.8}, {0.3, 0.7}, {0.4, 0.6}, {0.5, 0.5}, {0.6, 0.4}, {0.7, 0.3}, {0.8, 0.2}, {0.9, 0.1}, {1, 0}};
+		volumeFactor = 1;
+	};
+	class AlienDrone_01_Pulse_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		playTrigger = "(CustomSoundController25 factor [0.99,1])";
+		posOffset[] = {0, 0, 0};
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"AlienDrone_01_Pulse_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class AlienDrone_01_Puzzle_01_Charge_3Sec_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		playTrigger = "(CustomSoundController19 factor [0.99,1])";
+		posOffset[] = {0, 0, 0};
+		sound3DProcessingType = "DronePuzzleFeedback3DProcessingType";
+		soundShaders[] = {"Puzzle_01_Charge_3Sec_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1.9;
+	};
+	class AlienDrone_01_Puzzle_Aggro_01_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		playTrigger = "(CustomSoundController20 factor [0.99,1])";
+		posOffset[] = {0, 0, 0};
+		sound3DProcessingType = "DronePuzzleFeedback3DProcessingType";
+		soundShaders[] = {"AlienDrone_01_Puzzle_Aggro_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1.9;
+	};
+	class AlienDrone_01_Puzzle_Step_Failed_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		playTrigger = "(CustomSoundController22 factor [0.99,1])";
+		posOffset[] = {0, 0, 0};
+		sound3DProcessingType = "DronePuzzleFeedback3DProcessingType";
+		soundShaders[] = {"AlienDrone_01_Puzzle_Step_Failed_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1.9;
+	};
+	class AlienDrone_01_Puzzle_Step_Success_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		playTrigger = "(CustomSoundController24 factor [0.99,1])";
+		posOffset[] = {0, 0, 0};
+		sound3DProcessingType = "DronePuzzleFeedback3DProcessingType";
+		soundShaders[] = {"AlienDrone_01_Puzzle_Step_Success_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1.9;
+	};
+	class AlienDrone_01_Puzzle_Success_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		playTrigger = "(CustomSoundController23 factor [0.99,1])";
+		posOffset[] = {0, 0, 0};
+		sound3DProcessingType = "DronePuzzleFeedback3DProcessingType";
+		soundShaders[] = {"AlienDrone_01_Puzzle_Success_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1.9;
+	};
+	class AlienDrone_01_Strat_End_01_SoundSet: AlienDrone_01_Base_SoundSet
+	{
+		soundShaders[] = {"AlienDrone_01_Strat_End_01_SoundShader"};
+	};
+	class AlienDrone_01_Strat_End_02_SoundSet: AlienDrone_01_Strat_End_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(				0.68+0.01-0.001),(				0.68+0.01),(				0.68+0.01),(				0.68+0.01+0.001)]";
+	};
+	class AlienDrone_01_Strat_End_03_SoundSet: AlienDrone_01_Strat_End_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(				0.68+0.02-0.001),(				0.68+0.02),(				0.68+0.02),(				0.68+0.02+0.001)]";
+	};
+	class AlienDrone_01_Strat_End_04_SoundSet: AlienDrone_01_Strat_End_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(				0.68+0.03-0.001),(				0.68+0.03),(				0.68+0.03),(				0.68+0.03+0.001)]";
+	};
+	class AlienDrone_01_Strat_End_Land_01_SoundSet: AlienDrone_01_Base_SoundSet
+	{
+		soundShaders[] = {"AlienDrone_01_Strat_End_Land_01_SoundShader"};
+	};
+	class AlienDrone_01_Strat_End_Land_02_SoundSet: AlienDrone_01_Strat_End_Land_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.72+0.01-0.001),(			0.72+0.01),(			0.72+0.01),(			0.72+0.01+0.001)]";
+	};
+	class AlienDrone_01_Strat_End_Land_03_SoundSet: AlienDrone_01_Strat_End_Land_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.72+0.02-0.001),(			0.72+0.02),(			0.72+0.02),(			0.72+0.02+0.001)]";
+	};
+	class AlienDrone_01_Strat_End_Land_04_SoundSet: AlienDrone_01_Strat_End_Land_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.72+0.03-0.001),(			0.72+0.03),(			0.72+0.03),(			0.72+0.03+0.001)]";
+	};
+	class AlienDrone_01_Strat_Start_01_SoundSet: AlienDrone_01_Base_SoundSet
+	{
+		soundShaders[] = {"AlienDrone_01_Strat_Start_01_SoundShader"};
+	};
+	class AlienDrone_01_Strat_Start_02_SoundSet: AlienDrone_01_Strat_Start_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(				0.6+0.01-0.001),(				0.6+0.01),(				0.6+0.01),(				0.6+0.01+0.001)]";
+	};
+	class AlienDrone_01_Strat_Start_03_SoundSet: AlienDrone_01_Strat_Start_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(				0.6+0.02-0.001),(				0.6+0.02),(				0.6+0.02),(				0.6+0.02+0.001)]";
+	};
+	class AlienDrone_01_Strat_Start_04_SoundSet: AlienDrone_01_Strat_Start_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(				0.6+0.03-0.001),(				0.6+0.03),(				0.6+0.03),(				0.6+0.03+0.001)]";
+	};
+	class AlienDrone_01_Strat_Stop_01_SoundSet: AlienDrone_01_Base_SoundSet
+	{
+		soundShaders[] = {"AlienDrone_01_Strat_Stop_01_SoundShader"};
+	};
+	class AlienDrone_01_Strat_Stop_02_SoundSet: AlienDrone_01_Strat_Stop_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(				0.76+0.01-0.001),(				0.76+0.01),(				0.76+0.01),(				0.76+0.01+0.001)]";
+	};
+	class AlienDrone_01_Strat_Stop_03_SoundSet: AlienDrone_01_Strat_Stop_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(				0.76+0.02-0.001),(				0.76+0.02),(				0.76+0.02),(				0.76+0.02+0.001)]";
+	};
+	class AlienDrone_01_Strat_Stop_04_SoundSet: AlienDrone_01_Strat_Stop_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(				0.76+0.03-0.001),(				0.76+0.03),(				0.76+0.03),(				0.76+0.03+0.001)]";
+	};
+	class AlienDrone_01_Strat_Travel_01_SoundSet: AlienDrone_01_Base_SoundSet
+	{
+		soundShaders[] = {"AlienDrone_01_Strat_Travel_01_SoundShader"};
+	};
+	class AlienDrone_01_Strat_Travel_01a_SoundSet: AlienDrone_01_Base_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.64-0.001),(			0.64),(			0.64),(			0.64+0.001)]";
+		soundShaders[] = {"AlienDrone_01_Strat_Travel_01_Distant_SoundShader"};
+	};
+	class AlienDrone_01_Strat_Travel_02_SoundSet: AlienDrone_01_Strat_Travel_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.64+0.01-0.001),(			0.64+0.01),(			0.64+0.01),(			0.64+0.01+0.001)]";
+	};
+	class AlienDrone_01_Strat_Travel_02a_SoundSet: AlienDrone_01_Strat_Travel_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.64+0.01-0.001),(			0.64+0.01),(			0.64+0.01),(			0.64+0.01+0.001)]";
+	};
+	class AlienDrone_01_Strat_Travel_03_SoundSet: AlienDrone_01_Strat_Travel_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.64+0.02-0.001),(			0.64+0.02),(			0.64+0.02),(			0.64+0.02+0.001)]";
+	};
+	class AlienDrone_01_Strat_Travel_03a_SoundSet: AlienDrone_01_Strat_Travel_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.64+0.02-0.001),(			0.64+0.02),(			0.64+0.02),(			0.64+0.02+0.001)]";
+	};
+	class AlienDrone_01_Strat_Travel_04_SoundSet: AlienDrone_01_Strat_Travel_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.64+0.03-0.001),(			0.64+0.03),(			0.64+0.03),(			0.64+0.03+0.001)]";
+	};
+	class AlienDrone_01_Strat_Travel_04a_SoundSet: AlienDrone_01_Strat_Travel_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.64+0.03-0.001),(			0.64+0.03),(			0.64+0.03),(			0.64+0.03+0.001)]";
+	};
+	class AlienDrone_01_Tact_H_Leap_01_SoundSet: AlienDrone_01_Base_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(				0.31    -0.001),(				0.31    ),(				0.31    ),(				0.31    +0.001)]";
+		soundShaders[] = {"AlienDrone_01_Tact_H_Leap_01_SoundShader"};
+	};
+	class AlienDrone_01_Tact_H_Leap_02_SoundSet: AlienDrone_01_Tact_H_Leap_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(				0.31    +0.01-0.001),(				0.31    +0.01),(				0.31    +0.01),(				0.31    +0.01+0.001)]";
+	};
+	class AlienDrone_01_Tact_H_Leap_03_SoundSet: AlienDrone_01_Tact_H_Leap_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(				0.31    +0.02-0.001),(				0.31    +0.02),(				0.31    +0.02),(				0.31    +0.02+0.001)]";
+	};
+	class AlienDrone_01_Tact_H_Leap_04_SoundSet: AlienDrone_01_Tact_H_Leap_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(				0.31    +0.03-0.001),(				0.31    +0.03),(				0.31    +0.03),(				0.31    +0.03+0.001)]";
+	};
+	class AlienDrone_01_Tact_H_Long_01_SoundSet: AlienDrone_01_Base_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(				0.23	-0.001),(				0.23	),(				0.23	),(				0.23	+0.001)]";
+		soundShaders[] = {"AlienDrone_01_Tact_H_Long_01_SoundShader"};
+	};
+	class AlienDrone_01_Tact_H_Long_02_SoundSet: AlienDrone_01_Tact_H_Long_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(				0.23	+0.01-0.001),(				0.23	+0.01),(				0.23	+0.01),(				0.23	+0.01+0.001)]";
+	};
+	class AlienDrone_01_Tact_H_Long_03_SoundSet: AlienDrone_01_Tact_H_Long_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(				0.23	+0.02-0.001),(				0.23	+0.02),(				0.23	+0.02),(				0.23	+0.02+0.001)]";
+	};
+	class AlienDrone_01_Tact_H_Long_04_SoundSet: AlienDrone_01_Tact_H_Long_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(				0.23	+0.03-0.001),(				0.23	+0.03),(				0.23	+0.03),(				0.23	+0.03+0.001)]";
+	};
+	class AlienDrone_01_Tact_H_Long_Plus_01_SoundSet: AlienDrone_01_Base_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.27	-0.001),(			0.27	),(			0.27	),(			0.27	+0.001)]";
+		soundShaders[] = {"AlienDrone_01_Tact_H_Long_Plus_01_SoundShader"};
+	};
+	class AlienDrone_01_Tact_H_Long_Plus_02_SoundSet: AlienDrone_01_Tact_H_Long_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.27	+0.01-0.001),(			0.27	+0.01),(			0.27	+0.01),(			0.27	+0.01+0.001)]";
+	};
+	class AlienDrone_01_Tact_H_Long_Plus_03_SoundSet: AlienDrone_01_Tact_H_Long_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.27	+0.02-0.001),(			0.27	+0.02),(			0.27	+0.02),(			0.27	+0.02+0.001)]";
+	};
+	class AlienDrone_01_Tact_H_Long_Plus_04_SoundSet: AlienDrone_01_Tact_H_Long_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.27	+0.03-0.001),(			0.27	+0.03),(			0.27	+0.03),(			0.27	+0.03+0.001)]";
+	};
+	class AlienDrone_01_Tact_H_Medium_01_SoundSet: AlienDrone_01_Tactical_Movement_Short_Base_Settings_SoundSet
+	{
+		soundShaders[] = {"AlienDrone_01_Tact_H_Medium_01_SoundShader"};
+	};
+	class AlienDrone_01_Tact_H_Medium_Long_01_SoundSet: AlienDrone_01_Base_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(		0.19	-0.001),(		0.19	),(		0.19	),(		0.19	+0.001)]";
+		soundShaders[] = {"AlienDrone_01_Tact_H_Medium_Long_01_SoundShader"};
+	};
+	class AlienDrone_01_Tact_H_Medium_Long_02_SoundSet: AlienDrone_01_Tact_H_Medium_Long_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(		0.19	+0.01-0.001),(		0.19	+0.01),(		0.19	+0.01),(		0.19	+0.01+0.001)]";
+		soundShaders[] = {"AlienDrone_01_Tact_H_Medium_Long_02_SoundShader"};
+	};
+	class AlienDrone_01_Tact_H_Medium_Long_03_SoundSet: AlienDrone_01_Tact_H_Medium_Long_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(		0.19	+0.02-0.001),(		0.19	+0.02),(		0.19	+0.02),(		0.19	+0.02+0.001)]";
+		soundShaders[] = {"AlienDrone_01_Tact_H_Medium_Long_01_SoundShader"};
+	};
+	class AlienDrone_01_Tact_H_Medium_Long_04_SoundSet: AlienDrone_01_Tact_H_Medium_Long_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(		0.19	+0.03-0.001),(		0.19	+0.03),(		0.19	+0.03),(		0.19	+0.03+0.001)]";
+		soundShaders[] = {"AlienDrone_01_Tact_H_Medium_Long_02_SoundShader"};
+	};
+	class AlienDrone_01_Tact_H_Short_01_SoundSet: AlienDrone_01_Tactical_Movement_Short_Base_Settings_SoundSet
+	{
+		soundShaders[] = {"AlienDrone_01_Tact_H_Short_01_SoundShader"};
+		volumeFactor = 0.8;
+	};
+	class AlienDrone_01_Tact_V_Down_Long_01_SoundSet: AlienDrone_01_Base_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(		0.52-0.001),(		0.52),(		0.52),(		0.52+0.001)]";
+		soundShaders[] = {"AlienDrone_01_Tact_V_Down_Long_01_SoundShader"};
+	};
+	class AlienDrone_01_Tact_V_Down_Long_02_SoundSet: AlienDrone_01_Tact_V_Down_Long_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(		0.52+0.01-0.001),(		0.52+0.01),(		0.52+0.01),(		0.52+0.01+0.001)]";
+	};
+	class AlienDrone_01_Tact_V_Down_Long_03_SoundSet: AlienDrone_01_Tact_V_Down_Long_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(		0.52+0.02-0.001),(		0.52+0.02),(		0.52+0.02),(		0.52+0.02+0.001)]";
+	};
+	class AlienDrone_01_Tact_V_Down_Long_04_SoundSet: AlienDrone_01_Tact_V_Down_Long_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(		0.52+0.03-0.001),(		0.52+0.03),(		0.52+0.03),(		0.52+0.03+0.001)]";
+	};
+	class AlienDrone_01_Tact_V_Down_Short_01_SoundSet: AlienDrone_01_Base_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(		0.48-0.001),(		0.48),(		0.48),(		0.48+0.001)]";
+		soundShaders[] = {"AlienDrone_01_Tact_V_Down_Short_01_SoundShader"};
+	};
+	class AlienDrone_01_Tact_V_Down_Short_02_SoundSet: AlienDrone_01_Tact_V_Down_Short_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(		0.48+0.01-0.001),(		0.48+0.01),(		0.48+0.01),(		0.48+0.01+0.001)]";
+	};
+	class AlienDrone_01_Tact_V_Down_Short_03_SoundSet: AlienDrone_01_Tact_V_Down_Short_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(		0.48+0.02-0.001),(		0.48+0.02),(		0.48+0.02),(		0.48+0.02+0.001)]";
+	};
+	class AlienDrone_01_Tact_V_Down_Short_04_SoundSet: AlienDrone_01_Tact_V_Down_Short_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(		0.48+0.03-0.001),(		0.48+0.03),(		0.48+0.03),(		0.48+0.03+0.001)]";
+	};
+	class AlienDrone_01_Tact_V_Up_Long_01_SoundSet: AlienDrone_01_Base_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.44-0.001),(			0.44),(			0.44),(			0.44+0.001)]";
+		soundShaders[] = {"AlienDrone_01_Tact_V_Up_Long_01_SoundShader"};
+	};
+	class AlienDrone_01_Tact_V_Up_Long_02_SoundSet: AlienDrone_01_Tact_V_Up_Long_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.44+0.01-0.001),(			0.44+0.01),(			0.44+0.01),(			0.44+0.01+0.001)]";
+	};
+	class AlienDrone_01_Tact_V_Up_Long_03_SoundSet: AlienDrone_01_Tact_V_Up_Long_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.44+0.02-0.001),(			0.44+0.02),(			0.44+0.02),(			0.44+0.02+0.001)]";
+	};
+	class AlienDrone_01_Tact_V_Up_Long_04_SoundSet: AlienDrone_01_Tact_V_Up_Long_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.44+0.03-0.001),(			0.44+0.03),(			0.44+0.03),(			0.44+0.03+0.001)]";
+	};
+	class AlienDrone_01_Tact_V_Up_Short_01_SoundSet: AlienDrone_01_Base_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.4-0.001),(			0.4),(			0.4),(			0.4+0.001)]";
+		soundShaders[] = {"AlienDrone_01_Tact_V_Up_Short_01_SoundShader"};
+	};
+	class AlienDrone_01_Tact_V_Up_Short_02_SoundSet: AlienDrone_01_Tact_V_Up_Short_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.4+0.01-0.001),(			0.4+0.01),(			0.4+0.01),(			0.4+0.01+0.001)]";
+	};
+	class AlienDrone_01_Tact_V_Up_Short_03_SoundSet: AlienDrone_01_Tact_V_Up_Short_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.4+0.02-0.001),(			0.4+0.02),(			0.4+0.02),(			0.4+0.02+0.001)]";
+	};
+	class AlienDrone_01_Tact_V_Up_Short_04_SoundSet: AlienDrone_01_Tact_V_Up_Short_01_SoundSet
+	{
+		playTrigger = "CustomSoundController1 envelope [(			0.4+0.03-0.001),(			0.4+0.03),(			0.4+0.03),(			0.4+0.03+0.001)]";
+	};
+	class AlienDrone_01_Tactical_Movement_Short_Base_Settings_SoundSet
+	{
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		sound3DProcessingType = "Drone_01_Movement_Short_3DProcessingType";
+		soundShadersLimit = 0;
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class Anti_Grenade_Laser_Discharge_SoundSet
+	{
+		distanceFilter = "DroneWeaponDistanceFreqAttenuationFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"Anti_Grenade_Laser_Discharge_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.6;
+	};
 	class APC_Tracked_01_Drive_Dirt_EXT_SoundSet: Base_Drive_Dirt_EXT_SoundSet
 	{
 		posOffset[] = {0, 0, -3};
@@ -2943,6 +3511,15 @@ class CfgSoundSets
 		volumeFactor = 0.1;
 		volumeRandomizer = 1.41254;
 	};
+	class Debris_FlyBy_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		soundShaders[] = {"Debris_FlyBy_SoundShader"};
+		spatial = 1;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
 	class debrisFlyBy_SoundSet
 	{
 		doppler = 0;
@@ -3237,6 +3814,3011 @@ class CfgSoundSets
 		volumeCurve = "InverseSquare1Curve";
 		volumeFactor = 0.2;
 		volumeRandomizer = 1.41254;
+	};
+	class EM_AutoTurret_Enc_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_AutoTurret_Enc_01_S_SoundShader"};
+	};
+	class EM_AutoTurret_Enc_01_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_AutoTurret_Enc_01_W_SoundShader"};
+	};
+	class EM_AutoTurret_Jammed_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_AutoTurret_Jammed_01_S_SoundShader"};
+	};
+	class EM_AutoTurret_Jammed_01_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_AutoTurret_Jammed_01_W_SoundShader"};
+	};
+	class EM_Base
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 1;
+		occlusionFactor = 1;
+		occlusionObstruction = 0;
+		posOffset[] = {0, 0, 0};
+		sound3DProcessingType = "VehicleExt_3DProcessingType";
+		soundShadersLimit = 1;
+		spatial = 0;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class EM_Base_Noise_01_Outro3_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Base_Noise_01_Outro3_S_SoundShader"};
+	};
+	class EM_Base_Noise_01_Outro3_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Base_Noise_01_Outro3_W_SoundShader"};
+	};
+	class EM_Base_Noise_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Base_Noise_01_S_SoundShader"};
+	};
+	class EM_Base_Noise_01_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Base_Noise_01_W_SoundShader"};
+	};
+	class EM_BlackBox_DistressSignal_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_BlackBox_DistressSignal_01_S_SoundShader"};
+	};
+	class EM_Darter_Enc_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Darter_Enc_01_S_SoundShader"};
+	};
+	class EM_Darter_Enc_01_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Darter_Enc_01_W_SoundShader"};
+	};
+	class EM_Darter_Jammed_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Darter_Jammed_01_S_SoundShader"};
+	};
+	class EM_Darter_Jammed_01_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Darter_Jammed_01_W_SoundShader"};
+	};
+	class EM_Drone_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Drone_01_S_SoundShader"};
+	};
+	class EM_Drone_01_Tracking_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Drone_01_Tracking_01_S_SoundShader"};
+	};
+	class EM_Drone_01_Tracking_01_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Drone_01_Tracking_01_W_SoundShader"};
+	};
+	class EM_Drone_01_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Drone_01_W_SoundShader"};
+	};
+	class EM_Emergency_Broadcast_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Emergency_Broadcast_01_S_SoundShader"};
+	};
+	class EM_Emergency_Broadcast_01_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Emergency_Broadcast_01_W_SoundShader"};
+	};
+	class EM_ESD_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_ESD_01_S_SoundShader"};
+	};
+	class EM_freeroam1_am_nato_prisoner_request_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_am_nato_prisoner_request_HQ_0_S_SoundShader"};
+	};
+	class EM_freeroam1_am_nato_prisoner_request_SOLDIERA_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_am_nato_prisoner_request_SOLDIERA_0_S_SoundShader"};
+	};
+	class EM_freeroam1_em_device_searching_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_device_searching_HQ_0_S_SoundShader"};
+	};
+	class EM_freeroam1_em_device_searching_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_device_searching_HQ_1_S_SoundShader"};
+	};
+	class EM_freeroam1_em_device_searching_SOLDIERA_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_device_searching_SOLDIERA_0_S_SoundShader"};
+	};
+	class EM_freeroam1_em_device_searching_SOLDIERA_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_device_searching_SOLDIERA_1_S_SoundShader"};
+	};
+	class EM_freeroam1_em_device_turret_defense_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_device_turret_defense_HQ_0_S_SoundShader"};
+	};
+	class EM_freeroam1_em_device_turret_defense_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_device_turret_defense_HQ_1_S_SoundShader"};
+	};
+	class EM_freeroam1_em_device_turret_defense_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_device_turret_defense_HQ_2_S_SoundShader"};
+	};
+	class EM_freeroam1_em_device_turret_defense_SOLDIERC_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_device_turret_defense_SOLDIERC_0_S_SoundShader"};
+	};
+	class EM_freeroam1_em_device_turret_defense_SOLDIERC_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_device_turret_defense_SOLDIERC_1_S_SoundShader"};
+	};
+	class EM_freeroam1_em_device_turret_defense_SOLDIERC_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_device_turret_defense_SOLDIERC_2_S_SoundShader"};
+	};
+	class EM_freeroam1_em_ugv_actual_location_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_ugv_actual_location_HQ_0_S_SoundShader"};
+	};
+	class EM_freeroam1_em_ugv_actual_location_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_ugv_actual_location_HQ_1_S_SoundShader"};
+	};
+	class EM_freeroam1_em_ugv_actual_location_SOLDIERB_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_ugv_actual_location_SOLDIERB_0_S_SoundShader"};
+	};
+	class EM_freeroam1_em_ugv_actual_location_SOLDIERB_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_ugv_actual_location_SOLDIERB_1_S_SoundShader"};
+	};
+	class EM_freeroam1_em_ugv_probe_tip_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_ugv_probe_tip_HQ_0_S_SoundShader"};
+	};
+	class EM_freeroam1_em_ugv_probe_tip_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_ugv_probe_tip_HQ_1_S_SoundShader"};
+	};
+	class EM_freeroam1_em_ugv_probe_tip_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_ugv_probe_tip_HQ_2_S_SoundShader"};
+	};
+	class EM_freeroam1_em_ugv_probe_tip_SOLDIERA_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_ugv_probe_tip_SOLDIERA_0_S_SoundShader"};
+	};
+	class EM_freeroam1_em_ugv_probe_tip_SOLDIERA_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_ugv_probe_tip_SOLDIERA_1_S_SoundShader"};
+	};
+	class EM_freeroam1_em_ugv_probe_tip_SOLDIERA_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_ugv_probe_tip_SOLDIERA_2_S_SoundShader"};
+	};
+	class EM_freeroam1_em_valley_probe_awe_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_valley_probe_awe_HQ_0_S_SoundShader"};
+	};
+	class EM_freeroam1_em_valley_probe_awe_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_valley_probe_awe_HQ_1_S_SoundShader"};
+	};
+	class EM_freeroam1_em_valley_probe_awe_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_valley_probe_awe_HQ_2_S_SoundShader"};
+	};
+	class EM_freeroam1_em_valley_probe_awe_SOLDIERC_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_valley_probe_awe_SOLDIERC_0_S_SoundShader"};
+	};
+	class EM_freeroam1_em_valley_probe_awe_SOLDIERC_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_valley_probe_awe_SOLDIERC_1_S_SoundShader"};
+	};
+	class EM_freeroam1_em_valley_probe_awe_SOLDIERC_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam1_em_valley_probe_awe_SOLDIERC_2_S_SoundShader"};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_forest_probe_discussion_HQ_0_S_SoundShader"};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_forest_probe_discussion_HQ_1_S_SoundShader"};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_forest_probe_discussion_HQ_2_S_SoundShader"};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_HQ_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_forest_probe_discussion_HQ_3_S_SoundShader"};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_HQ_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_forest_probe_discussion_HQ_4_S_SoundShader"};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_SOLDIERB_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_forest_probe_discussion_SOLDIERB_0_S_SoundShader"};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_SOLDIERB_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_forest_probe_discussion_SOLDIERB_1_S_SoundShader"};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_SOLDIERB_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_forest_probe_discussion_SOLDIERB_2_S_SoundShader"};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_SOLDIERB_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_forest_probe_discussion_SOLDIERB_3_S_SoundShader"};
+	};
+	class EM_freeroam2_am_forest_probe_discussion_SOLDIERB_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_forest_probe_discussion_SOLDIERB_4_S_SoundShader"};
+	};
+	class EM_freeroam2_am_looters_found_radio_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_looters_found_radio_HQ_0_S_SoundShader"};
+	};
+	class EM_freeroam2_am_looters_found_radio_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_looters_found_radio_HQ_1_S_SoundShader"};
+	};
+	class EM_freeroam2_am_looters_found_radio_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_looters_found_radio_HQ_2_S_SoundShader"};
+	};
+	class EM_freeroam2_am_looters_found_radio_SOLDIERB_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_looters_found_radio_SOLDIERB_0_S_SoundShader"};
+	};
+	class EM_freeroam2_am_looters_found_radio_SOLDIERB_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_looters_found_radio_SOLDIERB_1_S_SoundShader"};
+	};
+	class EM_freeroam2_am_looters_found_radio_SOLDIERB_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_looters_found_radio_SOLDIERB_2_S_SoundShader"};
+	};
+	class EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_0_S_SoundShader"};
+	};
+	class EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_1_S_SoundShader"};
+	};
+	class EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_2_S_SoundShader"};
+	};
+	class EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_0_S_SoundShader"};
+	};
+	class EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_1_S_SoundShader"};
+	};
+	class EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_2_S_SoundShader"};
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_radio_station_message_MAJOR_0_S_SoundShader"};
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_radio_station_message_MAJOR_1_S_SoundShader"};
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_radio_station_message_MAJOR_2_S_SoundShader"};
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_radio_station_message_MAJOR_3_S_SoundShader"};
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_radio_station_message_MAJOR_4_S_SoundShader"};
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_5_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_radio_station_message_MAJOR_5_S_SoundShader"};
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_6_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_radio_station_message_MAJOR_6_S_SoundShader"};
+	};
+	class EM_freeroam2_am_radio_station_message_MAJOR_7_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_am_radio_station_message_MAJOR_7_S_SoundShader"};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_HQ_0_S_SoundShader"};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_HQ_1_S_SoundShader"};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_SOLDIERC_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_SOLDIERC_0_S_SoundShader"};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_SOLDIERC_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_SOLDIERC_1_S_SoundShader"};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_HQ_0_S_SoundShader"};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_HQ_1_S_SoundShader"};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_SOLDIERC_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_SOLDIERC_0_S_SoundShader"};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_SOLDIERC_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_SOLDIERC_1_S_SoundShader"};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_HQ_0_S_SoundShader"};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_HQ_1_S_SoundShader"};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_SOLDIERC_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_SOLDIERC_0_S_SoundShader"};
+	};
+	class EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_SOLDIERC_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_SOLDIERC_1_S_SoundShader"};
+	};
+	class EM_handshake_a2q_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_a2q_SQUAD_0_S_SoundShader"};
+	};
+	class EM_handshake_a2q_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_a2q_SQUAD_1_S_SoundShader"};
+	};
+	class EM_handshake_a2q_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_a2q_SQUAD_2_S_SoundShader"};
+	};
+	class EM_handshake_a2q_SQUAD_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_a2q_SQUAD_3_S_SoundShader"};
+	};
+	class EM_handshake_a2q_SQUAD_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_a2q_SQUAD_4_S_SoundShader"};
+	};
+	class EM_handshake_b2q_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_b2q_SQUAD_0_S_SoundShader"};
+	};
+	class EM_handshake_b2q_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_b2q_SQUAD_1_S_SoundShader"};
+	};
+	class EM_handshake_b2q_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_b2q_SQUAD_2_S_SoundShader"};
+	};
+	class EM_handshake_b2q_SQUAD_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_b2q_SQUAD_3_S_SoundShader"};
+	};
+	class EM_handshake_b2q_SQUAD_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_b2q_SQUAD_4_S_SoundShader"};
+	};
+	class EM_handshake_c2q_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_c2q_SQUAD_0_S_SoundShader"};
+	};
+	class EM_handshake_c2q_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_c2q_SQUAD_1_S_SoundShader"};
+	};
+	class EM_handshake_c2q_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_c2q_SQUAD_2_S_SoundShader"};
+	};
+	class EM_handshake_c2q_SQUAD_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_c2q_SQUAD_3_S_SoundShader"};
+	};
+	class EM_handshake_c2q_SQUAD_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_c2q_SQUAD_4_S_SoundShader"};
+	};
+	class EM_handshake_d2q_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_d2q_SQUAD_0_S_SoundShader"};
+	};
+	class EM_handshake_d2q_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_d2q_SQUAD_1_S_SoundShader"};
+	};
+	class EM_handshake_d2q_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_d2q_SQUAD_2_S_SoundShader"};
+	};
+	class EM_handshake_d2q_SQUAD_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_d2q_SQUAD_3_S_SoundShader"};
+	};
+	class EM_handshake_d2q_SQUAD_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_d2q_SQUAD_4_S_SoundShader"};
+	};
+	class EM_handshake_e2q_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_e2q_SQUAD_0_S_SoundShader"};
+	};
+	class EM_handshake_e2q_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_e2q_SQUAD_1_S_SoundShader"};
+	};
+	class EM_handshake_e2q_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_e2q_SQUAD_2_S_SoundShader"};
+	};
+	class EM_handshake_e2q_SQUAD_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_e2q_SQUAD_3_S_SoundShader"};
+	};
+	class EM_handshake_e2q_SQUAD_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_e2q_SQUAD_4_S_SoundShader"};
+	};
+	class EM_handshake_f2q_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_f2q_SQUAD_0_S_SoundShader"};
+	};
+	class EM_handshake_f2q_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_f2q_SQUAD_1_S_SoundShader"};
+	};
+	class EM_handshake_f2q_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_f2q_SQUAD_2_S_SoundShader"};
+	};
+	class EM_handshake_f2q_SQUAD_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_f2q_SQUAD_3_S_SoundShader"};
+	};
+	class EM_handshake_f2q_SQUAD_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_f2q_SQUAD_4_S_SoundShader"};
+	};
+	class EM_handshake_g2q_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_g2q_SQUAD_0_S_SoundShader"};
+	};
+	class EM_handshake_g2q_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_g2q_SQUAD_1_S_SoundShader"};
+	};
+	class EM_handshake_g2q_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_g2q_SQUAD_2_S_SoundShader"};
+	};
+	class EM_handshake_g2q_SQUAD_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_g2q_SQUAD_3_S_SoundShader"};
+	};
+	class EM_handshake_g2q_SQUAD_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_g2q_SQUAD_4_S_SoundShader"};
+	};
+	class EM_handshake_h2q_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_h2q_SQUAD_0_S_SoundShader"};
+	};
+	class EM_handshake_h2q_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_h2q_SQUAD_1_S_SoundShader"};
+	};
+	class EM_handshake_h2q_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_h2q_SQUAD_2_S_SoundShader"};
+	};
+	class EM_handshake_h2q_SQUAD_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_h2q_SQUAD_3_S_SoundShader"};
+	};
+	class EM_handshake_h2q_SQUAD_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_h2q_SQUAD_4_S_SoundShader"};
+	};
+	class EM_handshake_q2a_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2a_HQ_0_S_SoundShader"};
+	};
+	class EM_handshake_q2a_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2a_HQ_1_S_SoundShader"};
+	};
+	class EM_handshake_q2a_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2a_HQ_2_S_SoundShader"};
+	};
+	class EM_handshake_q2a_HQ_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2a_HQ_3_S_SoundShader"};
+	};
+	class EM_handshake_q2a_HQ_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2a_HQ_4_S_SoundShader"};
+	};
+	class EM_handshake_q2b_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2b_HQ_0_S_SoundShader"};
+	};
+	class EM_handshake_q2b_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2b_HQ_1_S_SoundShader"};
+	};
+	class EM_handshake_q2b_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2b_HQ_2_S_SoundShader"};
+	};
+	class EM_handshake_q2b_HQ_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2b_HQ_3_S_SoundShader"};
+	};
+	class EM_handshake_q2b_HQ_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2b_HQ_4_S_SoundShader"};
+	};
+	class EM_handshake_q2c_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2c_HQ_0_S_SoundShader"};
+	};
+	class EM_handshake_q2c_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2c_HQ_1_S_SoundShader"};
+	};
+	class EM_handshake_q2c_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2c_HQ_2_S_SoundShader"};
+	};
+	class EM_handshake_q2c_HQ_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2c_HQ_3_S_SoundShader"};
+	};
+	class EM_handshake_q2c_HQ_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2c_HQ_4_S_SoundShader"};
+	};
+	class EM_handshake_q2d_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2d_HQ_0_S_SoundShader"};
+	};
+	class EM_handshake_q2d_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2d_HQ_1_S_SoundShader"};
+	};
+	class EM_handshake_q2d_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2d_HQ_2_S_SoundShader"};
+	};
+	class EM_handshake_q2d_HQ_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2d_HQ_3_S_SoundShader"};
+	};
+	class EM_handshake_q2d_HQ_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2d_HQ_4_S_SoundShader"};
+	};
+	class EM_handshake_q2e_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2e_HQ_0_S_SoundShader"};
+	};
+	class EM_handshake_q2e_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2e_HQ_1_S_SoundShader"};
+	};
+	class EM_handshake_q2e_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2e_HQ_2_S_SoundShader"};
+	};
+	class EM_handshake_q2e_HQ_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2e_HQ_3_S_SoundShader"};
+	};
+	class EM_handshake_q2e_HQ_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2e_HQ_4_S_SoundShader"};
+	};
+	class EM_handshake_q2f_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2f_HQ_0_S_SoundShader"};
+	};
+	class EM_handshake_q2f_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2f_HQ_1_S_SoundShader"};
+	};
+	class EM_handshake_q2f_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2f_HQ_2_S_SoundShader"};
+	};
+	class EM_handshake_q2f_HQ_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2f_HQ_3_S_SoundShader"};
+	};
+	class EM_handshake_q2g_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2g_HQ_0_S_SoundShader"};
+	};
+	class EM_handshake_q2g_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2g_HQ_1_S_SoundShader"};
+	};
+	class EM_handshake_q2g_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2g_HQ_2_S_SoundShader"};
+	};
+	class EM_handshake_q2g_HQ_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2g_HQ_3_S_SoundShader"};
+	};
+	class EM_handshake_q2g_HQ_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2g_HQ_4_S_SoundShader"};
+	};
+	class EM_handshake_q2h_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2h_HQ_0_S_SoundShader"};
+	};
+	class EM_handshake_q2h_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2h_HQ_1_S_SoundShader"};
+	};
+	class EM_handshake_q2h_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2h_HQ_2_S_SoundShader"};
+	};
+	class EM_handshake_q2h_HQ_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2h_HQ_3_S_SoundShader"};
+	};
+	class EM_handshake_q2h_HQ_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_handshake_q2h_HQ_4_S_SoundShader"};
+	};
+	class EM_hq_confirm_help_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_confirm_help_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_confirm_help_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_confirm_help_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_confirm_help_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_confirm_help_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_confused_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_confused_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_confused_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_confused_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_confused_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_confused_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_deny_help_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_deny_help_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_deny_help_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_deny_help_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_deny_help_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_deny_help_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_dummy_reply_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_dummy_reply_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_dummy_reply_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_dummy_reply_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_dummy_reply_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_dummy_reply_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_dummy_reply_HQ_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_dummy_reply_HQ_3_S_SoundShader"};
+	};
+	class EM_hq_dummy_reply_HQ_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_dummy_reply_HQ_4_S_SoundShader"};
+	};
+	class EM_HQ_Enc_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_HQ_Enc_01_S_SoundShader"};
+	};
+	class EM_HQ_Enc_01_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_HQ_Enc_01_W_SoundShader"};
+	};
+	class EM_hq_identify_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_identify_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_identify_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_identify_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_identify_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_identify_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_move_e_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_e_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_move_e_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_e_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_move_e_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_e_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_move_e_HQ_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_e_HQ_3_S_SoundShader"};
+	};
+	class EM_hq_move_e_HQ_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_e_HQ_4_S_SoundShader"};
+	};
+	class EM_hq_move_n_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_n_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_move_n_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_n_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_move_n_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_n_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_move_n_HQ_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_n_HQ_3_S_SoundShader"};
+	};
+	class EM_hq_move_n_HQ_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_n_HQ_4_S_SoundShader"};
+	};
+	class EM_hq_move_s_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_s_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_move_s_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_s_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_move_s_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_s_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_move_s_HQ_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_s_HQ_3_S_SoundShader"};
+	};
+	class EM_hq_move_s_HQ_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_s_HQ_4_S_SoundShader"};
+	};
+	class EM_hq_move_w_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_w_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_move_w_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_w_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_move_w_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_w_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_move_w_HQ_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_w_HQ_3_S_SoundShader"};
+	};
+	class EM_hq_move_w_HQ_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_move_w_HQ_4_S_SoundShader"};
+	};
+	class EM_hq_negative_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_negative_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_negative_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_negative_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_negative_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_negative_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_no_help_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_help_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_no_help_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_help_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_no_help_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_help_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_no_move_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_move_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_no_move_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_move_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_no_move_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_move_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_no_response_a_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_a_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_no_response_a_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_a_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_no_response_a_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_a_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_no_response_b_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_b_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_no_response_b_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_b_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_no_response_b_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_b_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_no_response_c_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_c_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_no_response_c_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_c_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_no_response_c_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_c_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_no_response_d_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_d_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_no_response_d_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_d_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_no_response_d_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_d_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_no_response_e_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_e_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_no_response_e_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_e_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_no_response_e_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_e_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_no_response_f_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_f_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_no_response_f_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_f_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_no_response_f_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_f_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_no_response_g_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_g_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_no_response_g_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_g_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_no_response_g_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_g_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_no_response_h_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_h_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_no_response_h_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_h_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_no_response_h_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_no_response_h_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_positive_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_positive_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_positive_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_positive_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_positive_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_positive_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_posrep_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_posrep_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_posrep_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_posrep_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_posrep_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_posrep_HQ_2_S_SoundShader"};
+	};
+	class EM_HQ_Russian_Enc_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_HQ_Russian_Enc_01_S_SoundShader"};
+	};
+	class EM_HQ_Russian_Enc_01_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_HQ_Russian_Enc_01_W_SoundShader"};
+	};
+	class EM_hq_safe_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_safe_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_safe_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_safe_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_safe_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_safe_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_say_again_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_say_again_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_say_again_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_say_again_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_say_again_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_say_again_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_send_help_a_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_a_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_send_help_a_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_a_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_send_help_a_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_a_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_send_help_b_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_b_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_send_help_b_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_b_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_send_help_b_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_b_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_send_help_c_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_c_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_send_help_c_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_c_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_send_help_c_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_c_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_send_help_d_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_d_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_send_help_d_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_d_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_send_help_d_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_d_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_send_help_e_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_e_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_send_help_e_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_e_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_send_help_e_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_e_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_send_help_f_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_f_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_send_help_f_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_f_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_send_help_f_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_f_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_send_help_g_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_g_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_send_help_g_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_g_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_send_help_g_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_send_help_g_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_silence_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_silence_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_silence_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_silence_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_silence_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_silence_HQ_2_S_SoundShader"};
+	};
+	class EM_hq_strange_signal_reply_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_strange_signal_reply_HQ_0_S_SoundShader"};
+	};
+	class EM_hq_strange_signal_reply_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_strange_signal_reply_HQ_1_S_SoundShader"};
+	};
+	class EM_hq_strange_signal_reply_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_hq_strange_signal_reply_HQ_2_S_SoundShader"};
+	};
+	class EM_intro2_physicist_am_4_1_PHYSICIST_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_physicist_am_4_1_PHYSICIST_0_S_SoundShader"};
+	};
+	class EM_intro2_physicist_am_4_2_PHYSICIST_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_physicist_am_4_2_PHYSICIST_0_S_SoundShader"};
+	};
+	class EM_intro2_physicist_am_4_3_PHYSICIST_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_physicist_am_4_3_PHYSICIST_0_S_SoundShader"};
+	};
+	class EM_intro2_physicist_am_4_4_PHYSICIST_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_physicist_am_4_4_PHYSICIST_0_S_SoundShader"};
+	};
+	class EM_intro2_physicist_am_4_5_PHYSICIST_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_physicist_am_4_5_PHYSICIST_0_S_SoundShader"};
+	};
+	class EM_intro2_physicist_am_4_6_PHYSICIST_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_physicist_am_4_6_PHYSICIST_0_S_SoundShader"};
+	};
+	class EM_intro2_physicist_am_4_7_PHYSICIST_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_physicist_am_4_7_PHYSICIST_0_S_SoundShader"};
+	};
+	class EM_intro2_physicist_am_4_8_PHYSICIST_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_physicist_am_4_8_PHYSICIST_0_S_SoundShader"};
+	};
+	class EM_intro2_physicist_am_4_9_PHYSICIST_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_physicist_am_4_9_PHYSICIST_0_S_SoundShader"};
+	};
+	class EM_intro2_physicist_am_4_loop_PHYSICIST_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_physicist_am_4_loop_PHYSICIST_0_S_SoundShader"};
+	};
+	class EM_intro2_q2raven_am_2_1_RAVEN_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q2raven_am_2_1_RAVEN_0_S_SoundShader"};
+	};
+	class EM_intro2_q2raven_am_2_2_RAVEN_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q2raven_am_2_2_RAVEN_0_S_SoundShader"};
+	};
+	class EM_intro2_q2raven_am_2_3_RAVEN_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q2raven_am_2_3_RAVEN_0_S_SoundShader"};
+	};
+	class EM_intro2_q2raven_am_2_4_RAVEN_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q2raven_am_2_4_RAVEN_0_S_SoundShader"};
+	};
+	class EM_intro2_q2raven_am_2_5_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q2raven_am_2_5_HQ_0_S_SoundShader"};
+	};
+	class EM_intro2_q2raven_am_2_6_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q2raven_am_2_6_HQ_0_S_SoundShader"};
+	};
+	class EM_intro2_q2raven_am_2_7_RAVEN_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q2raven_am_2_7_RAVEN_0_S_SoundShader"};
+	};
+	class EM_intro2_q2s_am_1_1_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q2s_am_1_1_SQUAD_0_S_SoundShader"};
+	};
+	class EM_intro2_q2s_am_1_2_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q2s_am_1_2_SQUAD_0_S_SoundShader"};
+	};
+	class EM_intro2_q2s_am_1_3_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q2s_am_1_3_HQ_0_S_SoundShader"};
+	};
+	class EM_intro2_q2s_am_1_4_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q2s_am_1_4_SQUAD_0_S_SoundShader"};
+	};
+	class EM_intro2_q2s_am_1_5_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q2s_am_1_5_SQUAD_0_S_SoundShader"};
+	};
+	class EM_intro2_q2s_am_1_6_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q2s_am_1_6_SQUAD_0_S_SoundShader"};
+	};
+	class EM_intro2_q2s_am_1_7_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q2s_am_1_7_HQ_0_S_SoundShader"};
+	};
+	class EM_intro2_q2s_am_1_8_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q2s_am_1_8_HQ_0_S_SoundShader"};
+	};
+	class EM_intro2_q2s_am_1_9_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q2s_am_1_9_HQ_0_S_SoundShader"};
+	};
+	class EM_intro2_q2s_am_1_loop_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q2s_am_1_loop_HQ_0_S_SoundShader"};
+	};
+	class EM_intro2_q_am_3_1_UNKNOWN_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q_am_3_1_UNKNOWN_0_S_SoundShader"};
+	};
+	class EM_intro2_q_am_3_2_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q_am_3_2_HQ_0_S_SoundShader"};
+	};
+	class EM_intro2_q_am_3_3_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q_am_3_3_HQ_0_S_SoundShader"};
+	};
+	class EM_intro2_q_am_3_4_UNKNOWN_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q_am_3_4_UNKNOWN_0_S_SoundShader"};
+	};
+	class EM_intro2_q_am_3_5_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q_am_3_5_HQ_0_S_SoundShader"};
+	};
+	class EM_intro2_q_am_3_6_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q_am_3_6_HQ_0_S_SoundShader"};
+	};
+	class EM_intro2_q_am_3_7_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q_am_3_7_HQ_0_S_SoundShader"};
+	};
+	class EM_intro2_q_am_3_8_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q_am_3_8_HQ_0_S_SoundShader"};
+	};
+	class EM_intro2_q_am_3_loop_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q_am_3_loop_HQ_0_S_SoundShader"};
+	};
+	class EM_intro2_q_am_3_loop_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q_am_3_loop_HQ_1_S_SoundShader"};
+	};
+	class EM_intro2_q_am_3_loop_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_q_am_3_loop_HQ_2_S_SoundShader"};
+	};
+	class EM_intro2_s_am_2_1_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_2_1_SQUAD_0_S_SoundShader"};
+	};
+	class EM_intro2_s_am_2_2_AMBIENTA_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_2_2_AMBIENTA_0_S_SoundShader"};
+	};
+	class EM_intro2_s_am_2_3_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_2_3_SQUAD_0_S_SoundShader"};
+	};
+	class EM_intro2_s_am_2_4_AMBIENTA_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_2_4_AMBIENTA_0_S_SoundShader"};
+	};
+	class EM_intro2_s_am_2_5_AMBIENTA_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_2_5_AMBIENTA_0_S_SoundShader"};
+	};
+	class EM_intro2_s_am_2_6_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_2_6_SQUAD_0_S_SoundShader"};
+	};
+	class EM_intro2_s_am_2_7_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_2_7_SQUAD_0_S_SoundShader"};
+	};
+	class EM_intro2_s_am_2_8_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_2_8_SQUAD_0_S_SoundShader"};
+	};
+	class EM_intro2_s_am_2_loop_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_2_loop_SQUAD_0_S_SoundShader"};
+	};
+	class EM_intro2_s_am_2_loop_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_2_loop_SQUAD_1_S_SoundShader"};
+	};
+	class EM_intro2_s_am_2_loop_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_2_loop_SQUAD_2_S_SoundShader"};
+	};
+	class EM_intro2_s_am_3_1_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_3_1_SQUAD_0_S_SoundShader"};
+	};
+	class EM_intro2_s_am_3_2_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_3_2_SQUAD_0_S_SoundShader"};
+	};
+	class EM_intro2_s_am_3_3_AMBIENTB_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_3_3_AMBIENTB_0_S_SoundShader"};
+	};
+	class EM_intro2_s_am_3_4_AMBIENTB_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_3_4_AMBIENTB_0_S_SoundShader"};
+	};
+	class EM_intro2_s_am_3_5_AMBIENTB_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_3_5_AMBIENTB_0_S_SoundShader"};
+	};
+	class EM_intro2_s_am_3_6_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_3_6_SQUAD_0_S_SoundShader"};
+	};
+	class EM_intro2_s_am_3_7_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_3_7_SQUAD_0_S_SoundShader"};
+	};
+	class EM_intro2_s_am_3_8_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_3_8_SQUAD_0_S_SoundShader"};
+	};
+	class EM_intro2_s_am_3_loop_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_3_loop_SQUAD_0_S_SoundShader"};
+	};
+	class EM_intro2_s_am_3_loop_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_3_loop_SQUAD_1_S_SoundShader"};
+	};
+	class EM_intro2_s_am_3_loop_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_intro2_s_am_3_loop_SQUAD_2_S_SoundShader"};
+	};
+	class EM_Mission_FreeRoam1_01_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_Mission_FreeRoam1_01_S_SoundShader"};
+	};
+	class EM_Mission_FreeRoam2_01_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_Mission_FreeRoam2_01_S_SoundShader"};
+	};
+	class EM_Mission_Intro1_01_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_Mission_Intro1_01_S_SoundShader"};
+	};
+	class EM_Mission_Intro2_01_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_Mission_Intro2_01_S_SoundShader"};
+	};
+	class EM_Mission_Intro3_01_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_Mission_Intro3_01_S_SoundShader"};
+	};
+	class EM_Mission_Outro2_01_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_Mission_Outro2_01_S_SoundShader"};
+	};
+	class EM_Mission_Outro3_01_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_Mission_Outro3_01_S_SoundShader"};
+	};
+	class EM_MorseCode_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_MorseCode_01_S_SoundShader"};
+	};
+	class EM_MotherShip_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_MotherShip_01_S_SoundShader"};
+	};
+	class EM_Mothership_01_Tracking_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Mothership_01_Tracking_01_S_SoundShader"};
+	};
+	class EM_Mothership_01_Tracking_01_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Mothership_01_Tracking_01_W_SoundShader"};
+	};
+	class EM_outro2_aet_jammed_2_SOLDIERB_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_aet_jammed_2_SOLDIERB_0_S_SoundShader"};
+	};
+	class EM_outro2_aet_jammed_3_SOLDIERC_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_aet_jammed_3_SOLDIERC_0_S_SoundShader"};
+	};
+	class EM_outro2_aet_jammed_4_SOLDIERA_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_aet_jammed_4_SOLDIERA_0_S_SoundShader"};
+	};
+	class EM_outro2_aet_jammed_SOLDIERA_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_aet_jammed_SOLDIERA_0_S_SoundShader"};
+	};
+	class EM_outro2_aet_resuming_2_SOLDIERB_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_aet_resuming_2_SOLDIERB_0_S_SoundShader"};
+	};
+	class EM_outro2_aet_resuming_3_SOLDIERC_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_aet_resuming_3_SOLDIERC_0_S_SoundShader"};
+	};
+	class EM_outro2_aet_resuming_4_SOLDIERA_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_aet_resuming_4_SOLDIERA_0_S_SoundShader"};
+	};
+	class EM_outro2_aet_resuming_SOLDIERA_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_aet_resuming_SOLDIERA_0_S_SoundShader"};
+	};
+	class EM_outro2_fox_2_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_fox_2_HQ_0_S_SoundShader"};
+	};
+	class EM_outro2_fox_2_SOLDIERA_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_fox_2_SOLDIERA_0_S_SoundShader"};
+	};
+	class EM_outro2_ldf_counterattack_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_ldf_counterattack_HQ_0_S_SoundShader"};
+	};
+	class EM_outro2_ldf_counterattack_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_ldf_counterattack_HQ_1_S_SoundShader"};
+	};
+	class EM_outro2_ldf_counterattack_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_ldf_counterattack_HQ_2_S_SoundShader"};
+	};
+	class EM_outro2_ldf_counterattack_HQ_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_ldf_counterattack_HQ_3_S_SoundShader"};
+	};
+	class EM_outro2_ldf_counterattack_HQ_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_ldf_counterattack_HQ_4_S_SoundShader"};
+	};
+	class EM_outro2_probe_explosives_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_probe_explosives_HQ_0_S_SoundShader"};
+	};
+	class EM_outro2_probe_explosives_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_probe_explosives_HQ_1_S_SoundShader"};
+	};
+	class EM_outro2_probe_explosives_HQ_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_probe_explosives_HQ_2_S_SoundShader"};
+	};
+	class EM_outro2_probe_explosives_SOLDIERB_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_probe_explosives_SOLDIERB_0_S_SoundShader"};
+	};
+	class EM_outro2_probe_explosives_SOLDIERB_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_probe_explosives_SOLDIERB_1_S_SoundShader"};
+	};
+	class EM_outro2_probe_explosives_SOLDIERB_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_probe_explosives_SOLDIERB_2_S_SoundShader"};
+	};
+	class EM_outro2_probe_target_HQ_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_probe_target_HQ_0_S_SoundShader"};
+	};
+	class EM_outro2_probe_target_HQ_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro2_probe_target_HQ_1_S_SoundShader"};
+	};
+	class EM_outro3_am_aan_radio_news_merged_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_aan_radio_news_merged_S_SoundShader"};
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_aan_radio_news_NEWSREADERB_0_S_SoundShader"};
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_aan_radio_news_NEWSREADERB_1_S_SoundShader"};
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_aan_radio_news_NEWSREADERB_2_S_SoundShader"};
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_aan_radio_news_NEWSREADERB_3_S_SoundShader"};
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_aan_radio_news_NEWSREADERB_4_S_SoundShader"};
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_5_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_aan_radio_news_NEWSREADERB_5_S_SoundShader"};
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_6_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_aan_radio_news_NEWSREADERB_6_S_SoundShader"};
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_7_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_aan_radio_news_NEWSREADERB_7_S_SoundShader"};
+	};
+	class EM_outro3_am_aan_radio_news_NEWSREADERB_8_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_aan_radio_news_NEWSREADERB_8_S_SoundShader"};
+	};
+	class EM_outro3_am_cbn_radio_news_merged_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_cbn_radio_news_merged_S_SoundShader"};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_cbn_radio_news_NEWSREADERC_0_S_SoundShader"};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_cbn_radio_news_NEWSREADERC_1_S_SoundShader"};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_cbn_radio_news_NEWSREADERC_2_S_SoundShader"};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_cbn_radio_news_NEWSREADERC_3_S_SoundShader"};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_cbn_radio_news_NEWSREADERC_4_S_SoundShader"};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_5_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_cbn_radio_news_NEWSREADERC_5_S_SoundShader"};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_6_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_cbn_radio_news_NEWSREADERC_6_S_SoundShader"};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_7_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_cbn_radio_news_NEWSREADERC_7_S_SoundShader"};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_8_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_cbn_radio_news_NEWSREADERC_8_S_SoundShader"};
+	};
+	class EM_outro3_am_cbn_radio_news_NEWSREADERC_9_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_cbn_radio_news_NEWSREADERC_9_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_merged_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_merged_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_0_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_10_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_10_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_11_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_11_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_12_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_12_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_13_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_13_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_14_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_14_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_15_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_15_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_16_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_16_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_17_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_17_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_18_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_18_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_19_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_19_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_1_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_20_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_20_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_21_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_21_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_2_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_3_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_4_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_5_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_5_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_6_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_6_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_7_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_7_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_8_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_8_S_SoundShader"};
+	};
+	class EM_outro3_am_conspiracy_radio_THEORIST_9_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_conspiracy_radio_THEORIST_9_S_SoundShader"};
+	};
+	class EM_outro3_am_polish_radio_news_merged_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_polish_radio_news_merged_S_SoundShader"};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_polish_radio_news_NEWSREADERA_0_S_SoundShader"};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_polish_radio_news_NEWSREADERA_1_S_SoundShader"};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_polish_radio_news_NEWSREADERA_2_S_SoundShader"};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_polish_radio_news_NEWSREADERA_3_S_SoundShader"};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_polish_radio_news_NEWSREADERA_4_S_SoundShader"};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_5_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_polish_radio_news_NEWSREADERA_5_S_SoundShader"};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_6_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_polish_radio_news_NEWSREADERA_6_S_SoundShader"};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_7_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_polish_radio_news_NEWSREADERA_7_S_SoundShader"};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_8_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_polish_radio_news_NEWSREADERA_8_S_SoundShader"};
+	};
+	class EM_outro3_am_polish_radio_news_NEWSREADERA_9_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_polish_radio_news_NEWSREADERA_9_S_SoundShader"};
+	};
+	class EM_outro3_am_science_chat_INTERVIEWERB_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_science_chat_INTERVIEWERB_0_S_SoundShader"};
+	};
+	class EM_outro3_am_science_chat_INTERVIEWERB_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_science_chat_INTERVIEWERB_1_S_SoundShader"};
+	};
+	class EM_outro3_am_science_chat_INTERVIEWERB_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_science_chat_INTERVIEWERB_2_S_SoundShader"};
+	};
+	class EM_outro3_am_science_chat_INTERVIEWERB_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_science_chat_INTERVIEWERB_3_S_SoundShader"};
+	};
+	class EM_outro3_am_science_chat_merged_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_science_chat_merged_S_SoundShader"};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_science_chat_SCIENTIST_0_S_SoundShader"};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_science_chat_SCIENTIST_1_S_SoundShader"};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_science_chat_SCIENTIST_2_S_SoundShader"};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_science_chat_SCIENTIST_3_S_SoundShader"};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_science_chat_SCIENTIST_4_S_SoundShader"};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_5_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_science_chat_SCIENTIST_5_S_SoundShader"};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_6_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_science_chat_SCIENTIST_6_S_SoundShader"};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_7_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_science_chat_SCIENTIST_7_S_SoundShader"};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_8_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_science_chat_SCIENTIST_8_S_SoundShader"};
+	};
+	class EM_outro3_am_science_chat_SCIENTIST_9_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_science_chat_SCIENTIST_9_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_INTERVIEWERA_0_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_10_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_INTERVIEWERA_10_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_INTERVIEWERA_1_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_INTERVIEWERA_2_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_INTERVIEWERA_3_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_INTERVIEWERA_4_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_5_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_INTERVIEWERA_5_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_6_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_INTERVIEWERA_6_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_7_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_INTERVIEWERA_7_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_8_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_INTERVIEWERA_8_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_INTERVIEWERA_9_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_INTERVIEWERA_9_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_merged_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_merged_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_PHYSICIST_0_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_10_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_PHYSICIST_10_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_11_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_PHYSICIST_11_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_12_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_PHYSICIST_12_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_13_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_PHYSICIST_13_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_14_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_PHYSICIST_14_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_PHYSICIST_1_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_PHYSICIST_2_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_PHYSICIST_3_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_PHYSICIST_4_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_5_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_PHYSICIST_5_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_6_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_PHYSICIST_6_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_7_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_PHYSICIST_7_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_8_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_PHYSICIST_8_S_SoundShader"};
+	};
+	class EM_outro3_am_talkshow_radio_PHYSICIST_9_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_outro3_am_talkshow_radio_PHYSICIST_9_S_SoundShader"};
+	};
+	class EM_Puzzle_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Puzzle_01_S_SoundShader"};
+	};
+	class EM_Puzzle_02_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Puzzle_02_S_SoundShader"};
+	};
+	class EM_Puzzle_03_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Puzzle_03_S_SoundShader"};
+	};
+	class EM_RadioStation_Song_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_RadioStation_Song_01_S_SoundShader"};
+	};
+	class EM_RadioStation_Song_01_Transmission_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_RadioStation_Song_01_Transmission_S_SoundShader"};
+	};
+	class EM_RadioStation_Song_01_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_RadioStation_Song_01_W_SoundShader"};
+	};
+	class EM_RadioStation_Song_02_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_RadioStation_Song_02_S_SoundShader"};
+	};
+	class EM_RadioStation_Song_02_Transmission_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_RadioStation_Song_02_Transmission_S_SoundShader"};
+	};
+	class EM_RadioStation_Song_02_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_RadioStation_Song_02_W_SoundShader"};
+	};
+	class EM_RadioStation_Song_03_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_RadioStation_Song_03_S_SoundShader"};
+	};
+	class EM_RadioStation_Song_03_Transmission_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_RadioStation_Song_03_Transmission_S_SoundShader"};
+	};
+	class EM_RadioStation_Song_03_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_RadioStation_Song_03_W_SoundShader"};
+	};
+	class EM_RussianBeacon_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_RussianBeacon_01_S_SoundShader"};
+	};
+	class EM_Send_Hack_01_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_Send_Hack_01_S_SoundShader"};
+	};
+	class EM_Send_Signal_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Send_Signal_01_S_SoundShader"};
+	};
+	class EM_Silence_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Silence_01_S_SoundShader"};
+	};
+	class EM_squad_compromised_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_compromised_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_compromised_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_compromised_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_compromised_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_compromised_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_confused_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_confused_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_confused_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_confused_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_confused_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_confused_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_event_e_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_event_e_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_event_e_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_event_e_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_event_e_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_event_e_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_event_n_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_event_n_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_event_n_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_event_n_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_event_n_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_event_n_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_event_s_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_event_s_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_event_s_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_event_s_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_event_s_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_event_s_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_event_w_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_event_w_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_event_w_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_event_w_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_event_w_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_event_w_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_explosion_e_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_explosion_e_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_explosion_e_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_explosion_e_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_explosion_e_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_explosion_e_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_explosion_n_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_explosion_n_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_explosion_n_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_explosion_n_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_explosion_n_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_explosion_n_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_explosion_s_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_explosion_s_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_explosion_s_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_explosion_s_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_explosion_s_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_explosion_s_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_explosion_w_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_explosion_w_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_explosion_w_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_explosion_w_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_explosion_w_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_explosion_w_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_flare_e_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_flare_e_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_flare_e_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_flare_e_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_flare_e_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_flare_e_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_flare_n_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_flare_n_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_flare_n_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_flare_n_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_flare_n_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_flare_n_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_flare_s_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_flare_s_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_flare_s_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_flare_s_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_flare_s_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_flare_s_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_flare_w_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_flare_w_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_flare_w_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_flare_w_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_flare_w_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_flare_w_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_gunfire_e_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_gunfire_e_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_gunfire_e_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_gunfire_e_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_gunfire_e_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_gunfire_e_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_gunfire_n_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_gunfire_n_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_gunfire_n_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_gunfire_n_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_gunfire_n_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_gunfire_n_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_gunfire_s_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_gunfire_s_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_gunfire_s_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_gunfire_s_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_gunfire_s_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_gunfire_s_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_gunfire_w_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_gunfire_w_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_gunfire_w_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_gunfire_w_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_gunfire_w_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_gunfire_w_SQUAD_2_S_SoundShader"};
+	};
+	class EM_Squad_Id_01_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_Squad_Id_01_S_SoundShader"};
+	};
+	class EM_Squad_Id_02_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_Squad_Id_02_S_SoundShader"};
+	};
+	class EM_Squad_Id_03_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_Squad_Id_03_S_SoundShader"};
+	};
+	class EM_Squad_Id_04_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_Squad_Id_04_S_SoundShader"};
+	};
+	class EM_Squad_Id_05_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_Squad_Id_05_S_SoundShader"};
+	};
+	class EM_Squad_Id_06_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_Squad_Id_06_S_SoundShader"};
+	};
+	class EM_Squad_Id_07_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_Squad_Id_07_S_SoundShader"};
+	};
+	class EM_Squad_Id_08_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_Squad_Id_08_S_SoundShader"};
+	};
+	class EM_squad_identify_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_identify_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_identify_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_identify_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_identify_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_identify_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_negative_combat_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_negative_combat_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_negative_combat_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_negative_combat_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_negative_combat_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_negative_combat_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_negative_move_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_negative_move_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_negative_move_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_negative_move_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_negative_move_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_negative_move_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_negative_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_negative_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_negative_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_negative_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_negative_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_negative_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_positive_move_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_positive_move_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_positive_move_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_positive_move_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_positive_move_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_positive_move_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_positive_move_SQUAD_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_positive_move_SQUAD_3_S_SoundShader"};
+	};
+	class EM_squad_positive_move_SQUAD_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_positive_move_SQUAD_4_S_SoundShader"};
+	};
+	class EM_squad_positive_move_SQUAD_5_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_positive_move_SQUAD_5_S_SoundShader"};
+	};
+	class EM_squad_positive_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_positive_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_positive_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_positive_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_positive_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_positive_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_positive_SQUAD_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_positive_SQUAD_3_S_SoundShader"};
+	};
+	class EM_squad_positive_SQUAD_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_positive_SQUAD_4_S_SoundShader"};
+	};
+	class EM_squad_positive_SQUAD_5_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_positive_SQUAD_5_S_SoundShader"};
+	};
+	class EM_squad_posrep_reply_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_posrep_reply_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_posrep_reply_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_posrep_reply_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_posrep_reply_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_posrep_reply_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_posrep_reply_SQUAD_3_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_posrep_reply_SQUAD_3_S_SoundShader"};
+	};
+	class EM_squad_posrep_reply_SQUAD_4_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_posrep_reply_SQUAD_4_S_SoundShader"};
+	};
+	class EM_squad_posrep_reply_SQUAD_5_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_posrep_reply_SQUAD_5_S_SoundShader"};
+	};
+	class EM_squad_request_help_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_request_help_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_request_help_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_request_help_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_request_help_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_request_help_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_say_again_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_say_again_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_say_again_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_say_again_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_say_again_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_say_again_SQUAD_2_S_SoundShader"};
+	};
+	class EM_squad_strange_signal_SQUAD_0_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_strange_signal_SQUAD_0_S_SoundShader"};
+	};
+	class EM_squad_strange_signal_SQUAD_1_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_strange_signal_SQUAD_1_S_SoundShader"};
+	};
+	class EM_squad_strange_signal_SQUAD_2_S_SoundSet: EM_Base
+	{
+		loop = 0;
+		soundShaders[] = {"EM_squad_strange_signal_SQUAD_2_S_SoundShader"};
+	};
+	class EM_Stomper_Enc_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Stomper_Enc_01_S_SoundShader"};
+	};
+	class EM_Stomper_Enc_01_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Stomper_Enc_01_W_SoundShader"};
+	};
+	class EM_Stomper_Jammed_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Stomper_Jammed_01_S_SoundShader"};
+	};
+	class EM_Stomper_Jammed_01_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Stomper_Jammed_01_W_SoundShader"};
+	};
+	class EM_Ugv_Enc_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Ugv_Enc_01_S_SoundShader"};
+	};
+	class EM_Ugv_Enc_01_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Ugv_Enc_01_W_SoundShader"};
+	};
+	class EM_Ugv_Jammed_01_S_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Ugv_Jammed_01_S_SoundShader"};
+	};
+	class EM_Ugv_Jammed_01_W_SoundSet: EM_Base
+	{
+		loop = 1;
+		soundShaders[] = {"EM_Ugv_Jammed_01_W_SoundShader"};
 	};
 	class Engine_Base_EXT_SoundSet
 	{
@@ -6087,6 +9669,115 @@ class CfgSoundSets
 		spatial = 1;
 		volumeCurve = "InverseSquare2Curve";
 		volumeFactor = 0.7;
+	};
+	class Gravity_Burst_Charge_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"Gravity_Burst_Charge_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.4;
+	};
+	class Gravity_Burst_Discharge_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"Gravity_Burst_Discharge_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.5;
+	};
+	class Gravity_Burst_Particles_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"Gravity_Burst_Particles_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.45;
+	};
+	class Gravity_Cannon_01_Discharge_SoundSet
+	{
+		distanceFilter = "DroneWeaponDistanceFreqAttenuationFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"Gravity_Cannon_01_Discharge_SoundShader", "Gravity_Cannon_01_Discharge_Distant_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.85;
+	};
+	class Gravity_Cannon_01_Tail_SoundSet
+	{
+		distanceFilter = "DroneWeaponDistanceFreqAttenuationFilter";
+		doppler = 0;
+		frequencyRandomizer = 0.1;
+		loop = 0;
+		obstructionFactor = 0;
+		occlusionFactor = 0.3;
+		sound3DProcessingType = "WeaponHeavyShotTail3DProcessingType";
+		soundShaders[] = {"Gravity_Cannon_01_Tail_Forest_SoundShader", "Gravity_Cannon_01_Tail_Meadows_SoundShader", "Gravity_Cannon_01_Tail_Houses_SoundShader"};
+		soundShadersLimit = 2;
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.2;
+	};
+	class Gravity_Projectile_FlyBy_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		soundShaders[] = {"Gravity_Projectile_FlyBy_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class Gravity_Shotgun_01_Discharge_SoundSet
+	{
+		distanceFilter = "DroneWeaponDistanceFreqAttenuationFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"Gravity_Shotgun_01_Discharge_SoundShader", "Gravity_Shotgun_01_Discharge_Distant_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.85;
+	};
+	class Gravity_Shotgun_01_Tail_SoundSet
+	{
+		distanceFilter = "DroneWeaponDistanceFreqAttenuationFilter";
+		doppler = 0;
+		frequencyRandomizer = 0.1;
+		loop = 0;
+		obstructionFactor = 0;
+		occlusionFactor = 0.3;
+		sound3DProcessingType = "WeaponHeavyShotTail3DProcessingType";
+		soundShaders[] = {"Gravity_Shotgun_01_Tail_Forest_SoundShader", "Gravity_Shotgun_01_Tail_Meadows_SoundShader", "Gravity_Shotgun_01_Tail_Houses_SoundShader"};
+		soundShadersLimit = 2;
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.2;
 	};
 	class Greek_Crickets_Day_SoundSet
 	{
@@ -9796,10 +13487,12 @@ class CfgSoundSets
 	class MMG01_InteriorTail_SoundSet: Rifle_InteriorTail_Base_SoundSet
 	{
 		soundShaders[] = {"MMG01_tailInterior_SoundShader"};
+		volumeFactor = "0.55  * 0.7";
 	};
 	class MMG01_Shot_SoundSet: Rifle_Shot_Base_SoundSet
 	{
 		soundShaders[] = {"MMG01_Closure_SoundShader", "MMG01_closeShot_SoundShader", "MMG01_midShot_SoundShader", "MMG01_distShot_SoundShader"};
+		volumeFactor = 0.55;
 	};
 	class MMG01_silencerInteriorTail_SoundSet: Rifle_silencerInteriorTail_Base_SoundSet
 	{
@@ -9817,14 +13510,17 @@ class CfgSoundSets
 	class MMG01_Tail_SoundSet: Rifle_Tail_Base_SoundSet
 	{
 		soundShaders[] = {"MMG01_tailDistant_SoundShader", "MMG01_tailForest_SoundShader", "MMG01_tailHouses_SoundShader", "MMG01_tailMeadows_SoundShader", "MMG01_tailTrees_SoundShader"};
+		volumeFactor = "0.55  * 0.7";
 	};
 	class MMG02_InteriorTail_SoundSet: Rifle_InteriorTail_Base_SoundSet
 	{
 		soundShaders[] = {"MMG02_tailInterior_SoundShader"};
+		volumeFactor = "0.55  * 0.7";
 	};
 	class MMG02_Shot_SoundSet: Rifle_Shot_Base_SoundSet
 	{
 		soundShaders[] = {"MMG02_Closure_SoundShader", "MMG02_closeShot_SoundShader", "MMG02_midShot_SoundShader", "MMG02_distShot_SoundShader"};
+		volumeFactor = 0.55;
 	};
 	class MMG02_silencerInteriorTail_SoundSet: Rifle_silencerInteriorTail_Base_SoundSet
 	{
@@ -9842,6 +13538,7 @@ class CfgSoundSets
 	class MMG02_Tail_SoundSet: Rifle_Tail_Base_SoundSet
 	{
 		soundShaders[] = {"MMG02_tailDistant_SoundShader", "MMG02_tailForest_SoundShader", "MMG02_tailHouses_SoundShader", "MMG02_tailMeadows_SoundShader", "MMG02_tailTrees_SoundShader"};
+		volumeFactor = "0.55  * 0.7";
 	};
 	class MMG_SPMG_shot_SoundSet
 	{
@@ -9864,6 +13561,125 @@ class CfgSoundSets
 		soundShadersLimit = 3;
 		spatial = 1;
 		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class Module_Battle_01_Fins_Close_SoundSet: Module_Battle_01_Fins_Stop_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		playTrigger = "(CustomSoundController7 factor [1,0.99]) * (CustomSoundController7 factor [0,0.1])";
+		soundShaders[] = {"Module_Battle_01_Fins_Close_SoundShader"};
+		speedOfSound = 0;
+		volumeFactor = 1.7;
+	};
+	class Module_Battle_01_Fins_Open_SoundSet: Module_Battle_01_Fins_Start_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		playTrigger = "(CustomSoundController7 factor [0.99,1])";
+		soundShaders[] = {"Module_Battle_01_Fins_Open_SoundShader"};
+		speedOfSound = 0;
+		volumeFactor = 1.2;
+	};
+	class Module_Battle_01_Fins_Start_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		playTrigger = "(CustomSoundController7 factor [0.99,1])";
+		posOffset[] = {0, 0, 0};
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"Module_Battle_01_Fins_Start_SoundShader"};
+		soundShadersLimit = 0;
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1.2;
+	};
+	class Module_Battle_01_Fins_Stop_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		playTrigger = "(CustomSoundController7 factor [1,0.99]) * (CustomSoundController7 factor [0,0.1])";
+		posOffset[] = {0, 0, 0};
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"Module_Battle_01_Fins_Stop_SoundShader"};
+		soundShadersLimit = 0;
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1.2;
+	};
+	class Module_Battle_02_Fins_Close_SoundSet: Module_Battle_02_Fins_Stop_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		playTrigger = "(CustomSoundController7 factor [1,0.99]) * (CustomSoundController7 factor [0,0.1])";
+		soundShaders[] = {"Module_Battle_02_Fins_Close_SoundShader"};
+		speedOfSound = 0;
+		volumeFactor = 1.7;
+	};
+	class Module_Battle_02_Fins_Open_SoundSet: Module_Battle_02_Fins_Start_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		playTrigger = "(CustomSoundController7 factor [0.99,1])";
+		soundShaders[] = {"Module_Battle_02_Fins_Open_SoundShader"};
+		speedOfSound = 0;
+		volumeFactor = 1.2;
+	};
+	class Module_Battle_02_Fins_Start_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		playTrigger = "(CustomSoundController7 factor [0.99,1])";
+		posOffset[] = {0, 0, 0};
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"Module_Battle_02_Fins_Start_SoundShader"};
+		soundShadersLimit = 0;
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1.2;
+	};
+	class Module_Battle_02_Fins_Stop_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		playTrigger = "(CustomSoundController7 factor [1,0.99]) * (CustomSoundController7 factor [0,0.1])";
+		posOffset[] = {0, 0, 0};
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"Module_Battle_02_Fins_Stop_SoundShader"};
+		soundShadersLimit = 0;
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1.2;
+	};
+	class Module_Scout_01_Movement_01_SoundSet
+	{
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		posOffset[] = {0, 0, 0};
+		sound3DProcessingType = "VehicleExt_3DProcessingType";
+		soundShaders[] = {"Module_Scout_01_Movement_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
 		volumeFactor = 1;
 	};
 	class Mortar82mm_Shot_SoundSet
@@ -10871,6 +14687,16 @@ class CfgSoundSets
 	{
 		soundShaders[] = {"Msbs65_01_Ugl_Tail_Trees_SoundShader", "Msbs65_01_Ugl_Tail_Forest_SoundShader", "Msbs65_01_Ugl_Tail_Meadows_SoundShader", "Msbs65_01_Ugl_Tail_Houses_SoundShader"};
 	};
+	class Music_Transition_Tension_Battle_01_SoundSet
+	{
+		doppler = 0;
+		frequencyFactor = 1;
+		loop = 0;
+		soundShaders[] = {"Music_Transition_Tension_Battle_01_SoundShader"};
+		spatial = 0;
+		speedOfSound = 0;
+		volumeFactor = 1;
+	};
 	class Mx_InteriorTail_Enoch_SoundSet: Rifle_InteriorTail_Base_SoundSet
 	{
 		soundShaders[] = {"Mx_InteriorTail_Enoch_SoundShader"};
@@ -11506,6 +15332,35 @@ class CfgSoundSets
 		posOffset[] = {0, 0, 0};
 		soundShaders[] = {"Offroad_02_Tires_Water_Slow_OPEN_SoundShader"};
 	};
+	class Outro_02_Module_HMG127mm_static_shot_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		frequencyRandomizer = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavy3DProcessingType";
+		soundShaders[] = {"Outro_02_Module_HMG127mm_static_closeShot_SoundShader", "Outro_02_Module_HMG127mm_static_midShot_SoundShader", "Outro_02_Module_HMG127mm_static_distShot_SoundShader", "Outro_02_Module_HMG127mm_static_Sweetener_01_SoundShader", "Outro_02_Module_HMG127mm_static_Closure_SoundShader"};
+		spatial = 1;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.3;
+	};
+	class Outro_02_Module_HMG127mm_static_tail_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		frequencyRandomizer = 1;
+		loop = 0;
+		obstructionFactor = 0.15;
+		occlusionFactor = 0.25;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Outro_02_Module_HMG127mm_static_tailDistant_SoundShader", "Outro_02_Module_HMG127mm_static_tailTrees_SoundShader", "Outro_02_Module_HMG127mm_static_tailForest_SoundShader", "Outro_02_Module_HMG127mm_static_tailMeadows_SoundShader", "Outro_02_Module_HMG127mm_static_tailHouses_SoundShader"};
+		soundShadersLimit = 3;
+		spatial = 1;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.3;
+	};
 	class P07_InteriorTail_SoundSet: Pistol_InteriorTail_Base_SoundSet
 	{
 		soundShaders[] = {"P07_tailInterior_SoundShader"};
@@ -11529,6 +15384,32 @@ class CfgSoundSets
 	class P07_Tail_SoundSet: Pistol_Tail_Base_SoundSet
 	{
 		soundShaders[] = {"P07_tailDistant_SoundShader", "P07_tailForest_SoundShader", "P07_tailHouses_SoundShader", "P07_tailMeadows_SoundShader", "P07_tailTrees_SoundShader"};
+	};
+	class Photon_Burst_Off_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"Photon_Burst_Off_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.75;
+	};
+	class Photon_Burst_On_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"Photon_Burst_On_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.75;
 	};
 	class Pistol_InteriorTail_Base_SoundSet
 	{
@@ -12111,6 +15992,37 @@ class CfgSoundSets
 	{
 		soundShaders[] = {"ProbingWeapon_02_Shot_SoundShader", "ProbingWeapon_02_Shot_Int_SoundShader"};
 		volumeFactor = 1;
+	};
+	class Prototype_Cannon_01_Discharge_01_SoundSet
+	{
+		distanceFilter = "DroneWeaponDistanceFreqAttenuationFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"Prototype_Cannon_01_Discharge_01_SoundShader", "Prototype_Cannon_01_Discharge_Distant_01_SoundShader"};
+		soundShadersLimit = 3;
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.6;
+	};
+	class Prototype_Cannon_01_Tail_SoundSet
+	{
+		distanceFilter = "DroneWeaponDistanceFreqAttenuationFilter";
+		doppler = 0;
+		frequencyRandomizer = 0.1;
+		loop = 0;
+		obstructionFactor = 0;
+		occlusionFactor = 0.3;
+		sound3DProcessingType = "WeaponHeavyShotTail3DProcessingType";
+		soundShaders[] = {"Prototype_Cannon_01_Tail_Forest_SoundShader", "Prototype_Cannon_01_Tail_Meadows_SoundShader", "Prototype_Cannon_01_Tail_Houses_SoundShader"};
+		soundShadersLimit = 1;
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.2;
 	};
 	class Quadbike_01_Engine_RPM0_EXT_SoundSet: Engine_Base_RPM0_EXT_SoundSet
 	{
@@ -14242,11 +18154,11 @@ class CfgSoundSets
 	};
 	class RocketsHeavy_Exp_SoundSet
 	{
-		distanceFilter = "explosionDistanceFreqAttenuationFilter";
+		distanceFilter = "explosionTailDistanceFreqAttenuationFilter";
 		doppler = 0;
 		loop = 0;
 		sound3DProcessingType = "ExplosionHeavy3DProcessingType";
-		soundShaders[] = {"RocketsHeavy_closeExp_SoundShader", "RocketsHeavy_midExp_SoundShader", "RocketsHeavy_distExp_SoundShader"};
+		soundShaders[] = {"RocketsHeavy_closeExp_SoundShader", "RocketsHeavy_closeExp_02_SoundShader", "RocketsHeavy_midExp_SoundShader", "RocketsHeavy_midExp_02_SoundShader", "RocketsHeavy_distExp_SoundShader", "RocketsHeavy_distExp_02_SoundShader"};
 		spatial = 1;
 		volumeCurve = "LinearCurve";
 		volumeFactor = 1.8;
@@ -14400,6 +18312,45 @@ class CfgSoundSets
 	{
 		soundShaders[] = {"Rook40_tailDistant_SoundShader", "Rook40_tailForest_SoundShader", "Rook40_tailHouses_SoundShader", "Rook40_tailMeadows_SoundShader", "Rook40_tailTrees_SoundShader"};
 	};
+	class ScanBeam_01_End_01_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"ScanBeam_01_End_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class ScanBeam_01_Loop_SoundSet
+	{
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"ScanBeam_01_Loop_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class ScanBeam_01_Start_01_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"ScanBeam_01_Start_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
 	class SDAR_InteriorTail_SoundSet: Rifle_InteriorTail_Base_SoundSet
 	{
 		soundShaders[] = {"SDAR_tailInterior_SoundShader"};
@@ -14425,6 +18376,84 @@ class CfgSoundSets
 		soundShaders[] = {"Sea_SoundShader"};
 		spatial = 0;
 		volumeFactor = 0.18;
+	};
+	class Sfx_Ammo_Burning_Intro_SoundSet: Sfx_Ammo_Burning_SoundSet
+	{
+		loop = 0;
+		soundShaders[] = {"Sfx_Ammo_Burning_Intro_Close_SoundShader", "Sfx_Ammo_Burning_Intro_Distant_SoundShader"};
+		volumeFactor = "0.5*1.3";
+	};
+	class Sfx_Ammo_Burning_Outro_SoundSet: Sfx_Ammo_Burning_SoundSet
+	{
+		loop = 0;
+		soundShaders[] = {"Sfx_Ammo_Burning_Outro_Close_SoundShader", "Sfx_Ammo_Burning_Outro_Distant_SoundShader"};
+		volumeFactor = "0.5* 1.3";
+	};
+	class Sfx_Ammo_Burning_SoundSet
+	{
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.25;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sfx_Ammo_Burning_Close_SoundShader", "Sfx_Ammo_Burning_Distant_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = "1.4* 1.3";
+	};
+	class Sfx_Bombing_Failed_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.15;
+		occlusionFactor = 0.25;
+		sound3DProcessingType = "ExplosionHeavy3DProcessingType";
+		soundShaders[] = {"Sfx_Bombing_Failed_Close_01_SoundShader", "Sfx_Bombing_Failed_MediumClose_01_SoundShader", "Sfx_Bombing_Failed_Distant_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "LinearCurve";
+		volumeFactor = 1.15;
+	};
+	class Sfx_BombingDistant_01_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.1;
+		occlusionFactor = 0.1;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sfx_BombingDistant_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "LinearCurve";
+		volumeFactor = 1.5;
+	};
+	class Sfx_Burnpit_Fire_01_Loop_SoundSet
+	{
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "RainRoofLarge3DProcessingType";
+		soundShaders[] = {"Sfx_Burnpit_Fire_01_Loop_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Container_Drop_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sfx_Container_Drop_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
 	};
 	class Sfx_DeconShower_Center_01_SoundSet
 	{
@@ -14458,6 +18487,931 @@ class CfgSoundSets
 		spatial = 1;
 		volumeCurve = "InverseSquare1Curve";
 		volumeFactor = 0.5;
+	};
+	class Sfx_DieselGenerator_Loop_01_SoundSet
+	{
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProces5singType";
+		soundShaders[] = {"Sfx_DieselGenerator_Loop_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Drone_Attention_Close_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		sound3DProcessingType = "DroneMovement3DProcessingType";
+		soundShaders[] = {"Sfx_Drone_Attention_Close_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Drone_Attention_Distant_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.15;
+		occlusionFactor = 0.25;
+		occlusionObstruction = 1;
+		sound3DProcessingType = "DroneMovement3DProcessingType";
+		soundShaders[] = {"Sfx_Drone_Attention_Distant_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Drone_Escape_Fake_02_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		sound3DProcessingType = "DroneMovement3DProcessingType";
+		soundShaders[] = {"Sfx_Drone_Escape_Fake_02_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Drone_Escape_Up_Fake_01_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		sound3DProcessingType = "DroneMovement3DProcessingType";
+		soundShaders[] = {"Sfx_Drone_Escape_Up_Fake_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Drone_Intimidate_Close_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		sound3DProcessingType = "DroneMovement3DProcessingType";
+		soundShaders[] = {"Sfx_Drone_Intimidate_Close_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Drone_Intimidate_Distant_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.15;
+		occlusionFactor = 0.25;
+		occlusionObstruction = 1;
+		sound3DProcessingType = "DroneMovement3DProcessingType";
+		soundShaders[] = {"Sfx_Drone_Intimidate_Distant_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Drone_Moving_Fake_01_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		sound3DProcessingType = "DroneMovement3DProcessingType";
+		soundShaders[] = {"Sfx_Drone_Moving_Fake_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Drone_Moving_Fake_02_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		sound3DProcessingType = "DroneMovement3DProcessingType";
+		soundShaders[] = {"Sfx_Drone_Moving_Fake_02_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Drone_ScanBeam_Fake_01_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		sound3DProcessingType = "DroneMovement3DProcessingType";
+		soundShaders[] = {"Sfx_Drone_ScanBeam_Fake_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Drone_ScanBeam_Fake_02_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		sound3DProcessingType = "DroneMovement3DProcessingType";
+		soundShaders[] = {"Sfx_Drone_ScanBeam_Fake_02_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Drone_Shout_Fake_01_SoundSet
+	{
+		distanceFilter = "DroneDistanceFreqAttenuationFilter";
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		sound3DProcessingType = "DroneMovement3DProcessingType";
+		soundShaders[] = {"Sfx_Drone_Shout_Fake_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Earthquake_SoundSet
+	{
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0;
+		occlusionFactor = 0;
+		soundShaders[] = {"Sfx_Earthquake_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Emergency_Broadcast_Tape_01_SoundSet
+	{
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProces5singType";
+		soundShaders[] = {"Sfx_Emergency_Broadcast_Tape_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.3;
+	};
+	class Sfx_Factory_Alarm_01_SoundSet
+	{
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sfx_Factory_Alarm_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.8;
+	};
+	class Sfx_Factory_Alarm_02_SoundSet
+	{
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sfx_Factory_Alarm_02_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.8;
+	};
+	class Sfx_Freeroam_02_Site_Explosion_01_Close_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sfx_Freeroam_02_Site_Explosion_01_Close_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Freeroam_02_Site_Explosion_01_Distant_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.55;
+		occlusionFactor = 0.75;
+		sound3DProcessingType = "LowIntensityDistanceFilter";
+		soundShaders[] = {"Sfx_Freeroam_02_Site_Explosion_01_Distant_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.9;
+	};
+	class Sfx_Freeroam_02_Site_Explosion_01_MediumClose_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sfx_Freeroam_02_Site_Explosion_01_MediumClose_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.5;
+	};
+	class Sfx_Helicopter_Crash_Explosion_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sfx_Helicopter_Crash_Explosion_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.5;
+	};
+	class Sfx_Helicopter_Wreck_Burning_SoundSet
+	{
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sfx_Helicopter_Wreck_Burning_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.5;
+	};
+	class Sfx_Hunter_Wreck_Burning_SoundSet
+	{
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "VehicleExt_3DProcessingType";
+		soundShaders[] = {"Sfx_Hunter_Wreck_Burning_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.5;
+	};
+	class Sfx_Loudspeaker_01_Distant_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sfx_Loudspeaker_01_Distant_01_SoundShader"};
+		spatial = 1;
+		spatialityRange = 25;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.75;
+	};
+	class Sfx_Loudspeaker_01_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_Loudspeaker_01_Close_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.75;
+	};
+	class Sfx_Loudspeaker_02_Distant_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sfx_Loudspeaker_02_Distant_01_SoundShader"};
+		spatial = 1;
+		spatialityRange = 25;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.75;
+	};
+	class Sfx_Loudspeaker_02_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_Loudspeaker_02_Close_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.75;
+	};
+	class Sfx_Loudspeaker_Ldf_Distant_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sfx_Loudspeaker_Ldf_Distant_01_SoundShader"};
+		spatial = 1;
+		spatialityRange = 25;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.75;
+	};
+	class Sfx_Loudspeaker_Ldf_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_Loudspeaker_Ldf_Close_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.75;
+	};
+	class Sfx_Mothership_Jammed_01_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavy3DProcessingType";
+		soundShaders[] = {"Sfx_Mothership_Jammed_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.5;
+	};
+	class Sfx_Mothership_LiftOff_01_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavy3DProcessingType";
+		soundShaders[] = {"Sfx_Mothership_LiftOff_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.75;
+	};
+	class Sfx_Mothership_LiftOff_02_SoundSet: Sfx_Mothership_LiftOff_01_SoundSet
+	{
+		doppler = 1;
+		soundShaders[] = {"Sfx_Mothership_LiftOff_02_SoundShader"};
+		volumeFactor = 1.75;
+	};
+	class Sfx_Mothership_Puzzle_Activate_01_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavy3DProcessingType";
+		soundShaders[] = {"Sfx_Mothership_Puzzle_Activate_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.5;
+	};
+	class Sfx_Mothership_Puzzle_Reward_01_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.1;
+		occlusionFactor = 0.1;
+		sound3DProcessingType = "ExplosionHeavy3DProcessingType";
+		soundShaders[] = {"Sfx_Mothership_Puzzle_Reward_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.5;
+	};
+	class Sfx_Mothership_Warp_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavy3DProcessingType";
+		soundShaders[] = {"Sfx_Mothership_Warp_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.9;
+	};
+	class Sfx_Offroad_Alarm_SoundSet
+	{
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "VehicleExt_3DProcessingType";
+		soundShaders[] = {"Sfx_Offroad_Alarm_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Offroad_Pa_TheHebrides_Close_SoundSet
+	{
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		posOffset[] = {0, 1, 0};
+		shape = "Offroad_Pa_Front";
+		sound3DProcessingType = "Offroad_Pa_3DProcessingType";
+		soundShaders[] = {"Sfx_Offroad_Pa_TheHebrides_Close_SoundShader"};
+		spatial = 1;
+		spatialityRange = 25;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.3;
+	};
+	class Sfx_Offroad_Pa_TheHebrides_Distant_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_Offroad_Pa_TheHebrides_Distant_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.9;
+	};
+	class Sfx_Probe_Destruction_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavy3DProcessingType";
+		soundShaders[] = {"Sfx_Probe_01_Destruction_Dist_01_SoundShader", "Sfx_Probe_01_Destruction_Mid_01_SoundShader", "Sfx_Probe_01_Destruction_Close_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "LinearCurve";
+		volumeFactor = 1;
+	};
+	class Sfx_Probe_Expand_01_Bottom_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_Probe_Expand_01_Bottom_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Probe_Expand_01_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_Probe_Expand_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Probe_Extraction_Drone_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		loop = 0;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_Probe_Extraction_Drone_Close_01_SoundShader", "Sfx_Probe_Extraction_Drone_Distant_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeFactor = 1.75;
+	};
+	class Sfx_Probe_Extraction_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		loop = 0;
+		obstructionFactor = 0.15;
+		occlusionFactor = 0.25;
+		sound3DProcessingType = "ExplosionHeavy3DProcessingType";
+		soundShaders[] = {"Sfx_Probe_Extraction_Close_01_SoundShader", "Sfx_Probe_Extraction_Distant_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeFactor = 1;
+	};
+	class Sfx_Probe_Loop_01_Bottom_SoundSet
+	{
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_Probe_Loop_01_Bottom_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Probe_Loop_01_SoundSet
+	{
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_Probe_Loop_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0;
+	};
+	class Sfx_Probe_Retract_01_Bottom_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_Probe_Retract_01_Bottom_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_Probe_Retract_01_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_Probe_Retract_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_ProbeCore_Destruction_01_Close_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_ProbeCore_Destruction_01_Close_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_ProbeCore_Destruction_01_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_ProbeCore_Destruction_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_RadioBeat_Close_Loop_SoundSet
+	{
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_RadioBeat_Close_Loop_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.3;
+	};
+	class Sfx_RadioBeat_Distant_Loop_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_RadioBeat_Distant_Loop_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_RavenPilot_Pa_01_Distant_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sfx_RavenPilot_Pa_Distant_01_SoundShader"};
+		spatial = 1;
+		spatialityRange = 25;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.75;
+	};
+	class Sfx_RavenPilot_Pa_01_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_RavenPilot_Pa_Close_01_SoundShader"};
+		spatial = 1;
+		spatialityRange = 25;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.8;
+	};
+	class Sfx_RavenPilot_Pa_02_Distant_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sfx_RavenPilot_Pa_Distant_02_SoundShader"};
+		spatial = 1;
+		spatialityRange = 25;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.75;
+	};
+	class Sfx_RavenPilot_Pa_02_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_RavenPilot_Pa_Close_02_SoundShader"};
+		spatial = 1;
+		spatialityRange = 25;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.8;
+	};
+	class Sfx_RewardRocket_Flickr_01_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_RewardRocket_Flickr_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_RewardRocket_Flickr_02_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_RewardRocket_Flickr_02_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class Sfx_RewardRocket_Loop_01_SoundSet
+	{
+		doppler = 1;
+		loop = 1;
+		obstructionFactor = 0.15;
+		occlusionFactor = 0.25;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sfx_RewardRocket_Loop_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.5;
+	};
+	class Sfx_RewardRocket_Stop_01_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "RainRoofMedium3DProcessingType";
+		soundShaders[] = {"Sfx_RewardRocket_Stop_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1.5;
+	};
+	class Sfx_SonicBoom_01_SoundSet
+	{
+		loop = 0;
+		sound3DProcessingType = "Sfx_SonicBoom_3DProcessingType";
+		soundShaders[] = {"Sfx_SonicBoom_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeFactor = 1;
+	};
+	class Sfx_SonicBoom_02_SoundSet
+	{
+		loop = 0;
+		sound3DProcessingType = "Sfx_SonicBoom_3DProcessingType";
+		soundShaders[] = {"Sfx_SonicBoom_02_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeFactor = 1.5;
+	};
+	class Sfx_Terminal_01_SoundSet
+	{
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "RainRoofLarge3DProcessingType";
+		soundShaders[] = {"Sfx_Terminal_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.75;
+	};
+	class Sfx_Training_01_Pa_01_Distant_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sfx_Training_01_Distant_01_SoundShader"};
+		spatial = 1;
+		spatialityRange = 25;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.75;
+	};
+	class Sfx_Training_01_Pa_01_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_Training_01_Close_01_SoundShader"};
+		spatial = 1;
+		spatialityRange = 25;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.75;
+	};
+	class Sfx_Training_02_Pa_01_Distant_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sfx_Training_02_Distant_01_SoundShader"};
+		spatial = 1;
+		spatialityRange = 25;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.75;
+	};
+	class Sfx_Training_02_Pa_01_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_Training_02_Close_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.75;
+	};
+	class Sfx_Training_03_Pa_01_Distant_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sfx_Training_03_Distant_01_SoundShader"};
+		spatial = 1;
+		spatialityRange = 25;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.75;
+	};
+	class Sfx_Training_03_Pa_01_SoundSet
+	{
+		distanceFilter = "LowIntensityDistanceFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProcessingType";
+		soundShaders[] = {"Sfx_Training_03_Close_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0.75;
+	};
+	class Sfx_Transformer_Loop_01_SoundSet
+	{
+		doppler = 0;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "SpotFx3DProces5singType";
+		soundShaders[] = {"Sfx_Transformer_Loop_01_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
 	};
 	class Shell105mm130mm_Exp_SoundSet
 	{
@@ -14573,6 +19527,19 @@ class CfgSoundSets
 		volumeFactor = 1;
 		volumeRandomizer = "0dB";
 	};
+	class Sinkhole_Collapse_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.15;
+		occlusionFactor = 0.25;
+		sound3DProcessingType = "ExplosionHeavyTail3DProcessingType";
+		soundShaders[] = {"Sinkhole_Collapse_Close_SoundShader", "Sinkhole_Collapse_Distant_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "LinearCurve";
+		volumeFactor = 1.5;
+	};
 	class SmallIED_Exp_SoundSet
 	{
 		distanceFilter = "explosionDistanceFreqAttenuationFilter";
@@ -14682,11 +19649,12 @@ class CfgSoundSets
 	class SPAR01_InteriorTail_SoundSet: Rifle_InteriorTail_Base_SoundSet
 	{
 		soundShaders[] = {"SPAR01_tailInterior_SoundShader"};
+		volumeFactor = "0.75 * 0.7";
 	};
 	class SPAR01_Shot_SoundSet: Rifle_Shot_Base_SoundSet
 	{
 		soundShaders[] = {"SPAR01_Closure_SoundShader", "SPAR01_closeShot_SoundShader", "SPAR01_midShot_SoundShader", "SPAR01_distShot_SoundShader"};
-		volumeFactor = 1.9;
+		volumeFactor = "0.75 *1.9";
 	};
 	class SPAR01_silencerInteriorTail_SoundSet: Rifle_silencerInteriorTail_Base_SoundSet
 	{
@@ -14703,15 +19671,17 @@ class CfgSoundSets
 	class SPAR01_tail_SoundSet: Rifle_Tail_Base_SoundSet
 	{
 		soundShaders[] = {"SPAR01_tailDistant_SoundShader", "SPAR01_tailForest_SoundShader", "SPAR01_tailHouses_SoundShader", "SPAR01_tailInterior_SoundShader", "SPAR01_tailMeadows_SoundShader", "SPAR01_tailTrees_SoundShader"};
+		volumeFactor = "0.75 * 0.7";
 	};
 	class SPAR02_InteriorTail_SoundSet: Rifle_InteriorTail_Base_SoundSet
 	{
 		soundShaders[] = {"SPAR02_tailInterior_SoundShader"};
+		volumeFactor = "0.75 * 0.7";
 	};
 	class SPAR02_Shot_SoundSet: Rifle_Shot_Base_SoundSet
 	{
 		soundShaders[] = {"SPAR02_Closure_SoundShader", "SPAR02_closeShot_SoundShader", "SPAR02_midShot_SoundShader", "SPAR02_distShot_SoundShader"};
-		volumeFactor = 1.9;
+		volumeFactor = "0.75 * 1.9";
 	};
 	class SPAR02_silencerInteriorTail_SoundSet: Rifle_silencerInteriorTail_Base_SoundSet
 	{
@@ -14728,14 +19698,17 @@ class CfgSoundSets
 	class SPAR02_tail_SoundSet: Rifle_Tail_Base_SoundSet
 	{
 		soundShaders[] = {"SPAR02_tailDistant_SoundShader", "SPAR02_tailForest_SoundShader", "SPAR02_tailHouses_SoundShader", "SPAR02_tailMeadows_SoundShader", "SPAR02_tailTrees_SoundShader"};
+		volumeFactor = "0.75 * 0.7";
 	};
 	class SPAR_17_InteriorTail_SoundSet: Rifle_InteriorTail_Base_SoundSet
 	{
 		soundShaders[] = {"SPAR_17_tailInterior_SoundShader"};
+		volumeFactor = "0.75 * 0.7";
 	};
 	class SPAR_17_Shot_SoundSet: Rifle_Shot_Base_SoundSet
 	{
 		soundShaders[] = {"SPAR_17_Closure_SoundShader", "SPAR_17_closeShot_SoundShader", "SPAR_17_midShot_SoundShader", "SPAR_17_distShot_SoundShader"};
+		volumeFactor = 0.75;
 	};
 	class SPAR_17_silencerInteriorTail_SoundSet: Rifle_silencerInteriorTail_Base_SoundSet
 	{
@@ -14752,6 +19725,7 @@ class CfgSoundSets
 	class SPAR_17_Tail_SoundSet: Rifle_Tail_Base_SoundSet
 	{
 		soundShaders[] = {"SPAR_17_tailTrees_SoundShader", "SPAR_17_tailForest_SoundShader", "SPAR_17_tailMeadows_SoundShader", "SPAR_17_tailHouses_SoundShader"};
+		volumeFactor = "0.75 * 0.7";
 	};
 	class Static_Launcher_Titan_ATAA_Shot_SoundSet
 	{
@@ -15085,6 +20059,106 @@ class CfgSoundSets
 		posOffset[] = {0, 0, 0};
 		soundShaders[] = {"Suv_01_Tires_Water_Slow_INT_SoundShader"};
 	};
+	class Swarm_Grenade_Explosion_SoundSet
+	{
+		distanceFilter = "DroneWeaponDistanceFreqAttenuationFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"Swarm_Grenade_Explosion_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0;
+	};
+	class Swarm_Grenade_Explosion_Tail_SoundSet
+	{
+		distanceFilter = "DroneWeaponDistanceFreqAttenuationFilter";
+		doppler = 0;
+		frequencyRandomizer = 0.1;
+		loop = 0;
+		obstructionFactor = 0;
+		occlusionFactor = 0.3;
+		sound3DProcessingType = "WeaponHeavyShotTail3DProcessingType";
+		soundShaders[] = {"Swarm_Grenade_Explosion_Tail_Forest_SoundShader", "Swarm_Grenade_Explosion_Tail_Meadows_SoundShader", "Swarm_Grenade_Explosion_Tail_Houses_SoundShader"};
+		soundShadersLimit = 2;
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0;
+	};
+	class Swarm_Grenade_FlyBy_SoundSet
+	{
+		doppler = 0;
+		loop = 0;
+		soundShaders[] = {"Swarm_Grenade_FlyBy_SoundShader"};
+		spatial = 1;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class Swarm_Shell_Launch_01_Start_SoundSet
+	{
+		distanceFilter = "DroneWeaponDistanceFreqAttenuationFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		playTrigger = "CustomSoundController11 envelope [0.99,1,1,1.01]";
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"Swarm_Shell_Launch_01_Start_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 1;
+	};
+	class Swarm_Shell_Launch_02_Projectile_SoundSet
+	{
+		distanceFilter = "DroneWeaponDistanceFreqAttenuationFilter";
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"Swarm_Shell_Launch_02_Projectile_SoundShader"};
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0;
+	};
+	class Swarm_Shell_Launch_02_Start_SoundSet
+	{
+		distanceFilter = "DroneWeaponDistanceFreqAttenuationFilter";
+		doppler = 0;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		playTrigger = "CustomSoundController11 factor [1.99,2]";
+		sound3DProcessingType = "WeaponHeavyShot3DProcessingType";
+		soundShaders[] = {"Swarm_Shell_Launch_02_SoundShader"};
+		spatial = 1;
+		speedOfSound = 1;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0;
+	};
+	class Swarm_Shell_Launch_02_Tail_SoundSet
+	{
+		distanceFilter = "DroneWeaponDistanceFreqAttenuationFilter";
+		doppler = 0;
+		frequencyRandomizer = 0.1;
+		loop = 0;
+		obstructionFactor = 0;
+		occlusionFactor = 0.3;
+		playTrigger = "CustomSoundController11 factor [1.99,2]";
+		sound3DProcessingType = "WeaponHeavyShotTail3DProcessingType";
+		soundShaders[] = {"Swarm_Shell_Launch_Tail_Forest_SoundShader"};
+		soundShadersLimit = 1;
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare2Curve";
+		volumeFactor = 0;
+	};
 	class SyndikatLMG_InteriorTail_SoundSet: Rifle_InteriorTail_Base_SoundSet
 	{
 		soundShaders[] = {"SyndikatLMG_TailInterior_SoundShader"};
@@ -15140,6 +20214,36 @@ class CfgSoundSets
 		PlayTrigger = "(longSlip factor [-0.13,-0.14])";
 		soundShaders[] = {"Tanks_Material_Strain_Int_SoundShader"};
 	};
+	class Test_SoundSet
+	{
+		doppler = 1;
+		loop = 0;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		sound3DProcessingType = "VehicleExt_3DProcessingType";
+		soundShaders[] = {"MyTestSoundShader"};
+		soundShadersLimit = 0;
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
+	class TestLoop_SoundSet
+	{
+		doppler = 1;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		sound3DProcessingType = "VehicleExt_3DProcessingType";
+		soundShaders[] = {"AlienDrone_01_Crash_Primary_Heavy_SoundShader"};
+		soundShadersLimit = 0;
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
+		volumeFactor = 1;
+	};
 	class Testtone_SoundSet
 	{
 		doppler = 0;
@@ -15148,6 +20252,22 @@ class CfgSoundSets
 		sound3DProcessingType = "Testtones3DProcessingType";
 		soundshaders[] = {"Testtone_SoundShader"};
 		spatial = 1;
+		volumeFactor = 1;
+	};
+	class TestTrigger_SoundSet
+	{
+		doppler = 1;
+		loop = 1;
+		obstructionFactor = 0.3;
+		occlusionFactor = 0.5;
+		occlusionObstruction = 1;
+		playTrigger = "(CustomSoundController1 factor [0.99,1])";
+		sound3DProcessingType = "VehicleExt_3DProcessingType";
+		soundShaders[] = {"AlienDrone_01_Destroyed_High_01_SoundShader"};
+		soundShadersLimit = 0;
+		spatial = 1;
+		speedOfSound = 0;
+		volumeCurve = "InverseSquare1Curve";
 		volumeFactor = 1;
 	};
 	class Thunder_Heavy_SoundSet
@@ -17390,7 +22510,7 @@ class CfgSoundSets
 		posOffset[] = {0, 0, 0};
 		soundShaders[] = {"Van_01_Tires_Water_Slow_INT_SoundShader"};
 	};
-	class Van_02_AmbulanceSiren_01_Ext_SoundSet
+	class Van_02_AmbulanceSiren_01_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17406,7 +22526,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Brakes_Asphalt_01_Ext_SoundSet
+	class Van_02_Brakes_Asphalt_01_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17422,7 +22542,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Brakes_Dirt_01_Ext_SoundSet
+	class Van_02_Brakes_Dirt_01_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17438,14 +22558,14 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Eng_01_Idle_Ext_SoundSet
+	class Van_02_Eng_01_Idle_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
 		soundShaders[] = {"Van_02_Eng_01_Idle_Ext_SoundShader"};
 		spatial = 1;
 		volumeCurve = "InverseSquare2Curve";
-		volumeFactor = 0.8;
+		volumeFactor = 0.7;
 	};
 	class Van_02_Eng_01_Idle_Int_SoundSet
 	{
@@ -17454,7 +22574,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Eng_01_Rpm_01_Ext_SoundSet
+	class Van_02_Eng_01_Rpm_01_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17470,7 +22590,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Eng_01_Rpm_02_Ext_SoundSet
+	class Van_02_Eng_01_Rpm_02_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17486,7 +22606,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Eng_01_Rpm_03_Ext_SoundSet
+	class Van_02_Eng_01_Rpm_03_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17502,7 +22622,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Eng_01_Rpm_04_Ext_SoundSet
+	class Van_02_Eng_01_Rpm_04_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17518,7 +22638,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Eng_01_Rpm_05_Ext_SoundSet
+	class Van_02_Eng_01_Rpm_05_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17534,7 +22654,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Eng_02_Idle_Ext_SoundSet
+	class Van_02_Eng_02_Idle_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17550,7 +22670,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Eng_02_Rpm_01_Ext_SoundSet
+	class Van_02_Eng_02_Rpm_01_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17566,7 +22686,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Eng_02_Rpm_02_Ext_SoundSet
+	class Van_02_Eng_02_Rpm_02_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17582,7 +22702,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Eng_02_Rpm_03_Ext_SoundSet
+	class Van_02_Eng_02_Rpm_03_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17598,7 +22718,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Eng_02_Rpm_04_Ext_SoundSet
+	class Van_02_Eng_02_Rpm_04_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17614,7 +22734,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Eng_02_Rpm_05_Ext_SoundSet
+	class Van_02_Eng_02_Rpm_05_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17637,6 +22757,12 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 0.7;
 	};
+	class Van_02_Obstruction_Settings_Soundset
+	{
+		obstructionFactor = 0.25;
+		occlusionFactor = 0.25;
+		occlusionObstruction = 1;
+	};
 	class Van_02_PoliceSiren_01_Ext_SoundSet
 	{
 		loop = 1;
@@ -17653,7 +22779,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Rain_01_Ext_SoundSet
+	class Van_02_Rain_01_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		posOffset[] = {2, 0, 0};
@@ -17661,7 +22787,7 @@ class CfgSoundSets
 		soundShaders[] = {"Van_02_Rain_01_Ext_SoundShader"};
 		spatial = 1;
 		volumeCurve = "InverseSquare1Curve";
-		volumeFactor = 1;
+		volumeFactor = 1.5;
 	};
 	class Van_02_Rain_01_Int_SoundSet
 	{
@@ -17670,7 +22796,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Tires_Asphalt_01_Ext_SoundSet
+	class Van_02_Tires_Asphalt_01_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17686,7 +22812,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Tires_Grass_Mud_01_Ext_SoundSet
+	class Van_02_Tires_Grass_Mud_01_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17702,7 +22828,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 0.8;
 	};
-	class Van_02_Tires_Gravel_01_Ext_SoundSet
+	class Van_02_Tires_Gravel_01_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17734,7 +22860,7 @@ class CfgSoundSets
 		spatial = 1;
 		volumeFactor = 1.8;
 	};
-	class Van_02_Tires_Rock_01_Ext_SoundSet
+	class Van_02_Tires_Rock_01_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17750,7 +22876,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Tires_Sand_01_Ext_SoundSet
+	class Van_02_Tires_Sand_01_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17766,7 +22892,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Tires_Water_01_Ext_SoundSet
+	class Van_02_Tires_Water_01_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17782,7 +22908,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_Tires_Wood_01_Ext_SoundSet
+	class Van_02_Tires_Wood_01_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17791,7 +22917,7 @@ class CfgSoundSets
 		volumeCurve = "InverseSquare2Curve";
 		volumeFactor = 1.3;
 	};
-	class Van_02_TurnLeft_Asphalt_01_Ext_SoundSet
+	class Van_02_TurnLeft_Asphalt_01_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17807,7 +22933,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1.9;
 	};
-	class Van_02_TurnLeft_Dirt_01_Ext_SoundSet
+	class Van_02_TurnLeft_Dirt_01_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17823,7 +22949,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1;
 	};
-	class Van_02_TurnRight_Asphalt_01_Ext_SoundSet
+	class Van_02_TurnRight_Asphalt_01_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";
@@ -17839,7 +22965,7 @@ class CfgSoundSets
 		spatial = 0;
 		volumeFactor = 1.9;
 	};
-	class Van_02_TurnRight_Dirt_01_Ext_SoundSet
+	class Van_02_TurnRight_Dirt_01_Ext_SoundSet: Van_02_Obstruction_Settings_Soundset
 	{
 		loop = 1;
 		sound3DProcessingType = "Van_Ext_3DProcessingType";

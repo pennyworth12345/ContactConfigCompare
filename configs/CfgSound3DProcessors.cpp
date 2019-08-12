@@ -36,6 +36,28 @@ class CfgSound3DProcessors
 		rangeCurve = "Smooth1Curve";
 		type = "panner";
 	};
+	class Drone_01_Movement_Short_3DProcessingType
+	{
+		innerRange = 10;
+		radius = 5;
+		range = 10;
+		type = "emitter";
+	};
+	class DroneMovement3DProcessingType
+	{
+		innerRange = 10;
+		radius = 5;
+		range = 300;
+		rangeCurve = "InverseSquare2Curve";
+		type = "emitter";
+	};
+	class DronePuzzleFeedback3DProcessingType
+	{
+		innerRange = 10;
+		range = 400;
+		rangeCurve = "InverseSquare2Curve";
+		type = "emitter";
+	};
 	class ExplosionDebris3DProcessingType
 	{
 		innerRange = 0;
@@ -183,6 +205,13 @@ class CfgSound3DProcessors
 		range = 15;
 		type = "panner";
 	};
+	class Offroad_Pa_3DProcessingType
+	{
+		innerRange = 1;
+		range = 1;
+		rangeCurve = "Smooth1Curve";
+		type = "panner";
+	};
 	class PlaneExt_Distant_3DProcessingType
 	{
 		innerRange = 0;
@@ -243,6 +272,29 @@ class CfgSound3DProcessors
 		rangeCurve = "Smooth1Curve";
 		type = "panner";
 	};
+	class Sfx_SonicBoom_3DProcessingType
+	{
+		innerRange = 0;
+		range = 800;
+		rangeCurve = "Smooth1Curve";
+		type = "panner";
+	};
+	class ShowerCenter3DProcessingType
+	{
+		innerRange = 1;
+		radius = 2;
+		range = 15;
+		rangeCurve = "Smooth1Curve";
+		type = "panner";
+	};
+	class ShowerNozzle3DProcessingType
+	{
+		innerRange = 0;
+		radius = 2;
+		range = 0.1;
+		rangeCurve = "Smooth1Curve";
+		type = "panner";
+	};
 	class SmallPineTree3DProcessingType
 	{
 		innerRange = 0;
@@ -257,6 +309,14 @@ class CfgSound3DProcessors
 		range = 50;
 		rangeCurve = "Smooth1Curve";
 		type = "panner";
+	};
+	class SpotFx3DProcessingType
+	{
+		innerRange = 0;
+		radius = 2;
+		range = 1;
+		rangeCurve = "Smooth1Curve";
+		type = "emitter";
 	};
 	class StratisForest_3DProcessingType
 	{

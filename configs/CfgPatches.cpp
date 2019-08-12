@@ -37,6 +37,16 @@ class CfgPatches
 		url = "https://www.arma3.com";
 		weapons[] = {};
 	};
+	class A3_Air_F_Alien_Extractor_01
+	{
+		author = "Bohemia Interactive";
+		name = "Air Anomaly";
+		requiredAddons[] = {"A3_Air_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {"Alien_Extractor_01_F", "Alien_Extractor_01_generic_F"};
+		url = "https://www.arma3.com";
+		weapons[] = {};
+	};
 	class A3_Air_F_Beta
 	{
 		author = "Bohemia Interactive";
@@ -93,6 +103,48 @@ class CfgPatches
 		requiredAddons[] = {"A3_Air_F_Beta", "A3_Weapons_F_Ammoboxes"};
 		requiredVersion = 0.1;
 		units[] = {"B_B_Parachute_02_F", "B_I_Parachute_02_F", "B_O_Parachute_02_F", "B_Parachute_02_F", "I_Parachute_02_F", "O_Parachute_02_F"};
+		weapons[] = {};
+	};
+	class A3_Air_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "Arma 3 Contact - Aircraft";
+		requiredAddons[] = {"A3_Data_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {"B_Heli_Attack_02_dynamicLoadout_F", "B_Heli_Light_02_unarmed_F", "B_Heli_Transport_04_covered_F", "B_Heli_Transport_04_F", "B_Plane_Fighter_02_F"};
+		url = "https://www.arma3.com";
+		weapons[] = {};
+	};
+	class A3_Air_F_Contact_AlienDrone_01
+	{
+		addonRootClass = "A3_Air_F_Contact";
+		requiredAddons[] = {"A3_Air_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {"AlienDrone_01_v2_combat_bbox_F", "B_A_AlienDrone_01_combat_F", "B_A_AlienDrone_01_F", "B_A_AlienDrone_01_scout_F", "I_A_AlienDrone_01_combat_F", "I_A_AlienDrone_01_F", "I_A_AlienDrone_01_scout_F", "O_A_AlienDrone_01_combat_F", "O_A_AlienDrone_01_F", "O_A_AlienDrone_01_scout_F"};
+		weapons[] = {};
+	};
+	class A3_Air_F_Contact_AlienDrone_Modules_01
+	{
+		addonRootClass = "A3_Air_F_Contact";
+		requiredAddons[] = {"A3_Air_F_Contact_AlienDrone_01", "A3_Air_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {"Alien_MatterBall_01_F", "Alien_MatterBall_01_decayed_F", "B_A_AlienDrone_Module_01_F", "O_A_AlienDrone_Module_01_F", "I_A_AlienDrone_Module_01_F", "B_A_AlienDrone_Module_02_F", "O_A_AlienDrone_Module_02_F", "I_A_AlienDrone_Module_02_F", "B_A_AlienDrone_Module_02_twin_F", "O_A_AlienDrone_Module_02_twin_F", "I_A_AlienDrone_Module_02_twin_F"};
+		weapons[] = {};
+	};
+	class A3_Air_F_Contact_InvisibleHeli_01
+	{
+		addonRootClass = "A3_Air_F_Contact";
+		requiredAddons[] = {"A3_Air_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {"InvisibleHeli_01_100m_F", "InvisibleHeli_01_150m_F", "InvisibleHeli_01_50m_F"};
+		weapons[] = {};
+	};
+	class A3_Air_F_Contact_VirtualSound_01
+	{
+		addonRootClass = "A3_Air_F_Contact";
+		requiredAddons[] = {"A3_Air_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {"DroneWeaponChargeSound_01_F", "VirtualSound_01_F", "VirtualSound_02_F", "VirtualSound_03_F", "VirtualSound_04_01_F", "VirtualSound_04_F", "VirtualSound_05_F", "VirtualSound_NoSignal_F", "VirtualSound_Send_Signal_01_F"};
 		weapons[] = {};
 	};
 	class A3_Air_F_Enoch
@@ -625,6 +677,16 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 	};
+	class A3_Anims_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "Arma 3 Contact - Human Animations";
+		requiredAddons[] = {"A3_Data_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		url = "https://www.arma3.com";
+		weapons[] = {};
+	};
 	class A3_Anims_F_Data
 	{
 		author = "Bohemia Interactive";
@@ -841,6 +903,16 @@ class CfgPatches
 		requiredAddons[] = {"A3_Armor_F_Beta", "A3_Soft_F"};
 		requiredVersion = 0.1;
 		units[] = {"O_APC_Wheeled_02_rcws_F", "O_APC_Wheeled_02_rcws_v2_F"};
+		weapons[] = {};
+	};
+	class A3_Armor_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "CFGPATCHES_A3_Armor_F_Contact";
+		requiredAddons[] = {"A3_Armor_F"};
+		requiredVersion = 0.1;
+		units[] = {};
+		url = "https://www.arma3.com";
 		weapons[] = {};
 	};
 	class A3_Armor_F_Enoch
@@ -1323,6 +1395,16 @@ class CfgPatches
 		url = "https://www.arma3.com";
 		weapons[] = {};
 	};
+	class A3_Cargoposes_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "CFGPATCHES_A3_Cargoposes_F_Contact";
+		requiredAddons[] = {"A3_Data_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		url = "https://www.arma3.com";
+		weapons[] = {};
+	};
 	class A3_Cargoposes_F_Enoch
 	{
 		author = "Bohemia Interactive";
@@ -1451,6 +1533,32 @@ class CfgPatches
 		requiredAddons[] = {"A3_Characters_F", "A3_Characters_F_BLUFOR", "A3_Characters_F_OPFOR"};
 		requiredVersion = 0.1;
 		units[] = {"B_UAV_AI", "B_UAV_AI_F", "I_UAV_AI", "I_UAV_AI_F", "O_UAV_AI", "O_UAV_AI_F", "Underwear_F"};
+		weapons[] = {};
+	};
+	class A3_Characters_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "Arma 3 Contact - Characters and Clothing";
+		requiredAddons[] = {"A3_Data_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {"B_A_UAV_AI_F", "B_W_Medic_EMP_F", "B_W_RadioOperator_EMP_F", "B_W_Soldier_AR_EMP_F", "B_W_Soldier_CBRN_EMP_F", "B_W_Soldier_EMP_F", "B_W_Soldier_GL_EMP_F", "B_W_Soldier_LAT2_EMP_F", "B_W_soldier_M_EMP_F", "B_W_Soldier_SL_EMP_F", "B_W_Soldier_TL_EMP_F", "B_W_Story_Instructor_01_F", "B_W_Story_Leader_01_F", "B_W_Story_Major_01_F", "B_W_Story_Protagonist_01_F", "B_W_Story_Soldier_01_F", "C_Story_Scientist_01_F", "C_Story_Scientist_02_F", "I_A_UAV_AI_F", "I_E_Deserter_AR_F", "I_E_Deserter_GL_F", "I_E_Deserter_Rifle_F", "I_E_Medic_EMP_F", "I_E_Militiaman_Leader_F", "I_E_Militiaman_Rifle_F", "I_E_Militiaman_SMG_F", "I_E_RadioOperator_EMP_F", "I_E_Soldier_AR_EMP_F", "I_E_Soldier_CBRN_EMP_F", "I_E_Soldier_EMP_F", "I_E_Soldier_GL_EMP_F", "I_E_Soldier_LAT2_EMP_F", "I_E_soldier_M_EMP_F", "I_E_Soldier_SL_EMP_F", "I_E_Soldier_TL_EMP_F", "O_A_UAV_AI_F", "O_R_Story_Capitan_01_F", "O_R_Story_TL_01_F"};
+		url = "https://www.arma3.com";
+		weapons[] = {};
+	};
+	class A3_Characters_F_Contact_Facewear
+	{
+		addonRootClass = "A3_Characters_F_Contact";
+		requiredAddons[] = {"A3_Characters_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		weapons[] = {};
+	};
+	class A3_Characters_F_Contact_Headgear
+	{
+		addonRootClass = "A3_Characters_F_Contact";
+		requiredAddons[] = {"A3_Characters_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
 		weapons[] = {};
 	};
 	class A3_Characters_F_Enoch
@@ -1768,6 +1876,32 @@ class CfgPatches
 	{
 		addonRootClass = "A3_Data_F_Bootcamp";
 		requiredAddons[] = {"A3_Anims_F_Bootcamp", "A3_Characters_F_Bootcamp", "A3_Characters_F_Bootcamp_Common", "A3_Data_F_Bootcamp", "A3_Dubbing_F_Bootcamp", "A3_Functions_F_Bootcamp", "A3_Language_F_Bootcamp", "A3_LanguageMissions_F_Bootcamp", "A3_Map_VR", "A3_Map_VR_Scenes_F", "A3_Missions_F_Bootcamp", "A3_Missions_F_Bootcamp_Data", "A3_Missions_F_Bootcamp_Video", "A3_Modules_F_Bootcamp", "A3_Modules_F_Bootcamp_Misc", "A3_Music_F_Bootcamp", "A3_Music_F_Bootcamp_Music", "A3_Soft_F_Bootcamp", "A3_Soft_F_Bootcamp_Offroad_01", "A3_Soft_F_Bootcamp_Quadbike_01", "A3_Soft_F_Bootcamp_Van_01", "A3_Sounds_F_Bootcamp", "A3_Structures_F_Bootcamp", "A3_Structures_F_Bootcamp_Civ_Camping", "A3_Structures_F_Bootcamp_Civ_SportsGrounds", "A3_Structures_F_Bootcamp_Ind_Cargo", "A3_Structures_F_Bootcamp_Items_Electronics", "A3_Structures_F_Bootcamp_Items_Food", "A3_Structures_F_Bootcamp_Items_Sport", "A3_Structures_F_Bootcamp_System", "A3_Structures_F_Bootcamp_Training", "A3_Structures_F_Bootcamp_VR_Blocks", "A3_Structures_F_Bootcamp_VR_CoverObjects", "A3_Structures_F_Bootcamp_VR_Helpers", "A3_Ui_F_Bootcamp", "A3_Weapons_F_Bootcamp", "A3_Weapons_F_Bootcamp_Ammoboxes", "A3_Weapons_F_Bootcamp_LongRangeRifles_GM6_Camo", "A3_Weapons_F_Bootcamp_LongRangeRifles_M320_Camo"};
+		requiredVersion = 0.1;
+		units[] = {};
+		weapons[] = {};
+	};
+	class A3_Data_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "Arma 3 Contact - Main Configuration";
+		requiredAddons[] = {"A3_Data_F_Enoch_Loadorder"};
+		requiredVersion = 0.1;
+		units[] = {};
+		url = "https://www.arma3.com";
+		weapons[] = {};
+	};
+	class A3_Data_F_Contact_Loadorder
+	{
+		addonRootClass = "A3_Data_F_Contact";
+		requiredAddons[] = {"A3_Air_F_Contact", "A3_Air_F_Contact_AlienDrone_01", "A3_Air_F_Contact_AlienDrone_Modules_01", "A3_Air_F_Contact_VirtualSound_01", "A3_Anims_F_Contact", "A3_Armor_F_Contact", "A3_Cargoposes_F_Contact", "A3_Characters_F_Contact", "A3_Data_F_Contact", "A3_Data_F_Contact_ParticleEffects", "A3_Dubbing_F_Contact", "A3_Functions_F_Contact", "A3_Language_F_Contact", "A3_LanguageMissions_F_Contact", "A3_Missions_F_Contact", "A3_Modules_F_Contact", "A3_Modules_F_Contact_CBRN", "A3_Music_F_Contact", "A3_Props_F_Contact", "A3_Props_F_Contact_Aliens", "A3_Props_F_Contact_Aliens_Mothership_01", "A3_Props_F_Contact_Aliens_Probe", "A3_Props_F_Contact_Civilian", "A3_Props_F_Contact_Civilian_InfoBoards", "A3_Props_F_Contact_Items", "A3_Props_F_Contact_Items_Documents", "A3_Props_F_Contact_Military", "A3_Props_F_Contact_Military_Camps", "A3_Props_F_Contact_Military_Decontamination", "A3_Props_F_Contact_Military_Equipment", "A3_Props_F_Contact_Military_Supplies", "A3_Props_F_Contact_Particles", "A3_Soft_F_Contact", "A3_Soft_F_Contact_Offroad_01", "A3_Soft_F_Contact_Truck_02", "A3_Sounds_F_Contact", "A3_Static_F_Contact", "A3_Structures_F_Contact", "A3_Supplies_F_Contact", "A3_Supplies_F_Contact_Bags", "A3_UI_F_Contact", "A3_Weapons_F_Contact", "A3_Weapons_F_Contact_Acc", "A3_Weapons_F_Contact_Items", "A3_Weapons_F_Contact_Pistols_ESD"};
+		requiredVersion = 0.1;
+		units[] = {};
+		weapons[] = {};
+	};
+	class A3_Data_F_Contact_ParticleEffects
+	{
+		addonRootClass = "A3_Data_F_Contact";
+		requiredAddons[] = {"A3_Data_F", "A3_Data_F_Contact"};
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] = {};
@@ -2272,6 +2406,16 @@ class CfgPatches
 		url = "https://www.arma3.com";
 		weapons[] = {};
 	};
+	class A3_Dubbing_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "";
+		requiredAddons[] = {"A3_Data_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		url = "https://www.arma3.com";
+		weapons[] = {};
+	};
 	class A3_Dubbing_F_EPA
 	{
 		author = "Bohemia Interactive";
@@ -2542,6 +2686,16 @@ class CfgPatches
 		url = "https://www.arma3.com";
 		weapons[] = {};
 	};
+	class A3_EditorPreviews_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "CFGPATCHES_A3_EditorPreviews_F_Contact";
+		requiredAddons[] = {"A3_Data_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		url = "https://www.arma3.com";
+		weapons[] = {};
+	};
 	class A3_EditorPreviews_F_Destroyer
 	{
 		author = "Bohemia Interactive";
@@ -2627,6 +2781,16 @@ class CfgPatches
 		author = "Bohemia Interactive";
 		name = "Arma 3 Bootcamp Update - Script Functions";
 		requiredAddons[] = {"A3_Data_F_Bootcamp"};
+		requiredVersion = 0.1;
+		units[] = {};
+		url = "https://www.arma3.com";
+		weapons[] = {};
+	};
+	class A3_Functions_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "Arma 3 Contact - Script Functions";
+		requiredAddons[] = {"A3_Data_F_Contact"};
 		requiredVersion = 0.1;
 		units[] = {};
 		url = "https://www.arma3.com";
@@ -2827,6 +2991,16 @@ class CfgPatches
 		author = "Bohemia Interactive";
 		name = "Arma 3 Bootcamp Update - Texts and Translations";
 		requiredAddons[] = {"A3_Data_F_Bootcamp"};
+		requiredVersion = 0.1;
+		units[] = {};
+		url = "https://www.arma3.com";
+		weapons[] = {};
+	};
+	class A3_Language_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "Arma 3 Contact - Texts and Translations";
+		requiredAddons[] = {"A3_Data_F_Contact"};
 		requiredVersion = 0.1;
 		units[] = {};
 		url = "https://www.arma3.com";
@@ -3077,6 +3251,16 @@ class CfgPatches
 		author = "Bohemia Interactive";
 		name = "Arma 3 Bootcamp Update - Mission Texts and Translations";
 		requiredAddons[] = {"A3_Data_F_Bootcamp"};
+		requiredVersion = 0.1;
+		units[] = {};
+		url = "https://www.arma3.com";
+		weapons[] = {};
+	};
+	class A3_LanguageMissions_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "CFGPATCHES_A3_LanguageMissions_F_Contact";
+		requiredAddons[] = {"A3_Data_F_Contact"};
 		requiredVersion = 0.1;
 		units[] = {};
 		url = "https://www.arma3.com";
@@ -3581,6 +3765,16 @@ class CfgPatches
 		url = "https://www.arma3.com";
 		weapons[] = {};
 	};
+	class A3_Missions_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "Arma 3 Contact - Playable Content";
+		requiredAddons[] = {"A3_Data_F_Contact", "A3_Functions_F_Contact", "A3_Sounds_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		url = "https://www.arma3.com";
+		weapons[] = {};
+	};
 	class A3_Missions_F_Curator
 	{
 		author = "Bohemia Interactive";
@@ -3973,6 +4167,24 @@ class CfgPatches
 		requiredAddons[] = {"A3_Modules_F_Bootcamp"};
 		requiredVersion = 0.1;
 		units[] = {"ModuleArsenal_F", "ModuleBootcampStage_F", "ModuleHint_F", "ModulePunishment_F"};
+		weapons[] = {};
+	};
+	class A3_Modules_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "Arma 3 Contact - Scripted Modules";
+		requiredAddons[] = {"A3_Data_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {"ModuleAntenna_F", "ModuleDangerZone_F", "ModuleFaradayCage_F", "ModuleGravityAnomaly_F", "ModuleMovementGrid_F", "ModulePointOfInterest_F", "ModuleSimpleObject_F", "PatrolWaypoint", "ReinforcementsPoint", "SiteCore", "VirtualAISquad"};
+		url = "https://www.arma3.com";
+		weapons[] = {};
+	};
+	class A3_Modules_F_Contact_CBRN
+	{
+		addonRootClass = "A3_Modules_F_Contact";
+		requiredAddons[] = {"A3_Modules_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {"ModuleCBRN_F"};
 		weapons[] = {};
 	};
 	class A3_Modules_F_Curator
@@ -4485,6 +4697,16 @@ class CfgPatches
 		url = "https://www.arma3.com";
 		weapons[] = {};
 	};
+	class A3_Music_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "Arma 3 Contact - Soundtrack";
+		requiredAddons[] = {"A3_Data_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		url = "https://www.arma3.com";
+		weapons[] = {};
+	};
 	class A3_Music_F_EPA
 	{
 		author = "Bohemia Interactive";
@@ -4721,6 +4943,136 @@ class CfgPatches
 		requiredAddons[] = {"A3_Props_F_Argo_Items"};
 		requiredVersion = 0.1;
 		units[] = {"Land_Laptop_02_F", "Land_Laptop_02_unfolded_F"};
+		weapons[] = {};
+	};
+	class A3_Props_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "Arma 3 Contact - Decorative and Mission Objects";
+		requiredAddons[] = {"A3_Data_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		url = "https://www.arma3.com";
+		weapons[] = {};
+	};
+	class A3_Props_F_Contact_Aliens
+	{
+		addonRootClass = "A3_Props_F_Contact";
+		requiredAddons[] = {"A3_Props_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		weapons[] = {};
+	};
+	class A3_Props_F_Contact_Aliens_Mothership_01
+	{
+		addonRootClass = "A3_Props_F_Contact";
+		requiredAddons[] = {"A3_Props_F_Contact_Aliens"};
+		requiredVersion = 0.1;
+		units[] = {"Mothership_01_F", "Mothership_01_LensFlare_F"};
+		weapons[] = {};
+	};
+	class A3_Props_F_Contact_Aliens_Probe
+	{
+		addonRootClass = "A3_Props_F_Contact";
+		requiredAddons[] = {"A3_Props_F_Contact_Aliens"};
+		requiredVersion = 0.1;
+		units[] = {"Land_AlienProbe_Core_01_F", "Land_AlienProbe_Core_01_Legs_F", "Land_AlienProbe_Core_Debris_01_F", "Land_AlienProbe_Core_Debris_02_F", "Land_AlienProbe_Core_Debris_03_F", "Land_AlienProbe_Core_Debris_04_F", "Land_AlienProbe_Core_Debris_05_F", "Land_AlienProbe_Tip_01_F", "Land_AlienProbe_Tip_02_F", "Land_AlienProbe_Tip_03_F", "Land_AlienProbe_Tip_04_F", "Land_AlienProbe_Stump_01_F", "Land_AlienProbe_Stump_02_F", "Land_AlienProbe_Debris_01_F", "Land_AlienProbe_Debris_02_F", "Land_AlienProbe_Debris_03_F"};
+		weapons[] = {};
+	};
+	class A3_Props_F_Contact_Aliens_ScanBeam
+	{
+		addonRootClass = "A3_Props_F_Contact";
+		requiredAddons[] = {"A3_Data_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {"ScanBeam_01_F"};
+		weapons[] = {};
+	};
+	class A3_Props_F_Contact_Civilian
+	{
+		addonRootClass = "A3_Props_F_Contact";
+		requiredAddons[] = {"A3_Props_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		weapons[] = {};
+	};
+	class A3_Props_F_Contact_Civilian_InfoBoards
+	{
+		addonRootClass = "A3_Props_F_Contact";
+		requiredAddons[] = {"A3_Props_F_Contact_Civilian"};
+		requiredVersion = 0.1;
+		units[] = {};
+		weapons[] = {};
+	};
+	class A3_Props_F_Contact_Items
+	{
+		addonRootClass = "A3_Props_F_Contact";
+		requiredAddons[] = {"A3_Props_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {"Land_Chemlight_Blue_F", "MarkerLightSource_01_Large_Red_F"};
+		weapons[] = {};
+	};
+	class A3_Props_F_Contact_Items_Documents
+	{
+		addonRootClass = "A3_Props_F_Contact";
+		requiredAddons[] = {"A3_Props_F_Contact_Items"};
+		requiredVersion = 0.1;
+		units[] = {};
+		weapons[] = {};
+	};
+	class A3_Props_F_Contact_Military
+	{
+		addonRootClass = "A3_Props_F_Contact";
+		requiredAddons[] = {"A3_Props_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		weapons[] = {};
+	};
+	class A3_Props_F_Contact_Military_Camps
+	{
+		addonRootClass = "A3_Props_F_Contact";
+		requiredAddons[] = {"A3_Props_F_Contact_Military"};
+		requiredVersion = 0.1;
+		units[] = {};
+		weapons[] = {};
+	};
+	class A3_Props_F_Contact_Military_Decontamination
+	{
+		addonRootClass = "A3_Props_F_Contact";
+		requiredAddons[] = {"A3_Props_F_Contact_Military"};
+		requiredVersion = 0.1;
+		units[] = {};
+		weapons[] = {};
+	};
+	class A3_Props_F_Contact_Military_Equipment
+	{
+		addonRootClass = "A3_Props_F_Contact";
+		requiredAddons[] = {"A3_Props_F_Contact_Military"};
+		requiredVersion = 0.1;
+		units[] = {};
+		weapons[] = {};
+	};
+	class A3_Props_F_Contact_Military_Supplies
+	{
+		addonRootClass = "A3_Props_F_Contact";
+		requiredAddons[] = {"A3_Props_F_Contact_Military"};
+		requiredVersion = 0.1;
+		units[] = {};
+		weapons[] = {};
+	};
+	class A3_Props_F_Contact_Particles
+	{
+		addonRootClass = "A3_Props_F_Contact";
+		requiredAddons[] = {"A3_Props_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {"Particle_BigFire_BurnPit_F", "Particle_BigFire_F", "Particle_BigFire_NoSmoke_F", "Particle_BigSmoke_F", "Particle_GravityAnomaly_F", "Particle_MediumFire_F", "Particle_MediumFire_NoSmoke_F", "Particle_MediumFire_Roof_F", "Particle_MediumSmoke_F", "Particle_SmallFire_F", "Particle_SmallFire_NoSmoke_F", "Particle_SmallFire_NoSmoke_NoLight_F", "Particle_SmallSmoke_F", "Particle_WreckSmokeSmall_F"};
+		weapons[] = {};
+	};
+	class A3_Props_F_Contact_Particles_Flipbook
+	{
+		addonRootClass = "A3_Props_F_Contact";
+		requiredAddons[] = {"A3_Props_F_Contact", "A3_Props_F_Contact_Particles"};
+		requiredVersion = 0.1;
+		units[] = {"Flipbook_01_F", "Flipbook_02_F"};
 		weapons[] = {};
 	};
 	class A3_Props_F_Destroyer
@@ -5488,6 +5840,40 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 	};
+	class A3_Soft_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "Arma 3 Contact - Unarmored Land Vehicles";
+		requiredAddons[] = {"A3_Soft_F"};
+		requiredVersion = 0.1;
+		units[] = {};
+		url = "https://www.arma3.com";
+		weapons[] = {};
+	};
+	class A3_Soft_F_Contact_Offroad_01
+	{
+		addonRootClass = "A3_Soft_F_Contact";
+		requiredAddons[] = {"A3_Soft_F_Contact", "A3_Soft_F_Offroad_01"};
+		requiredVersion = 0.1;
+		units[] = {"I_E_Offroad_01_covered_EMP_F", "I_E_Offroad_01_EMP_F"};
+		weapons[] = {};
+	};
+	class A3_Soft_F_Contact_Truck_01
+	{
+		addonRootClass = "A3_Soft_F_Contact";
+		requiredAddons[] = {"A3_Soft_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		weapons[] = {};
+	};
+	class A3_Soft_F_Contact_Truck_02
+	{
+		addonRootClass = "A3_Soft_F_Contact";
+		requiredAddons[] = {"A3_Soft_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {"I_E_Truck_02_EMP_F", "I_E_Truck_02_transport_EMP_F"};
+		weapons[] = {};
+	};
 	class A3_Soft_F_Crusher_UGV
 	{
 		requiredAddons[] = {"A3_Drones_F_Soft_F_Gamma_UGV_01"};
@@ -6078,6 +6464,16 @@ class CfgPatches
 		url = "https://www.arma3.com";
 		weapons[] = {};
 	};
+	class A3_Sounds_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "Arma 3 Contact - Sound Effects";
+		requiredAddons[] = {"A3_Data_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {"AlienDrone_Module_02_twin_F", "DroneScanBeamSound_01_End_F", "DroneScanBeamSound_01_Loop_F", "DroneScanBeamSound_01_Start_F", "EM_AutoTurret_Enc_01_F", "EM_AutoTurret_Jammed_01_F", "EM_Base_Noise_01_F", "EM_BlackBox_DistressSignal_01_F", "EM_Darter_Enc_01_F", "EM_Darter_Jammed_01_F", "EM_Drone_01_F", "EM_Drone_01_Tracking_01_F", "EM_Emergency_Broadcast_01_F", "EM_ESD_01_F", "EM_freeroam1_am_nato_prisoner_request_HQ_0_F", "EM_freeroam1_am_nato_prisoner_request_SOLDIERA_0_F", "EM_freeroam1_em_device_searching_HQ_0_F", "EM_freeroam1_em_device_searching_HQ_1_F", "EM_freeroam1_em_device_searching_SOLDIERA_0_F", "EM_freeroam1_em_device_searching_SOLDIERA_1_F", "EM_freeroam1_em_device_turret_defense_HQ_0_F", "EM_freeroam1_em_device_turret_defense_HQ_1_F", "EM_freeroam1_em_device_turret_defense_HQ_2_F", "EM_freeroam1_em_device_turret_defense_SOLDIERC_0_F", "EM_freeroam1_em_device_turret_defense_SOLDIERC_1_F", "EM_freeroam1_em_device_turret_defense_SOLDIERC_2_F", "EM_freeroam1_em_ugv_actual_location_HQ_0_F", "EM_freeroam1_em_ugv_actual_location_HQ_1_F", "EM_freeroam1_em_ugv_actual_location_SOLDIERB_0_F", "EM_freeroam1_em_ugv_actual_location_SOLDIERB_1_F", "EM_freeroam1_em_ugv_probe_tip_HQ_0_F", "EM_freeroam1_em_ugv_probe_tip_HQ_1_F", "EM_freeroam1_em_ugv_probe_tip_HQ_2_F", "EM_freeroam1_em_ugv_probe_tip_SOLDIERA_0_F", "EM_freeroam1_em_ugv_probe_tip_SOLDIERA_1_F", "EM_freeroam1_em_ugv_probe_tip_SOLDIERA_2_F", "EM_freeroam1_em_valley_probe_awe_HQ_0_F", "EM_freeroam1_em_valley_probe_awe_HQ_1_F", "EM_freeroam1_em_valley_probe_awe_HQ_2_F", "EM_freeroam1_em_valley_probe_awe_SOLDIERC_0_F", "EM_freeroam1_em_valley_probe_awe_SOLDIERC_1_F", "EM_freeroam1_em_valley_probe_awe_SOLDIERC_2_F", "EM_freeroam2_am_forest_probe_discussion_HQ_0_F", "EM_freeroam2_am_forest_probe_discussion_HQ_1_F", "EM_freeroam2_am_forest_probe_discussion_HQ_2_F", "EM_freeroam2_am_forest_probe_discussion_HQ_3_F", "EM_freeroam2_am_forest_probe_discussion_HQ_4_F", "EM_freeroam2_am_forest_probe_discussion_SOLDIERB_0_F", "EM_freeroam2_am_forest_probe_discussion_SOLDIERB_1_F", "EM_freeroam2_am_forest_probe_discussion_SOLDIERB_2_F", "EM_freeroam2_am_forest_probe_discussion_SOLDIERB_3_F", "EM_freeroam2_am_forest_probe_discussion_SOLDIERB_4_F", "EM_freeroam2_am_looters_found_radio_HQ_0_F", "EM_freeroam2_am_looters_found_radio_HQ_1_F", "EM_freeroam2_am_looters_found_radio_HQ_2_F", "EM_freeroam2_am_looters_found_radio_SOLDIERB_0_F", "EM_freeroam2_am_looters_found_radio_SOLDIERB_1_F", "EM_freeroam2_am_looters_found_radio_SOLDIERB_2_F", "EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_0_F", "EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_1_F", "EM_freeroam2_am_matter_ball_found_ldf_investigate_HQ_2_F", "EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_0_F", "EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_1_F", "EM_freeroam2_am_matter_ball_found_ldf_investigate_SOLDIERA_2_F", "EM_freeroam2_am_radio_station_message_MAJOR_0_F", "EM_freeroam2_am_radio_station_message_MAJOR_1_F", "EM_freeroam2_am_radio_station_message_MAJOR_2_F", "EM_freeroam2_am_radio_station_message_MAJOR_3_F", "EM_freeroam2_am_radio_station_message_MAJOR_4_F", "EM_freeroam2_am_radio_station_message_MAJOR_5_F", "EM_freeroam2_am_radio_station_message_MAJOR_6_F", "EM_freeroam2_am_radio_station_message_MAJOR_7_F", "EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_HQ_0_F", "EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_HQ_1_F", "EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_SOLDIERC_0_F", "EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_SOLDIERC_1_F", "EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_HQ_0_F", "EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_HQ_1_F", "EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_SOLDIERC_0_F", "EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var1_SOLDIERC_1_F", "EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_HQ_0_F", "EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_HQ_1_F", "EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_SOLDIERC_0_F", "EM_freeroam2_ta_ambush_probe_eavesdrop_assign_task_var2_SOLDIERC_1_F", "EM_handshake_a2q_SQUAD_0_F", "EM_handshake_a2q_SQUAD_1_F", "EM_handshake_a2q_SQUAD_2_F", "EM_handshake_a2q_SQUAD_3_F", "EM_handshake_a2q_SQUAD_4_F", "EM_handshake_b2q_SQUAD_0_F", "EM_handshake_b2q_SQUAD_1_F", "EM_handshake_b2q_SQUAD_2_F", "EM_handshake_b2q_SQUAD_3_F", "EM_handshake_b2q_SQUAD_4_F", "EM_handshake_c2q_SQUAD_0_F", "EM_handshake_c2q_SQUAD_1_F", "EM_handshake_c2q_SQUAD_2_F", "EM_handshake_c2q_SQUAD_3_F", "EM_handshake_c2q_SQUAD_4_F", "EM_handshake_d2q_SQUAD_0_F", "EM_handshake_d2q_SQUAD_1_F", "EM_handshake_d2q_SQUAD_2_F", "EM_handshake_d2q_SQUAD_3_F", "EM_handshake_d2q_SQUAD_4_F", "EM_handshake_e2q_SQUAD_0_F", "EM_handshake_e2q_SQUAD_1_F", "EM_handshake_e2q_SQUAD_2_F", "EM_handshake_e2q_SQUAD_3_F", "EM_handshake_e2q_SQUAD_4_F", "EM_handshake_f2q_SQUAD_0_F", "EM_handshake_f2q_SQUAD_1_F", "EM_handshake_f2q_SQUAD_2_F", "EM_handshake_f2q_SQUAD_3_F", "EM_handshake_f2q_SQUAD_4_F", "EM_handshake_g2q_SQUAD_0_F", "EM_handshake_g2q_SQUAD_1_F", "EM_handshake_g2q_SQUAD_2_F", "EM_handshake_g2q_SQUAD_3_F", "EM_handshake_g2q_SQUAD_4_F", "EM_handshake_h2q_SQUAD_0_F", "EM_handshake_h2q_SQUAD_1_F", "EM_handshake_h2q_SQUAD_2_F", "EM_handshake_h2q_SQUAD_3_F", "EM_handshake_h2q_SQUAD_4_F", "EM_handshake_q2a_HQ_0_F", "EM_handshake_q2a_HQ_1_F", "EM_handshake_q2a_HQ_2_F", "EM_handshake_q2a_HQ_3_F", "EM_handshake_q2a_HQ_4_F", "EM_handshake_q2b_HQ_0_F", "EM_handshake_q2b_HQ_1_F", "EM_handshake_q2b_HQ_2_F", "EM_handshake_q2b_HQ_3_F", "EM_handshake_q2b_HQ_4_F", "EM_handshake_q2c_HQ_0_F", "EM_handshake_q2c_HQ_1_F", "EM_handshake_q2c_HQ_2_F", "EM_handshake_q2c_HQ_3_F", "EM_handshake_q2c_HQ_4_F", "EM_handshake_q2d_HQ_0_F", "EM_handshake_q2d_HQ_1_F", "EM_handshake_q2d_HQ_2_F", "EM_handshake_q2d_HQ_3_F", "EM_handshake_q2d_HQ_4_F", "EM_handshake_q2e_HQ_0_F", "EM_handshake_q2e_HQ_1_F", "EM_handshake_q2e_HQ_2_F", "EM_handshake_q2e_HQ_3_F", "EM_handshake_q2e_HQ_4_F", "EM_handshake_q2f_HQ_0_F", "EM_handshake_q2f_HQ_1_F", "EM_handshake_q2f_HQ_2_F", "EM_handshake_q2f_HQ_3_F", "EM_handshake_q2f_HQ_4_F", "EM_handshake_q2g_HQ_0_F", "EM_handshake_q2g_HQ_1_F", "EM_handshake_q2g_HQ_2_F", "EM_handshake_q2g_HQ_3_F", "EM_handshake_q2g_HQ_4_F", "EM_handshake_q2h_HQ_0_F", "EM_handshake_q2h_HQ_1_F", "EM_handshake_q2h_HQ_2_F", "EM_handshake_q2h_HQ_3_F", "EM_handshake_q2h_HQ_4_F", "EM_hq_confirm_help_HQ_0_F", "EM_hq_confirm_help_HQ_1_F", "EM_hq_confirm_help_HQ_2_F", "EM_hq_confused_HQ_0_F", "EM_hq_confused_HQ_1_F", "EM_hq_confused_HQ_2_F", "EM_hq_deny_help_HQ_0_F", "EM_hq_deny_help_HQ_1_F", "EM_hq_deny_help_HQ_2_F", "EM_hq_dummy_reply_HQ_0_F", "EM_hq_dummy_reply_HQ_1_F", "EM_hq_dummy_reply_HQ_2_F", "EM_hq_dummy_reply_HQ_3_F", "EM_hq_dummy_reply_HQ_4_F", "EM_HQ_Enc_01_F", "EM_hq_identify_HQ_0_F", "EM_hq_identify_HQ_1_F", "EM_hq_identify_HQ_2_F", "EM_hq_move_e_HQ_0_F", "EM_hq_move_e_HQ_1_F", "EM_hq_move_e_HQ_2_F", "EM_hq_move_e_HQ_3_F", "EM_hq_move_e_HQ_4_F", "EM_hq_move_n_HQ_0_F", "EM_hq_move_n_HQ_1_F", "EM_hq_move_n_HQ_2_F", "EM_hq_move_n_HQ_3_F", "EM_hq_move_n_HQ_4_F", "EM_hq_move_s_HQ_0_F", "EM_hq_move_s_HQ_1_F", "EM_hq_move_s_HQ_2_F", "EM_hq_move_s_HQ_3_F", "EM_hq_move_s_HQ_4_F", "EM_hq_move_w_HQ_0_F", "EM_hq_move_w_HQ_1_F", "EM_hq_move_w_HQ_2_F", "EM_hq_move_w_HQ_3_F", "EM_hq_move_w_HQ_4_F", "EM_hq_negative_HQ_0_F", "EM_hq_negative_HQ_1_F", "EM_hq_negative_HQ_2_F", "EM_hq_no_help_HQ_0_F", "EM_hq_no_help_HQ_1_F", "EM_hq_no_help_HQ_2_F", "EM_hq_no_move_HQ_0_F", "EM_hq_no_move_HQ_1_F", "EM_hq_no_move_HQ_2_F", "EM_hq_no_response_a_HQ_0_F", "EM_hq_no_response_a_HQ_1_F", "EM_hq_no_response_a_HQ_2_F", "EM_hq_no_response_b_HQ_0_F", "EM_hq_no_response_b_HQ_1_F", "EM_hq_no_response_b_HQ_2_F", "EM_hq_no_response_c_HQ_0_F", "EM_hq_no_response_c_HQ_1_F", "EM_hq_no_response_c_HQ_2_F", "EM_hq_no_response_d_HQ_0_F", "EM_hq_no_response_d_HQ_1_F", "EM_hq_no_response_d_HQ_2_F", "EM_hq_no_response_e_HQ_0_F", "EM_hq_no_response_e_HQ_1_F", "EM_hq_no_response_e_HQ_2_F", "EM_hq_no_response_f_HQ_0_F", "EM_hq_no_response_f_HQ_1_F", "EM_hq_no_response_f_HQ_2_F", "EM_hq_no_response_g_HQ_0_F", "EM_hq_no_response_g_HQ_1_F", "EM_hq_no_response_g_HQ_2_F", "EM_hq_no_response_h_HQ_0_F", "EM_hq_no_response_h_HQ_1_F", "EM_hq_no_response_h_HQ_2_F", "EM_hq_positive_HQ_0_F", "EM_hq_positive_HQ_1_F", "EM_hq_positive_HQ_2_F", "EM_hq_posrep_HQ_0_F", "EM_hq_posrep_HQ_1_F", "EM_hq_posrep_HQ_2_F", "EM_HQ_Russian_Enc_01_F", "EM_hq_safe_HQ_0_F", "EM_hq_safe_HQ_1_F", "EM_hq_safe_HQ_2_F", "EM_hq_say_again_HQ_0_F", "EM_hq_say_again_HQ_1_F", "EM_hq_say_again_HQ_2_F", "EM_hq_send_help_a_HQ_0_F", "EM_hq_send_help_a_HQ_1_F", "EM_hq_send_help_a_HQ_2_F", "EM_hq_send_help_b_HQ_0_F", "EM_hq_send_help_b_HQ_1_F", "EM_hq_send_help_b_HQ_2_F", "EM_hq_send_help_c_HQ_0_F", "EM_hq_send_help_c_HQ_1_F", "EM_hq_send_help_c_HQ_2_F", "EM_hq_send_help_d_HQ_0_F", "EM_hq_send_help_d_HQ_1_F", "EM_hq_send_help_d_HQ_2_F", "EM_hq_send_help_e_HQ_0_F", "EM_hq_send_help_e_HQ_1_F", "EM_hq_send_help_e_HQ_2_F", "EM_hq_send_help_f_HQ_0_F", "EM_hq_send_help_f_HQ_1_F", "EM_hq_send_help_f_HQ_2_F", "EM_hq_send_help_g_HQ_0_F", "EM_hq_send_help_g_HQ_1_F", "EM_hq_send_help_g_HQ_2_F", "EM_hq_silence_HQ_0_F", "EM_hq_silence_HQ_1_F", "EM_hq_silence_HQ_2_F", "EM_hq_strange_signal_reply_HQ_0_F", "EM_hq_strange_signal_reply_HQ_1_F", "EM_hq_strange_signal_reply_HQ_2_F", "EM_intro2_physicist_am_4_1_PHYSICIST_0_F", "EM_intro2_physicist_am_4_2_PHYSICIST_0_F", "EM_intro2_physicist_am_4_3_PHYSICIST_0_F", "EM_intro2_physicist_am_4_4_PHYSICIST_0_F", "EM_intro2_physicist_am_4_5_PHYSICIST_0_F", "EM_intro2_physicist_am_4_6_PHYSICIST_0_F", "EM_intro2_physicist_am_4_7_PHYSICIST_0_F", "EM_intro2_physicist_am_4_8_PHYSICIST_0_F", "EM_intro2_physicist_am_4_9_PHYSICIST_0_F", "EM_intro2_physicist_am_4_loop_PHYSICIST_0_F", "EM_intro2_q2raven_am_2_1_RAVEN_0_F", "EM_intro2_q2raven_am_2_2_RAVEN_0_F", "EM_intro2_q2raven_am_2_3_RAVEN_0_F", "EM_intro2_q2raven_am_2_4_RAVEN_0_F", "EM_intro2_q2raven_am_2_5_HQ_0_F", "EM_intro2_q2raven_am_2_6_HQ_0_F", "EM_intro2_q2raven_am_2_7_RAVEN_0_F", "EM_intro2_q2s_am_1_1_SQUAD_0_F", "EM_intro2_q2s_am_1_2_SQUAD_0_F", "EM_intro2_q2s_am_1_3_HQ_0_F", "EM_intro2_q2s_am_1_4_SQUAD_0_F", "EM_intro2_q2s_am_1_5_SQUAD_0_F", "EM_intro2_q2s_am_1_6_SQUAD_0_F", "EM_intro2_q2s_am_1_7_HQ_0_F", "EM_intro2_q2s_am_1_8_HQ_0_F", "EM_intro2_q2s_am_1_9_HQ_0_F", "EM_intro2_q2s_am_1_loop_HQ_0_F", "EM_intro2_q_am_3_1_UNKNOWN_0_F", "EM_intro2_q_am_3_2_HQ_0_F", "EM_intro2_q_am_3_3_HQ_0_F", "EM_intro2_q_am_3_4_UNKNOWN_0_F", "EM_intro2_q_am_3_5_HQ_0_F", "EM_intro2_q_am_3_6_HQ_0_F", "EM_intro2_q_am_3_7_HQ_0_F", "EM_intro2_q_am_3_8_HQ_0_F", "EM_intro2_q_am_3_loop_HQ_0_F", "EM_intro2_q_am_3_loop_HQ_1_F", "EM_intro2_q_am_3_loop_HQ_2_F", "EM_intro2_s_am_2_1_SQUAD_0_F", "EM_intro2_s_am_2_2_AMBIENTA_0_F", "EM_intro2_s_am_2_3_SQUAD_0_F", "EM_intro2_s_am_2_4_AMBIENTA_0_F", "EM_intro2_s_am_2_5_AMBIENTA_0_F", "EM_intro2_s_am_2_6_SQUAD_0_F", "EM_intro2_s_am_2_7_SQUAD_0_F", "EM_intro2_s_am_2_8_SQUAD_0_F", "EM_intro2_s_am_2_loop_SQUAD_0_F", "EM_intro2_s_am_2_loop_SQUAD_1_F", "EM_intro2_s_am_2_loop_SQUAD_2_F", "EM_intro2_s_am_3_1_SQUAD_0_F", "EM_intro2_s_am_3_2_SQUAD_0_F", "EM_intro2_s_am_3_3_AMBIENTB_0_F", "EM_intro2_s_am_3_4_AMBIENTB_0_F", "EM_intro2_s_am_3_5_AMBIENTB_0_F", "EM_intro2_s_am_3_6_SQUAD_0_F", "EM_intro2_s_am_3_7_SQUAD_0_F", "EM_intro2_s_am_3_8_SQUAD_0_F", "EM_intro2_s_am_3_loop_SQUAD_0_F", "EM_intro2_s_am_3_loop_SQUAD_1_F", "EM_intro2_s_am_3_loop_SQUAD_2_F", "EM_Mission_FreeRoam1_01_F", "EM_Mission_FreeRoam2_01_F", "EM_Mission_Intro1_01_F", "EM_Mission_Intro2_01_F", "EM_Mission_Intro3_01_F", "EM_Mission_Outro2_01_F", "EM_Mission_Outro3_01_F", "EM_MorseCode_01_F", "EM_MotherShip_01_F", "EM_Mothership_01_Tracking_01_F", "EM_outro2_aet_jammed_2_SOLDIERB_0_F", "EM_outro2_aet_jammed_3_SOLDIERC_0_F", "EM_outro2_aet_jammed_4_SOLDIERA_0_F", "EM_outro2_aet_jammed_SOLDIERA_0_F", "EM_outro2_aet_resuming_2_SOLDIERB_0_F", "EM_outro2_aet_resuming_3_SOLDIERC_0_F", "EM_outro2_aet_resuming_4_SOLDIERA_0_F", "EM_outro2_aet_resuming_SOLDIERA_0_F", "EM_outro2_fox_2_HQ_0_F", "EM_outro2_fox_2_SOLDIERA_0_F", "EM_outro2_ldf_counterattack_HQ_0_F", "EM_outro2_ldf_counterattack_HQ_1_F", "EM_outro2_ldf_counterattack_HQ_2_F", "EM_outro2_ldf_counterattack_HQ_3_F", "EM_outro2_ldf_counterattack_HQ_4_F", "EM_outro2_probe_explosives_HQ_0_F", "EM_outro2_probe_explosives_HQ_1_F", "EM_outro2_probe_explosives_HQ_2_F", "EM_outro2_probe_explosives_SOLDIERB_0_F", "EM_outro2_probe_explosives_SOLDIERB_1_F", "EM_outro2_probe_explosives_SOLDIERB_2_F", "EM_outro2_probe_target_HQ_0_F", "EM_outro2_probe_target_HQ_1_F", "EM_outro3_am_aan_radio_news_NEWSREADERB_0_F", "EM_outro3_am_aan_radio_news_NEWSREADERB_1_F", "EM_outro3_am_aan_radio_news_NEWSREADERB_2_F", "EM_outro3_am_aan_radio_news_NEWSREADERB_3_F", "EM_outro3_am_aan_radio_news_NEWSREADERB_4_F", "EM_outro3_am_aan_radio_news_NEWSREADERB_5_F", "EM_outro3_am_aan_radio_news_NEWSREADERB_6_F", "EM_outro3_am_aan_radio_news_NEWSREADERB_7_F", "EM_outro3_am_aan_radio_news_NEWSREADERB_8_F", "EM_outro3_am_cbn_radio_news_NEWSREADERC_0_F", "EM_outro3_am_cbn_radio_news_NEWSREADERC_1_F", "EM_outro3_am_cbn_radio_news_NEWSREADERC_2_F", "EM_outro3_am_cbn_radio_news_NEWSREADERC_3_F", "EM_outro3_am_cbn_radio_news_NEWSREADERC_4_F", "EM_outro3_am_cbn_radio_news_NEWSREADERC_5_F", "EM_outro3_am_cbn_radio_news_NEWSREADERC_6_F", "EM_outro3_am_cbn_radio_news_NEWSREADERC_7_F", "EM_outro3_am_cbn_radio_news_NEWSREADERC_8_F", "EM_outro3_am_cbn_radio_news_NEWSREADERC_9_F", "EM_outro3_am_conspiracy_radio_THEORIST_0_F", "EM_outro3_am_conspiracy_radio_THEORIST_10_F", "EM_outro3_am_conspiracy_radio_THEORIST_11_F", "EM_outro3_am_conspiracy_radio_THEORIST_12_F", "EM_outro3_am_conspiracy_radio_THEORIST_13_F", "EM_outro3_am_conspiracy_radio_THEORIST_14_F", "EM_outro3_am_conspiracy_radio_THEORIST_15_F", "EM_outro3_am_conspiracy_radio_THEORIST_16_F", "EM_outro3_am_conspiracy_radio_THEORIST_17_F", "EM_outro3_am_conspiracy_radio_THEORIST_18_F", "EM_outro3_am_conspiracy_radio_THEORIST_19_F", "EM_outro3_am_conspiracy_radio_THEORIST_1_F", "EM_outro3_am_conspiracy_radio_THEORIST_20_F", "EM_outro3_am_conspiracy_radio_THEORIST_21_F", "EM_outro3_am_conspiracy_radio_THEORIST_2_F", "EM_outro3_am_conspiracy_radio_THEORIST_3_F", "EM_outro3_am_conspiracy_radio_THEORIST_4_F", "EM_outro3_am_conspiracy_radio_THEORIST_5_F", "EM_outro3_am_conspiracy_radio_THEORIST_6_F", "EM_outro3_am_conspiracy_radio_THEORIST_7_F", "EM_outro3_am_conspiracy_radio_THEORIST_8_F", "EM_outro3_am_conspiracy_radio_THEORIST_9_F", "EM_outro3_am_polish_radio_news_NEWSREADERA_0_F", "EM_outro3_am_polish_radio_news_NEWSREADERA_1_F", "EM_outro3_am_polish_radio_news_NEWSREADERA_2_F", "EM_outro3_am_polish_radio_news_NEWSREADERA_3_F", "EM_outro3_am_polish_radio_news_NEWSREADERA_4_F", "EM_outro3_am_polish_radio_news_NEWSREADERA_5_F", "EM_outro3_am_polish_radio_news_NEWSREADERA_6_F", "EM_outro3_am_polish_radio_news_NEWSREADERA_7_F", "EM_outro3_am_polish_radio_news_NEWSREADERA_8_F", "EM_outro3_am_polish_radio_news_NEWSREADERA_9_F", "EM_outro3_am_science_chat_INTERVIEWERB_0_F", "EM_outro3_am_science_chat_INTERVIEWERB_1_F", "EM_outro3_am_science_chat_INTERVIEWERB_2_F", "EM_outro3_am_science_chat_INTERVIEWERB_3_F", "EM_outro3_am_science_chat_SCIENTIST_0_F", "EM_outro3_am_science_chat_SCIENTIST_1_F", "EM_outro3_am_science_chat_SCIENTIST_2_F", "EM_outro3_am_science_chat_SCIENTIST_3_F", "EM_outro3_am_science_chat_SCIENTIST_4_F", "EM_outro3_am_science_chat_SCIENTIST_5_F", "EM_outro3_am_science_chat_SCIENTIST_6_F", "EM_outro3_am_science_chat_SCIENTIST_7_F", "EM_outro3_am_science_chat_SCIENTIST_8_F", "EM_outro3_am_science_chat_SCIENTIST_9_F", "EM_outro3_am_talkshow_radio_INTERVIEWERA_0_F", "EM_outro3_am_talkshow_radio_INTERVIEWERA_10_F", "EM_outro3_am_talkshow_radio_INTERVIEWERA_1_F", "EM_outro3_am_talkshow_radio_INTERVIEWERA_2_F", "EM_outro3_am_talkshow_radio_INTERVIEWERA_3_F", "EM_outro3_am_talkshow_radio_INTERVIEWERA_4_F", "EM_outro3_am_talkshow_radio_INTERVIEWERA_5_F", "EM_outro3_am_talkshow_radio_INTERVIEWERA_6_F", "EM_outro3_am_talkshow_radio_INTERVIEWERA_7_F", "EM_outro3_am_talkshow_radio_INTERVIEWERA_8_F", "EM_outro3_am_talkshow_radio_INTERVIEWERA_9_F", "EM_outro3_am_talkshow_radio_PHYSICIST_0_F", "EM_outro3_am_talkshow_radio_PHYSICIST_10_F", "EM_outro3_am_talkshow_radio_PHYSICIST_11_F", "EM_outro3_am_talkshow_radio_PHYSICIST_12_F", "EM_outro3_am_talkshow_radio_PHYSICIST_13_F", "EM_outro3_am_talkshow_radio_PHYSICIST_14_F", "EM_outro3_am_talkshow_radio_PHYSICIST_1_F", "EM_outro3_am_talkshow_radio_PHYSICIST_2_F", "EM_outro3_am_talkshow_radio_PHYSICIST_3_F", "EM_outro3_am_talkshow_radio_PHYSICIST_4_F", "EM_outro3_am_talkshow_radio_PHYSICIST_5_F", "EM_outro3_am_talkshow_radio_PHYSICIST_6_F", "EM_outro3_am_talkshow_radio_PHYSICIST_7_F", "EM_outro3_am_talkshow_radio_PHYSICIST_8_F", "EM_outro3_am_talkshow_radio_PHYSICIST_9_F", "EM_Puzzle_01_F", "EM_Puzzle_02_F", "EM_Puzzle_03_F", "EM_RadioStation_Song_01_F", "EM_RadioStation_Song_01_Transmission_F", "EM_RadioStation_Song_02_F", "EM_RadioStation_Song_02_Transmission_F", "EM_RadioStation_Song_03_F", "EM_RadioStation_Song_03_Transmission_F", "EM_RussianBeacon_01_F", "EM_Send_Hack_01_F", "EM_Send_Signal_01_F", "EM_Silence_01_F", "EM_squad_compromised_SQUAD_0_F", "EM_squad_compromised_SQUAD_1_F", "EM_squad_compromised_SQUAD_2_F", "EM_squad_confused_SQUAD_0_F", "EM_squad_confused_SQUAD_1_F", "EM_squad_confused_SQUAD_2_F", "EM_squad_event_e_SQUAD_0_F", "EM_squad_event_e_SQUAD_1_F", "EM_squad_event_e_SQUAD_2_F", "EM_squad_event_n_SQUAD_0_F", "EM_squad_event_n_SQUAD_1_F", "EM_squad_event_n_SQUAD_2_F", "EM_squad_event_s_SQUAD_0_F", "EM_squad_event_s_SQUAD_1_F", "EM_squad_event_s_SQUAD_2_F", "EM_squad_event_w_SQUAD_0_F", "EM_squad_event_w_SQUAD_1_F", "EM_squad_event_w_SQUAD_2_F", "EM_squad_explosion_e_SQUAD_0_F", "EM_squad_explosion_e_SQUAD_1_F", "EM_squad_explosion_e_SQUAD_2_F", "EM_squad_explosion_n_SQUAD_0_F", "EM_squad_explosion_n_SQUAD_1_F", "EM_squad_explosion_n_SQUAD_2_F", "EM_squad_explosion_s_SQUAD_0_F", "EM_squad_explosion_s_SQUAD_1_F", "EM_squad_explosion_s_SQUAD_2_F", "EM_squad_explosion_w_SQUAD_0_F", "EM_squad_explosion_w_SQUAD_1_F", "EM_squad_explosion_w_SQUAD_2_F", "EM_squad_flare_e_SQUAD_0_F", "EM_squad_flare_e_SQUAD_1_F", "EM_squad_flare_e_SQUAD_2_F", "EM_squad_flare_n_SQUAD_0_F", "EM_squad_flare_n_SQUAD_1_F", "EM_squad_flare_n_SQUAD_2_F", "EM_squad_flare_s_SQUAD_0_F", "EM_squad_flare_s_SQUAD_1_F", "EM_squad_flare_s_SQUAD_2_F", "EM_squad_flare_w_SQUAD_0_F", "EM_squad_flare_w_SQUAD_1_F", "EM_squad_flare_w_SQUAD_2_F", "EM_squad_gunfire_e_SQUAD_0_F", "EM_squad_gunfire_e_SQUAD_1_F", "EM_squad_gunfire_e_SQUAD_2_F", "EM_squad_gunfire_n_SQUAD_0_F", "EM_squad_gunfire_n_SQUAD_1_F", "EM_squad_gunfire_n_SQUAD_2_F", "EM_squad_gunfire_s_SQUAD_0_F", "EM_squad_gunfire_s_SQUAD_1_F", "EM_squad_gunfire_s_SQUAD_2_F", "EM_squad_gunfire_w_SQUAD_0_F", "EM_squad_gunfire_w_SQUAD_1_F", "EM_squad_gunfire_w_SQUAD_2_F", "EM_Squad_Id_01_F", "EM_Squad_Id_02_F", "EM_Squad_Id_03_F", "EM_Squad_Id_04_F", "EM_Squad_Id_05_F", "EM_Squad_Id_06_F", "EM_Squad_Id_07_F", "EM_Squad_Id_08_F", "EM_squad_identify_SQUAD_0_F", "EM_squad_identify_SQUAD_1_F", "EM_squad_identify_SQUAD_2_F", "EM_squad_negative_combat_SQUAD_0_F", "EM_squad_negative_combat_SQUAD_1_F", "EM_squad_negative_combat_SQUAD_2_F", "EM_squad_negative_move_SQUAD_0_F", "EM_squad_negative_move_SQUAD_1_F", "EM_squad_negative_move_SQUAD_2_F", "EM_squad_negative_SQUAD_0_F", "EM_squad_negative_SQUAD_1_F", "EM_squad_negative_SQUAD_2_F", "EM_squad_positive_move_SQUAD_0_F", "EM_squad_positive_move_SQUAD_1_F", "EM_squad_positive_move_SQUAD_2_F", "EM_squad_positive_move_SQUAD_3_F", "EM_squad_positive_move_SQUAD_4_F", "EM_squad_positive_move_SQUAD_5_F", "EM_squad_positive_SQUAD_0_F", "EM_squad_positive_SQUAD_1_F", "EM_squad_positive_SQUAD_2_F", "EM_squad_positive_SQUAD_3_F", "EM_squad_positive_SQUAD_4_F", "EM_squad_positive_SQUAD_5_F", "EM_squad_posrep_reply_SQUAD_0_F", "EM_squad_posrep_reply_SQUAD_1_F", "EM_squad_posrep_reply_SQUAD_2_F", "EM_squad_posrep_reply_SQUAD_3_F", "EM_squad_posrep_reply_SQUAD_4_F", "EM_squad_posrep_reply_SQUAD_5_F", "EM_squad_request_help_SQUAD_0_F", "EM_squad_request_help_SQUAD_1_F", "EM_squad_request_help_SQUAD_2_F", "EM_squad_say_again_SQUAD_0_F", "EM_squad_say_again_SQUAD_1_F", "EM_squad_say_again_SQUAD_2_F", "EM_squad_strange_signal_SQUAD_0_F", "EM_squad_strange_signal_SQUAD_1_F", "EM_squad_strange_signal_SQUAD_2_F", "EM_Stomper_Enc_01_F", "EM_Stomper_Jammed_01_F", "EM_Ugv_Enc_01_F", "EM_Ugv_Jammed_01_F", "GravityWeapon_Charge_End_Sound_01_F", "GravityWeapon_Charge_Loop_Sound_01_F", "GravityWeapon_Charge_Start_Sound_01_F", "SoundSetSource_Music_Transition_Battle_Tension_01", "SoundSetSource_Music_Transition_Roaming_Tension_01", "SoundSetSource_Music_Transition_Tension_Battle_01", "SoundSetSource_Music_Transition_Tension_Roaming_01", "SoundSetSource_Sfx_Ammo_Burning", "SoundSetSource_Sfx_Ammo_Burning_Intro", "SoundSetSource_Sfx_Ammo_Burning_Outro", "SoundSetSource_Sfx_Bombing_Failed", "SoundSetSource_Sfx_BombingDistant", "SoundSetSource_Sfx_Burnpit_Fire_01", "SoundSetSource_Sfx_Container_Drop", "SoundSetSource_Sfx_DieselGenerator_Loop_01", "SoundSetSource_Sfx_Drone_Attention", "SoundSetSource_Sfx_Drone_Escape_Fake_02", "SoundSetSource_Sfx_Drone_Escape_Up_Fake_01", "SoundSetSource_Sfx_Drone_Intimidate", "SoundSetSource_Sfx_Drone_Moving_Fake_01", "SoundSetSource_Sfx_Drone_Moving_Fake_02", "SoundSetSource_Sfx_Drone_ScanBeam_Fake_01", "SoundSetSource_Sfx_Drone_ScanBeam_Fake_02", "SoundSetSource_Sfx_Drone_Shout_Fake_01", "SoundSetSource_Sfx_Earthquake", "SoundSetSource_Sfx_Emergency_Broadcast_Tape_01", "SoundSetSource_Sfx_Factory_Alarm_01", "SoundSetSource_Sfx_Factory_Alarm_02", "SoundSetSource_Sfx_Heli_Crash_Explosion", "SoundSetSource_Sfx_Heli_Wreck_Burning", "SoundSetSource_Sfx_Hunter_Wreck_Burning", "SoundSetSource_Sfx_Loudspeaker_01", "SoundSetSource_Sfx_Loudspeaker_02", "SoundSetSource_Sfx_Loudspeaker_Ldf", "SoundSetSource_Sfx_Mothership_Jammed_01", "SoundSetSource_Sfx_Mothership_LiftOff_01", "SoundSetSource_Sfx_Mothership_LiftOff_02", "SoundSetSource_Sfx_Mothership_Puzzle_Activate_01", "SoundSetSource_Sfx_Mothership_Puzzle_Reward_01", "SoundSetSource_Sfx_Mothership_Warp_01", "SoundSetSource_Sfx_Offroad_Alarm", "SoundSetSource_Sfx_Offroad_Music_01", "SoundSetSource_Sfx_Offroad_Pa_TheHebrides_Loop", "SoundSetSource_Sfx_Probe_Calcification_01_Bottom", "SoundSetSource_Sfx_Probe_Destruction", "SoundSetSource_Sfx_Probe_Expand_01", "SoundSetSource_Sfx_Probe_Expand_01_Bottom", "SoundSetSource_Sfx_Probe_Extraction", "SoundSetSource_Sfx_Probe_Extraction_Drone", "SoundSetSource_Sfx_Probe_Loop_01", "SoundSetSource_Sfx_Probe_Loop_01_Bottom", "SoundSetSource_Sfx_Probe_Retract_01", "SoundSetSource_Sfx_Probe_Retract_01_Bottom", "SoundSetSource_Sfx_ProbeCore_Hitpoint", "SoundSetSource_Sfx_RadioBeat_Loop", "SoundSetSource_Sfx_RavenPilot_Pa_01", "SoundSetSource_Sfx_RavenPilot_Pa_02", "SoundSetSource_Sfx_RewardRocket_Flickr_01", "SoundSetSource_Sfx_RewardRocket_Flickr_02", "SoundSetSource_Sfx_RewardRocket_Loop_01", "SoundSetSource_Sfx_RewardRocket_Stop_01", "SoundSetSource_Sfx_Sinkhole_Collapse", "SoundSetSource_Sfx_SonicBoom_01", "SoundSetSource_Sfx_SonicBoom_02", "SoundSetSource_Sfx_Terminal_01", "SoundSetSource_Sfx_Training_01_Pa_01", "SoundSetSource_Sfx_Training_02_Pa_01", "SoundSetSource_Sfx_Training_03_Pa_01", "SoundSetSource_Sfx_Transformer_Loop_01", "SoundSetSource_test_F", "SoundSetSource_testloop_F", "SoundSetSource_testloopwithTrigger_F"};
+		url = "https://www.arma3.com";
+		weapons[] = {"FakeWeapon_HMG127_moduleTracers_F"};
+	};
 	class A3_Sounds_F_Enoch
 	{
 		author = "Bohemia Interactive";
@@ -6290,6 +6686,16 @@ class CfgPatches
 		requiredAddons[] = {"A3_Static_F_Beta", "A3_Static_F_Mortar_01"};
 		requiredVersion = 0.1;
 		units[] = {};
+		weapons[] = {};
+	};
+	class A3_Static_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "Arma 3 Contact - Turrets";
+		requiredAddons[] = {"A3_Data_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		url = "https://www.arma3.com";
 		weapons[] = {};
 	};
 	class A3_Static_F_Destroyer
@@ -7268,6 +7674,16 @@ class CfgPatches
 		requiredAddons[] = {"A3_Structures_F_Civ"};
 		requiredVersion = 0.1;
 		units[] = {};
+		weapons[] = {};
+	};
+	class A3_Structures_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "Contact Structures";
+		requiredAddons[] = {"A3_Data_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		url = "https://www.arma3.com";
 		weapons[] = {};
 	};
 	class A3_Structures_F_Data
@@ -10185,6 +10601,24 @@ class CfgPatches
 		url = "https://www.arma3.com";
 		weapons[] = {};
 	};
+	class A3_Supplies_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "Arma 3 Contact - Ammoboxes and Supplies";
+		requiredAddons[] = {"A3_Data_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		url = "https://www.arma3.com";
+		weapons[] = {};
+	};
+	class A3_Supplies_F_Contact_Bags
+	{
+		addonRootClass = "A3_Supplies_F_Contact";
+		requiredAddons[] = {"A3_Supplies_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		weapons[] = {};
+	};
 	class A3_Supplies_F_Enoch
 	{
 		author = "Bohemia Interactive";
@@ -10346,6 +10780,16 @@ class CfgPatches
 		requiredAddons[] = {"A3_Data_F_Bootcamp"};
 		requiredVersion = 0.1;
 		units[] = {};
+		url = "https://www.arma3.com";
+		weapons[] = {};
+	};
+	class A3_UI_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "Arma 3 Contact - User Interface";
+		requiredAddons[] = {"A3_Data_F_Contact", "A3_Missions_F_Exp", "A3_Missions_F_Heli", "A3_Missions_F_MP_Mark", "A3_Missions_F_Patrol", "A3_Ui_F", "A3_Ui_F_Curator"};
+		requiredVersion = 0.1;
+		units[] = {"Helper_ActionBlock_F"};
 		url = "https://www.arma3.com";
 		weapons[] = {};
 	};
@@ -10690,6 +11134,40 @@ class CfgPatches
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] = {};
+	};
+	class A3_Weapons_F_Contact
+	{
+		author = "Bohemia Interactive";
+		name = "Arma 3 Weapons - Weapons and Accessories";
+		requiredAddons[] = {"A3_Data_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {"Item_ChemicalDetector_01_black_F", "Item_ChemicalDetector_01_olive_F", "Item_ChemicalDetector_01_tan_F", "Item_ChemicalDetector_01_watch_F", "Item_muzzle_antenna_01_f", "Item_muzzle_antenna_02_f", "Item_muzzle_antenna_03_f", "ObjectCollider_01_F", "ObjectCollider_01_small_F", "Sound_Prototype_Cannon_01_Charge_Complete", "Sound_Prototype_Cannon_01_Charge_Full_Loop", "Sound_Prototype_Cannon_01_Charge_Start", "Sound_Prototype_Cannon_01_Charge_Stop", "Weapon_hgun_esd_01_antenna_01_F", "Weapon_hgun_esd_01_antenna_02_F", "Weapon_hgun_esd_01_antenna_03_F", "Weapon_hgun_esd_01_F"};
+		url = "https://www.arma3.com";
+		weapons[] = {"AlienDrone_01_Sounds_F", "arifle_MSBS65_Black_FL_EMP_f", "arifle_MSBS65_black_ico_FL_EMP_f", "arifle_MSBS65_black_ico_pointer_EMP_f", "arifle_MSBS65_GL_black_ico_FL_EMP_f", "arifle_MSBS65_GL_black_ico_pointer_EMP_f", "arifle_MSBS65_GL_ico_FL_EMP_f", "arifle_MSBS65_GL_ico_pointer_EMP_f", "arifle_MSBS65_ico_FL_EMP_f", "arifle_MSBS65_ico_pointer_EMP_f", "arifle_MSBS65_Mark_SOS_LP_BI_EMP_F", "arifle_MSBS65_UBS_black_ico_FL_EMP_f", "arifle_MSBS65_UBS_black_ico_pointer_EMP_f", "arifle_MSBS65_UBS_ico_FL_EMP_f", "arifle_MSBS65_UBS_ico_pointer_EMP_f", "arifle_MX_Black_FL_EMP_F", "arifle_MX_Black_Pointer_EMP_F", "arifle_MX_GL_Black_RCO_Pointer_EMP_F", "arifle_MX_SW_Black_Pointer_EMP_F", "arifle_MXM_Black_MOS_Pointer_Bipod_EMP_F", "CM_Universal_01_F", "CM_Universal_01_Gravityburst_F", "CM_Universal_01_Grenade_F", "CM_Universal_01_Hardkill_F", "CM_Universal_01_Light_F", "GravityCannon_01", "GravityCannon_01_Precise", "GravityShotgun_01", "hgun_SpectrumAnalyzer_F", "launch_MRAWS_green_broken_F", "LMG_Mk200_black_FL_EMP_F", "NVGoggles_INDEP_broken", "Rangefinder_broken", "SwarmMissile_01_launcher_F"};
+	};
+	class A3_Weapons_F_Contact_Acc
+	{
+		addonRootClass = "A3_Weapons_F_Contact";
+		requiredAddons[] = {"A3_Weapons_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		weapons[] = {"acc_esd_01_flashlight", "acc_flashlight_broken", "acc_pointer_IR_broken", "muzzleflash_tma", "optic_Aco_broken", "optic_Hamr_broken", "optic_MRCO_broken"};
+	};
+	class A3_Weapons_F_Contact_Items
+	{
+		addonRootClass = "A3_Weapons_F_Contact";
+		requiredAddons[] = {"A3_Weapons_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		weapons[] = {"ChemicalDetector_01_base_F", "ChemicalDetector_01_black_F", "ChemicalDetector_01_olive_F", "ChemicalDetector_01_tan_F", "ChemicalDetector_01_watch_broken_F", "ChemicalDetector_01_watch_F"};
+	};
+	class A3_Weapons_F_Contact_Pistols_ESD
+	{
+		addonRootClass = "A3_Weapons_F_Contact";
+		requiredAddons[] = {"A3_Weapons_F_Contact"};
+		requiredVersion = 0.1;
+		units[] = {};
+		weapons[] = {"hgun_ESD_01_F", "hgun_esd_01_antenna_01_F", "hgun_esd_01_antenna_02_F", "hgun_esd_01_antenna_03_F"};
 	};
 	class A3_Weapons_F_CSAT
 	{

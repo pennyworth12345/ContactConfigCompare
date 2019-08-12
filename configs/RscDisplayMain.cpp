@@ -24,57 +24,6 @@ class RscDisplayMain: RscStandardDisplay
 				font = "PuristaLight";
 			};
 		};
-		class BackgroundBar: RscText
-		{
-			colorBackground[] = {0, 0, 0, 0.75};
-			h = "2 * 	(pixelH * pixelGrid * 2)";
-			w = "safezoneW";
-			x = "safezoneX";
-			y = "safezoneY + 2 * 	(pixelH * pixelGrid * 2)";
-		};
-		class BackgroundBarLeft: RscPicture
-		{
-			angle = 180;
-			colorText[] = {0, 0, 0, 1};
-			h = "2 * 	(pixelH * pixelGrid * 2)";
-			text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\gradientMods_ca.paa";
-			w = "2 * 		2 * 	(pixelW * pixelGrid * 2)";
-			x = "0.5 - 4 * 		2 * 	(pixelW * pixelGrid * 2)";
-			y = "safezoneY + 2 * 	(pixelH * pixelGrid * 2)";
-		};
-		class BackgroundBarRight: BackgroundBarLeft
-		{
-			angle = 0;
-			x = "0.5 + 2 * 		2 * 	(pixelW * pixelGrid * 2)";
-		};
-		class BackgroundCenter: BackgroundBar
-		{
-			colorBackground[] = {0, 0, 0, 1};
-			w = "4 * 		2 * 	(pixelW * pixelGrid * 2)";
-			x = "0.5 - 2 * 		2 * 	(pixelW * pixelGrid * 2)";
-		};
-		class BackgroundSpotlight: RscPicture
-		{
-			colorText[] = {0, 0, 0, 0.9};
-			h = "(	10) * 	(pixelH * pixelGridNoUIScale * 2) + 2 * 	(2 * pixelH)";
-			text = "#(argb,8,8,3)color(1,1,1,1)";
-			w = "3 * 	10 * 	(pixelW * pixelGridNoUIScale * 2) + 4 * 	(2 * pixelW)";
-			x = "0.5 - (1.5 * 	10) * 	(pixelW * pixelGridNoUIScale * 2) - 2 * 	(2 * pixelW)";
-			y = "0.5 - (	10 / 2) * 	(pixelH * pixelGridNoUIScale * 2) - 	(2 * pixelH)";
-		};
-		class BackgroundSpotlightLeft: BackgroundSpotlight
-		{
-			angle = 180;
-			text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\gradient_ca.paa";
-			w = "(safezoneW - (3 * 	10 * 	(pixelW * pixelGridNoUIScale * 2) + 4 * 	(2 * pixelW))) / 2";
-			x = "safezoneX";
-		};
-		class BackgroundSpotlightRight: BackgroundSpotlightLeft
-		{
-			angle = 0;
-			text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\gradient_ca.paa";
-			x = "0.5 + (1.5 * 	10) * 	(pixelW * pixelGridNoUIScale * 2) + 2 * 	(2 * pixelW)";
-		};
 		class Button3DEditor: RscButton
 		{
 			colorBackground[] = {0, 0, 0, 0};
@@ -86,24 +35,34 @@ class RscDisplayMain: RscStandardDisplay
 			x = -10;
 			y = -10;
 		};
+		class Editor: Play
+		{
+			font = "RobotoCondensedLight";
+			h = "1.5 * 	(pixelH * pixelGridNoUIScale * 2)";
+			idc = 142;
+			sizeEx = "1.5 * 	(pixelH * pixelGridNoUIScale * 2)";
+			text = "Editor";
+			tooltip = "Create your own scenarios.";
+			y = "(0.5 - 3.5 * 	(safezoneH / 40)) + (1.5 * 		1.5 + 0.1) * 	(pixelH * pixelGridNoUIScale * 2)";
+		};
 		class Exit: RscButton
 		{
 			colorBackground[] = {0, 0, 0, 0};
 			colorBackgroundActive[] = {0.784314, 0.137255, 0.0627451, 1};
 			colorFocused[] = {1, 1, 1, 1};
-			colorText[] = {1, 1, 1, 0.5};
-			h = "2 * 	(pixelH * pixelGrid * 2)";
+			colorText[] = {1, 1, 1, 1};
+			h = "1.5 * 	(pixelH * pixelGridNoUIScale * 2)";
 			idc = 106;
-			onKillFocus = "(_this select 0) ctrlsettextcolor [1,1,1,0.5];";
+			onKillFocus = "(_this select 0) ctrlsettextcolor [1,1,1,1];";
 			onMouseEnter = "(_this select 0) ctrlsettextcolor [1,1,1,1];";
-			onMouseExit = "(_this select 0) ctrlsettextcolor [1,1,1,0.5];";
+			onMouseExit = "(_this select 0) ctrlsettextcolor [1,1,1,1];";
 			onSetFocus = "(_this select 0) ctrlsettextcolor [1,1,1,1];";
 			style = 48;
 			text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\exit_ca.paa";
 			tooltip = "Quit the game...";
-			w = "2 * 	(pixelW * pixelGrid * 2)";
-			x = "safezoneX + safezoneW - 		2 * 	(pixelW * pixelGrid * 2)";
-			y = "safezoneY + 2 * 	(pixelH * pixelGrid * 2)";
+			w = "1.5 * 	(pixelW * pixelGridNoUIScale * 2)";
+			x = "safezoneX + safezoneW - 2 * 		1.5 * 	(pixelW * pixelGridNoUIScale * 2)";
+			y = "safezoneY + 		1.5 * 	(pixelH * pixelGridNoUIScale * 2)";
 		};
 		class Footer: RscText
 		{
@@ -123,40 +82,15 @@ class RscDisplayMain: RscStandardDisplay
 		{
 			h = "(3 * 	1.5) * 	(pixelH * pixelGrid * 2)";
 			idc = 1002;
+			show = 1;
 			x = "0.5 - (	5 + 	10) * 	(pixelW * pixelGrid * 2)";
-			class Controls: Controls
-			{
-				class ApexProtocol: Campaigns
-				{
-					idc = 206;
-					onbuttonclick = "(finddisplay 0) createMPCampaignDisplay 'Apex';";
-					Onload = "(_this select 0) ctrlshow isclass (configfile >> 'cfgmissions' >> 'mpmissions' >> 'apex')";
-					text = "Apex Protocol";
-					tooltip = "";
-					y = "(2 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-				};
-				class QuickPlay: Campaigns
-				{
-					idc = 154;
-					onbuttonclick = "";
-					text = "Quick Play";
-					tooltip = "";
-					y = "(0 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-				};
-				class ServerBrowser: Campaigns
-				{
-					idc = 105;
-					onbuttonclick = "";
-					text = "Server Browser";
-					tooltip = "";
-					y = "(1 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-				};
-			};
+			class Controls: Controls {};
 		};
 		class GroupOptions: GroupSingleplayer
 		{
 			h = "(5 * 	1.5) * 	(pixelH * pixelGrid * 2)";
 			idc = 1004;
+			show = 1;
 			x = "0.5 + (	5 + 	10) * 	(pixelW * pixelGrid * 2)";
 			class Controls: Controls
 			{
@@ -206,6 +140,7 @@ class RscDisplayMain: RscStandardDisplay
 		{
 			h = "(4 * 	1.5) * 	(pixelH * pixelGrid * 2)";
 			idc = 1005;
+			show = 1;
 			x = "safezoneX + safezoneW - (	10 + 		2) * 	(pixelW * pixelGrid * 2) - 	(pixelW)";
 			class Controls: Controls
 			{
@@ -248,15 +183,16 @@ class RscDisplayMain: RscStandardDisplay
 		{
 			h = "(5 * 	1.5) * 	(pixelH * pixelGrid * 2)";
 			idc = 1001;
+			show = 0;
 			w = "10 * 	(pixelW * pixelGrid * 2)";
 			x = "0.5 - (	5 + 2 * 	10) * 	(pixelW * pixelGrid * 2)";
-			y = "safezoneY + (2 + 		2) * 	(pixelH * pixelGrid * 2)";
+			y = "safezoneY + 2 * 		1.5 * 	(pixelH * pixelGridNoUIScale * 2)";
 			class Controls
 			{
 				class Campaigns: RscButtonMenuMain
 				{
 					h = "1.5 * 	(pixelH * pixelGrid * 2) - 	(pixelH)";
-					idc = 101;
+					idc = -1;
 					onbuttonclick = "uinamespace setvariable ['RscDisplayCampaignLoad_title', toUpper (localize 'STR_A3_RSCDISPLAYMAIN_BUTTONCAMPAIGN')];";
 					text = "Campaigns";
 					tooltip = "Play official and custom made campaigns.";
@@ -264,44 +200,13 @@ class RscDisplayMain: RscStandardDisplay
 					x = 0;
 					y = "(0) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
 				};
-				class Challenges: Campaigns
-				{
-					idc = 151;
-					onbuttonclick = "uinamespace setvariable ['RscDisplaySingleMission_title', toUpper (localize 'STR_A3_RSCDISPLAYMAIN_BUTTONCHALLENGES')];";
-					text = "Challenges";
-					tooltip = "Test your skill and accuracy in competitive gameplay.";
-					y = "(2 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-				};
-				class Editor: Campaigns
-				{
-					idc = 142;
-					onbuttonclick = "";
-					text = "Editor";
-					tooltip = "Create your own scenarios.";
-					y = "(4 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-				};
-				class Scenarios: Campaigns
-				{
-					idc = 103;
-					onbuttonclick = "uinamespace setvariable ['RscDisplaySingleMission_title', toUpper (localize 'STR_A3_RSCDISPLAYMAIN_BUTTONSCENARIOS')];";
-					text = "Scenarios";
-					tooltip = "Play singleplayer scenarios and user-made missions.";
-					y = "(3 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-				};
-				class Showcases: Campaigns
-				{
-					idc = 150;
-					onbuttonclick = "uinamespace setvariable ['RscDisplaySingleMission_title', toUpper (localize 'STR_A3_RSCDISPLAYMAIN_BUTTONSHOWCASES')];";
-					text = "Showcases";
-					tooltip = "Discover a range of fundamental Arma 3 gameplay.";
-					y = "(1 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-				};
 			};
 		};
 		class GroupTutorials: GroupSingleplayer
 		{
 			h = "(5 * 	1.5) * 	(pixelH * pixelGrid * 2)";
 			idc = 1003;
+			show = 1;
 			w = "(	10 + 3.5) * 	(pixelW * pixelGrid * 2)";
 			x = "0.5 + (	5) * 	(pixelW * pixelGrid * 2)";
 			class Controls: Controls
@@ -316,48 +221,29 @@ class RscDisplayMain: RscStandardDisplay
 					animTexturePressed = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\buttonMenu_ca.paa";
 					idc = 203;
 					onbuttonclick = "playMission['','\A3\Missions_F_Bootcamp\Scenarios\Arsenal.VR']";
+					show = 1;
 					text = "Virtual Arsenal";
 					tooltip = "View and try out different weapons, equipment and vehicles.";
-					y = "(2 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
+					y = "(1 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
 				};
 				class Bootcamp: Campaigns
 				{
-					idc = 149;
+					idc = -1;
 					onbuttonclick = "uinamespace setvariable ['RscDisplayCampaignLoad_title', toUpper (localize 'STR_A3_RSCDISPLAYMAIN_BUTTONBOOTCAMP')];";
+					show = 0;
 					text = "Bootcamp";
 					tooltip = "Get started with the Bootcamp tutorial campaign.";
 					w = "(	10 + 3.5) * 	(pixelW * pixelGrid * 2)";
 					y = "(0 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
 				};
-				class CommunityGuides: Bootcamp
-				{
-					idc = 204;
-					onbuttonclick = "(ctrlparent (_this select 0)) createDisplay 'RscDisplayCommunityGuide'";
-					text = "Community Guides";
-					tooltip = "Watch our official 'Community Guide' video series.";
-					y = "(4 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-				};
 				class FieldManual: Bootcamp
 				{
 					idc = 143;
 					onbuttonclick = "";
+					show = 1;
 					text = "Field Manual";
 					tooltip = "Browse hints, tips and instructions about game mechanics and controls.";
-					y = "(3 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-				};
-				class VRTraining: Bootcamp
-				{
-					animTextureDefault = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\buttonMenu_ca.paa";
-					animTextureDisabled = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\buttonMenu_ca.paa";
-					animTextureFocused = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\buttonMenuHover_ca.paa";
-					animTextureNormal = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\buttonMenu_ca.paa";
-					animTextureOver = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\buttonMenuHover_ca.paa";
-					animTexturePressed = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\buttonMenu_ca.paa";
-					idc = 152;
-					onbuttonclick = "";
-					text = "VR Training";
-					tooltip = "Become familiar with a variety of game mechanics.";
-					y = "(1 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
+					y = "(0 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
 				};
 			};
 		};
@@ -559,25 +445,39 @@ class RscDisplayMain: RscStandardDisplay
 				};
 			};
 		};
-		class Logo: RscActivePicture
+		class LogoContact: RscActivePicture
 		{
 			color[] = {0.9, 0.9, 0.9, 1};
 			colorActive[] = {1, 1, 1, 1};
-			h = "1 * 	5 * 	(pixelH * pixelGrid * 2)";
-			onButtonClick = "if (scriptdone (missionnamespace getvariable ['RscDisplayMain_credits',scriptnull])) then {RscDisplayMain_credits = _this spawn (uinamespace getvariable 'bis_fnc_credits');};";
+			h = "15 * 0.4 * 	(pixelH * pixelGridNoUIScale * 2)";
+			onButtonClick = "[findDisplay 0, true] call (uiNamespace getVariable 'BIS_fnc_showWelcomeScreen')";
 			onKillFocus = "(_this select 0) ctrlsettextcolor [0.9,0.9,0.9,1];";
-			onLoad = "(_this select 0) ctrlshow !(395180 in getDLCs 1)";
+			onLoad = "";
 			onSetFocus = "(_this select 0) ctrlsettextcolor [1,1,1,1];";
-			shadow = 0;
-			text = "\a3\Ui_f\data\Logos\arma3_shadow_ca.paa";
-			tooltip = "View game credits, see the names behind Arma 3.";
-			w = "2 * 	5 * 	(pixelW * pixelGrid * 2)";
-			x = "0.5 - 	5 * 	(pixelW * pixelGrid * 2)";
-			y = "safezoneY + (3 - 0.5 * 	5) * 	(pixelH * pixelGrid * 2)";
+			show = 1;
+			text = "\a3\Data_F_Contact\Logos\logoTitle_ca.paa";
+			tooltip = "View the Arma 3 Contact Welcome Screen again.";
+			w = "15 * 0.8 * 	(pixelW * pixelGridNoUIScale * 2)";
+			x = "0.5 - 		15 * 0.8 * 	(pixelW * pixelGridNoUIScale * 2) / 2";
+			y = "safezoneY + 0.2 * 	(pixelH * pixelGridNoUIScale * 2)";
 		};
-		class LogoApex: Logo
+		class Play: RscButton
 		{
-			onLoad = "(_this select 0) ctrlshow (395180 in getDLCs 1)";
+			colorBackground[] = {0.19, 0.39, 0.56, 0};
+			colorBackgroundActive[] = {0.19, 0.39, 0.56, 0.5};
+			colorFocused[] = {0.19, 0.39, 0.56, 0.5};
+			font = "RobotoCondensed";
+			h = "1.5 * 		1.5 * 	(pixelH * pixelGridNoUIScale * 2)";
+			idc = 101;
+			onLoad = "				_text = '';				{_text = _text + tostring [_x] + ' ';} foreach toarray ctrltext (_this # 0);				(_this # 0) ctrlsettext _text;			";
+			shadow = 0;
+			sizeEx = "1.5 * 		1.5 * 	(pixelH * pixelGridNoUIScale * 2)";
+			style = "0x02 + 0xC0";
+			text = "Play";
+			tooltip = "Play the ""First Contact"" singleplayer campaign.";
+			w = "15 * 	(pixelW * pixelGridNoUIScale * 2)";
+			x = "0.5 - 		15 * 	(pixelW * pixelGridNoUIScale * 2) / 2";
+			y = "(0.5 - 3.5 * 	(safezoneH / 40))";
 		};
 		class ProofsOfConcept: AllMissions
 		{
@@ -591,116 +491,12 @@ class RscDisplayMain: RscStandardDisplay
 			text = "Concepts";
 			y = "safezoneY + safezoneH - (	1 + 2 * 	1.5) * 	(pixelH * pixelGrid * 2) - 2 * pixelH";
 		};
-		class Spotlight1: RscMainMenuSpotlight
+		class Scenarios: Editor
 		{
-			idc = 1021;
-			x = "0.5 - (1.5 * 	10) * 	(pixelW * pixelGridNoUIScale * 2) - 	(2 * pixelW)";
-			class Controls: Controls
-			{
-				class Button: Button {};
-				class GroupHover: GroupHover
-				{
-					class Controls: Controls
-					{
-						class LineBottom: LineBottom {};
-						class LineLeft: LineLeft {};
-						class LineRight: LineRight {};
-						class LineTop: LineTop
-						{
-							text = "Open";
-						};
-						class Overlay: Overlay {};
-					};
-				};
-				class GroupPicture: GroupPicture
-				{
-					class Controls: Controls
-					{
-						class Picture: Picture
-						{
-							text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\spotlight_2_ca.paa";
-						};
-						class Video: Video
-						{
-							text = "\a3\Ui_f\Video\spotlight_2.ogv";
-						};
-					};
-				};
-				class Text: Text
-				{
-					text = "Quick Play";
-				};
-				class TextBackground: TextBackground {};
-			};
-		};
-		class Spotlight2: RscText
-		{
-			h = "10 * 	(pixelH * pixelGridNoUIScale * 2)";
-			idc = 1020;
-			show = 0;
-			w = "10 * 	(pixelW * pixelGridNoUIScale * 2)";
-			x = "0.5 - (0.5 * 	10) * 	(pixelW * pixelGridNoUIScale * 2)";
-			y = "0.5 - (	10 / 2) * 	(pixelH * pixelGridNoUIScale * 2)";
-		};
-		class Spotlight3: RscMainMenuSpotlight
-		{
-			idc = 1022;
-			x = "0.5 + (0.5 * 	10) * 	(pixelW * pixelGridNoUIScale * 2) + 	(2 * pixelW)";
-			class Controls: Controls
-			{
-				class Button: Button {};
-				class GroupHover: GroupHover
-				{
-					class Controls: Controls
-					{
-						class LineBottom: LineBottom {};
-						class LineLeft: LineLeft {};
-						class LineRight: LineRight {};
-						class LineTop: LineTop
-						{
-							text = "Create";
-						};
-						class Overlay: Overlay {};
-					};
-				};
-				class GroupPicture: GroupPicture
-				{
-					class Controls: Controls
-					{
-						class Picture: Picture
-						{
-							text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\spotlight_3_ca.paa";
-						};
-						class Video: Video
-						{
-							text = "\a3\Ui_f\Video\spotlight3.ogv";
-						};
-					};
-				};
-				class Text: Text
-				{
-					text = "Editor";
-				};
-				class TextBackground: TextBackground {};
-			};
-		};
-		class SpotlightNext: SpotlightPrev
-		{
-			angle = 180;
-			idc = 1061;
-			text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\spotlightNext_ca.paa";
-			y = "0.5 + (	10 / 2) * 	(pixelH * pixelGridNoUIScale * 2)";
-		};
-		class SpotlightPrev: RscActivePictureKeepAspect
-		{
-			color[] = {1, 1, 1, 0.25};
-			fade = 1;
-			h = "(	10 / 8) * 	(pixelH * pixelGridNoUIScale * 2)";
-			idc = 1060;
-			text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\spotlightPrev_ca.paa";
-			w = "10 * 	(pixelW * pixelGridNoUIScale * 2)";
-			x = "0.5 - (0.5 * 	10) * 	(pixelW * pixelGridNoUIScale * 2)";
-			y = "0.5 - (	10 / 2 + (	10 / 8)) * 	(pixelH * pixelGridNoUIScale * 2)";
+			idc = 103;
+			text = "Scenarios";
+			tooltip = "Play user-made scenarios (note: scenarios that are not designed for Arma 3 Contact may not be compatible).";
+			y = "(0.5 - 3.5 * 	(safezoneH / 40)) + (2.5 * 		1.5 + 0.2) * 	(pixelH * pixelGridNoUIScale * 2)";
 		};
 		class TitleIconMultiplayer: TitleIconSingleplayer
 		{
@@ -712,19 +508,24 @@ class RscDisplayMain: RscStandardDisplay
 		class TitleIconOptions: TitleIconSingleplayer
 		{
 			idc = 1114;
+			onLoad = "";
+			show = 1;
 			text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\menu_options_ca.paa";
 			tooltip = "Options";
-			x = "0.5 + (	5 + 	4) * 	(pixelW * pixelGrid * 2)";
+			w = "1.5 * 	(pixelW * pixelGridNoUIScale * 2)";
+			x = "safezoneX + safezoneW - 4 * 		1.5 * 	(pixelW * pixelGridNoUIScale * 2)";
 		};
 		class TitleIconSingleplayer: RscButton
 		{
 			colorBackground[] = {0, 0, 0, 0};
 			colorBackgroundActive[] = {1, 1, 1, 1};
+			colorDisabled[] = {0, 0, 0, 0};
 			colorFocused[] = {1, 1, 1, 1};
 			colorText[] = {1, 1, 1, 1};
-			h = "2 * 	(pixelH * pixelGrid * 2)";
+			h = "1.5 * 	(pixelH * pixelGridNoUIScale * 2)";
 			idc = 1111;
 			onKillFocus = "(_this select 0) ctrlsettextcolor [1,1,1,1];";
+			onLoad = "(_this # 0) ctrlenable false;";
 			onMouseEnter = "(_this select 0) ctrlsettextcolor [0,0,0,1];";
 			onMouseExit = "(_this select 0) ctrlsettextcolor [1,1,1,1];";
 			onSetFocus = "(_this select 0) ctrlsettextcolor [0,0,0,1];";
@@ -732,16 +533,19 @@ class RscDisplayMain: RscStandardDisplay
 			style = "0x30 + 0x800";
 			text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\menu_singleplayer_ca.paa";
 			tooltip = "Singleplayer";
-			w = "4 * 	(pixelW * pixelGrid * 2)";
+			w = 0;
 			x = "0.5 - (	5 + 2 * 	4) * 	(pixelW * pixelGrid * 2)";
-			y = "safezoneY + 2 * 	(pixelH * pixelGrid * 2)";
+			y = "safezoneY + 		1.5 * 	(pixelH * pixelGridNoUIScale * 2)";
 		};
 		class TitleIconTutorials: TitleIconSingleplayer
 		{
 			idc = 1113;
+			onLoad = "";
+			show = 1;
 			text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\menu_tutorials_ca.paa";
 			tooltip = "Tutorials";
-			x = "0.5 + (	5) * 	(pixelW * pixelGrid * 2)";
+			w = "1.5 * 	(pixelW * pixelGridNoUIScale * 2)";
+			x = "safezoneX + safezoneW - 5 * 		1.5 * 	(pixelW * pixelGridNoUIScale * 2)";
 		};
 		class TitleMultiplayer: TitleSingleplayer
 		{
@@ -749,42 +553,49 @@ class RscDisplayMain: RscStandardDisplay
 			text = "Multiplayer";
 			x = "0.5 - (	5 + 	10) * 	(pixelW * pixelGrid * 2)";
 		};
-		class TitleOptions: TitleSingleplayer
+		class TitleOptions: TitleIconSingleplayer
 		{
 			idc = 1014;
-			text = "Options";
-			x = "0.5 + (	5 + 	10) * 	(pixelW * pixelGrid * 2)";
+			onLoad = "";
+			show = 1;
+			text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\menu_options_ca.paa";
+			tooltip = "Options";
+			w = "1.5 * 	(pixelW * pixelGridNoUIScale * 2)";
+			x = "safezoneX + safezoneW - 4 * 		1.5 * 	(pixelW * pixelGridNoUIScale * 2)";
 		};
 		class TitleSession: RscButton
 		{
 			colorBackground[] = {0, 0, 0, 0};
 			colorBackgroundActive[] = {1, 1, 1, 1};
 			colorFocused[] = {0, 0, 0, 0};
-			colorText[] = {1, 1, 1, 0.5};
-			h = "2 * 	(pixelH * pixelGrid * 2)";
+			colorText[] = {1, 1, 1, 1};
+			h = "1.5 * 	(pixelH * pixelGridNoUIScale * 2)";
 			idc = 1015;
-			onKillFocus = "(_this select 0) ctrlsettextcolor [1,1,1,0.5];";
+			onKillFocus = "(_this select 0) ctrlsettextcolor [1,1,1,1];";
 			onMouseEnter = "(_this select 0) ctrlsettextcolor [0,0,0,1];";
-			onMouseExit = "(_this select 0) ctrlsettextcolor [1,1,1,0.5];";
+			onMouseExit = "(_this select 0) ctrlsettextcolor [1,1,1,1];";
 			onSetFocus = "(_this select 0) ctrlsettextcolor [0,0,0,1];";
 			style = 48;
 			text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\profile_player_ca.paa";
-			w = "2 * 	(pixelW * pixelGrid * 2)";
-			x = "safezoneX + safezoneW - 2 * 		2 * 	(pixelW * pixelGrid * 2)";
-			y = "safezoneY + 2 * 	(pixelH * pixelGrid * 2)";
+			w = "1.5 * 	(pixelW * pixelGridNoUIScale * 2)";
+			x = "safezoneX + safezoneW - 3 * 		1.5 * 	(pixelW * pixelGridNoUIScale * 2)";
+			y = "safezoneY + 		1.5 * 	(pixelH * pixelGridNoUIScale * 2)";
 		};
 		class TitleSingleplayer: RscButtonMenu
 		{
 			colorBackground[] = {0, 0, 0, 0};
 			colorBackground2[] = {1, 1, 1, 1};
-			h = "2 * 	(pixelH * pixelGrid * 2)";
+			colorDisabled[] = {0, 0, 0, 0};
+			h = "1.5 * 	(pixelH * pixelGridNoUIScale * 2)";
 			idc = 1011;
+			onLoad = "(_this # 0) ctrlenable false;";
+			show = 0;
 			size = "1.25 * 	(pixelH * pixelGrid * 2)";
 			style = "0x02 + 0xC0";
 			text = "Singleplayer";
-			w = "10 * 	(pixelW * pixelGrid * 2)";
+			w = 0;
 			x = "0.5 - (	5 + 2 * 	10) * 	(pixelW * pixelGrid * 2)";
-			y = "safezoneY + 2 * 	(pixelH * pixelGrid * 2)";
+			y = "safezoneY + 		1.5 * 	(pixelH * pixelGridNoUIScale * 2)";
 			class Attributes
 			{
 				align = "center";
@@ -801,11 +612,15 @@ class RscDisplayMain: RscStandardDisplay
 				top = "0.18 * 		2 * 	(pixelH * pixelGrid * 2)";
 			};
 		};
-		class TitleTutorials: TitleSingleplayer
+		class TitleTutorials: TitleIconSingleplayer
 		{
 			idc = 1013;
-			text = "Tutorials";
-			x = "0.5 + (	5) * 	(pixelW * pixelGrid * 2)";
+			onLoad = "";
+			show = 1;
+			text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\menu_tutorials_ca.paa";
+			tooltip = "Tutorials";
+			w = "1.5 * 	(pixelW * pixelGridNoUIScale * 2)";
+			x = "safezoneX + safezoneW - 5 * 		1.5 * 	(pixelW * pixelGridNoUIScale * 2)";
 		};
 	};
 	class ControlsBackground
@@ -822,6 +637,34 @@ class RscDisplayMain: RscStandardDisplay
 		{
 			w = 10;
 			x = "safezoneX + safezoneW";
+		};
+		class ContactBackground: Interlacing
+		{
+			angle = 0;
+			colorText[] = {0.19, 0.39, 0.56, 0.7};
+			text = "\a3\UI_F_Contact\Data\Common\RscDiaryCategories\gradient_gs.paa";
+		};
+		class Interlacing: RscPicture
+		{
+			colorText[] = {1, 1, 1, 0.5};
+			h = "safezoneH";
+			text = "\a3\Ui_f\data\IGUI\RscTitles\Interlacing\interlacing_ca.paa";
+			w = "15 * 	(pixelW * pixelGridNoUIScale * 2)";
+			x = "0.5 - 		15 * 	(pixelW * pixelGridNoUIScale * 2) / 2";
+			y = "safezoneY";
+		};
+		class LogoBackground: RscPicture
+		{
+			colorText[] = {0.19, 0.39, 0.56, 1};
+			h = "pixelH";
+			text = "#(rgb,1,1,1)color(1,1,1,1)";
+			w = "safezoneW";
+			x = "safezoneX";
+			y = "safezoneY + 		1.5 * 	(pixelH * pixelGridNoUIScale * 2)";
+		};
+		class LogoBackground2: LogoBackground
+		{
+			y = "safezoneY + 		1.5 * 	(pixelH * pixelGridNoUIScale * 2) + 		1.5 * 	(pixelH * pixelGridNoUIScale * 2)";
 		};
 		class MouseArea: RscText
 		{
@@ -844,7 +687,7 @@ class RscDisplayMain: RscStandardDisplay
 	};
 	class DlcIconPicture: RscPictureKeepAspect
 	{
-		colorText[] = {1, 1, 1, 0.5};
+		colorText[] = {1, 1, 1, 0.25};
 		h = "2 * 	(pixelH * pixelGrid * 2)";
 		spacing = "(4 * pixelH)";
 		w = "2 * 	(pixelW * pixelGrid * 2)";
@@ -853,6 +696,7 @@ class RscDisplayMain: RscStandardDisplay
 	};
 	class DlcOwnedIconPicture: RscPictureKeepAspect
 	{
+		colorText[] = {1, 1, 1, 0.25};
 		h = "2 * 	(pixelH * pixelGrid * 2)";
 		spacing = "(4 * pixelH)";
 		w = "2 * 	(pixelW * pixelGrid * 2)";
@@ -861,6 +705,7 @@ class RscDisplayMain: RscStandardDisplay
 	};
 	class IconPicture: RscPictureKeepAspect
 	{
+		colorText[] = {1, 1, 1, 0.25};
 		h = "2 * 	(pixelH * pixelGrid * 2)";
 		spacing = "(4 * pixelH)";
 		text = "";
